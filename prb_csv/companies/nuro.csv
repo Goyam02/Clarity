@@ -1,0 +1,31 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",3_months
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,100.0%,"Array, Math, Binary Search, Prefix Sum, Randomized",3_months
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,100.0%,"Array, Math, Binary Search, Prefix Sum, Randomized",6_months
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,90.4%,"Array, Depth-First Search, Breadth-First Search, Matrix",6_months
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,100.0%,"Array, Math, Geometry, Sliding Window, Sorting",more_than_6m
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,76.7%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",more_than_6m
+986,https://leetcode.com/problems/interval-list-intersections,Interval List Intersections,Medium,,70.7%,"Array, Two Pointers, Sweep Line",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,70.7%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+1476,https://leetcode.com/problems/subrectangle-queries,Subrectangle Queries,Medium,,62.1%,"Array, Design, Matrix",more_than_6m
+494,https://leetcode.com/problems/target-sum,Target Sum,Medium,,62.1%,"Array, Dynamic Programming, Backtracking",more_than_6m
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,62.1%,"Array, Breadth-First Search, Matrix",more_than_6m
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,62.1%,"Array, Stack, Simulation",more_than_6m
+311,https://leetcode.com/problems/sparse-matrix-multiplication,Sparse Matrix Multiplication,Medium,,62.1%,"Array, Hash Table, Matrix",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,62.1%,"Array, Sorting",more_than_6m
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,62.1%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+1570,https://leetcode.com/problems/dot-product-of-two-sparse-vectors,Dot Product of Two Sparse Vectors,Medium,,62.1%,"Array, Hash Table, Two Pointers, Design",more_than_6m
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,100.0%,"Array, Math, Geometry, Sliding Window, Sorting",all
+1476,https://leetcode.com/problems/subrectangle-queries,Subrectangle Queries,Medium,,96.0%,"Array, Design, Matrix",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,84.9%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,76.0%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",all
+986,https://leetcode.com/problems/interval-list-intersections,Interval List Intersections,Medium,,69.8%,"Array, Two Pointers, Sweep Line",all
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,61.0%,"Array, Breadth-First Search, Matrix",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,61.0%,"Array, Stack, Simulation",all
+311,https://leetcode.com/problems/sparse-matrix-multiplication,Sparse Matrix Multiplication,Medium,,61.0%,"Array, Hash Table, Matrix",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,61.0%,"Array, Sorting",all
+494,https://leetcode.com/problems/target-sum,Target Sum,Medium,,61.0%,"Array, Dynamic Programming, Backtracking",all
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,61.0%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+1233,https://leetcode.com/problems/remove-sub-folders-from-the-filesystem,Remove Sub-Folders from the Filesystem,Medium,,61.0%,"Array, String, Depth-First Search, Trie",all
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,61.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+1570,https://leetcode.com/problems/dot-product-of-two-sparse-vectors,Dot Product of Two Sparse Vectors,Medium,,61.0%,"Array, Hash Table, Two Pointers, Design",all

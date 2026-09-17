@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2598,https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations,Smallest Missing Non-negative Integer After Operations,Medium,,100.0%,"Array, Hash Table, Math, Greedy",more_than_6m
+1598,https://leetcode.com/problems/crawler-log-folder,Crawler Log Folder,Easy,,79.0%,"Array, String, Stack",more_than_6m
+1432,https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer,Max Difference You Can Get From Changing an Integer,Medium,,79.0%,"Math, Greedy",more_than_6m
+1399,https://leetcode.com/problems/count-largest-group,Count Largest Group,Easy,,79.0%,"Hash Table, Math",more_than_6m
+1403,https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order,Minimum Subsequence in Non-Increasing Order,Easy,,79.0%,"Array, Greedy, Sorting",more_than_6m
+2598,https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations,Smallest Missing Non-negative Integer After Operations,Medium,,100.0%,"Array, Hash Table, Math, Greedy",all
+1598,https://leetcode.com/problems/crawler-log-folder,Crawler Log Folder,Easy,,94.5%,"Array, String, Stack",all
+1399,https://leetcode.com/problems/count-largest-group,Count Largest Group,Easy,,94.5%,"Hash Table, Math",all
+1403,https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order,Minimum Subsequence in Non-Increasing Order,Easy,,94.5%,"Array, Greedy, Sorting",all
+1432,https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer,Max Difference You Can Get From Changing an Integer,Medium,,94.5%,"Math, Greedy",all

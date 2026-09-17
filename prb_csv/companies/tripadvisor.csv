@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",6_months
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,81.3%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,81.3%,"Hash Table, String, Counting",more_than_6m
+1002,https://leetcode.com/problems/find-common-characters,Find Common Characters,Easy,,72.4%,"Array, Hash Table, String",more_than_6m
+240,https://leetcode.com/problems/search-a-2d-matrix-ii,Search a 2D Matrix II,Medium,,72.4%,"Array, Binary Search, Divide and Conquer, Matrix",more_than_6m
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,72.4%,"Stack, Design",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",all
+1002,https://leetcode.com/problems/find-common-characters,Find Common Characters,Easy,,96.3%,"Array, Hash Table, String",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,71.6%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,71.6%,"Hash Table, String, Counting",all
+240,https://leetcode.com/problems/search-a-2d-matrix-ii,Search a 2D Matrix II,Medium,,63.4%,"Array, Binary Search, Divide and Conquer, Matrix",all
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,63.4%,"Stack, Design",all

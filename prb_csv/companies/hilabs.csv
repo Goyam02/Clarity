@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3003,https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations,Maximize the Number of Partitions After Operations,Hard,,100.0%,"String, Dynamic Programming, Bit Manipulation, Bitmask",more_than_6m
+1518,https://leetcode.com/problems/water-bottles,Water Bottles,Easy,,100.0%,"Math, Simulation",more_than_6m
+1106,https://leetcode.com/problems/parsing-a-boolean-expression,Parsing A Boolean Expression,Hard,,100.0%,"String, Stack, Recursion",more_than_6m
+3003,https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations,Maximize the Number of Partitions After Operations,Hard,,100.0%,"String, Dynamic Programming, Bit Manipulation, Bitmask",all
+1518,https://leetcode.com/problems/water-bottles,Water Bottles,Easy,,67.9%,"Math, Simulation",all
+1106,https://leetcode.com/problems/parsing-a-boolean-expression,Parsing A Boolean Expression,Hard,,67.9%,"String, Stack, Recursion",all

@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1200,https://leetcode.com/problems/minimum-absolute-difference,Minimum Absolute Difference,Easy,,100.0%,"Array, Sorting",more_than_6m
+217,https://leetcode.com/problems/contains-duplicate,Contains Duplicate,Easy,,90.5%,"Array, Hash Table, Sorting",more_than_6m
+1200,https://leetcode.com/problems/minimum-absolute-difference,Minimum Absolute Difference,Easy,,100.0%,"Array, Sorting",all
+217,https://leetcode.com/problems/contains-duplicate,Contains Duplicate,Easy,,84.6%,"Array, Hash Table, Sorting",all

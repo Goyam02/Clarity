@@ -1,0 +1,76 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3414,https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals,Maximum Score of Non-overlapping Intervals,Hard,,100.0%,"Array, Binary Search, Dynamic Programming, Sorting",more_than_6m
+2440,https://leetcode.com/problems/create-components-with-same-value,Create Components With Same Value,Hard,,82.6%,"Array, Math, Tree, Depth-First Search, Enumeration",more_than_6m
+907,https://leetcode.com/problems/sum-of-subarray-minimums,Sum of Subarray Minimums,Medium,,77.0%,"Array, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,77.0%,"Hash Table, String",more_than_6m
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,77.0%,"Array, Hash Table, Prefix Sum",more_than_6m
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,69.8%,"Array, Stack, Simulation",more_than_6m
+1463,https://leetcode.com/problems/cherry-pickup-ii,Cherry Pickup II,Hard,,69.8%,"Array, Dynamic Programming, Matrix",more_than_6m
+2846,https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree,Minimum Edge Weight Equilibrium Queries in a Tree,Hard,,59.7%,"Array, Dynamic Programming, Bit Manipulation, Tree, Depth-First Search",more_than_6m
+2897,https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares,Apply Operations on Array to Maximize Sum of Squares,Hard,,59.7%,"Array, Hash Table, Greedy, Bit Manipulation",more_than_6m
+3031,https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii,Minimum Time to Revert Word to Initial State II,Hard,,59.7%,"String, Rolling Hash, String Matching, Hash Function",more_than_6m
+3029,https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i,Minimum Time to Revert Word to Initial State I,Medium,,59.7%,"String, Rolling Hash, String Matching, Hash Function",more_than_6m
+1746,https://leetcode.com/problems/maximum-subarray-sum-after-one-operation,Maximum Subarray Sum After One Operation,Medium,,59.7%,"Array, Dynamic Programming",more_than_6m
+2546,https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal,Apply Bitwise Operations to Make Strings Equal,Medium,,59.7%,"String, Bit Manipulation",more_than_6m
+2518,https://leetcode.com/problems/number-of-great-partitions,Number of Great Partitions,Hard,,59.7%,"Array, Dynamic Programming",more_than_6m
+2999,https://leetcode.com/problems/count-the-number-of-powerful-integers,Count the Number of Powerful Integers,Hard,,59.7%,"Math, String, Dynamic Programming",more_than_6m
+2955,https://leetcode.com/problems/number-of-same-end-substrings,Number of Same-End Substrings,Medium,,59.7%,"Array, Hash Table, String, Counting, Prefix Sum",more_than_6m
+1799,https://leetcode.com/problems/maximize-score-after-n-operations,Maximize Score After N Operations,Hard,,59.7%,"Array, Math, Dynamic Programming, Backtracking, Bit Manipulation, Number Theory, Bitmask",more_than_6m
+2378,https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree,Choose Edges to Maximize Score in a Tree,Medium,,59.7%,"Dynamic Programming, Tree, Depth-First Search",more_than_6m
+1755,https://leetcode.com/problems/closest-subsequence-sum,Closest Subsequence Sum,Hard,,59.7%,"Array, Two Pointers, Dynamic Programming, Bit Manipulation, Sorting, Bitmask",more_than_6m
+2048,https://leetcode.com/problems/next-greater-numerically-balanced-number,Next Greater Numerically Balanced Number,Medium,,59.7%,"Hash Table, Math, Backtracking, Counting, Enumeration",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,59.7%,"Array, Hash Table",more_than_6m
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,59.7%,"String, Dynamic Programming, Recursion",more_than_6m
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,59.7%,"Array, Dynamic Programming, Memoization",more_than_6m
+975,https://leetcode.com/problems/odd-even-jump,Odd Even Jump,Hard,,59.7%,"Array, Dynamic Programming, Stack, Sorting, Monotonic Stack, Ordered Set",more_than_6m
+149,https://leetcode.com/problems/max-points-on-a-line,Max Points on a Line,Hard,,59.7%,"Array, Hash Table, Math, Geometry",more_than_6m
+552,https://leetcode.com/problems/student-attendance-record-ii,Student Attendance Record II,Hard,,59.7%,Dynamic Programming,more_than_6m
+1129,https://leetcode.com/problems/shortest-path-with-alternating-colors,Shortest Path with Alternating Colors,Medium,,59.7%,"Breadth-First Search, Graph Theory",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,59.7%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+687,https://leetcode.com/problems/longest-univalue-path,Longest Univalue Path,Medium,,59.7%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+85,https://leetcode.com/problems/maximal-rectangle,Maximal Rectangle,Hard,,59.7%,"Array, Dynamic Programming, Stack, Matrix, Monotonic Stack",more_than_6m
+918,https://leetcode.com/problems/maximum-sum-circular-subarray,Maximum Sum Circular Subarray,Medium,,59.7%,"Array, Divide and Conquer, Dynamic Programming, Queue, Monotonic Queue",more_than_6m
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,59.7%,"String, Dynamic Programming, Stack",more_than_6m
+403,https://leetcode.com/problems/frog-jump,Frog Jump,Hard,,59.7%,"Array, Dynamic Programming",more_than_6m
+456,https://leetcode.com/problems/132-pattern,132 Pattern,Medium,,59.7%,"Array, Binary Search, Stack, Monotonic Stack, Ordered Set",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,59.7%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+946,https://leetcode.com/problems/validate-stack-sequences,Validate Stack Sequences,Medium,,59.7%,"Array, Stack, Simulation",more_than_6m
+2440,https://leetcode.com/problems/create-components-with-same-value,Create Components With Same Value,Hard,,100.0%,"Array, Math, Tree, Depth-First Search, Enumeration",all
+2846,https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree,Minimum Edge Weight Equilibrium Queries in a Tree,Hard,,93.4%,"Array, Dynamic Programming, Bit Manipulation, Tree, Depth-First Search",all
+2518,https://leetcode.com/problems/number-of-great-partitions,Number of Great Partitions,Hard,,93.4%,"Array, Dynamic Programming",all
+2546,https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal,Apply Bitwise Operations to Make Strings Equal,Medium,,93.4%,"String, Bit Manipulation",all
+2897,https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares,Apply Operations on Array to Maximize Sum of Squares,Hard,,93.4%,"Array, Hash Table, Greedy, Bit Manipulation",all
+2048,https://leetcode.com/problems/next-greater-numerically-balanced-number,Next Greater Numerically Balanced Number,Medium,,93.4%,"Hash Table, Math, Backtracking, Counting, Enumeration",all
+2999,https://leetcode.com/problems/count-the-number-of-powerful-integers,Count the Number of Powerful Integers,Hard,,93.4%,"Math, String, Dynamic Programming",all
+2955,https://leetcode.com/problems/number-of-same-end-substrings,Number of Same-End Substrings,Medium,,93.4%,"Array, Hash Table, String, Counting, Prefix Sum",all
+3031,https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii,Minimum Time to Revert Word to Initial State II,Hard,,93.4%,"String, Rolling Hash, String Matching, Hash Function",all
+3029,https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i,Minimum Time to Revert Word to Initial State I,Medium,,93.4%,"String, Rolling Hash, String Matching, Hash Function",all
+1755,https://leetcode.com/problems/closest-subsequence-sum,Closest Subsequence Sum,Hard,,93.4%,"Array, Two Pointers, Dynamic Programming, Bit Manipulation, Sorting, Bitmask",all
+1746,https://leetcode.com/problems/maximum-subarray-sum-after-one-operation,Maximum Subarray Sum After One Operation,Medium,,93.4%,"Array, Dynamic Programming",all
+1799,https://leetcode.com/problems/maximize-score-after-n-operations,Maximize Score After N Operations,Hard,,93.4%,"Array, Math, Dynamic Programming, Backtracking, Bit Manipulation, Number Theory, Bitmask",all
+2378,https://leetcode.com/problems/choose-edges-to-maximize-score-in-a-tree,Choose Edges to Maximize Score in a Tree,Medium,,93.4%,"Dynamic Programming, Tree, Depth-First Search",all
+3414,https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals,Maximum Score of Non-overlapping Intervals,Hard,,93.4%,"Array, Binary Search, Dynamic Programming, Sorting",all
+907,https://leetcode.com/problems/sum-of-subarray-minimums,Sum of Subarray Minimums,Medium,,75.9%,"Array, Dynamic Programming, Stack, Monotonic Stack",all
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,70.3%,"Hash Table, String",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,70.3%,"Array, Hash Table, Prefix Sum",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,63.1%,"Array, Stack, Simulation",all
+1463,https://leetcode.com/problems/cherry-pickup-ii,Cherry Pickup II,Hard,,63.1%,"Array, Dynamic Programming, Matrix",all
+149,https://leetcode.com/problems/max-points-on-a-line,Max Points on a Line,Hard,,53.0%,"Array, Hash Table, Math, Geometry",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,53.0%,"Array, Hash Table",all
+975,https://leetcode.com/problems/odd-even-jump,Odd Even Jump,Hard,,53.0%,"Array, Dynamic Programming, Stack, Sorting, Monotonic Stack, Ordered Set",all
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,53.0%,"String, Dynamic Programming, Recursion",all
+552,https://leetcode.com/problems/student-attendance-record-ii,Student Attendance Record II,Hard,,53.0%,Dynamic Programming,all
+1129,https://leetcode.com/problems/shortest-path-with-alternating-colors,Shortest Path with Alternating Colors,Medium,,53.0%,"Breadth-First Search, Graph Theory",all
+687,https://leetcode.com/problems/longest-univalue-path,Longest Univalue Path,Medium,,53.0%,"Tree, Depth-First Search, Binary Tree",all
+918,https://leetcode.com/problems/maximum-sum-circular-subarray,Maximum Sum Circular Subarray,Medium,,53.0%,"Array, Divide and Conquer, Dynamic Programming, Queue, Monotonic Queue",all
+85,https://leetcode.com/problems/maximal-rectangle,Maximal Rectangle,Hard,,53.0%,"Array, Dynamic Programming, Stack, Matrix, Monotonic Stack",all
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,53.0%,"String, Dynamic Programming, Stack",all
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,53.0%,"Array, Dynamic Programming, Memoization",all
+403,https://leetcode.com/problems/frog-jump,Frog Jump,Hard,,53.0%,"Array, Dynamic Programming",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,53.0%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+456,https://leetcode.com/problems/132-pattern,132 Pattern,Medium,,53.0%,"Array, Binary Search, Stack, Monotonic Stack, Ordered Set",all
+946,https://leetcode.com/problems/validate-stack-sequences,Validate Stack Sequences,Medium,,53.0%,"Array, Stack, Simulation",all
+337,https://leetcode.com/problems/house-robber-iii,House Robber III,Medium,,53.0%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,53.0%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,53.0%,"String, Dynamic Programming",all
+1423,https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards,Maximum Points You Can Obtain from Cards,Medium,,53.0%,"Array, Sliding Window, Prefix Sum",all

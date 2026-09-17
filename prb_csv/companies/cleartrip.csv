@@ -1,0 +1,8 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1368,https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid,Minimum Cost to Make at Least One Valid Path in a Grid,Hard,,100.0%,"Array, Breadth-First Search, Graph, Heap (Priority Queue), Matrix, Shortest Path",6_months
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,100.0%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",more_than_6m
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,100.0%,"Array, Dynamic Programming",more_than_6m
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,100.0%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,100.0%,"Array, Dynamic Programming",all
+1368,https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid,Minimum Cost to Make at Least One Valid Path in a Grid,Hard,,100.0%,"Array, Breadth-First Search, Graph, Heap (Priority Queue), Matrix, Shortest Path",all
+781,https://leetcode.com/problems/rabbits-in-forest,Rabbits in Forest,Medium,,100.0%,"Array, Hash Table, Math, Greedy",all

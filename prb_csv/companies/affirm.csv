@@ -1,0 +1,21 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,87.1%,"Array, Hash Table, String, Trie",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,70.1%,"Array, Hash Table, String, Sorting",more_than_6m
+381,https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed,Insert Delete GetRandom O(1) - Duplicates allowed,Hard,,70.1%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,66.7%,"Two Pointers, String",more_than_6m
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,62.6%,"Array, Binary Search, Design, Queue, Data Stream",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,62.6%,"Hash Table, String, Sorting",more_than_6m
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,57.2%,"Array, Dynamic Programming, Breadth-First Search",more_than_6m
+736,https://leetcode.com/problems/parse-lisp-expression,Parse Lisp Expression,Hard,,49.7%,"Hash Table, String, Stack, Recursion",more_than_6m
+465,https://leetcode.com/problems/optimal-account-balancing,Optimal Account Balancing,Hard,,49.7%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",all
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,86.9%,"Array, Hash Table, String, Trie",all
+736,https://leetcode.com/problems/parse-lisp-expression,Parse Lisp Expression,Hard,,79.3%,"Hash Table, String, Stack, Recursion",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,69.7%,"Array, Hash Table, String, Sorting",all
+381,https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed,Insert Delete GetRandom O(1) - Duplicates allowed,Hard,,69.7%,"Array, Hash Table, Math, Design, Randomized",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,66.3%,"Two Pointers, String",all
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,62.1%,"Array, Binary Search, Design, Queue, Data Stream",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,62.1%,"Hash Table, String, Sorting",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,56.7%,"Array, Dynamic Programming, Breadth-First Search",all
+465,https://leetcode.com/problems/optimal-account-balancing,Optimal Account Balancing,Hard,,49.0%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",all

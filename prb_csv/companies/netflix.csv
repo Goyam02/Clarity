@@ -1,0 +1,64 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2622,https://leetcode.com/problems/cache-with-time-limit,Cache With Time Limit,Medium,,100.0%,,30_days
+2622,https://leetcode.com/problems/cache-with-time-limit,Cache With Time Limit,Medium,,100.0%,,3_months
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,82.6%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",3_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,82.6%,"Hash Table, String, Binary Search, Design",3_months
+2622,https://leetcode.com/problems/cache-with-time-limit,Cache With Time Limit,Medium,,100.0%,,6_months
+1136,https://leetcode.com/problems/parallel-courses,Parallel Courses,Medium,,100.0%,"Graph Theory, Topological Sort",6_months
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,91.9%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",6_months
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,86.5%,"Hash Table, String, Sliding Window",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,86.5%,"Hash Table, String, Binary Search, Design",6_months
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,86.5%,String,6_months
+220,https://leetcode.com/problems/contains-duplicate-iii,Contains Duplicate III,Hard,,69.9%,"Array, Sliding Window, Sorting, Bucket Sort, Ordered Set",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,69.9%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,69.9%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",6_months
+332,https://leetcode.com/problems/reconstruct-itinerary,Reconstruct Itinerary,Hard,,100.0%,"Array, String, Depth-First Search, Graph Theory, Sorting, Heap (Priority Queue), Eulerian Circuit",more_than_6m
+2622,https://leetcode.com/problems/cache-with-time-limit,Cache With Time Limit,Medium,,97.6%,,more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,95.0%,"Array, Sorting",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,95.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,95.0%,"Hash Table, Design, Data Stream",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,95.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+220,https://leetcode.com/problems/contains-duplicate-iii,Contains Duplicate III,Hard,,95.0%,"Array, Sliding Window, Sorting, Bucket Sort, Ordered Set",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,92.1%,"Hash Table, String, Sliding Window",more_than_6m
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,85.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+219,https://leetcode.com/problems/contains-duplicate-ii,Contains Duplicate II,Easy,,80.5%,"Array, Hash Table, Sliding Window",more_than_6m
+743,https://leetcode.com/problems/network-delay-time,Network Delay Time,Medium,,80.5%,"Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,80.5%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+228,https://leetcode.com/problems/summary-ranges,Summary Ranges,Easy,,74.9%,Array,more_than_6m
+217,https://leetcode.com/problems/contains-duplicate,Contains Duplicate,Easy,,74.9%,"Array, Hash Table, Sorting",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,67.8%,"Array, Hash Table",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,67.8%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,67.8%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,67.8%,"Array, Binary Search",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,57.8%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+904,https://leetcode.com/problems/fruit-into-baskets,Fruit Into Baskets,Medium,,57.8%,"Array, Hash Table, Sliding Window",more_than_6m
+797,https://leetcode.com/problems/all-paths-from-source-to-target,All Paths From Source to Target,Medium,,57.8%,"Backtracking, Depth-First Search, Breadth-First Search, Graph Theory",more_than_6m
+2622,https://leetcode.com/problems/cache-with-time-limit,Cache With Time Limit,Medium,,100.0%,,all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,93.8%,"Hash Table, String, Binary Search, Design",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,92.0%,"Hash Table, String, Sliding Window",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,90.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,90.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+332,https://leetcode.com/problems/reconstruct-itinerary,Reconstruct Itinerary,Hard,,90.0%,"Array, String, Depth-First Search, Graph Theory, Sorting, Heap (Priority Queue), Eulerian Circuit",all
+220,https://leetcode.com/problems/contains-duplicate-iii,Contains Duplicate III,Hard,,90.0%,"Array, Sliding Window, Sorting, Bucket Sort, Ordered Set",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,87.8%,"Array, Sorting",all
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,87.8%,"Hash Table, Design, Data Stream",all
+1136,https://leetcode.com/problems/parallel-courses,Parallel Courses,Medium,,82.6%,"Graph Theory, Topological Sort",all
+219,https://leetcode.com/problems/contains-duplicate-ii,Contains Duplicate II,Easy,,76.0%,"Array, Hash Table, Sliding Window",all
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,71.8%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+743,https://leetcode.com/problems/network-delay-time,Network Delay Time,Medium,,71.8%,"Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",all
+217,https://leetcode.com/problems/contains-duplicate,Contains Duplicate,Easy,,71.8%,"Array, Hash Table, Sorting",all
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,71.8%,String,all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,66.6%,"Array, Hash Table",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,66.6%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+228,https://leetcode.com/problems/summary-ranges,Summary Ranges,Easy,,66.6%,Array,all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,60.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,60.0%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,60.0%,"Array, Binary Search",all
+904,https://leetcode.com/problems/fruit-into-baskets,Fruit Into Baskets,Medium,,50.7%,"Array, Hash Table, Sliding Window",all
+797,https://leetcode.com/problems/all-paths-from-source-to-target,All Paths From Source to Target,Medium,,50.7%,"Backtracking, Depth-First Search, Breadth-First Search, Graph Theory",all
+718,https://leetcode.com/problems/maximum-length-of-repeated-subarray,Maximum Length of Repeated Subarray,Medium,,50.7%,"Array, Binary Search, Dynamic Programming, Sliding Window, Rolling Hash, Hash Function",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,50.7%,"Array, Hash Table, Binary Search, Design",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,50.7%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,50.7%,"Array, Binary Search",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,50.7%,"Hash Table, String, Sorting",all
+642,https://leetcode.com/problems/design-search-autocomplete-system,Design Search Autocomplete System,Hard,,50.7%,"String, Depth-First Search, Design, Trie, Sorting, Heap (Priority Queue), Data Stream",all

@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+28,https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string,Find the Index of the First Occurrence in a String,Easy,,100.0%,"Two Pointers, String, String Matching",more_than_6m
+861,https://leetcode.com/problems/score-after-flipping-matrix,Score After Flipping Matrix,Medium,,100.0%,"Array, Greedy, Bit Manipulation, Matrix",more_than_6m
+861,https://leetcode.com/problems/score-after-flipping-matrix,Score After Flipping Matrix,Medium,,100.0%,"Array, Greedy, Bit Manipulation, Matrix",all
+28,https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string,Find the Index of the First Occurrence in a String,Easy,,68.4%,"Two Pointers, String, String Matching",all

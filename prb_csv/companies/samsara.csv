@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,100.0%,"Array, Hash Table, Matrix",more_than_6m
+3006,https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i,Find Beautiful Indices in the Given Array I,Medium,,87.8%,"Two Pointers, String, Binary Search, Rolling Hash, String Matching, Hash Function",more_than_6m
+3208,https://leetcode.com/problems/alternating-groups-ii,Alternating Groups II,Medium,,68.7%,"Array, Sliding Window",more_than_6m
+3206,https://leetcode.com/problems/alternating-groups-i,Alternating Groups I,Easy,,68.7%,"Array, Sliding Window",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,68.7%,"Array, String, Simulation",more_than_6m
+3206,https://leetcode.com/problems/alternating-groups-i,Alternating Groups I,Easy,,100.0%,"Array, Sliding Window",all
+3208,https://leetcode.com/problems/alternating-groups-ii,Alternating Groups II,Medium,,100.0%,"Array, Sliding Window",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,97.7%,"Array, Hash Table, Matrix",all
+3006,https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i,Find Beautiful Indices in the Given Array I,Medium,,85.2%,"Two Pointers, String, Binary Search, Rolling Hash, String Matching, Hash Function",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,65.6%,"Array, String, Simulation",all

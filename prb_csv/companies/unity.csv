@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2470,https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k,Number of Subarrays With LCM Equal to K,Medium,,100.0%,"Array, Math, Number Theory",more_than_6m
+2038,https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color,Remove Colored Pieces if Both Neighbors are the Same Color,Medium,,90.4%,"Math, String, Greedy, Game Theory",more_than_6m
+2470,https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k,Number of Subarrays With LCM Equal to K,Medium,,100.0%,"Array, Math, Number Theory",all
+2038,https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color,Remove Colored Pieces if Both Neighbors are the Same Color,Medium,,90.3%,"Math, String, Greedy, Game Theory",all

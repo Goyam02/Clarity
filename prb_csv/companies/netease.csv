@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+664,https://leetcode.com/problems/strange-printer,Strange Printer,Hard,,100.0%,"String, Dynamic Programming",more_than_6m
+826,https://leetcode.com/problems/most-profit-assigning-work,Most Profit Assigning Work,Medium,,91.1%,"Array, Two Pointers, Binary Search, Greedy, Sorting",more_than_6m
+664,https://leetcode.com/problems/strange-printer,Strange Printer,Hard,,100.0%,"String, Dynamic Programming",all
+826,https://leetcode.com/problems/most-profit-assigning-work,Most Profit Assigning Work,Medium,,98.1%,"Array, Two Pointers, Binary Search, Greedy, Sorting",all

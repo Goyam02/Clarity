@@ -1,0 +1,12 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,100.0%,"String, Dynamic Programming, Backtracking",more_than_6m
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,100.0%,"Array, Dynamic Programming, Matrix",more_than_6m
+2035,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference,Partition Array Into Two Arrays to Minimize Sum Difference,Hard,,88.1%,"Array, Two Pointers, Binary Search, Dynamic Programming, Bit Manipulation, Sorting, Ordered Set, Bitmask",more_than_6m
+30,https://leetcode.com/problems/substring-with-concatenation-of-all-words,Substring with Concatenation of All Words,Hard,,88.1%,"Hash Table, String, Sliding Window",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,88.1%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,100.0%,"String, Dynamic Programming, Backtracking",all
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,100.0%,"Array, Dynamic Programming, Matrix",all
+2035,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference,Partition Array Into Two Arrays to Minimize Sum Difference,Hard,,88.0%,"Array, Two Pointers, Binary Search, Dynamic Programming, Bit Manipulation, Sorting, Ordered Set, Bitmask",all
+30,https://leetcode.com/problems/substring-with-concatenation-of-all-words,Substring with Concatenation of All Words,Hard,,88.0%,"Hash Table, String, Sliding Window",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,88.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+237,https://leetcode.com/problems/delete-node-in-a-linked-list,Delete Node in a Linked List,Medium,,88.0%,Linked List,all

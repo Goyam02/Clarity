@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1974,https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter,Minimum Time to Type Word Using Special Typewriter,Easy,,100.0%,"String, Greedy",more_than_6m
+1839,https://leetcode.com/problems/longest-substring-of-all-vowels-in-order,Longest Substring Of All Vowels in Order,Medium,,100.0%,"String, Sliding Window",more_than_6m
+1974,https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter,Minimum Time to Type Word Using Special Typewriter,Easy,,100.0%,"String, Greedy",all
+1839,https://leetcode.com/problems/longest-substring-of-all-vowels-in-order,Longest Substring Of All Vowels in Order,Medium,,100.0%,"String, Sliding Window",all

@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+60,https://leetcode.com/problems/permutation-sequence,Permutation Sequence,Hard,,100.0%,"Math, Recursion",6_months
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,100.0%,"Hash Table, Math, Two Pointers",6_months
+188,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv,Best Time to Buy and Sell Stock IV,Hard,,100.0%,"Array, Dynamic Programming",more_than_6m
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,100.0%,"Hash Table, Math, Two Pointers",more_than_6m
+1250,https://leetcode.com/problems/check-if-it-is-a-good-array,Check If It Is a Good Array,Hard,,100.0%,"Array, Math, Number Theory",more_than_6m
+572,https://leetcode.com/problems/subtree-of-another-tree,Subtree of Another Tree,Easy,,100.0%,"Tree, Depth-First Search, String Matching, Binary Tree, Hash Function",more_than_6m
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,100.0%,"Hash Table, Math, Two Pointers",all
+1250,https://leetcode.com/problems/check-if-it-is-a-good-array,Check If It Is a Good Array,Hard,,82.8%,"Array, Math, Number Theory",all
+188,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv,Best Time to Buy and Sell Stock IV,Hard,,82.8%,"Array, Dynamic Programming",all
+572,https://leetcode.com/problems/subtree-of-another-tree,Subtree of Another Tree,Easy,,82.8%,"Tree, Depth-First Search, String Matching, Binary Tree, Hash Function",all
+2275,https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero,Largest Combination With Bitwise AND Greater Than Zero,Medium,,82.8%,"Array, Hash Table, Bit Manipulation, Counting",all
+60,https://leetcode.com/problems/permutation-sequence,Permutation Sequence,Hard,,82.8%,"Math, Recursion",all

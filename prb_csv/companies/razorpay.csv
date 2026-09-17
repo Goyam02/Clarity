@@ -1,0 +1,25 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1574,https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted,Shortest Subarray to be Removed to Make Array Sorted,Medium,,100.0%,"Array, Two Pointers, Binary Search, Stack, Monotonic Stack",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,93.2%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,88.9%,"String, Stack, Recursion",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,76.9%,"Array, Sorting",more_than_6m
+2499,https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal,Minimum Total Cost to Make Arrays Unequal,Hard,,76.9%,"Array, Hash Table, Greedy, Counting",more_than_6m
+2070,https://leetcode.com/problems/most-beautiful-item-for-each-query,Most Beautiful Item for Each Query,Medium,,67.3%,"Array, Binary Search, Sorting",more_than_6m
+2054,https://leetcode.com/problems/two-best-non-overlapping-events,Two Best Non-Overlapping Events,Medium,,67.3%,"Array, Binary Search, Dynamic Programming, Sorting, Heap (Priority Queue)",more_than_6m
+171,https://leetcode.com/problems/excel-sheet-column-number,Excel Sheet Column Number,Easy,,67.3%,"Math, String",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,67.3%,"Array, Two Pointers, Greedy",more_than_6m
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,67.3%,"Array, Math, Two Pointers",more_than_6m
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,67.3%,"Hash Table, String, Queue, Counting",more_than_6m
+62,https://leetcode.com/problems/unique-paths,Unique Paths,Medium,,67.3%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+2499,https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal,Minimum Total Cost to Make Arrays Unequal,Hard,,100.0%,"Array, Hash Table, Greedy, Counting",all
+2054,https://leetcode.com/problems/two-best-non-overlapping-events,Two Best Non-Overlapping Events,Medium,,97.8%,"Array, Binary Search, Dynamic Programming, Sorting, Heap (Priority Queue)",all
+2070,https://leetcode.com/problems/most-beautiful-item-for-each-query,Most Beautiful Item for Each Query,Medium,,97.8%,"Array, Binary Search, Sorting",all
+1574,https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted,Shortest Subarray to be Removed to Make Array Sorted,Medium,,92.7%,"Array, Two Pointers, Binary Search, Stack, Monotonic Stack",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,86.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,82.0%,"String, Stack, Recursion",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,70.4%,"Array, Sorting",all
+171,https://leetcode.com/problems/excel-sheet-column-number,Excel Sheet Column Number,Easy,,61.1%,"Math, String",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,61.1%,"Array, Two Pointers, Greedy",all
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,61.1%,"Array, Math, Two Pointers",all
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,61.1%,"Hash Table, String, Queue, Counting",all
+62,https://leetcode.com/problems/unique-paths,Unique Paths,Medium,,61.1%,"Math, Dynamic Programming, Combinatorics",all

@@ -1,0 +1,46 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+135,https://leetcode.com/problems/candy,Candy,Hard,,100.0%,"Array, Greedy",6_months
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",6_months
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",more_than_6m
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,86.5%,"Array, Math, String, Interactive, Game Theory",more_than_6m
+924,https://leetcode.com/problems/minimize-malware-spread,Minimize Malware Spread,Hard,,74.7%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+1236,https://leetcode.com/problems/web-crawler,Web Crawler,Medium,,74.7%,"String, Depth-First Search, Breadth-First Search, Interactive",more_than_6m
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,74.7%,"Depth-First Search, Breadth-First Search, Concurrency",more_than_6m
+609,https://leetcode.com/problems/find-duplicate-file-in-system,Find Duplicate File in System,Medium,,65.4%,"Array, Hash Table, String",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,65.4%,"Array, Hash Table",more_than_6m
+1178,https://leetcode.com/problems/number-of-valid-words-for-each-puzzle,Number of Valid Words for Each Puzzle,Hard,,65.4%,"Array, Hash Table, String, Bit Manipulation, Trie",more_than_6m
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,65.4%,"Array, Matrix, Simulation",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,65.4%,"Array, Binary Search, Divide and Conquer",more_than_6m
+290,https://leetcode.com/problems/word-pattern,Word Pattern,Easy,,65.4%,"Hash Table, String",more_than_6m
+291,https://leetcode.com/problems/word-pattern-ii,Word Pattern II,Medium,,65.4%,"Hash Table, String, Backtracking",more_than_6m
+1845,https://leetcode.com/problems/seat-reservation-manager,Seat Reservation Manager,Medium,,65.4%,"Design, Heap (Priority Queue)",more_than_6m
+928,https://leetcode.com/problems/minimize-malware-spread-ii,Minimize Malware Spread II,Hard,,65.4%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,65.4%,"Array, Binary Search, Design, Queue, Data Stream",more_than_6m
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,65.4%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",more_than_6m
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,65.4%,"Hash Table, String, Backtracking",more_than_6m
+1001,https://leetcode.com/problems/grid-illumination,Grid Illumination,Hard,,65.4%,"Array, Hash Table",more_than_6m
+2296,https://leetcode.com/problems/design-a-text-editor,Design a Text Editor,Hard,,65.4%,"Linked List, String, Stack, Design, Simulation, Doubly-Linked List",more_than_6m
+1250,https://leetcode.com/problems/check-if-it-is-a-good-array,Check If It Is a Good Array,Hard,,65.4%,"Array, Math, Number Theory",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,65.4%,"Array, Sorting",more_than_6m
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",all
+1236,https://leetcode.com/problems/web-crawler,Web Crawler,Medium,,100.0%,"String, Depth-First Search, Breadth-First Search, Interactive",all
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Concurrency",all
+924,https://leetcode.com/problems/minimize-malware-spread,Minimize Malware Spread,Hard,,100.0%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,97.6%,"Array, Hash Table",all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,97.6%,"Array, Binary Search, Divide and Conquer",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,97.6%,"Hash Table, String, Backtracking",all
+1001,https://leetcode.com/problems/grid-illumination,Grid Illumination,Hard,,97.6%,"Array, Hash Table",all
+609,https://leetcode.com/problems/find-duplicate-file-in-system,Find Duplicate File in System,Medium,,97.6%,"Array, Hash Table, String",all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,97.6%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",all
+1178,https://leetcode.com/problems/number-of-valid-words-for-each-puzzle,Number of Valid Words for Each Puzzle,Hard,,97.6%,"Array, Hash Table, String, Bit Manipulation, Trie",all
+290,https://leetcode.com/problems/word-pattern,Word Pattern,Easy,,97.6%,"Hash Table, String",all
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,97.6%,"Array, Matrix, Simulation",all
+291,https://leetcode.com/problems/word-pattern-ii,Word Pattern II,Medium,,97.6%,"Hash Table, String, Backtracking",all
+2296,https://leetcode.com/problems/design-a-text-editor,Design a Text Editor,Hard,,97.6%,"Linked List, String, Stack, Design, Simulation, Doubly-Linked List",all
+1250,https://leetcode.com/problems/check-if-it-is-a-good-array,Check If It Is a Good Array,Hard,,97.6%,"Array, Math, Number Theory",all
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,97.6%,"Array, Binary Search, Design, Queue, Data Stream",all
+1845,https://leetcode.com/problems/seat-reservation-manager,Seat Reservation Manager,Medium,,97.6%,"Design, Heap (Priority Queue)",all
+928,https://leetcode.com/problems/minimize-malware-spread-ii,Minimize Malware Spread II,Hard,,97.6%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,80.1%,"Array, Math, String, Interactive, Game Theory",all
+135,https://leetcode.com/problems/candy,Candy,Hard,,67.2%,"Array, Greedy",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,57.0%,"Array, Sorting",all

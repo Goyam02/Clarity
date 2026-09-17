@@ -1,0 +1,6 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2434,https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string,Using a Robot to Print the Lexicographically Smallest String,Medium,,100.0%,"Hash Table, String, Stack, Greedy",more_than_6m
+934,https://leetcode.com/problems/shortest-bridge,Shortest Bridge,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+2434,https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string,Using a Robot to Print the Lexicographically Smallest String,Medium,,100.0%,"Hash Table, String, Stack, Greedy",all
+934,https://leetcode.com/problems/shortest-bridge,Shortest Bridge,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,100.0%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",all

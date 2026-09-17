@@ -1,0 +1,53 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2145,https://leetcode.com/problems/count-the-hidden-sequences,Count the Hidden Sequences,Medium,,100.0%,"Array, Prefix Sum",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,85.0%,"Array, Hash Table",more_than_6m
+626,https://leetcode.com/problems/exchange-seats,Exchange Seats,Medium,,77.3%,Database,more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,77.3%,"Hash Table, String, Sliding Window",more_than_6m
+2931,https://leetcode.com/problems/maximum-spending-after-buying-items,Maximum Spending After Buying Items,Hard,,66.5%,"Array, Greedy, Sorting, Heap (Priority Queue), Matrix",more_than_6m
+2147,https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor,Number of Ways to Divide a Long Corridor,Hard,,66.5%,"Math, String, Dynamic Programming",more_than_6m
+2608,https://leetcode.com/problems/shortest-cycle-in-a-graph,Shortest Cycle in a Graph,Hard,,66.5%,"Breadth-First Search, Graph Theory",more_than_6m
+2505,https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums,Bitwise OR of All Subsequence Sums,Medium,,66.5%,"Array, Math, Bit Manipulation, Brainteaser, Prefix Sum",more_than_6m
+2584,https://leetcode.com/problems/split-the-array-to-make-coprime-products,Split the Array to Make Coprime Products,Hard,,66.5%,"Array, Hash Table, Math, Number Theory",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,66.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,66.5%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,66.5%,"Array, Two Pointers, Sorting",more_than_6m
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,66.5%,"Hash Table, String",more_than_6m
+909,https://leetcode.com/problems/snakes-and-ladders,Snakes and Ladders,Medium,,66.5%,"Array, Breadth-First Search, Matrix",more_than_6m
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,66.5%,"Array, Two Pointers",more_than_6m
+540,https://leetcode.com/problems/single-element-in-a-sorted-array,Single Element in a Sorted Array,Medium,,66.5%,"Array, Binary Search",more_than_6m
+260,https://leetcode.com/problems/single-number-iii,Single Number III,Medium,,66.5%,"Array, Bit Manipulation",more_than_6m
+358,https://leetcode.com/problems/rearrange-string-k-distance-apart,Rearrange String k Distance Apart,Hard,,66.5%,"Hash Table, String, Greedy, Sorting, Heap (Priority Queue), Counting",more_than_6m
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,66.5%,"Array, Dynamic Programming, Matrix",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,66.5%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,66.5%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+218,https://leetcode.com/problems/the-skyline-problem,The Skyline Problem,Hard,,66.5%,"Array, Divide and Conquer, Binary Indexed Tree, Segment Tree, Sweep Line, Sorting, Heap (Priority Queue), Ordered Set",more_than_6m
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,66.5%,"Array, Backtracking",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,66.5%,"Array, Sorting",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,66.5%,"Array, Two Pointers, Greedy",more_than_6m
+2931,https://leetcode.com/problems/maximum-spending-after-buying-items,Maximum Spending After Buying Items,Hard,,100.0%,"Array, Greedy, Sorting, Heap (Priority Queue), Matrix",all
+2584,https://leetcode.com/problems/split-the-array-to-make-coprime-products,Split the Array to Make Coprime Products,Hard,,100.0%,"Array, Hash Table, Math, Number Theory",all
+2505,https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums,Bitwise OR of All Subsequence Sums,Medium,,100.0%,"Array, Math, Bit Manipulation, Brainteaser, Prefix Sum",all
+2608,https://leetcode.com/problems/shortest-cycle-in-a-graph,Shortest Cycle in a Graph,Hard,,100.0%,"Breadth-First Search, Graph Theory",all
+2147,https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor,Number of Ways to Divide a Long Corridor,Hard,,100.0%,"Math, String, Dynamic Programming",all
+2145,https://leetcode.com/problems/count-the-hidden-sequences,Count the Hidden Sequences,Medium,,90.9%,"Array, Prefix Sum",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,76.7%,"Array, Hash Table",all
+626,https://leetcode.com/problems/exchange-seats,Exchange Seats,Medium,,76.7%,Database,all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,69.3%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,69.3%,"Array, Divide and Conquer, Dynamic Programming",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,69.3%,"Hash Table, String, Sliding Window",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,59.1%,"Array, Two Pointers, Sorting",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,59.1%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+909,https://leetcode.com/problems/snakes-and-ladders,Snakes and Ladders,Medium,,59.1%,"Array, Breadth-First Search, Matrix",all
+260,https://leetcode.com/problems/single-number-iii,Single Number III,Medium,,59.1%,"Array, Bit Manipulation",all
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,59.1%,"Array, Dynamic Programming, Matrix",all
+540,https://leetcode.com/problems/single-element-in-a-sorted-array,Single Element in a Sorted Array,Medium,,59.1%,"Array, Binary Search",all
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,59.1%,"Hash Table, String",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,59.1%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+358,https://leetcode.com/problems/rearrange-string-k-distance-apart,Rearrange String k Distance Apart,Hard,,59.1%,"Hash Table, String, Greedy, Sorting, Heap (Priority Queue), Counting",all
+218,https://leetcode.com/problems/the-skyline-problem,The Skyline Problem,Hard,,59.1%,"Array, Divide and Conquer, Binary Indexed Tree, Segment Tree, Sweep Line, Sorting, Heap (Priority Queue), Ordered Set",all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,59.1%,"Array, Backtracking",all
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,59.1%,"Array, Two Pointers",all
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,59.1%,"Array, Backtracking",all
+240,https://leetcode.com/problems/search-a-2d-matrix-ii,Search a 2D Matrix II,Medium,,59.1%,"Array, Binary Search, Divide and Conquer, Matrix",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,59.1%,"Array, Sorting",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,59.1%,"Array, Two Pointers, Greedy",all

@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",6_months
+2005,https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree,Subtree Removal Game with Fibonacci Tree,Hard,,100.0%,"Math, Dynamic Programming, Tree, Binary Tree, Game Theory",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,100.0%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+1512,https://leetcode.com/problems/number-of-good-pairs,Number of Good Pairs,Easy,,100.0%,"Array, Hash Table, Math, Counting",more_than_6m
+2005,https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree,Subtree Removal Game with Fibonacci Tree,Hard,,100.0%,"Math, Dynamic Programming, Tree, Binary Tree, Game Theory",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,66.2%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+1512,https://leetcode.com/problems/number-of-good-pairs,Number of Good Pairs,Easy,,66.2%,"Array, Hash Table, Math, Counting",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,66.2%,"String, Stack",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,66.2%,"Array, Hash Table",all

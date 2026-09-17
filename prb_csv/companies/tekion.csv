@@ -1,0 +1,43 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1574,https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted,Shortest Subarray to be Removed to Make Array Sorted,Medium,,100.0%,"Array, Two Pointers, Binary Search, Stack, Monotonic Stack",6_months
+123,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii,Best Time to Buy and Sell Stock III,Hard,,100.0%,"Array, Dynamic Programming",more_than_6m
+947,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column,Most Stones Removed with Same Row or Column,Medium,,91.2%,"Hash Table, Depth-First Search, Union-Find, Graph Theory",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,91.2%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,91.2%,"Array, Hash Table",more_than_6m
+410,https://leetcode.com/problems/split-array-largest-sum,Split Array Largest Sum,Hard,,91.2%,"Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,91.2%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,91.2%,"Array, Breadth-First Search, Matrix",more_than_6m
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,91.2%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",more_than_6m
+2954,https://leetcode.com/problems/count-the-number-of-infection-sequences,Count the Number of Infection Sequences,Hard,,78.8%,"Array, Math, Combinatorics",more_than_6m
+1712,https://leetcode.com/problems/ways-to-split-array-into-three-subarrays,Ways to Split Array Into Three Subarrays,Medium,,78.8%,"Array, Two Pointers, Binary Search, Prefix Sum",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,78.8%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,78.8%,"Array, Binary Search",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,78.8%,"Hash Table, String, Breadth-First Search",more_than_6m
+1352,https://leetcode.com/problems/product-of-the-last-k-numbers,Product of the Last K Numbers,Medium,,78.8%,"Array, Math, Design, Data Stream, Prefix Sum",more_than_6m
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,78.8%,"String, Dynamic Programming, Stack, Greedy",more_than_6m
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,78.8%,"Array, Stack, Monotonic Stack",more_than_6m
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,78.8%,"Array, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+1366,https://leetcode.com/problems/rank-teams-by-votes,Rank Teams by Votes,Medium,,78.8%,"Array, Hash Table, String, Sorting, Counting",more_than_6m
+2954,https://leetcode.com/problems/count-the-number-of-infection-sequences,Count the Number of Infection Sequences,Hard,,100.0%,"Array, Math, Combinatorics",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,77.5%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+123,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii,Best Time to Buy and Sell Stock III,Hard,,77.5%,"Array, Dynamic Programming",all
+947,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column,Most Stones Removed with Same Row or Column,Medium,,70.5%,"Hash Table, Depth-First Search, Union-Find, Graph Theory",all
+410,https://leetcode.com/problems/split-array-largest-sum,Split Array Largest Sum,Hard,,70.5%,"Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,70.5%,"Array, Hash Table",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,70.5%,"Array, Divide and Conquer, Dynamic Programming",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,70.5%,"Array, Breadth-First Search, Matrix",all
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,70.5%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",all
+1712,https://leetcode.com/problems/ways-to-split-array-into-three-subarrays,Ways to Split Array Into Three Subarrays,Medium,,60.5%,"Array, Two Pointers, Binary Search, Prefix Sum",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,60.5%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,60.5%,"Array, Binary Search",all
+1352,https://leetcode.com/problems/product-of-the-last-k-numbers,Product of the Last K Numbers,Medium,,60.5%,"Array, Math, Design, Data Stream, Prefix Sum",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,60.5%,"Hash Table, String, Breadth-First Search",all
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,60.5%,"String, Dynamic Programming, Stack, Greedy",all
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,60.5%,"Array, Stack, Monotonic Stack",all
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,60.5%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+1366,https://leetcode.com/problems/rank-teams-by-votes,Rank Teams by Votes,Medium,,60.5%,"Array, Hash Table, String, Sorting, Counting",all
+967,https://leetcode.com/problems/numbers-with-same-consecutive-differences,Numbers With Same Consecutive Differences,Medium,,60.5%,"Backtracking, Breadth-First Search",all
+1574,https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted,Shortest Subarray to be Removed to Make Array Sorted,Medium,,60.5%,"Array, Two Pointers, Binary Search, Stack, Monotonic Stack",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,60.5%,"Hash Table, String, Sliding Window",all
+1004,https://leetcode.com/problems/max-consecutive-ones-iii,Max Consecutive Ones III,Medium,,60.5%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,60.5%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all

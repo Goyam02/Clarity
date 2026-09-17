@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3330,https://leetcode.com/problems/find-the-original-typed-string-i,Find the Original Typed String I,Easy,,100.0%,String,more_than_6m
+3375,https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k,Minimum Operations to Make Array Values Equal to K,Easy,,100.0%,"Array, Hash Table",more_than_6m
+1994,https://leetcode.com/problems/the-number-of-good-subsets,The Number of Good Subsets,Hard,,66.3%,"Array, Math, Dynamic Programming, Bit Manipulation, Bitmask",more_than_6m
+2157,https://leetcode.com/problems/groups-of-strings,Groups of Strings,Hard,,66.3%,"String, Bit Manipulation, Union Find",more_than_6m
+1994,https://leetcode.com/problems/the-number-of-good-subsets,The Number of Good Subsets,Hard,,100.0%,"Array, Math, Dynamic Programming, Bit Manipulation, Bitmask",all
+2157,https://leetcode.com/problems/groups-of-strings,Groups of Strings,Hard,,100.0%,"String, Bit Manipulation, Union Find",all
+3330,https://leetcode.com/problems/find-the-original-typed-string-i,Find the Original Typed String I,Easy,,100.0%,String,all
+3375,https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k,Minimum Operations to Make Array Values Equal to K,Easy,,100.0%,"Array, Hash Table",all

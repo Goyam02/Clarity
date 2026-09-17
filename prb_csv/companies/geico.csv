@@ -1,0 +1,39 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1386,https://leetcode.com/problems/cinema-seat-allocation,Cinema Seat Allocation,Medium,,100.0%,"Array, Hash Table, Greedy, Bit Manipulation",3_months
+1386,https://leetcode.com/problems/cinema-seat-allocation,Cinema Seat Allocation,Medium,,100.0%,"Array, Hash Table, Greedy, Bit Manipulation",6_months
+2086,https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters,Minimum Number of Food Buckets to Feed the Hamsters,Medium,,83.7%,"String, Dynamic Programming, Greedy",6_months
+3119,https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed,Maximum Number of Potholes That Can Be Fixed,Medium,,100.0%,"String, Greedy, Sorting",more_than_6m
+2384,https://leetcode.com/problems/largest-palindromic-number,Largest Palindromic Number,Medium,,98.0%,"Hash Table, String, Greedy, Counting",more_than_6m
+1404,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one,Number of Steps to Reduce a Number in Binary Representation to One,Medium,,84.3%,"String, Bit Manipulation, Simulation",more_than_6m
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,80.1%,"Array, Dynamic Programming, Breadth-First Search",more_than_6m
+309,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown,Best Time to Buy and Sell Stock with Cooldown,Medium,,80.1%,"Array, Dynamic Programming",more_than_6m
+2061,https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned,Number of Spaces Cleaning Robot Cleaned,Medium,,75.1%,"Array, Matrix, Simulation",more_than_6m
+1386,https://leetcode.com/problems/cinema-seat-allocation,Cinema Seat Allocation,Medium,,75.1%,"Array, Hash Table, Greedy, Bit Manipulation",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,68.6%,"Array, Hash Table",more_than_6m
+2086,https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters,Minimum Number of Food Buckets to Feed the Hamsters,Medium,,68.6%,"String, Dynamic Programming, Greedy",more_than_6m
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,59.4%,"Array, Hash Table, Matrix",more_than_6m
+1405,https://leetcode.com/problems/longest-happy-string,Longest Happy String,Medium,,59.4%,"String, Greedy, Heap (Priority Queue)",more_than_6m
+122,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii,Best Time to Buy and Sell Stock II,Medium,,59.4%,"Array, Dynamic Programming, Greedy",more_than_6m
+2850,https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid,Minimum Moves to Spread Stones Over Grid,Medium,,59.4%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Matrix, Bitmask",more_than_6m
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,59.4%,"String, Stack",more_than_6m
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,59.4%,"Hash Table, Math, String",more_than_6m
+1102,https://leetcode.com/problems/path-with-maximum-minimum-value,Path With Maximum Minimum Value,Medium,,59.4%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,59.4%,"Array, Sorting",more_than_6m
+2384,https://leetcode.com/problems/largest-palindromic-number,Largest Palindromic Number,Medium,,100.0%,"Hash Table, String, Greedy, Counting",all
+3119,https://leetcode.com/problems/maximum-number-of-potholes-that-can-be-fixed,Maximum Number of Potholes That Can Be Fixed,Medium,,100.0%,"String, Greedy, Sorting",all
+1386,https://leetcode.com/problems/cinema-seat-allocation,Cinema Seat Allocation,Medium,,90.7%,"Array, Hash Table, Greedy, Bit Manipulation",all
+1404,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one,Number of Steps to Reduce a Number in Binary Representation to One,Medium,,87.6%,"String, Bit Manipulation, Simulation",all
+2061,https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned,Number of Spaces Cleaning Robot Cleaned,Medium,,79.8%,"Array, Matrix, Simulation",all
+2086,https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters,Minimum Number of Food Buckets to Feed the Hamsters,Medium,,79.8%,"String, Dynamic Programming, Greedy",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,79.8%,"Array, Dynamic Programming, Breadth-First Search",all
+309,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown,Best Time to Buy and Sell Stock with Cooldown,Medium,,79.8%,"Array, Dynamic Programming",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,68.1%,"Array, Hash Table",all
+1102,https://leetcode.com/problems/path-with-maximum-minimum-value,Path With Maximum Minimum Value,Medium,,68.1%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,68.1%,"Array, Sorting",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,58.8%,"Array, Hash Table, Matrix",all
+1405,https://leetcode.com/problems/longest-happy-string,Longest Happy String,Medium,,58.8%,"String, Greedy, Heap (Priority Queue)",all
+2850,https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid,Minimum Moves to Spread Stones Over Grid,Medium,,58.8%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Matrix, Bitmask",all
+122,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii,Best Time to Buy and Sell Stock II,Medium,,58.8%,"Array, Dynamic Programming, Greedy",all
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,58.8%,"String, Stack",all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,58.8%,"Hash Table, Math, String",all
+1910,https://leetcode.com/problems/remove-all-occurrences-of-a-substring,Remove All Occurrences of a Substring,Medium,,58.8%,"String, Stack, Simulation",all

@@ -1,0 +1,49 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2696,https://leetcode.com/problems/minimum-string-length-after-removing-substrings,Minimum String Length After Removing Substrings,Easy,,100.0%,"String, Stack, Simulation",6_months
+696,https://leetcode.com/problems/count-binary-substrings,Count Binary Substrings,Easy,,89.6%,"Two Pointers, String",6_months
+1307,https://leetcode.com/problems/verbal-arithmetic-puzzle,Verbal Arithmetic Puzzle,Hard,,100.0%,"Array, Math, String, Backtracking",more_than_6m
+2904,https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string,Shortest and Lexicographically Smallest Beautiful String,Medium,,81.3%,"String, Sliding Window",more_than_6m
+796,https://leetcode.com/problems/rotate-string,Rotate String,Easy,,81.3%,"String, String Matching",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,81.3%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,81.3%,"String, Stack",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,81.3%,"Array, Sorting",more_than_6m
+2892,https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product,Minimizing Array After Replacing Pairs With Their Product,Medium,,70.4%,"Array, Dynamic Programming, Greedy",more_than_6m
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,70.4%,"Array, Prefix Sum",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,70.4%,"Array, Matrix, Simulation",more_than_6m
+1768,https://leetcode.com/problems/merge-strings-alternately,Merge Strings Alternately,Easy,,70.4%,"Two Pointers, String",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,70.4%,"Array, String, Trie",more_than_6m
+703,https://leetcode.com/problems/kth-largest-element-in-a-stream,Kth Largest Element in a Stream,Easy,,70.4%,"Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream",more_than_6m
+1953,https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work,Maximum Number of Weeks for Which You Can Work,Medium,,70.4%,"Array, Greedy",more_than_6m
+2696,https://leetcode.com/problems/minimum-string-length-after-removing-substrings,Minimum String Length After Removing Substrings,Easy,,70.4%,"String, Stack, Simulation",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,70.4%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+2062,https://leetcode.com/problems/count-vowel-substrings-of-a-string,Count Vowel Substrings of a String,Easy,,70.4%,"Hash Table, String",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,70.4%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+160,https://leetcode.com/problems/intersection-of-two-linked-lists,Intersection of Two Linked Lists,Easy,,70.4%,"Hash Table, Linked List, Two Pointers",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,70.4%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,70.4%,"Two Pointers, String, Stack, Simulation",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,70.4%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+2008,https://leetcode.com/problems/maximum-earnings-from-taxi,Maximum Earnings From Taxi,Medium,,70.4%,"Array, Hash Table, Binary Search, Dynamic Programming, Sorting",more_than_6m
+2904,https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string,Shortest and Lexicographically Smallest Beautiful String,Medium,,100.0%,"String, Sliding Window",all
+1307,https://leetcode.com/problems/verbal-arithmetic-puzzle,Verbal Arithmetic Puzzle,Hard,,85.6%,"Array, Math, String, Backtracking",all
+2696,https://leetcode.com/problems/minimum-string-length-after-removing-substrings,Minimum String Length After Removing Substrings,Easy,,81.3%,"String, Stack, Simulation",all
+796,https://leetcode.com/problems/rotate-string,Rotate String,Easy,,76.0%,"String, String Matching",all
+1768,https://leetcode.com/problems/merge-strings-alternately,Merge Strings Alternately,Easy,,69.1%,"Two Pointers, String",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,69.1%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,69.1%,"String, Stack",all
+696,https://leetcode.com/problems/count-binary-substrings,Count Binary Substrings,Easy,,69.1%,"Two Pointers, String",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,69.1%,"Array, Sorting",all
+2892,https://leetcode.com/problems/minimizing-array-after-replacing-pairs-with-their-product,Minimizing Array After Replacing Pairs With Their Product,Medium,,59.5%,"Array, Dynamic Programming, Greedy",all
+1953,https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work,Maximum Number of Weeks for Which You Can Work,Medium,,59.5%,"Array, Greedy",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,59.5%,"Array, Prefix Sum",all
+703,https://leetcode.com/problems/kth-largest-element-in-a-stream,Kth Largest Element in a Stream,Easy,,59.5%,"Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,59.5%,"Array, Matrix, Simulation",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,59.5%,"Array, String, Trie",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,59.5%,"Array, Divide and Conquer, Dynamic Programming",all
+2062,https://leetcode.com/problems/count-vowel-substrings-of-a-string,Count Vowel Substrings of a String,Easy,,59.5%,"Hash Table, String",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,59.5%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,59.5%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,59.5%,"Two Pointers, String, Stack, Simulation",all
+160,https://leetcode.com/problems/intersection-of-two-linked-lists,Intersection of Two Linked Lists,Easy,,59.5%,"Hash Table, Linked List, Two Pointers",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,59.5%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+2008,https://leetcode.com/problems/maximum-earnings-from-taxi,Maximum Earnings From Taxi,Medium,,59.5%,"Array, Hash Table, Binary Search, Dynamic Programming, Sorting",all
+93,https://leetcode.com/problems/restore-ip-addresses,Restore IP Addresses,Medium,,59.5%,"String, Backtracking",all

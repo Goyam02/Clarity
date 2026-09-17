@@ -1,0 +1,12 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",6_months
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,100.0%,"Array, Hash Table, Design, Matrix, Simulation",more_than_6m
+1041,https://leetcode.com/problems/robot-bounded-in-circle,Robot Bounded In Circle,Medium,,89.5%,"Math, String, Simulation",more_than_6m
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,89.5%,"Two Pointers, String, Stack, Simulation",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,89.5%,"Array, Hash Table",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,100.0%,"Array, Hash Table, Design, Matrix, Simulation",all
+1041,https://leetcode.com/problems/robot-bounded-in-circle,Robot Bounded In Circle,Medium,,100.0%,"Math, String, Simulation",all
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,88.9%,"Two Pointers, String, Stack, Simulation",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,88.9%,"Array, Hash Table",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,88.9%,"Hash Table, Linked List, Design, Doubly-Linked List",all

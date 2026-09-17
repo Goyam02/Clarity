@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,100.0%,"Array, Hash Table, Design, Matrix, Simulation",30_days
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,100.0%,"Array, Hash Table, Design, Matrix, Simulation",3_months
+3649,https://leetcode.com/problems/number-of-perfect-pairs,Number of Perfect Pairs,Medium,,100.0%,"Array, Math, Two Pointers, Sorting",6_months
+2451,https://leetcode.com/problems/odd-string-difference,Odd String Difference,Easy,,90.4%,"Array, Hash Table, String",6_months
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,90.4%,"Array, Hash Table, Design, Matrix, Simulation",6_months
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,100.0%,"Array, Dynamic Programming, Matrix",more_than_6m
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,75.6%,"Array, Hash Table, Design, Matrix, Simulation",more_than_6m
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,67.4%,"Array, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,100.0%,"Array, Dynamic Programming, Matrix",all
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,85.5%,"Array, Hash Table, Design, Matrix, Simulation",all
+3649,https://leetcode.com/problems/number-of-perfect-pairs,Number of Perfect Pairs,Medium,,80.8%,"Array, Math, Two Pointers, Sorting",all
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,66.3%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+2451,https://leetcode.com/problems/odd-string-difference,Odd String Difference,Easy,,66.3%,"Array, Hash Table, String",all

@@ -1,0 +1,54 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,100.0%,,all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,100.0%,,all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,,all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,,all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,,all
+43,https://leetcode.com/problems/multiply-strings,Multiply Strings,Medium,,100.0%,,all
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,100.0%,,all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,,all
+60,https://leetcode.com/problems/permutation-sequence,Permutation Sequence,Hard,,100.0%,,all
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,100.0%,,all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,100.0%,,all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,,all
+2073,https://leetcode.com/problems/time-needed-to-buy-tickets,Time Needed to Buy Tickets,Easy,,100.0%,,all
+149,https://leetcode.com/problems/max-points-on-a-line,Max Points on a Line,Hard,,100.0%,,all
+161,https://leetcode.com/problems/one-edit-distance,One Edit Distance,Medium,,100.0%,,all
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,100.0%,,all
+206,https://leetcode.com/problems/reverse-linked-list,Reverse Linked List,Easy,,100.0%,,all
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,100.0%,,all
+218,https://leetcode.com/problems/the-skyline-problem,The Skyline Problem,Hard,,100.0%,,all
+235,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree,Lowest Common Ancestor of a Binary Search Tree,Medium,,100.0%,,all
+251,https://leetcode.com/problems/flatten-2d-vector,Flatten 2D Vector,Medium,,100.0%,,all
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,100.0%,,all
+296,https://leetcode.com/problems/best-meeting-point,Best Meeting Point,Hard,,100.0%,,all
+1206,https://leetcode.com/problems/design-skiplist,Design Skiplist,Hard,,100.0%,,all
+323,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph,Number of Connected Components in an Undirected Graph,Medium,,100.0%,,all
+341,https://leetcode.com/problems/flatten-nested-list-iterator,Flatten Nested List Iterator,Medium,,100.0%,,all
+355,https://leetcode.com/problems/design-twitter,Design Twitter,Medium,,100.0%,,all
+378,https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix,Kth Smallest Element in a Sorted Matrix,Medium,,100.0%,,all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,,all
+407,https://leetcode.com/problems/trapping-rain-water-ii,Trapping Rain Water II,Hard,,100.0%,,all
+433,https://leetcode.com/problems/minimum-genetic-mutation,Minimum Genetic Mutation,Medium,,100.0%,,all
+1347,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram,Minimum Number of Steps to Make Two Strings Anagram,Medium,,100.0%,,all
+1348,https://leetcode.com/problems/tweet-counts-per-frequency,Tweet Counts Per Frequency,Medium,,100.0%,,all
+468,https://leetcode.com/problems/validate-ip-address,Validate IP Address,Medium,,100.0%,,all
+580,https://leetcode.com/problems/count-student-number-in-departments,Count Student Number in Departments,Medium,,100.0%,,all
+1459,https://leetcode.com/problems/rectangles-area,Rectangles Area,Medium,,100.0%,,all
+585,https://leetcode.com/problems/investments-in-2016,Investments in 2016,Medium,,100.0%,,all
+586,https://leetcode.com/problems/customer-placing-the-largest-number-of-orders,Customer Placing the Largest Number of Orders,Easy,,100.0%,,all
+608,https://leetcode.com/problems/tree-node,Tree Node,Medium,,100.0%,,all
+1683,https://leetcode.com/problems/invalid-tweets,Invalid Tweets,Easy,,100.0%,,all
+2768,https://leetcode.com/problems/number-of-black-blocks,Number of Black Blocks,Medium,,100.0%,,all
+831,https://leetcode.com/problems/masking-personal-information,Masking Personal Information,Medium,,100.0%,,all
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,,all
+1785,https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum,Minimum Elements to Add to Form a Given Sum,Medium,,100.0%,,all
+868,https://leetcode.com/problems/binary-gap,Binary Gap,Easy,,100.0%,,all
+1817,https://leetcode.com/problems/finding-the-users-active-minutes,Finding the Users Active Minutes,Medium,,100.0%,,all
+1882,https://leetcode.com/problems/process-tasks-using-servers,Process Tasks Using Servers,Medium,,100.0%,,all
+1910,https://leetcode.com/problems/remove-all-occurrences-of-a-substring,Remove All Occurrences of a Substring,Medium,,100.0%,,all
+1905,https://leetcode.com/problems/count-sub-islands,Count Sub Islands,Medium,,100.0%,,all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,50.0%,,all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,50.0%,,all
+764,https://leetcode.com/problems/largest-plus-sign,Largest Plus Sign,Medium,,62.5%,,all
+1167,https://leetcode.com/problems/minimum-cost-to-connect-sticks,Minimum Cost to Connect Sticks,Medium,,50.0%,,all

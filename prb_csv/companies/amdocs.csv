@@ -1,0 +1,8 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3391,https://leetcode.com/problems/design-a-3d-binary-matrix-with-efficient-layer-tracking,Design a 3D Binary Matrix with Efficient Layer Tracking,Medium,,100.0%,"Array, Hash Table, Design, Heap (Priority Queue), Matrix, Ordered Set",more_than_6m
+2950,https://leetcode.com/problems/number-of-divisible-substrings,Number of Divisible Substrings,Medium,,65.7%,"Hash Table, String, Counting, Prefix Sum",more_than_6m
+2950,https://leetcode.com/problems/number-of-divisible-substrings,Number of Divisible Substrings,Medium,,100.0%,"Hash Table, String, Counting, Prefix Sum",all
+3391,https://leetcode.com/problems/design-a-3d-binary-matrix-with-efficient-layer-tracking,Design a 3D Binary Matrix with Efficient Layer Tracking,Medium,,100.0%,"Array, Hash Table, Design, Heap (Priority Queue), Matrix, Ordered Set",all
+,https://leetcode.com/problems/construct-uniform-parity-array-i,Construct Uniform Parity Array I,Easy,,97.6%,"Array, Math",all
+,https://leetcode.com/problems/construct-uniform-parity-array-ii,Construct Uniform Parity Array II,Medium,,95.0%,"Array, Math",all
+136,https://leetcode.com/problems/single-number,Single Number,Easy,,63.7%,"Array, Bit Manipulation",all

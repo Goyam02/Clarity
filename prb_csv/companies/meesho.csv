@@ -1,0 +1,31 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3513,https://leetcode.com/problems/number-of-unique-xor-triplets-i,Number of Unique XOR Triplets I,Medium,,100.0%,"Array, Math, Bit Manipulation",3_months
+3514,https://leetcode.com/problems/number-of-unique-xor-triplets-ii,Number of Unique XOR Triplets II,Medium,,100.0%,"Array, Math, Bit Manipulation, Enumeration",3_months
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,66.3%,"Array, Two Pointers",3_months
+3513,https://leetcode.com/problems/number-of-unique-xor-triplets-i,Number of Unique XOR Triplets I,Medium,,100.0%,"Array, Math, Bit Manipulation",6_months
+3514,https://leetcode.com/problems/number-of-unique-xor-triplets-ii,Number of Unique XOR Triplets II,Medium,,100.0%,"Array, Math, Bit Manipulation, Enumeration",6_months
+1639,https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary,Number of Ways to Form a Target String Given a Dictionary,Hard,,73.9%,"Array, String, Dynamic Programming",6_months
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,73.9%,"Array, Two Pointers",6_months
+2444,https://leetcode.com/problems/count-subarrays-with-fixed-bounds,Count Subarrays With Fixed Bounds,Hard,,65.1%,"Array, Queue, Sliding Window, Monotonic Queue",6_months
+2858,https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable,Minimum Edge Reversals So Every Node Is Reachable,Hard,,100.0%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph",more_than_6m
+2930,https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring,Number of Strings Which Can Be Rearranged to Contain Substring,Medium,,78.0%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,78.0%,"Array, Depth-First Search, Breadth-First Search, Union Find, Matrix",more_than_6m
+740,https://leetcode.com/problems/delete-and-earn,Delete and Earn,Medium,,78.0%,"Array, Hash Table, Dynamic Programming",more_than_6m
+2742,https://leetcode.com/problems/painting-the-walls,Painting the Walls,Hard,,78.0%,"Array, Dynamic Programming",more_than_6m
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,71.1%,"Array, Dynamic Programming, Greedy",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,71.1%,"Array, Hash Table",more_than_6m
+2565,https://leetcode.com/problems/subsequence-with-the-minimum-score,Subsequence With the Minimum Score,Hard,,71.1%,"Two Pointers, String, Binary Search",more_than_6m
+355,https://leetcode.com/problems/design-twitter,Design Twitter,Medium,,71.1%,"Hash Table, Linked List, Design, Heap (Priority Queue)",more_than_6m
+180,https://leetcode.com/problems/consecutive-numbers,Consecutive Numbers,Medium,,61.3%,Database,more_than_6m
+2444,https://leetcode.com/problems/count-subarrays-with-fixed-bounds,Count Subarrays With Fixed Bounds,Hard,,61.3%,"Array, Queue, Sliding Window, Monotonic Queue",more_than_6m
+526,https://leetcode.com/problems/beautiful-arrangement,Beautiful Arrangement,Medium,,61.3%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",more_than_6m
+2187,https://leetcode.com/problems/minimum-time-to-complete-trips,Minimum Time to Complete Trips,Medium,,61.3%,"Array, Binary Search",more_than_6m
+1094,https://leetcode.com/problems/car-pooling,Car Pooling,Medium,,61.3%,"Array, Sorting, Heap (Priority Queue), Simulation, Prefix Sum",more_than_6m
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,61.3%,"Array, Dynamic Programming, Greedy",more_than_6m
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,61.3%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",more_than_6m
+2831,https://leetcode.com/problems/find-the-longest-equal-subarray,Find the Longest Equal Subarray,Medium,,61.3%,"Array, Hash Table, Binary Search, Sliding Window",more_than_6m
+2771,https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays,Longest Non-decreasing Subarray From Two Arrays,Medium,,61.3%,"Array, Dynamic Programming",more_than_6m
+2953,https://leetcode.com/problems/count-complete-substrings,Count Complete Substrings,Hard,,61.3%,"Hash Table, String, Sliding Window",more_than_6m
+2959,https://leetcode.com/problems/number-of-possible-sets-of-closing-branches,Number of Possible Sets of Closing Branches,Hard,,61.3%,"Bit Manipulation, Graph, Heap (Priority Queue), Enumeration, Shortest Path",more_than_6m
+1761,https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph,Minimum Degree of a Connected Trio in a Graph,Hard,,61.3%,Graph,more_than_6m
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,61.3%,Database,more_than_6m

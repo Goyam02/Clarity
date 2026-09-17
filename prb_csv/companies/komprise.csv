@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2073,https://leetcode.com/problems/time-needed-to-buy-tickets,Time Needed to Buy Tickets,Easy,,100.0%,"Array, Queue, Simulation",more_than_6m
+135,https://leetcode.com/problems/candy,Candy,Hard,,100.0%,"Array, Greedy",more_than_6m
+2073,https://leetcode.com/problems/time-needed-to-buy-tickets,Time Needed to Buy Tickets,Easy,,100.0%,"Array, Queue, Simulation",all
+135,https://leetcode.com/problems/candy,Candy,Hard,,100.0%,"Array, Greedy",all

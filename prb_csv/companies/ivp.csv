@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3376,https://leetcode.com/problems/minimum-time-to-break-locks-i,Minimum Time to Break Locks I,Medium,,100.0%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Depth-First Search, Bitmask",more_than_6m
+3385,https://leetcode.com/problems/minimum-time-to-break-locks-ii,Minimum Time to Break Locks II,Hard,,100.0%,"Array, Depth-First Search, Graph",more_than_6m
+3376,https://leetcode.com/problems/minimum-time-to-break-locks-i,Minimum Time to Break Locks I,Medium,,100.0%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Depth-First Search, Bitmask",all
+3385,https://leetcode.com/problems/minimum-time-to-break-locks-ii,Minimum Time to Break Locks II,Hard,,100.0%,"Array, Depth-First Search, Graph",all

@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2731,https://leetcode.com/problems/movement-of-robots,Movement of Robots,Medium,,100.0%,"Array, Brainteaser, Sorting, Prefix Sum",3_months
+2731,https://leetcode.com/problems/movement-of-robots,Movement of Robots,Medium,,100.0%,"Array, Brainteaser, Sorting, Prefix Sum",6_months
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,100.0%,"Array, Binary Search",more_than_6m
+1642,https://leetcode.com/problems/furthest-building-you-can-reach,Furthest Building You Can Reach,Medium,,100.0%,"Array, Greedy, Heap (Priority Queue)",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,88.3%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,88.3%,"Array, Two Pointers, Sorting",more_than_6m
+138,https://leetcode.com/problems/copy-list-with-random-pointer,Copy List with Random Pointer,Medium,,88.3%,"Hash Table, Linked List",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,88.3%,"Array, String, Trie",more_than_6m
+337,https://leetcode.com/problems/house-robber-iii,House Robber III,Medium,,88.3%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,100.0%,"Array, Binary Search",all
+1642,https://leetcode.com/problems/furthest-building-you-can-reach,Furthest Building You Can Reach,Medium,,100.0%,"Array, Greedy, Heap (Priority Queue)",all
+138,https://leetcode.com/problems/copy-list-with-random-pointer,Copy List with Random Pointer,Medium,,88.2%,"Hash Table, Linked List",all
+337,https://leetcode.com/problems/house-robber-iii,House Robber III,Medium,,88.2%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,88.2%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,88.2%,"Array, Two Pointers, Sorting",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,88.2%,"Array, String, Trie",all
+2731,https://leetcode.com/problems/movement-of-robots,Movement of Robots,Medium,,88.2%,"Array, Brainteaser, Sorting, Prefix Sum",all

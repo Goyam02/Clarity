@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+463,https://leetcode.com/problems/island-perimeter,Island Perimeter,Easy,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",more_than_6m
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,100.0%,"Two Pointers, String",more_than_6m
+138,https://leetcode.com/problems/copy-list-with-random-pointer,Copy List with Random Pointer,Medium,,100.0%,"Hash Table, Linked List",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,100.0%,"Linked List, Recursion",more_than_6m
+463,https://leetcode.com/problems/island-perimeter,Island Perimeter,Easy,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,100.0%,"Two Pointers, String",all
+138,https://leetcode.com/problems/copy-list-with-random-pointer,Copy List with Random Pointer,Medium,,100.0%,"Hash Table, Linked List",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,100.0%,"Linked List, Recursion",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+841,https://leetcode.com/problems/keys-and-rooms,Keys and Rooms,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory",all
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,100.0%,String,all

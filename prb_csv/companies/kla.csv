@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3584,https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence,Maximum Product of First and Last Elements of a Subsequence,Medium,,100.0%,"Array, Two Pointers",30_days
+3584,https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence,Maximum Product of First and Last Elements of a Subsequence,Medium,,100.0%,"Array, Two Pointers",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,73.8%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,73.8%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",6_months
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,100.0%,"Hash Table, Math, String",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,100.0%,Math,more_than_6m
+670,https://leetcode.com/problems/maximum-swap,Maximum Swap,Medium,,100.0%,"Math, Greedy",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",more_than_6m
+3584,https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence,Maximum Product of First and Last Elements of a Subsequence,Medium,,100.0%,"Array, Two Pointers",all
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,80.3%,Math,all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,80.3%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,70.9%,"Hash Table, Math, String",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,70.9%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+670,https://leetcode.com/problems/maximum-swap,Maximum Swap,Medium,,70.9%,"Math, Greedy",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,70.9%,"Array, Hash Table",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,70.9%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all

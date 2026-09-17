@@ -1,0 +1,40 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",6_months
+1354,https://leetcode.com/problems/construct-target-array-with-multiple-sums,Construct Target Array With Multiple Sums,Hard,,100.0%,"Array, Heap (Priority Queue)",more_than_6m
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,100.0%,"Array, Hash Table, Prefix Sum",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,92.1%,"Array, String, Trie",more_than_6m
+1876,https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters,Substrings of Size Three with Distinct Characters,Easy,,81.0%,"Hash Table, String, Sliding Window, Counting",more_than_6m
+1256,https://leetcode.com/problems/encode-number,Encode Number,Medium,,81.0%,"Math, String, Bit Manipulation",more_than_6m
+1329,https://leetcode.com/problems/sort-the-matrix-diagonally,Sort the Matrix Diagonally,Medium,,81.0%,"Array, Sorting, Matrix",more_than_6m
+1878,https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid,Get Biggest Three Rhombus Sums in a Grid,Medium,,81.0%,"Array, Math, Sorting, Heap (Priority Queue), Matrix, Prefix Sum",more_than_6m
+1865,https://leetcode.com/problems/finding-pairs-with-a-certain-sum,Finding Pairs With a Certain Sum,Medium,,81.0%,"Array, Hash Table, Design",more_than_6m
+717,https://leetcode.com/problems/1-bit-and-2-bit-characters,1-bit and 2-bit Characters,Easy,,81.0%,Array,more_than_6m
+2080,https://leetcode.com/problems/range-frequency-queries,Range Frequency Queries,Medium,,81.0%,"Array, Hash Table, Binary Search, Design, Segment Tree",more_than_6m
+1295,https://leetcode.com/problems/find-numbers-with-even-number-of-digits,Find Numbers with Even Number of Digits,Easy,,81.0%,"Array, Math",more_than_6m
+1935,https://leetcode.com/problems/maximum-number-of-words-you-can-type,Maximum Number of Words You Can Type,Easy,,81.0%,"Hash Table, String",more_than_6m
+855,https://leetcode.com/problems/exam-room,Exam Room,Medium,,81.0%,"Design, Heap (Priority Queue), Ordered Set",more_than_6m
+2269,https://leetcode.com/problems/find-the-k-beauty-of-a-number,Find the K-Beauty of a Number,Easy,,81.0%,"Math, String, Sliding Window",more_than_6m
+1281,https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer,Subtract the Product and Sum of Digits of an Integer,Easy,,81.0%,Math,more_than_6m
+923,https://leetcode.com/problems/3sum-with-multiplicity,3Sum With Multiplicity,Medium,,81.0%,"Array, Hash Table, Two Pointers, Sorting, Counting",more_than_6m
+297,https://leetcode.com/problems/serialize-and-deserialize-binary-tree,Serialize and Deserialize Binary Tree,Hard,,81.0%,"String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree",more_than_6m
+1354,https://leetcode.com/problems/construct-target-array-with-multiple-sums,Construct Target Array With Multiple Sums,Hard,,100.0%,"Array, Heap (Priority Queue)",all
+2080,https://leetcode.com/problems/range-frequency-queries,Range Frequency Queries,Medium,,97.9%,"Array, Hash Table, Binary Search, Design, Segment Tree",all
+1256,https://leetcode.com/problems/encode-number,Encode Number,Medium,,95.6%,"Math, String, Bit Manipulation",all
+717,https://leetcode.com/problems/1-bit-and-2-bit-characters,1-bit and 2-bit Characters,Easy,,95.6%,Array,all
+1329,https://leetcode.com/problems/sort-the-matrix-diagonally,Sort the Matrix Diagonally,Medium,,95.6%,"Array, Sorting, Matrix",all
+1935,https://leetcode.com/problems/maximum-number-of-words-you-can-type,Maximum Number of Words You Can Type,Easy,,95.6%,"Hash Table, String",all
+855,https://leetcode.com/problems/exam-room,Exam Room,Medium,,95.6%,"Design, Heap (Priority Queue), Ordered Set",all
+1281,https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer,Subtract the Product and Sum of Digits of an Integer,Easy,,95.6%,Math,all
+1295,https://leetcode.com/problems/find-numbers-with-even-number-of-digits,Find Numbers with Even Number of Digits,Easy,,95.6%,"Array, Math",all
+2269,https://leetcode.com/problems/find-the-k-beauty-of-a-number,Find the K-Beauty of a Number,Easy,,95.6%,"Math, String, Sliding Window",all
+923,https://leetcode.com/problems/3sum-with-multiplicity,3Sum With Multiplicity,Medium,,95.6%,"Array, Hash Table, Two Pointers, Sorting, Counting",all
+1876,https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters,Substrings of Size Three with Distinct Characters,Easy,,95.6%,"Hash Table, String, Sliding Window, Counting",all
+1878,https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid,Get Biggest Three Rhombus Sums in a Grid,Medium,,95.6%,"Array, Math, Sorting, Heap (Priority Queue), Matrix, Prefix Sum",all
+1865,https://leetcode.com/problems/finding-pairs-with-a-certain-sum,Finding Pairs With a Certain Sum,Medium,,95.6%,"Array, Hash Table, Design",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,87.1%,"Array, Hash Table, Math, Design, Randomized",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,79.0%,"Array, String, Simulation",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,73.7%,"Array, Hash Table, Prefix Sum",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,66.8%,"Array, String, Trie",all
+297,https://leetcode.com/problems/serialize-and-deserialize-binary-tree,Serialize and Deserialize Binary Tree,Hard,,66.8%,"String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree",all

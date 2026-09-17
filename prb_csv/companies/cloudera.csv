@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",more_than_6m
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,88.8%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path",more_than_6m
+476,https://leetcode.com/problems/number-complement,Number Complement,Easy,,88.8%,Bit Manipulation,more_than_6m
+1009,https://leetcode.com/problems/complement-of-base-10-integer,Complement of Base 10 Integer,Easy,,88.8%,Bit Manipulation,more_than_6m
+1061,https://leetcode.com/problems/lexicographically-smallest-equivalent-string,Lexicographically Smallest Equivalent String,Medium,,88.8%,"String, Union Find",more_than_6m
+1009,https://leetcode.com/problems/complement-of-base-10-integer,Complement of Base 10 Integer,Easy,,100.0%,Bit Manipulation,all
+476,https://leetcode.com/problems/number-complement,Number Complement,Easy,,100.0%,Bit Manipulation,all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,73.9%,"Array, Dynamic Programming",all
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,65.2%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph, Heap (Priority Queue), Shortest Path",all
+1061,https://leetcode.com/problems/lexicographically-smallest-equivalent-string,Lexicographically Smallest Equivalent String,Medium,,65.2%,"String, Union Find",all

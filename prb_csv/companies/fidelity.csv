@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3033,https://leetcode.com/problems/modify-the-matrix,Modify the Matrix,Easy,,100.0%,"Array, Matrix",more_than_6m
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,100.0%,"Two Pointers, String",more_than_6m
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,100.0%,"Hash Table, String, Queue, Counting",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,100.0%,"Array, String, Trie",more_than_6m
+3033,https://leetcode.com/problems/modify-the-matrix,Modify the Matrix,Easy,,100.0%,"Array, Matrix",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,63.9%,"Two Pointers, String",all
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,63.9%,"Hash Table, String, Queue, Counting",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,63.9%,"Array, String, Trie",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,63.9%,"Hash Table, String, Sorting",all

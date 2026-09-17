@@ -1,0 +1,8 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2747,https://leetcode.com/problems/count-zero-request-servers,Count Zero Request Servers,Medium,,100.0%,"Array, Hash Table, Sliding Window, Sorting",more_than_6m
+1848,https://leetcode.com/problems/minimum-distance-to-the-target-element,Minimum Distance to the Target Element,Easy,,89.6%,Array,more_than_6m
+1975,https://leetcode.com/problems/maximum-matrix-sum,Maximum Matrix Sum,Medium,,89.6%,"Array, Greedy, Matrix",more_than_6m
+1848,https://leetcode.com/problems/minimum-distance-to-the-target-element,Minimum Distance to the Target Element,Easy,,100.0%,Array,all
+2747,https://leetcode.com/problems/count-zero-request-servers,Count Zero Request Servers,Medium,,75.5%,"Array, Hash Table, Sliding Window, Sorting",all
+1975,https://leetcode.com/problems/maximum-matrix-sum,Maximum Matrix Sum,Medium,,67.3%,"Array, Greedy, Matrix",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,67.3%,"Array, Hash Table",all

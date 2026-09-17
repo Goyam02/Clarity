@@ -1,0 +1,23 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,83.4%,"Two Pointers, String",6_months
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,100.0%,"Two Pointers, String",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,89.9%,"Array, Sorting",more_than_6m
+271,https://leetcode.com/problems/encode-and-decode-strings,Encode and Decode Strings,Medium,,89.9%,"Array, String, Design",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,82.8%,"Hash Table, String, Binary Search, Design",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,82.8%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,72.8%,"Array, Two Pointers, Sorting",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,72.8%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,72.8%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,72.8%,"String, Stack",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,100.0%,"Two Pointers, String",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,96.8%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+271,https://leetcode.com/problems/encode-and-decode-strings,Encode and Decode Strings,Medium,,88.7%,"Array, String, Design",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,83.4%,"Array, Sorting",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,76.5%,"Hash Table, String, Binary Search, Design",all
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,66.8%,"Array, Two Pointers",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,66.8%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,66.8%,"Array, Two Pointers, Sorting",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,66.8%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,66.8%,"String, Stack",all
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,66.8%,"Hash Table, Depth-First Search, Breadth-First Search, Graph Theory",all

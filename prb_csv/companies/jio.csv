@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3013,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii,Divide an Array Into Subarrays With Minimum Cost II,Hard,,100.0%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",more_than_6m
+3030,https://leetcode.com/problems/find-the-grid-of-region-average,Find the Grid of Region Average,Medium,,100.0%,"Array, Matrix",more_than_6m
+3372,https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i,Maximize the Number of Target Nodes After Connecting Trees I,Medium,,100.0%,"Tree, Depth-First Search, Breadth-First Search",more_than_6m
+3373,https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii,Maximize the Number of Target Nodes After Connecting Trees II,Hard,,100.0%,"Tree, Depth-First Search, Breadth-First Search",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,63.4%,"Array, Hash Table",more_than_6m
+206,https://leetcode.com/problems/reverse-linked-list,Reverse Linked List,Easy,,63.4%,"Linked List, Recursion",more_than_6m
+3013,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii,Divide an Array Into Subarrays With Minimum Cost II,Hard,,100.0%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",all
+3030,https://leetcode.com/problems/find-the-grid-of-region-average,Find the Grid of Region Average,Medium,,100.0%,"Array, Matrix",all
+3372,https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i,Maximize the Number of Target Nodes After Connecting Trees I,Medium,,100.0%,"Tree, Depth-First Search, Breadth-First Search",all
+3373,https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii,Maximize the Number of Target Nodes After Connecting Trees II,Hard,,100.0%,"Tree, Depth-First Search, Breadth-First Search",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,63.3%,"Array, Hash Table",all
+206,https://leetcode.com/problems/reverse-linked-list,Reverse Linked List,Easy,,63.3%,"Linked List, Recursion",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,63.3%,"Array, Hash Table, String, Sorting",all

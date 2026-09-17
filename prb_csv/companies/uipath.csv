@@ -1,0 +1,29 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,100.0%,"Stack, Design",3_months
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,100.0%,"Stack, Design",6_months
+1036,https://leetcode.com/problems/escape-a-large-maze,Escape a Large Maze,Hard,,100.0%,"Array, Hash Table, Depth-First Search, Breadth-First Search",more_than_6m
+2826,https://leetcode.com/problems/sorting-three-groups,Sorting Three Groups,Medium,,87.6%,"Array, Binary Search, Dynamic Programming",more_than_6m
+1162,https://leetcode.com/problems/as-far-from-land-as-possible,As Far from Land as Possible,Medium,,87.6%,"Array, Dynamic Programming, Breadth-First Search, Matrix",more_than_6m
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,87.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+881,https://leetcode.com/problems/boats-to-save-people,Boats to Save People,Medium,,87.6%,"Array, Two Pointers, Greedy, Sorting",more_than_6m
+990,https://leetcode.com/problems/satisfiability-of-equality-equations,Satisfiability of Equality Equations,Medium,,87.6%,"Array, String, Union-Find, Graph Theory",more_than_6m
+424,https://leetcode.com/problems/longest-repeating-character-replacement,Longest Repeating Character Replacement,Medium,,87.6%,"Hash Table, String, Sliding Window",more_than_6m
+312,https://leetcode.com/problems/burst-balloons,Burst Balloons,Hard,,87.6%,"Array, Dynamic Programming",more_than_6m
+2603,https://leetcode.com/problems/collect-coins-in-a-tree,Collect Coins in a Tree,Hard,,87.6%,"Array, Tree, Graph Theory, Topological Sort",more_than_6m
+90,https://leetcode.com/problems/subsets-ii,Subsets II,Medium,,87.6%,"Array, Backtracking, Bit Manipulation",more_than_6m
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,87.6%,"Hash Table, Math, String",more_than_6m
+354,https://leetcode.com/problems/russian-doll-envelopes,Russian Doll Envelopes,Hard,,87.6%,"Array, Binary Search, Dynamic Programming, Sorting",more_than_6m
+1036,https://leetcode.com/problems/escape-a-large-maze,Escape a Large Maze,Hard,,100.0%,"Array, Hash Table, Depth-First Search, Breadth-First Search",all
+2826,https://leetcode.com/problems/sorting-three-groups,Sorting Three Groups,Medium,,97.8%,"Array, Binary Search, Dynamic Programming",all
+1162,https://leetcode.com/problems/as-far-from-land-as-possible,As Far from Land as Possible,Medium,,97.8%,"Array, Dynamic Programming, Breadth-First Search, Matrix",all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,70.0%,"Hash Table, Math, String",all
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,60.7%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+881,https://leetcode.com/problems/boats-to-save-people,Boats to Save People,Medium,,60.7%,"Array, Two Pointers, Greedy, Sorting",all
+990,https://leetcode.com/problems/satisfiability-of-equality-equations,Satisfiability of Equality Equations,Medium,,60.7%,"Array, String, Union-Find, Graph Theory",all
+424,https://leetcode.com/problems/longest-repeating-character-replacement,Longest Repeating Character Replacement,Medium,,60.7%,"Hash Table, String, Sliding Window",all
+2603,https://leetcode.com/problems/collect-coins-in-a-tree,Collect Coins in a Tree,Hard,,60.7%,"Array, Tree, Graph Theory, Topological Sort",all
+312,https://leetcode.com/problems/burst-balloons,Burst Balloons,Hard,,60.7%,"Array, Dynamic Programming",all
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,60.7%,"Stack, Design",all
+90,https://leetcode.com/problems/subsets-ii,Subsets II,Medium,,60.7%,"Array, Backtracking, Bit Manipulation",all
+143,https://leetcode.com/problems/reorder-list,Reorder List,Medium,,60.7%,"Linked List, Two Pointers, Stack, Recursion",all
+354,https://leetcode.com/problems/russian-doll-envelopes,Russian Doll Envelopes,Hard,,60.7%,"Array, Binary Search, Dynamic Programming, Sorting",all

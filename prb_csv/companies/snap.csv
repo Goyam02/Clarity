@@ -1,0 +1,173 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",30_days
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",3_months
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",6_months
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,89.8%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,89.8%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,72.5%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",6_months
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,72.5%,"Math, String, Stack, Recursion",6_months
+2258,https://leetcode.com/problems/escape-the-spreading-fire,Escape the Spreading Fire,Hard,,72.5%,"Array, Binary Search, Breadth-First Search, Matrix",6_months
+939,https://leetcode.com/problems/minimum-area-rectangle,Minimum Area Rectangle,Medium,,72.5%,"Array, Hash Table, Math, Geometry, Sorting",6_months
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,72.5%,"Array, Binary Search, Design, Queue, Data Stream",6_months
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,72.5%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",6_months
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,97.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+815,https://leetcode.com/problems/bus-routes,Bus Routes,Hard,,97.9%,"Array, Hash Table, Breadth-First Search",more_than_6m
+694,https://leetcode.com/problems/number-of-distinct-islands,Number of Distinct Islands,Medium,,97.9%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function",more_than_6m
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,93.2%,"Math, String, Stack",more_than_6m
+803,https://leetcode.com/problems/bricks-falling-when-hit,Bricks Falling When Hit,Hard,,93.2%,"Array, Union-Find, Matrix",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,87.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,84.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,84.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,84.0%,"Hash Table, String, Breadth-First Search",more_than_6m
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,80.0%,"Hash Table, String, Sliding Window",more_than_6m
+635,https://leetcode.com/problems/design-log-storage-system,Design Log Storage System,Medium,,75.3%,"Hash Table, String, Design, Ordered Set",more_than_6m
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,69.6%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",more_than_6m
+91,https://leetcode.com/problems/decode-ways,Decode Ways,Medium,,69.6%,"String, Dynamic Programming",more_than_6m
+296,https://leetcode.com/problems/best-meeting-point,Best Meeting Point,Hard,,69.6%,"Array, Math, Sorting, Matrix",more_than_6m
+123,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii,Best Time to Buy and Sell Stock III,Hard,,69.6%,"Array, Dynamic Programming",more_than_6m
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,69.6%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",more_than_6m
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,62.2%,"Array, Breadth-First Search, Matrix",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,62.2%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,62.2%,"Array, Backtracking",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,62.2%,"Array, Sorting",more_than_6m
+143,https://leetcode.com/problems/reorder-list,Reorder List,Medium,,62.2%,"Linked List, Two Pointers, Stack, Recursion",more_than_6m
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,62.2%,"Array, String, Backtracking, Trie, Matrix",more_than_6m
+224,https://leetcode.com/problems/basic-calculator,Basic Calculator,Hard,,62.2%,"Math, String, Stack, Recursion",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,62.2%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,62.2%,Math,more_than_6m
+1249,https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses,Minimum Remove to Make Valid Parentheses,Medium,,62.2%,"String, Stack",more_than_6m
+2316,https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph,Count Unreachable Pairs of Nodes in an Undirected Graph,Medium,,62.2%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+231,https://leetcode.com/problems/power-of-two,Power of Two,Easy,,62.2%,"Math, Bit Manipulation, Recursion",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,51.8%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,51.8%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+270,https://leetcode.com/problems/closest-binary-search-tree-value,Closest Binary Search Tree Value,Easy,,51.8%,"Binary Search, Tree, Depth-First Search, Binary Search Tree, Binary Tree",more_than_6m
+527,https://leetcode.com/problems/word-abbreviation,Word Abbreviation,Hard,,51.8%,"Array, String, Greedy, Trie, Sorting",more_than_6m
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,51.8%,"String, Stack, Greedy, Monotonic Stack",more_than_6m
+403,https://leetcode.com/problems/frog-jump,Frog Jump,Hard,,51.8%,"Array, Dynamic Programming",more_than_6m
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,51.8%,"Two Pointers, String",more_than_6m
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,51.8%,"Stack, Design",more_than_6m
+161,https://leetcode.com/problems/one-edit-distance,One Edit Distance,Medium,,51.8%,"Two Pointers, String",more_than_6m
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,51.8%,"Array, Matrix, Simulation",more_than_6m
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,51.8%,"Array, Hash Table, Matrix",more_than_6m
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,51.8%,"Array, Hash Table, Backtracking, Matrix",more_than_6m
+40,https://leetcode.com/problems/combination-sum-ii,Combination Sum II,Medium,,51.8%,"Array, Backtracking",more_than_6m
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,51.8%,"String, Dynamic Programming, Greedy, Recursion",more_than_6m
+439,https://leetcode.com/problems/ternary-expression-parser,Ternary Expression Parser,Medium,,51.8%,"String, Stack, Recursion",more_than_6m
+312,https://leetcode.com/problems/burst-balloons,Burst Balloons,Hard,,51.8%,"Array, Dynamic Programming",more_than_6m
+314,https://leetcode.com/problems/binary-tree-vertical-order-traversal,Binary Tree Vertical Order Traversal,Medium,,51.8%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,51.8%,"Two Pointers, String",more_than_6m
+206,https://leetcode.com/problems/reverse-linked-list,Reverse Linked List,Easy,,51.8%,"Linked List, Recursion",more_than_6m
+1754,https://leetcode.com/problems/largest-merge-of-two-strings,Largest Merge Of Two Strings,Medium,,51.8%,"Two Pointers, String, Greedy",more_than_6m
+96,https://leetcode.com/problems/unique-binary-search-trees,Unique Binary Search Trees,Medium,,51.8%,"Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",more_than_6m
+964,https://leetcode.com/problems/least-operators-to-express-number,Least Operators to Express Number,Hard,,51.8%,"Math, Dynamic Programming, Memoization",more_than_6m
+377,https://leetcode.com/problems/combination-sum-iv,Combination Sum IV,Medium,,51.8%,"Array, Dynamic Programming",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,51.8%,"Array, Hash Table, String, Sorting",more_than_6m
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,51.8%,"Array, Breadth-First Search, Matrix",more_than_6m
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,51.8%,"Array, Prefix Sum",more_than_6m
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,51.8%,"Array, Hash Table, Binary Search, Design",more_than_6m
+3014,https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i,Minimum Number of Pushes to Type Word I,Easy,,51.8%,"Math, String, Greedy",more_than_6m
+124,https://leetcode.com/problems/binary-tree-maximum-path-sum,Binary Tree Maximum Path Sum,Hard,,51.8%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",more_than_6m
+490,https://leetcode.com/problems/the-maze,The Maze,Medium,,51.8%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,51.8%,"Hash Table, String, Backtracking",more_than_6m
+67,https://leetcode.com/problems/add-binary,Add Binary,Easy,,51.8%,"Math, String, Bit Manipulation, Simulation",more_than_6m
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,51.8%,"Array, Binary Search",more_than_6m
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,51.8%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+1639,https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary,Number of Ways to Form a Target String Given a Dictionary,Hard,,51.8%,"Array, String, Dynamic Programming",more_than_6m
+393,https://leetcode.com/problems/utf-8-validation,UTF-8 Validation,Medium,,51.8%,"Array, Bit Manipulation",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,51.8%,"Hash Table, String, Sliding Window",more_than_6m
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,51.8%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,51.8%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,51.8%,"Array, Dynamic Programming, Matrix",more_than_6m
+1074,https://leetcode.com/problems/number-of-submatrices-that-sum-to-target,Number of Submatrices That Sum to Target,Hard,,51.8%,"Array, Hash Table, Matrix, Prefix Sum",more_than_6m
+1472,https://leetcode.com/problems/design-browser-history,Design Browser History,Medium,,51.8%,"Array, Linked List, Stack, Design, Doubly-Linked List, Data Stream",more_than_6m
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,51.8%,"Math, String, Stack, Recursion",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,51.8%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+752,https://leetcode.com/problems/open-the-lock,Open the Lock,Medium,,51.8%,"Array, Hash Table, String, Breadth-First Search",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,51.8%,"Array, Binary Search",more_than_6m
+2258,https://leetcode.com/problems/escape-the-spreading-fire,Escape the Spreading Fire,Hard,,51.8%,"Array, Binary Search, Breadth-First Search, Matrix",more_than_6m
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,51.8%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,95.9%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,94.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,92.8%,"Hash Table, String, Sliding Window",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,92.8%,"Hash Table, String, Breadth-First Search",all
+635,https://leetcode.com/problems/design-log-storage-system,Design Log Storage System,Medium,,91.1%,"Hash Table, String, Design, Ordered Set",all
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,89.3%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+694,https://leetcode.com/problems/number-of-distinct-islands,Number of Distinct Islands,Medium,,89.3%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function",all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,87.3%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",all
+815,https://leetcode.com/problems/bus-routes,Bus Routes,Hard,,87.3%,"Array, Hash Table, Breadth-First Search",all
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,85.1%,"Array, Backtracking",all
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,85.1%,"Two Pointers, String",all
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,85.1%,"Math, String, Stack",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,82.7%,"Array, Hash Table, Matrix",all
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,82.7%,"Array, Hash Table, Backtracking, Matrix",all
+40,https://leetcode.com/problems/combination-sum-ii,Combination Sum II,Medium,,82.7%,"Array, Backtracking",all
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,82.7%,"String, Dynamic Programming, Greedy, Recursion",all
+96,https://leetcode.com/problems/unique-binary-search-trees,Unique Binary Search Trees,Medium,,82.7%,"Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",all
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,82.7%,"Stack, Design",all
+161,https://leetcode.com/problems/one-edit-distance,One Edit Distance,Medium,,82.7%,"Two Pointers, String",all
+206,https://leetcode.com/problems/reverse-linked-list,Reverse Linked List,Easy,,82.7%,"Linked List, Recursion",all
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,82.7%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+270,https://leetcode.com/problems/closest-binary-search-tree-value,Closest Binary Search Tree Value,Easy,,82.7%,"Binary Search, Tree, Depth-First Search, Binary Search Tree, Binary Tree",all
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,82.7%,"Array, Matrix, Simulation",all
+312,https://leetcode.com/problems/burst-balloons,Burst Balloons,Hard,,82.7%,"Array, Dynamic Programming",all
+314,https://leetcode.com/problems/binary-tree-vertical-order-traversal,Binary Tree Vertical Order Traversal,Medium,,82.7%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",all
+377,https://leetcode.com/problems/combination-sum-iv,Combination Sum IV,Medium,,82.7%,"Array, Dynamic Programming",all
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,82.7%,"String, Stack, Greedy, Monotonic Stack",all
+403,https://leetcode.com/problems/frog-jump,Frog Jump,Hard,,82.7%,"Array, Dynamic Programming",all
+439,https://leetcode.com/problems/ternary-expression-parser,Ternary Expression Parser,Medium,,82.7%,"String, Stack, Recursion",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,82.7%,"Two Pointers, String",all
+527,https://leetcode.com/problems/word-abbreviation,Word Abbreviation,Hard,,82.7%,"Array, String, Greedy, Trie, Sorting",all
+1754,https://leetcode.com/problems/largest-merge-of-two-strings,Largest Merge Of Two Strings,Medium,,82.7%,"Two Pointers, String, Greedy",all
+964,https://leetcode.com/problems/least-operators-to-express-number,Least Operators to Express Number,Hard,,82.7%,"Math, Dynamic Programming, Memoization",all
+803,https://leetcode.com/problems/bricks-falling-when-hit,Bricks Falling When Hit,Hard,,82.7%,"Array, Union-Find, Matrix",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,77.2%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,77.2%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+123,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii,Best Time to Buy and Sell Stock III,Hard,,65.5%,"Array, Dynamic Programming",all
+91,https://leetcode.com/problems/decode-ways,Decode Ways,Medium,,65.5%,"String, Dynamic Programming",all
+296,https://leetcode.com/problems/best-meeting-point,Best Meeting Point,Hard,,65.5%,"Array, Math, Sorting, Matrix",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,59.9%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",all
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,59.9%,"Math, String, Stack, Recursion",all
+2316,https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph,Count Unreachable Pairs of Nodes in an Undirected Graph,Medium,,59.9%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+2258,https://leetcode.com/problems/escape-the-spreading-fire,Escape the Spreading Fire,Hard,,59.9%,"Array, Binary Search, Breadth-First Search, Matrix",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,52.8%,"Array, Sorting",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,52.8%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+231,https://leetcode.com/problems/power-of-two,Power of Two,Easy,,52.8%,"Math, Bit Manipulation, Recursion",all
+1249,https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses,Minimum Remove to Make Valid Parentheses,Medium,,52.8%,"String, Stack",all
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,52.8%,"Array, Breadth-First Search, Matrix",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,52.8%,"Array, Hash Table, String, Sorting",all
+939,https://leetcode.com/problems/minimum-area-rectangle,Minimum Area Rectangle,Medium,,52.8%,"Array, Hash Table, Math, Geometry, Sorting",all
+143,https://leetcode.com/problems/reorder-list,Reorder List,Medium,,52.8%,"Linked List, Two Pointers, Stack, Recursion",all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,52.8%,"Array, String, Backtracking, Trie, Matrix",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,52.8%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,52.8%,Math,all
+224,https://leetcode.com/problems/basic-calculator,Basic Calculator,Hard,,52.8%,"Math, String, Stack, Recursion",all
+752,https://leetcode.com/problems/open-the-lock,Open the Lock,Medium,,52.8%,"Array, Hash Table, String, Breadth-First Search",all
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,42.9%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+124,https://leetcode.com/problems/binary-tree-maximum-path-sum,Binary Tree Maximum Path Sum,Hard,,42.9%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",all
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,42.9%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,42.9%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+1472,https://leetcode.com/problems/design-browser-history,Design Browser History,Medium,,42.9%,"Array, Linked List, Stack, Design, Doubly-Linked List, Data Stream",all
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,42.9%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",all
+490,https://leetcode.com/problems/the-maze,The Maze,Medium,,42.9%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,42.9%,"Array, Prefix Sum",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,42.9%,"Array, Binary Search",all
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,42.9%,"Array, Breadth-First Search, Matrix",all
+3014,https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i,Minimum Number of Pushes to Type Word I,Easy,,42.9%,"Math, String, Greedy",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,42.9%,"Hash Table, String, Backtracking",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,42.9%,"Array, Hash Table, Binary Search, Design",all
+67,https://leetcode.com/problems/add-binary,Add Binary,Easy,,42.9%,"Math, String, Bit Manipulation, Simulation",all
+1639,https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary,Number of Ways to Form a Target String Given a Dictionary,Hard,,42.9%,"Array, String, Dynamic Programming",all
+211,https://leetcode.com/problems/design-add-and-search-words-data-structure,Design Add and Search Words Data Structure,Medium,,42.9%,"String, Depth-First Search, Design, Trie",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,42.9%,"Hash Table, String, Sliding Window",all
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,42.9%,"Array, Dynamic Programming, Matrix",all
+1074,https://leetcode.com/problems/number-of-submatrices-that-sum-to-target,Number of Submatrices That Sum to Target,Hard,,42.9%,"Array, Hash Table, Matrix, Prefix Sum",all
+393,https://leetcode.com/problems/utf-8-validation,UTF-8 Validation,Medium,,42.9%,"Array, Bit Manipulation",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,42.9%,"Array, Binary Search",all
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,42.9%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",all
+886,https://leetcode.com/problems/possible-bipartition,Possible Bipartition,Medium,,42.9%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+947,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column,Most Stones Removed with Same Row or Column,Medium,,42.9%,"Hash Table, Depth-First Search, Union-Find, Graph Theory",all
+166,https://leetcode.com/problems/fraction-to-recurring-decimal,Fraction to Recurring Decimal,Medium,,42.9%,"Hash Table, Math, String",all
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,42.9%,"Array, Binary Search, Design, Queue, Data Stream",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,42.9%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all

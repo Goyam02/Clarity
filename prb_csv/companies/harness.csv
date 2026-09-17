@@ -1,0 +1,6 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+,https://leetcode.com/problems/count-good-subarrays,Count Good Subarrays,Hard,,100.0%,"Array, Stack, Bit Manipulation, Monotonic Stack",6_months
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,100.0%,"Hash Table, String, Sliding Window",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,100.0%,"Array, Hash Table",more_than_6m
+16,https://leetcode.com/problems/3sum-closest,3Sum Closest,Medium,,100.0%,"Array, Two Pointers, Sorting",more_than_6m
+71,https://leetcode.com/problems/simplify-path,Simplify Path,Medium,,100.0%,"String, Stack",all

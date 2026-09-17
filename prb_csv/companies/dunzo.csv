@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1397,https://leetcode.com/problems/find-all-good-strings,Find All Good Strings,Hard,,100.0%,"String, Dynamic Programming, String Matching",more_than_6m
+1698,https://leetcode.com/problems/number-of-distinct-substrings-in-a-string,Number of Distinct Substrings in a String,Medium,,100.0%,"String, Trie, Rolling Hash, Suffix Array, Hash Function",more_than_6m
+1639,https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary,Number of Ways to Form a Target String Given a Dictionary,Hard,,100.0%,"Array, String, Dynamic Programming",more_than_6m
+1690,https://leetcode.com/problems/stone-game-vii,Stone Game VII,Medium,,100.0%,"Array, Math, Dynamic Programming, Game Theory",more_than_6m
+1664,https://leetcode.com/problems/ways-to-make-a-fair-array,Ways to Make a Fair Array,Medium,,100.0%,"Array, Prefix Sum",more_than_6m
+1420,https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons,Build Array Where You Can Find The Maximum Exactly K Comparisons,Hard,,100.0%,"Dynamic Programming, Prefix Sum",more_than_6m
+222,https://leetcode.com/problems/count-complete-tree-nodes,Count Complete Tree Nodes,Easy,,100.0%,"Binary Search, Bit Manipulation, Tree, Binary Tree",more_than_6m
+1690,https://leetcode.com/problems/stone-game-vii,Stone Game VII,Medium,,100.0%,"Array, Math, Dynamic Programming, Game Theory",all
+1420,https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons,Build Array Where You Can Find The Maximum Exactly K Comparisons,Hard,,100.0%,"Dynamic Programming, Prefix Sum",all
+1698,https://leetcode.com/problems/number-of-distinct-substrings-in-a-string,Number of Distinct Substrings in a String,Medium,,100.0%,"String, Trie, Rolling Hash, Suffix Array, Hash Function",all
+1639,https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary,Number of Ways to Form a Target String Given a Dictionary,Hard,,100.0%,"Array, String, Dynamic Programming",all
+1397,https://leetcode.com/problems/find-all-good-strings,Find All Good Strings,Hard,,100.0%,"String, Dynamic Programming, String Matching",all
+1664,https://leetcode.com/problems/ways-to-make-a-fair-array,Ways to Make a Fair Array,Medium,,100.0%,"Array, Prefix Sum",all
+222,https://leetcode.com/problems/count-complete-tree-nodes,Count Complete Tree Nodes,Easy,,64.1%,"Binary Search, Bit Manipulation, Tree, Binary Tree",all

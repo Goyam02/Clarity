@@ -1,0 +1,48 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,100.0%,"Hash Table, String, Sorting",6_months
+2997,https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k,Minimum Number of Operations to Make Array XOR Equal to K,Medium,,100.0%,"Array, Bit Manipulation",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,87.6%,"Array, Hash Table",more_than_6m
+1647,https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique,Minimum Deletions to Make Character Frequencies Unique,Medium,,77.7%,"Hash Table, String, Greedy, Sorting",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,77.7%,"Hash Table, String, Sliding Window",more_than_6m
+1224,https://leetcode.com/problems/maximum-equal-frequency,Maximum Equal Frequency,Hard,,70.7%,"Array, Hash Table",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,70.7%,"Hash Table, String, Sorting",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,70.7%,"Array, Dynamic Programming",more_than_6m
+1304,https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero,Find N Unique Integers Sum up to Zero,Easy,,70.7%,"Array, Math",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,60.8%,"Array, Two Pointers, Sorting",more_than_6m
+2202,https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves,Maximize the Topmost Element After K Moves,Medium,,60.8%,"Array, Greedy",more_than_6m
+2317,https://leetcode.com/problems/maximum-xor-after-operations,Maximum XOR After Operations,Medium,,60.8%,"Array, Math, Bit Manipulation",more_than_6m
+1521,https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target,Find a Value of a Mysterious Function Closest to Target,Hard,,60.8%,"Array, Binary Search, Bit Manipulation, Segment Tree",more_than_6m
+1775,https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations,Equal Sum Arrays With Minimum Number of Operations,Medium,,60.8%,"Array, Hash Table, Greedy, Counting",more_than_6m
+1201,https://leetcode.com/problems/ugly-number-iii,Ugly Number III,Medium,,60.8%,"Math, Binary Search, Combinatorics, Number Theory",more_than_6m
+3013,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii,Divide an Array Into Subarrays With Minimum Cost II,Hard,,60.8%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",more_than_6m
+2278,https://leetcode.com/problems/percentage-of-letter-in-string,Percentage of Letter in String,Easy,,60.8%,String,more_than_6m
+3010,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i,Divide an Array Into Subarrays With Minimum Cost I,Easy,,60.8%,"Array, Sorting, Enumeration",more_than_6m
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,60.8%,"Array, Math, Two Pointers",more_than_6m
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,60.8%,"Array, Backtracking",more_than_6m
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,60.8%,"Hash Table, String",more_than_6m
+142,https://leetcode.com/problems/linked-list-cycle-ii,Linked List Cycle II,Medium,,60.8%,"Hash Table, Linked List, Two Pointers",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,60.8%,"Array, String, Trie",more_than_6m
+180,https://leetcode.com/problems/consecutive-numbers,Consecutive Numbers,Medium,,60.8%,Database,more_than_6m
+1647,https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique,Minimum Deletions to Make Character Frequencies Unique,Medium,,100.0%,"Hash Table, String, Greedy, Sorting",all
+3013,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii,Divide an Array Into Subarrays With Minimum Cost II,Hard,,97.8%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",all
+1224,https://leetcode.com/problems/maximum-equal-frequency,Maximum Equal Frequency,Hard,,97.8%,"Array, Hash Table",all
+1521,https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target,Find a Value of a Mysterious Function Closest to Target,Hard,,95.5%,"Array, Binary Search, Bit Manipulation, Segment Tree",all
+3010,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i,Divide an Array Into Subarrays With Minimum Cost I,Easy,,95.5%,"Array, Sorting, Enumeration",all
+1201,https://leetcode.com/problems/ugly-number-iii,Ugly Number III,Medium,,95.5%,"Math, Binary Search, Combinatorics, Number Theory",all
+2278,https://leetcode.com/problems/percentage-of-letter-in-string,Percentage of Letter in String,Easy,,95.5%,String,all
+2202,https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves,Maximize the Topmost Element After K Moves,Medium,,95.5%,"Array, Greedy",all
+2317,https://leetcode.com/problems/maximum-xor-after-operations,Maximum XOR After Operations,Medium,,95.5%,"Array, Math, Bit Manipulation",all
+1775,https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations,Equal Sum Arrays With Minimum Number of Operations,Medium,,95.5%,"Array, Hash Table, Greedy, Counting",all
+2997,https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k,Minimum Number of Operations to Make Array XOR Equal to K,Medium,,95.5%,"Array, Bit Manipulation",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,82.8%,"Array, Hash Table",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,78.3%,"Hash Table, String, Sorting",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,72.7%,"Hash Table, String, Sliding Window",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,65.6%,"Array, Dynamic Programming",all
+1304,https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero,Find N Unique Integers Sum up to Zero,Easy,,65.6%,"Array, Math",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,55.6%,"Array, Two Pointers, Sorting",all
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,55.6%,"Array, Math, Two Pointers",all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,55.6%,"Array, Backtracking",all
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,55.6%,"Hash Table, String",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,55.6%,"Array, String, Trie",all
+142,https://leetcode.com/problems/linked-list-cycle-ii,Linked List Cycle II,Medium,,55.6%,"Hash Table, Linked List, Two Pointers",all
+180,https://leetcode.com/problems/consecutive-numbers,Consecutive Numbers,Medium,,55.6%,Database,all

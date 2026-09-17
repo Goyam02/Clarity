@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+540,https://leetcode.com/problems/single-element-in-a-sorted-array,Single Element in a Sorted Array,Medium,,100.0%,"Array, Binary Search",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,100.0%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,100.0%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,100.0%,"Array, Hash Table, String, Sorting",more_than_6m
+2385,https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected,Amount of Time for Binary Tree to Be Infected,Medium,,100.0%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+540,https://leetcode.com/problems/single-element-in-a-sorted-array,Single Element in a Sorted Array,Medium,,100.0%,"Array, Binary Search",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,100.0%,"Array, Divide and Conquer, Dynamic Programming",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,100.0%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+2385,https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected,Amount of Time for Binary Tree to Be Infected,Medium,,100.0%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,100.0%,"Array, Hash Table, String, Sorting",all

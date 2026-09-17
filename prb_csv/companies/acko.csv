@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2887,https://leetcode.com/problems/fill-missing-data,Fill Missing Data,Easy,,100.0%,,more_than_6m
+1359,https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options,Count All Valid Pickup and Delivery Options,Hard,,100.0%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,89.2%,"Array, Dynamic Programming, Graph Theory, Topological Sort",more_than_6m
+1683,https://leetcode.com/problems/invalid-tweets,Invalid Tweets,Easy,,89.2%,Database,more_than_6m
+2887,https://leetcode.com/problems/fill-missing-data,Fill Missing Data,Easy,,100.0%,,all
+1359,https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options,Count All Valid Pickup and Delivery Options,Hard,,100.0%,"Math, Dynamic Programming, Combinatorics",all
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,89.2%,"Array, Dynamic Programming, Graph Theory, Topological Sort",all
+1683,https://leetcode.com/problems/invalid-tweets,Invalid Tweets,Easy,,89.2%,Database,all

@@ -1,0 +1,41 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2950,https://leetcode.com/problems/number-of-divisible-substrings,Number of Divisible Substrings,Medium,,100.0%,"Hash Table, String, Counting, Prefix Sum",more_than_6m
+2139,https://leetcode.com/problems/minimum-moves-to-reach-target-score,Minimum Moves to Reach Target Score,Medium,,78.8%,"Math, Greedy",more_than_6m
+1895,https://leetcode.com/problems/largest-magic-square,Largest Magic Square,Medium,,78.8%,"Array, Matrix, Prefix Sum",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,78.8%,"Array, Hash Table, String, Sorting",more_than_6m
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,78.8%,Math,more_than_6m
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,68.7%,"Two Pointers, String",more_than_6m
+415,https://leetcode.com/problems/add-strings,Add Strings,Easy,,68.7%,"Math, String, Simulation",more_than_6m
+1194,https://leetcode.com/problems/tournament-winners,Tournament Winners,Hard,,68.7%,Database,more_than_6m
+1014,https://leetcode.com/problems/best-sightseeing-pair,Best Sightseeing Pair,Medium,,68.7%,"Array, Dynamic Programming",more_than_6m
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,68.7%,"Array, Hash Table, String, Sorting",more_than_6m
+1189,https://leetcode.com/problems/maximum-number-of-balloons,Maximum Number of Balloons,Easy,,68.7%,"Hash Table, String, Counting",more_than_6m
+1957,https://leetcode.com/problems/delete-characters-to-make-fancy-string,Delete Characters to Make Fancy String,Easy,,68.7%,String,more_than_6m
+1405,https://leetcode.com/problems/longest-happy-string,Longest Happy String,Medium,,68.7%,"String, Greedy, Heap (Priority Queue)",more_than_6m
+1212,https://leetcode.com/problems/team-scores-in-football-tournament,Team Scores in Football Tournament,Medium,,68.7%,Database,more_than_6m
+1244,https://leetcode.com/problems/design-a-leaderboard,Design A Leaderboard,Medium,,68.7%,"Hash Table, Design, Sorting",more_than_6m
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,68.7%,"Two Pointers, String, Stack, Simulation",more_than_6m
+1204,https://leetcode.com/problems/last-person-to-fit-in-the-bus,Last Person to Fit in the Bus,Medium,,68.7%,Database,more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,68.7%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+2380,https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string,Time Needed to Rearrange a Binary String,Medium,,68.7%,"String, Dynamic Programming, Simulation",more_than_6m
+1481,https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals,Least Number of Unique Integers after K Removals,Medium,,68.7%,"Array, Hash Table, Greedy, Sorting, Counting",more_than_6m
+1014,https://leetcode.com/problems/best-sightseeing-pair,Best Sightseeing Pair,Medium,,100.0%,"Array, Dynamic Programming",all
+2139,https://leetcode.com/problems/minimum-moves-to-reach-target-score,Minimum Moves to Reach Target Score,Medium,,100.0%,"Math, Greedy",all
+1895,https://leetcode.com/problems/largest-magic-square,Largest Magic Square,Medium,,100.0%,"Array, Matrix, Prefix Sum",all
+1244,https://leetcode.com/problems/design-a-leaderboard,Design A Leaderboard,Medium,,97.7%,"Hash Table, Design, Sorting",all
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,97.7%,"Array, Hash Table, String, Sorting",all
+1189,https://leetcode.com/problems/maximum-number-of-balloons,Maximum Number of Balloons,Easy,,97.7%,"Hash Table, String, Counting",all
+1957,https://leetcode.com/problems/delete-characters-to-make-fancy-string,Delete Characters to Make Fancy String,Easy,,97.7%,String,all
+1405,https://leetcode.com/problems/longest-happy-string,Longest Happy String,Medium,,97.7%,"String, Greedy, Heap (Priority Queue)",all
+1194,https://leetcode.com/problems/tournament-winners,Tournament Winners,Hard,,97.7%,Database,all
+1212,https://leetcode.com/problems/team-scores-in-football-tournament,Team Scores in Football Tournament,Medium,,97.7%,Database,all
+2950,https://leetcode.com/problems/number-of-divisible-substrings,Number of Divisible Substrings,Medium,,88.9%,"Hash Table, String, Counting, Prefix Sum",all
+415,https://leetcode.com/problems/add-strings,Add Strings,Easy,,68.1%,"Math, String, Simulation",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,68.1%,"Array, Hash Table, String, Sorting",all
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,68.1%,Math,all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,58.2%,"Two Pointers, String",all
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,58.2%,"Two Pointers, String, Stack, Simulation",all
+1204,https://leetcode.com/problems/last-person-to-fit-in-the-bus,Last Person to Fit in the Bus,Medium,,58.2%,Database,all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,58.2%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+2380,https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string,Time Needed to Rearrange a Binary String,Medium,,58.2%,"String, Dynamic Programming, Simulation",all
+1481,https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals,Least Number of Unique Integers after K Removals,Medium,,58.2%,"Array, Hash Table, Greedy, Sorting, Counting",all

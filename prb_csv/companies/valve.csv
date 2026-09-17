@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,100.0%,String,more_than_6m
+649,https://leetcode.com/problems/dota2-senate,Dota2 Senate,Medium,,79.9%,"String, Greedy, Queue",more_than_6m
+2755,https://leetcode.com/problems/deep-merge-of-two-objects,Deep Merge of Two Objects,Medium,,79.9%,,more_than_6m
+1603,https://leetcode.com/problems/design-parking-system,Design Parking System,Easy,,79.9%,"Design, Simulation, Counting",more_than_6m
+649,https://leetcode.com/problems/dota2-senate,Dota2 Senate,Medium,,100.0%,"String, Greedy, Queue",all
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,86.1%,String,all
+2755,https://leetcode.com/problems/deep-merge-of-two-objects,Deep Merge of Two Objects,Medium,,67.8%,,all
+1603,https://leetcode.com/problems/design-parking-system,Design Parking System,Easy,,67.8%,"Design, Simulation, Counting",all

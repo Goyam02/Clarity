@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,100.0%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",6_months
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,100.0%,"Array, Prefix Sum",6_months
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,100.0%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,95.5%,"Array, Prefix Sum",more_than_6m
+1668,https://leetcode.com/problems/maximum-repeating-substring,Maximum Repeating Substring,Easy,,67.4%,"String, Dynamic Programming, String Matching",more_than_6m
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,100.0%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,97.1%,"Array, Prefix Sum",all
+1668,https://leetcode.com/problems/maximum-repeating-substring,Maximum Repeating Substring,Easy,,91.9%,"String, Dynamic Programming, String Matching",all
+3650,https://leetcode.com/problems/minimum-cost-path-with-edge-reversals,Minimum Cost Path with Edge Reversals,Medium,,87.4%,"Graph Theory, Heap (Priority Queue), Shortest Path",all

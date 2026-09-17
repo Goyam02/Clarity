@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1657,https://leetcode.com/problems/determine-if-two-strings-are-close,Determine if Two Strings Are Close,Medium,,100.0%,"Hash Table, String, Sorting, Counting",more_than_6m
+2070,https://leetcode.com/problems/most-beautiful-item-for-each-query,Most Beautiful Item for Each Query,Medium,,90.5%,"Array, Binary Search, Sorting",more_than_6m
+2269,https://leetcode.com/problems/find-the-k-beauty-of-a-number,Find the K-Beauty of a Number,Easy,,90.5%,"Math, String, Sliding Window",more_than_6m
+1657,https://leetcode.com/problems/determine-if-two-strings-are-close,Determine if Two Strings Are Close,Medium,,100.0%,"Hash Table, String, Sorting, Counting",all
+2070,https://leetcode.com/problems/most-beautiful-item-for-each-query,Most Beautiful Item for Each Query,Medium,,98.1%,"Array, Binary Search, Sorting",all
+2269,https://leetcode.com/problems/find-the-k-beauty-of-a-number,Find the K-Beauty of a Number,Easy,,98.1%,"Math, String, Sliding Window",all

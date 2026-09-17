@@ -1,0 +1,42 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2735,https://leetcode.com/problems/collecting-chocolates,Collecting Chocolates,Medium,,100.0%,"Array, Enumeration",more_than_6m
+241,https://leetcode.com/problems/different-ways-to-add-parentheses,Different Ways to Add Parentheses,Medium,,93.8%,"Math, String, Dynamic Programming, Recursion, Memoization",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,85.8%,"Array, String, Trie",more_than_6m
+3068,https://leetcode.com/problems/find-the-maximum-sum-of-node-values,Find the Maximum Sum of Node Values,Hard,,85.8%,"Array, Dynamic Programming, Greedy, Bit Manipulation, Tree, Sorting",more_than_6m
+2968,https://leetcode.com/problems/apply-operations-to-maximize-frequency-score,Apply Operations to Maximize Frequency Score,Hard,,85.8%,"Array, Binary Search, Sliding Window, Sorting, Prefix Sum",more_than_6m
+2030,https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter,Smallest K-Length Subsequence With Occurrences of a Letter,Hard,,74.5%,"String, Stack, Greedy, Monotonic Stack",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,74.5%,"Array, Dynamic Programming",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,74.5%,"Array, Hash Table",more_than_6m
+2137,https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal,Pour Water Between Buckets to Make Water Levels Equal,Medium,,74.5%,"Array, Binary Search",more_than_6m
+2869,https://leetcode.com/problems/minimum-operations-to-collect-elements,Minimum Operations to Collect Elements,Easy,,74.5%,"Array, Hash Table, Bit Manipulation",more_than_6m
+2039,https://leetcode.com/problems/the-time-when-the-network-becomes-idle,The Time When the Network Becomes Idle,Medium,,74.5%,"Array, Breadth-First Search, Graph Theory",more_than_6m
+1827,https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing,Minimum Operations to Make the Array Increasing,Easy,,74.5%,"Array, Greedy",more_than_6m
+2141,https://leetcode.com/problems/maximum-running-time-of-n-computers,Maximum Running Time of N Computers,Hard,,74.5%,"Array, Binary Search, Greedy, Sorting",more_than_6m
+2838,https://leetcode.com/problems/maximum-coins-heroes-can-collect,Maximum Coins Heroes Can Collect,Medium,,74.5%,"Array, Two Pointers, Binary Search, Sorting, Prefix Sum",more_than_6m
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,74.5%,"Array, Dynamic Programming",more_than_6m
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,74.5%,"Array, Two Pointers, Sorting",more_than_6m
+2552,https://leetcode.com/problems/count-increasing-quadruplets,Count Increasing Quadruplets,Hard,,74.5%,"Array, Dynamic Programming, Binary Indexed Tree, Enumeration, Prefix Sum",more_than_6m
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,74.5%,"Array, Dynamic Programming, Breadth-First Search",more_than_6m
+52,https://leetcode.com/problems/n-queens-ii,N-Queens II,Hard,,74.5%,Backtracking,more_than_6m
+805,https://leetcode.com/problems/split-array-with-same-average,Split Array With Same Average,Hard,,74.5%,"Array, Hash Table, Math, Dynamic Programming, Bit Manipulation, Bitmask",more_than_6m
+2030,https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter,Smallest K-Length Subsequence With Occurrences of a Letter,Hard,,100.0%,"String, Stack, Greedy, Monotonic Stack",all
+2968,https://leetcode.com/problems/apply-operations-to-maximize-frequency-score,Apply Operations to Maximize Frequency Score,Hard,,100.0%,"Array, Binary Search, Sliding Window, Sorting, Prefix Sum",all
+3068,https://leetcode.com/problems/find-the-maximum-sum-of-node-values,Find the Maximum Sum of Node Values,Hard,,100.0%,"Array, Dynamic Programming, Greedy, Bit Manipulation, Tree, Sorting",all
+2838,https://leetcode.com/problems/maximum-coins-heroes-can-collect,Maximum Coins Heroes Can Collect,Medium,,97.7%,"Array, Two Pointers, Binary Search, Sorting, Prefix Sum",all
+2039,https://leetcode.com/problems/the-time-when-the-network-becomes-idle,The Time When the Network Becomes Idle,Medium,,97.7%,"Array, Breadth-First Search, Graph Theory",all
+2141,https://leetcode.com/problems/maximum-running-time-of-n-computers,Maximum Running Time of N Computers,Hard,,97.7%,"Array, Binary Search, Greedy, Sorting",all
+2137,https://leetcode.com/problems/pour-water-between-buckets-to-make-water-levels-equal,Pour Water Between Buckets to Make Water Levels Equal,Medium,,97.7%,"Array, Binary Search",all
+1827,https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing,Minimum Operations to Make the Array Increasing,Easy,,97.7%,"Array, Greedy",all
+2869,https://leetcode.com/problems/minimum-operations-to-collect-elements,Minimum Operations to Collect Elements,Easy,,97.7%,"Array, Hash Table, Bit Manipulation",all
+2735,https://leetcode.com/problems/collecting-chocolates,Collecting Chocolates,Medium,,85.1%,"Array, Enumeration",all
+241,https://leetcode.com/problems/different-ways-to-add-parentheses,Different Ways to Add Parentheses,Medium,,75.2%,"Math, String, Dynamic Programming, Recursion, Memoization",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,68.1%,"Array, String, Trie",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,58.2%,"Array, Hash Table",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,58.2%,"Array, Dynamic Programming",all
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,58.2%,"Array, Two Pointers, Sorting",all
+52,https://leetcode.com/problems/n-queens-ii,N-Queens II,Hard,,58.2%,Backtracking,all
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,58.2%,"Array, Dynamic Programming",all
+805,https://leetcode.com/problems/split-array-with-same-average,Split Array With Same Average,Hard,,58.2%,"Array, Hash Table, Math, Dynamic Programming, Bit Manipulation, Bitmask",all
+2552,https://leetcode.com/problems/count-increasing-quadruplets,Count Increasing Quadruplets,Hard,,58.2%,"Array, Dynamic Programming, Binary Indexed Tree, Enumeration, Prefix Sum",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,58.2%,"Array, Dynamic Programming, Breadth-First Search",all
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,58.2%,"Two Pointers, String",all

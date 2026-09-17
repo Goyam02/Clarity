@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+814,https://leetcode.com/problems/binary-tree-pruning,Binary Tree Pruning,Medium,,100.0%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,100.0%,"Math, String, Stack, Recursion",more_than_6m
+371,https://leetcode.com/problems/sum-of-two-integers,Sum of Two Integers,Medium,,100.0%,"Math, Bit Manipulation",more_than_6m
+1063,https://leetcode.com/problems/number-of-valid-subarrays,Number of Valid Subarrays,Hard,,100.0%,"Array, Stack, Monotonic Stack",more_than_6m
+440,https://leetcode.com/problems/k-th-smallest-in-lexicographical-order,K-th Smallest in Lexicographical Order,Hard,,100.0%,Trie,more_than_6m
+1063,https://leetcode.com/problems/number-of-valid-subarrays,Number of Valid Subarrays,Hard,,100.0%,"Array, Stack, Monotonic Stack",all
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,100.0%,"Math, String, Stack, Recursion",all
+814,https://leetcode.com/problems/binary-tree-pruning,Binary Tree Pruning,Medium,,100.0%,"Tree, Depth-First Search, Binary Tree",all
+371,https://leetcode.com/problems/sum-of-two-integers,Sum of Two Integers,Medium,,100.0%,"Math, Bit Manipulation",all
+440,https://leetcode.com/problems/k-th-smallest-in-lexicographical-order,K-th Smallest in Lexicographical Order,Hard,,100.0%,Trie,all

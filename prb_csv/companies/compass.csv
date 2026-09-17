@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",3_months
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",6_months
+2739,https://leetcode.com/problems/total-distance-traveled,Total Distance Traveled,Easy,,100.0%,"Math, Simulation",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,89.8%,"Array, Hash Table, String, Sorting",more_than_6m
+1023,https://leetcode.com/problems/camelcase-matching,Camelcase Matching,Medium,,89.8%,"Array, Two Pointers, String, Trie, String Matching",more_than_6m
+572,https://leetcode.com/problems/subtree-of-another-tree,Subtree of Another Tree,Easy,,89.8%,"Tree, Depth-First Search, String Matching, Binary Tree, Hash Function",more_than_6m
+2739,https://leetcode.com/problems/total-distance-traveled,Total Distance Traveled,Easy,,100.0%,"Math, Simulation",all
+1023,https://leetcode.com/problems/camelcase-matching,Camelcase Matching,Medium,,89.4%,"Array, Two Pointers, String, Trie, String Matching",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,89.4%,"Array, Hash Table, String, Sorting",all
+572,https://leetcode.com/problems/subtree-of-another-tree,Subtree of Another Tree,Easy,,89.4%,"Tree, Depth-First Search, String Matching, Binary Tree, Hash Function",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,89.4%,"Hash Table, String, Binary Search, Design",all
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,89.4%,"String, Stack, Recursion",all

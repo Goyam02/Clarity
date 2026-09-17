@@ -1,0 +1,8 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3367,https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals,Maximize Sum of Weights after Edge Removals,Hard,,100.0%,"Dynamic Programming, Tree, Depth-First Search, Sorting",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,63.9%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+2867,https://leetcode.com/problems/count-valid-paths-in-a-tree,Count Valid Paths in a Tree,Hard,,63.9%,"Math, Dynamic Programming, Tree, Depth-First Search, Number Theory",more_than_6m
+3367,https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals,Maximize Sum of Weights after Edge Removals,Hard,,100.0%,"Dynamic Programming, Tree, Depth-First Search, Sorting",all
+3710,https://leetcode.com/problems/maximum-partition-factor,Maximum Partition Factor,Hard,,93.1%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,63.3%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+2867,https://leetcode.com/problems/count-valid-paths-in-a-tree,Count Valid Paths in a Tree,Hard,,63.3%,"Math, Dynamic Programming, Tree, Depth-First Search, Number Theory",all

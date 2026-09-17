@@ -1,0 +1,17 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,79.8%,"String, Trie",more_than_6m
+2707,https://leetcode.com/problems/extra-characters-in-a-string,Extra Characters in a String,Medium,,79.8%,"Array, Hash Table, String, Dynamic Programming, Trie",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,79.8%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,79.8%,"Linked List, Recursion",more_than_6m
+2283,https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value,Check if Number Has Equal Digit Count and Digit Value,Easy,,79.8%,"Hash Table, String, Counting",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,79.8%,"Hash Table, String, Sliding Window",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,79.3%,"Hash Table, String, Sliding Window",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,79.3%,"String, Trie",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,79.3%,"Array, Divide and Conquer, Dynamic Programming",all
+2707,https://leetcode.com/problems/extra-characters-in-a-string,Extra Characters in a String,Medium,,79.3%,"Array, Hash Table, String, Dynamic Programming, Trie",all
+2283,https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value,Check if Number Has Equal Digit Count and Digit Value,Easy,,79.3%,"Hash Table, String, Counting",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,79.3%,"Linked List, Recursion",all
+410,https://leetcode.com/problems/split-array-largest-sum,Split Array Largest Sum,Hard,,79.3%,"Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,79.3%,"Array, Binary Search",all

@@ -1,0 +1,16 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+1500,https://leetcode.com/problems/design-a-file-sharing-system,Design a File Sharing System,Medium,,89.0%,"Hash Table, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+1435,https://leetcode.com/problems/create-a-session-bar-chart,Create a Session Bar Chart,Easy,,89.0%,Database,more_than_6m
+1230,https://leetcode.com/problems/toss-strange-coins,Toss Strange Coins,Medium,,89.0%,"Array, Math, Dynamic Programming, Probability and Statistics",more_than_6m
+345,https://leetcode.com/problems/reverse-vowels-of-a-string,Reverse Vowels of a String,Easy,,89.0%,"Two Pointers, String",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,89.0%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,89.0%,"Array, Sorting",more_than_6m
+1435,https://leetcode.com/problems/create-a-session-bar-chart,Create a Session Bar Chart,Easy,,100.0%,Database,all
+1500,https://leetcode.com/problems/design-a-file-sharing-system,Design a File Sharing System,Medium,,100.0%,"Hash Table, Design, Sorting, Heap (Priority Queue), Data Stream",all
+1230,https://leetcode.com/problems/toss-strange-coins,Toss Strange Coins,Medium,,100.0%,"Array, Math, Dynamic Programming, Probability and Statistics",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,84.8%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+345,https://leetcode.com/problems/reverse-vowels-of-a-string,Reverse Vowels of a String,Easy,,64.6%,"Two Pointers, String",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,64.6%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,64.6%,"Array, Sorting",all

@@ -1,0 +1,6 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1722,https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations,Minimize Hamming Distance After Swap Operations,Medium,,100.0%,"Array, Depth-First Search, Union-Find",6_months
+990,https://leetcode.com/problems/satisfiability-of-equality-equations,Satisfiability of Equality Equations,Medium,,100.0%,"Array, String, Union-Find, Graph Theory",more_than_6m
+990,https://leetcode.com/problems/satisfiability-of-equality-equations,Satisfiability of Equality Equations,Medium,,100.0%,"Array, String, Union-Find, Graph Theory",all
+1722,https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations,Minimize Hamming Distance After Swap Operations,Medium,,75.2%,"Array, Depth-First Search, Union-Find",all
+1438,https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit,Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit,Medium,,66.8%,"Array, Queue, Sliding Window, Heap (Priority Queue), Ordered Set, Monotonic Queue",all

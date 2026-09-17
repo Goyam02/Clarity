@@ -1,0 +1,19 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2263,https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing,Make Array Non-decreasing or Non-increasing,Hard,,100.0%,"Array, Dynamic Programming, Greedy, Heap (Priority Queue)",more_than_6m
+1328,https://leetcode.com/problems/break-a-palindrome,Break a Palindrome,Medium,,100.0%,"String, Greedy",more_than_6m
+2217,https://leetcode.com/problems/find-palindrome-with-fixed-length,Find Palindrome With Fixed Length,Medium,,100.0%,"Array, Math",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,100.0%,"Array, Binary Search",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+142,https://leetcode.com/problems/linked-list-cycle-ii,Linked List Cycle II,Medium,,100.0%,"Hash Table, Linked List, Two Pointers",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",more_than_6m
+1328,https://leetcode.com/problems/break-a-palindrome,Break a Palindrome,Medium,,100.0%,"String, Greedy",all
+2217,https://leetcode.com/problems/find-palindrome-with-fixed-length,Find Palindrome With Fixed Length,Medium,,100.0%,"Array, Math",all
+2263,https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing,Make Array Non-decreasing or Non-increasing,Hard,,100.0%,"Array, Dynamic Programming, Greedy, Heap (Priority Queue)",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,64.1%,"Array, Binary Search",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,64.1%,"Array, Breadth-First Search, Matrix",all
+142,https://leetcode.com/problems/linked-list-cycle-ii,Linked List Cycle II,Medium,,64.1%,"Hash Table, Linked List, Two Pointers",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,64.1%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,64.1%,"Hash Table, String, Binary Search, Design",all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,64.1%,"Array, Binary Search, Divide and Conquer",all

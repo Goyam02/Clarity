@@ -1,0 +1,31 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+819,https://leetcode.com/problems/most-common-word,Most Common Word,Easy,,100.0%,"Array, Hash Table, String, Counting",more_than_6m
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,97.1%,"Array, Dynamic Programming, Breadth-First Search",more_than_6m
+1229,https://leetcode.com/problems/meeting-scheduler,Meeting Scheduler,Medium,,92.5%,"Array, Two Pointers, Sorting",more_than_6m
+408,https://leetcode.com/problems/valid-word-abbreviation,Valid Word Abbreviation,Easy,,91.2%,"Two Pointers, String",more_than_6m
+559,https://leetcode.com/problems/maximum-depth-of-n-ary-tree,Maximum Depth of N-ary Tree,Easy,,84.8%,"Tree, Depth-First Search, Breadth-First Search",more_than_6m
+211,https://leetcode.com/problems/design-add-and-search-words-data-structure,Design Add and Search Words Data Structure,Medium,,82.9%,"String, Depth-First Search, Design, Trie",more_than_6m
+622,https://leetcode.com/problems/design-circular-queue,Design Circular Queue,Medium,,80.7%,"Array, Linked List, Design, Queue",more_than_6m
+1452,https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list,People Whose List of Favorite Companies Is Not a Subset of Another List,Medium,,72.4%,"Array, Hash Table, String",more_than_6m
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,68.7%,"Array, Dynamic Programming",more_than_6m
+124,https://leetcode.com/problems/binary-tree-maximum-path-sum,Binary Tree Maximum Path Sum,Hard,,58.2%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",more_than_6m
+568,https://leetcode.com/problems/maximum-vacation-days,Maximum Vacation Days,Hard,,58.2%,"Array, Dynamic Programming, Matrix",more_than_6m
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,58.2%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",more_than_6m
+213,https://leetcode.com/problems/house-robber-ii,House Robber II,Medium,,58.2%,"Array, Dynamic Programming",more_than_6m
+1232,https://leetcode.com/problems/check-if-it-is-a-straight-line,Check If It Is a Straight Line,Easy,,49.9%,"Array, Math, Geometry",more_than_6m
+112,https://leetcode.com/problems/path-sum,Path Sum,Easy,,49.9%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+819,https://leetcode.com/problems/most-common-word,Most Common Word,Easy,,100.0%,"Array, Hash Table, String, Counting",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,96.3%,"Array, Dynamic Programming, Breadth-First Search",all
+1229,https://leetcode.com/problems/meeting-scheduler,Meeting Scheduler,Medium,,91.7%,"Array, Two Pointers, Sorting",all
+408,https://leetcode.com/problems/valid-word-abbreviation,Valid Word Abbreviation,Easy,,90.4%,"Two Pointers, String",all
+559,https://leetcode.com/problems/maximum-depth-of-n-ary-tree,Maximum Depth of N-ary Tree,Easy,,84.0%,"Tree, Depth-First Search, Breadth-First Search",all
+211,https://leetcode.com/problems/design-add-and-search-words-data-structure,Design Add and Search Words Data Structure,Medium,,84.0%,"String, Depth-First Search, Design, Trie",all
+622,https://leetcode.com/problems/design-circular-queue,Design Circular Queue,Medium,,79.9%,"Array, Linked List, Design, Queue",all
+1452,https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list,People Whose List of Favorite Companies Is Not a Subset of Another List,Medium,,71.6%,"Array, Hash Table, String",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,67.9%,"Array, Dynamic Programming",all
+568,https://leetcode.com/problems/maximum-vacation-days,Maximum Vacation Days,Hard,,57.5%,"Array, Dynamic Programming, Matrix",all
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,57.5%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",all
+124,https://leetcode.com/problems/binary-tree-maximum-path-sum,Binary Tree Maximum Path Sum,Hard,,57.5%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",all
+213,https://leetcode.com/problems/house-robber-ii,House Robber II,Medium,,57.5%,"Array, Dynamic Programming",all
+1232,https://leetcode.com/problems/check-if-it-is-a-straight-line,Check If It Is a Straight Line,Easy,,49.2%,"Array, Math, Geometry",all
+112,https://leetcode.com/problems/path-sum,Path Sum,Easy,,49.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all

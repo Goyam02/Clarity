@@ -1,0 +1,42 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,100.0%,"Array, Two Pointers, Greedy",3_months
+2448,https://leetcode.com/problems/minimum-cost-to-make-array-equal,Minimum Cost to Make Array Equal,Hard,,100.0%,"Array, Binary Search, Greedy, Sorting, Prefix Sum",6_months
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,100.0%,"Array, Two Pointers",6_months
+810,https://leetcode.com/problems/chalkboard-xor-game,Chalkboard XOR Game,Hard,,100.0%,"Array, Math, Bit Manipulation, Brainteaser, Game Theory",6_months
+45,https://leetcode.com/problems/jump-game-ii,Jump Game II,Medium,,100.0%,"Array, Dynamic Programming, Greedy",6_months
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,100.0%,"String, Dynamic Programming",6_months
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,100.0%,"Array, Two Pointers, Greedy",6_months
+3051,https://leetcode.com/problems/find-candidates-for-data-scientist-position,Find Candidates for Data Scientist Position,Easy,,100.0%,Database,more_than_6m
+3052,https://leetcode.com/problems/maximize-items,Maximize Items,Hard,,100.0%,Database,more_than_6m
+2999,https://leetcode.com/problems/count-the-number-of-powerful-integers,Count the Number of Powerful Integers,Hard,,83.9%,"Math, String, Dynamic Programming",more_than_6m
+3012,https://leetcode.com/problems/minimize-length-of-array-using-operations,Minimize Length of Array Using Operations,Medium,,83.9%,"Array, Math, Greedy, Number Theory",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,72.1%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,62.7%,"Array, Dynamic Programming",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,62.7%,"Array, Two Pointers, Sorting",more_than_6m
+3143,https://leetcode.com/problems/maximum-points-inside-the-square,Maximum Points Inside the Square,Medium,,62.7%,"Array, Hash Table, String, Binary Search, Sorting",more_than_6m
+152,https://leetcode.com/problems/maximum-product-subarray,Maximum Product Subarray,Medium,,62.7%,"Array, Dynamic Programming",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,62.7%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+2594,https://leetcode.com/problems/minimum-time-to-repair-cars,Minimum Time to Repair Cars,Medium,,62.7%,"Array, Binary Search",more_than_6m
+3051,https://leetcode.com/problems/find-candidates-for-data-scientist-position,Find Candidates for Data Scientist Position,Easy,,100.0%,Database,all
+3052,https://leetcode.com/problems/maximize-items,Maximize Items,Hard,,100.0%,Database,all
+3143,https://leetcode.com/problems/maximum-points-inside-the-square,Maximum Points Inside the Square,Medium,,100.0%,"Array, Hash Table, String, Binary Search, Sorting",all
+2999,https://leetcode.com/problems/count-the-number-of-powerful-integers,Count the Number of Powerful Integers,Hard,,83.0%,"Math, String, Dynamic Programming",all
+3012,https://leetcode.com/problems/minimize-length-of-array-using-operations,Minimize Length of Array Using Operations,Medium,,83.0%,"Array, Math, Greedy, Number Theory",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,70.5%,"Array, Dynamic Programming",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,70.5%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,70.5%,"Array, Divide and Conquer, Dynamic Programming",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,60.6%,"Array, Two Pointers, Sorting",all
+2594,https://leetcode.com/problems/minimum-time-to-repair-cars,Minimum Time to Repair Cars,Medium,,60.6%,"Array, Binary Search",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,60.6%,"Array, Two Pointers, Greedy",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,60.6%,"Array, Hash Table, String, Sorting",all
+205,https://leetcode.com/problems/isomorphic-strings,Isomorphic Strings,Easy,,60.6%,"Hash Table, String",all
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,60.6%,"String, Dynamic Programming",all
+152,https://leetcode.com/problems/maximum-product-subarray,Maximum Product Subarray,Medium,,60.6%,"Array, Dynamic Programming",all
+810,https://leetcode.com/problems/chalkboard-xor-game,Chalkboard XOR Game,Hard,,60.6%,"Array, Math, Bit Manipulation, Brainteaser, Game Theory",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,60.6%,"Array, Depth-First Search, Breadth-First Search, Union Find, Matrix",all
+526,https://leetcode.com/problems/beautiful-arrangement,Beautiful Arrangement,Medium,,60.6%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",all
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,60.6%,"Array, Dynamic Programming, Greedy",all
+45,https://leetcode.com/problems/jump-game-ii,Jump Game II,Medium,,60.6%,"Array, Dynamic Programming, Greedy",all
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,60.6%,"Array, Two Pointers",all
+2448,https://leetcode.com/problems/minimum-cost-to-make-array-equal,Minimum Cost to Make Array Equal,Hard,,60.6%,"Array, Binary Search, Greedy, Sorting, Prefix Sum",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,60.6%,"Array, Binary Search",all

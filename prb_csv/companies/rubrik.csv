@@ -1,0 +1,68 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2193,https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome,Minimum Number of Moves to Make Palindrome,Hard,,100.0%,"Two Pointers, String, Greedy, Binary Indexed Tree",6_months
+3207,https://leetcode.com/problems/maximum-points-after-enemy-battles,Maximum Points After Enemy Battles,Medium,,100.0%,"Array, Greedy",more_than_6m
+2982,https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii,Find Longest Special Substring That Occurs Thrice II,Medium,,61.7%,"Hash Table, String, Binary Search, Sliding Window, Counting",more_than_6m
+3410,https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element,Maximize Subarray Sum After Removing All Occurrences of One Element,Hard,,61.7%,"Array, Hash Table, Divide and Conquer, Dynamic Programming, Segment Tree, Prefix Sum",more_than_6m
+3426,https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces,Manhattan Distances of All Arrangements of Pieces,Hard,,61.7%,"Math, Combinatorics",more_than_6m
+3525,https://leetcode.com/problems/find-x-value-of-array-ii,Find X Value of Array II,Hard,,61.7%,"Array, Math, Segment Tree",more_than_6m
+3524,https://leetcode.com/problems/find-x-value-of-array-i,Find X Value of Array I,Medium,,61.7%,"Array, Math, Dynamic Programming",more_than_6m
+2249,https://leetcode.com/problems/count-lattice-points-inside-a-circle,Count Lattice Points Inside a Circle,Medium,,58.0%,"Array, Hash Table, Math, Geometry, Enumeration",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,50.2%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+2132,https://leetcode.com/problems/stamping-the-grid,Stamping the Grid,Hard,,46.6%,"Array, Greedy, Matrix, Prefix Sum",more_than_6m
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,46.6%,"Depth-First Search, Breadth-First Search, Concurrency",more_than_6m
+621,https://leetcode.com/problems/task-scheduler,Task Scheduler,Medium,,46.6%,"Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting",more_than_6m
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,46.6%,"Array, Hash Table, Binary Search, Design",more_than_6m
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,41.9%,"Array, Two Pointers",more_than_6m
+3021,https://leetcode.com/problems/alice-and-bob-playing-flower-game,Alice and Bob Playing Flower Game,Medium,,41.9%,Math,more_than_6m
+723,https://leetcode.com/problems/candy-crush,Candy Crush,Medium,,41.9%,"Array, Two Pointers, Matrix, Simulation",more_than_6m
+301,https://leetcode.com/problems/remove-invalid-parentheses,Remove Invalid Parentheses,Hard,,41.9%,"String, Backtracking, Breadth-First Search",more_than_6m
+1236,https://leetcode.com/problems/web-crawler,Web Crawler,Medium,,41.9%,"String, Depth-First Search, Breadth-First Search, Interactive",more_than_6m
+2365,https://leetcode.com/problems/task-scheduler-ii,Task Scheduler II,Medium,,41.9%,"Array, Hash Table, Simulation",more_than_6m
+87,https://leetcode.com/problems/scramble-string,Scramble String,Hard,,35.2%,"String, Dynamic Programming",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,35.2%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+2929,https://leetcode.com/problems/distribute-candies-among-children-ii,Distribute Candies Among Children II,Medium,,35.2%,"Math, Combinatorics, Enumeration",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,35.2%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+2927,https://leetcode.com/problems/distribute-candies-among-children-iii,Distribute Candies Among Children III,Hard,,35.2%,"Math, Combinatorics",more_than_6m
+3098,https://leetcode.com/problems/find-the-sum-of-subsequence-powers,Find the Sum of Subsequence Powers,Hard,,35.2%,"Array, Dynamic Programming, Sorting",more_than_6m
+3083,https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse,Existence of a Substring in a String and Its Reverse,Easy,,35.2%,"Hash Table, String",more_than_6m
+2928,https://leetcode.com/problems/distribute-candies-among-children-i,Distribute Candies Among Children I,Easy,,35.2%,"Math, Combinatorics, Enumeration",more_than_6m
+1463,https://leetcode.com/problems/cherry-pickup-ii,Cherry Pickup II,Hard,,35.2%,"Array, Dynamic Programming, Matrix",more_than_6m
+18,https://leetcode.com/problems/4sum,4Sum,Medium,,35.2%,"Array, Two Pointers, Sorting",more_than_6m
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,35.2%,"Array, Hash Table, Design, Simulation",more_than_6m
+622,https://leetcode.com/problems/design-circular-queue,Design Circular Queue,Medium,,35.2%,"Array, Linked List, Design, Queue",more_than_6m
+761,https://leetcode.com/problems/special-binary-string,Special Binary String,Hard,,35.2%,"String, Divide and Conquer, Sorting",more_than_6m
+3207,https://leetcode.com/problems/maximum-points-after-enemy-battles,Maximum Points After Enemy Battles,Medium,,100.0%,"Array, Greedy",all
+3410,https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element,Maximize Subarray Sum After Removing All Occurrences of One Element,Hard,,70.6%,"Array, Hash Table, Divide and Conquer, Dynamic Programming, Segment Tree, Prefix Sum",all
+3426,https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces,Manhattan Distances of All Arrangements of Pieces,Hard,,70.6%,"Math, Combinatorics",all
+2249,https://leetcode.com/problems/count-lattice-points-inside-a-circle,Count Lattice Points Inside a Circle,Medium,,69.6%,"Array, Hash Table, Math, Geometry, Enumeration",all
+2132,https://leetcode.com/problems/stamping-the-grid,Stamping the Grid,Hard,,65.1%,"Array, Greedy, Matrix, Prefix Sum",all
+3021,https://leetcode.com/problems/alice-and-bob-playing-flower-game,Alice and Bob Playing Flower Game,Medium,,62.2%,Math,all
+723,https://leetcode.com/problems/candy-crush,Candy Crush,Medium,,62.2%,"Array, Two Pointers, Matrix, Simulation",all
+2928,https://leetcode.com/problems/distribute-candies-among-children-i,Distribute Candies Among Children I,Easy,,60.6%,"Math, Combinatorics, Enumeration",all
+2929,https://leetcode.com/problems/distribute-candies-among-children-ii,Distribute Candies Among Children II,Medium,,60.6%,"Math, Combinatorics, Enumeration",all
+2927,https://leetcode.com/problems/distribute-candies-among-children-iii,Distribute Candies Among Children III,Hard,,60.6%,"Math, Combinatorics",all
+3098,https://leetcode.com/problems/find-the-sum-of-subsequence-powers,Find the Sum of Subsequence Powers,Hard,,60.6%,"Array, Dynamic Programming, Sorting",all
+3083,https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse,Existence of a Substring in a String and Its Reverse,Easy,,60.6%,"Hash Table, String",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,60.6%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+2982,https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii,Find Longest Special Substring That Occurs Thrice II,Medium,,60.6%,"Hash Table, String, Binary Search, Sliding Window, Counting",all
+3525,https://leetcode.com/problems/find-x-value-of-array-ii,Find X Value of Array II,Hard,,60.6%,"Array, Math, Segment Tree",all
+3524,https://leetcode.com/problems/find-x-value-of-array-i,Find X Value of Array I,Medium,,60.6%,"Array, Math, Dynamic Programming",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,48.9%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+621,https://leetcode.com/problems/task-scheduler,Task Scheduler,Medium,,45.1%,"Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting",all
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,45.1%,"Depth-First Search, Breadth-First Search, Concurrency",all
+301,https://leetcode.com/problems/remove-invalid-parentheses,Remove Invalid Parentheses,Hard,,45.1%,"String, Backtracking, Breadth-First Search",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,45.1%,"Array, Hash Table, Binary Search, Design",all
+2193,https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome,Minimum Number of Moves to Make Palindrome,Hard,,45.1%,"Two Pointers, String, Greedy, Binary Indexed Tree",all
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,40.3%,"Array, Two Pointers",all
+1236,https://leetcode.com/problems/web-crawler,Web Crawler,Medium,,40.3%,"String, Depth-First Search, Breadth-First Search, Interactive",all
+2365,https://leetcode.com/problems/task-scheduler-ii,Task Scheduler II,Medium,,40.3%,"Array, Hash Table, Simulation",all
+18,https://leetcode.com/problems/4sum,4Sum,Medium,,33.5%,"Array, Two Pointers, Sorting",all
+87,https://leetcode.com/problems/scramble-string,Scramble String,Hard,,33.5%,"String, Dynamic Programming",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,33.5%,"Array, Hash Table, Math, Design, Randomized",all
+1463,https://leetcode.com/problems/cherry-pickup-ii,Cherry Pickup II,Hard,,33.5%,"Array, Dynamic Programming, Matrix",all
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,33.5%,"Array, Hash Table, Design, Simulation",all
+622,https://leetcode.com/problems/design-circular-queue,Design Circular Queue,Medium,,33.5%,"Array, Linked List, Design, Queue",all
+761,https://leetcode.com/problems/special-binary-string,Special Binary String,Hard,,33.5%,"String, Divide and Conquer, Sorting",all
+2747,https://leetcode.com/problems/count-zero-request-servers,Count Zero Request Servers,Medium,,33.5%,"Array, Hash Table, Sliding Window, Sorting",all
+276,https://leetcode.com/problems/paint-fence,Paint Fence,Medium,,33.5%,Dynamic Programming,all
+1202,https://leetcode.com/problems/smallest-string-with-swaps,Smallest String With Swaps,Medium,,33.5%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",all

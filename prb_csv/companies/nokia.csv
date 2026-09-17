@@ -1,0 +1,16 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2751,https://leetcode.com/problems/robot-collisions,Robot Collisions,Hard,,100.0%,"Array, Stack, Sorting, Simulation",6_months
+2144,https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount,Minimum Cost of Buying Candies With Discount,Easy,,100.0%,"Array, Greedy, Sorting",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,100.0%,"Hash Table, String, Sorting",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",more_than_6m
+1250,https://leetcode.com/problems/check-if-it-is-a-good-array,Check If It Is a Good Array,Hard,,88.2%,"Array, Math, Number Theory",more_than_6m
+204,https://leetcode.com/problems/count-primes,Count Primes,Medium,,88.2%,"Array, Math, Enumeration, Number Theory",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,88.2%,"Array, String, Trie",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,100.0%,"Hash Table, String, Sorting",all
+2144,https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount,Minimum Cost of Buying Candies With Discount,Easy,,91.9%,"Array, Greedy, Sorting",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,91.9%,"String, Stack",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,80.4%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1250,https://leetcode.com/problems/check-if-it-is-a-good-array,Check If It Is a Good Array,Hard,,80.4%,"Array, Math, Number Theory",all
+204,https://leetcode.com/problems/count-primes,Count Primes,Medium,,80.4%,"Array, Math, Enumeration, Number Theory",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,80.4%,"Array, String, Trie",all
+2751,https://leetcode.com/problems/robot-collisions,Robot Collisions,Hard,,80.4%,"Array, Stack, Sorting, Simulation",all

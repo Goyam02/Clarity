@@ -1,0 +1,33 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",3_months
+306,https://leetcode.com/problems/additive-number,Additive Number,Medium,,100.0%,"String, Backtracking",6_months
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,83.5%,"String, Stack",6_months
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,100.0%,"Hash Table, String, Backtracking",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,98.5%,"Array, Matrix, Simulation",more_than_6m
+306,https://leetcode.com/problems/additive-number,Additive Number,Medium,,96.9%,"String, Backtracking",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,89.0%,"String, Stack",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,76.3%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+1344,https://leetcode.com/problems/angle-between-hands-of-a-clock,Angle Between Hands of a Clock,Medium,,76.3%,Math,more_than_6m
+728,https://leetcode.com/problems/self-dividing-numbers,Self Dividing Numbers,Easy,,71.5%,Math,more_than_6m
+1215,https://leetcode.com/problems/stepping-numbers,Stepping Numbers,Medium,,56.5%,"Math, Backtracking, Breadth-First Search",more_than_6m
+299,https://leetcode.com/problems/bulls-and-cows,Bulls and Cows,Medium,,56.5%,"Hash Table, String, Counting",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,56.5%,"Array, Hash Table",more_than_6m
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,56.5%,"Array, Backtracking",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,56.5%,"Two Pointers, String, Dynamic Programming",more_than_6m
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,56.5%,"Two Pointers, String, Dynamic Programming",more_than_6m
+204,https://leetcode.com/problems/count-primes,Count Primes,Medium,,56.5%,"Array, Math, Enumeration, Number Theory",more_than_6m
+306,https://leetcode.com/problems/additive-number,Additive Number,Medium,,100.0%,"String, Backtracking",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,89.7%,"Hash Table, String, Backtracking",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,89.7%,"Array, Matrix, Simulation",all
+728,https://leetcode.com/problems/self-dividing-numbers,Self Dividing Numbers,Easy,,85.3%,Math,all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,83.5%,"String, Stack",all
+1215,https://leetcode.com/problems/stepping-numbers,Stepping Numbers,Medium,,81.6%,"Math, Backtracking, Breadth-First Search",all
+1344,https://leetcode.com/problems/angle-between-hands-of-a-clock,Angle Between Hands of a Clock,Medium,,71.3%,Math,all
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,67.7%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+299,https://leetcode.com/problems/bulls-and-cows,Bulls and Cows,Medium,,57.4%,"Hash Table, String, Counting",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,57.4%,"Array, Hash Table",all
+204,https://leetcode.com/problems/count-primes,Count Primes,Medium,,57.4%,"Array, Math, Enumeration, Number Theory",all
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,49.3%,"Two Pointers, String, Dynamic Programming",all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,49.3%,"Array, Backtracking",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,49.3%,"Two Pointers, String, Dynamic Programming",all
+329,https://leetcode.com/problems/longest-increasing-path-in-a-matrix,Longest Increasing Path in a Matrix,Hard,,49.3%,"Array, Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Memoization, Matrix",all

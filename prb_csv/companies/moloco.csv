@@ -1,0 +1,29 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",6_months
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,100.0%,"Hash Table, String, Sliding Window",6_months
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",6_months
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,100.0%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",more_than_6m
+1381,https://leetcode.com/problems/design-a-stack-with-increment-operation,Design a Stack With Increment Operation,Medium,,92.3%,"Array, Stack, Design",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,92.3%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+540,https://leetcode.com/problems/single-element-in-a-sorted-array,Single Element in a Sorted Array,Medium,,81.5%,"Array, Binary Search",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,81.5%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+1438,https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit,Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit,Medium,,81.5%,"Array, Queue, Sliding Window, Heap (Priority Queue), Ordered Set, Monotonic Queue",more_than_6m
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,81.5%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,81.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+2116,https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid,Check if a Parentheses String Can Be Valid,Medium,,81.5%,"String, Stack, Greedy",more_than_6m
+130,https://leetcode.com/problems/surrounded-regions,Surrounded Regions,Medium,,81.5%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+1381,https://leetcode.com/problems/design-a-stack-with-increment-operation,Design a Stack With Increment Operation,Medium,,100.0%,"Array, Stack, Design",all
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,100.0%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,91.9%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,80.6%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+540,https://leetcode.com/problems/single-element-in-a-sorted-array,Single Element in a Sorted Array,Medium,,80.6%,"Array, Binary Search",all
+1438,https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit,Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit,Medium,,80.6%,"Array, Queue, Sliding Window, Heap (Priority Queue), Ordered Set, Monotonic Queue",all
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,80.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+130,https://leetcode.com/problems/surrounded-regions,Surrounded Regions,Medium,,80.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+2116,https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid,Check if a Parentheses String Can Be Valid,Medium,,80.6%,"String, Stack, Greedy",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,80.6%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,80.6%,"String, Stack, Recursion",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,80.6%,"Hash Table, String, Sliding Window",all
+305,https://leetcode.com/problems/number-of-islands-ii,Number of Islands II,Hard,,80.6%,"Array, Hash Table, Union-Find",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,80.6%,"Array, Breadth-First Search, Matrix",all

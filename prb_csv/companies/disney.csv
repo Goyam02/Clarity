@@ -1,0 +1,19 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,92.2%,"Array, Hash Table, String, Sorting",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,92.2%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,81.2%,"Hash Table, String, Counting",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,81.2%,"Array, Sorting",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,81.2%,"Array, String, Trie",more_than_6m
+1209,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii,Remove All Adjacent Duplicates in String II,Medium,,81.2%,"String, Stack",more_than_6m
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,81.2%,"String, Dynamic Programming, Backtracking",more_than_6m
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,81.2%,"Math, Dynamic Programming, Memoization",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1209,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii,Remove All Adjacent Duplicates in String II,Medium,,91.9%,"String, Stack",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,91.9%,"Array, String, Trie",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,91.9%,"Array, Hash Table, String, Sorting",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,91.9%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,80.6%,"Array, Sorting",all
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,80.6%,"Hash Table, String, Counting",all
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,80.6%,"Math, Dynamic Programming, Memoization",all
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,80.6%,"String, Dynamic Programming, Backtracking",all

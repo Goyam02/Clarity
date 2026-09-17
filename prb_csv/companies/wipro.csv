@@ -1,0 +1,37 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,100.0%,"Array, Hash Table, String, Sorting",6_months
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",6_months
+485,https://leetcode.com/problems/max-consecutive-ones,Max Consecutive Ones,Easy,,100.0%,Array,6_months
+3001,https://leetcode.com/problems/minimum-moves-to-capture-the-queen,Minimum Moves to Capture The Queen,Medium,,100.0%,"Math, Enumeration",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,97.5%,"Array, Hash Table",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,83.4%,"Array, String, Trie",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,71.2%,"Hash Table, String, Sorting",more_than_6m
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,61.5%,Math,more_than_6m
+7,https://leetcode.com/problems/reverse-integer,Reverse Integer,Medium,,61.5%,Math,more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,61.5%,"Hash Table, String, Sliding Window",more_than_6m
+451,https://leetcode.com/problems/sort-characters-by-frequency,Sort Characters By Frequency,Medium,,61.5%,"Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort, Counting",more_than_6m
+2667,https://leetcode.com/problems/create-hello-world-function,Create Hello World Function,Easy,,61.5%,,more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,61.5%,"String, Stack",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,61.5%,"Array, Sorting",more_than_6m
+67,https://leetcode.com/problems/add-binary,Add Binary,Easy,,61.5%,"Math, String, Bit Manipulation, Simulation",more_than_6m
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,61.5%,"Array, Two Pointers, Sorting",more_than_6m
+766,https://leetcode.com/problems/toeplitz-matrix,Toeplitz Matrix,Easy,,61.5%,"Array, Matrix",more_than_6m
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,61.5%,"Array, Dynamic Programming",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",all
+3001,https://leetcode.com/problems/minimum-moves-to-capture-the-queen,Minimum Moves to Capture The Queen,Medium,,100.0%,"Math, Enumeration",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,87.5%,"Array, String, Trie",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,77.5%,"Hash Table, String, Sliding Window",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,70.5%,"String, Stack",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,70.5%,"Hash Table, String, Sorting",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,70.5%,"Array, Hash Table, String, Sorting",all
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,60.6%,Math,all
+7,https://leetcode.com/problems/reverse-integer,Reverse Integer,Medium,,60.6%,Math,all
+451,https://leetcode.com/problems/sort-characters-by-frequency,Sort Characters By Frequency,Medium,,60.6%,"Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all
+2667,https://leetcode.com/problems/create-hello-world-function,Create Hello World Function,Easy,,60.6%,,all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,60.6%,"Array, Sorting",all
+67,https://leetcode.com/problems/add-binary,Add Binary,Easy,,60.6%,"Math, String, Bit Manipulation, Simulation",all
+766,https://leetcode.com/problems/toeplitz-matrix,Toeplitz Matrix,Easy,,60.6%,"Array, Matrix",all
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,60.6%,"Array, Dynamic Programming",all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,60.6%,"Array, Two Pointers, Sorting",all
+1431,https://leetcode.com/problems/kids-with-the-greatest-number-of-candies,Kids With the Greatest Number of Candies,Easy,,60.6%,Array,all
+485,https://leetcode.com/problems/max-consecutive-ones,Max Consecutive Ones,Easy,,60.6%,Array,all

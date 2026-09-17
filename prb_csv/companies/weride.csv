@@ -1,0 +1,21 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1559,https://leetcode.com/problems/detect-cycles-in-2d-grid,Detect Cycles in 2D Grid,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+2592,https://leetcode.com/problems/maximize-greatness-of-an-array,Maximize Greatness of an Array,Medium,,100.0%,"Array, Two Pointers, Greedy, Sorting",more_than_6m
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,87.4%,"Array, Binary Search, Dynamic Programming, Sorting",more_than_6m
+329,https://leetcode.com/problems/longest-increasing-path-in-a-matrix,Longest Increasing Path in a Matrix,Hard,,87.4%,"Array, Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Memoization, Matrix",more_than_6m
+778,https://leetcode.com/problems/swim-in-rising-water,Swim in Rising Water,Hard,,87.4%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix",more_than_6m
+2791,https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree,Count Paths That Can Form a Palindrome in a Tree,Hard,,87.4%,"Hash Table, Bit Manipulation, Tree, Depth-First Search",more_than_6m
+3123,https://leetcode.com/problems/find-edges-in-shortest-paths,Find Edges in Shortest Paths,Hard,,77.4%,"Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,77.4%,"Array, String, Simulation",more_than_6m
+353,https://leetcode.com/problems/design-snake-game,Design Snake Game,Medium,,77.4%,"Array, Hash Table, Design, Queue, Simulation",more_than_6m
+696,https://leetcode.com/problems/count-binary-substrings,Count Binary Substrings,Easy,,77.4%,"Two Pointers, String",more_than_6m
+3123,https://leetcode.com/problems/find-edges-in-shortest-paths,Find Edges in Shortest Paths,Hard,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",all
+2592,https://leetcode.com/problems/maximize-greatness-of-an-array,Maximize Greatness of an Array,Medium,,84.8%,"Array, Two Pointers, Greedy, Sorting",all
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,73.6%,"Array, Binary Search, Dynamic Programming, Sorting",all
+329,https://leetcode.com/problems/longest-increasing-path-in-a-matrix,Longest Increasing Path in a Matrix,Hard,,73.6%,"Array, Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Memoization, Matrix",all
+778,https://leetcode.com/problems/swim-in-rising-water,Swim in Rising Water,Hard,,73.6%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix",all
+2791,https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree,Count Paths That Can Form a Palindrome in a Tree,Hard,,73.6%,"Hash Table, Bit Manipulation, Tree, Depth-First Search",all
+1559,https://leetcode.com/problems/detect-cycles-in-2d-grid,Detect Cycles in 2D Grid,Medium,,73.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,64.8%,"Array, String, Simulation",all
+696,https://leetcode.com/problems/count-binary-substrings,Count Binary Substrings,Easy,,64.8%,"Two Pointers, String",all
+353,https://leetcode.com/problems/design-snake-game,Design Snake Game,Medium,,64.8%,"Array, Hash Table, Design, Queue, Simulation",all

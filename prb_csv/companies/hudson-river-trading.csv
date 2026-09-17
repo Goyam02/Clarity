@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1566,https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times,Detect Pattern of Length M Repeated K or More Times,Easy,,100.0%,"Array, Enumeration",more_than_6m
+1317,https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers,Convert Integer to the Sum of Two No-Zero Integers,Easy,,88.9%,Math,more_than_6m
+1342,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero,Number of Steps to Reduce a Number to Zero,Easy,,88.9%,"Math, Bit Manipulation",more_than_6m
+2508,https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even,Add Edges to Make Degrees of All Nodes Even,Hard,,88.9%,"Hash Table, Graph",more_than_6m
+1323,https://leetcode.com/problems/maximum-69-number,Maximum 69 Number,Easy,,88.9%,"Math, Greedy",more_than_6m
+2285,https://leetcode.com/problems/maximum-total-importance-of-roads,Maximum Total Importance of Roads,Medium,,88.9%,"Greedy, Graph, Sorting, Heap (Priority Queue)",more_than_6m
+3225,https://leetcode.com/problems/maximum-score-from-grid-operations,Maximum Score From Grid Operations,Hard,,88.9%,"Array, Dynamic Programming, Matrix, Prefix Sum",more_than_6m
+2246,https://leetcode.com/problems/longest-path-with-different-adjacent-characters,Longest Path With Different Adjacent Characters,Hard,,88.9%,"Array, String, Tree, Depth-First Search, Graph, Topological Sort",more_than_6m
+1566,https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times,Detect Pattern of Length M Repeated K or More Times,Easy,,100.0%,"Array, Enumeration",all
+2508,https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even,Add Edges to Make Degrees of All Nodes Even,Hard,,97.8%,"Hash Table, Graph",all
+2246,https://leetcode.com/problems/longest-path-with-different-adjacent-characters,Longest Path With Different Adjacent Characters,Hard,,97.8%,"Array, String, Tree, Depth-First Search, Graph, Topological Sort",all
+2285,https://leetcode.com/problems/maximum-total-importance-of-roads,Maximum Total Importance of Roads,Medium,,97.8%,"Greedy, Graph, Sorting, Heap (Priority Queue)",all
+1317,https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers,Convert Integer to the Sum of Two No-Zero Integers,Easy,,97.8%,Math,all
+1342,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero,Number of Steps to Reduce a Number to Zero,Easy,,97.8%,"Math, Bit Manipulation",all
+1323,https://leetcode.com/problems/maximum-69-number,Maximum 69 Number,Easy,,97.8%,"Math, Greedy",all
+3225,https://leetcode.com/problems/maximum-score-from-grid-operations,Maximum Score From Grid Operations,Hard,,97.8%,"Array, Dynamic Programming, Matrix, Prefix Sum",all
+722,https://leetcode.com/problems/remove-comments,Remove Comments,Medium,,60.9%,"Array, String",all

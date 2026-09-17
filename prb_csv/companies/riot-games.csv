@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+495,https://leetcode.com/problems/teemo-attacking,Teemo Attacking,Easy,,100.0%,"Array, Simulation",more_than_6m
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,93.1%,"Array, Hash Table, Backtracking, Matrix",more_than_6m
+3167,https://leetcode.com/problems/better-compression-of-string,Better Compression of String,Medium,,93.1%,"Hash Table, String, Sorting, Counting",more_than_6m
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,83.4%,"Array, Matrix, Simulation",more_than_6m
+495,https://leetcode.com/problems/teemo-attacking,Teemo Attacking,Easy,,100.0%,"Array, Simulation",all
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,71.5%,"Array, Hash Table, Backtracking, Matrix",all
+3167,https://leetcode.com/problems/better-compression-of-string,Better Compression of String,Medium,,71.5%,"Hash Table, String, Sorting, Counting",all
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,63.6%,"Array, Matrix, Simulation",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,63.6%,"Array, Hash Table, Matrix",all

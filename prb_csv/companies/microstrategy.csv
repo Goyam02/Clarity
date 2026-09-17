@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,100.0%,"Two Pointers, String, Stack, Simulation",6_months
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,more_than_6m
+1227,https://leetcode.com/problems/airplane-seat-assignment-probability,Airplane Seat Assignment Probability,Medium,,78.5%,"Math, Dynamic Programming, Brainteaser, Probability and Statistics",more_than_6m
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,78.5%,"Two Pointers, String, Stack, Simulation",more_than_6m
+1227,https://leetcode.com/problems/airplane-seat-assignment-probability,Airplane Seat Assignment Probability,Medium,,100.0%,"Math, Dynamic Programming, Brainteaser, Probability and Statistics",all
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,85.2%,String,all
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,80.4%,"Two Pointers, String, Stack, Simulation",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,65.6%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,65.6%,"Array, Dynamic Programming",all
+419,https://leetcode.com/problems/battleships-in-a-board,Battleships in a Board,Medium,,65.6%,"Array, Depth-First Search, Matrix",all
+2184,https://leetcode.com/problems/number-of-ways-to-build-sturdy-brick-wall,Number of Ways to Build Sturdy Brick Wall,Medium,,65.6%,"Array, Dynamic Programming, Bit Manipulation, Bitmask",all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,65.6%,"Array, Backtracking",all
+1963,https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced,Minimum Number of Swaps to Make the String Balanced,Medium,,65.6%,"Two Pointers, String, Stack, Greedy",all

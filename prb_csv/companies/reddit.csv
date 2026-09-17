@@ -1,0 +1,12 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,100.0%,"Hash Table, String, Breadth-First Search",6_months
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,100.0%,"Hash Table, String, Breadth-First Search",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,80.8%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,74.8%,"Array, Binary Search, Design, Queue, Data Stream",more_than_6m
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,74.8%,"Hash Table, Design, Data Stream",more_than_6m
+2240,https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils,Number of Ways to Buy Pens and Pencils,Medium,,66.3%,"Math, Enumeration",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,100.0%,"Hash Table, String, Breadth-First Search",all
+2240,https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils,Number of Ways to Buy Pens and Pencils,Medium,,96.2%,"Math, Enumeration",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,77.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,71.2%,"Array, Binary Search, Design, Queue, Data Stream",all
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,71.2%,"Hash Table, Design, Data Stream",all

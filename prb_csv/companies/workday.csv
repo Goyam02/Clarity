@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1328,https://leetcode.com/problems/break-a-palindrome,Break a Palindrome,Medium,,100.0%,"String, Greedy",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,88.4%,"Array, Hash Table, String, Sorting",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,88.4%,"Array, Two Pointers, Greedy",more_than_6m
+1328,https://leetcode.com/problems/break-a-palindrome,Break a Palindrome,Medium,,100.0%,"String, Greedy",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,92.0%,"Array, Hash Table, String, Sorting",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,92.0%,"Array, Two Pointers, Greedy",all
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,80.9%,"Array, Two Pointers, Sorting",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,80.9%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,80.9%,"Array, Backtracking",all

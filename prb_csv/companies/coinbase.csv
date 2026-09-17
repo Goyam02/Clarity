@@ -1,0 +1,31 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",3_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,85.0%,"Hash Table, String, Binary Search, Design",3_months
+281,https://leetcode.com/problems/zigzag-iterator,Zigzag Iterator,Medium,,76.3%,"Array, Design, Queue, Iterator",3_months
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,97.5%,"Hash Table, String, Binary Search, Design",6_months
+281,https://leetcode.com/problems/zigzag-iterator,Zigzag Iterator,Medium,,94.7%,"Array, Design, Queue, Iterator",6_months
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",more_than_6m
+281,https://leetcode.com/problems/zigzag-iterator,Zigzag Iterator,Medium,,97.6%,"Array, Design, Queue, Iterator",more_than_6m
+588,https://leetcode.com/problems/design-in-memory-file-system,Design In-Memory File System,Hard,,94.9%,"Hash Table, String, Design, Trie, Sorting",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,79.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+1166,https://leetcode.com/problems/design-file-system,Design File System,Medium,,72.4%,"Hash Table, String, Design, Trie",more_than_6m
+2369,https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array,Check if There is a Valid Partition For The Array,Medium,,72.4%,"Array, Dynamic Programming",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,72.4%,"Array, String, Simulation",more_than_6m
+2325,https://leetcode.com/problems/decode-the-message,Decode the Message,Easy,,72.4%,"Hash Table, String",more_than_6m
+1801,https://leetcode.com/problems/number-of-orders-in-the-backlog,Number of Orders in the Backlog,Medium,,63.1%,"Array, Heap (Priority Queue), Simulation",more_than_6m
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,63.1%,"Array, String, Depth-First Search, Breadth-First Search, Union Find, Graph, Shortest Path",more_than_6m
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,63.1%,"Array, Hash Table, String, Trie",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,63.1%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",all
+281,https://leetcode.com/problems/zigzag-iterator,Zigzag Iterator,Medium,,96.4%,"Array, Design, Queue, Iterator",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,90.4%,"Hash Table, String, Binary Search, Design",all
+2325,https://leetcode.com/problems/decode-the-message,Decode the Message,Easy,,88.6%,"Hash Table, String",all
+588,https://leetcode.com/problems/design-in-memory-file-system,Design In-Memory File System,Hard,,84.4%,"Hash Table, String, Design, Trie, Sorting",all
+1166,https://leetcode.com/problems/design-file-system,Design File System,Medium,,67.5%,"Hash Table, String, Design, Trie",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,61.5%,"Array, String, Simulation",all
+2369,https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array,Check if There is a Valid Partition For The Array,Medium,,61.5%,"Array, Dynamic Programming",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,61.5%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+1801,https://leetcode.com/problems/number-of-orders-in-the-backlog,Number of Orders in the Backlog,Medium,,53.1%,"Array, Heap (Priority Queue), Simulation",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,53.1%,"Array, String, Depth-First Search, Breadth-First Search, Union Find, Graph, Shortest Path",all
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,53.1%,"Array, Hash Table, String, Trie",all

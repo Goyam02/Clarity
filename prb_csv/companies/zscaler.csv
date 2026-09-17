@@ -1,0 +1,31 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,100.0%,"Math, String, Recursion",3_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,100.0%,"Math, String, Recursion",6_months
+465,https://leetcode.com/problems/optimal-account-balancing,Optimal Account Balancing,Hard,,100.0%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",more_than_6m
+2366,https://leetcode.com/problems/minimum-replacements-to-sort-the-array,Minimum Replacements to Sort the Array,Hard,,91.7%,"Array, Math, Greedy",more_than_6m
+3091,https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k,Apply Operations to Make Sum of Array Greater Than or Equal to k,Medium,,79.0%,"Math, Greedy, Enumeration",more_than_6m
+1041,https://leetcode.com/problems/robot-bounded-in-circle,Robot Bounded In Circle,Medium,,69.0%,"Math, String, Simulation",more_than_6m
+1154,https://leetcode.com/problems/day-of-the-year,Day of the Year,Easy,,69.0%,"Math, String",more_than_6m
+2231,https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity,Largest Number After Digit Swaps by Parity,Easy,,69.0%,"Sorting, Heap (Priority Queue)",more_than_6m
+2932,https://leetcode.com/problems/maximum-strong-pair-xor-i,Maximum Strong Pair XOR I,Easy,,69.0%,"Array, Hash Table, Bit Manipulation, Trie, Sliding Window",more_than_6m
+2935,https://leetcode.com/problems/maximum-strong-pair-xor-ii,Maximum Strong Pair XOR II,Hard,,69.0%,"Array, Hash Table, Bit Manipulation, Trie, Sliding Window",more_than_6m
+2964,https://leetcode.com/problems/number-of-divisible-triplet-sums,Number of Divisible Triplet Sums,Medium,,69.0%,"Array, Hash Table",more_than_6m
+945,https://leetcode.com/problems/minimum-increment-to-make-array-unique,Minimum Increment to Make Array Unique,Medium,,69.0%,"Array, Greedy, Sorting, Counting",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,69.0%,"Hash Table, String, Breadth-First Search",more_than_6m
+73,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Medium,,69.0%,"Array, Hash Table, Matrix",more_than_6m
+3091,https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k,Apply Operations to Make Sum of Array Greater Than or Equal to k,Medium,,100.0%,"Math, Greedy, Enumeration",all
+2932,https://leetcode.com/problems/maximum-strong-pair-xor-i,Maximum Strong Pair XOR I,Easy,,97.7%,"Array, Hash Table, Bit Manipulation, Trie, Sliding Window",all
+2935,https://leetcode.com/problems/maximum-strong-pair-xor-ii,Maximum Strong Pair XOR II,Hard,,97.7%,"Array, Hash Table, Bit Manipulation, Trie, Sliding Window",all
+1154,https://leetcode.com/problems/day-of-the-year,Day of the Year,Easy,,97.7%,"Math, String",all
+2231,https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity,Largest Number After Digit Swaps by Parity,Easy,,97.7%,"Sorting, Heap (Priority Queue)",all
+465,https://leetcode.com/problems/optimal-account-balancing,Optimal Account Balancing,Hard,,89.3%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",all
+2366,https://leetcode.com/problems/minimum-replacements-to-sort-the-array,Minimum Replacements to Sort the Array,Hard,,81.3%,"Array, Math, Greedy",all
+945,https://leetcode.com/problems/minimum-increment-to-make-array-unique,Minimum Increment to Make Array Unique,Medium,,69.3%,"Array, Greedy, Sorting, Counting",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,69.3%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1041,https://leetcode.com/problems/robot-bounded-in-circle,Robot Bounded In Circle,Medium,,59.7%,"Math, String, Simulation",all
+2964,https://leetcode.com/problems/number-of-divisible-triplet-sums,Number of Divisible Triplet Sums,Medium,,59.7%,"Array, Hash Table",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,59.7%,"Hash Table, String, Breadth-First Search",all
+73,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Medium,,59.7%,"Array, Hash Table, Matrix",all
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,59.7%,"Math, String, Recursion",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,59.7%,"Linked List, Recursion",all

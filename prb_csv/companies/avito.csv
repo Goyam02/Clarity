@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,92.2%,"Array, Hash Table, String, Sorting",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,87.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,80.3%,"Linked List, Math, Recursion",more_than_6m
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,80.3%,"String, Dynamic Programming, Backtracking",more_than_6m
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,80.3%,"Array, Two Pointers, Sorting",more_than_6m
+907,https://leetcode.com/problems/sum-of-subarray-minimums,Sum of Subarray Minimums,Medium,,70.8%,"Array, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+104,https://leetcode.com/problems/maximum-depth-of-binary-tree,Maximum Depth of Binary Tree,Easy,,70.8%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,93.4%,"Array, Hash Table, String, Sorting",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,89.2%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,77.4%,"Linked List, Math, Recursion",all
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,77.4%,"String, Dynamic Programming, Backtracking",all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,77.4%,"Array, Two Pointers, Sorting",all
+907,https://leetcode.com/problems/sum-of-subarray-minimums,Sum of Subarray Minimums,Medium,,77.4%,"Array, Dynamic Programming, Stack, Monotonic Stack",all
+104,https://leetcode.com/problems/maximum-depth-of-binary-tree,Maximum Depth of Binary Tree,Easy,,68.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,68.0%,"Array, Prefix Sum",all

@@ -1,0 +1,48 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",3_months
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",6_months
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",more_than_6m
+3484,https://leetcode.com/problems/design-spreadsheet,Design Spreadsheet,Medium,,83.9%,"Array, Hash Table, String, Design, Matrix",more_than_6m
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,76.6%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,76.6%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,69.7%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",more_than_6m
+1944,https://leetcode.com/problems/number-of-visible-people-in-a-queue,Number of Visible People in a Queue,Hard,,65.1%,"Array, Stack, Monotonic Stack",more_than_6m
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,65.1%,"Linked List, Recursion",more_than_6m
+465,https://leetcode.com/problems/optimal-account-balancing,Optimal Account Balancing,Hard,,59.3%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",more_than_6m
+3387,https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions,Maximize Amount After Two Days of Conversions,Medium,,59.3%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory",more_than_6m
+2939,https://leetcode.com/problems/maximum-xor-product,Maximum Xor Product,Medium,,59.3%,"Math, Greedy, Bit Manipulation",more_than_6m
+1046,https://leetcode.com/problems/last-stone-weight,Last Stone Weight,Easy,,51.0%,"Array, Heap (Priority Queue)",more_than_6m
+721,https://leetcode.com/problems/accounts-merge,Accounts Merge,Medium,,51.0%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,51.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,51.0%,"Array, Sorting",more_than_6m
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,51.0%,"Array, Dynamic Programming, Greedy",more_than_6m
+1258,https://leetcode.com/problems/synonymous-sentences,Synonymous Sentences,Medium,,51.0%,"Array, Hash Table, String, Backtracking, Sort, Union-Find",more_than_6m
+1396,https://leetcode.com/problems/design-underground-system,Design Underground System,Medium,,51.0%,"Hash Table, String, Design",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,51.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+737,https://leetcode.com/problems/sentence-similarity-ii,Sentence Similarity II,Medium,,51.0%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find",more_than_6m
+2296,https://leetcode.com/problems/design-a-text-editor,Design a Text Editor,Hard,,51.0%,"Linked List, String, Stack, Design, Simulation, Doubly-Linked List",more_than_6m
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,51.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,51.0%,"Hash Table, String, Sliding Window",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,100.0%,"Array, Binary Search, Divide and Conquer",all
+3484,https://leetcode.com/problems/design-spreadsheet,Design Spreadsheet,Medium,,79.7%,"Array, Hash Table, String, Design, Matrix",all
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,75.3%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,75.3%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,66.0%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",all
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,66.0%,"Linked List, Recursion",all
+1944,https://leetcode.com/problems/number-of-visible-people-in-a-queue,Number of Visible People in a Queue,Hard,,61.6%,"Array, Stack, Monotonic Stack",all
+1258,https://leetcode.com/problems/synonymous-sentences,Synonymous Sentences,Medium,,55.9%,"Array, Hash Table, String, Backtracking, Sort, Union-Find",all
+465,https://leetcode.com/problems/optimal-account-balancing,Optimal Account Balancing,Hard,,55.9%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",all
+721,https://leetcode.com/problems/accounts-merge,Accounts Merge,Medium,,55.9%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",all
+3387,https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions,Maximize Amount After Two Days of Conversions,Medium,,55.9%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory",all
+2939,https://leetcode.com/problems/maximum-xor-product,Maximum Xor Product,Medium,,55.9%,"Math, Greedy, Bit Manipulation",all
+1046,https://leetcode.com/problems/last-stone-weight,Last Stone Weight,Easy,,48.0%,"Array, Heap (Priority Queue)",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,48.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,48.0%,"Array, Dynamic Programming, Greedy",all
+1396,https://leetcode.com/problems/design-underground-system,Design Underground System,Medium,,48.0%,"Hash Table, String, Design",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,48.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+737,https://leetcode.com/problems/sentence-similarity-ii,Sentence Similarity II,Medium,,48.0%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find",all
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,48.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,48.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,48.0%,"Array, Sorting",all
+2296,https://leetcode.com/problems/design-a-text-editor,Design a Text Editor,Hard,,48.0%,"Linked List, String, Stack, Design, Simulation, Doubly-Linked List",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,48.0%,"Hash Table, String, Sliding Window",all

@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,100.0%,"Array, Hash Table, String, Trie",30_days
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,100.0%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",3_months
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,100.0%,"Array, Hash Table, String, Trie",3_months
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,100.0%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",6_months
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,96.8%,"Array, Hash Table, String, Trie",6_months
+2366,https://leetcode.com/problems/minimum-replacements-to-sort-the-array,Minimum Replacements to Sort the Array,Hard,,73.8%,"Array, Math, Greedy",6_months
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,100.0%,"Array, Hash Table, String, Trie",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,93.3%,"Array, String, Simulation",more_than_6m
+1258,https://leetcode.com/problems/synonymous-sentences,Synonymous Sentences,Medium,,90.5%,"Array, Hash Table, String, Backtracking, Sort, Union-Find",more_than_6m
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,90.5%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,64.3%,"Array, Sorting",more_than_6m
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,100.0%,"Array, Hash Table, String, Trie",all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,89.2%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,78.8%,"Array, String, Simulation",all
+1258,https://leetcode.com/problems/synonymous-sentences,Synonymous Sentences,Medium,,76.3%,"Array, Hash Table, String, Backtracking, Sort, Union-Find",all
+2366,https://leetcode.com/problems/minimum-replacements-to-sort-the-array,Minimum Replacements to Sort the Array,Hard,,60.5%,"Array, Math, Greedy",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,53.0%,"Array, Sorting",all

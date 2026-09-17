@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+754,https://leetcode.com/problems/reach-a-number,Reach a Number,Medium,,100.0%,"Math, Binary Search",more_than_6m
+763,https://leetcode.com/problems/partition-labels,Partition Labels,Medium,,100.0%,"Hash Table, Two Pointers, String, Greedy",more_than_6m
+2398,https://leetcode.com/problems/maximum-number-of-robots-within-budget,Maximum Number of Robots Within Budget,Hard,,100.0%,"Array, Binary Search, Queue, Sliding Window, Heap (Priority Queue), Prefix Sum, Monotonic Queue",more_than_6m
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Union Find, Graph",more_than_6m
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,100.0%,"String, Dynamic Programming, Stack",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+754,https://leetcode.com/problems/reach-a-number,Reach a Number,Medium,,100.0%,"Math, Binary Search",all
+763,https://leetcode.com/problems/partition-labels,Partition Labels,Medium,,65.2%,"Hash Table, Two Pointers, String, Greedy",all
+2398,https://leetcode.com/problems/maximum-number-of-robots-within-budget,Maximum Number of Robots Within Budget,Hard,,65.2%,"Array, Binary Search, Queue, Sliding Window, Heap (Priority Queue), Prefix Sum, Monotonic Queue",all
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,65.2%,"Depth-First Search, Breadth-First Search, Union Find, Graph",all
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,65.2%,"String, Dynamic Programming, Stack",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,65.2%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all

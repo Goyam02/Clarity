@@ -1,0 +1,20 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2085,https://leetcode.com/problems/count-common-words-with-one-occurrence,Count Common Words With One Occurrence,Easy,,100.0%,"Array, Hash Table, String, Counting",more_than_6m
+2235,https://leetcode.com/problems/add-two-integers,Add Two Integers,Easy,,89.9%,Math,more_than_6m
+1032,https://leetcode.com/problems/stream-of-characters,Stream of Characters,Hard,,82.7%,"Array, String, Design, Trie, Data Stream",more_than_6m
+874,https://leetcode.com/problems/walking-robot-simulation,Walking Robot Simulation,Medium,,82.7%,"Array, Hash Table, Simulation",more_than_6m
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,72.6%,"Array, String, Depth-First Search, Breadth-First Search, Union Find, Graph, Shortest Path",more_than_6m
+2809,https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x,Minimum Time to Make Array Sum At Most x,Hard,,72.6%,"Array, Dynamic Programming, Sorting",more_than_6m
+2296,https://leetcode.com/problems/design-a-text-editor,Design a Text Editor,Hard,,72.6%,"Linked List, String, Stack, Design, Simulation, Doubly-Linked List",more_than_6m
+415,https://leetcode.com/problems/add-strings,Add Strings,Easy,,72.6%,"Math, String, Simulation",more_than_6m
+2085,https://leetcode.com/problems/count-common-words-with-one-occurrence,Count Common Words With One Occurrence,Easy,,100.0%,"Array, Hash Table, String, Counting",all
+874,https://leetcode.com/problems/walking-robot-simulation,Walking Robot Simulation,Medium,,93.4%,"Array, Hash Table, Simulation",all
+2809,https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x,Minimum Time to Make Array Sum At Most x,Hard,,91.3%,"Array, Dynamic Programming, Sorting",all
+2235,https://leetcode.com/problems/add-two-integers,Add Two Integers,Easy,,76.5%,Math,all
+1032,https://leetcode.com/problems/stream-of-characters,Stream of Characters,Hard,,65.5%,"Array, String, Design, Trie, Data Stream",all
+415,https://leetcode.com/problems/add-strings,Add Strings,Easy,,65.5%,"Math, String, Simulation",all
+2296,https://leetcode.com/problems/design-a-text-editor,Design a Text Editor,Hard,,65.5%,"Linked List, String, Stack, Design, Simulation, Doubly-Linked List",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,56.9%,"String, Trie",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,56.9%,"Array, String, Depth-First Search, Breadth-First Search, Union Find, Graph, Shortest Path",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,56.9%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+1801,https://leetcode.com/problems/number-of-orders-in-the-backlog,Number of Orders in the Backlog,Medium,,56.9%,"Array, Heap (Priority Queue), Simulation",all

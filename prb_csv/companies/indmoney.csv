@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2265,https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree,Count Nodes Equal to Average of Subtree,Medium,,100.0%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+901,https://leetcode.com/problems/online-stock-span,Online Stock Span,Medium,,100.0%,"Stack, Design, Monotonic Stack, Data Stream",more_than_6m
+901,https://leetcode.com/problems/online-stock-span,Online Stock Span,Medium,,100.0%,"Stack, Design, Monotonic Stack, Data Stream",all
+2265,https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree,Count Nodes Equal to Average of Subtree,Medium,,100.0%,"Tree, Depth-First Search, Binary Tree",all

@@ -1,0 +1,76 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,100.0%,"Hash Table, String, Sliding Window",30_days
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,100.0%,"Array, Binary Search, Design, Queue, Data Stream",30_days
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,100.0%,"Array, Binary Search, Design, Queue, Data Stream",3_months
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,100.0%,"Hash Table, String, Sliding Window",3_months
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,83.5%,"String, Bit Manipulation",3_months
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,100.0%,"Array, Binary Search, Design, Queue, Data Stream",6_months
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,95.7%,"Hash Table, String, Sliding Window",6_months
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,90.2%,"String, Bit Manipulation",6_months
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,86.9%,"Array, Breadth-First Search, Matrix",6_months
+2096,https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another,Step-By-Step Directions From a Binary Tree Node to Another,Medium,,82.9%,"String, Tree, Depth-First Search, Binary Tree",6_months
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,78.1%,"Array, Hash Table, Design, Matrix, Simulation",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,71.9%,"Hash Table, String, Binary Search, Design",6_months
+900,https://leetcode.com/problems/rle-iterator,RLE Iterator,Medium,,63.1%,"Array, Design, Counting, Iterator",6_months
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,63.1%,"Array, Dynamic Programming",6_months
+933,https://leetcode.com/problems/number-of-recent-calls,Number of Recent Calls,Easy,,63.1%,"Design, Queue, Data Stream",6_months
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,100.0%,"Array, Binary Search, Design, Queue, Data Stream",more_than_6m
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,98.2%,"String, Bit Manipulation",more_than_6m
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,95.2%,"Array, Hash Table, Design, Matrix, Simulation",more_than_6m
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,86.9%,"Array, Dynamic Programming",more_than_6m
+2096,https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another,Step-By-Step Directions From a Binary Tree Node to Another,Medium,,83.0%,"String, Tree, Depth-First Search, Binary Tree",more_than_6m
+213,https://leetcode.com/problems/house-robber-ii,House Robber II,Medium,,83.0%,"Array, Dynamic Programming",more_than_6m
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,79.2%,"Hash Table, String, Sliding Window",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,74.5%,"Hash Table, String, Binary Search, Design",more_than_6m
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,63.9%,"Array, Hash Table, Binary Search, Design",more_than_6m
+900,https://leetcode.com/problems/rle-iterator,RLE Iterator,Medium,,63.9%,"Array, Design, Counting, Iterator",more_than_6m
+933,https://leetcode.com/problems/number-of-recent-calls,Number of Recent Calls,Easy,,61.4%,"Design, Queue, Data Stream",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,58.4%,"Array, String, Simulation",more_than_6m
+2468,https://leetcode.com/problems/split-message-based-on-limit,Split Message Based on Limit,Hard,,58.4%,"String, Enumeration",more_than_6m
+980,https://leetcode.com/problems/unique-paths-iii,Unique Paths III,Hard,,55.0%,"Array, Backtracking, Bit Manipulation, Matrix",more_than_6m
+567,https://leetcode.com/problems/permutation-in-string,Permutation in String,Medium,,50.8%,"Hash Table, Two Pointers, String, Sliding Window",more_than_6m
+2251,https://leetcode.com/problems/number-of-flowers-in-full-bloom,Number of Flowers in Full Bloom,Hard,,45.4%,"Array, Hash Table, Binary Search, Sorting, Prefix Sum, Ordered Set",more_than_6m
+845,https://leetcode.com/problems/longest-mountain-in-array,Longest Mountain in Array,Medium,,45.4%,"Array, Two Pointers, Dynamic Programming, Enumeration",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,45.4%,"Array, Matrix, Simulation",more_than_6m
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,45.4%,"Array, Breadth-First Search, Matrix",more_than_6m
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,45.4%,"Array, Breadth-First Search, Matrix",more_than_6m
+2131,https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words,Longest Palindrome by Concatenating Two Letter Words,Medium,,37.8%,"Array, Hash Table, String, Greedy, Counting",more_than_6m
+742,https://leetcode.com/problems/closest-leaf-in-a-binary-tree,Closest Leaf in a Binary Tree,Medium,,37.8%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,37.8%,"Array, Hash Table, String, Trie",more_than_6m
+1865,https://leetcode.com/problems/finding-pairs-with-a-certain-sum,Finding Pairs With a Certain Sum,Medium,,37.8%,"Array, Hash Table, Design",more_than_6m
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,37.8%,String,more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,37.8%,"Array, Sorting",more_than_6m
+1928,https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time,Minimum Cost to Reach Destination in Time,Hard,,37.8%,"Array, Dynamic Programming, Graph Theory",more_than_6m
+1197,https://leetcode.com/problems/minimum-knight-moves,Minimum Knight Moves,Medium,,37.8%,Breadth-First Search,more_than_6m
+2276,https://leetcode.com/problems/count-integers-in-intervals,Count Integers in Intervals,Hard,,37.8%,"Design, Segment Tree, Ordered Set",more_than_6m
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,100.0%,"Array, Binary Search, Design, Queue, Data Stream",all
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,97.2%,"String, Bit Manipulation",all
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,93.6%,"Array, Hash Table, Design, Matrix, Simulation",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,85.0%,"Array, Dynamic Programming",all
+2096,https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another,Step-By-Step Directions From a Binary Tree Node to Another,Medium,,83.6%,"String, Tree, Depth-First Search, Binary Tree",all
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,83.6%,"Hash Table, String, Sliding Window",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,82.2%,"Hash Table, String, Binary Search, Design",all
+213,https://leetcode.com/problems/house-robber-ii,House Robber II,Medium,,79.8%,"Array, Dynamic Programming",all
+2131,https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words,Longest Palindrome by Concatenating Two Letter Words,Medium,,65.2%,"Array, Hash Table, String, Greedy, Counting",all
+742,https://leetcode.com/problems/closest-leaf-in-a-binary-tree,Closest Leaf in a Binary Tree,Medium,,65.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+900,https://leetcode.com/problems/rle-iterator,RLE Iterator,Medium,,65.2%,"Array, Design, Counting, Iterator",all
+933,https://leetcode.com/problems/number-of-recent-calls,Number of Recent Calls,Easy,,63.2%,"Design, Queue, Data Stream",all
+1293,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination,Shortest Path in a Grid with Obstacles Elimination,Hard,,63.2%,"Array, Breadth-First Search, Matrix",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,61.0%,"Array, Hash Table, Binary Search, Design",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,55.7%,"Array, String, Simulation",all
+2468,https://leetcode.com/problems/split-message-based-on-limit,Split Message Based on Limit,Hard,,55.7%,"String, Enumeration",all
+980,https://leetcode.com/problems/unique-paths-iii,Unique Paths III,Hard,,52.3%,"Array, Backtracking, Bit Manipulation, Matrix",all
+567,https://leetcode.com/problems/permutation-in-string,Permutation in String,Medium,,52.3%,"Hash Table, Two Pointers, String, Sliding Window",all
+2251,https://leetcode.com/problems/number-of-flowers-in-full-bloom,Number of Flowers in Full Bloom,Hard,,42.8%,"Array, Hash Table, Binary Search, Sorting, Prefix Sum, Ordered Set",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,42.8%,"Array, Matrix, Simulation",all
+845,https://leetcode.com/problems/longest-mountain-in-array,Longest Mountain in Array,Medium,,42.8%,"Array, Two Pointers, Dynamic Programming, Enumeration",all
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,42.8%,"Array, Breadth-First Search, Matrix",all
+1928,https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time,Minimum Cost to Reach Destination in Time,Hard,,42.8%,"Array, Dynamic Programming, Graph Theory",all
+1197,https://leetcode.com/problems/minimum-knight-moves,Minimum Knight Moves,Medium,,42.8%,Breadth-First Search,all
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,35.4%,"Array, Hash Table, String, Trie",all
+1865,https://leetcode.com/problems/finding-pairs-with-a-certain-sum,Finding Pairs With a Certain Sum,Medium,,35.4%,"Array, Hash Table, Design",all
+8,https://leetcode.com/problems/string-to-integer-atoi,String to Integer (atoi),Medium,,35.4%,String,all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,35.4%,"Array, Sorting",all
+2276,https://leetcode.com/problems/count-integers-in-intervals,Count Integers in Intervals,Hard,,35.4%,"Design, Segment Tree, Ordered Set",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,35.4%,"Array, Breadth-First Search, Matrix",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,35.4%,"Array, Hash Table",all

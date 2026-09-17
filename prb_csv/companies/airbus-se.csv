@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",more_than_6m
+3224,https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal,Minimum Array Changes to Make Differences Equal,Medium,,89.6%,"Array, Hash Table, Prefix Sum",more_than_6m
+3164,https://leetcode.com/problems/find-the-number-of-good-pairs-ii,Find the Number of Good Pairs II,Medium,,89.6%,"Array, Hash Table",more_than_6m
+3162,https://leetcode.com/problems/find-the-number-of-good-pairs-i,Find the Number of Good Pairs I,Easy,,89.6%,"Array, Hash Table",more_than_6m
+3164,https://leetcode.com/problems/find-the-number-of-good-pairs-ii,Find the Number of Good Pairs II,Medium,,100.0%,"Array, Hash Table",all
+3162,https://leetcode.com/problems/find-the-number-of-good-pairs-i,Find the Number of Good Pairs I,Easy,,100.0%,"Array, Hash Table",all
+3224,https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal,Minimum Array Changes to Make Differences Equal,Medium,,100.0%,"Array, Hash Table, Prefix Sum",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,74.0%,"Array, Hash Table",all

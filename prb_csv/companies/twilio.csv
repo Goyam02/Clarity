@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2592,https://leetcode.com/problems/maximize-greatness-of-an-array,Maximize Greatness of an Array,Medium,,100.0%,"Array, Two Pointers, Greedy, Sorting",more_than_6m
+2559,https://leetcode.com/problems/count-vowel-strings-in-ranges,Count Vowel Strings in Ranges,Medium,,100.0%,"Array, String, Prefix Sum",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,92.2%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+1507,https://leetcode.com/problems/reformat-date,Reformat Date,Easy,,81.2%,String,more_than_6m
+965,https://leetcode.com/problems/univalued-binary-tree,Univalued Binary Tree,Easy,,81.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+1664,https://leetcode.com/problems/ways-to-make-a-fair-array,Ways to Make a Fair Array,Medium,,81.2%,"Array, Prefix Sum",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,81.2%,"Array, Hash Table, String, Sorting",more_than_6m
+1642,https://leetcode.com/problems/furthest-building-you-can-reach,Furthest Building You Can Reach,Medium,,81.2%,"Array, Greedy, Heap (Priority Queue)",more_than_6m
+2592,https://leetcode.com/problems/maximize-greatness-of-an-array,Maximize Greatness of an Array,Medium,,100.0%,"Array, Two Pointers, Greedy, Sorting",all
+1507,https://leetcode.com/problems/reformat-date,Reformat Date,Easy,,96.0%,String,all
+965,https://leetcode.com/problems/univalued-binary-tree,Univalued Binary Tree,Easy,,96.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+2559,https://leetcode.com/problems/count-vowel-strings-in-ranges,Count Vowel Strings in Ranges,Medium,,75.9%,"Array, String, Prefix Sum",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,69.7%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,69.7%,"Array, Hash Table, String, Sorting",all
+1664,https://leetcode.com/problems/ways-to-make-a-fair-array,Ways to Make a Fair Array,Medium,,60.8%,"Array, Prefix Sum",all
+1642,https://leetcode.com/problems/furthest-building-you-can-reach,Furthest Building You Can Reach,Medium,,60.8%,"Array, Greedy, Heap (Priority Queue)",all
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,60.8%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",all

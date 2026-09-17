@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+1631,https://leetcode.com/problems/path-with-minimum-effort,Path With Minimum Effort,Medium,,88.6%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union Find, Heap (Priority Queue), Matrix",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,88.6%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1631,https://leetcode.com/problems/path-with-minimum-effort,Path With Minimum Effort,Medium,,88.3%,"Array, Binary Search, Depth-First Search, Breadth-First Search, Union Find, Heap (Priority Queue), Matrix",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,88.3%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all

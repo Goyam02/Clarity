@@ -1,0 +1,49 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,100.0%,"Array, Hash Table, Binary Search, Design",3_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,89.8%,"Hash Table, Linked List, Design, Doubly-Linked List",3_months
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,89.8%,"Array, Sorting",3_months
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,100.0%,"Array, Hash Table, Binary Search, Design",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,87.7%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,77.9%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",6_months
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,77.9%,"Array, Sorting",6_months
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,100.0%,"Hash Table, String, Design, Trie",more_than_6m
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,93.9%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",more_than_6m
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,93.9%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,85.8%,"Array, String, Simulation",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,80.4%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+2759,https://leetcode.com/problems/convert-json-string-to-object,Convert JSON String to Object,Hard,,80.4%,,more_than_6m
+57,https://leetcode.com/problems/insert-interval,Insert Interval,Medium,,73.5%,Array,more_than_6m
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,73.5%,"Depth-First Search, Breadth-First Search, Concurrency",more_than_6m
+2034,https://leetcode.com/problems/stock-price-fluctuation,Stock Price Fluctuation,Medium,,73.5%,"Hash Table, Design, Heap (Priority Queue), Data Stream, Ordered Set",more_than_6m
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,73.5%,"Array, Hash Table, Binary Search, Design",more_than_6m
+617,https://leetcode.com/problems/merge-two-binary-trees,Merge Two Binary Trees,Easy,,63.8%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,63.8%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+236,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree,Lowest Common Ancestor of a Binary Tree,Medium,,63.8%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+642,https://leetcode.com/problems/design-search-autocomplete-system,Design Search Autocomplete System,Hard,,63.8%,"String, Depth-First Search, Design, Trie, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,63.8%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+1650,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii,Lowest Common Ancestor of a Binary Tree III,Medium,,63.8%,"Hash Table, Two Pointers, Tree, Binary Tree",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,63.8%,"Two Pointers, String",more_than_6m
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,100.0%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",all
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,100.0%,"Hash Table, String, Design, Trie",all
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,97.1%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,97.1%,"Array, Hash Table, Binary Search, Design",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,85.4%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,85.4%,"Array, String, Simulation",all
+2759,https://leetcode.com/problems/convert-json-string-to-object,Convert JSON String to Object,Hard,,79.8%,,all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,79.8%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+57,https://leetcode.com/problems/insert-interval,Insert Interval,Medium,,72.6%,Array,all
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,72.6%,"Depth-First Search, Breadth-First Search, Concurrency",all
+2034,https://leetcode.com/problems/stock-price-fluctuation,Stock Price Fluctuation,Medium,,72.6%,"Hash Table, Design, Heap (Priority Queue), Data Stream, Ordered Set",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,72.6%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,72.6%,"Array, Sorting",all
+617,https://leetcode.com/problems/merge-two-binary-trees,Merge Two Binary Trees,Easy,,62.6%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,62.6%,"Array, Binary Search",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,62.6%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+236,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree,Lowest Common Ancestor of a Binary Tree,Medium,,62.6%,"Tree, Depth-First Search, Binary Tree",all
+642,https://leetcode.com/problems/design-search-autocomplete-system,Design Search Autocomplete System,Hard,,62.6%,"String, Depth-First Search, Design, Trie, Sorting, Heap (Priority Queue), Data Stream",all
+1650,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii,Lowest Common Ancestor of a Binary Tree III,Medium,,62.6%,"Hash Table, Two Pointers, Tree, Binary Tree",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,62.6%,"Two Pointers, String",all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,62.6%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",all
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,62.6%,"Linked List, Recursion",all
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,62.6%,"Hash Table, Depth-First Search, Breadth-First Search, Graph Theory",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,62.6%,"Hash Table, String, Binary Search, Design",all

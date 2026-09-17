@@ -1,0 +1,27 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,100.0%,"Array, Stack, Simulation",more_than_6m
+1642,https://leetcode.com/problems/furthest-building-you-can-reach,Furthest Building You Can Reach,Medium,,86.3%,"Array, Greedy, Heap (Priority Queue)",more_than_6m
+1475,https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop,Final Prices With a Special Discount in a Shop,Easy,,75.5%,"Array, Stack, Monotonic Stack",more_than_6m
+2222,https://leetcode.com/problems/number-of-ways-to-select-buildings,Number of Ways to Select Buildings,Medium,,75.5%,"String, Dynamic Programming, Prefix Sum",more_than_6m
+1526,https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array,Minimum Number of Increments on Subarrays to Form a Target Array,Hard,,75.5%,"Array, Dynamic Programming, Stack, Greedy, Monotonic Stack",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,75.5%,"Array, Two Pointers, Sorting",more_than_6m
+416,https://leetcode.com/problems/partition-equal-subset-sum,Partition Equal Subset Sum,Medium,,75.5%,"Array, Dynamic Programming",more_than_6m
+134,https://leetcode.com/problems/gas-station,Gas Station,Medium,,75.5%,"Array, Greedy",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,75.5%,"Hash Table, String, Sliding Window",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,75.5%,"Array, Breadth-First Search, Matrix",more_than_6m
+16,https://leetcode.com/problems/3sum-closest,3Sum Closest,Medium,,75.5%,"Array, Two Pointers, Sorting",more_than_6m
+931,https://leetcode.com/problems/minimum-falling-path-sum,Minimum Falling Path Sum,Medium,,75.5%,"Array, Dynamic Programming, Matrix",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,75.5%,"Array, Two Pointers, Greedy",more_than_6m
+1475,https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop,Final Prices With a Special Discount in a Shop,Easy,,100.0%,"Array, Stack, Monotonic Stack",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,84.1%,"Array, Stack, Simulation",all
+1642,https://leetcode.com/problems/furthest-building-you-can-reach,Furthest Building You Can Reach,Medium,,72.5%,"Array, Greedy, Heap (Priority Queue)",all
+931,https://leetcode.com/problems/minimum-falling-path-sum,Minimum Falling Path Sum,Medium,,63.2%,"Array, Dynamic Programming, Matrix",all
+134,https://leetcode.com/problems/gas-station,Gas Station,Medium,,63.2%,"Array, Greedy",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,63.2%,"Array, Two Pointers, Sorting",all
+2222,https://leetcode.com/problems/number-of-ways-to-select-buildings,Number of Ways to Select Buildings,Medium,,63.2%,"String, Dynamic Programming, Prefix Sum",all
+1526,https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array,Minimum Number of Increments on Subarrays to Form a Target Array,Hard,,63.2%,"Array, Dynamic Programming, Stack, Greedy, Monotonic Stack",all
+416,https://leetcode.com/problems/partition-equal-subset-sum,Partition Equal Subset Sum,Medium,,63.2%,"Array, Dynamic Programming",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,63.2%,"Hash Table, String, Sliding Window",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,63.2%,"Array, Breadth-First Search, Matrix",all
+16,https://leetcode.com/problems/3sum-closest,3Sum Closest,Medium,,63.2%,"Array, Two Pointers, Sorting",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,63.2%,"Array, Two Pointers, Greedy",all

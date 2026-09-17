@@ -1,0 +1,52 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",30_days
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",3_months
+18,https://leetcode.com/problems/4sum,4Sum,Medium,,89.7%,"Array, Two Pointers, Sorting",3_months
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,89.7%,"Array, String, Trie",3_months
+3498,https://leetcode.com/problems/reverse-degree-of-a-string,Reverse Degree of a String,Easy,,100.0%,"String, Simulation",6_months
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,80.3%,"Array, Hash Table",6_months
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,65.4%,"Array, Dynamic Programming",6_months
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,65.4%,"Array, Two Pointers",6_months
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,65.4%,"Hash Table, String, Sorting",6_months
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,65.4%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",6_months
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,65.4%,"Linked List, Math, Recursion",6_months
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,65.4%,"Array, Binary Search",6_months
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",more_than_6m
+3005,https://leetcode.com/problems/count-elements-with-maximum-frequency,Count Elements With Maximum Frequency,Easy,,88.3%,"Array, Hash Table, Counting",more_than_6m
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,82.7%,"Array, Two Pointers",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,75.5%,"String, Trie",more_than_6m
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,75.5%,Math,more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,65.5%,"Array, Dynamic Programming",more_than_6m
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,65.5%,"Two Pointers, String",more_than_6m
+509,https://leetcode.com/problems/fibonacci-number,Fibonacci Number,Easy,,65.5%,"Math, Dynamic Programming, Recursion, Memoization",more_than_6m
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,65.5%,"Array, Math, Two Pointers",more_than_6m
+2356,https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher,Number of Unique Subjects Taught by Each Teacher,Easy,,65.5%,Database,more_than_6m
+177,https://leetcode.com/problems/nth-highest-salary,Nth Highest Salary,Medium,,65.5%,Database,more_than_6m
+626,https://leetcode.com/problems/exchange-seats,Exchange Seats,Medium,,65.5%,Database,more_than_6m
+1405,https://leetcode.com/problems/longest-happy-string,Longest Happy String,Medium,,65.5%,"String, Greedy, Heap (Priority Queue)",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,65.5%,"Array, Binary Search, Divide and Conquer",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",all
+2356,https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher,Number of Unique Subjects Taught by Each Teacher,Easy,,95.7%,Database,all
+3498,https://leetcode.com/problems/reverse-degree-of-a-string,Reverse Degree of a String,Easy,,95.7%,"String, Simulation",all
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,83.5%,"Array, Two Pointers",all
+3005,https://leetcode.com/problems/count-elements-with-maximum-frequency,Count Elements With Maximum Frequency,Easy,,79.2%,"Array, Hash Table, Counting",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,73.9%,"Array, Dynamic Programming",all
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,67.1%,"Linked List, Math, Recursion",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,67.1%,"String, Trie",all
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,67.1%,Math,all
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,57.5%,"Array, Math, Two Pointers",all
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,57.5%,"Array, Binary Search",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,57.5%,"Array, Hash Table, Prefix Sum",all
+110,https://leetcode.com/problems/balanced-binary-tree,Balanced Binary Tree,Easy,,57.5%,"Tree, Depth-First Search, Binary Tree",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,57.5%,"Hash Table, String, Sliding Window",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,57.5%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,57.5%,"Array, Two Pointers",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,57.5%,"Hash Table, String, Sorting",all
+509,https://leetcode.com/problems/fibonacci-number,Fibonacci Number,Easy,,57.5%,"Math, Dynamic Programming, Recursion, Memoization",all
+626,https://leetcode.com/problems/exchange-seats,Exchange Seats,Medium,,57.5%,Database,all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,57.5%,"Array, Binary Search, Divide and Conquer",all
+1405,https://leetcode.com/problems/longest-happy-string,Longest Happy String,Medium,,57.5%,"String, Greedy, Heap (Priority Queue)",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,57.5%,"Two Pointers, String",all
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,57.5%,"Two Pointers, String",all
+177,https://leetcode.com/problems/nth-highest-salary,Nth Highest Salary,Medium,,57.5%,Database,all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,57.5%,"Array, Dynamic Programming, Breadth-First Search",all

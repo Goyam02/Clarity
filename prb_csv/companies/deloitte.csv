@@ -1,0 +1,90 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",30_days
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,100.0%,"Math, Dynamic Programming, Memoization",3_months
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,100.0%,"Two Pointers, String",3_months
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",3_months
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",3_months
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",6_months
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,89.9%,"Hash Table, String, Sliding Window",6_months
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,89.9%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",6_months
+67,https://leetcode.com/problems/add-binary,Add Binary,Easy,,82.7%,"Math, String, Bit Manipulation, Simulation",6_months
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,72.5%,"Array, String, Trie",6_months
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,72.5%,"String, Stack, Greedy, Monotonic Stack",6_months
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,72.5%,"Math, Dynamic Programming, Memoization",6_months
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,72.5%,"Two Pointers, String",6_months
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,90.6%,"Array, Hash Table",more_than_6m
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,82.3%,Database,more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,78.7%,"Two Pointers, String, Dynamic Programming",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,78.7%,"String, Stack",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,78.7%,"Array, Dynamic Programming",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,69.3%,"Array, Two Pointers, Greedy",more_than_6m
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,62.6%,Math,more_than_6m
+570,https://leetcode.com/problems/managers-with-at-least-5-direct-reports,Managers with at Least 5 Direct Reports,Medium,,62.6%,Database,more_than_6m
+2594,https://leetcode.com/problems/minimum-time-to-repair-cars,Minimum Time to Repair Cars,Medium,,62.6%,"Array, Binary Search",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,62.6%,"Array, Sorting",more_than_6m
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,62.6%,"Hash Table, String, Queue, Counting",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,62.6%,"Array, Two Pointers, Sorting",more_than_6m
+2388,https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value,Change Null Values in a Table to the Previous Value,Medium,,53.3%,Database,more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,53.3%,"Array, String, Trie",more_than_6m
+197,https://leetcode.com/problems/rising-temperature,Rising Temperature,Easy,,53.3%,Database,more_than_6m
+493,https://leetcode.com/problems/reverse-pairs,Reverse Pairs,Hard,,53.3%,"Array, Binary Search, Divide and Conquer, Binary Indexed Tree, Segment Tree, Merge Sort, Ordered Set",more_than_6m
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,53.3%,"String, Dynamic Programming",more_than_6m
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,53.3%,"Array, Dynamic Programming, Breadth-First Search",more_than_6m
+3703,https://leetcode.com/problems/remove-k-balanced-substrings,Remove K-Balanced Substrings,Medium,,53.3%,"String, Stack, Simulation",more_than_6m
+485,https://leetcode.com/problems/max-consecutive-ones,Max Consecutive Ones,Easy,,53.3%,Array,more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,53.3%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,53.3%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,53.3%,"Hash Table, String, Sliding Window",more_than_6m
+177,https://leetcode.com/problems/nth-highest-salary,Nth Highest Salary,Medium,,53.3%,Database,more_than_6m
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,53.3%,"Array, Two Pointers",more_than_6m
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,53.3%,"Hash Table, Math, String",more_than_6m
+410,https://leetcode.com/problems/split-array-largest-sum,Split Array Largest Sum,Hard,,53.3%,"Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,53.3%,"Array, Hash Table, String, Sorting",more_than_6m
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,53.3%,"Array, Hash Table, Union-Find",more_than_6m
+183,https://leetcode.com/problems/customers-who-never-order,Customers Who Never Order,Easy,,53.3%,Database,more_than_6m
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,53.3%,"Array, Math, Two Pointers",more_than_6m
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,53.3%,"Array, Two Pointers",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,96.1%,"Array, Hash Table",all
+2388,https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value,Change Null Values in a Table to the Previous Value,Medium,,85.4%,Database,all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,77.3%,"String, Stack",all
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,77.3%,Database,all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,73.8%,"Array, Dynamic Programming",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,73.8%,"Two Pointers, String, Dynamic Programming",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,73.8%,"Hash Table, String, Sliding Window",all
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,64.6%,Math,all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,64.6%,"Array, String, Trie",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,64.6%,"Array, Two Pointers, Greedy",all
+570,https://leetcode.com/problems/managers-with-at-least-5-direct-reports,Managers with at Least 5 Direct Reports,Medium,,58.1%,Database,all
+2594,https://leetcode.com/problems/minimum-time-to-repair-cars,Minimum Time to Repair Cars,Medium,,58.1%,"Array, Binary Search",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,58.1%,"Array, Sorting",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,58.1%,"Array, Divide and Conquer, Dynamic Programming",all
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,58.1%,"Hash Table, String, Queue, Counting",all
+177,https://leetcode.com/problems/nth-highest-salary,Nth Highest Salary,Medium,,58.1%,Database,all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,58.1%,"Array, Hash Table, String, Sorting",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,58.1%,"Array, Two Pointers, Sorting",all
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,58.1%,"Array, Two Pointers",all
+67,https://leetcode.com/problems/add-binary,Add Binary,Easy,,58.1%,"Math, String, Bit Manipulation, Simulation",all
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,58.1%,"Math, Dynamic Programming, Memoization",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,58.1%,"Two Pointers, String",all
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,48.9%,"String, Dynamic Programming",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,48.9%,"Array, Dynamic Programming, Breadth-First Search",all
+197,https://leetcode.com/problems/rising-temperature,Rising Temperature,Easy,,48.9%,Database,all
+485,https://leetcode.com/problems/max-consecutive-ones,Max Consecutive Ones,Easy,,48.9%,Array,all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,48.9%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+183,https://leetcode.com/problems/customers-who-never-order,Customers Who Never Order,Easy,,48.9%,Database,all
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,48.9%,"Hash Table, Math, String",all
+493,https://leetcode.com/problems/reverse-pairs,Reverse Pairs,Hard,,48.9%,"Array, Binary Search, Divide and Conquer, Binary Indexed Tree, Segment Tree, Merge Sort, Ordered Set",all
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,48.9%,"Array, Hash Table, Union-Find",all
+3703,https://leetcode.com/problems/remove-k-balanced-substrings,Remove K-Balanced Substrings,Medium,,48.9%,"String, Stack, Simulation",all
+410,https://leetcode.com/problems/split-array-largest-sum,Split Array Largest Sum,Hard,,48.9%,"Array, Binary Search, Dynamic Programming, Greedy, Prefix Sum",all
+581,https://leetcode.com/problems/shortest-unsorted-continuous-subarray,Shortest Unsorted Continuous Subarray,Medium,,48.9%,"Array, Two Pointers, Stack, Greedy, Sorting, Monotonic Stack",all
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,48.9%,"Array, Math, Two Pointers",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,48.9%,"Hash Table, String, Sorting",all
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,48.9%,"String, Stack, Greedy, Monotonic Stack",all
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,48.9%,"String, Stack",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,48.9%,"Array, Hash Table, Prefix Sum",all
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,48.9%,"Array, Two Pointers",all
+345,https://leetcode.com/problems/reverse-vowels-of-a-string,Reverse Vowels of a String,Easy,,48.9%,"Two Pointers, String",all
+313,https://leetcode.com/problems/super-ugly-number,Super Ugly Number,Medium,,48.9%,"Array, Math, Dynamic Programming",all

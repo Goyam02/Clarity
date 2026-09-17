@@ -1,0 +1,17 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,100.0%,"Two Pointers, String",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",more_than_6m
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,88.6%,"Array, Hash Table, Prefix Sum",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,88.6%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,88.6%,"String, Stack",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,88.6%,"Array, Binary Search",more_than_6m
+224,https://leetcode.com/problems/basic-calculator,Basic Calculator,Hard,,88.6%,"Math, String, Stack, Recursion",more_than_6m
+853,https://leetcode.com/problems/car-fleet,Car Fleet,Medium,,88.6%,"Array, Stack, Sorting, Monotonic Stack",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,92.4%,"Two Pointers, String",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,81.7%,"Array, Hash Table, Prefix Sum",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,81.7%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,81.7%,"Array, Binary Search",all
+224,https://leetcode.com/problems/basic-calculator,Basic Calculator,Hard,,81.7%,"Math, String, Stack, Recursion",all
+853,https://leetcode.com/problems/car-fleet,Car Fleet,Medium,,81.7%,"Array, Stack, Sorting, Monotonic Stack",all
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,81.7%,"String, Stack",all

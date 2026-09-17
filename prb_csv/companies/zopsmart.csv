@@ -1,0 +1,38 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,30_days
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,93.8%,"String, Stack, Recursion",30_days
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,3_months
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,92.2%,"String, Stack, Recursion",3_months
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,6_months
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,98.3%,"String, Stack, Recursion",6_months
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,91.9%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+299,https://leetcode.com/problems/bulls-and-cows,Bulls and Cows,Medium,,71.5%,"Hash Table, String, Counting",more_than_6m
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,67.0%,"String, Stack, Greedy, Monotonic Stack",more_than_6m
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,67.0%,"Two Pointers, String",more_than_6m
+991,https://leetcode.com/problems/broken-calculator,Broken Calculator,Medium,,61.3%,"Math, Greedy",more_than_6m
+592,https://leetcode.com/problems/fraction-addition-and-subtraction,Fraction Addition and Subtraction,Medium,,53.3%,"Math, String, Simulation",more_than_6m
+2074,https://leetcode.com/problems/reverse-nodes-in-even-length-groups,Reverse Nodes in Even Length Groups,Medium,,53.3%,Linked List,more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,53.3%,"Array, Two Pointers, Greedy",more_than_6m
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,53.3%,"Hash Table, String, Backtracking",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,53.3%,"Two Pointers, String, Dynamic Programming",more_than_6m
+3602,https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion,Hexadecimal and Hexatrigesimal Conversion,Easy,,53.3%,"Math, String",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,53.3%,"Hash Table, String, Sorting",more_than_6m
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,53.3%,"String, Stack, Recursion",more_than_6m
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,83.7%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,82.3%,"String, Stack, Recursion",all
+2074,https://leetcode.com/problems/reverse-nodes-in-even-length-groups,Reverse Nodes in Even Length Groups,Medium,,77.4%,Linked List,all
+3602,https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion,Hexadecimal and Hexatrigesimal Conversion,Easy,,77.4%,"Math, String",all
+299,https://leetcode.com/problems/bulls-and-cows,Bulls and Cows,Medium,,64.2%,"Hash Table, String, Counting",all
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,60.0%,"String, Stack, Greedy, Monotonic Stack",all
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,60.0%,"Two Pointers, String",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,54.6%,"Hash Table, String, Backtracking",all
+991,https://leetcode.com/problems/broken-calculator,Broken Calculator,Medium,,54.6%,"Math, Greedy",all
+592,https://leetcode.com/problems/fraction-addition-and-subtraction,Fraction Addition and Subtraction,Medium,,46.9%,"Math, String, Simulation",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,46.9%,"Array, Two Pointers, Greedy",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,46.9%,"Two Pointers, String, Dynamic Programming",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,46.9%,"Hash Table, String, Sorting",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,46.9%,"Array, String, Trie",all
+93,https://leetcode.com/problems/restore-ip-addresses,Restore IP Addresses,Medium,,46.9%,"String, Backtracking",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,46.9%,"Linked List, Recursion",all

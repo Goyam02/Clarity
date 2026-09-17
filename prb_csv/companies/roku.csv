@@ -1,0 +1,34 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+864,https://leetcode.com/problems/shortest-path-to-get-all-keys,Shortest Path to Get All Keys,Hard,,100.0%,"Array, Bit Manipulation, Breadth-First Search, Matrix",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,87.4%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+628,https://leetcode.com/problems/maximum-product-of-three-numbers,Maximum Product of Three Numbers,Easy,,87.4%,"Array, Math, Sorting",more_than_6m
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,87.4%,"Two Pointers, String, Stack, Simulation",more_than_6m
+43,https://leetcode.com/problems/multiply-strings,Multiply Strings,Medium,,87.4%,"Math, String, Simulation",more_than_6m
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,87.4%,"String, Stack, Recursion",more_than_6m
+1004,https://leetcode.com/problems/max-consecutive-ones-iii,Max Consecutive Ones III,Medium,,87.4%,"Array, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+679,https://leetcode.com/problems/24-game,24 Game,Hard,,87.4%,"Array, Math, Backtracking",more_than_6m
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,87.4%,"Two Pointers, String, Greedy",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,87.4%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,87.4%,"String, Dynamic Programming, Stack, Greedy",more_than_6m
+135,https://leetcode.com/problems/candy,Candy,Hard,,87.4%,"Array, Greedy",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,87.4%,"Array, Two Pointers, Sorting",more_than_6m
+695,https://leetcode.com/problems/max-area-of-island,Max Area of Island,Medium,,87.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+864,https://leetcode.com/problems/shortest-path-to-get-all-keys,Shortest Path to Get All Keys,Hard,,100.0%,"Array, Bit Manipulation, Breadth-First Search, Matrix",all
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,91.4%,"String, Stack, Recursion",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,91.4%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,91.4%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,91.4%,"String, Dynamic Programming, Stack, Greedy",all
+695,https://leetcode.com/problems/max-area-of-island,Max Area of Island,Medium,,91.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+844,https://leetcode.com/problems/backspace-string-compare,Backspace String Compare,Easy,,79.3%,"Two Pointers, String, Stack, Simulation",all
+43,https://leetcode.com/problems/multiply-strings,Multiply Strings,Medium,,79.3%,"Math, String, Simulation",all
+628,https://leetcode.com/problems/maximum-product-of-three-numbers,Maximum Product of Three Numbers,Easy,,79.3%,"Array, Math, Sorting",all
+1004,https://leetcode.com/problems/max-consecutive-ones-iii,Max Consecutive Ones III,Medium,,79.3%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+679,https://leetcode.com/problems/24-game,24 Game,Hard,,79.3%,"Array, Math, Backtracking",all
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,79.3%,"Two Pointers, String, Greedy",all
+135,https://leetcode.com/problems/candy,Candy,Hard,,79.3%,"Array, Greedy",all
+983,https://leetcode.com/problems/minimum-cost-for-tickets,Minimum Cost For Tickets,Medium,,79.3%,"Array, Dynamic Programming",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,79.3%,"Array, Two Pointers, Sorting",all
+987,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree,Vertical Order Traversal of a Binary Tree,Hard,,79.3%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,79.3%,"Array, Stack, Simulation",all
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,79.3%,"String, Dynamic Programming, Stack",all
+927,https://leetcode.com/problems/three-equal-parts,Three Equal Parts,Hard,,79.3%,"Array, Math",all

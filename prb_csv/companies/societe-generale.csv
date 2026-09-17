@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1864,https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating,Minimum Number of Swaps to Make the Binary String Alternating,Medium,,100.0%,"String, Greedy",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",more_than_6m
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,100.0%,"Hash Table, String, Backtracking",more_than_6m
+1864,https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating,Minimum Number of Swaps to Make the Binary String Alternating,Medium,,100.0%,"String, Greedy",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,66.3%,"Array, Dynamic Programming",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,66.3%,"Hash Table, String, Backtracking",all

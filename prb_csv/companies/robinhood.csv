@@ -1,0 +1,32 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",3_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",6_months
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,100.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",more_than_6m
+1743,https://leetcode.com/problems/restore-the-array-from-adjacent-pairs,Restore the Array From Adjacent Pairs,Medium,,75.3%,"Array, Hash Table, Depth-First Search",more_than_6m
+1712,https://leetcode.com/problems/ways-to-split-array-into-three-subarrays,Ways to Split Array Into Three Subarrays,Medium,,75.3%,"Array, Two Pointers, Binary Search, Prefix Sum",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,75.3%,"Array, String, Simulation",more_than_6m
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,75.3%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,75.3%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+1801,https://leetcode.com/problems/number-of-orders-in-the-backlog,Number of Orders in the Backlog,Medium,,66.2%,"Array, Heap (Priority Queue), Simulation",more_than_6m
+1391,https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid,Check if There is a Valid Path in a Grid,Medium,,66.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+1711,https://leetcode.com/problems/count-good-meals,Count Good Meals,Medium,,66.2%,"Array, Hash Table",more_than_6m
+1393,https://leetcode.com/problems/capital-gainloss,Capital Gain/Loss,Medium,,66.2%,Database,more_than_6m
+1684,https://leetcode.com/problems/count-the-number-of-consistent-strings,Count the Number of Consistent Strings,Easy,,66.2%,"Array, Hash Table, String, Bit Manipulation, Counting",more_than_6m
+2021,https://leetcode.com/problems/brightest-position-on-street,Brightest Position on Street,Medium,,66.2%,"Array, Sorting, Prefix Sum, Ordered Set",more_than_6m
+1108,https://leetcode.com/problems/defanging-an-ip-address,Defanging an IP Address,Easy,,66.2%,String,more_than_6m
+690,https://leetcode.com/problems/employee-importance,Employee Importance,Medium,,66.2%,"Array, Hash Table, Tree, Depth-First Search, Breadth-First Search",more_than_6m
+1712,https://leetcode.com/problems/ways-to-split-array-into-three-subarrays,Ways to Split Array Into Three Subarrays,Medium,,100.0%,"Array, Two Pointers, Binary Search, Prefix Sum",all
+1743,https://leetcode.com/problems/restore-the-array-from-adjacent-pairs,Restore the Array From Adjacent Pairs,Medium,,100.0%,"Array, Hash Table, Depth-First Search",all
+2021,https://leetcode.com/problems/brightest-position-on-street,Brightest Position on Street,Medium,,97.7%,"Array, Sorting, Prefix Sum, Ordered Set",all
+1711,https://leetcode.com/problems/count-good-meals,Count Good Meals,Medium,,97.7%,"Array, Hash Table",all
+1801,https://leetcode.com/problems/number-of-orders-in-the-backlog,Number of Orders in the Backlog,Medium,,97.7%,"Array, Heap (Priority Queue), Simulation",all
+1391,https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid,Check if There is a Valid Path in a Grid,Medium,,97.7%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+1393,https://leetcode.com/problems/capital-gainloss,Capital Gain/Loss,Medium,,97.7%,Database,all
+1684,https://leetcode.com/problems/count-the-number-of-consistent-strings,Count the Number of Consistent Strings,Easy,,97.7%,"Array, Hash Table, String, Bit Manipulation, Counting",all
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,97.7%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,89.3%,"Array, String, Simulation",all
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,76.1%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,69.3%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+690,https://leetcode.com/problems/employee-importance,Employee Importance,Medium,,69.3%,"Array, Hash Table, Tree, Depth-First Search, Breadth-First Search",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,59.7%,"Array, Dynamic Programming",all
+1108,https://leetcode.com/problems/defanging-an-ip-address,Defanging an IP Address,Easy,,59.7%,String,all

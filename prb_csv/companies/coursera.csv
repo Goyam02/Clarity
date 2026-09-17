@@ -1,0 +1,25 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",3_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",more_than_6m
+1366,https://leetcode.com/problems/rank-teams-by-votes,Rank Teams by Votes,Medium,,91.2%,"Array, Hash Table, String, Sorting, Counting",more_than_6m
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,76.1%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",more_than_6m
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,67.3%,"String, Dynamic Programming, Greedy, Recursion",more_than_6m
+453,https://leetcode.com/problems/minimum-moves-to-equal-array-elements,Minimum Moves to Equal Array Elements,Medium,,67.3%,"Array, Math",more_than_6m
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,67.3%,Math,more_than_6m
+1137,https://leetcode.com/problems/n-th-tribonacci-number,N-th Tribonacci Number,Easy,,67.3%,"Math, Dynamic Programming, Memoization",more_than_6m
+945,https://leetcode.com/problems/minimum-increment-to-make-array-unique,Minimum Increment to Make Array Unique,Medium,,67.3%,"Array, Greedy, Sorting, Counting",more_than_6m
+761,https://leetcode.com/problems/special-binary-string,Special Binary String,Hard,,67.3%,"String, Recursion",more_than_6m
+920,https://leetcode.com/problems/number-of-music-playlists,Number of Music Playlists,Hard,,67.3%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+1112,https://leetcode.com/problems/highest-grade-for-each-student,Highest Grade For Each Student,Medium,,67.3%,Database,more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",all
+1137,https://leetcode.com/problems/n-th-tribonacci-number,N-th Tribonacci Number,Easy,,100.0%,"Math, Dynamic Programming, Memoization",all
+780,https://leetcode.com/problems/reaching-points,Reaching Points,Hard,,97.8%,Math,all
+920,https://leetcode.com/problems/number-of-music-playlists,Number of Music Playlists,Hard,,97.8%,"Math, Dynamic Programming, Combinatorics",all
+1112,https://leetcode.com/problems/highest-grade-for-each-student,Highest Grade For Each Student,Medium,,97.8%,Database,all
+453,https://leetcode.com/problems/minimum-moves-to-equal-array-elements,Minimum Moves to Equal Array Elements,Medium,,97.8%,"Array, Math",all
+945,https://leetcode.com/problems/minimum-increment-to-make-array-unique,Minimum Increment to Make Array Unique,Medium,,97.8%,"Array, Greedy, Sorting, Counting",all
+761,https://leetcode.com/problems/special-binary-string,Special Binary String,Hard,,97.8%,"String, Recursion",all
+1366,https://leetcode.com/problems/rank-teams-by-votes,Rank Teams by Votes,Medium,,89.6%,"Array, Hash Table, String, Sorting, Counting",all
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,70.0%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",all
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,60.7%,"String, Dynamic Programming, Greedy, Recursion",all

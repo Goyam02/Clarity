@@ -1,0 +1,32 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",3_months
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,100.0%,"Array, Math, Geometry, Sliding Window, Sorting",3_months
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,100.0%,"Array, Hash Table, Binary Search, Design",3_months
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,89.7%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,89.7%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",6_months
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,89.7%,"Array, Math, Geometry, Sliding Window, Sorting",6_months
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,89.7%,"Array, Hash Table, Binary Search, Design",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,74.3%,"Array, Math, Geometry, Sliding Window, Sorting",more_than_6m
+694,https://leetcode.com/problems/number-of-distinct-islands,Number of Distinct Islands,Medium,,65.6%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function",more_than_6m
+543,https://leetcode.com/problems/diameter-of-binary-tree,Diameter of Binary Tree,Easy,,65.6%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,65.6%,"Array, String, Backtracking, Trie, Matrix",more_than_6m
+305,https://leetcode.com/problems/number-of-islands-ii,Number of Islands II,Hard,,65.6%,"Array, Hash Table, Union-Find",more_than_6m
+341,https://leetcode.com/problems/flatten-nested-list-iterator,Flatten Nested List Iterator,Medium,,65.6%,"Stack, Tree, Depth-First Search, Design, Queue, Iterator",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,65.6%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,65.6%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,81.4%,"Array, Math, Geometry, Sliding Window, Sorting",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,76.6%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,76.6%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+694,https://leetcode.com/problems/number-of-distinct-islands,Number of Distinct Islands,Medium,,61.9%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function",all
+543,https://leetcode.com/problems/diameter-of-binary-tree,Diameter of Binary Tree,Easy,,61.9%,"Tree, Depth-First Search, Binary Tree",all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,61.9%,"Array, String, Backtracking, Trie, Matrix",all
+488,https://leetcode.com/problems/zuma-game,Zuma Game,Hard,,61.9%,"String, Dynamic Programming, Stack, Breadth-First Search, Memoization",all
+305,https://leetcode.com/problems/number-of-islands-ii,Number of Islands II,Hard,,61.9%,"Array, Hash Table, Union-Find",all
+341,https://leetcode.com/problems/flatten-nested-list-iterator,Flatten Nested List Iterator,Medium,,61.9%,"Stack, Tree, Depth-First Search, Design, Queue, Iterator",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,61.9%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,61.9%,"Array, Hash Table, Binary Search, Design",all
+1344,https://leetcode.com/problems/angle-between-hands-of-a-clock,Angle Between Hands of a Clock,Medium,,61.9%,Math,all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,61.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all

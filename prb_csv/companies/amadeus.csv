@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2079,https://leetcode.com/problems/watering-plants,Watering Plants,Medium,,100.0%,"Array, Simulation",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,82.3%,"Hash Table, String, Sorting",more_than_6m
+2079,https://leetcode.com/problems/watering-plants,Watering Plants,Medium,,100.0%,"Array, Simulation",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,82.2%,"Hash Table, String, Sorting",all
