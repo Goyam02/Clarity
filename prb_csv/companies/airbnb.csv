@@ -1,0 +1,137 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,100.0%,"Array, Binary Search, Dynamic Programming, Sorting",3_months
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,92.9%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",3_months
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,92.9%,"Array, Hash Table, String, Trie",3_months
+1298,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes,Maximum Candies You Can Get from Boxes,Hard,,82.9%,"Array, Breadth-First Search, Graph Theory",3_months
+2101,https://leetcode.com/problems/detonate-the-maximum-bombs,Detonate the Maximum Bombs,Medium,,82.9%,"Array, Math, Depth-First Search, Breadth-First Search, Graph Theory, Geometry",3_months
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,100.0%,"Array, Binary Search, Dynamic Programming, Sorting",6_months
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,94.3%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",6_months
+1298,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes,Maximum Candies You Can Get from Boxes,Hard,,86.6%,"Array, Breadth-First Search, Graph Theory",6_months
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,86.6%,"Array, Hash Table, String, Trie",6_months
+638,https://leetcode.com/problems/shopping-offers,Shopping Offers,Medium,,81.5%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Memoization, Bitmask",6_months
+721,https://leetcode.com/problems/accounts-merge,Accounts Merge,Medium,,81.5%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",6_months
+1257,https://leetcode.com/problems/smallest-common-region,Smallest Common Region,Medium,,65.7%,"Array, Hash Table, String, Tree, Depth-First Search, Breadth-First Search",6_months
+1928,https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time,Minimum Cost to Reach Destination in Time,Hard,,65.7%,"Array, Dynamic Programming, Graph Theory",6_months
+160,https://leetcode.com/problems/intersection-of-two-linked-lists,Intersection of Two Linked Lists,Easy,,65.7%,"Hash Table, Linked List, Two Pointers",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,65.7%,"Array, String, Simulation",6_months
+2101,https://leetcode.com/problems/detonate-the-maximum-bombs,Detonate the Maximum Bombs,Medium,,65.7%,"Array, Math, Depth-First Search, Breadth-First Search, Graph Theory, Geometry",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",more_than_6m
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,90.8%,"Array, Binary Search, Dynamic Programming, Sorting",more_than_6m
+251,https://leetcode.com/problems/flatten-2d-vector,Flatten 2D Vector,Medium,,81.0%,"Array, Two Pointers, Design, Iterator",more_than_6m
+336,https://leetcode.com/problems/palindrome-pairs,Palindrome Pairs,Hard,,81.0%,"Array, Hash Table, String, Trie, Hash Function",more_than_6m
+1257,https://leetcode.com/problems/smallest-common-region,Smallest Common Region,Medium,,77.6%,"Array, Hash Table, String, Tree, Depth-First Search, Breadth-First Search",more_than_6m
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,75.6%,"Array, Hash Table, Design, Simulation",more_than_6m
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,73.5%,"Array, Backtracking",more_than_6m
+755,https://leetcode.com/problems/pour-water,Pour Water,Medium,,71.1%,"Array, Simulation",more_than_6m
+1298,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes,Maximum Candies You Can Get from Boxes,Hard,,71.1%,"Array, Breadth-First Search, Graph Theory",more_than_6m
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,68.3%,"Hash Table, String, Sliding Window",more_than_6m
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,68.3%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,65.2%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+773,https://leetcode.com/problems/sliding-puzzle,Sliding Puzzle,Hard,,65.2%,"Array, Dynamic Programming, Backtracking, Breadth-First Search, Memoization, Matrix",more_than_6m
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,61.5%,"Array, Hash Table, Design, Matrix, Simulation",more_than_6m
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,61.5%,"Array, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,56.9%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+864,https://leetcode.com/problems/shortest-path-to-get-all-keys,Shortest Path to Get All Keys,Hard,,56.9%,"Array, Bit Manipulation, Breadth-First Search, Matrix",more_than_6m
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,56.9%,"Array, Hash Table, String, Trie",more_than_6m
+160,https://leetcode.com/problems/intersection-of-two-linked-lists,Intersection of Two Linked Lists,Easy,,56.9%,"Hash Table, Linked List, Two Pointers",more_than_6m
+219,https://leetcode.com/problems/contains-duplicate-ii,Contains Duplicate II,Easy,,56.9%,"Array, Hash Table, Sliding Window",more_than_6m
+638,https://leetcode.com/problems/shopping-offers,Shopping Offers,Medium,,56.9%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Memoization, Bitmask",more_than_6m
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,51.1%,"String, Bit Manipulation",more_than_6m
+759,https://leetcode.com/problems/employee-free-time,Employee Free Time,Hard,,51.1%,"Array, Sweep Line, Sorting, Heap (Priority Queue)",more_than_6m
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,51.1%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,51.1%,"Array, Hash Table",more_than_6m
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,51.1%,"Linked List, Math, Recursion",more_than_6m
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,51.1%,"Array, String, Backtracking, Trie, Matrix",more_than_6m
+432,https://leetcode.com/problems/all-oone-data-structure,All O`one Data Structure,Hard,,51.1%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+385,https://leetcode.com/problems/mini-parser,Mini Parser,Medium,,42.9%,"String, Stack, Depth-First Search",more_than_6m
+1284,https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix,Minimum Number of Flips to Convert Binary Matrix to Zero Matrix,Hard,,42.9%,"Array, Hash Table, Bit Manipulation, Breadth-First Search, Matrix",more_than_6m
+136,https://leetcode.com/problems/single-number,Single Number,Easy,,42.9%,"Array, Bit Manipulation",more_than_6m
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,42.9%,"String, Dynamic Programming, Recursion",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,42.9%,"String, Stack",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,42.9%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+1058,https://leetcode.com/problems/minimize-rounding-error-to-meet-target,Minimize Rounding Error to Meet Target,Medium,,42.9%,"Array, Math, String, Greedy, Sorting",more_than_6m
+415,https://leetcode.com/problems/add-strings,Add Strings,Easy,,42.9%,"Math, String, Simulation",more_than_6m
+1554,https://leetcode.com/problems/strings-differ-by-one-character,Strings Differ by One Character,Medium,,42.9%,"Hash Table, String, Rolling Hash, Hash Function",more_than_6m
+1017,https://leetcode.com/problems/convert-to-base-2,Convert to Base -2,Medium,,42.9%,Math,more_than_6m
+190,https://leetcode.com/problems/reverse-bits,Reverse Bits,Easy,,42.9%,"Divide and Conquer, Bit Manipulation",more_than_6m
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,42.9%,"Array, Dynamic Programming",more_than_6m
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,42.9%,"Hash Table, Math, Two Pointers",more_than_6m
+217,https://leetcode.com/problems/contains-duplicate,Contains Duplicate,Easy,,42.9%,"Array, Hash Table, Sorting",more_than_6m
+220,https://leetcode.com/problems/contains-duplicate-iii,Contains Duplicate III,Hard,,42.9%,"Array, Sliding Window, Sorting, Bucket Sort, Ordered Set",more_than_6m
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,42.9%,"Array, Dynamic Programming, Matrix",more_than_6m
+1041,https://leetcode.com/problems/robot-bounded-in-circle,Robot Bounded In Circle,Medium,,42.9%,"Math, String, Simulation",more_than_6m
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,42.9%,"Math, String, Stack",more_than_6m
+1166,https://leetcode.com/problems/design-file-system,Design File System,Medium,,42.9%,"Hash Table, String, Design, Trie",more_than_6m
+2189,https://leetcode.com/problems/number-of-ways-to-build-house-of-cards,Number of Ways to Build House of Cards,Medium,,42.9%,"Math, Dynamic Programming",more_than_6m
+108,https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree,Convert Sorted Array to Binary Search Tree,Easy,,42.9%,"Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree",more_than_6m
+756,https://leetcode.com/problems/pyramid-transition-matrix,Pyramid Transition Matrix,Medium,,42.9%,"Hash Table, String, Backtracking, Bit Manipulation",more_than_6m
+1557,https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes,Minimum Number of Vertices to Reach All Nodes,Medium,,42.9%,Graph Theory,more_than_6m
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,42.9%,"Array, Breadth-First Search, Matrix",more_than_6m
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,42.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+605,https://leetcode.com/problems/can-place-flowers,Can Place Flowers,Easy,,42.9%,"Array, Greedy",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,42.9%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,42.9%,"Hash Table, String, Binary Search, Design",more_than_6m
+400,https://leetcode.com/problems/nth-digit,Nth Digit,Medium,,42.9%,"Math, Binary Search",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",all
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,92.4%,"Array, Binary Search, Dynamic Programming, Sorting",all
+251,https://leetcode.com/problems/flatten-2d-vector,Flatten 2D Vector,Medium,,85.9%,"Array, Two Pointers, Design, Iterator",all
+1257,https://leetcode.com/problems/smallest-common-region,Smallest Common Region,Medium,,84.9%,"Array, Hash Table, String, Tree, Depth-First Search, Breadth-First Search",all
+336,https://leetcode.com/problems/palindrome-pairs,Palindrome Pairs,Hard,,84.9%,"Array, Hash Table, String, Trie, Hash Function",all
+1298,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes,Maximum Candies You Can Get from Boxes,Hard,,83.9%,"Array, Breadth-First Search, Graph Theory",all
+755,https://leetcode.com/problems/pour-water,Pour Water,Medium,,79.2%,"Array, Simulation",all
+773,https://leetcode.com/problems/sliding-puzzle,Sliding Puzzle,Hard,,77.8%,"Array, Dynamic Programming, Backtracking, Breadth-First Search, Memoization, Matrix",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,76.4%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+160,https://leetcode.com/problems/intersection-of-two-linked-lists,Intersection of Two Linked Lists,Easy,,76.4%,"Hash Table, Linked List, Two Pointers",all
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,76.4%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",all
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,74.8%,"Array, String, Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+219,https://leetcode.com/problems/contains-duplicate-ii,Contains Duplicate II,Easy,,73.2%,"Array, Hash Table, Sliding Window",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,71.3%,"Array, Hash Table",all
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,71.3%,"Linked List, Math, Recursion",all
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,71.3%,"Array, Hash Table, Design, Simulation",all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,71.3%,"Array, String, Backtracking, Trie, Matrix",all
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,71.3%,"String, Bit Manipulation",all
+759,https://leetcode.com/problems/employee-free-time,Employee Free Time,Hard,,71.3%,"Array, Sweep Line, Sorting, Heap (Priority Queue)",all
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,71.3%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",all
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,69.3%,"String, Dynamic Programming, Recursion",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,69.3%,"String, Stack",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,69.3%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+1058,https://leetcode.com/problems/minimize-rounding-error-to-meet-target,Minimize Rounding Error to Meet Target,Medium,,69.3%,"Array, Math, String, Greedy, Sorting",all
+1017,https://leetcode.com/problems/convert-to-base-2,Convert to Base -2,Medium,,69.3%,Math,all
+1166,https://leetcode.com/problems/design-file-system,Design File System,Medium,,69.3%,"Hash Table, String, Design, Trie",all
+108,https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree,Convert Sorted Array to Binary Search Tree,Easy,,69.3%,"Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree",all
+136,https://leetcode.com/problems/single-number,Single Number,Easy,,69.3%,"Array, Bit Manipulation",all
+190,https://leetcode.com/problems/reverse-bits,Reverse Bits,Easy,,69.3%,"Divide and Conquer, Bit Manipulation",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,69.3%,"Array, Dynamic Programming",all
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,69.3%,"Hash Table, Math, Two Pointers",all
+217,https://leetcode.com/problems/contains-duplicate,Contains Duplicate,Easy,,69.3%,"Array, Hash Table, Sorting",all
+220,https://leetcode.com/problems/contains-duplicate-iii,Contains Duplicate III,Hard,,69.3%,"Array, Sliding Window, Sorting, Bucket Sort, Ordered Set",all
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,69.3%,"Array, Dynamic Programming, Matrix",all
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,69.3%,"Math, String, Stack",all
+2189,https://leetcode.com/problems/number-of-ways-to-build-house-of-cards,Number of Ways to Build House of Cards,Medium,,69.3%,"Math, Dynamic Programming",all
+385,https://leetcode.com/problems/mini-parser,Mini Parser,Medium,,69.3%,"String, Stack, Depth-First Search",all
+1284,https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix,Minimum Number of Flips to Convert Binary Matrix to Zero Matrix,Hard,,69.3%,"Array, Hash Table, Bit Manipulation, Breadth-First Search, Matrix",all
+415,https://leetcode.com/problems/add-strings,Add Strings,Easy,,69.3%,"Math, String, Simulation",all
+1041,https://leetcode.com/problems/robot-bounded-in-circle,Robot Bounded In Circle,Medium,,69.3%,"Math, String, Simulation",all
+1557,https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes,Minimum Number of Vertices to Reach All Nodes,Medium,,69.3%,Graph Theory,all
+1554,https://leetcode.com/problems/strings-differ-by-one-character,Strings Differ by One Character,Medium,,69.3%,"Hash Table, String, Rolling Hash, Hash Function",all
+756,https://leetcode.com/problems/pyramid-transition-matrix,Pyramid Transition Matrix,Medium,,69.3%,"Hash Table, String, Backtracking, Bit Manipulation",all
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,67.1%,"Array, Backtracking",all
+3076,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array,Shortest Uncommon Substring in an Array,Medium,,67.1%,"Array, Hash Table, String, Trie",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,64.6%,"Hash Table, String, Sliding Window",all
+638,https://leetcode.com/problems/shopping-offers,Shopping Offers,Medium,,64.6%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Memoization, Bitmask",all
+348,https://leetcode.com/problems/design-tic-tac-toe,Design Tic-Tac-Toe,Medium,,54.8%,"Array, Hash Table, Design, Matrix, Simulation",all
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,54.8%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+721,https://leetcode.com/problems/accounts-merge,Accounts Merge,Medium,,54.8%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",all
+864,https://leetcode.com/problems/shortest-path-to-get-all-keys,Shortest Path to Get All Keys,Hard,,50.1%,"Array, Bit Manipulation, Breadth-First Search, Matrix",all
+432,https://leetcode.com/problems/all-oone-data-structure,All O`one Data Structure,Hard,,44.1%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,35.8%,"Hash Table, String, Binary Search, Design",all
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,35.8%,"Array, Breadth-First Search, Matrix",all
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,35.8%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+605,https://leetcode.com/problems/can-place-flowers,Can Place Flowers,Easy,,35.8%,"Array, Greedy",all
+400,https://leetcode.com/problems/nth-digit,Nth Digit,Medium,,35.8%,"Math, Binary Search",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,35.8%,"Array, Divide and Conquer, Dynamic Programming",all
+727,https://leetcode.com/problems/minimum-window-subsequence,Minimum Window Subsequence,Hard,,35.8%,"String, Dynamic Programming, Sliding Window",all
+829,https://leetcode.com/problems/consecutive-numbers-sum,Consecutive Numbers Sum,Hard,,35.8%,"Math, Enumeration",all
+1928,https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time,Minimum Cost to Reach Destination in Time,Hard,,35.8%,"Array, Dynamic Programming, Graph Theory",all
+341,https://leetcode.com/problems/flatten-nested-list-iterator,Flatten Nested List Iterator,Medium,,35.8%,"Stack, Tree, Depth-First Search, Design, Queue, Iterator",all
+2101,https://leetcode.com/problems/detonate-the-maximum-bombs,Detonate the Maximum Bombs,Medium,,35.8%,"Array, Math, Depth-First Search, Breadth-First Search, Graph Theory, Geometry",all

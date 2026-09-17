@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2162,https://leetcode.com/problems/minimum-cost-to-set-cooking-time,Minimum Cost to Set Cooking Time,Medium,,100.0%,"Math, Enumeration",more_than_6m
+697,https://leetcode.com/problems/degree-of-an-array,Degree of an Array,Easy,,90.2%,"Array, Hash Table",more_than_6m
+1249,https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses,Minimum Remove to Make Valid Parentheses,Medium,,90.2%,"String, Stack",more_than_6m
+697,https://leetcode.com/problems/degree-of-an-array,Degree of an Array,Easy,,100.0%,"Array, Hash Table",all
+2162,https://leetcode.com/problems/minimum-cost-to-set-cooking-time,Minimum Cost to Set Cooking Time,Medium,,76.2%,"Math, Enumeration",all
+1249,https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses,Minimum Remove to Make Valid Parentheses,Medium,,68.2%,"String, Stack",all

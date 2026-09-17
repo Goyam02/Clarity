@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1311,https://leetcode.com/problems/get-watched-videos-by-your-friends,Get Watched Videos by Your Friends,Medium,,100.0%,"Array, Hash Table, Breadth-First Search, Graph Theory, Sorting",6_months
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",more_than_6m
+1941,https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences,Check if All Characters Have Equal Number of Occurrences,Easy,,79.7%,"Hash Table, String, Counting",more_than_6m
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,79.7%,"Array, Hash Table, Prefix Sum",more_than_6m
+1941,https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences,Check if All Characters Have Equal Number of Occurrences,Easy,,100.0%,"Hash Table, String, Counting",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,85.9%,"Array, Dynamic Programming",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,67.3%,"Array, Hash Table, Prefix Sum",all
+2696,https://leetcode.com/problems/minimum-string-length-after-removing-substrings,Minimum String Length After Removing Substrings,Easy,,67.3%,"String, Stack, Simulation",all
+1311,https://leetcode.com/problems/get-watched-videos-by-your-friends,Get Watched Videos by Your Friends,Medium,,67.3%,"Array, Hash Table, Breadth-First Search, Graph Theory, Sorting",all

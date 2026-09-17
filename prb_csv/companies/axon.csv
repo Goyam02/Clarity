@@ -1,0 +1,24 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",3_months
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",3_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",6_months
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,96.6%,"Array, Hash Table, Math, Design, Randomized",6_months
+1396,https://leetcode.com/problems/design-underground-system,Design Underground System,Medium,,87.7%,"Hash Table, String, Design",6_months
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,72.5%,"String, Dynamic Programming",6_months
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,72.5%,"Two Pointers, String",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+1396,https://leetcode.com/problems/design-underground-system,Design Underground System,Medium,,94.9%,"Hash Table, String, Design",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,93.4%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+97,https://leetcode.com/problems/interleaving-string,Interleaving String,Medium,,77.8%,"String, Dynamic Programming",more_than_6m
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,55.6%,"Hash Table, Math, String",more_than_6m
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,55.6%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,55.6%,"Two Pointers, String",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,94.6%,"Array, Hash Table, Math, Design, Randomized",all
+1396,https://leetcode.com/problems/design-underground-system,Design Underground System,Medium,,93.6%,"Hash Table, String, Design",all
+97,https://leetcode.com/problems/interleaving-string,Interleaving String,Medium,,75.2%,"String, Dynamic Programming",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,64.3%,"Two Pointers, String",all
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,58.7%,"String, Dynamic Programming",all
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,50.8%,"Hash Table, Math, String",all
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,50.8%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",all
+636,https://leetcode.com/problems/exclusive-time-of-functions,Exclusive Time of Functions,Medium,,50.8%,"Array, Stack",all

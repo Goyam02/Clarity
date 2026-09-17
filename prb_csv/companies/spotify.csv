@@ -1,0 +1,37 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,100.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",30_days
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",3_months
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,88.1%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",3_months
+346,https://leetcode.com/problems/moving-average-from-data-stream,Moving Average from Data Stream,Easy,,81.9%,"Array, Design, Queue, Data Stream",3_months
+1152,https://leetcode.com/problems/analyze-user-website-visit-pattern,Analyze User Website Visit Pattern,Medium,,73.3%,"Array, Hash Table, String, Sorting",3_months
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",6_months
+346,https://leetcode.com/problems/moving-average-from-data-stream,Moving Average from Data Stream,Easy,,87.8%,"Array, Design, Queue, Data Stream",6_months
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,87.8%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",6_months
+1152,https://leetcode.com/problems/analyze-user-website-visit-pattern,Analyze User Website Visit Pattern,Medium,,81.6%,"Array, Hash Table, String, Sorting",6_months
+346,https://leetcode.com/problems/moving-average-from-data-stream,Moving Average from Data Stream,Easy,,100.0%,"Array, Design, Queue, Data Stream",more_than_6m
+1152,https://leetcode.com/problems/analyze-user-website-visit-pattern,Analyze User Website Visit Pattern,Medium,,81.6%,"Array, Hash Table, String, Sorting",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,79.3%,"Array, Hash Table",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,79.3%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,76.7%,"String, Stack",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,70.1%,"Hash Table, String, Sliding Window",more_than_6m
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,65.7%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",more_than_6m
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,60.1%,"Hash Table, String, Counting",more_than_6m
+509,https://leetcode.com/problems/fibonacci-number,Fibonacci Number,Easy,,60.1%,"Math, Dynamic Programming, Recursion, Memoization",more_than_6m
+1919,https://leetcode.com/problems/leetcodify-similar-friends,Leetcodify Similar Friends,Hard,,52.1%,Database,more_than_6m
+1917,https://leetcode.com/problems/leetcodify-friends-recommendations,Leetcodify Friends Recommendations,Hard,,52.1%,Database,more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,52.1%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+104,https://leetcode.com/problems/maximum-depth-of-binary-tree,Maximum Depth of Binary Tree,Easy,,52.1%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+346,https://leetcode.com/problems/moving-average-from-data-stream,Moving Average from Data Stream,Easy,,100.0%,"Array, Design, Queue, Data Stream",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,84.0%,"Hash Table, String, Sliding Window",all
+1152,https://leetcode.com/problems/analyze-user-website-visit-pattern,Analyze User Website Visit Pattern,Medium,,84.0%,"Array, Hash Table, String, Sorting",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,84.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+1917,https://leetcode.com/problems/leetcodify-friends-recommendations,Leetcodify Friends Recommendations,Hard,,80.5%,Database,all
+1919,https://leetcode.com/problems/leetcodify-similar-friends,Leetcodify Similar Friends,Hard,,80.5%,Database,all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,76.1%,"Array, Hash Table",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,76.1%,"String, Stack",all
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,66.8%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",all
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,56.8%,"Hash Table, String, Counting",all
+509,https://leetcode.com/problems/fibonacci-number,Fibonacci Number,Easy,,56.8%,"Math, Dynamic Programming, Recursion, Memoization",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,56.8%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+104,https://leetcode.com/problems/maximum-depth-of-binary-tree,Maximum Depth of Binary Tree,Easy,,48.9%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,48.9%,"Two Pointers, String",all

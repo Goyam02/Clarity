@@ -1,0 +1,10 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2144,https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount,Minimum Cost of Buying Candies With Discount,Easy,,100.0%,"Array, Greedy, Sorting",more_than_6m
+944,https://leetcode.com/problems/delete-columns-to-make-sorted,Delete Columns to Make Sorted,Easy,,89.4%,"Array, String",more_than_6m
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,89.4%,Math,more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,89.4%,"Array, Hash Table",more_than_6m
+2144,https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount,Minimum Cost of Buying Candies With Discount,Easy,,100.0%,"Array, Greedy, Sorting",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,89.2%,"Array, Dynamic Programming",all
+944,https://leetcode.com/problems/delete-columns-to-make-sorted,Delete Columns to Make Sorted,Easy,,89.2%,"Array, String",all
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,89.2%,Math,all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,89.2%,"Array, Hash Table",all

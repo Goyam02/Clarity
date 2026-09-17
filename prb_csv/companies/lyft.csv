@@ -1,0 +1,71 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",30_days
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,90.3%,"Hash Table, String, Binary Search, Design",30_days
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,90.3%,"Hash Table, String, Sliding Window",30_days
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",3_months
+958,https://leetcode.com/problems/check-completeness-of-a-binary-tree,Check Completeness of a Binary Tree,Medium,,88.5%,"Tree, Breadth-First Search, Binary Tree",3_months
+158,https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times,Read N Characters Given read4 II - Call Multiple Times,Hard,,84.2%,"Array, Simulation, Interactive",3_months
+148,https://leetcode.com/problems/sort-list,Sort List,Medium,,65.1%,"Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort",3_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,65.1%,"Hash Table, String, Binary Search, Design",3_months
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,57.2%,"Hash Table, String, Backtracking, Breadth-First Search",3_months
+716,https://leetcode.com/problems/max-stack,Max Stack,Hard,,57.2%,"Linked List, Stack, Design, Doubly-Linked List, Ordered Set",3_months
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,57.2%,"Hash Table, String, Sliding Window",3_months
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",6_months
+109,https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree,Convert Sorted List to Binary Search Tree,Medium,,87.1%,"Linked List, Divide and Conquer, Tree, Binary Search Tree, Binary Tree",6_months
+958,https://leetcode.com/problems/check-completeness-of-a-binary-tree,Check Completeness of a Binary Tree,Medium,,87.1%,"Tree, Breadth-First Search, Binary Tree",6_months
+158,https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times,Read N Characters Given read4 II - Call Multiple Times,Hard,,82.7%,"Array, Simulation, Interactive",6_months
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,76.9%,"Hash Table, String, Sliding Window",6_months
+716,https://leetcode.com/problems/max-stack,Max Stack,Hard,,73.2%,"Linked List, Stack, Design, Doubly-Linked List, Ordered Set",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,68.8%,"Hash Table, String, Binary Search, Design",6_months
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,63.0%,"Hash Table, String, Backtracking, Breadth-First Search",6_months
+91,https://leetcode.com/problems/decode-ways,Decode Ways,Medium,,63.0%,"String, Dynamic Programming",6_months
+148,https://leetcode.com/problems/sort-list,Sort List,Medium,,63.0%,"Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort",6_months
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,54.9%,"Stack, Design",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+158,https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times,Read N Characters Given read4 II - Call Multiple Times,Hard,,94.9%,"Array, Simulation, Interactive",more_than_6m
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,94.9%,"Hash Table, String, Sliding Window",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,93.7%,"Array, Breadth-First Search, Matrix",more_than_6m
+716,https://leetcode.com/problems/max-stack,Max Stack,Hard,,78.2%,"Linked List, Stack, Design, Doubly-Linked List, Ordered Set",more_than_6m
+304,https://leetcode.com/problems/range-sum-query-2d-immutable,Range Sum Query 2D - Immutable,Medium,,78.2%,"Array, Design, Matrix, Prefix Sum",more_than_6m
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,68.5%,"Stack, Design",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,63.8%,"Hash Table, String, Sliding Window",more_than_6m
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,63.8%,"Array, Hash Table, Union Find",more_than_6m
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,57.9%,"Hash Table, String, Backtracking, Breadth-First Search",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,57.9%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+365,https://leetcode.com/problems/water-and-jug-problem,Water and Jug Problem,Medium,,57.9%,"Math, Depth-First Search, Breadth-First Search",more_than_6m
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,57.9%,"Array, Stack, Simulation",more_than_6m
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,57.9%,"Hash Table, String, Design, Trie",more_than_6m
+1882,https://leetcode.com/problems/process-tasks-using-servers,Process Tasks Using Servers,Medium,,49.6%,"Array, Heap (Priority Queue)",more_than_6m
+1094,https://leetcode.com/problems/car-pooling,Car Pooling,Medium,,49.6%,"Array, Sorting, Heap (Priority Queue), Simulation, Prefix Sum",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,49.6%,"Two Pointers, String",more_than_6m
+632,https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists,Smallest Range Covering Elements from K Lists,Hard,,49.6%,"Array, Hash Table, Greedy, Sliding Window, Sorting, Heap (Priority Queue)",more_than_6m
+109,https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree,Convert Sorted List to Binary Search Tree,Medium,,49.6%,"Linked List, Divide and Conquer, Tree, Binary Search Tree, Binary Tree",more_than_6m
+1723,https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs,Find Minimum Time to Finish All Jobs,Hard,,49.6%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",more_than_6m
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,49.6%,"Array, Prefix Sum",more_than_6m
+1298,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes,Maximum Candies You Can Get from Boxes,Hard,,49.6%,"Array, Breadth-First Search, Graph",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,94.3%,"Hash Table, String, Binary Search, Design",all
+158,https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times,Read N Characters Given read4 II - Call Multiple Times,Hard,,93.5%,"Array, Simulation, Interactive",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,91.9%,"Hash Table, String, Sliding Window",all
+716,https://leetcode.com/problems/max-stack,Max Stack,Hard,,79.8%,"Linked List, Stack, Design, Doubly-Linked List, Ordered Set",all
+109,https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree,Convert Sorted List to Binary Search Tree,Medium,,78.2%,"Linked List, Divide and Conquer, Tree, Binary Search Tree, Binary Tree",all
+632,https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists,Smallest Range Covering Elements from K Lists,Hard,,74.6%,"Array, Hash Table, Greedy, Sliding Window, Sorting, Heap (Priority Queue)",all
+958,https://leetcode.com/problems/check-completeness-of-a-binary-tree,Check Completeness of a Binary Tree,Medium,,74.6%,"Tree, Breadth-First Search, Binary Tree",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,74.6%,"Two Pointers, String",all
+1094,https://leetcode.com/problems/car-pooling,Car Pooling,Medium,,74.6%,"Array, Sorting, Heap (Priority Queue), Simulation, Prefix Sum",all
+304,https://leetcode.com/problems/range-sum-query-2d-immutable,Range Sum Query 2D - Immutable,Medium,,70.1%,"Array, Design, Matrix, Prefix Sum",all
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,67.5%,"Stack, Design",all
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,64.4%,"Hash Table, String, Backtracking, Breadth-First Search",all
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,60.8%,"Array, Hash Table, Union Find",all
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,56.4%,"Hash Table, String, Design, Trie",all
+365,https://leetcode.com/problems/water-and-jug-problem,Water and Jug Problem,Medium,,56.4%,"Math, Depth-First Search, Breadth-First Search",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,56.4%,"Hash Table, String, Sliding Window",all
+91,https://leetcode.com/problems/decode-ways,Decode Ways,Medium,,56.4%,"String, Dynamic Programming",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,50.7%,"Array, Stack, Simulation",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,50.7%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,50.7%,"Array, Prefix Sum",all
+1298,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes,Maximum Candies You Can Get from Boxes,Hard,,50.7%,"Array, Breadth-First Search, Graph",all
+148,https://leetcode.com/problems/sort-list,Sort List,Medium,,50.7%,"Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort",all
+1882,https://leetcode.com/problems/process-tasks-using-servers,Process Tasks Using Servers,Medium,,42.7%,"Array, Heap (Priority Queue)",all
+1723,https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs,Find Minimum Time to Finish All Jobs,Hard,,42.7%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",all
+1620,https://leetcode.com/problems/coordinate-with-maximum-network-quality,Coordinate With Maximum Network Quality,Medium,,42.7%,"Array, Enumeration",all

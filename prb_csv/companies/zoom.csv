@@ -1,0 +1,8 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,100.0%,"Array, String, Backtracking, Trie, Matrix",6_months
+1141,https://leetcode.com/problems/user-activity-for-the-past-30-days-i,User Activity for the Past 30 Days I,Easy,,100.0%,Database,more_than_6m
+1142,https://leetcode.com/problems/user-activity-for-the-past-30-days-ii,User Activity for the Past 30 Days II,Easy,,100.0%,Database,more_than_6m
+1141,https://leetcode.com/problems/user-activity-for-the-past-30-days-i,User Activity for the Past 30 Days I,Easy,,100.0%,Database,all
+1142,https://leetcode.com/problems/user-activity-for-the-past-30-days-ii,User Activity for the Past 30 Days II,Easy,,100.0%,Database,all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,74.6%,"Array, String, Backtracking, Trie, Matrix",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,66.1%,"Hash Table, Linked List, Design, Doubly-Linked List",all

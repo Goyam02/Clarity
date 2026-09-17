@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,100.0%,"Array, Dynamic Programming",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,89.4%,"Hash Table, String, Sliding Window",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,89.1%,"Hash Table, String, Sliding Window",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,89.1%,"Array, Dynamic Programming",all

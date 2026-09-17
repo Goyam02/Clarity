@@ -1,0 +1,42 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",3_months
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,100.0%,"Array, Hash Table, Design, Simulation",6_months
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+863,https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree,All Nodes Distance K in Binary Tree,Medium,,89.3%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,89.3%,"Array, Hash Table, String, Sorting",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,81.7%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,81.7%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,81.7%,"Array, Hash Table, Union-Find",more_than_6m
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,81.7%,"Array, Hash Table, Design, Simulation",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,81.7%,"Array, Sorting",more_than_6m
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,71.1%,"Array, Stack, Monotonic Stack",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,71.1%,"Array, Binary Search, Divide and Conquer",more_than_6m
+621,https://leetcode.com/problems/task-scheduler,Task Scheduler,Medium,,71.1%,"Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,71.1%,"Array, Two Pointers, Greedy",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,71.1%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+1487,https://leetcode.com/problems/making-file-names-unique,Making File Names Unique,Medium,,71.1%,"Array, Hash Table, String",more_than_6m
+304,https://leetcode.com/problems/range-sum-query-2d-immutable,Range Sum Query 2D - Immutable,Medium,,71.1%,"Array, Design, Matrix, Prefix Sum",more_than_6m
+1190,https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses,Reverse Substrings Between Each Pair of Parentheses,Medium,,71.1%,"String, Stack",more_than_6m
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,71.1%,"Hash Table, String, Backtracking, Breadth-First Search",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,71.1%,"Hash Table, String, Breadth-First Search",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,91.3%,"Array, Hash Table, Math, Design, Randomized",all
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,91.3%,"Array, Hash Table, Design, Simulation",all
+863,https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree,All Nodes Distance K in Binary Tree,Medium,,85.5%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,85.5%,"Array, Hash Table, String, Sorting",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,78.1%,"Array, Sorting",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,78.1%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,78.1%,"Array, Hash Table, Union-Find",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,78.1%,"Array, Two Pointers, Greedy",all
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,67.7%,"Array, Stack, Monotonic Stack",all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,67.7%,"Array, Binary Search, Divide and Conquer",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,67.7%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+1487,https://leetcode.com/problems/making-file-names-unique,Making File Names Unique,Medium,,67.7%,"Array, Hash Table, String",all
+304,https://leetcode.com/problems/range-sum-query-2d-immutable,Range Sum Query 2D - Immutable,Medium,,67.7%,"Array, Design, Matrix, Prefix Sum",all
+1190,https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses,Reverse Substrings Between Each Pair of Parentheses,Medium,,67.7%,"String, Stack",all
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,67.7%,"Hash Table, String, Backtracking, Breadth-First Search",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,67.7%,"Hash Table, String, Breadth-First Search",all
+621,https://leetcode.com/problems/task-scheduler,Task Scheduler,Medium,,67.7%,"Array, Hash Table, Greedy, Sorting, Heap (Priority Queue), Counting",all
+381,https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed,Insert Delete GetRandom O(1) - Duplicates allowed,Hard,,67.7%,"Array, Hash Table, Math, Design, Randomized",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,67.7%,"Array, Prefix Sum",all

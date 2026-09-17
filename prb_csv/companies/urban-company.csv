@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,100.0%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",6_months
+417,https://leetcode.com/problems/pacific-atlantic-water-flow,Pacific Atlantic Water Flow,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,88.6%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+135,https://leetcode.com/problems/candy,Candy,Hard,,88.6%,"Array, Greedy",more_than_6m
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,88.6%,"Array, Binary Search",more_than_6m
+1653,https://leetcode.com/problems/minimum-deletions-to-make-string-balanced,Minimum Deletions to Make String Balanced,Medium,,88.6%,"String, Dynamic Programming, Stack",more_than_6m
+417,https://leetcode.com/problems/pacific-atlantic-water-flow,Pacific Atlantic Water Flow,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+135,https://leetcode.com/problems/candy,Candy,Hard,,88.5%,"Array, Greedy",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,88.5%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,88.5%,"Array, Binary Search",all
+1653,https://leetcode.com/problems/minimum-deletions-to-make-string-balanced,Minimum Deletions to Make String Balanced,Medium,,88.5%,"String, Dynamic Programming, Stack",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,88.5%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",all
+1838,https://leetcode.com/problems/frequency-of-the-most-frequent-element,Frequency of the Most Frequent Element,Medium,,88.5%,"Array, Binary Search, Greedy, Sliding Window, Sorting, Prefix Sum",all

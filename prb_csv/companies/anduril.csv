@@ -1,0 +1,131 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,100.0%,"Hash Table, String, Counting",30_days
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,83.5%,"Array, Math, Geometry, Sliding Window, Sorting",30_days
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",3_months
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,100.0%,"Hash Table, String, Counting",3_months
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,92.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",3_months
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,92.2%,"Array, Breadth-First Search, Matrix",3_months
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,92.2%,"Array, Math, Geometry, Sliding Window, Sorting",3_months
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,81.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",3_months
+1762,https://leetcode.com/problems/buildings-with-an-ocean-view,Buildings With an Ocean View,Medium,,81.2%,"Array, Stack, Monotonic Stack",3_months
+1087,https://leetcode.com/problems/brace-expansion,Brace Expansion,Medium,,81.2%,"String, Backtracking, Stack, Breadth-First Search, Sorting",3_months
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,81.2%,"Array, Breadth-First Search, Matrix",3_months
+701,https://leetcode.com/problems/insert-into-a-binary-search-tree,Insert into a Binary Search Tree,Medium,,81.2%,"Tree, Binary Search Tree, Binary Tree",3_months
+94,https://leetcode.com/problems/binary-tree-inorder-traversal,Binary Tree Inorder Traversal,Easy,,81.2%,"Stack, Tree, Depth-First Search, Binary Tree",3_months
+110,https://leetcode.com/problems/balanced-binary-tree,Balanced Binary Tree,Easy,,81.2%,"Tree, Depth-First Search, Binary Tree",3_months
+1828,https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle,Queries on Number of Points Inside a Circle,Medium,,81.2%,"Array, Math, Geometry",3_months
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",6_months
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,100.0%,"Array, Stack, Monotonic Stack",6_months
+475,https://leetcode.com/problems/heaters,Heaters,Medium,,89.4%,"Array, Two Pointers, Binary Search, Sorting",6_months
+1828,https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle,Queries on Number of Points Inside a Circle,Medium,,89.4%,"Array, Math, Geometry",6_months
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,89.4%,"Array, Math, Geometry, Sliding Window, Sorting",6_months
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,89.4%,"Hash Table, String, Counting",6_months
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,81.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,81.9%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",6_months
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,81.9%,"Array, Breadth-First Search, Matrix",6_months
+314,https://leetcode.com/problems/binary-tree-vertical-order-traversal,Binary Tree Vertical Order Traversal,Medium,,71.4%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",6_months
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,71.4%,"Two Pointers, String",6_months
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,71.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+1762,https://leetcode.com/problems/buildings-with-an-ocean-view,Buildings With an Ocean View,Medium,,71.4%,"Array, Stack, Monotonic Stack",6_months
+1087,https://leetcode.com/problems/brace-expansion,Brace Expansion,Medium,,71.4%,"String, Backtracking, Stack, Breadth-First Search, Sorting",6_months
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,71.4%,"Array, Breadth-First Search, Matrix",6_months
+701,https://leetcode.com/problems/insert-into-a-binary-search-tree,Insert into a Binary Search Tree,Medium,,71.4%,"Tree, Binary Search Tree, Binary Tree",6_months
+94,https://leetcode.com/problems/binary-tree-inorder-traversal,Binary Tree Inorder Traversal,Easy,,71.4%,"Stack, Tree, Depth-First Search, Binary Tree",6_months
+110,https://leetcode.com/problems/balanced-binary-tree,Balanced Binary Tree,Easy,,71.4%,"Tree, Depth-First Search, Binary Tree",6_months
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+1024,https://leetcode.com/problems/video-stitching,Video Stitching,Medium,,84.7%,"Array, Dynamic Programming, Greedy",more_than_6m
+243,https://leetcode.com/problems/shortest-word-distance,Shortest Word Distance,Easy,,81.2%,"Array, String",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,81.2%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,77.0%,"Array, Hash Table, String, Sorting",more_than_6m
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,77.0%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,77.0%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+475,https://leetcode.com/problems/heaters,Heaters,Medium,,74.5%,"Array, Two Pointers, Binary Search, Sorting",more_than_6m
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,74.5%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,71.7%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,68.5%,"Array, Stack, Monotonic Stack",more_than_6m
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,68.5%,"Array, Math, Geometry, Sliding Window, Sorting",more_than_6m
+244,https://leetcode.com/problems/shortest-word-distance-ii,Shortest Word Distance II,Medium,,68.5%,"Array, Hash Table, Two Pointers, String, Design",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,68.5%,"Array, Sorting",more_than_6m
+818,https://leetcode.com/problems/race-car,Race Car,Hard,,64.7%,Dynamic Programming,more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,60.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,60.0%,"Array, Matrix, Simulation",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,60.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+2244,https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks,Minimum Rounds to Complete All Tasks,Medium,,60.0%,"Array, Hash Table, Greedy, Counting",more_than_6m
+838,https://leetcode.com/problems/push-dominoes,Push Dominoes,Medium,,60.0%,"Two Pointers, String, Dynamic Programming",more_than_6m
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,54.0%,"Array, Matrix, Simulation",more_than_6m
+708,https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list,Insert into a Sorted Circular Linked List,Medium,,54.0%,Linked List,more_than_6m
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,54.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,54.0%,"String, Stack",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,54.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+150,https://leetcode.com/problems/evaluate-reverse-polish-notation,Evaluate Reverse Polish Notation,Medium,,54.0%,"Array, Math, Stack",more_than_6m
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,54.0%,"Two Pointers, String, Dynamic Programming",more_than_6m
+951,https://leetcode.com/problems/flip-equivalent-binary-trees,Flip Equivalent Binary Trees,Medium,,45.6%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,45.6%,"Array, Binary Search",more_than_6m
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,45.6%,"Array, Two Pointers",more_than_6m
+909,https://leetcode.com/problems/snakes-and-ladders,Snakes and Ladders,Medium,,45.6%,"Array, Breadth-First Search, Matrix",more_than_6m
+287,https://leetcode.com/problems/find-the-duplicate-number,Find the Duplicate Number,Medium,,45.6%,"Array, Two Pointers, Binary Search, Bit Manipulation",more_than_6m
+694,https://leetcode.com/problems/number-of-distinct-islands,Number of Distinct Islands,Medium,,45.6%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,45.6%,"Array, Breadth-First Search, Matrix",more_than_6m
+114,https://leetcode.com/problems/flatten-binary-tree-to-linked-list,Flatten Binary Tree to Linked List,Medium,,45.6%,"Linked List, Stack, Tree, Depth-First Search, Binary Tree",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,45.6%,"Array, Hash Table",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,45.6%,"Two Pointers, String",more_than_6m
+721,https://leetcode.com/problems/accounts-merge,Accounts Merge,Medium,,45.6%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",more_than_6m
+953,https://leetcode.com/problems/verifying-an-alien-dictionary,Verifying an Alien Dictionary,Easy,,45.6%,"Array, Hash Table, String",more_than_6m
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,45.6%,"Array, Breadth-First Search, Matrix",more_than_6m
+130,https://leetcode.com/problems/surrounded-regions,Surrounded Regions,Medium,,45.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+695,https://leetcode.com/problems/max-area-of-island,Max Area of Island,Medium,,45.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,82.3%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+1024,https://leetcode.com/problems/video-stitching,Video Stitching,Medium,,82.3%,"Array, Dynamic Programming, Greedy",all
+475,https://leetcode.com/problems/heaters,Heaters,Medium,,80.7%,"Array, Two Pointers, Binary Search, Sorting",all
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,80.7%,"Array, Stack, Monotonic Stack",all
+243,https://leetcode.com/problems/shortest-word-distance,Shortest Word Distance,Easy,,80.7%,"Array, String",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,80.7%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+1610,https://leetcode.com/problems/maximum-number-of-visible-points,Maximum Number of Visible Points,Hard,,76.8%,"Array, Math, Geometry, Sliding Window, Sorting",all
+827,https://leetcode.com/problems/making-a-large-island,Making A Large Island,Hard,,76.8%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,74.6%,"Array, Hash Table, String, Sorting",all
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,74.6%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,74.6%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+244,https://leetcode.com/problems/shortest-word-distance-ii,Shortest Word Distance II,Medium,,69.3%,"Array, Hash Table, Two Pointers, String, Design",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,66.0%,"Array, Sorting",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,62.2%,"Array, Matrix, Simulation",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,62.2%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,62.2%,"Array, Breadth-First Search, Matrix",all
+818,https://leetcode.com/problems/race-car,Race Car,Hard,,62.2%,Dynamic Programming,all
+1828,https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle,Queries on Number of Points Inside a Circle,Medium,,62.2%,"Array, Math, Geometry",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,57.5%,"Hash Table, String, Binary Search, Design",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,57.5%,"Two Pointers, String",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,57.5%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+2244,https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks,Minimum Rounds to Complete All Tasks,Medium,,57.5%,"Array, Hash Table, Greedy, Counting",all
+1091,https://leetcode.com/problems/shortest-path-in-binary-matrix,Shortest Path in Binary Matrix,Medium,,57.5%,"Array, Breadth-First Search, Matrix",all
+838,https://leetcode.com/problems/push-dominoes,Push Dominoes,Medium,,57.5%,"Two Pointers, String, Dynamic Programming",all
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,57.5%,"Hash Table, String, Counting",all
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,51.5%,"Array, Matrix, Simulation",all
+909,https://leetcode.com/problems/snakes-and-ladders,Snakes and Ladders,Medium,,51.5%,"Array, Breadth-First Search, Matrix",all
+287,https://leetcode.com/problems/find-the-duplicate-number,Find the Duplicate Number,Medium,,51.5%,"Array, Two Pointers, Binary Search, Bit Manipulation",all
+708,https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list,Insert into a Sorted Circular Linked List,Medium,,51.5%,Linked List,all
+529,https://leetcode.com/problems/minesweeper,Minesweeper,Medium,,51.5%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,51.5%,"String, Stack",all
+150,https://leetcode.com/problems/evaluate-reverse-polish-notation,Evaluate Reverse Polish Notation,Medium,,51.5%,"Array, Math, Stack",all
+721,https://leetcode.com/problems/accounts-merge,Accounts Merge,Medium,,51.5%,"Array, Hash Table, String, Depth-First Search, Breadth-First Search, Union-Find, Sorting",all
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,51.5%,"Two Pointers, String, Dynamic Programming",all
+953,https://leetcode.com/problems/verifying-an-alien-dictionary,Verifying an Alien Dictionary,Easy,,51.5%,"Array, Hash Table, String",all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,51.5%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",all
+701,https://leetcode.com/problems/insert-into-a-binary-search-tree,Insert into a Binary Search Tree,Medium,,51.5%,"Tree, Binary Search Tree, Binary Tree",all
+1762,https://leetcode.com/problems/buildings-with-an-ocean-view,Buildings With an Ocean View,Medium,,51.5%,"Array, Stack, Monotonic Stack",all
+1087,https://leetcode.com/problems/brace-expansion,Brace Expansion,Medium,,51.5%,"String, Backtracking, Stack, Breadth-First Search, Sorting",all
+951,https://leetcode.com/problems/flip-equivalent-binary-trees,Flip Equivalent Binary Trees,Medium,,43.0%,"Tree, Depth-First Search, Binary Tree",all
+114,https://leetcode.com/problems/flatten-binary-tree-to-linked-list,Flatten Binary Tree to Linked List,Medium,,43.0%,"Linked List, Stack, Tree, Depth-First Search, Binary Tree",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,43.0%,"Array, Binary Search",all
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,43.0%,"Array, Two Pointers",all
+694,https://leetcode.com/problems/number-of-distinct-islands,Number of Distinct Islands,Medium,,43.0%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Sorting, Matrix, Hash Function",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,43.0%,"Array, Hash Table",all
+695,https://leetcode.com/problems/max-area-of-island,Max Area of Island,Medium,,43.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+314,https://leetcode.com/problems/binary-tree-vertical-order-traversal,Binary Tree Vertical Order Traversal,Medium,,43.0%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,43.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+48,https://leetcode.com/problems/rotate-image,Rotate Image,Medium,,43.0%,"Array, Math, Matrix",all
+130,https://leetcode.com/problems/surrounded-regions,Surrounded Regions,Medium,,43.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,43.0%,"Array, Dynamic Programming",all
+110,https://leetcode.com/problems/balanced-binary-tree,Balanced Binary Tree,Easy,,43.0%,"Tree, Depth-First Search, Binary Tree",all
+94,https://leetcode.com/problems/binary-tree-inorder-traversal,Binary Tree Inorder Traversal,Easy,,43.0%,"Stack, Tree, Depth-First Search, Binary Tree",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,43.0%,"Hash Table, String, Sliding Window",all

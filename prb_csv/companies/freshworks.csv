@@ -1,0 +1,16 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+80,https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii,Remove Duplicates from Sorted Array II,Medium,,100.0%,"Array, Two Pointers",6_months
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,92.3%,"String, Stack",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,81.6%,"Array, Hash Table",more_than_6m
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,81.6%,"Array, Two Pointers, Greedy",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,81.6%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,92.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,80.9%,"Array, Hash Table",all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,80.9%,"Array, Two Pointers, Greedy",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,80.9%,"Array, Hash Table, String, Sorting",all
+80,https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii,Remove Duplicates from Sorted Array II,Medium,,80.9%,"Array, Two Pointers",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,80.9%,"Array, Prefix Sum",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,80.9%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all

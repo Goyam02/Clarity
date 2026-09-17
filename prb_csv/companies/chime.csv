@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2101,https://leetcode.com/problems/detonate-the-maximum-bombs,Detonate the Maximum Bombs,Medium,,100.0%,"Array, Math, Depth-First Search, Breadth-First Search, Graph, Geometry",more_than_6m
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,68.4%,"Hash Table, String, Backtracking",more_than_6m
+2101,https://leetcode.com/problems/detonate-the-maximum-bombs,Detonate the Maximum Bombs,Medium,,100.0%,"Array, Math, Depth-First Search, Breadth-First Search, Graph, Geometry",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,66.5%,"Hash Table, String, Backtracking",all

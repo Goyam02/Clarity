@@ -1,0 +1,33 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2497,https://leetcode.com/problems/maximum-star-sum-of-a-graph,Maximum Star Sum of a Graph,Medium,,100.0%,"Array, Greedy, Graph Theory, Sorting, Heap (Priority Queue)",more_than_6m
+1177,https://leetcode.com/problems/can-make-palindrome-from-substring,Can Make Palindrome from Substring,Medium,,82.8%,"Array, Hash Table, String, Bit Manipulation, Prefix Sum",more_than_6m
+740,https://leetcode.com/problems/delete-and-earn,Delete and Earn,Medium,,82.8%,"Array, Hash Table, Dynamic Programming",more_than_6m
+1370,https://leetcode.com/problems/increasing-decreasing-string,Increasing Decreasing String,Easy,,72.7%,"Hash Table, String, Counting",more_than_6m
+1319,https://leetcode.com/problems/number-of-operations-to-make-network-connected,Number of Operations to Make Network Connected,Medium,,72.7%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+677,https://leetcode.com/problems/map-sum-pairs,Map Sum Pairs,Medium,,72.7%,"Hash Table, String, Design, Trie",more_than_6m
+1425,https://leetcode.com/problems/constrained-subsequence-sum,Constrained Subsequence Sum,Hard,,72.7%,"Array, Dynamic Programming, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+741,https://leetcode.com/problems/cherry-pickup,Cherry Pickup,Hard,,72.7%,"Array, Dynamic Programming, Matrix",more_than_6m
+743,https://leetcode.com/problems/network-delay-time,Network Delay Time,Medium,,72.7%,"Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,72.7%,"Array, Dynamic Programming, Greedy",more_than_6m
+1649,https://leetcode.com/problems/create-sorted-array-through-instructions,Create Sorted Array through Instructions,Hard,,72.7%,"Array, Binary Search, Divide and Conquer, Binary Indexed Tree, Segment Tree, Merge Sort, Ordered Set",more_than_6m
+1665,https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks,Minimum Initial Energy to Finish Tasks,Hard,,72.7%,"Array, Greedy, Sorting",more_than_6m
+1338,https://leetcode.com/problems/reduce-array-size-to-the-half,Reduce Array Size to The Half,Medium,,72.7%,"Array, Hash Table, Greedy, Sorting, Heap (Priority Queue)",more_than_6m
+1819,https://leetcode.com/problems/number-of-different-subsequences-gcds,Number of Different Subsequences GCDs,Hard,,72.7%,"Array, Math, Counting, Number Theory",more_than_6m
+1223,https://leetcode.com/problems/dice-roll-simulation,Dice Roll Simulation,Hard,,72.7%,"Array, Dynamic Programming",more_than_6m
+1192,https://leetcode.com/problems/critical-connections-in-a-network,Critical Connections in a Network,Hard,,72.7%,"Depth-First Search, Graph Theory, Biconnected Component",more_than_6m
+740,https://leetcode.com/problems/delete-and-earn,Delete and Earn,Medium,,100.0%,"Array, Hash Table, Dynamic Programming",all
+1177,https://leetcode.com/problems/can-make-palindrome-from-substring,Can Make Palindrome from Substring,Medium,,100.0%,"Array, Hash Table, String, Bit Manipulation, Prefix Sum",all
+677,https://leetcode.com/problems/map-sum-pairs,Map Sum Pairs,Medium,,97.7%,"Hash Table, String, Design, Trie",all
+741,https://leetcode.com/problems/cherry-pickup,Cherry Pickup,Hard,,97.7%,"Array, Dynamic Programming, Matrix",all
+743,https://leetcode.com/problems/network-delay-time,Network Delay Time,Medium,,97.7%,"Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",all
+1649,https://leetcode.com/problems/create-sorted-array-through-instructions,Create Sorted Array through Instructions,Hard,,97.7%,"Array, Binary Search, Divide and Conquer, Binary Indexed Tree, Segment Tree, Merge Sort, Ordered Set",all
+1665,https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks,Minimum Initial Energy to Finish Tasks,Hard,,97.7%,"Array, Greedy, Sorting",all
+1425,https://leetcode.com/problems/constrained-subsequence-sum,Constrained Subsequence Sum,Hard,,97.7%,"Array, Dynamic Programming, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+1223,https://leetcode.com/problems/dice-roll-simulation,Dice Roll Simulation,Hard,,97.7%,"Array, Dynamic Programming",all
+1819,https://leetcode.com/problems/number-of-different-subsequences-gcds,Number of Different Subsequences GCDs,Hard,,97.7%,"Array, Math, Counting, Number Theory",all
+1319,https://leetcode.com/problems/number-of-operations-to-make-network-connected,Number of Operations to Make Network Connected,Medium,,97.7%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,97.7%,"Array, Dynamic Programming, Greedy",all
+1338,https://leetcode.com/problems/reduce-array-size-to-the-half,Reduce Array Size to The Half,Medium,,97.7%,"Array, Hash Table, Greedy, Sorting, Heap (Priority Queue)",all
+1370,https://leetcode.com/problems/increasing-decreasing-string,Increasing Decreasing String,Easy,,97.7%,"Hash Table, String, Counting",all
+2497,https://leetcode.com/problems/maximum-star-sum-of-a-graph,Maximum Star Sum of a Graph,Medium,,85.2%,"Array, Greedy, Graph Theory, Sorting, Heap (Priority Queue)",all
+1192,https://leetcode.com/problems/critical-connections-in-a-network,Critical Connections in a Network,Hard,,58.3%,"Depth-First Search, Graph Theory, Biconnected Component",all

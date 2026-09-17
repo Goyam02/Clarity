@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,100.0%,"Array, Dynamic Programming, Matrix",more_than_6m
+2462,https://leetcode.com/problems/total-cost-to-hire-k-workers,Total Cost to Hire K Workers,Medium,,90.6%,"Array, Two Pointers, Heap (Priority Queue), Simulation",more_than_6m
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,100.0%,"Array, Dynamic Programming, Matrix",all
+2462,https://leetcode.com/problems/total-cost-to-hire-k-workers,Total Cost to Hire K Workers,Medium,,90.6%,"Array, Two Pointers, Heap (Priority Queue), Simulation",all

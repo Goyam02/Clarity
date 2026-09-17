@@ -1,0 +1,43 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1160,https://leetcode.com/problems/find-words-that-can-be-formed-by-characters,Find Words That Can Be Formed by Characters,Easy,,100.0%,"Array, Hash Table, String, Counting",30_days
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,100.0%,"Array, Hash Table, String, Sorting",30_days
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,100.0%,"Array, Hash Table, Matrix",30_days
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,100.0%,"Array, String, Backtracking, Depth-First Search, Matrix",30_days
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",3_months
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,95.8%,"Array, Hash Table, Matrix",3_months
+1160,https://leetcode.com/problems/find-words-that-can-be-formed-by-characters,Find Words That Can Be Formed by Characters,Easy,,90.7%,"Array, Hash Table, String, Counting",3_months
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,90.7%,"Array, Hash Table, String, Sorting",3_months
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,90.7%,"Array, String, Backtracking, Depth-First Search, Matrix",3_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",6_months
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,93.7%,"Array, Hash Table, Matrix",6_months
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,87.2%,"Array, String, Backtracking, Depth-First Search, Matrix",6_months
+1160,https://leetcode.com/problems/find-words-that-can-be-formed-by-characters,Find Words That Can Be Formed by Characters,Easy,,84.4%,"Array, Hash Table, String, Counting",6_months
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,84.4%,"Array, Hash Table, String, Sorting",6_months
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,58.9%,"Array, Dynamic Programming, Matrix",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",more_than_6m
+1160,https://leetcode.com/problems/find-words-that-can-be-formed-by-characters,Find Words That Can Be Formed by Characters,Easy,,90.3%,"Array, Hash Table, String, Counting",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,83.0%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,83.0%,"Array, Hash Table, Matrix",more_than_6m
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,76.1%,"Array, Hash Table, String, Sorting",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,71.5%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,65.6%,"Array, Depth-First Search, Breadth-First Search, Union Find, Matrix",more_than_6m
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,65.6%,"Hash Table, String, Counting",more_than_6m
+811,https://leetcode.com/problems/subdomain-visit-count,Subdomain Visit Count,Medium,,57.3%,"Array, Hash Table, String, Counting",more_than_6m
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,57.3%,"Array, String, Backtracking, Trie, Matrix",more_than_6m
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,57.3%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",more_than_6m
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,57.3%,"Array, Hash Table, Matrix",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",all
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,89.6%,"Array, Hash Table, Matrix",all
+1160,https://leetcode.com/problems/find-words-that-can-be-formed-by-characters,Find Words That Can Be Formed by Characters,Easy,,88.5%,"Array, Hash Table, String, Counting",all
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,86.1%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,80.2%,"Array, Hash Table, String, Sorting",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,60.9%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",all
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,60.9%,"Hash Table, String, Counting",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,55.4%,"Array, Hash Table, Matrix",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,55.4%,"Array, Depth-First Search, Breadth-First Search, Union Find, Matrix",all
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,55.4%,"Array, Dynamic Programming, Matrix",all
+811,https://leetcode.com/problems/subdomain-visit-count,Subdomain Visit Count,Medium,,47.6%,"Array, Hash Table, String, Counting",all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,47.6%,"Array, String, Backtracking, Trie, Matrix",all
+210,https://leetcode.com/problems/course-schedule-ii,Course Schedule II,Medium,,47.6%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",all
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,47.6%,"Array, Dynamic Programming, Greedy",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,47.6%,"Array, Hash Table",all

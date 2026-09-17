@@ -1,0 +1,22 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1404,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one,Number of Steps to Reduce a Number in Binary Representation to One,Medium,,100.0%,"String, Bit Manipulation, Simulation",6_months
+689,https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays,Maximum Sum of 3 Non-Overlapping Subarrays,Hard,,89.4%,"Array, Dynamic Programming, Sliding Window, Prefix Sum",6_months
+323,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph,Number of Connected Components in an Undirected Graph,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,65.5%,"Hash Table, String, Design, Trie",more_than_6m
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,60.3%,"Array, Dynamic Programming, Matrix",more_than_6m
+1637,https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points,Widest Vertical Area Between Two Points Containing No Points,Easy,,53.0%,"Array, Sorting",more_than_6m
+1570,https://leetcode.com/problems/dot-product-of-two-sparse-vectors,Dot Product of Two Sparse Vectors,Medium,,53.0%,"Array, Hash Table, Two Pointers, Design",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,53.0%,"Array, Hash Table",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,53.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+1404,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one,Number of Steps to Reduce a Number in Binary Representation to One,Medium,,53.0%,"String, Bit Manipulation, Simulation",more_than_6m
+323,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph,Number of Connected Components in an Undirected Graph,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+1404,https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one,Number of Steps to Reduce a Number in Binary Representation to One,Medium,,68.6%,"String, Bit Manipulation, Simulation",all
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,64.5%,"Hash Table, String, Design, Trie",all
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,59.1%,"Array, Dynamic Programming, Matrix",all
+1570,https://leetcode.com/problems/dot-product-of-two-sparse-vectors,Dot Product of Two Sparse Vectors,Medium,,59.1%,"Array, Hash Table, Two Pointers, Design",all
+689,https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays,Maximum Sum of 3 Non-Overlapping Subarrays,Hard,,59.1%,"Array, Dynamic Programming, Sliding Window, Prefix Sum",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,51.6%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,51.6%,"Array, Hash Table",all
+1637,https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points,Widest Vertical Area Between Two Points Containing No Points,Easy,,51.6%,"Array, Sorting",all
+297,https://leetcode.com/problems/serialize-and-deserialize-binary-tree,Serialize and Deserialize Binary Tree,Hard,,51.6%,"String, Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree",all
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,51.6%,"Array, Math, String, Interactive, Game Theory",all

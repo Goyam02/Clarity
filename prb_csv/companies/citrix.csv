@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1010,https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60,Pairs of Songs With Total Durations Divisible by 60,Medium,,100.0%,"Array, Hash Table, Counting",more_than_6m
+2839,https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i,Check if Strings Can be Made Equal With Operations I,Easy,,100.0%,String,more_than_6m
+2840,https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii,Check if Strings Can be Made Equal With Operations II,Medium,,100.0%,"Hash Table, String, Sorting",more_than_6m
+1383,https://leetcode.com/problems/maximum-performance-of-a-team,Maximum Performance of a Team,Hard,,100.0%,"Array, Greedy, Sorting, Heap (Priority Queue)",more_than_6m
+1992,https://leetcode.com/problems/find-all-groups-of-farmland,Find All Groups of Farmland,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+19,https://leetcode.com/problems/remove-nth-node-from-end-of-list,Remove Nth Node From End of List,Medium,,100.0%,"Linked List, Two Pointers",more_than_6m
+1992,https://leetcode.com/problems/find-all-groups-of-farmland,Find All Groups of Farmland,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+2840,https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii,Check if Strings Can be Made Equal With Operations II,Medium,,100.0%,"Hash Table, String, Sorting",all
+2839,https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i,Check if Strings Can be Made Equal With Operations I,Easy,,100.0%,String,all
+1383,https://leetcode.com/problems/maximum-performance-of-a-team,Maximum Performance of a Team,Hard,,100.0%,"Array, Greedy, Sorting, Heap (Priority Queue)",all
+19,https://leetcode.com/problems/remove-nth-node-from-end-of-list,Remove Nth Node From End of List,Medium,,63.7%,"Linked List, Two Pointers",all
+1010,https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60,Pairs of Songs With Total Durations Divisible by 60,Medium,,63.7%,"Array, Hash Table, Counting",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,63.7%,"Hash Table, Linked List, Design, Doubly-Linked List",all

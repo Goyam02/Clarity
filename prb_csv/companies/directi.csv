@@ -1,0 +1,17 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2538,https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum,Difference Between Maximum and Minimum Price Sum,Hard,,100.0%,"Array, Dynamic Programming, Tree, Depth-First Search",more_than_6m
+1542,https://leetcode.com/problems/find-longest-awesome-substring,Find Longest Awesome Substring,Hard,,100.0%,"Hash Table, String, Bit Manipulation",more_than_6m
+1584,https://leetcode.com/problems/min-cost-to-connect-all-points,Min Cost to Connect All Points,Medium,,100.0%,"Array, Union-Find, Graph Theory, Minimum Spanning Tree",more_than_6m
+2479,https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees,Maximum XOR of Two Non-Overlapping Subtrees,Hard,,100.0%,"Tree, Depth-First Search, Graph Theory, Trie",more_than_6m
+2473,https://leetcode.com/problems/minimum-cost-to-buy-apples,Minimum Cost to Buy Apples,Medium,,100.0%,"Array, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+1727,https://leetcode.com/problems/largest-submatrix-with-rearrangements,Largest Submatrix With Rearrangements,Medium,,100.0%,"Array, Greedy, Sorting, Matrix",more_than_6m
+1535,https://leetcode.com/problems/find-the-winner-of-an-array-game,Find the Winner of an Array Game,Medium,,100.0%,"Array, Simulation",more_than_6m
+1524,https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum,Number of Sub-arrays With Odd Sum,Medium,,100.0%,"Array, Math, Dynamic Programming, Prefix Sum",more_than_6m
+2473,https://leetcode.com/problems/minimum-cost-to-buy-apples,Minimum Cost to Buy Apples,Medium,,100.0%,"Array, Graph Theory, Heap (Priority Queue), Shortest Path",all
+2479,https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees,Maximum XOR of Two Non-Overlapping Subtrees,Hard,,100.0%,"Tree, Depth-First Search, Graph Theory, Trie",all
+2538,https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum,Difference Between Maximum and Minimum Price Sum,Hard,,100.0%,"Array, Dynamic Programming, Tree, Depth-First Search",all
+1524,https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum,Number of Sub-arrays With Odd Sum,Medium,,100.0%,"Array, Math, Dynamic Programming, Prefix Sum",all
+1535,https://leetcode.com/problems/find-the-winner-of-an-array-game,Find the Winner of an Array Game,Medium,,100.0%,"Array, Simulation",all
+1542,https://leetcode.com/problems/find-longest-awesome-substring,Find Longest Awesome Substring,Hard,,100.0%,"Hash Table, String, Bit Manipulation",all
+1584,https://leetcode.com/problems/min-cost-to-connect-all-points,Min Cost to Connect All Points,Medium,,100.0%,"Array, Union-Find, Graph Theory, Minimum Spanning Tree",all
+1727,https://leetcode.com/problems/largest-submatrix-with-rearrangements,Largest Submatrix With Rearrangements,Medium,,100.0%,"Array, Greedy, Sorting, Matrix",all

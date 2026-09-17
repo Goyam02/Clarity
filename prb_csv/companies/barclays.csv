@@ -1,0 +1,33 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,100.0%,"Array, Dynamic Programming, Memoization",30_days
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,100.0%,"Array, Dynamic Programming, Memoization",3_months
+763,https://leetcode.com/problems/partition-labels,Partition Labels,Medium,,100.0%,"Hash Table, Two Pointers, String, Greedy",6_months
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,100.0%,"Array, Dynamic Programming, Memoization",6_months
+3474,https://leetcode.com/problems/lexicographically-smallest-generated-string,Lexicographically Smallest Generated String,Hard,,100.0%,"String, Greedy, String Matching",more_than_6m
+2961,https://leetcode.com/problems/double-modular-exponentiation,Double Modular Exponentiation,Medium,,64.3%,"Array, Math, Simulation",more_than_6m
+2833,https://leetcode.com/problems/furthest-point-from-origin,Furthest Point From Origin,Easy,,64.3%,"String, Counting",more_than_6m
+3070,https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k,Count Submatrices with Top-Left Element and Sum Less Than k,Medium,,55.9%,"Array, Matrix, Prefix Sum",more_than_6m
+3080,https://leetcode.com/problems/mark-elements-on-array-by-performing-queries,Mark Elements on Array by Performing Queries,Medium,,55.9%,"Array, Hash Table, Sorting, Heap (Priority Queue), Simulation",more_than_6m
+386,https://leetcode.com/problems/lexicographical-numbers,Lexicographical Numbers,Medium,,55.9%,"Depth-First Search, Trie",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,55.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,55.9%,Database,more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,55.9%,"Array, String, Trie",more_than_6m
+496,https://leetcode.com/problems/next-greater-element-i,Next Greater Element I,Easy,,55.9%,"Array, Hash Table, Stack, Monotonic Stack",more_than_6m
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,55.9%,"Two Pointers, String",more_than_6m
+1482,https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets,Minimum Number of Days to Make m Bouquets,Medium,,55.9%,"Array, Binary Search",more_than_6m
+3474,https://leetcode.com/problems/lexicographically-smallest-generated-string,Lexicographically Smallest Generated String,Hard,,100.0%,"String, Greedy, String Matching",all
+2961,https://leetcode.com/problems/double-modular-exponentiation,Double Modular Exponentiation,Medium,,89.5%,"Array, Math, Simulation",all
+2833,https://leetcode.com/problems/furthest-point-from-origin,Furthest Point From Origin,Easy,,89.5%,"String, Counting",all
+3070,https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k,Count Submatrices with Top-Left Element and Sum Less Than k,Medium,,87.5%,"Array, Matrix, Prefix Sum",all
+3080,https://leetcode.com/problems/mark-elements-on-array-by-performing-queries,Mark Elements on Array by Performing Queries,Medium,,87.5%,"Array, Hash Table, Sorting, Heap (Priority Queue), Simulation",all
+763,https://leetcode.com/problems/partition-labels,Partition Labels,Medium,,61.8%,"Hash Table, Two Pointers, String, Greedy",all
+386,https://leetcode.com/problems/lexicographical-numbers,Lexicographical Numbers,Medium,,53.2%,"Depth-First Search, Trie",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,53.2%,"String, Stack",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,53.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,53.2%,Database,all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,53.2%,"Array, String, Trie",all
+496,https://leetcode.com/problems/next-greater-element-i,Next Greater Element I,Easy,,53.2%,"Array, Hash Table, Stack, Monotonic Stack",all
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,53.2%,"Two Pointers, String",all
+1482,https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets,Minimum Number of Days to Make m Bouquets,Medium,,53.2%,"Array, Binary Search",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,53.2%,"Array, Hash Table",all
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,53.2%,"Array, Dynamic Programming, Memoization",all

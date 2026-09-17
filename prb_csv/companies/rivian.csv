@@ -1,0 +1,21 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",3_months
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+697,https://leetcode.com/problems/degree-of-an-array,Degree of an Array,Easy,,92.3%,"Array, Hash Table",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,81.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+2625,https://leetcode.com/problems/flatten-deeply-nested-array,Flatten Deeply Nested Array,Medium,,81.6%,,more_than_6m
+796,https://leetcode.com/problems/rotate-string,Rotate String,Easy,,81.6%,"String, String Matching",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,81.6%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+807,https://leetcode.com/problems/max-increase-to-keep-city-skyline,Max Increase to Keep City Skyline,Medium,,81.6%,"Array, Greedy, Matrix",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,81.6%,"Two Pointers, String",more_than_6m
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,81.6%,"Math, String, Stack",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+697,https://leetcode.com/problems/degree-of-an-array,Degree of an Array,Easy,,92.2%,"Array, Hash Table",all
+2625,https://leetcode.com/problems/flatten-deeply-nested-array,Flatten Deeply Nested Array,Medium,,81.1%,,all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,81.1%,"Two Pointers, String",all
+796,https://leetcode.com/problems/rotate-string,Rotate String,Easy,,81.1%,"String, String Matching",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,81.1%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+807,https://leetcode.com/problems/max-increase-to-keep-city-skyline,Max Increase to Keep City Skyline,Medium,,81.1%,"Array, Greedy, Matrix",all
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,81.1%,"Math, String, Stack",all

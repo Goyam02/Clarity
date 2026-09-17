@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1366,https://leetcode.com/problems/rank-teams-by-votes,Rank Teams by Votes,Medium,,100.0%,"Array, Hash Table, String, Sorting, Counting",6_months
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,100.0%,"Array, Hash Table, String, Trie",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,93.0%,"Array, Breadth-First Search, Matrix",more_than_6m
+3071,https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid,Minimum Operations to Write the Letter Y on a Grid,Medium,,83.2%,"Array, Hash Table, Matrix, Counting",more_than_6m
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,100.0%,"Array, Hash Table, String, Trie",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,92.9%,"Array, Breadth-First Search, Matrix",all
+1366,https://leetcode.com/problems/rank-teams-by-votes,Rank Teams by Votes,Medium,,92.9%,"Array, Hash Table, String, Sorting, Counting",all
+3071,https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid,Minimum Operations to Write the Letter Y on a Grid,Medium,,82.9%,"Array, Hash Table, Matrix, Counting",all

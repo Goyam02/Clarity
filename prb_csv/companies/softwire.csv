@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1796,https://leetcode.com/problems/second-largest-digit-in-a-string,Second Largest Digit in a String,Easy,,100.0%,"Hash Table, String",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",more_than_6m
+1796,https://leetcode.com/problems/second-largest-digit-in-a-string,Second Largest Digit in a String,Easy,,100.0%,"Hash Table, String",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,76.2%,"Two Pointers, String, Dynamic Programming",all

@@ -1,0 +1,32 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",6_months
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",6_months
+2861,https://leetcode.com/problems/maximum-number-of-alloys,Maximum Number of Alloys,Medium,,100.0%,"Array, Binary Search",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",6_months
+1347,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram,Minimum Number of Steps to Make Two Strings Anagram,Medium,,100.0%,"Hash Table, String, Counting",more_than_6m
+845,https://leetcode.com/problems/longest-mountain-in-array,Longest Mountain in Array,Medium,,96.2%,"Array, Two Pointers, Dynamic Programming, Enumeration",more_than_6m
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,86.1%,"Hash Table, String, Sliding Window",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,86.1%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+2472,https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings,Maximum Number of Non-overlapping Palindrome Substrings,Hard,,86.1%,"Two Pointers, String, Dynamic Programming, Greedy",more_than_6m
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,78.9%,"Array, Stack, Simulation",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,78.9%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,68.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+697,https://leetcode.com/problems/degree-of-an-array,Degree of an Array,Easy,,68.9%,"Array, Hash Table",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,68.9%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,68.9%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,68.9%,"Hash Table, String, Breadth-First Search",more_than_6m
+845,https://leetcode.com/problems/longest-mountain-in-array,Longest Mountain in Array,Medium,,100.0%,"Array, Two Pointers, Dynamic Programming, Enumeration",all
+1347,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram,Minimum Number of Steps to Make Two Strings Anagram,Medium,,100.0%,"Hash Table, String, Counting",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,96.0%,"Array, Hash Table, Math, Design, Randomized",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,91.3%,"Hash Table, String, Sliding Window",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,91.3%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+2472,https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings,Maximum Number of Non-overlapping Palindrome Substrings,Hard,,85.6%,"Two Pointers, String, Dynamic Programming, Greedy",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,78.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,78.2%,"Array, Stack, Simulation",all
+697,https://leetcode.com/problems/degree-of-an-array,Degree of an Array,Easy,,78.2%,"Array, Hash Table",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,78.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,67.8%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+1229,https://leetcode.com/problems/meeting-scheduler,Meeting Scheduler,Medium,,67.8%,"Array, Two Pointers, Sorting",all
+2861,https://leetcode.com/problems/maximum-number-of-alloys,Maximum Number of Alloys,Medium,,67.8%,"Array, Binary Search",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,67.8%,"Hash Table, String, Breadth-First Search",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,67.8%,"Array, String, Simulation",all

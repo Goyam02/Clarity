@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1243,https://leetcode.com/problems/array-transformation,Array Transformation,Easy,,100.0%,"Array, Simulation",3_months
+1243,https://leetcode.com/problems/array-transformation,Array Transformation,Easy,,100.0%,"Array, Simulation",6_months
+1243,https://leetcode.com/problems/array-transformation,Array Transformation,Easy,,100.0%,"Array, Simulation",more_than_6m
+1196,https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket,How Many Apples Can You Put into the Basket,Easy,,100.0%,"Array, Greedy, Sorting",more_than_6m
+1180,https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter,Count Substrings with Only One Distinct Letter,Easy,,91.2%,"Math, String",more_than_6m
+1271,https://leetcode.com/problems/hexspeak,Hexspeak,Easy,,91.2%,"Math, String",more_than_6m
+1759,https://leetcode.com/problems/count-number-of-homogenous-substrings,Count Number of Homogenous Substrings,Medium,,87.3%,"Math, String",more_than_6m
+1243,https://leetcode.com/problems/array-transformation,Array Transformation,Easy,,100.0%,"Array, Simulation",all
+1196,https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket,How Many Apples Can You Put into the Basket,Easy,,97.8%,"Array, Greedy, Sorting",all
+1180,https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter,Count Substrings with Only One Distinct Letter,Easy,,93.9%,"Math, String",all
+1271,https://leetcode.com/problems/hexspeak,Hexspeak,Easy,,93.9%,"Math, String",all
+1759,https://leetcode.com/problems/count-number-of-homogenous-substrings,Count Number of Homogenous Substrings,Medium,,92.4%,"Math, String",all

@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2616,https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs,Minimize the Maximum Difference of Pairs,Medium,,100.0%,"Array, Binary Search, Dynamic Programming, Greedy, Sorting",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,100.0%,"Array, Dynamic Programming, Greedy",more_than_6m
+2616,https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs,Minimize the Maximum Difference of Pairs,Medium,,100.0%,"Array, Binary Search, Dynamic Programming, Greedy, Sorting",all
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,75.1%,"Array, Dynamic Programming, Greedy",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,66.7%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all

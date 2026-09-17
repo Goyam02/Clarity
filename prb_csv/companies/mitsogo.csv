@@ -1,0 +1,32 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2978,https://leetcode.com/problems/symmetric-coordinates,Symmetric Coordinates,Medium,,100.0%,Database,more_than_6m
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,74.0%,"Array, Dynamic Programming",more_than_6m
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,74.0%,"Array, Two Pointers",more_than_6m
+3131,https://leetcode.com/problems/find-the-integer-added-to-array-i,Find the Integer Added to Array I,Easy,,65.2%,Array,more_than_6m
+3132,https://leetcode.com/problems/find-the-integer-added-to-array-ii,Find the Integer Added to Array II,Medium,,65.2%,"Array, Two Pointers, Sorting, Enumeration",more_than_6m
+3144,https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency,Minimum Substring Partition of Equal Character Frequency,Medium,,65.2%,"Hash Table, String, Dynamic Programming, Counting",more_than_6m
+3180,https://leetcode.com/problems/maximum-total-reward-using-operations-i,Maximum Total Reward Using Operations I,Medium,,65.2%,"Array, Dynamic Programming, Bit Manipulation, Sorting",more_than_6m
+3181,https://leetcode.com/problems/maximum-total-reward-using-operations-ii,Maximum Total Reward Using Operations II,Hard,,65.2%,"Array, Dynamic Programming, Bit Manipulation, Sorting",more_than_6m
+3097,https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii,Shortest Subarray With OR at Least K II,Medium,,65.2%,"Array, Bit Manipulation, Sliding Window",more_than_6m
+3095,https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i,Shortest Subarray With OR at Least K I,Easy,,65.2%,"Array, Bit Manipulation, Sliding Window",more_than_6m
+3213,https://leetcode.com/problems/construct-string-with-minimum-cost,Construct String with Minimum Cost,Hard,,65.2%,"Array, String, Dynamic Programming, Suffix Array",more_than_6m
+3128,https://leetcode.com/problems/right-triangles,Right Triangles,Medium,,65.2%,"Array, Hash Table, Math, Combinatorics, Counting",more_than_6m
+556,https://leetcode.com/problems/next-greater-element-iii,Next Greater Element III,Medium,,65.2%,"Math, Two Pointers, String",more_than_6m
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,65.2%,String,more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,65.2%,"String, Stack",more_than_6m
+3128,https://leetcode.com/problems/right-triangles,Right Triangles,Medium,,100.0%,"Array, Hash Table, Math, Combinatorics, Counting",all
+3131,https://leetcode.com/problems/find-the-integer-added-to-array-i,Find the Integer Added to Array I,Easy,,97.7%,Array,all
+3132,https://leetcode.com/problems/find-the-integer-added-to-array-ii,Find the Integer Added to Array II,Medium,,97.7%,"Array, Two Pointers, Sorting, Enumeration",all
+3144,https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency,Minimum Substring Partition of Equal Character Frequency,Medium,,97.7%,"Hash Table, String, Dynamic Programming, Counting",all
+3213,https://leetcode.com/problems/construct-string-with-minimum-cost,Construct String with Minimum Cost,Hard,,97.7%,"Array, String, Dynamic Programming, Suffix Array",all
+3180,https://leetcode.com/problems/maximum-total-reward-using-operations-i,Maximum Total Reward Using Operations I,Medium,,97.7%,"Array, Dynamic Programming, Bit Manipulation, Sorting",all
+3181,https://leetcode.com/problems/maximum-total-reward-using-operations-ii,Maximum Total Reward Using Operations II,Hard,,97.7%,"Array, Dynamic Programming, Bit Manipulation, Sorting",all
+3097,https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii,Shortest Subarray With OR at Least K II,Medium,,97.7%,"Array, Bit Manipulation, Sliding Window",all
+3095,https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i,Shortest Subarray With OR at Least K I,Easy,,97.7%,"Array, Bit Manipulation, Sliding Window",all
+2978,https://leetcode.com/problems/symmetric-coordinates,Symmetric Coordinates,Medium,,97.7%,Database,all
+,https://leetcode.com/problems/delayed-count-of-equal-elements,Delayed Count of Equal Elements,Medium,,92.5%,"Array, Hash Table, Counting",all
+118,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Easy,,69.3%,"Array, Dynamic Programming",all
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,69.3%,"Array, Two Pointers",all
+556,https://leetcode.com/problems/next-greater-element-iii,Next Greater Element III,Medium,,59.7%,"Math, Two Pointers, String",all
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,59.7%,String,all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,59.7%,"String, Stack",all

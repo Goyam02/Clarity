@@ -1,0 +1,28 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2035,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference,Partition Array Into Two Arrays to Minimize Sum Difference,Hard,,100.0%,"Array, Two Pointers, Binary Search, Dynamic Programming, Bit Manipulation, Sorting, Ordered Set, Bitmask",more_than_6m
+2560,https://leetcode.com/problems/house-robber-iv,House Robber IV,Medium,,86.2%,"Array, Binary Search, Dynamic Programming, Greedy",more_than_6m
+3250,https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i,Find the Count of Monotonic Pairs I,Hard,,70.4%,"Array, Math, Dynamic Programming, Combinatorics, Prefix Sum",more_than_6m
+2134,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii,Minimum Swaps to Group All 1's Together II,Medium,,70.4%,"Array, Sliding Window",more_than_6m
+2509,https://leetcode.com/problems/cycle-length-queries-in-a-tree,Cycle Length Queries in a Tree,Hard,,61.2%,"Array, Tree, Binary Tree",more_than_6m
+2327,https://leetcode.com/problems/number-of-people-aware-of-a-secret,Number of People Aware of a Secret,Medium,,61.2%,"Dynamic Programming, Queue, Simulation",more_than_6m
+2211,https://leetcode.com/problems/count-collisions-on-a-road,Count Collisions on a Road,Medium,,61.2%,"String, Stack, Simulation",more_than_6m
+2024,https://leetcode.com/problems/maximize-the-confusion-of-an-exam,Maximize the Confusion of an Exam,Medium,,61.2%,"String, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+1567,https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product,Maximum Length of Subarray With Positive Product,Medium,,61.2%,"Array, Dynamic Programming, Greedy",more_than_6m
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,61.2%,"String, Dynamic Programming",more_than_6m
+85,https://leetcode.com/problems/maximal-rectangle,Maximal Rectangle,Hard,,61.2%,"Array, Dynamic Programming, Stack, Matrix, Monotonic Stack",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,61.2%,"Hash Table, String, Breadth-First Search",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,61.2%,"Array, Binary Search, Divide and Conquer",more_than_6m
+1567,https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product,Maximum Length of Subarray With Positive Product,Medium,,100.0%,"Array, Dynamic Programming, Greedy",all
+2035,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference,Partition Array Into Two Arrays to Minimize Sum Difference,Hard,,100.0%,"Array, Two Pointers, Binary Search, Dynamic Programming, Bit Manipulation, Sorting, Ordered Set, Bitmask",all
+2509,https://leetcode.com/problems/cycle-length-queries-in-a-tree,Cycle Length Queries in a Tree,Hard,,97.7%,"Array, Tree, Binary Tree",all
+2024,https://leetcode.com/problems/maximize-the-confusion-of-an-exam,Maximize the Confusion of an Exam,Medium,,97.7%,"String, Binary Search, Sliding Window, Prefix Sum",all
+2211,https://leetcode.com/problems/count-collisions-on-a-road,Count Collisions on a Road,Medium,,97.7%,"String, Stack, Simulation",all
+2327,https://leetcode.com/problems/number-of-people-aware-of-a-secret,Number of People Aware of a Secret,Medium,,97.7%,"Dynamic Programming, Queue, Simulation",all
+2560,https://leetcode.com/problems/house-robber-iv,House Robber IV,Medium,,85.5%,"Array, Binary Search, Dynamic Programming, Greedy",all
+3250,https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i,Find the Count of Monotonic Pairs I,Hard,,68.9%,"Array, Math, Dynamic Programming, Combinatorics, Prefix Sum",all
+2134,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii,Minimum Swaps to Group All 1's Together II,Medium,,68.9%,"Array, Sliding Window",all
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,59.3%,"String, Dynamic Programming",all
+85,https://leetcode.com/problems/maximal-rectangle,Maximal Rectangle,Hard,,59.3%,"Array, Dynamic Programming, Stack, Matrix, Monotonic Stack",all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,59.3%,"Array, Binary Search, Divide and Conquer",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,59.3%,"Hash Table, String, Breadth-First Search",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,59.3%,"Hash Table, String, Sliding Window",all

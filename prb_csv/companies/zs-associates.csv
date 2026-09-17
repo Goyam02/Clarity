@@ -1,0 +1,17 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,100.0%,Database,more_than_6m
+594,https://leetcode.com/problems/longest-harmonious-subsequence,Longest Harmonious Subsequence,Easy,,88.2%,"Array, Hash Table, Sliding Window, Sorting, Counting",more_than_6m
+1139,https://leetcode.com/problems/largest-1-bordered-square,Largest 1-Bordered Square,Medium,,88.2%,"Array, Dynamic Programming, Matrix",more_than_6m
+177,https://leetcode.com/problems/nth-highest-salary,Nth Highest Salary,Medium,,88.2%,Database,more_than_6m
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,88.2%,"Array, Prefix Sum",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,88.2%,"String, Stack",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,88.2%,"Two Pointers, String, Dynamic Programming",more_than_6m
+176,https://leetcode.com/problems/second-highest-salary,Second Highest Salary,Medium,,100.0%,Database,all
+594,https://leetcode.com/problems/longest-harmonious-subsequence,Longest Harmonious Subsequence,Easy,,88.0%,"Array, Hash Table, Sliding Window, Sorting, Counting",all
+1139,https://leetcode.com/problems/largest-1-bordered-square,Largest 1-Bordered Square,Medium,,88.0%,"Array, Dynamic Programming, Matrix",all
+177,https://leetcode.com/problems/nth-highest-salary,Nth Highest Salary,Medium,,88.0%,Database,all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,88.0%,"Array, Prefix Sum",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,88.0%,"String, Stack",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,88.0%,"Two Pointers, String, Dynamic Programming",all
+570,https://leetcode.com/problems/managers-with-at-least-5-direct-reports,Managers with at Least 5 Direct Reports,Medium,,88.0%,Database,all
+907,https://leetcode.com/problems/sum-of-subarray-minimums,Sum of Subarray Minimums,Medium,,88.0%,"Array, Dynamic Programming, Stack, Monotonic Stack",all

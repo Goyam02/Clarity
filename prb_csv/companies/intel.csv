@@ -1,0 +1,47 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,100.0%,"Array, Hash Table",6_months
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,89.2%,"String, Stack",6_months
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,89.2%,"Array, Divide and Conquer, Dynamic Programming",6_months
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,94.5%,"Array, Depth-First Search, Breadth-First Search, Union Find, Matrix",more_than_6m
+138,https://leetcode.com/problems/copy-list-with-random-pointer,Copy List with Random Pointer,Medium,,87.5%,"Hash Table, Linked List",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,87.5%,"String, Stack",more_than_6m
+204,https://leetcode.com/problems/count-primes,Count Primes,Medium,,70.6%,"Array, Math, Enumeration, Number Theory",more_than_6m
+122,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii,Best Time to Buy and Sell Stock II,Medium,,70.6%,"Array, Dynamic Programming, Greedy",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,70.6%,"Hash Table, String, Sliding Window",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,60.7%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,60.7%,"Math, Dynamic Programming, Memoization",more_than_6m
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,60.7%,"Linked List, Recursion",more_than_6m
+2526,https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream,Find Consecutive Integers from a Data Stream,Medium,,60.7%,"Hash Table, Design, Queue, Counting, Data Stream",more_than_6m
+1614,https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses,Maximum Nesting Depth of the Parentheses,Easy,,60.7%,"String, Stack",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,60.7%,"Array, Hash Table",more_than_6m
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,60.7%,"Two Pointers, String",more_than_6m
+7,https://leetcode.com/problems/reverse-integer,Reverse Integer,Medium,,60.7%,Math,more_than_6m
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,60.7%,"Linked List, Math, Recursion",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,60.7%,"Array, Dynamic Programming",more_than_6m
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,60.7%,Math,more_than_6m
+1614,https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses,Maximum Nesting Depth of the Parentheses,Easy,,100.0%,"String, Stack",all
+2526,https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream,Find Consecutive Integers from a Data Stream,Medium,,100.0%,"Hash Table, Design, Queue, Counting, Data Stream",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,94.4%,"String, Stack",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,94.4%,"Array, Depth-First Search, Breadth-First Search, Union Find, Matrix",all
+138,https://leetcode.com/problems/copy-list-with-random-pointer,Copy List with Random Pointer,Medium,,87.1%,"Hash Table, Linked List",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,82.5%,"Array, Hash Table",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,76.9%,"Hash Table, String, Sliding Window",all
+204,https://leetcode.com/problems/count-primes,Count Primes,Medium,,76.9%,"Array, Math, Enumeration, Number Theory",all
+122,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii,Best Time to Buy and Sell Stock II,Medium,,69.6%,"Array, Dynamic Programming, Greedy",all
+7,https://leetcode.com/problems/reverse-integer,Reverse Integer,Medium,,69.6%,Math,all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,69.6%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,59.5%,"Array, Dynamic Programming",all
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,59.5%,"Linked List, Math, Recursion",all
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,59.5%,"Math, Dynamic Programming, Memoization",all
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,59.5%,"Linked List, Recursion",all
+151,https://leetcode.com/problems/reverse-words-in-a-string,Reverse Words in a String,Medium,,59.5%,"Two Pointers, String",all
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,59.5%,Math,all
+11,https://leetcode.com/problems/container-with-most-water,Container With Most Water,Medium,,59.5%,"Array, Two Pointers, Greedy",all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,59.5%,"Array, Two Pointers, Sorting",all
+48,https://leetcode.com/problems/rotate-image,Rotate Image,Medium,,59.5%,"Array, Math, Matrix",all
+141,https://leetcode.com/problems/linked-list-cycle,Linked List Cycle,Easy,,59.5%,"Hash Table, Linked List, Two Pointers",all
+125,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Easy,,59.5%,"Two Pointers, String",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,59.5%,"Array, Divide and Conquer, Dynamic Programming",all
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,59.5%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all

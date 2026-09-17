@@ -1,0 +1,23 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+91,https://leetcode.com/problems/decode-ways,Decode Ways,Medium,,100.0%,"String, Dynamic Programming",more_than_6m
+754,https://leetcode.com/problems/reach-a-number,Reach a Number,Medium,,100.0%,"Math, Binary Search",more_than_6m
+300,https://leetcode.com/problems/longest-increasing-subsequence,Longest Increasing Subsequence,Medium,,93.2%,"Array, Binary Search, Dynamic Programming",more_than_6m
+673,https://leetcode.com/problems/number-of-longest-increasing-subsequence,Number of Longest Increasing Subsequence,Medium,,88.9%,"Array, Dynamic Programming, Binary Indexed Tree, Segment Tree",more_than_6m
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,83.7%,"Linked List, Recursion",more_than_6m
+2316,https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph,Count Unreachable Pairs of Nodes in an Undirected Graph,Medium,,83.7%,"Depth-First Search, Breadth-First Search, Union Find, Graph",more_than_6m
+2062,https://leetcode.com/problems/count-vowel-substrings-of-a-string,Count Vowel Substrings of a String,Easy,,76.9%,"Hash Table, String",more_than_6m
+1861,https://leetcode.com/problems/rotating-the-box,Rotating the Box,Medium,,67.4%,"Array, Two Pointers, Matrix",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,67.4%,"Two Pointers, String, Dynamic Programming",more_than_6m
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,67.4%,"Array, Binary Search",more_than_6m
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,67.4%,"Linked List, Math, Recursion",more_than_6m
+2062,https://leetcode.com/problems/count-vowel-substrings-of-a-string,Count Vowel Substrings of a String,Easy,,100.0%,"Hash Table, String",all
+91,https://leetcode.com/problems/decode-ways,Decode Ways,Medium,,92.9%,"String, Dynamic Programming",all
+754,https://leetcode.com/problems/reach-a-number,Reach a Number,Medium,,92.9%,"Math, Binary Search",all
+300,https://leetcode.com/problems/longest-increasing-subsequence,Longest Increasing Subsequence,Medium,,86.5%,"Array, Binary Search, Dynamic Programming",all
+673,https://leetcode.com/problems/number-of-longest-increasing-subsequence,Number of Longest Increasing Subsequence,Medium,,82.5%,"Array, Dynamic Programming, Binary Indexed Tree, Segment Tree",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,77.6%,"Linked List, Recursion",all
+2316,https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph,Count Unreachable Pairs of Nodes in an Undirected Graph,Medium,,77.6%,"Depth-First Search, Breadth-First Search, Union Find, Graph",all
+1861,https://leetcode.com/problems/rotating-the-box,Rotating the Box,Medium,,62.2%,"Array, Two Pointers, Matrix",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,62.2%,"Two Pointers, String, Dynamic Programming",all
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,62.2%,"Array, Binary Search",all
+2,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Medium,,62.2%,"Linked List, Math, Recursion",all

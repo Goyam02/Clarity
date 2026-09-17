@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+96,https://leetcode.com/problems/unique-binary-search-trees,Unique Binary Search Trees,Medium,,100.0%,"Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",more_than_6m
+2196,https://leetcode.com/problems/create-binary-tree-from-descriptions,Create Binary Tree From Descriptions,Medium,,90.1%,"Array, Hash Table, Tree, Binary Tree",more_than_6m
+1875,https://leetcode.com/problems/group-employees-of-the-same-salary,Group Employees of the Same Salary,Medium,,90.1%,Database,more_than_6m
+2196,https://leetcode.com/problems/create-binary-tree-from-descriptions,Create Binary Tree From Descriptions,Medium,,100.0%,"Array, Hash Table, Tree, Binary Tree",all
+1875,https://leetcode.com/problems/group-employees-of-the-same-salary,Group Employees of the Same Salary,Medium,,100.0%,Database,all
+96,https://leetcode.com/problems/unique-binary-search-trees,Unique Binary Search Trees,Medium,,81.1%,"Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",all

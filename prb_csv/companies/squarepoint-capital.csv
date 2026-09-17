@@ -1,0 +1,52 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",6_months
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,100.0%,"Array, Dynamic Programming, Greedy",6_months
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",6_months
+1824,https://leetcode.com/problems/minimum-sideway-jumps,Minimum Sideway Jumps,Medium,,100.0%,"Array, Dynamic Programming, Greedy",6_months
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,100.0%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",more_than_6m
+2939,https://leetcode.com/problems/maximum-xor-product,Maximum Xor Product,Medium,,91.3%,"Math, Greedy, Bit Manipulation",more_than_6m
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,83.2%,"Array, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+3649,https://leetcode.com/problems/number-of-perfect-pairs,Number of Perfect Pairs,Medium,,83.2%,"Array, Math, Two Pointers, Sorting",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,77.8%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+224,https://leetcode.com/problems/basic-calculator,Basic Calculator,Hard,,77.8%,"Math, String, Stack, Recursion",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,70.8%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+300,https://leetcode.com/problems/longest-increasing-subsequence,Longest Increasing Subsequence,Medium,,70.8%,"Array, Binary Search, Dynamic Programming",more_than_6m
+403,https://leetcode.com/problems/frog-jump,Frog Jump,Hard,,70.8%,"Array, Dynamic Programming",more_than_6m
+2771,https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays,Longest Non-decreasing Subarray From Two Arrays,Medium,,70.8%,"Array, Dynamic Programming",more_than_6m
+2466,https://leetcode.com/problems/count-ways-to-build-good-strings,Count Ways To Build Good Strings,Medium,,70.8%,Dynamic Programming,more_than_6m
+3035,https://leetcode.com/problems/maximum-palindromes-after-operations,Maximum Palindromes After Operations,Medium,,70.8%,"Array, Hash Table, String, Greedy, Sorting, Counting",more_than_6m
+1669,https://leetcode.com/problems/merge-in-between-linked-lists,Merge In Between Linked Lists,Medium,,70.8%,Linked List,more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,61.0%,"Array, Dynamic Programming",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,61.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,61.0%,"Array, Hash Table, String, Sorting",more_than_6m
+1605,https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums,Find Valid Matrix Given Row and Column Sums,Medium,,61.0%,"Array, Greedy, Matrix",more_than_6m
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,61.0%,"Array, Dynamic Programming, Matrix",more_than_6m
+2918,https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros,Minimum Equal Sum of Two Arrays After Replacing Zeros,Medium,,61.0%,"Array, Greedy",more_than_6m
+765,https://leetcode.com/problems/couples-holding-hands,Couples Holding Hands,Hard,,61.0%,"Greedy, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,100.0%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",all
+2939,https://leetcode.com/problems/maximum-xor-product,Maximum Xor Product,Medium,,91.2%,"Math, Greedy, Bit Manipulation",all
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,82.9%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+3649,https://leetcode.com/problems/number-of-perfect-pairs,Number of Perfect Pairs,Medium,,82.9%,"Array, Math, Two Pointers, Sorting",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,77.4%,"Array, Dynamic Programming",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,77.4%,"Array, Divide and Conquer, Dynamic Programming",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,77.4%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+224,https://leetcode.com/problems/basic-calculator,Basic Calculator,Hard,,77.4%,"Math, String, Stack, Recursion",all
+300,https://leetcode.com/problems/longest-increasing-subsequence,Longest Increasing Subsequence,Medium,,70.4%,"Array, Binary Search, Dynamic Programming",all
+403,https://leetcode.com/problems/frog-jump,Frog Jump,Hard,,70.4%,"Array, Dynamic Programming",all
+2771,https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays,Longest Non-decreasing Subarray From Two Arrays,Medium,,70.4%,"Array, Dynamic Programming",all
+2466,https://leetcode.com/problems/count-ways-to-build-good-strings,Count Ways To Build Good Strings,Medium,,70.4%,Dynamic Programming,all
+3035,https://leetcode.com/problems/maximum-palindromes-after-operations,Maximum Palindromes After Operations,Medium,,70.4%,"Array, Hash Table, String, Greedy, Sorting, Counting",all
+1669,https://leetcode.com/problems/merge-in-between-linked-lists,Merge In Between Linked Lists,Medium,,70.4%,Linked List,all
+1824,https://leetcode.com/problems/minimum-sideway-jumps,Minimum Sideway Jumps,Medium,,70.4%,"Array, Dynamic Programming, Greedy",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,70.4%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,60.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,60.4%,"Array, Hash Table, String, Sorting",all
+64,https://leetcode.com/problems/minimum-path-sum,Minimum Path Sum,Medium,,60.4%,"Array, Dynamic Programming, Matrix",all
+1605,https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums,Find Valid Matrix Given Row and Column Sums,Medium,,60.4%,"Array, Greedy, Matrix",all
+2918,https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros,Minimum Equal Sum of Two Arrays After Replacing Zeros,Medium,,60.4%,"Array, Greedy",all
+765,https://leetcode.com/problems/couples-holding-hands,Couples Holding Hands,Hard,,60.4%,"Greedy, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,60.4%,"Array, Dynamic Programming, Breadth-First Search",all
+1326,https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden,Minimum Number of Taps to Open to Water a Garden,Hard,,60.4%,"Array, Dynamic Programming, Greedy",all
+992,https://leetcode.com/problems/subarrays-with-k-different-integers,Subarrays with K Different Integers,Hard,,60.4%,"Array, Hash Table, Sliding Window, Counting",all
+746,https://leetcode.com/problems/min-cost-climbing-stairs,Min Cost Climbing Stairs,Easy,,60.4%,"Array, Dynamic Programming",all
+451,https://leetcode.com/problems/sort-characters-by-frequency,Sort Characters By Frequency,Medium,,60.4%,"Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all

@@ -1,0 +1,19 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",30_days
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",3_months
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,100.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",6_months
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,100.0%,"Array, Math, Two Pointers",6_months
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,89.9%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",6_months
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,100.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",more_than_6m
+191,https://leetcode.com/problems/number-of-1-bits,Number of 1 Bits,Easy,,86.2%,"Divide and Conquer, Bit Manipulation",more_than_6m
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,69.2%,"Hash Table, String, Breadth-First Search",more_than_6m
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,69.2%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,69.2%,"Array, Math, Two Pointers",more_than_6m
+965,https://leetcode.com/problems/univalued-binary-tree,Univalued Binary Tree,Easy,,61.1%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,100.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all
+191,https://leetcode.com/problems/number-of-1-bits,Number of 1 Bits,Easy,,85.1%,"Divide and Conquer, Bit Manipulation",all
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,79.4%,"Array, Math, Two Pointers",all
+684,https://leetcode.com/problems/redundant-connection,Redundant Connection,Medium,,75.8%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,71.4%,"Hash Table, String, Breadth-First Search",all
+965,https://leetcode.com/problems/univalued-binary-tree,Univalued Binary Tree,Easy,,57.7%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+126,https://leetcode.com/problems/word-ladder-ii,Word Ladder II,Hard,,57.7%,"Hash Table, String, Backtracking, Breadth-First Search",all

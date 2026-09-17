@@ -1,0 +1,27 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1993,https://leetcode.com/problems/operations-on-tree,Operations on Tree,Medium,,100.0%,"Array, Hash Table, Tree, Depth-First Search, Breadth-First Search, Design",3_months
+1857,https://leetcode.com/problems/largest-color-value-in-a-directed-graph,Largest Color Value in a Directed Graph,Hard,,87.7%,"Hash Table, Dynamic Programming, Graph, Topological Sort, Memoization, Counting",3_months
+3515,https://leetcode.com/problems/shortest-path-in-a-weighted-tree,Shortest Path in a Weighted Tree,Hard,,87.7%,"Array, Tree, Depth-First Search, Binary Indexed Tree, Segment Tree",3_months
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,87.7%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",3_months
+3409,https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference,Longest Subsequence With Decreasing Adjacent Difference,Medium,,100.0%,"Array, Dynamic Programming",6_months
+1993,https://leetcode.com/problems/operations-on-tree,Operations on Tree,Medium,,92.2%,"Array, Hash Table, Tree, Depth-First Search, Breadth-First Search, Design",6_months
+1857,https://leetcode.com/problems/largest-color-value-in-a-directed-graph,Largest Color Value in a Directed Graph,Hard,,73.6%,"Hash Table, Dynamic Programming, Graph, Topological Sort, Memoization, Counting",6_months
+3515,https://leetcode.com/problems/shortest-path-in-a-weighted-tree,Shortest Path in a Weighted Tree,Hard,,73.6%,"Array, Tree, Depth-First Search, Binary Indexed Tree, Segment Tree",6_months
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,73.6%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",6_months
+1993,https://leetcode.com/problems/operations-on-tree,Operations on Tree,Medium,,100.0%,"Array, Hash Table, Tree, Depth-First Search, Breadth-First Search, Design",more_than_6m
+2360,https://leetcode.com/problems/longest-cycle-in-a-graph,Longest Cycle in a Graph,Hard,,95.1%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",more_than_6m
+2359,https://leetcode.com/problems/find-closest-node-to-given-two-nodes,Find Closest Node to Given Two Nodes,Medium,,88.7%,"Depth-First Search, Graph",more_than_6m
+73,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Medium,,73.4%,"Array, Hash Table, Matrix",more_than_6m
+2374,https://leetcode.com/problems/node-with-highest-edge-score,Node With Highest Edge Score,Medium,,73.4%,"Hash Table, Graph",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,73.4%,"Hash Table, String, Sliding Window",more_than_6m
+2360,https://leetcode.com/problems/longest-cycle-in-a-graph,Longest Cycle in a Graph,Hard,,100.0%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",all
+1993,https://leetcode.com/problems/operations-on-tree,Operations on Tree,Medium,,100.0%,"Array, Hash Table, Tree, Depth-First Search, Breadth-First Search, Design",all
+2359,https://leetcode.com/problems/find-closest-node-to-given-two-nodes,Find Closest Node to Given Two Nodes,Medium,,95.8%,"Depth-First Search, Graph",all
+2374,https://leetcode.com/problems/node-with-highest-edge-score,Node With Highest Edge Score,Medium,,90.6%,"Hash Table, Graph",all
+3409,https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference,Longest Subsequence With Decreasing Adjacent Difference,Medium,,88.5%,"Array, Dynamic Programming",all
+73,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Medium,,68.8%,"Array, Hash Table, Matrix",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,62.6%,"Hash Table, String, Sliding Window",all
+1857,https://leetcode.com/problems/largest-color-value-in-a-directed-graph,Largest Color Value in a Directed Graph,Hard,,62.6%,"Hash Table, Dynamic Programming, Graph, Topological Sort, Memoization, Counting",all
+3515,https://leetcode.com/problems/shortest-path-in-a-weighted-tree,Shortest Path in a Weighted Tree,Hard,,62.6%,"Array, Tree, Depth-First Search, Binary Indexed Tree, Segment Tree",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,62.6%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+127,https://leetcode.com/problems/word-ladder,Word Ladder,Hard,,53.9%,"Hash Table, String, Breadth-First Search",all

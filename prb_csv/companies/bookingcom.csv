@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1948,https://leetcode.com/problems/delete-duplicate-folders-in-system,Delete Duplicate Folders in System,Hard,,87.5%,,all
+2512,https://leetcode.com/problems/reward-top-k-students,Reward Top K Students,Medium,,100.0%,,all
+1034,https://leetcode.com/problems/coloring-a-border,Coloring A Border,Medium,,87.5%,,all
+2032,https://leetcode.com/problems/two-out-of-three,Two Out of Three,Easy,,87.5%,,all
+2146,https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range,K Highest Ranked Items Within a Price Range,Medium,,87.5%,,all
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,62.5%,,all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,87.5%,,all
+2159,https://leetcode.com/problems/order-two-columns-independently,Order Two Columns Independently,Medium,,87.5%,,all
+332,https://leetcode.com/problems/reconstruct-itinerary,Reconstruct Itinerary,Hard,,62.5%,,all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,62.5%,,all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,75.0%,,all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,62.5%,,all
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,50.0%,,all
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,50.0%,,all

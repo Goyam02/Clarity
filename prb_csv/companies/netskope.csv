@@ -1,0 +1,16 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,100.0%,"Array, Hash Table",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",more_than_6m
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,100.0%,"String, Dynamic Programming, Recursion",more_than_6m
+588,https://leetcode.com/problems/design-in-memory-file-system,Design In-Memory File System,Hard,,100.0%,"Hash Table, String, Design, Trie, Sorting",more_than_6m
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,100.0%,"Hash Table, String, Sliding Window",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,100.0%,"Array, Hash Table",all
+588,https://leetcode.com/problems/design-in-memory-file-system,Design In-Memory File System,Hard,,100.0%,"Hash Table, String, Design, Trie, Sorting",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,100.0%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,100.0%,"String, Dynamic Programming, Recursion",all

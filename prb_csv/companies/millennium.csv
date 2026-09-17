@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",6_months
+50,https://leetcode.com/problems/powx-n,"Pow(x, n)",Medium,,100.0%,"Math, Recursion",more_than_6m
+1283,https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold,Find the Smallest Divisor Given a Threshold,Medium,,100.0%,"Array, Binary Search",more_than_6m
+991,https://leetcode.com/problems/broken-calculator,Broken Calculator,Medium,,100.0%,"Math, Greedy",more_than_6m
+2035,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference,Partition Array Into Two Arrays to Minimize Sum Difference,Hard,,100.0%,"Array, Two Pointers, Binary Search, Dynamic Programming, Bit Manipulation, Ordered Set, Bitmask",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",more_than_6m
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",more_than_6m
+50,https://leetcode.com/problems/powx-n,"Pow(x, n)",Medium,,100.0%,"Math, Recursion",all
+1283,https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold,Find the Smallest Divisor Given a Threshold,Medium,,100.0%,"Array, Binary Search",all
+991,https://leetcode.com/problems/broken-calculator,Broken Calculator,Medium,,100.0%,"Math, Greedy",all
+2035,https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference,Partition Array Into Two Arrays to Minimize Sum Difference,Hard,,100.0%,"Array, Two Pointers, Binary Search, Dynamic Programming, Bit Manipulation, Ordered Set, Bitmask",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",all
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",all

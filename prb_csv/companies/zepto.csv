@@ -1,0 +1,47 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",more_than_6m
+687,https://leetcode.com/problems/longest-univalue-path,Longest Univalue Path,Medium,,100.0%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,93.7%,"Array, Hash Table, Union-Find",more_than_6m
+437,https://leetcode.com/problems/path-sum-iii,Path Sum III,Medium,,85.5%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,85.5%,"Array, Two Pointers",more_than_6m
+2659,https://leetcode.com/problems/make-array-empty,Make Array Empty,Hard,,85.5%,"Array, Binary Search, Greedy, Binary Indexed Tree, Segment Tree, Sorting, Ordered Set",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,85.5%,"Array, Binary Search",more_than_6m
+983,https://leetcode.com/problems/minimum-cost-for-tickets,Minimum Cost For Tickets,Medium,,85.5%,"Array, Dynamic Programming",more_than_6m
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,85.5%,"Array, Binary Search",more_than_6m
+962,https://leetcode.com/problems/maximum-width-ramp,Maximum Width Ramp,Medium,,85.5%,"Array, Two Pointers, Stack, Monotonic Stack",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,85.5%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+1385,https://leetcode.com/problems/find-the-distance-value-between-two-arrays,Find the Distance Value Between Two Arrays,Easy,,74.0%,"Array, Two Pointers, Binary Search, Sorting",more_than_6m
+424,https://leetcode.com/problems/longest-repeating-character-replacement,Longest Repeating Character Replacement,Medium,,74.0%,"Hash Table, String, Sliding Window",more_than_6m
+1905,https://leetcode.com/problems/count-sub-islands,Count Sub Islands,Medium,,74.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,74.0%,"Array, Binary Search",more_than_6m
+63,https://leetcode.com/problems/unique-paths-ii,Unique Paths II,Medium,,74.0%,"Array, Dynamic Programming, Matrix",more_than_6m
+29,https://leetcode.com/problems/divide-two-integers,Divide Two Integers,Medium,,74.0%,"Math, Bit Manipulation",more_than_6m
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,74.0%,"Array, Breadth-First Search, Matrix",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,74.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+3026,https://leetcode.com/problems/maximum-good-subarray-sum,Maximum Good Subarray Sum,Medium,,74.0%,"Array, Hash Table, Prefix Sum",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,74.0%,"Hash Table, String, Sliding Window",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,74.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",all
+687,https://leetcode.com/problems/longest-univalue-path,Longest Univalue Path,Medium,,100.0%,"Tree, Depth-First Search, Binary Tree",all
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,93.6%,"Array, Hash Table, Union-Find",all
+983,https://leetcode.com/problems/minimum-cost-for-tickets,Minimum Cost For Tickets,Medium,,93.6%,"Array, Dynamic Programming",all
+437,https://leetcode.com/problems/path-sum-iii,Path Sum III,Medium,,85.4%,"Tree, Depth-First Search, Binary Tree",all
+2659,https://leetcode.com/problems/make-array-empty,Make Array Empty,Hard,,85.4%,"Array, Binary Search, Greedy, Binary Indexed Tree, Segment Tree, Sorting, Ordered Set",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,85.4%,"Array, Binary Search",all
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,85.4%,"Array, Binary Search",all
+962,https://leetcode.com/problems/maximum-width-ramp,Maximum Width Ramp,Medium,,85.4%,"Array, Two Pointers, Stack, Monotonic Stack",all
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,85.4%,"Array, Two Pointers",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,85.4%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+1094,https://leetcode.com/problems/car-pooling,Car Pooling,Medium,,73.9%,"Array, Sorting, Heap (Priority Queue), Simulation, Prefix Sum",all
+1385,https://leetcode.com/problems/find-the-distance-value-between-two-arrays,Find the Distance Value Between Two Arrays,Easy,,73.9%,"Array, Two Pointers, Binary Search, Sorting",all
+1905,https://leetcode.com/problems/count-sub-islands,Count Sub Islands,Medium,,73.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,73.9%,"Array, Binary Search",all
+63,https://leetcode.com/problems/unique-paths-ii,Unique Paths II,Medium,,73.9%,"Array, Dynamic Programming, Matrix",all
+424,https://leetcode.com/problems/longest-repeating-character-replacement,Longest Repeating Character Replacement,Medium,,73.9%,"Hash Table, String, Sliding Window",all
+29,https://leetcode.com/problems/divide-two-integers,Divide Two Integers,Medium,,73.9%,"Math, Bit Manipulation",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,73.9%,"Array, Breadth-First Search, Matrix",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,73.9%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+3026,https://leetcode.com/problems/maximum-good-subarray-sum,Maximum Good Subarray Sum,Medium,,73.9%,"Array, Hash Table, Prefix Sum",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,73.9%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,73.9%,"Hash Table, String, Sliding Window",all
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,73.9%,"String, Stack, Recursion",all

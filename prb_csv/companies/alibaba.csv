@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+666,https://leetcode.com/problems/path-sum-iv,Path Sum IV,Medium,,100.0%,"Array, Hash Table, Tree, Depth-First Search, Binary Tree",more_than_6m
+555,https://leetcode.com/problems/split-concatenated-strings,Split Concatenated Strings,Medium,,100.0%,"Array, String, Greedy",more_than_6m
+548,https://leetcode.com/problems/split-array-with-equal-sum,Split Array with Equal Sum,Hard,,100.0%,"Array, Hash Table, Prefix Sum",more_than_6m
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,100.0%,"String, Dynamic Programming, Stack, Greedy",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,100.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+548,https://leetcode.com/problems/split-array-with-equal-sum,Split Array with Equal Sum,Hard,,100.0%,"Array, Hash Table, Prefix Sum",all
+555,https://leetcode.com/problems/split-concatenated-strings,Split Concatenated Strings,Medium,,100.0%,"Array, String, Greedy",all
+666,https://leetcode.com/problems/path-sum-iv,Path Sum IV,Medium,,100.0%,"Array, Hash Table, Tree, Depth-First Search, Binary Tree",all
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,100.0%,"String, Dynamic Programming, Stack, Greedy",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,63.7%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all

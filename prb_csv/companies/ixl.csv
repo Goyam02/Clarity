@@ -1,0 +1,39 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",3_months
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",6_months
+717,https://leetcode.com/problems/1-bit-and-2-bit-characters,1-bit and 2-bit Characters,Easy,,90.1%,Array,6_months
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,90.1%,"Math, String, Stack",6_months
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,90.1%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",6_months
+598,https://leetcode.com/problems/range-addition-ii,Range Addition II,Easy,,100.0%,"Array, Math",more_than_6m
+353,https://leetcode.com/problems/design-snake-game,Design Snake Game,Medium,,97.6%,"Array, Hash Table, Design, Queue, Simulation",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,94.9%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,91.9%,"Array, Sorting",more_than_6m
+1347,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram,Minimum Number of Steps to Make Two Strings Anagram,Medium,,88.4%,"Hash Table, String, Counting",more_than_6m
+592,https://leetcode.com/problems/fraction-addition-and-subtraction,Fraction Addition and Subtraction,Medium,,84.2%,"Math, String, Simulation",more_than_6m
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,79.1%,"Array, Binary Search",more_than_6m
+234,https://leetcode.com/problems/palindrome-linked-list,Palindrome Linked List,Easy,,79.1%,"Linked List, Two Pointers, Stack, Recursion",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,72.6%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+1465,https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts,Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts,Medium,,72.6%,"Array, Greedy, Sorting",more_than_6m
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,63.4%,"Math, String, Stack",more_than_6m
+166,https://leetcode.com/problems/fraction-to-recurring-decimal,Fraction to Recurring Decimal,Medium,,63.4%,"Hash Table, Math, String",more_than_6m
+691,https://leetcode.com/problems/stickers-to-spell-word,Stickers to Spell Word,Hard,,63.4%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Bit Manipulation, Memoization, Bitmask",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,63.4%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+634,https://leetcode.com/problems/find-the-derangement-of-an-array,Find the Derangement of An Array,Medium,,63.4%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+717,https://leetcode.com/problems/1-bit-and-2-bit-characters,1-bit and 2-bit Characters,Easy,,63.4%,Array,more_than_6m
+598,https://leetcode.com/problems/range-addition-ii,Range Addition II,Easy,,100.0%,"Array, Math",all
+592,https://leetcode.com/problems/fraction-addition-and-subtraction,Fraction Addition and Subtraction,Medium,,91.9%,"Math, String, Simulation",all
+234,https://leetcode.com/problems/palindrome-linked-list,Palindrome Linked List,Easy,,90.2%,"Linked List, Two Pointers, Stack, Recursion",all
+691,https://leetcode.com/problems/stickers-to-spell-word,Stickers to Spell Word,Hard,,88.4%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Bit Manipulation, Memoization, Bitmask",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,86.4%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,86.4%,"Array, Sorting",all
+353,https://leetcode.com/problems/design-snake-game,Design Snake Game,Medium,,86.4%,"Array, Hash Table, Design, Queue, Simulation",all
+634,https://leetcode.com/problems/find-the-derangement-of-an-array,Find the Derangement of An Array,Medium,,86.4%,"Math, Dynamic Programming, Combinatorics",all
+166,https://leetcode.com/problems/fraction-to-recurring-decimal,Fraction to Recurring Decimal,Medium,,86.4%,"Hash Table, Math, String",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,81.6%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+1347,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram,Minimum Number of Steps to Make Two Strings Anagram,Medium,,75.5%,"Hash Table, String, Counting",all
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,71.7%,"Array, Binary Search",all
+717,https://leetcode.com/problems/1-bit-and-2-bit-characters,1-bit and 2-bit Characters,Easy,,66.9%,Array,all
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,66.9%,"Math, String, Stack",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,60.9%,"Array, Hash Table, Math, Design, Randomized",all
+1465,https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts,Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts,Medium,,60.9%,"Array, Greedy, Sorting",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,52.3%,"Depth-First Search, Breadth-First Search, Graph, Topological Sort",all

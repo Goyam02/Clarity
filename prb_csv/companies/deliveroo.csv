@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",3_months
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,73.3%,"Hash Table, Design, Data Stream",6_months
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+2942,https://leetcode.com/problems/find-words-containing-character,Find Words Containing Character,Easy,,89.5%,"Array, String",more_than_6m
+987,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree,Vertical Order Traversal of a Binary Tree,Hard,,89.5%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",more_than_6m
+1248,https://leetcode.com/problems/count-number-of-nice-subarrays,Count Number of Nice Subarrays,Medium,,89.5%,"Array, Hash Table, Math, Sliding Window, Prefix Sum",more_than_6m
+301,https://leetcode.com/problems/remove-invalid-parentheses,Remove Invalid Parentheses,Hard,,89.5%,"String, Backtracking, Breadth-First Search",more_than_6m
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+2942,https://leetcode.com/problems/find-words-containing-character,Find Words Containing Character,Easy,,98.0%,"Array, String",all
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,73.2%,"Hash Table, Design, Data Stream",all
+987,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree,Vertical Order Traversal of a Binary Tree,Hard,,64.8%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",all
+1248,https://leetcode.com/problems/count-number-of-nice-subarrays,Count Number of Nice Subarrays,Medium,,64.8%,"Array, Hash Table, Math, Sliding Window, Prefix Sum",all
+301,https://leetcode.com/problems/remove-invalid-parentheses,Remove Invalid Parentheses,Hard,,64.8%,"String, Backtracking, Breadth-First Search",all

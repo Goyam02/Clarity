@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+736,https://leetcode.com/problems/parse-lisp-expression,Parse Lisp Expression,Hard,,100.0%,"Hash Table, String, Stack, Recursion",3_months
+736,https://leetcode.com/problems/parse-lisp-expression,Parse Lisp Expression,Hard,,100.0%,"Hash Table, String, Stack, Recursion",6_months
+1209,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii,Remove All Adjacent Duplicates in String II,Medium,,100.0%,"String, Stack",more_than_6m
+736,https://leetcode.com/problems/parse-lisp-expression,Parse Lisp Expression,Hard,,92.2%,"Hash Table, String, Stack, Recursion",more_than_6m
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,75.5%,"Two Pointers, String, Greedy",more_than_6m
+724,https://leetcode.com/problems/find-pivot-index,Find Pivot Index,Easy,,65.7%,"Array, Prefix Sum",more_than_6m
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,58.0%,"Math, String, Recursion",more_than_6m
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,58.0%,"Array, Binary Search",more_than_6m
+1209,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii,Remove All Adjacent Duplicates in String II,Medium,,100.0%,"String, Stack",all
+736,https://leetcode.com/problems/parse-lisp-expression,Parse Lisp Expression,Hard,,96.5%,"Hash Table, String, Stack, Recursion",all
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,75.3%,"Two Pointers, String, Greedy",all
+724,https://leetcode.com/problems/find-pivot-index,Find Pivot Index,Easy,,65.5%,"Array, Prefix Sum",all
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,57.7%,"Math, String, Recursion",all
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,57.7%,"Array, Binary Search",all

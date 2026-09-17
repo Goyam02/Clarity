@@ -1,0 +1,30 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,100.0%,"Hash Table, Design, Data Stream",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,84.3%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,100.0%,"Array, Hash Table, String, Sorting",more_than_6m
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,100.0%,"Array, Dynamic Programming, Greedy",more_than_6m
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,100.0%,"Array, Math, String, Interactive, Game Theory",more_than_6m
+2115,https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies,Find All Possible Recipes from Given Supplies,Medium,,100.0%,"Array, Hash Table, String, Graph Theory, Topological Sort",more_than_6m
+939,https://leetcode.com/problems/minimum-area-rectangle,Minimum Area Rectangle,Medium,,100.0%,"Array, Hash Table, Math, Geometry, Sorting",more_than_6m
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,88.5%,"Hash Table, Math, Two Pointers",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,88.5%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,88.5%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",more_than_6m
+963,https://leetcode.com/problems/minimum-area-rectangle-ii,Minimum Area Rectangle II,Medium,,88.5%,"Array, Hash Table, Math, Geometry",more_than_6m
+1197,https://leetcode.com/problems/minimum-knight-moves,Minimum Knight Moves,Medium,,88.5%,Breadth-First Search,more_than_6m
+1024,https://leetcode.com/problems/video-stitching,Video Stitching,Medium,,88.5%,"Array, Dynamic Programming, Greedy",more_than_6m
+2007,https://leetcode.com/problems/find-original-array-from-doubled-array,Find Original Array From Doubled Array,Medium,,88.5%,"Array, Hash Table, Greedy, Sorting",more_than_6m
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,100.0%,"Hash Table, Design, Data Stream",all
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,92.2%,"Array, Math, String, Interactive, Game Theory",all
+2115,https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies,Find All Possible Recipes from Given Supplies,Medium,,92.2%,"Array, Hash Table, String, Graph Theory, Topological Sort",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,92.2%,"Array, Hash Table, String, Sorting",all
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,92.2%,"Array, Dynamic Programming, Greedy",all
+939,https://leetcode.com/problems/minimum-area-rectangle,Minimum Area Rectangle,Medium,,92.2%,"Array, Hash Table, Math, Geometry, Sorting",all
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,81.2%,"Hash Table, Math, Two Pointers",all
+2007,https://leetcode.com/problems/find-original-array-from-doubled-array,Find Original Array From Doubled Array,Medium,,81.2%,"Array, Hash Table, Greedy, Sorting",all
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,81.2%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",all
+963,https://leetcode.com/problems/minimum-area-rectangle-ii,Minimum Area Rectangle II,Medium,,81.2%,"Array, Hash Table, Math, Geometry",all
+1197,https://leetcode.com/problems/minimum-knight-moves,Minimum Knight Moves,Medium,,81.2%,Breadth-First Search,all
+1024,https://leetcode.com/problems/video-stitching,Video Stitching,Medium,,81.2%,"Array, Dynamic Programming, Greedy",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,81.2%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,81.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+354,https://leetcode.com/problems/russian-doll-envelopes,Russian Doll Envelopes,Hard,,81.2%,"Array, Binary Search, Dynamic Programming, Sorting",all

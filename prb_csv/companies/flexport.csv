@@ -1,0 +1,21 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+299,https://leetcode.com/problems/bulls-and-cows,Bulls and Cows,Medium,,100.0%,"Hash Table, String, Counting",6_months
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",more_than_6m
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,98.2%,"Hash Table, Depth-First Search, Breadth-First Search, Graph Theory",more_than_6m
+729,https://leetcode.com/problems/my-calendar-i,My Calendar I,Medium,,77.0%,"Array, Binary Search, Design, Segment Tree, Ordered Set",more_than_6m
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,71.0%,"Hash Table, String, Backtracking",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,62.5%,"Hash Table, String, Binary Search, Design",more_than_6m
+948,https://leetcode.com/problems/bag-of-tokens,Bag of Tokens,Medium,,62.5%,"Array, Two Pointers, Greedy, Sorting",more_than_6m
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,62.5%,"Array, Binary Search, Sliding Window, Prefix Sum",more_than_6m
+300,https://leetcode.com/problems/longest-increasing-subsequence,Longest Increasing Subsequence,Medium,,62.5%,"Array, Binary Search, Dynamic Programming",more_than_6m
+468,https://leetcode.com/problems/validate-ip-address,Validate IP Address,Medium,,62.5%,String,more_than_6m
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",all
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,98.1%,"Hash Table, Depth-First Search, Breadth-First Search, Graph Theory",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,96.1%,"Hash Table, String, Binary Search, Design",all
+729,https://leetcode.com/problems/my-calendar-i,My Calendar I,Medium,,76.5%,"Array, Binary Search, Design, Segment Tree, Ordered Set",all
+17,https://leetcode.com/problems/letter-combinations-of-a-phone-number,Letter Combinations of a Phone Number,Medium,,70.3%,"Hash Table, String, Backtracking",all
+300,https://leetcode.com/problems/longest-increasing-subsequence,Longest Increasing Subsequence,Medium,,61.7%,"Array, Binary Search, Dynamic Programming",all
+713,https://leetcode.com/problems/subarray-product-less-than-k,Subarray Product Less Than K,Medium,,61.7%,"Array, Binary Search, Sliding Window, Prefix Sum",all
+948,https://leetcode.com/problems/bag-of-tokens,Bag of Tokens,Medium,,61.7%,"Array, Two Pointers, Greedy, Sorting",all
+468,https://leetcode.com/problems/validate-ip-address,Validate IP Address,Medium,,61.7%,String,all
+299,https://leetcode.com/problems/bulls-and-cows,Bulls and Cows,Medium,,61.7%,"Hash Table, String, Counting",all

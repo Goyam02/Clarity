@@ -1,0 +1,42 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+43,https://leetcode.com/problems/multiply-strings,Multiply Strings,Medium,,100.0%,"Math, String, Simulation",6_months
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,100.0%,"Array, Dynamic Programming, Graph Theory, Topological Sort",6_months
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,89.6%,"String, Stack",6_months
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,89.6%,"Array, Math, Binary Search, Prefix Sum, Randomized",6_months
+337,https://leetcode.com/problems/house-robber-iii,House Robber III,Medium,,89.6%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",6_months
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,100.0%,"Array, String, Backtracking, Trie, Matrix",more_than_6m
+43,https://leetcode.com/problems/multiply-strings,Multiply Strings,Medium,,95.3%,"Math, String, Simulation",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,89.5%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+547,https://leetcode.com/problems/number-of-provinces,Number of Provinces,Medium,,82.1%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,82.1%,"Array, Dynamic Programming, Graph Theory, Topological Sort",more_than_6m
+1186,https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion,Maximum Subarray Sum with One Deletion,Medium,,82.1%,"Array, Dynamic Programming",more_than_6m
+1889,https://leetcode.com/problems/minimum-space-wasted-from-packaging,Minimum Space Wasted From Packaging,Hard,,82.1%,"Array, Binary Search, Sorting, Prefix Sum",more_than_6m
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,82.1%,"Array, Hash Table, Design, Simulation",more_than_6m
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,71.6%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",more_than_6m
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,71.6%,"Array, Matrix, Simulation",more_than_6m
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,71.6%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",more_than_6m
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,71.6%,"String, Dynamic Programming, Greedy, Recursion",more_than_6m
+342,https://leetcode.com/problems/power-of-four,Power of Four,Easy,,71.6%,"Math, Bit Manipulation, Recursion",more_than_6m
+918,https://leetcode.com/problems/maximum-sum-circular-subarray,Maximum Sum Circular Subarray,Medium,,71.6%,"Array, Divide and Conquer, Dynamic Programming, Queue, Monotonic Queue",more_than_6m
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,71.6%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,71.6%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,71.6%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,100.0%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+547,https://leetcode.com/problems/number-of-provinces,Number of Provinces,Medium,,94.4%,"Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+1186,https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion,Maximum Subarray Sum with One Deletion,Medium,,94.4%,"Array, Dynamic Programming",all
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,92.2%,"String, Dynamic Programming, Greedy, Recursion",all
+1048,https://leetcode.com/problems/longest-string-chain,Longest String Chain,Medium,,92.2%,"Array, Hash Table, Two Pointers, String, Dynamic Programming, Sorting",all
+289,https://leetcode.com/problems/game-of-life,Game of Life,Medium,,92.2%,"Array, Matrix, Simulation",all
+342,https://leetcode.com/problems/power-of-four,Power of Four,Easy,,92.2%,"Math, Bit Manipulation, Recursion",all
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,92.2%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",all
+918,https://leetcode.com/problems/maximum-sum-circular-subarray,Maximum Sum Circular Subarray,Medium,,92.2%,"Array, Divide and Conquer, Dynamic Programming, Queue, Monotonic Queue",all
+43,https://leetcode.com/problems/multiply-strings,Multiply Strings,Medium,,87.1%,"Math, String, Simulation",all
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,80.4%,"Array, Dynamic Programming, Graph Theory, Topological Sort",all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,80.4%,"Array, String, Backtracking, Trie, Matrix",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,64.5%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all
+1889,https://leetcode.com/problems/minimum-space-wasted-from-packaging,Minimum Space Wasted From Packaging,Hard,,64.5%,"Array, Binary Search, Sorting, Prefix Sum",all
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,64.5%,"Array, Hash Table, Design, Simulation",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,64.5%,"String, Stack",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,55.2%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,55.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+337,https://leetcode.com/problems/house-robber-iii,House Robber III,Medium,,55.2%,"Dynamic Programming, Tree, Depth-First Search, Binary Tree",all

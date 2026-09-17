@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,100.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,83.3%,"String, Dynamic Programming, Recursion",more_than_6m
+2617,https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid,Minimum Number of Visited Cells in a Grid,Hard,,83.3%,"Array, Dynamic Programming, Stack, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix, Monotonic Stack",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,83.3%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,100.0%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,83.0%,"String, Dynamic Programming, Recursion",all
+2617,https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid,Minimum Number of Visited Cells in a Grid,Hard,,83.0%,"Array, Dynamic Programming, Stack, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix, Monotonic Stack",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,83.0%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all

@@ -1,0 +1,28 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+935,https://leetcode.com/problems/knight-dialer,Knight Dialer,Medium,,100.0%,Dynamic Programming,3_months
+935,https://leetcode.com/problems/knight-dialer,Knight Dialer,Medium,,100.0%,Dynamic Programming,6_months
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,94.9%,"Two Pointers, String, Greedy",6_months
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,88.4%,"String, Stack",6_months
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,100.0%,"Two Pointers, String, Greedy",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,89.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,89.4%,"String, Stack",more_than_6m
+1152,https://leetcode.com/problems/analyze-user-website-visit-pattern,Analyze User Website Visit Pattern,Medium,,84.4%,"Array, Hash Table, String, Sorting",more_than_6m
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,77.9%,"Array, Two Pointers, Sorting",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,68.8%,"Array, Hash Table, String, Sorting",more_than_6m
+240,https://leetcode.com/problems/search-a-2d-matrix-ii,Search a 2D Matrix II,Medium,,68.8%,"Array, Binary Search, Divide and Conquer, Matrix",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,68.8%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,68.8%,"Array, Dynamic Programming, Matrix",more_than_6m
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,68.8%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",more_than_6m
+680,https://leetcode.com/problems/valid-palindrome-ii,Valid Palindrome II,Easy,,100.0%,"Two Pointers, String, Greedy",all
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,91.3%,"String, Stack",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,85.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+935,https://leetcode.com/problems/knight-dialer,Knight Dialer,Medium,,85.2%,Dynamic Programming,all
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,76.5%,"Array, Two Pointers, Sorting",all
+1152,https://leetcode.com/problems/analyze-user-website-visit-pattern,Analyze User Website Visit Pattern,Medium,,76.5%,"Array, Hash Table, String, Sorting",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,61.7%,"Array, Hash Table, String, Sorting",all
+240,https://leetcode.com/problems/search-a-2d-matrix-ii,Search a 2D Matrix II,Medium,,61.7%,"Array, Binary Search, Divide and Conquer, Matrix",all
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,61.7%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,61.7%,"Array, Dynamic Programming, Matrix",all
+253,https://leetcode.com/problems/meeting-rooms-ii,Meeting Rooms II,Medium,,61.7%,"Array, Two Pointers, Greedy, Sorting, Heap (Priority Queue), Prefix Sum",all
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,61.7%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",all
+278,https://leetcode.com/problems/first-bad-version,First Bad Version,Easy,,61.7%,"Binary Search, Interactive",all

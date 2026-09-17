@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+984,https://leetcode.com/problems/string-without-aaa-or-bbb,String Without AAA or BBB,Medium,,100.0%,"String, Greedy",more_than_6m
+860,https://leetcode.com/problems/lemonade-change,Lemonade Change,Easy,,89.6%,"Array, Greedy",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,89.6%,"Array, Sorting",more_than_6m
+984,https://leetcode.com/problems/string-without-aaa-or-bbb,String Without AAA or BBB,Medium,,100.0%,"String, Greedy",all
+860,https://leetcode.com/problems/lemonade-change,Lemonade Change,Easy,,65.9%,"Array, Greedy",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,65.9%,"Array, Sorting",all

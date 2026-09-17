@@ -1,0 +1,71 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1448,https://leetcode.com/problems/count-good-nodes-in-binary-tree,Count Good Nodes in Binary Tree,Medium,,100.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",3_months
+1448,https://leetcode.com/problems/count-good-nodes-in-binary-tree,Count Good Nodes in Binary Tree,Medium,,100.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",6_months
+179,https://leetcode.com/problems/largest-number,Largest Number,Medium,,100.0%,"Array, String, Greedy, Sorting",more_than_6m
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,83.4%,"Array, Two Pointers",more_than_6m
+2130,https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list,Maximum Twin Sum of a Linked List,Medium,,83.4%,"Linked List, Two Pointers, Stack",more_than_6m
+2074,https://leetcode.com/problems/reverse-nodes-in-even-length-groups,Reverse Nodes in Even Length Groups,Medium,,83.4%,Linked List,more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,79.0%,"Array, Matrix, Simulation",more_than_6m
+2415,https://leetcode.com/problems/reverse-odd-levels-of-binary-tree,Reverse Odd Levels of Binary Tree,Medium,,73.7%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+1325,https://leetcode.com/problems/delete-leaves-with-a-given-value,Delete Leaves With a Given Value,Medium,,73.7%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+2181,https://leetcode.com/problems/merge-nodes-in-between-zeros,Merge Nodes in Between Zeros,Medium,,66.8%,"Linked List, Simulation",more_than_6m
+2134,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii,Minimum Swaps to Group All 1's Together II,Medium,,66.8%,"Array, Sliding Window",more_than_6m
+2824,https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target,Count Pairs Whose Sum is Less than Target,Easy,,66.8%,"Array, Two Pointers, Binary Search, Sorting",more_than_6m
+513,https://leetcode.com/problems/find-bottom-left-tree-value,Find Bottom Left Tree Value,Medium,,66.8%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,66.8%,"Array, Binary Search",more_than_6m
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,66.8%,"String, Stack, Greedy, Monotonic Stack",more_than_6m
+226,https://leetcode.com/problems/invert-binary-tree,Invert Binary Tree,Easy,,66.8%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,66.8%,"Array, Stack, Monotonic Stack",more_than_6m
+1026,https://leetcode.com/problems/maximum-difference-between-node-and-ancestor,Maximum Difference Between Node and Ancestor,Medium,,66.8%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,66.8%,"Array, Hash Table, String, Sorting",more_than_6m
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,66.8%,"Linked List, Recursion",more_than_6m
+1315,https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent,Sum of Nodes with Even-Valued Grandparent,Medium,,66.8%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+328,https://leetcode.com/problems/odd-even-linked-list,Odd Even Linked List,Medium,,66.8%,Linked List,more_than_6m
+61,https://leetcode.com/problems/rotate-list,Rotate List,Medium,,66.8%,"Linked List, Two Pointers",more_than_6m
+2606,https://leetcode.com/problems/find-the-substring-with-maximum-cost,Find the Substring With Maximum Cost,Medium,,57.2%,"Array, Hash Table, String, Dynamic Programming",more_than_6m
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,57.2%,"Linked List, Recursion",more_than_6m
+1448,https://leetcode.com/problems/count-good-nodes-in-binary-tree,Count Good Nodes in Binary Tree,Medium,,57.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+84,https://leetcode.com/problems/largest-rectangle-in-histogram,Largest Rectangle in Histogram,Hard,,57.2%,"Array, Stack, Monotonic Stack",more_than_6m
+114,https://leetcode.com/problems/flatten-binary-tree-to-linked-list,Flatten Binary Tree to Linked List,Medium,,57.2%,"Linked List, Stack, Tree, Depth-First Search, Binary Tree",more_than_6m
+19,https://leetcode.com/problems/remove-nth-node-from-end-of-list,Remove Nth Node From End of List,Medium,,57.2%,"Linked List, Two Pointers",more_than_6m
+132,https://leetcode.com/problems/palindrome-partitioning-ii,Palindrome Partitioning II,Hard,,57.2%,"String, Dynamic Programming",more_than_6m
+617,https://leetcode.com/problems/merge-two-binary-trees,Merge Two Binary Trees,Easy,,57.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,57.2%,"Array, Binary Search",more_than_6m
+515,https://leetcode.com/problems/find-largest-value-in-each-tree-row,Find Largest Value in Each Tree Row,Medium,,57.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+463,https://leetcode.com/problems/island-perimeter,Island Perimeter,Easy,,57.2%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,57.2%,"Math, Dynamic Programming, Memoization",more_than_6m
+179,https://leetcode.com/problems/largest-number,Largest Number,Medium,,100.0%,"Array, String, Greedy, Sorting",all
+283,https://leetcode.com/problems/move-zeroes,Move Zeroes,Easy,,85.3%,"Array, Two Pointers",all
+2074,https://leetcode.com/problems/reverse-nodes-in-even-length-groups,Reverse Nodes in Even Length Groups,Medium,,85.3%,Linked List,all
+2130,https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list,Maximum Twin Sum of a Linked List,Medium,,81.6%,"Linked List, Two Pointers, Stack",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,77.3%,"Array, Matrix, Simulation",all
+2415,https://leetcode.com/problems/reverse-odd-levels-of-binary-tree,Reverse Odd Levels of Binary Tree,Medium,,72.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+513,https://leetcode.com/problems/find-bottom-left-tree-value,Find Bottom Left Tree Value,Medium,,72.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+1448,https://leetcode.com/problems/count-good-nodes-in-binary-tree,Count Good Nodes in Binary Tree,Medium,,72.0%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+1325,https://leetcode.com/problems/delete-leaves-with-a-given-value,Delete Leaves With a Given Value,Medium,,72.0%,"Tree, Depth-First Search, Binary Tree",all
+2181,https://leetcode.com/problems/merge-nodes-in-between-zeros,Merge Nodes in Between Zeros,Medium,,65.2%,"Linked List, Simulation",all
+2134,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii,Minimum Swaps to Group All 1's Together II,Medium,,65.2%,"Array, Sliding Window",all
+2824,https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target,Count Pairs Whose Sum is Less than Target,Easy,,65.2%,"Array, Two Pointers, Binary Search, Sorting",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,65.2%,"Linked List, Recursion",all
+402,https://leetcode.com/problems/remove-k-digits,Remove K Digits,Medium,,65.2%,"String, Stack, Greedy, Monotonic Stack",all
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,65.2%,"Array, Stack, Monotonic Stack",all
+1026,https://leetcode.com/problems/maximum-difference-between-node-and-ancestor,Maximum Difference Between Node and Ancestor,Medium,,65.2%,"Tree, Depth-First Search, Binary Tree",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,65.2%,"Array, Hash Table, String, Sorting",all
+226,https://leetcode.com/problems/invert-binary-tree,Invert Binary Tree,Easy,,65.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,65.2%,"Array, Binary Search",all
+617,https://leetcode.com/problems/merge-two-binary-trees,Merge Two Binary Trees,Easy,,65.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+1315,https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent,Sum of Nodes with Even-Valued Grandparent,Medium,,65.2%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,65.2%,"Linked List, Recursion",all
+328,https://leetcode.com/problems/odd-even-linked-list,Odd Even Linked List,Medium,,65.2%,Linked List,all
+61,https://leetcode.com/problems/rotate-list,Rotate List,Medium,,65.2%,"Linked List, Two Pointers",all
+2606,https://leetcode.com/problems/find-the-substring-with-maximum-cost,Find the Substring With Maximum Cost,Medium,,55.6%,"Array, Hash Table, String, Dynamic Programming",all
+114,https://leetcode.com/problems/flatten-binary-tree-to-linked-list,Flatten Binary Tree to Linked List,Medium,,55.6%,"Linked List, Stack, Tree, Depth-First Search, Binary Tree",all
+19,https://leetcode.com/problems/remove-nth-node-from-end-of-list,Remove Nth Node From End of List,Medium,,55.6%,"Linked List, Two Pointers",all
+132,https://leetcode.com/problems/palindrome-partitioning-ii,Palindrome Partitioning II,Hard,,55.6%,"String, Dynamic Programming",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,55.6%,"Array, Binary Search",all
+515,https://leetcode.com/problems/find-largest-value-in-each-tree-row,Find Largest Value in Each Tree Row,Medium,,55.6%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+84,https://leetcode.com/problems/largest-rectangle-in-histogram,Largest Rectangle in Histogram,Hard,,55.6%,"Array, Stack, Monotonic Stack",all
+463,https://leetcode.com/problems/island-perimeter,Island Perimeter,Easy,,55.6%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,55.6%,"Math, Dynamic Programming, Memoization",all
+929,https://leetcode.com/problems/unique-email-addresses,Unique Email Addresses,Easy,,55.6%,"Array, Hash Table, String",all
+102,https://leetcode.com/problems/binary-tree-level-order-traversal,Binary Tree Level Order Traversal,Medium,,55.6%,"Tree, Breadth-First Search, Binary Tree",all

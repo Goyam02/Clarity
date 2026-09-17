@@ -1,0 +1,8 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,100.0%,"Array, Hash Table, Binary Search, Design",more_than_6m
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,100.0%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,89.6%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+295,https://leetcode.com/problems/find-median-from-data-stream,Find Median from Data Stream,Hard,,92.9%,"Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,92.9%,"Array, Hash Table, Binary Search, Design",all

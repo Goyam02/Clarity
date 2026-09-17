@@ -1,0 +1,12 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",6_months
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,100.0%,"Math, String, Recursion",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,85.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+616,https://leetcode.com/problems/add-bold-tag-in-string,Add Bold Tag in String,Medium,,76.3%,"Array, Hash Table, String, Trie, String Matching",more_than_6m
+2591,https://leetcode.com/problems/distribute-money-to-maximum-children,Distribute Money to Maximum Children,Easy,,63.9%,"Math, Greedy",more_than_6m
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,51.5%,"Array, Dynamic Programming",more_than_6m
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,100.0%,"Math, String, Recursion",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,87.0%,"Hash Table, String, Binary Search, Design",all
+616,https://leetcode.com/problems/add-bold-tag-in-string,Add Bold Tag in String,Medium,,77.8%,"Array, Hash Table, String, Trie, String Matching",all
+2591,https://leetcode.com/problems/distribute-money-to-maximum-children,Distribute Money to Maximum Children,Easy,,67.2%,"Math, Greedy",all
+198,https://leetcode.com/problems/house-robber,House Robber,Medium,,50.8%,"Array, Dynamic Programming",all

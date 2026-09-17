@@ -1,0 +1,12 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3161,https://leetcode.com/problems/block-placement-queries,Block Placement Queries,Hard,,100.0%,"Array, Binary Search, Binary Indexed Tree, Segment Tree, Ordered Set",more_than_6m
+2264,https://leetcode.com/problems/largest-3-same-digit-number-in-string,Largest 3-Same-Digit Number in String,Easy,,88.4%,String,more_than_6m
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,88.4%,String,more_than_6m
+1584,https://leetcode.com/problems/min-cost-to-connect-all-points,Min Cost to Connect All Points,Medium,,88.4%,"Array, Union-Find, Graph Theory, Minimum Spanning Tree",more_than_6m
+2300,https://leetcode.com/problems/successful-pairs-of-spells-and-potions,Successful Pairs of Spells and Potions,Medium,,88.4%,"Array, Two Pointers, Binary Search, Sorting",more_than_6m
+2264,https://leetcode.com/problems/largest-3-same-digit-number-in-string,Largest 3-Same-Digit Number in String,Easy,,100.0%,String,all
+3161,https://leetcode.com/problems/block-placement-queries,Block Placement Queries,Hard,,73.3%,"Array, Binary Search, Binary Indexed Tree, Segment Tree, Ordered Set",all
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,64.4%,String,all
+2300,https://leetcode.com/problems/successful-pairs-of-spells-and-potions,Successful Pairs of Spells and Potions,Medium,,64.4%,"Array, Two Pointers, Binary Search, Sorting",all
+1584,https://leetcode.com/problems/min-cost-to-connect-all-points,Min Cost to Connect All Points,Medium,,64.4%,"Array, Union-Find, Graph Theory, Minimum Spanning Tree",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,64.4%,"Array, Dynamic Programming",all

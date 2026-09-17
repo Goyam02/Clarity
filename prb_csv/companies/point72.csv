@@ -1,0 +1,16 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,100.0%,"String, Dynamic Programming, Backtracking",more_than_6m
+1407,https://leetcode.com/problems/top-travellers,Top Travellers,Easy,,100.0%,Database,more_than_6m
+1378,https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier,Replace Employee ID With The Unique Identifier,Easy,,100.0%,Database,more_than_6m
+1321,https://leetcode.com/problems/restaurant-growth,Restaurant Growth,Medium,,100.0%,Database,more_than_6m
+1294,https://leetcode.com/problems/weather-type-in-each-country,Weather Type in Each Country,Easy,,100.0%,Database,more_than_6m
+1440,https://leetcode.com/problems/evaluate-boolean-expression,Evaluate Boolean Expression,Medium,,100.0%,Database,more_than_6m
+870,https://leetcode.com/problems/advantage-shuffle,Advantage Shuffle,Medium,,100.0%,"Array, Two Pointers, Greedy, Sorting",more_than_6m
+1407,https://leetcode.com/problems/top-travellers,Top Travellers,Easy,,100.0%,Database,all
+1294,https://leetcode.com/problems/weather-type-in-each-country,Weather Type in Each Country,Easy,,100.0%,Database,all
+1440,https://leetcode.com/problems/evaluate-boolean-expression,Evaluate Boolean Expression,Medium,,100.0%,Database,all
+1321,https://leetcode.com/problems/restaurant-growth,Restaurant Growth,Medium,,100.0%,Database,all
+1378,https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier,Replace Employee ID With The Unique Identifier,Easy,,100.0%,Database,all
+870,https://leetcode.com/problems/advantage-shuffle,Advantage Shuffle,Medium,,63.7%,"Array, Two Pointers, Greedy, Sorting",all
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,63.7%,"String, Dynamic Programming, Backtracking",all
+480,https://leetcode.com/problems/sliding-window-median,Sliding Window Median,Hard,,63.7%,"Array, Hash Table, Sliding Window, Heap (Priority Queue)",all

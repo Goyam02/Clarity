@@ -1,0 +1,28 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,100.0%,"Hash Table, Math, Two Pointers",more_than_6m
+498,https://leetcode.com/problems/diagonal-traverse,Diagonal Traverse,Medium,,87.0%,"Array, Matrix, Simulation",more_than_6m
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,87.0%,"Stack, Design",more_than_6m
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,87.0%,"String, Dynamic Programming, Stack",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,76.7%,"Hash Table, String, Sliding Window",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,76.7%,"String, Stack",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,76.7%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+2642,https://leetcode.com/problems/design-graph-with-shortest-path-calculator,Design Graph With Shortest Path Calculator,Hard,,76.7%,"Graph Theory, Design, Heap (Priority Queue), Shortest Path",more_than_6m
+605,https://leetcode.com/problems/can-place-flowers,Can Place Flowers,Easy,,76.7%,"Array, Greedy",more_than_6m
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,76.7%,"Array, Two Pointers",more_than_6m
+122,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii,Best Time to Buy and Sell Stock II,Medium,,76.7%,"Array, Dynamic Programming, Greedy",more_than_6m
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,76.7%,"Array, Dynamic Programming, Greedy",more_than_6m
+287,https://leetcode.com/problems/find-the-duplicate-number,Find the Duplicate Number,Medium,,76.7%,"Array, Two Pointers, Binary Search, Bit Manipulation",more_than_6m
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,100.0%,"Hash Table, Math, Two Pointers",all
+498,https://leetcode.com/problems/diagonal-traverse,Diagonal Traverse,Medium,,86.9%,"Array, Matrix, Simulation",all
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,86.9%,"Stack, Design",all
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,86.9%,"String, Dynamic Programming, Stack",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,76.5%,"Hash Table, String, Sliding Window",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,76.5%,"String, Stack",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,76.5%,"Array, Divide and Conquer, Dynamic Programming",all
+2642,https://leetcode.com/problems/design-graph-with-shortest-path-calculator,Design Graph With Shortest Path Calculator,Hard,,76.5%,"Graph Theory, Design, Heap (Priority Queue), Shortest Path",all
+605,https://leetcode.com/problems/can-place-flowers,Can Place Flowers,Easy,,76.5%,"Array, Greedy",all
+31,https://leetcode.com/problems/next-permutation,Next Permutation,Medium,,76.5%,"Array, Two Pointers",all
+122,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii,Best Time to Buy and Sell Stock II,Medium,,76.5%,"Array, Dynamic Programming, Greedy",all
+55,https://leetcode.com/problems/jump-game,Jump Game,Medium,,76.5%,"Array, Dynamic Programming, Greedy",all
+287,https://leetcode.com/problems/find-the-duplicate-number,Find the Duplicate Number,Medium,,76.5%,"Array, Two Pointers, Binary Search, Bit Manipulation",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,76.5%,"Array, Hash Table, String, Sorting",all

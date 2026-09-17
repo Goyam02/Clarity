@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2403,https://leetcode.com/problems/minimum-time-to-kill-all-monsters,Minimum Time to Kill All Monsters,Hard,,100.0%,"Array, Dynamic Programming, Bit Manipulation, Bitmask",more_than_6m
+2564,https://leetcode.com/problems/substring-xor-queries,Substring XOR Queries,Medium,,100.0%,"Array, Hash Table, String, Bit Manipulation",more_than_6m
+2425,https://leetcode.com/problems/bitwise-xor-of-all-pairings,Bitwise XOR of All Pairings,Medium,,100.0%,"Array, Bit Manipulation, Brainteaser",more_than_6m
+2569,https://leetcode.com/problems/handling-sum-queries-after-update,Handling Sum Queries After Update,Hard,,100.0%,"Array, Segment Tree",more_than_6m
+115,https://leetcode.com/problems/distinct-subsequences,Distinct Subsequences,Hard,,100.0%,"String, Dynamic Programming",more_than_6m
+592,https://leetcode.com/problems/fraction-addition-and-subtraction,Fraction Addition and Subtraction,Medium,,100.0%,"Math, String, Simulation",more_than_6m
+2438,https://leetcode.com/problems/range-product-queries-of-powers,Range Product Queries of Powers,Medium,,100.0%,"Array, Bit Manipulation, Prefix Sum",more_than_6m
+2564,https://leetcode.com/problems/substring-xor-queries,Substring XOR Queries,Medium,,100.0%,"Array, Hash Table, String, Bit Manipulation",all
+2569,https://leetcode.com/problems/handling-sum-queries-after-update,Handling Sum Queries After Update,Hard,,100.0%,"Array, Segment Tree",all
+2425,https://leetcode.com/problems/bitwise-xor-of-all-pairings,Bitwise XOR of All Pairings,Medium,,100.0%,"Array, Bit Manipulation, Brainteaser",all
+2403,https://leetcode.com/problems/minimum-time-to-kill-all-monsters,Minimum Time to Kill All Monsters,Hard,,100.0%,"Array, Dynamic Programming, Bit Manipulation, Bitmask",all
+115,https://leetcode.com/problems/distinct-subsequences,Distinct Subsequences,Hard,,64.0%,"String, Dynamic Programming",all
+592,https://leetcode.com/problems/fraction-addition-and-subtraction,Fraction Addition and Subtraction,Medium,,64.0%,"Math, String, Simulation",all
+2438,https://leetcode.com/problems/range-product-queries-of-powers,Range Product Queries of Powers,Medium,,64.0%,"Array, Bit Manipulation, Prefix Sum",all

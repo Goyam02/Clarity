@@ -1,0 +1,20 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2817,https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint,Minimum Absolute Difference Between Elements With Constraint,Medium,,100.0%,"Array, Binary Search, Ordered Set",6_months
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,100.0%,"Array, Hash Table, String, Trie",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",more_than_6m
+48,https://leetcode.com/problems/rotate-image,Rotate Image,Medium,,87.0%,"Array, Math, Matrix",more_than_6m
+2768,https://leetcode.com/problems/number-of-black-blocks,Number of Black Blocks,Medium,,80.3%,"Array, Hash Table, Enumeration",more_than_6m
+1743,https://leetcode.com/problems/restore-the-array-from-adjacent-pairs,Restore the Array From Adjacent Pairs,Medium,,80.3%,"Array, Hash Table, Depth-First Search",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,70.9%,"Array, Matrix, Simulation",more_than_6m
+3161,https://leetcode.com/problems/block-placement-queries,Block Placement Queries,Hard,,70.9%,"Array, Binary Search, Binary Indexed Tree, Segment Tree, Ordered Set",more_than_6m
+1861,https://leetcode.com/problems/rotating-the-box,Rotating the Box,Medium,,70.9%,"Array, Two Pointers, Matrix",more_than_6m
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",all
+48,https://leetcode.com/problems/rotate-image,Rotate Image,Medium,,86.7%,"Array, Math, Matrix",all
+2768,https://leetcode.com/problems/number-of-black-blocks,Number of Black Blocks,Medium,,79.8%,"Array, Hash Table, Enumeration",all
+1743,https://leetcode.com/problems/restore-the-array-from-adjacent-pairs,Restore the Array From Adjacent Pairs,Medium,,79.8%,"Array, Hash Table, Depth-First Search",all
+3043,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix,Find the Length of the Longest Common Prefix,Medium,,79.8%,"Array, Hash Table, String, Trie",all
+2817,https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint,Minimum Absolute Difference Between Elements With Constraint,Medium,,79.8%,"Array, Binary Search, Ordered Set",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,70.1%,"Array, Matrix, Simulation",all
+3161,https://leetcode.com/problems/block-placement-queries,Block Placement Queries,Hard,,70.1%,"Array, Binary Search, Binary Indexed Tree, Segment Tree, Ordered Set",all
+1861,https://leetcode.com/problems/rotating-the-box,Rotating the Box,Medium,,70.1%,"Array, Two Pointers, Matrix",all
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,70.1%,"Array, Hash Table, Design, Simulation",all

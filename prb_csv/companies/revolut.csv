@@ -1,0 +1,21 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1321,https://leetcode.com/problems/restaurant-growth,Restaurant Growth,Medium,,100.0%,Database,6_months
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,100.0%,"Array, String, Trie",more_than_6m
+279,https://leetcode.com/problems/perfect-squares,Perfect Squares,Medium,,94.4%,"Math, Dynamic Programming, Breadth-First Search",more_than_6m
+92,https://leetcode.com/problems/reverse-linked-list-ii,Reverse Linked List II,Medium,,86.9%,Linked List,more_than_6m
+257,https://leetcode.com/problems/binary-tree-paths,Binary Tree Paths,Easy,,86.9%,"String, Backtracking, Tree, Depth-First Search, Binary Tree",more_than_6m
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,81.9%,"Hash Table, String, Sliding Window",more_than_6m
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,75.5%,"Array, Math, Binary Search, Prefix Sum, Randomized",more_than_6m
+268,https://leetcode.com/problems/missing-number,Missing Number,Easy,,75.5%,"Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting",more_than_6m
+535,https://leetcode.com/problems/encode-and-decode-tinyurl,Encode and Decode TinyURL,Medium,,66.5%,"Hash Table, String, Design, Hash Function",more_than_6m
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,66.5%,"Array, Hash Table, Design, Simulation",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,100.0%,"Array, String, Trie",all
+279,https://leetcode.com/problems/perfect-squares,Perfect Squares,Medium,,94.4%,"Math, Dynamic Programming, Breadth-First Search",all
+92,https://leetcode.com/problems/reverse-linked-list-ii,Reverse Linked List II,Medium,,86.8%,Linked List,all
+257,https://leetcode.com/problems/binary-tree-paths,Binary Tree Paths,Easy,,86.8%,"String, Backtracking, Tree, Depth-First Search, Binary Tree",all
+438,https://leetcode.com/problems/find-all-anagrams-in-a-string,Find All Anagrams in a String,Medium,,81.8%,"Hash Table, String, Sliding Window",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,75.3%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+268,https://leetcode.com/problems/missing-number,Missing Number,Easy,,75.3%,"Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting",all
+1321,https://leetcode.com/problems/restaurant-growth,Restaurant Growth,Medium,,75.3%,Database,all
+535,https://leetcode.com/problems/encode-and-decode-tinyurl,Encode and Decode TinyURL,Medium,,66.2%,"Hash Table, String, Design, Hash Function",all
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,66.2%,"Array, Hash Table, Design, Simulation",all

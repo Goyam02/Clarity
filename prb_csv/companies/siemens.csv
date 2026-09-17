@@ -1,0 +1,48 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,93.8%,"String, Stack",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,93.8%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+218,https://leetcode.com/problems/the-skyline-problem,The Skyline Problem,Hard,,85.8%,"Array, Divide and Conquer, Binary Indexed Tree, Segment Tree, Sweep Line, Sorting, Heap (Priority Queue), Ordered Set",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,74.5%,"Array, Hash Table",more_than_6m
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,74.5%,"Linked List, Recursion",more_than_6m
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,74.5%,"Array, Hash Table",more_than_6m
+2064,https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store,Minimized Maximum of Products Distributed to Any Store,Medium,,74.5%,"Array, Binary Search, Greedy",more_than_6m
+3187,https://leetcode.com/problems/peaks-in-array,Peaks in Array,Hard,,74.5%,"Array, Binary Indexed Tree, Segment Tree",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,74.5%,"Hash Table, String, Sorting",more_than_6m
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,74.5%,"Array, Two Pointers",more_than_6m
+628,https://leetcode.com/problems/maximum-product-of-three-numbers,Maximum Product of Three Numbers,Easy,,74.5%,"Array, Math, Sorting",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,74.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,74.5%,"Array, Hash Table, String, Sorting",more_than_6m
+921,https://leetcode.com/problems/minimum-add-to-make-parentheses-valid,Minimum Add to Make Parentheses Valid,Medium,,74.5%,"String, Stack, Greedy",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,74.5%,"Two Pointers, String, Dynamic Programming",more_than_6m
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,74.5%,Math,more_than_6m
+152,https://leetcode.com/problems/maximum-product-subarray,Maximum Product Subarray,Medium,,74.5%,"Array, Dynamic Programming",more_than_6m
+1344,https://leetcode.com/problems/angle-between-hands-of-a-clock,Angle Between Hands of a Clock,Medium,,74.5%,Math,more_than_6m
+260,https://leetcode.com/problems/single-number-iii,Single Number III,Medium,,74.5%,"Array, Bit Manipulation",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,74.5%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+3187,https://leetcode.com/problems/peaks-in-array,Peaks in Array,Hard,,100.0%,"Array, Binary Indexed Tree, Segment Tree",all
+2064,https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store,Minimized Maximum of Products Distributed to Any Store,Medium,,100.0%,"Array, Binary Search, Greedy",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,87.7%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,83.3%,"Array, Sorting",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,77.9%,"String, Stack",all
+21,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Easy,,71.0%,"Linked List, Recursion",all
+218,https://leetcode.com/problems/the-skyline-problem,The Skyline Problem,Hard,,71.0%,"Array, Divide and Conquer, Binary Indexed Tree, Segment Tree, Sweep Line, Sorting, Heap (Priority Queue), Ordered Set",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,71.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,61.3%,"Array, Hash Table",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,61.3%,"Array, Hash Table",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,61.3%,"Hash Table, String, Sorting",all
+628,https://leetcode.com/problems/maximum-product-of-three-numbers,Maximum Product of Three Numbers,Easy,,61.3%,"Array, Math, Sorting",all
+1344,https://leetcode.com/problems/angle-between-hands-of-a-clock,Angle Between Hands of a Clock,Medium,,61.3%,Math,all
+26,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Easy,,61.3%,"Array, Two Pointers",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,61.3%,"Array, Hash Table, String, Sorting",all
+921,https://leetcode.com/problems/minimum-add-to-make-parentheses-valid,Minimum Add to Make Parentheses Valid,Medium,,61.3%,"String, Stack, Greedy",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,61.3%,"Two Pointers, String, Dynamic Programming",all
+152,https://leetcode.com/problems/maximum-product-subarray,Maximum Product Subarray,Medium,,61.3%,"Array, Dynamic Programming",all
+260,https://leetcode.com/problems/single-number-iii,Single Number III,Medium,,61.3%,"Array, Bit Manipulation",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,61.3%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+189,https://leetcode.com/problems/rotate-array,Rotate Array,Medium,,61.3%,"Array, Math, Two Pointers",all
+9,https://leetcode.com/problems/palindrome-number,Palindrome Number,Easy,,61.3%,Math,all
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,61.3%,"Hash Table, Depth-First Search, Breadth-First Search, Graph Theory",all
+420,https://leetcode.com/problems/strong-password-checker,Strong Password Checker,Hard,,61.3%,"String, Greedy, Heap (Priority Queue)",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,61.3%,"Array, Dynamic Programming",all

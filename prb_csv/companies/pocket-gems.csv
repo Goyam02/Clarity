@@ -1,0 +1,31 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,100.0%,"Hash Table, Depth-First Search, Breadth-First Search, Graph",more_than_6m
+424,https://leetcode.com/problems/longest-repeating-character-replacement,Longest Repeating Character Replacement,Medium,,100.0%,"Hash Table, String, Sliding Window",more_than_6m
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,100.0%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",more_than_6m
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,100.0%,"Array, Two Pointers, Sorting",more_than_6m
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,100.0%,"Array, String, Depth-First Search, Breadth-First Search, Graph, Topological Sort",more_than_6m
+600,https://leetcode.com/problems/non-negative-integers-without-consecutive-ones,Non-negative Integers without Consecutive Ones,Hard,,100.0%,Dynamic Programming,more_than_6m
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,100.0%,"Math, String, Stack, Recursion",more_than_6m
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,100.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",more_than_6m
+214,https://leetcode.com/problems/shortest-palindrome,Shortest Palindrome,Hard,,100.0%,"String, Rolling Hash, String Matching, Hash Function",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,100.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+442,https://leetcode.com/problems/find-all-duplicates-in-an-array,Find All Duplicates in an Array,Medium,,100.0%,"Array, Hash Table",more_than_6m
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",more_than_6m
+28,https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string,Find the Index of the First Occurrence in a String,Easy,,100.0%,"Two Pointers, String, String Matching",more_than_6m
+285,https://leetcode.com/problems/inorder-successor-in-bst,Inorder Successor in BST,Medium,,100.0%,"Tree, Depth-First Search, Binary Search Tree, Binary Tree",more_than_6m
+28,https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string,Find the Index of the First Occurrence in a String,Easy,,100.0%,"Two Pointers, String, String Matching",all
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,100.0%,"Array, Two Pointers, Sorting",all
+600,https://leetcode.com/problems/non-negative-integers-without-consecutive-ones,Non-negative Integers without Consecutive Ones,Hard,,100.0%,Dynamic Programming,all
+133,https://leetcode.com/problems/clone-graph,Clone Graph,Medium,,100.0%,"Hash Table, Depth-First Search, Breadth-First Search, Graph",all
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,100.0%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",all
+692,https://leetcode.com/problems/top-k-frequent-words,Top K Frequent Words,Medium,,100.0%,"Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all
+214,https://leetcode.com/problems/shortest-palindrome,Shortest Palindrome,Hard,,100.0%,"String, Rolling Hash, String Matching, Hash Function",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,100.0%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+269,https://leetcode.com/problems/alien-dictionary,Alien Dictionary,Hard,,100.0%,"Array, String, Depth-First Search, Breadth-First Search, Graph, Topological Sort",all
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,100.0%,"Math, String, Stack, Recursion",all
+285,https://leetcode.com/problems/inorder-successor-in-bst,Inorder Successor in BST,Medium,,100.0%,"Tree, Depth-First Search, Binary Search Tree, Binary Tree",all
+347,https://leetcode.com/problems/top-k-frequent-elements,Top K Frequent Elements,Medium,,100.0%,"Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,100.0%,"Array, Hash Table, Math, Design, Randomized",all
+424,https://leetcode.com/problems/longest-repeating-character-replacement,Longest Repeating Character Replacement,Medium,,100.0%,"Hash Table, String, Sliding Window",all
+442,https://leetcode.com/problems/find-all-duplicates-in-an-array,Find All Duplicates in an Array,Medium,,100.0%,"Array, Hash Table",all

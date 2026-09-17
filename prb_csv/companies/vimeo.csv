@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1803,https://leetcode.com/problems/count-pairs-with-xor-in-a-range,Count Pairs With XOR in a Range,Hard,,100.0%,"Array, Bit Manipulation, Trie",more_than_6m
+1042,https://leetcode.com/problems/flower-planting-with-no-adjacent,Flower Planting With No Adjacent,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,100.0%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,100.0%,"Array, Two Pointers, Sorting",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,100.0%,"Stack, Design",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",more_than_6m
+1803,https://leetcode.com/problems/count-pairs-with-xor-in-a-range,Count Pairs With XOR in a Range,Hard,,100.0%,"Array, Bit Manipulation, Trie",all
+1042,https://leetcode.com/problems/flower-planting-with-no-adjacent,Flower Planting With No Adjacent,Medium,,66.6%,"Depth-First Search, Breadth-First Search, Graph Theory",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,66.6%,"Array, Divide and Conquer, Dynamic Programming",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,66.6%,"Array, Two Pointers, Sorting",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,66.6%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+155,https://leetcode.com/problems/min-stack,Min Stack,Medium,,66.6%,"Stack, Design",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,66.6%,"String, Stack",all

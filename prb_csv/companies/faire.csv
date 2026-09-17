@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,100.0%,"Array, String, Backtracking, Depth-First Search, Matrix",6_months
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,100.0%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,85.6%,"Math, String, Recursion",more_than_6m
+2468,https://leetcode.com/problems/split-message-based-on-limit,Split Message Based on Limit,Hard,,81.0%,"String, Enumeration",more_than_6m
+591,https://leetcode.com/problems/tag-validator,Tag Validator,Hard,,75.1%,"String, Stack",more_than_6m
+845,https://leetcode.com/problems/longest-mountain-in-array,Longest Mountain in Array,Medium,,66.7%,"Array, Two Pointers, Dynamic Programming, Enumeration",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,100.0%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+273,https://leetcode.com/problems/integer-to-english-words,Integer to English Words,Hard,,82.3%,"Math, String, Recursion",all
+2468,https://leetcode.com/problems/split-message-based-on-limit,Split Message Based on Limit,Hard,,77.8%,"String, Enumeration",all
+591,https://leetcode.com/problems/tag-validator,Tag Validator,Hard,,71.9%,"String, Stack",all
+845,https://leetcode.com/problems/longest-mountain-in-array,Longest Mountain in Array,Medium,,63.7%,"Array, Two Pointers, Dynamic Programming, Enumeration",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,63.7%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all

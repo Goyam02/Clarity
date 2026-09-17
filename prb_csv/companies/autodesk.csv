@@ -1,0 +1,66 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",3_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",3_months
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,100.0%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",6_months
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,100.0%,"String, Stack",6_months
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,100.0%,"Array, String, Simulation",6_months
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,100.0%,"Array, Binary Search",more_than_6m
+3034,https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i,Number of Subarrays That Match a Pattern I,Medium,,93.5%,"Array, Rolling Hash, String Matching, Hash Function",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,93.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,85.2%,"String, Stack",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,85.2%,"Array, Binary Search, Divide and Conquer",more_than_6m
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,85.2%,"Array, Two Pointers, Sorting",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,73.4%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+3045,https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii,Count Prefix and Suffix Pairs II,Hard,,73.4%,"Array, String, Trie, Rolling Hash, String Matching, Hash Function",more_than_6m
+3042,https://leetcode.com/problems/count-prefix-and-suffix-pairs-i,Count Prefix and Suffix Pairs I,Easy,,73.4%,"Array, String, Trie, Rolling Hash, String Matching, Hash Function",more_than_6m
+3019,https://leetcode.com/problems/number-of-changing-keys,Number of Changing Keys,Easy,,73.4%,String,more_than_6m
+3069,https://leetcode.com/problems/distribute-elements-into-two-arrays-i,Distribute Elements Into Two Arrays I,Easy,,73.4%,"Array, Simulation",more_than_6m
+3072,https://leetcode.com/problems/distribute-elements-into-two-arrays-ii,Distribute Elements Into Two Arrays II,Hard,,73.4%,"Array, Binary Indexed Tree, Segment Tree, Simulation",more_than_6m
+3036,https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii,Number of Subarrays That Match a Pattern II,Hard,,73.4%,"Array, Rolling Hash, String Matching, Hash Function",more_than_6m
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,73.4%,"Array, Prefix Sum",more_than_6m
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,73.4%,"Linked List, Recursion",more_than_6m
+141,https://leetcode.com/problems/linked-list-cycle,Linked List Cycle,Easy,,73.4%,"Hash Table, Linked List, Two Pointers",more_than_6m
+169,https://leetcode.com/problems/majority-element,Majority Element,Easy,,73.4%,"Array, Hash Table, Divide and Conquer, Sorting, Counting",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,73.4%,"Array, Matrix, Simulation",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,73.4%,"Array, Binary Search",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,73.4%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+73,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Medium,,73.4%,"Array, Hash Table, Matrix",more_than_6m
+390,https://leetcode.com/problems/elimination-game,Elimination Game,Medium,,73.4%,"Math, Recursion",more_than_6m
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,73.4%,"Array, Two Pointers, Sorting",more_than_6m
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,73.4%,"Array, Hash Table",more_than_6m
+142,https://leetcode.com/problems/linked-list-cycle-ii,Linked List Cycle II,Medium,,73.4%,"Hash Table, Linked List, Two Pointers",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,73.4%,"Array, Hash Table, String, Sorting",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,73.4%,"Two Pointers, String, Dynamic Programming",more_than_6m
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,73.4%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+3034,https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i,Number of Subarrays That Match a Pattern I,Medium,,100.0%,"Array, Rolling Hash, String Matching, Hash Function",all
+3069,https://leetcode.com/problems/distribute-elements-into-two-arrays-i,Distribute Elements Into Two Arrays I,Easy,,97.9%,"Array, Simulation",all
+3072,https://leetcode.com/problems/distribute-elements-into-two-arrays-ii,Distribute Elements Into Two Arrays II,Hard,,95.5%,"Array, Binary Indexed Tree, Segment Tree, Simulation",all
+3036,https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii,Number of Subarrays That Match a Pattern II,Hard,,95.5%,"Array, Rolling Hash, String Matching, Hash Function",all
+3045,https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii,Count Prefix and Suffix Pairs II,Hard,,95.5%,"Array, String, Trie, Rolling Hash, String Matching, Hash Function",all
+3042,https://leetcode.com/problems/count-prefix-and-suffix-pairs-i,Count Prefix and Suffix Pairs I,Easy,,95.5%,"Array, String, Trie, Rolling Hash, String Matching, Hash Function",all
+3019,https://leetcode.com/problems/number-of-changing-keys,Number of Changing Keys,Easy,,95.5%,String,all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,78.5%,"Array, Binary Search",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,78.5%,"String, Stack",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,78.5%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,66.0%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,66.0%,"Array, Binary Search, Divide and Conquer",all
+15,https://leetcode.com/problems/3sum,3Sum,Medium,,66.0%,"Array, Two Pointers, Sorting",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,66.0%,"Two Pointers, String, Dynamic Programming",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,56.1%,"Array, Hash Table, String, Sorting",all
+238,https://leetcode.com/problems/product-of-array-except-self,Product of Array Except Self,Medium,,56.1%,"Array, Prefix Sum",all
+25,https://leetcode.com/problems/reverse-nodes-in-k-group,Reverse Nodes in k-Group,Hard,,56.1%,"Linked List, Recursion",all
+169,https://leetcode.com/problems/majority-element,Majority Element,Easy,,56.1%,"Array, Hash Table, Divide and Conquer, Sorting, Counting",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,56.1%,"Array, Binary Search",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,56.1%,"Array, Divide and Conquer, Dynamic Programming",all
+73,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Medium,,56.1%,"Array, Hash Table, Matrix",all
+390,https://leetcode.com/problems/elimination-game,Elimination Game,Medium,,56.1%,"Math, Recursion",all
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,56.1%,"Array, Two Pointers, Sorting",all
+141,https://leetcode.com/problems/linked-list-cycle,Linked List Cycle,Easy,,56.1%,"Hash Table, Linked List, Two Pointers",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,56.1%,"Array, Matrix, Simulation",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,56.1%,"Array, Hash Table",all
+215,https://leetcode.com/problems/kth-largest-element-in-an-array,Kth Largest Element in an Array,Medium,,56.1%,"Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,56.1%,"Array, Sorting",all
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,56.1%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,56.1%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+142,https://leetcode.com/problems/linked-list-cycle-ii,Linked List Cycle II,Medium,,56.1%,"Hash Table, Linked List, Two Pointers",all
+68,https://leetcode.com/problems/text-justification,Text Justification,Hard,,56.1%,"Array, String, Simulation",all

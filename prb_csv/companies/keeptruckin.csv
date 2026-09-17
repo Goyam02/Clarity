@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+628,https://leetcode.com/problems/maximum-product-of-three-numbers,Maximum Product of Three Numbers,Easy,,75.0%,,all
+525,https://leetcode.com/problems/contiguous-array,Contiguous Array,Medium,,87.5%,,all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,75.0%,,all
+678,https://leetcode.com/problems/valid-parenthesis-string,Valid Parenthesis String,Medium,,100.0%,,all
+240,https://leetcode.com/problems/search-a-2d-matrix-ii,Search a 2D Matrix II,Medium,,75.0%,,all
+1004,https://leetcode.com/problems/max-consecutive-ones-iii,Max Consecutive Ones III,Medium,,75.0%,,all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,75.0%,,all
+93,https://leetcode.com/problems/restore-ip-addresses,Restore IP Addresses,Medium,,75.0%,,all

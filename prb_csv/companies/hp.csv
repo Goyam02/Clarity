@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2379,https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks,Minimum Recolors to Get K Consecutive Black Blocks,Easy,,100.0%,"String, Sliding Window",more_than_6m
+2087,https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid,Minimum Cost Homecoming of a Robot in a Grid,Medium,,91.0%,"Array, Greedy",more_than_6m
+409,https://leetcode.com/problems/longest-palindrome,Longest Palindrome,Easy,,75.5%,"Hash Table, String, Greedy",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,75.5%,"String, Stack",more_than_6m
+2379,https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks,Minimum Recolors to Get K Consecutive Black Blocks,Easy,,100.0%,"String, Sliding Window",all
+2087,https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid,Minimum Cost Homecoming of a Robot in a Grid,Medium,,91.0%,"Array, Greedy",all
+409,https://leetcode.com/problems/longest-palindrome,Longest Palindrome,Easy,,75.5%,"Hash Table, String, Greedy",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,75.5%,"String, Stack",all

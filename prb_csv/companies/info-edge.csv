@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+3265,https://leetcode.com/problems/count-almost-equal-pairs-i,Count Almost Equal Pairs I,Medium,,100.0%,"Array, Hash Table, Sorting, Counting, Enumeration",6_months
+2032,https://leetcode.com/problems/two-out-of-three,Two Out of Three,Easy,,90.0%,"Array, Hash Table, Bit Manipulation",6_months
+815,https://leetcode.com/problems/bus-routes,Bus Routes,Hard,,79.1%,"Array, Hash Table, Breadth-First Search",6_months
+1476,https://leetcode.com/problems/subrectangle-queries,Subrectangle Queries,Medium,,79.1%,"Array, Design, Matrix",6_months
+3334,https://leetcode.com/problems/find-the-maximum-factor-score-of-array,Find the Maximum Factor Score of Array,Medium,,100.0%,"Array, Math, Number Theory",more_than_6m
+2058,https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points,Find the Minimum and Maximum Number of Nodes Between Critical Points,Medium,,66.9%,Linked List,more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,66.9%,"Two Pointers, String, Dynamic Programming",more_than_6m
+2058,https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points,Find the Minimum and Maximum Number of Nodes Between Critical Points,Medium,,100.0%,Linked List,all
+3334,https://leetcode.com/problems/find-the-maximum-factor-score-of-array,Find the Maximum Factor Score of Array,Medium,,100.0%,"Array, Math, Number Theory",all
+3265,https://leetcode.com/problems/count-almost-equal-pairs-i,Count Almost Equal Pairs I,Medium,,95.0%,"Array, Hash Table, Sorting, Counting, Enumeration",all
+2032,https://leetcode.com/problems/two-out-of-three,Two Out of Three,Easy,,84.5%,"Array, Hash Table, Bit Manipulation",all
+815,https://leetcode.com/problems/bus-routes,Bus Routes,Hard,,73.1%,"Array, Hash Table, Breadth-First Search",all
+1476,https://leetcode.com/problems/subrectangle-queries,Subrectangle Queries,Medium,,73.1%,"Array, Design, Matrix",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,64.1%,"Two Pointers, String, Dynamic Programming",all

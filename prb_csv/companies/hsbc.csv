@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",more_than_6m
+419,https://leetcode.com/problems/battleships-in-a-board,Battleships in a Board,Medium,,100.0%,"Array, Depth-First Search, Matrix",more_than_6m
+1323,https://leetcode.com/problems/maximum-69-number,Maximum 69 Number,Easy,,92.3%,"Math, Greedy",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,81.6%,"Array, String, Trie",more_than_6m
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,81.6%,"Math, Dynamic Programming, Memoization",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,81.6%,"Array, Dynamic Programming",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",all
+1323,https://leetcode.com/problems/maximum-69-number,Maximum 69 Number,Easy,,100.0%,"Math, Greedy",all
+419,https://leetcode.com/problems/battleships-in-a-board,Battleships in a Board,Medium,,100.0%,"Array, Depth-First Search, Matrix",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,81.3%,"Array, Dynamic Programming",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,81.3%,"Array, String, Trie",all
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,81.3%,"Math, Dynamic Programming, Memoization",all

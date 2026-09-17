@@ -1,0 +1,7 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2327,https://leetcode.com/problems/number-of-people-aware-of-a-secret,Number of People Aware of a Secret,Medium,,100.0%,"Dynamic Programming, Queue, Simulation",more_than_6m
+924,https://leetcode.com/problems/minimize-malware-spread,Minimize Malware Spread,Hard,,89.9%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",more_than_6m
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,89.9%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+2327,https://leetcode.com/problems/number-of-people-aware-of-a-secret,Number of People Aware of a Secret,Medium,,100.0%,"Dynamic Programming, Queue, Simulation",all
+924,https://leetcode.com/problems/minimize-malware-spread,Minimize Malware Spread,Hard,,89.8%,"Array, Hash Table, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory",all
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,89.8%,"Hash Table, Linked List, Design, Doubly-Linked List",all

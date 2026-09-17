@@ -1,0 +1,23 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,more_than_6m
+48,https://leetcode.com/problems/rotate-image,Rotate Image,Medium,,100.0%,"Array, Math, Matrix",more_than_6m
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,92.2%,"Array, Dynamic Programming, Breadth-First Search",more_than_6m
+135,https://leetcode.com/problems/candy,Candy,Hard,,92.2%,"Array, Greedy",more_than_6m
+867,https://leetcode.com/problems/transpose-matrix,Transpose Matrix,Easy,,81.2%,"Array, Matrix, Simulation",more_than_6m
+38,https://leetcode.com/problems/count-and-say,Count and Say,Medium,,81.2%,String,more_than_6m
+1647,https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique,Minimum Deletions to Make Character Frequencies Unique,Medium,,81.2%,"Hash Table, String, Greedy, Sorting",more_than_6m
+45,https://leetcode.com/problems/jump-game-ii,Jump Game II,Medium,,81.2%,"Array, Dynamic Programming, Greedy",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,81.2%,"Array, Hash Table, String, Sorting",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,81.2%,"Array, Sorting",more_than_6m
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,81.2%,"Hash Table, String, Sorting",more_than_6m
+6,https://leetcode.com/problems/zigzag-conversion,Zigzag Conversion,Medium,,100.0%,String,all
+48,https://leetcode.com/problems/rotate-image,Rotate Image,Medium,,100.0%,"Array, Math, Matrix",all
+322,https://leetcode.com/problems/coin-change,Coin Change,Medium,,92.0%,"Array, Dynamic Programming, Breadth-First Search",all
+135,https://leetcode.com/problems/candy,Candy,Hard,,92.0%,"Array, Greedy",all
+867,https://leetcode.com/problems/transpose-matrix,Transpose Matrix,Easy,,80.8%,"Array, Matrix, Simulation",all
+38,https://leetcode.com/problems/count-and-say,Count and Say,Medium,,80.8%,String,all
+1647,https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique,Minimum Deletions to Make Character Frequencies Unique,Medium,,80.8%,"Hash Table, String, Greedy, Sorting",all
+45,https://leetcode.com/problems/jump-game-ii,Jump Game II,Medium,,80.8%,"Array, Dynamic Programming, Greedy",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,80.8%,"Array, Hash Table, String, Sorting",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,80.8%,"Array, Sorting",all
+242,https://leetcode.com/problems/valid-anagram,Valid Anagram,Easy,,80.8%,"Hash Table, String, Sorting",all

@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,100.0%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",more_than_6m
+3067,https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network,Count Pairs of Connectable Servers in a Weighted Tree Network,Medium,,71.3%,"Array, Tree, Depth-First Search",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,71.3%,"String, Stack",more_than_6m
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,71.3%,"Array, Hash Table, String, Sorting",more_than_6m
+3067,https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network,Count Pairs of Connectable Servers in a Weighted Tree Network,Medium,,100.0%,"Array, Tree, Depth-First Search",all
+1268,https://leetcode.com/problems/search-suggestions-system,Search Suggestions System,Medium,,92.2%,"Array, String, Binary Search, Trie, Sorting, Heap (Priority Queue)",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,73.8%,"String, Stack",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,73.8%,"Array, Hash Table, String, Sorting",all

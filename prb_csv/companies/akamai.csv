@@ -1,0 +1,21 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,100.0%,"Two Pointers, String, Dynamic Programming",3_months
+525,https://leetcode.com/problems/contiguous-array,Contiguous Array,Medium,,100.0%,"Array, Hash Table, Prefix Sum",6_months
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,83.6%,"Two Pointers, String, Dynamic Programming",6_months
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",more_than_6m
+961,https://leetcode.com/problems/n-repeated-element-in-size-2n-array,N-Repeated Element in Size 2N Array,Easy,,82.6%,"Array, Hash Table",more_than_6m
+2235,https://leetcode.com/problems/add-two-integers,Add Two Integers,Easy,,82.6%,Math,more_than_6m
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,72.4%,"Hash Table, String, Queue, Counting",more_than_6m
+62,https://leetcode.com/problems/unique-paths,Unique Paths,Medium,,72.4%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,72.4%,"Array, Matrix, Simulation",more_than_6m
+961,https://leetcode.com/problems/n-repeated-element-in-size-2n-array,N-Repeated Element in Size 2N Array,Easy,,100.0%,"Array, Hash Table",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,89.8%,"Array, Dynamic Programming",all
+525,https://leetcode.com/problems/contiguous-array,Contiguous Array,Medium,,77.1%,"Array, Hash Table, Prefix Sum",all
+2235,https://leetcode.com/problems/add-two-integers,Add Two Integers,Easy,,70.6%,Math,all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,61.4%,"Array, Hash Table",all
+387,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,Easy,,61.4%,"Hash Table, String, Queue, Counting",all
+62,https://leetcode.com/problems/unique-paths,Unique Paths,Medium,,61.4%,"Math, Dynamic Programming, Combinatorics",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,61.4%,"Array, Matrix, Simulation",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,61.4%,"Hash Table, String, Sliding Window",all
+647,https://leetcode.com/problems/palindromic-substrings,Palindromic Substrings,Medium,,61.4%,"Two Pointers, String, Dynamic Programming",all
+162,https://leetcode.com/problems/find-peak-element,Find Peak Element,Medium,,61.4%,"Array, Binary Search",all

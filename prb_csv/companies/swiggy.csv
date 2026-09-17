@@ -1,0 +1,73 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,100.0%,"Array, Dynamic Programming",6_months
+1711,https://leetcode.com/problems/count-good-meals,Count Good Meals,Medium,,100.0%,"Array, Hash Table",6_months
+3169,https://leetcode.com/problems/count-days-without-meetings,Count Days Without Meetings,Medium,,89.1%,"Array, Sorting",6_months
+2943,https://leetcode.com/problems/maximize-area-of-square-hole-in-grid,Maximize Area of Square Hole in Grid,Medium,,89.1%,"Array, Sorting",6_months
+96,https://leetcode.com/problems/unique-binary-search-trees,Unique Binary Search Trees,Medium,,89.1%,"Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",6_months
+1711,https://leetcode.com/problems/count-good-meals,Count Good Meals,Medium,,100.0%,"Array, Hash Table",more_than_6m
+496,https://leetcode.com/problems/next-greater-element-i,Next Greater Element I,Easy,,94.8%,"Array, Hash Table, Stack, Monotonic Stack",more_than_6m
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,88.4%,"Hash Table, Math, Two Pointers",more_than_6m
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,80.3%,"Array, Two Pointers, Sorting",more_than_6m
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,80.3%,"Hash Table, Math, String",more_than_6m
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,80.3%,"Array, Stack, Monotonic Stack",more_than_6m
+888,https://leetcode.com/problems/fair-candy-swap,Fair Candy Swap,Easy,,80.3%,"Array, Hash Table, Binary Search, Sorting",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,80.3%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,80.3%,"String, Dynamic Programming",more_than_6m
+115,https://leetcode.com/problems/distinct-subsequences,Distinct Subsequences,Hard,,80.3%,"String, Dynamic Programming",more_than_6m
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,68.7%,"Array, Binary Search, Dynamic Programming, Sorting",more_than_6m
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,68.7%,"Array, Two Pointers, Sorting",more_than_6m
+1413,https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum,Minimum Value to Get Positive Step by Step Sum,Easy,,68.7%,"Array, Prefix Sum",more_than_6m
+2943,https://leetcode.com/problems/maximize-area-of-square-hole-in-grid,Maximize Area of Square Hole in Grid,Medium,,68.7%,"Array, Sorting",more_than_6m
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,68.7%,"Array, Binary Search, Divide and Conquer",more_than_6m
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,68.7%,"Array, Hash Table, Prefix Sum",more_than_6m
+1174,https://leetcode.com/problems/immediate-food-delivery-ii,Immediate Food Delivery II,Medium,,68.7%,Database,more_than_6m
+1717,https://leetcode.com/problems/maximum-score-from-removing-substrings,Maximum Score From Removing Substrings,Medium,,68.7%,"String, Stack, Greedy",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,68.7%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,68.7%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",more_than_6m
+1986,https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks,Minimum Number of Work Sessions to Finish the Tasks,Medium,,68.7%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",more_than_6m
+1029,https://leetcode.com/problems/two-city-scheduling,Two City Scheduling,Medium,,68.7%,"Array, Greedy, Sorting",more_than_6m
+371,https://leetcode.com/problems/sum-of-two-integers,Sum of Two Integers,Medium,,68.7%,"Math, Bit Manipulation",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,68.7%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,68.7%,"Hash Table, String, Sliding Window",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,68.7%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,68.7%,"Two Pointers, String, Dynamic Programming",more_than_6m
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,68.7%,"Array, Hash Table, Union-Find",more_than_6m
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,68.7%,"Array, Binary Search",more_than_6m
+152,https://leetcode.com/problems/maximum-product-subarray,Maximum Product Subarray,Medium,,68.7%,"Array, Dynamic Programming",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,68.7%,"Hash Table, String, Sliding Window",more_than_6m
+2943,https://leetcode.com/problems/maximize-area-of-square-hole-in-grid,Maximize Area of Square Hole in Grid,Medium,,100.0%,"Array, Sorting",all
+1413,https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum,Minimum Value to Get Positive Step by Step Sum,Easy,,95.5%,"Array, Prefix Sum",all
+1711,https://leetcode.com/problems/count-good-meals,Count Good Meals,Medium,,93.0%,"Array, Hash Table",all
+496,https://leetcode.com/problems/next-greater-element-i,Next Greater Element I,Easy,,78.6%,"Array, Hash Table, Stack, Monotonic Stack",all
+202,https://leetcode.com/problems/happy-number,Happy Number,Easy,,78.6%,"Hash Table, Math, Two Pointers",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,73.1%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+72,https://leetcode.com/problems/edit-distance,Edit Distance,Medium,,73.1%,"String, Dynamic Programming",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,73.1%,"Array, Dynamic Programming",all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,66.1%,"Array, Two Pointers, Sorting",all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,66.1%,"Hash Table, Math, String",all
+739,https://leetcode.com/problems/daily-temperatures,Daily Temperatures,Medium,,66.1%,"Array, Stack, Monotonic Stack",all
+888,https://leetcode.com/problems/fair-candy-swap,Fair Candy Swap,Easy,,66.1%,"Array, Hash Table, Binary Search, Sorting",all
+76,https://leetcode.com/problems/minimum-window-substring,Minimum Window Substring,Hard,,66.1%,"Hash Table, String, Sliding Window",all
+875,https://leetcode.com/problems/koko-eating-bananas,Koko Eating Bananas,Medium,,66.1%,"Array, Binary Search",all
+115,https://leetcode.com/problems/distinct-subsequences,Distinct Subsequences,Hard,,66.1%,"String, Dynamic Programming",all
+96,https://leetcode.com/problems/unique-binary-search-trees,Unique Binary Search Trees,Medium,,66.1%,"Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree",all
+3169,https://leetcode.com/problems/count-days-without-meetings,Count Days Without Meetings,Medium,,66.1%,"Array, Sorting",all
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,66.1%,"Array, Hash Table, Union-Find",all
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,56.2%,"Array, Two Pointers, Sorting",all
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,56.2%,"Array, Binary Search, Dynamic Programming, Sorting",all
+41,https://leetcode.com/problems/first-missing-positive,First Missing Positive,Hard,,56.2%,"Array, Hash Table",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,56.2%,"Array, Hash Table, Prefix Sum",all
+4,https://leetcode.com/problems/median-of-two-sorted-arrays,Median of Two Sorted Arrays,Hard,,56.2%,"Array, Binary Search, Divide and Conquer",all
+1174,https://leetcode.com/problems/immediate-food-delivery-ii,Immediate Food Delivery II,Medium,,56.2%,Database,all
+1717,https://leetcode.com/problems/maximum-score-from-removing-substrings,Maximum Score From Removing Substrings,Medium,,56.2%,"String, Stack, Greedy",all
+973,https://leetcode.com/problems/k-closest-points-to-origin,K Closest Points to Origin,Medium,,56.2%,"Array, Math, Divide and Conquer, Geometry, Sorting, Heap (Priority Queue), Quickselect",all
+1986,https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks,Minimum Number of Work Sessions to Finish the Tasks,Medium,,56.2%,"Array, Dynamic Programming, Backtracking, Bit Manipulation, Bitmask",all
+1029,https://leetcode.com/problems/two-city-scheduling,Two City Scheduling,Medium,,56.2%,"Array, Greedy, Sorting",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,56.2%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+152,https://leetcode.com/problems/maximum-product-subarray,Maximum Product Subarray,Medium,,56.2%,"Array, Dynamic Programming",all
+371,https://leetcode.com/problems/sum-of-two-integers,Sum of Two Integers,Medium,,56.2%,"Math, Bit Manipulation",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,56.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,56.2%,"Array, Divide and Conquer, Dynamic Programming",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,56.2%,"Hash Table, String, Sliding Window",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,56.2%,"Two Pointers, String, Dynamic Programming",all
+355,https://leetcode.com/problems/design-twitter,Design Twitter,Medium,,56.2%,"Hash Table, Linked List, Design, Heap (Priority Queue)",all

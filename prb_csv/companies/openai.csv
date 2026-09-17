@@ -1,0 +1,39 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",30_days
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",3_months
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",3_months
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,100.0%,"Array, Breadth-First Search, Matrix",6_months
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,95.7%,"Array, Hash Table, Design, Simulation",6_months
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,83.8%,"String, Bit Manipulation",6_months
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,74.3%,"Array, Binary Search, Design, Queue, Data Stream",6_months
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,74.3%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+2408,https://leetcode.com/problems/design-sql,Design SQL,Medium,,100.0%,"Array, Hash Table, String, Design",more_than_6m
+271,https://leetcode.com/problems/encode-and-decode-strings,Encode and Decode Strings,Medium,,89.3%,"Array, String, Design",more_than_6m
+341,https://leetcode.com/problems/flatten-nested-list-iterator,Flatten Nested List Iterator,Medium,,85.9%,"Stack, Tree, Depth-First Search, Design, Queue, Iterator",more_than_6m
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,81.9%,"Array, Hash Table, Design, Simulation",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,76.8%,"Hash Table, String, Binary Search, Design",more_than_6m
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,70.0%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",more_than_6m
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,70.0%,"String, Bit Manipulation",more_than_6m
+71,https://leetcode.com/problems/simplify-path,Simplify Path,Medium,,59.6%,"String, Stack",more_than_6m
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,51.4%,"Depth-First Search, Breadth-First Search, Concurrency",more_than_6m
+2373,https://leetcode.com/problems/largest-local-values-in-a-matrix,Largest Local Values in a Matrix,Easy,,51.4%,"Array, Matrix",more_than_6m
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,51.4%,"Array, Stack, Simulation",more_than_6m
+3484,https://leetcode.com/problems/design-spreadsheet,Design Spreadsheet,Medium,,51.4%,"Array, Hash Table, String, Design, Matrix",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,51.4%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+2408,https://leetcode.com/problems/design-sql,Design SQL,Medium,,100.0%,"Array, Hash Table, String, Design",all
+2502,https://leetcode.com/problems/design-memory-allocator,Design Memory Allocator,Medium,,90.6%,"Array, Hash Table, Design, Simulation",all
+271,https://leetcode.com/problems/encode-and-decode-strings,Encode and Decode Strings,Medium,,89.1%,"Array, String, Design",all
+341,https://leetcode.com/problems/flatten-nested-list-iterator,Flatten Nested List Iterator,Medium,,85.6%,"Stack, Tree, Depth-First Search, Design, Queue, Iterator",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,79.0%,"Hash Table, String, Binary Search, Design",all
+751,https://leetcode.com/problems/ip-to-cidr,IP to CIDR,Medium,,79.0%,"String, Bit Manipulation",all
+994,https://leetcode.com/problems/rotting-oranges,Rotting Oranges,Medium,,76.2%,"Array, Breadth-First Search, Matrix",all
+631,https://leetcode.com/problems/design-excel-sum-formula,Design Excel Sum Formula,Hard,,69.2%,"Array, Hash Table, String, Graph Theory, Design, Topological Sort, Matrix",all
+71,https://leetcode.com/problems/simplify-path,Simplify Path,Medium,,64.6%,"String, Stack",all
+1242,https://leetcode.com/problems/web-crawler-multithreaded,Web Crawler Multithreaded,Medium,,50.2%,"Depth-First Search, Breadth-First Search, Concurrency",all
+2373,https://leetcode.com/problems/largest-local-values-in-a-matrix,Largest Local Values in a Matrix,Easy,,50.2%,"Array, Matrix",all
+735,https://leetcode.com/problems/asteroid-collision,Asteroid Collision,Medium,,50.2%,"Array, Stack, Simulation",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,50.2%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+3484,https://leetcode.com/problems/design-spreadsheet,Design Spreadsheet,Medium,,50.2%,"Array, Hash Table, String, Design, Matrix",all
+362,https://leetcode.com/problems/design-hit-counter,Design Hit Counter,Medium,,50.2%,"Array, Binary Search, Design, Queue, Data Stream",all
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,50.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,50.2%,"Array, Hash Table, Binary Search, Design",all

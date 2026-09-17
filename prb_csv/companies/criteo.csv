@@ -1,0 +1,18 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,100.0%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",3_months
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,90.5%,"Array, Math, Binary Search, Prefix Sum, Randomized",3_months
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,100.0%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",6_months
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,84.3%,"Array, Math, Binary Search, Prefix Sum, Randomized",6_months
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,84.3%,"Array, Hash Table",6_months
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,100.0%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",more_than_6m
+733,https://leetcode.com/problems/flood-fill,Flood Fill,Easy,,89.6%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,89.6%,"String, Stack",more_than_6m
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,89.6%,"Array, Two Pointers, Sorting",more_than_6m
+349,https://leetcode.com/problems/intersection-of-two-arrays,Intersection of Two Arrays,Easy,,100.0%,"Array, Hash Table, Two Pointers, Binary Search, Sorting",all
+733,https://leetcode.com/problems/flood-fill,Flood Fill,Easy,,81.2%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+1,https://leetcode.com/problems/two-sum,Two Sum,Easy,,81.2%,"Array, Hash Table",all
+528,https://leetcode.com/problems/random-pick-with-weight,Random Pick with Weight,Medium,,81.2%,"Array, Math, Binary Search, Prefix Sum, Randomized",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,72.2%,"String, Stack",all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,72.2%,"Array, Two Pointers, Sorting",all
+383,https://leetcode.com/problems/ransom-note,Ransom Note,Easy,,72.2%,"Hash Table, String, Counting",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,72.2%,"Array, Binary Search",all

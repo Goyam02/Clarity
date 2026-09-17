@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,100.0%,"Array, Divide and Conquer, Dynamic Programming",6_months
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,82.3%,"Array, Hash Table, Matrix",6_months
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,100.0%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+71,https://leetcode.com/problems/simplify-path,Simplify Path,Medium,,70.1%,"String, Stack",more_than_6m
+304,https://leetcode.com/problems/range-sum-query-2d-immutable,Range Sum Query 2D - Immutable,Medium,,62.2%,"Array, Design, Matrix, Prefix Sum",more_than_6m
+120,https://leetcode.com/problems/triangle,Triangle,Medium,,62.2%,"Array, Dynamic Programming",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,100.0%,"Array, Divide and Conquer, Dynamic Programming",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,69.0%,"Array, Hash Table, Matrix",all
+71,https://leetcode.com/problems/simplify-path,Simplify Path,Medium,,63.6%,"String, Stack",all
+304,https://leetcode.com/problems/range-sum-query-2d-immutable,Range Sum Query 2D - Immutable,Medium,,63.6%,"Array, Design, Matrix, Prefix Sum",all
+120,https://leetcode.com/problems/triangle,Triangle,Medium,,56.0%,"Array, Dynamic Programming",all
+49,https://leetcode.com/problems/group-anagrams,Group Anagrams,Medium,,56.0%,"Array, Hash Table, String, Sorting",all

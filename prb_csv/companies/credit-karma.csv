@@ -1,0 +1,4 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,100.0%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+738,https://leetcode.com/problems/monotone-increasing-digits,Monotone Increasing Digits,Medium,,90.6%,"Math, Greedy",more_than_6m
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,90.6%,"Math, String, Stack",more_than_6m

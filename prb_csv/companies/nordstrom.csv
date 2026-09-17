@@ -1,0 +1,9 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,82.5%,"Array, Matrix, Simulation",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,82.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+1418,https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant,Display Table of Food Orders in a Restaurant,Medium,,82.5%,"Array, Hash Table, String, Sorting, Ordered Set",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,100.0%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,82.5%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,82.5%,"Array, Matrix, Simulation",all
+1418,https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant,Display Table of Food Orders in a Restaurant,Medium,,82.5%,"Array, Hash Table, String, Sorting, Ordered Set",all

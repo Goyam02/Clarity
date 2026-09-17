@@ -1,0 +1,43 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+986,https://leetcode.com/problems/interval-list-intersections,Interval List Intersections,Medium,,100.0%,"Array, Two Pointers, Sweep Line",3_months
+986,https://leetcode.com/problems/interval-list-intersections,Interval List Intersections,Medium,,100.0%,"Array, Two Pointers, Sweep Line",6_months
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,88.1%,"Array, Binary Search, Dynamic Programming, Sorting",6_months
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,88.1%,"Array, Dynamic Programming, Greedy, Sorting",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,78.7%,"Hash Table, String, Binary Search, Design",6_months
+986,https://leetcode.com/problems/interval-list-intersections,Interval List Intersections,Medium,,100.0%,"Array, Two Pointers, Sweep Line",more_than_6m
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,100.0%,"Array, Binary Search, Dynamic Programming, Sorting",more_than_6m
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,95.3%,"Array, Hash Table, Binary Search, Design",more_than_6m
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,95.3%,"Math, String, Stack",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,95.3%,"Hash Table, String, Binary Search, Design",more_than_6m
+1233,https://leetcode.com/problems/remove-sub-folders-from-the-filesystem,Remove Sub-Folders from the Filesystem,Medium,,95.3%,"Array, String, Depth-First Search, Trie",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,95.3%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+867,https://leetcode.com/problems/transpose-matrix,Transpose Matrix,Easy,,89.6%,"Array, Matrix, Simulation",more_than_6m
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,82.1%,"Array, Dynamic Programming, Greedy, Sorting",more_than_6m
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,82.1%,"Math, String, Stack, Recursion",more_than_6m
+191,https://leetcode.com/problems/number-of-1-bits,Number of 1 Bits,Easy,,82.1%,"Divide and Conquer, Bit Manipulation",more_than_6m
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,82.1%,"Hash Table, Math, String",more_than_6m
+543,https://leetcode.com/problems/diameter-of-binary-tree,Diameter of Binary Tree,Easy,,71.7%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,71.7%,"Array, Two Pointers, Sorting",more_than_6m
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,71.7%,"Array, Hash Table, Matrix",more_than_6m
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,71.7%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,71.7%,"Array, Sorting",more_than_6m
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,71.7%,"Array, Math, String, Interactive, Game Theory",more_than_6m
+986,https://leetcode.com/problems/interval-list-intersections,Interval List Intersections,Medium,,100.0%,"Array, Two Pointers, Sweep Line",all
+1235,https://leetcode.com/problems/maximum-profit-in-job-scheduling,Maximum Profit in Job Scheduling,Hard,,95.4%,"Array, Binary Search, Dynamic Programming, Sorting",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,89.6%,"Hash Table, String, Binary Search, Design",all
+1146,https://leetcode.com/problems/snapshot-array,Snapshot Array,Medium,,86.1%,"Array, Hash Table, Binary Search, Design",all
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,86.1%,"Array, Dynamic Programming, Greedy, Sorting",all
+227,https://leetcode.com/problems/basic-calculator-ii,Basic Calculator II,Medium,,86.1%,"Math, String, Stack",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,86.1%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+1233,https://leetcode.com/problems/remove-sub-folders-from-the-filesystem,Remove Sub-Folders from the Filesystem,Medium,,81.9%,"Array, String, Depth-First Search, Trie",all
+867,https://leetcode.com/problems/transpose-matrix,Transpose Matrix,Easy,,76.8%,"Array, Matrix, Simulation",all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,76.8%,"Hash Table, Math, String",all
+772,https://leetcode.com/problems/basic-calculator-iii,Basic Calculator III,Hard,,70.2%,"Math, String, Stack, Recursion",all
+191,https://leetcode.com/problems/number-of-1-bits,Number of 1 Bits,Easy,,70.2%,"Divide and Conquer, Bit Manipulation",all
+88,https://leetcode.com/problems/merge-sorted-array,Merge Sorted Array,Easy,,70.2%,"Array, Two Pointers, Sorting",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,70.2%,"Array, Hash Table, Matrix",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,70.2%,"Array, Sorting",all
+843,https://leetcode.com/problems/guess-the-word,Guess the Word,Hard,,60.9%,"Array, Math, String, Interactive, Game Theory",all
+543,https://leetcode.com/problems/diameter-of-binary-tree,Diameter of Binary Tree,Easy,,60.9%,"Tree, Depth-First Search, Binary Tree",all
+460,https://leetcode.com/problems/lfu-cache,LFU Cache,Hard,,60.9%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+23,https://leetcode.com/problems/merge-k-sorted-lists,Merge k Sorted Lists,Hard,,60.9%,"Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort",all

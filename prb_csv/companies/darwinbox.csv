@@ -1,0 +1,13 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+87,https://leetcode.com/problems/scramble-string,Scramble String,Hard,,100.0%,"String, Dynamic Programming",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,79.7%,"Array, Sorting",more_than_6m
+969,https://leetcode.com/problems/pancake-sorting,Pancake Sorting,Medium,,66.2%,"Array, Two Pointers, Greedy, Sorting",more_than_6m
+229,https://leetcode.com/problems/majority-element-ii,Majority Element II,Medium,,58.3%,"Array, Hash Table, Sorting, Counting",more_than_6m
+2518,https://leetcode.com/problems/number-of-great-partitions,Number of Great Partitions,Hard,,58.3%,"Array, Dynamic Programming",more_than_6m
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,58.3%,"Array, Matrix, Simulation",more_than_6m
+87,https://leetcode.com/problems/scramble-string,Scramble String,Hard,,100.0%,"String, Dynamic Programming",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,79.6%,"Array, Sorting",all
+969,https://leetcode.com/problems/pancake-sorting,Pancake Sorting,Medium,,66.1%,"Array, Two Pointers, Greedy, Sorting",all
+54,https://leetcode.com/problems/spiral-matrix,Spiral Matrix,Medium,,58.2%,"Array, Matrix, Simulation",all
+229,https://leetcode.com/problems/majority-element-ii,Majority Element II,Medium,,58.2%,"Array, Hash Table, Sorting, Counting",all
+2518,https://leetcode.com/problems/number-of-great-partitions,Number of Great Partitions,Hard,,58.2%,"Array, Dynamic Programming",all

@@ -1,0 +1,23 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1169,https://leetcode.com/problems/invalid-transactions,Invalid Transactions,Medium,,100.0%,"Array, Hash Table, String, Sorting",6_months
+2303,https://leetcode.com/problems/calculate-amount-paid-in-taxes,Calculate Amount Paid in Taxes,Easy,,100.0%,"Array, Simulation",more_than_6m
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,96.8%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",more_than_6m
+1087,https://leetcode.com/problems/brace-expansion,Brace Expansion,Medium,,93.1%,"String, Backtracking, Stack, Breadth-First Search, Sorting",more_than_6m
+2483,https://leetcode.com/problems/minimum-penalty-for-a-shop,Minimum Penalty for a Shop,Medium,,88.8%,"String, Prefix Sum",more_than_6m
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,88.8%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",more_than_6m
+1169,https://leetcode.com/problems/invalid-transactions,Invalid Transactions,Medium,,88.8%,"Array, Hash Table, String, Sorting",more_than_6m
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,66.9%,"Array, Dynamic Programming, Graph Theory, Topological Sort",more_than_6m
+161,https://leetcode.com/problems/one-edit-distance,One Edit Distance,Medium,,66.9%,"Two Pointers, String",more_than_6m
+2768,https://leetcode.com/problems/number-of-black-blocks,Number of Black Blocks,Medium,,66.9%,"Array, Hash Table, Enumeration",more_than_6m
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,66.9%,"Array, Hash Table, Design, Simulation",more_than_6m
+2483,https://leetcode.com/problems/minimum-penalty-for-a-shop,Minimum Penalty for a Shop,Medium,,100.0%,"String, Prefix Sum",all
+2303,https://leetcode.com/problems/calculate-amount-paid-in-taxes,Calculate Amount Paid in Taxes,Easy,,89.3%,"Array, Simulation",all
+399,https://leetcode.com/problems/evaluate-division,Evaluate Division,Medium,,86.4%,"Array, String, Depth-First Search, Breadth-First Search, Union-Find, Graph Theory, Shortest Path",all
+1169,https://leetcode.com/problems/invalid-transactions,Invalid Transactions,Medium,,86.4%,"Array, Hash Table, String, Sorting",all
+1087,https://leetcode.com/problems/brace-expansion,Brace Expansion,Medium,,83.0%,"String, Backtracking, Stack, Breadth-First Search, Sorting",all
+787,https://leetcode.com/problems/cheapest-flights-within-k-stops,Cheapest Flights Within K Stops,Medium,,79.0%,"Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path",all
+2050,https://leetcode.com/problems/parallel-courses-iii,Parallel Courses III,Hard,,58.8%,"Array, Dynamic Programming, Graph Theory, Topological Sort",all
+161,https://leetcode.com/problems/one-edit-distance,One Edit Distance,Medium,,58.8%,"Two Pointers, String",all
+2768,https://leetcode.com/problems/number-of-black-blocks,Number of Black Blocks,Medium,,58.8%,"Array, Hash Table, Enumeration",all
+1604,https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period,Alert Using Same Key-Card Three or More Times in a One Hour Period,Medium,,58.8%,"Array, Hash Table, String, Sorting",all
+2043,https://leetcode.com/problems/simple-bank-system,Simple Bank System,Medium,,58.8%,"Array, Hash Table, Design, Simulation",all

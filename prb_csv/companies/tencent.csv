@@ -1,0 +1,14 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",6_months
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",more_than_6m
+625,https://leetcode.com/problems/minimum-factorization,Minimum Factorization,Medium,,64.0%,"Math, Greedy",more_than_6m
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,64.0%,"Array, Dynamic Programming, Memoization",more_than_6m
+184,https://leetcode.com/problems/department-highest-salary,Department Highest Salary,Medium,,64.0%,Database,more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,64.0%,"String, Stack",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,64.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+394,https://leetcode.com/problems/decode-string,Decode String,Medium,,100.0%,"String, Stack, Recursion",all
+546,https://leetcode.com/problems/remove-boxes,Remove Boxes,Hard,,94.4%,"Array, Dynamic Programming, Memoization",all
+625,https://leetcode.com/problems/minimum-factorization,Minimum Factorization,Medium,,94.4%,"Math, Greedy",all
+184,https://leetcode.com/problems/department-highest-salary,Department Highest Salary,Medium,,60.3%,Database,all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,60.3%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,60.3%,"String, Stack",all

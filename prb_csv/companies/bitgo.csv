@@ -1,0 +1,28 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+134,https://leetcode.com/problems/gas-station,Gas Station,Medium,,100.0%,"Array, Greedy",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,86.5%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,86.5%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+815,https://leetcode.com/problems/bus-routes,Bus Routes,Hard,,79.6%,"Array, Hash Table, Breadth-First Search",more_than_6m
+2060,https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings,Check if an Original String Exists Given Two Encoded Strings,Hard,,69.9%,"String, Dynamic Programming",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,69.9%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,69.9%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",more_than_6m
+236,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree,Lowest Common Ancestor of a Binary Tree,Medium,,69.9%,"Tree, Depth-First Search, Binary Tree",more_than_6m
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,69.9%,"Array, Hash Table, Prefix Sum",more_than_6m
+84,https://leetcode.com/problems/largest-rectangle-in-histogram,Largest Rectangle in Histogram,Hard,,69.9%,"Array, Stack, Monotonic Stack",more_than_6m
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,69.9%,"Two Pointers, String, Dynamic Programming",more_than_6m
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,69.9%,"Hash Table, String, Sliding Window",more_than_6m
+2060,https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings,Check if an Original String Exists Given Two Encoded Strings,Hard,,100.0%,"String, Dynamic Programming",all
+134,https://leetcode.com/problems/gas-station,Gas Station,Medium,,91.9%,"Array, Greedy",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,84.2%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,84.2%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+815,https://leetcode.com/problems/bus-routes,Bus Routes,Hard,,72.6%,"Array, Hash Table, Breadth-First Search",all
+5,https://leetcode.com/problems/longest-palindromic-substring,Longest Palindromic Substring,Medium,,72.6%,"Two Pointers, String, Dynamic Programming",all
+340,https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters,Longest Substring with At Most K Distinct Characters,Medium,,63.4%,"Hash Table, String, Sliding Window",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,63.4%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+236,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree,Lowest Common Ancestor of a Binary Tree,Medium,,63.4%,"Tree, Depth-First Search, Binary Tree",all
+560,https://leetcode.com/problems/subarray-sum-equals-k,Subarray Sum Equals K,Medium,,63.4%,"Array, Hash Table, Prefix Sum",all
+84,https://leetcode.com/problems/largest-rectangle-in-histogram,Largest Rectangle in Histogram,Hard,,63.4%,"Array, Stack, Monotonic Stack",all
+207,https://leetcode.com/problems/course-schedule,Course Schedule,Medium,,63.4%,"Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort",all
+3,https://leetcode.com/problems/longest-substring-without-repeating-characters,Longest Substring Without Repeating Characters,Medium,,63.4%,"Hash Table, String, Sliding Window",all
+987,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree,Vertical Order Traversal of a Binary Tree,Hard,,63.4%,"Hash Table, Tree, Depth-First Search, Breadth-First Search, Sorting, Binary Tree",all
+128,https://leetcode.com/problems/longest-consecutive-sequence,Longest Consecutive Sequence,Medium,,63.4%,"Array, Hash Table, Union-Find",all

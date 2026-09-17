@@ -1,0 +1,38 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1701,https://leetcode.com/problems/average-waiting-time,Average Waiting Time,Medium,,100.0%,"Array, Simulation",30_days
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,100.0%,"Array, Binary Search",3_months
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,100.0%,"Array, Two Pointers, Sorting",3_months
+1701,https://leetcode.com/problems/average-waiting-time,Average Waiting Time,Medium,,100.0%,"Array, Simulation",3_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",6_months
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,100.0%,"Array, Binary Search",6_months
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,90.1%,"Array, Two Pointers, Sorting",6_months
+1701,https://leetcode.com/problems/average-waiting-time,Average Waiting Time,Medium,,90.1%,"Array, Simulation",6_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",more_than_6m
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,72.3%,"Array, Hash Table, Matrix",more_than_6m
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,72.3%,"String, Dynamic Programming, Greedy, Recursion",more_than_6m
+65,https://leetcode.com/problems/valid-number,Valid Number,Hard,,63.6%,String,more_than_6m
+452,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons,Minimum Number of Arrows to Burst Balloons,Medium,,63.6%,"Array, Greedy, Sorting",more_than_6m
+1353,https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended,Maximum Number of Events That Can Be Attended,Medium,,63.6%,"Array, Greedy, Sorting, Heap (Priority Queue)",more_than_6m
+35,https://leetcode.com/problems/search-insert-position,Search Insert Position,Easy,,63.6%,"Array, Binary Search",more_than_6m
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,63.6%,"Array, Hash Table, Matrix",more_than_6m
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,63.6%,"Array, Dynamic Programming, Greedy, Sorting",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,63.6%,"Array, Sorting",more_than_6m
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,63.6%,"Array, Dynamic Programming",more_than_6m
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,63.6%,"Array, String, Backtracking, Trie, Matrix",more_than_6m
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,63.6%,"Array, Two Pointers, Sorting",more_than_6m
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,63.6%,"Array, Binary Search",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",all
+2133,https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers,Check if Every Row and Column Contains All Numbers,Easy,,96.4%,"Array, Hash Table, Matrix",all
+34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Medium,,79.6%,"Array, Binary Search",all
+977,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Easy,,74.9%,"Array, Two Pointers, Sorting",all
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,68.7%,"String, Dynamic Programming, Greedy, Recursion",all
+121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock,Best Time to Buy and Sell Stock,Easy,,60.1%,"Array, Dynamic Programming",all
+65,https://leetcode.com/problems/valid-number,Valid Number,Hard,,60.1%,String,all
+452,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons,Minimum Number of Arrows to Burst Balloons,Medium,,60.1%,"Array, Greedy, Sorting",all
+1353,https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended,Maximum Number of Events That Can Be Attended,Medium,,60.1%,"Array, Greedy, Sorting, Heap (Priority Queue)",all
+35,https://leetcode.com/problems/search-insert-position,Search Insert Position,Easy,,60.1%,"Array, Binary Search",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,60.1%,"Array, Hash Table, Matrix",all
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,60.1%,"Array, Dynamic Programming, Greedy, Sorting",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,60.1%,"Array, Sorting",all
+212,https://leetcode.com/problems/word-search-ii,Word Search II,Hard,,60.1%,"Array, String, Backtracking, Trie, Matrix",all
+1701,https://leetcode.com/problems/average-waiting-time,Average Waiting Time,Medium,,60.1%,"Array, Simulation",all

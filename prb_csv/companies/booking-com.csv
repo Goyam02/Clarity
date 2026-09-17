@@ -1,0 +1,33 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+2512,https://leetcode.com/problems/reward-top-k-students,Reward Top K Students,Medium,,100.0%,"Array, Hash Table, String, Sorting, Heap (Priority Queue)",30_days
+2512,https://leetcode.com/problems/reward-top-k-students,Reward Top K Students,Medium,,100.0%,"Array, Hash Table, String, Sorting, Heap (Priority Queue)",3_months
+2512,https://leetcode.com/problems/reward-top-k-students,Reward Top K Students,Medium,,100.0%,"Array, Hash Table, String, Sorting, Heap (Priority Queue)",6_months
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,79.0%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",6_months
+2512,https://leetcode.com/problems/reward-top-k-students,Reward Top K Students,Medium,,100.0%,"Array, Hash Table, String, Sorting, Heap (Priority Queue)",more_than_6m
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,81.1%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",more_than_6m
+332,https://leetcode.com/problems/reconstruct-itinerary,Reconstruct Itinerary,Hard,,81.1%,"Array, String, Depth-First Search, Graph Theory, Sorting, Heap (Priority Queue), Eulerian Circuit",more_than_6m
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,81.1%,"Hash Table, Math, String",more_than_6m
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,81.1%,"Array, Backtracking",more_than_6m
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,74.5%,"Array, Dynamic Programming, Matrix",more_than_6m
+2032,https://leetcode.com/problems/two-out-of-three,Two Out of Three,Easy,,74.5%,"Array, Hash Table, Bit Manipulation",more_than_6m
+1948,https://leetcode.com/problems/delete-duplicate-folders-in-system,Delete Duplicate Folders in System,Hard,,74.5%,"Array, Hash Table, String, Depth-First Search, Trie, Sorting, Hash Function",more_than_6m
+2146,https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range,K Highest Ranked Items Within a Price Range,Medium,,65.0%,"Array, Breadth-First Search, Sorting, Heap (Priority Queue), Matrix",more_than_6m
+1034,https://leetcode.com/problems/coloring-a-border,Coloring A Border,Medium,,65.0%,"Array, Depth-First Search, Breadth-First Search, Matrix",more_than_6m
+2159,https://leetcode.com/problems/order-two-columns-independently,Order Two Columns Independently,Medium,,65.0%,Database,more_than_6m
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,65.0%,"Hash Table, Math, String",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,65.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,65.0%,"String, Dynamic Programming, Stack",more_than_6m
+2512,https://leetcode.com/problems/reward-top-k-students,Reward Top K Students,Medium,,100.0%,"Array, Hash Table, String, Sorting, Heap (Priority Queue)",all
+1948,https://leetcode.com/problems/delete-duplicate-folders-in-system,Delete Duplicate Folders in System,Hard,,85.8%,"Array, Hash Table, String, Depth-First Search, Trie, Sorting, Hash Function",all
+2032,https://leetcode.com/problems/two-out-of-three,Two Out of Three,Easy,,85.8%,"Array, Hash Table, Bit Manipulation",all
+1034,https://leetcode.com/problems/coloring-a-border,Coloring A Border,Medium,,83.8%,"Array, Depth-First Search, Breadth-First Search, Matrix",all
+2146,https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range,K Highest Ranked Items Within a Price Range,Medium,,83.8%,"Array, Breadth-First Search, Sorting, Heap (Priority Queue), Matrix",all
+2159,https://leetcode.com/problems/order-two-columns-independently,Order Two Columns Independently,Medium,,83.8%,Database,all
+239,https://leetcode.com/problems/sliding-window-maximum,Sliding Window Maximum,Hard,,73.3%,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",all
+221,https://leetcode.com/problems/maximal-square,Maximal Square,Medium,,65.0%,"Array, Dynamic Programming, Matrix",all
+332,https://leetcode.com/problems/reconstruct-itinerary,Reconstruct Itinerary,Hard,,65.0%,"Array, String, Depth-First Search, Graph Theory, Sorting, Heap (Priority Queue), Eulerian Circuit",all
+12,https://leetcode.com/problems/integer-to-roman,Integer to Roman,Medium,,65.0%,"Hash Table, Math, String",all
+46,https://leetcode.com/problems/permutations,Permutations,Medium,,65.0%,"Array, Backtracking",all
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,59.1%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+13,https://leetcode.com/problems/roman-to-integer,Roman to Integer,Easy,,50.8%,"Hash Table, Math, String",all
+32,https://leetcode.com/problems/longest-valid-parentheses,Longest Valid Parentheses,Hard,,50.8%,"String, Dynamic Programming, Stack",all

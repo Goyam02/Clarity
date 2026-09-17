@@ -1,0 +1,71 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,100.0%,"Array, Dynamic Programming, Greedy, Sorting",30_days
+3144,https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency,Minimum Substring Partition of Equal Character Frequency,Medium,,100.0%,"Hash Table, String, Dynamic Programming, Counting",30_days
+2054,https://leetcode.com/problems/two-best-non-overlapping-events,Two Best Non-Overlapping Events,Medium,,90.2%,"Array, Binary Search, Dynamic Programming, Sorting, Heap (Priority Queue)",30_days
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,100.0%,"Array, Dynamic Programming, Greedy, Sorting",3_months
+2054,https://leetcode.com/problems/two-best-non-overlapping-events,Two Best Non-Overlapping Events,Medium,,100.0%,"Array, Binary Search, Dynamic Programming, Sorting, Heap (Priority Queue)",3_months
+3144,https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency,Minimum Substring Partition of Equal Character Frequency,Medium,,100.0%,"Hash Table, String, Dynamic Programming, Counting",3_months
+35,https://leetcode.com/problems/search-insert-position,Search Insert Position,Easy,,89.6%,"Array, Binary Search",3_months
+1028,https://leetcode.com/problems/recover-a-tree-from-preorder-traversal,Recover a Tree From Preorder Traversal,Hard,,89.6%,"String, Tree, Depth-First Search, Binary Tree",3_months
+35,https://leetcode.com/problems/search-insert-position,Search Insert Position,Easy,,100.0%,"Array, Binary Search",6_months
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,100.0%,"Array, Dynamic Programming, Greedy, Sorting",6_months
+2054,https://leetcode.com/problems/two-best-non-overlapping-events,Two Best Non-Overlapping Events,Medium,,94.4%,"Array, Binary Search, Dynamic Programming, Sorting, Heap (Priority Queue)",6_months
+3144,https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency,Minimum Substring Partition of Equal Character Frequency,Medium,,87.2%,"Hash Table, String, Dynamic Programming, Counting",6_months
+966,https://leetcode.com/problems/vowel-spellchecker,Vowel Spellchecker,Medium,,77.0%,"Array, Hash Table, String",6_months
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,77.0%,"String, Stack",6_months
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,77.0%,"Array, Hash Table, Math, Design, Randomized",6_months
+1028,https://leetcode.com/problems/recover-a-tree-from-preorder-traversal,Recover a Tree From Preorder Traversal,Hard,,77.0%,"String, Tree, Depth-First Search, Binary Tree",6_months
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",more_than_6m
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,90.0%,"Array, Binary Search",more_than_6m
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,88.7%,"String, Stack",more_than_6m
+1209,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii,Remove All Adjacent Duplicates in String II,Medium,,85.8%,"String, Stack",more_than_6m
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,85.8%,"Array, Hash Table, Math, Design, Randomized",more_than_6m
+966,https://leetcode.com/problems/vowel-spellchecker,Vowel Spellchecker,Medium,,85.8%,"Array, Hash Table, String",more_than_6m
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,82.4%,"Math, Dynamic Programming, Memoization",more_than_6m
+187,https://leetcode.com/problems/repeated-dna-sequences,Repeated DNA Sequences,Medium,,80.4%,"Hash Table, String, Bit Manipulation, Sliding Window, Rolling Hash, Hash Function",more_than_6m
+69,https://leetcode.com/problems/sqrtx,Sqrt(x),Easy,,75.8%,"Math, Binary Search",more_than_6m
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,73.1%,"String, Dynamic Programming, Backtracking",more_than_6m
+507,https://leetcode.com/problems/perfect-number,Perfect Number,Easy,,69.9%,Math,more_than_6m
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,69.9%,"Hash Table, Design, Data Stream",more_than_6m
+404,https://leetcode.com/problems/sum-of-left-leaves,Sum of Left Leaves,Easy,,69.9%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",more_than_6m
+150,https://leetcode.com/problems/evaluate-reverse-polish-notation,Evaluate Reverse Polish Notation,Medium,,61.6%,"Array, Math, Stack",more_than_6m
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,55.7%,"Array, String, Backtracking, Depth-First Search, Matrix",more_than_6m
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,55.7%,"Hash Table, String, Design, Trie",more_than_6m
+1461,https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k,Check If a String Contains All Binary Codes of Size K,Medium,,55.7%,"Hash Table, String, Bit Manipulation, Rolling Hash, Hash Function",more_than_6m
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,47.5%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",more_than_6m
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,47.5%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",more_than_6m
+761,https://leetcode.com/problems/special-binary-string,Special Binary String,Hard,,47.5%,"String, Divide and Conquer, Sorting",more_than_6m
+2075,https://leetcode.com/problems/decode-the-slanted-ciphertext,Decode the Slanted Ciphertext,Medium,,47.5%,"String, Simulation",more_than_6m
+3035,https://leetcode.com/problems/maximum-palindromes-after-operations,Maximum Palindromes After Operations,Medium,,47.5%,"Array, Hash Table, String, Greedy, Sorting, Counting",more_than_6m
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,47.5%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",more_than_6m
+62,https://leetcode.com/problems/unique-paths,Unique Paths,Medium,,47.5%,"Math, Dynamic Programming, Combinatorics",more_than_6m
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",all
+1047,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Easy,,91.1%,"String, Stack",all
+33,https://leetcode.com/problems/search-in-rotated-sorted-array,Search in Rotated Sorted Array,Medium,,89.8%,"Array, Binary Search",all
+966,https://leetcode.com/problems/vowel-spellchecker,Vowel Spellchecker,Medium,,88.5%,"Array, Hash Table, String",all
+380,https://leetcode.com/problems/insert-delete-getrandom-o1,Insert Delete GetRandom O(1),Medium,,88.5%,"Array, Hash Table, Math, Design, Randomized",all
+1209,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii,Remove All Adjacent Duplicates in String II,Medium,,87.0%,"String, Stack",all
+70,https://leetcode.com/problems/climbing-stairs,Climbing Stairs,Easy,,83.8%,"Math, Dynamic Programming, Memoization",all
+187,https://leetcode.com/problems/repeated-dna-sequences,Repeated DNA Sequences,Medium,,80.0%,"Hash Table, String, Bit Manipulation, Sliding Window, Rolling Hash, Hash Function",all
+69,https://leetcode.com/problems/sqrtx,Sqrt(x),Easy,,77.8%,"Math, Binary Search",all
+22,https://leetcode.com/problems/generate-parentheses,Generate Parentheses,Medium,,75.3%,"String, Dynamic Programming, Backtracking",all
+507,https://leetcode.com/problems/perfect-number,Perfect Number,Easy,,72.5%,Math,all
+359,https://leetcode.com/problems/logger-rate-limiter,Logger Rate Limiter,Easy,,72.5%,"Hash Table, Design, Data Stream",all
+404,https://leetcode.com/problems/sum-of-left-leaves,Sum of Left Leaves,Easy,,72.5%,"Tree, Depth-First Search, Breadth-First Search, Binary Tree",all
+35,https://leetcode.com/problems/search-insert-position,Search Insert Position,Easy,,65.5%,"Array, Binary Search",all
+435,https://leetcode.com/problems/non-overlapping-intervals,Non-overlapping Intervals,Medium,,65.5%,"Array, Dynamic Programming, Greedy, Sorting",all
+150,https://leetcode.com/problems/evaluate-reverse-polish-notation,Evaluate Reverse Polish Notation,Medium,,60.8%,"Array, Math, Stack",all
+2054,https://leetcode.com/problems/two-best-non-overlapping-events,Two Best Non-Overlapping Events,Medium,,60.8%,"Array, Binary Search, Dynamic Programming, Sorting, Heap (Priority Queue)",all
+140,https://leetcode.com/problems/word-break-ii,Word Break II,Hard,,54.8%,"Array, Hash Table, String, Dynamic Programming, Backtracking, Trie, Memoization",all
+79,https://leetcode.com/problems/word-search,Word Search,Medium,,54.8%,"Array, String, Backtracking, Depth-First Search, Matrix",all
+208,https://leetcode.com/problems/implement-trie-prefix-tree,Implement Trie (Prefix Tree),Medium,,54.8%,"Hash Table, String, Design, Trie",all
+1461,https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k,Check If a String Contains All Binary Codes of Size K,Medium,,54.8%,"Hash Table, String, Bit Manipulation, Rolling Hash, Hash Function",all
+3144,https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency,Minimum Substring Partition of Equal Character Frequency,Medium,,54.8%,"Hash Table, String, Dynamic Programming, Counting",all
+139,https://leetcode.com/problems/word-break,Word Break,Medium,,46.4%,"Array, Hash Table, String, Dynamic Programming, Trie, Memoization",all
+200,https://leetcode.com/problems/number-of-islands,Number of Islands,Medium,,46.4%,"Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix",all
+761,https://leetcode.com/problems/special-binary-string,Special Binary String,Hard,,46.4%,"String, Divide and Conquer, Sorting",all
+2075,https://leetcode.com/problems/decode-the-slanted-ciphertext,Decode the Slanted Ciphertext,Medium,,46.4%,"String, Simulation",all
+3035,https://leetcode.com/problems/maximum-palindromes-after-operations,Maximum Palindromes After Operations,Medium,,46.4%,"Array, Hash Table, String, Greedy, Sorting, Counting",all
+42,https://leetcode.com/problems/trapping-rain-water,Trapping Rain Water,Hard,,46.4%,"Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack",all
+62,https://leetcode.com/problems/unique-paths,Unique Paths,Medium,,46.4%,"Math, Dynamic Programming, Combinatorics",all
+1028,https://leetcode.com/problems/recover-a-tree-from-preorder-traversal,Recover a Tree From Preorder Traversal,Hard,,46.4%,"String, Tree, Depth-First Search, Binary Tree",all

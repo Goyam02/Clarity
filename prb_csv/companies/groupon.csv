@@ -1,0 +1,5 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+1648,https://leetcode.com/problems/sell-diminishing-valued-colored-balls,Sell Diminishing-Valued Colored Balls,Medium,,100.0%,"Array, Math, Binary Search, Greedy, Sorting, Heap (Priority Queue)",more_than_6m
+45,https://leetcode.com/problems/jump-game-ii,Jump Game II,Medium,,100.0%,"Array, Dynamic Programming, Greedy",more_than_6m
+1648,https://leetcode.com/problems/sell-diminishing-valued-colored-balls,Sell Diminishing-Valued Colored Balls,Medium,,100.0%,"Array, Math, Binary Search, Greedy, Sorting, Heap (Priority Queue)",all
+45,https://leetcode.com/problems/jump-game-ii,Jump Game II,Medium,,68.5%,"Array, Dynamic Programming, Greedy",all

@@ -1,0 +1,15 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,100.0%,"Array, Two Pointers, Sorting",more_than_6m
+2246,https://leetcode.com/problems/longest-path-with-different-adjacent-characters,Longest Path With Different Adjacent Characters,Hard,,88.4%,"Array, String, Tree, Depth-First Search, Graph Theory, Topological Sort",more_than_6m
+1352,https://leetcode.com/problems/product-of-the-last-k-numbers,Product of the Last K Numbers,Medium,,88.4%,"Array, Math, Design, Data Stream, Prefix Sum",more_than_6m
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,88.4%,"Array, Divide and Conquer, Dynamic Programming",more_than_6m
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,88.4%,"Array, String, Trie",more_than_6m
+451,https://leetcode.com/problems/sort-characters-by-frequency,Sort Characters By Frequency,Medium,,88.4%,"Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort, Counting",more_than_6m
+184,https://leetcode.com/problems/department-highest-salary,Department Highest Salary,Medium,,88.4%,Database,more_than_6m
+75,https://leetcode.com/problems/sort-colors,Sort Colors,Medium,,100.0%,"Array, Two Pointers, Sorting",all
+2246,https://leetcode.com/problems/longest-path-with-different-adjacent-characters,Longest Path With Different Adjacent Characters,Hard,,88.3%,"Array, String, Tree, Depth-First Search, Graph Theory, Topological Sort",all
+1352,https://leetcode.com/problems/product-of-the-last-k-numbers,Product of the Last K Numbers,Medium,,88.3%,"Array, Math, Design, Data Stream, Prefix Sum",all
+53,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Medium,,88.3%,"Array, Divide and Conquer, Dynamic Programming",all
+14,https://leetcode.com/problems/longest-common-prefix,Longest Common Prefix,Easy,,88.3%,"Array, String, Trie",all
+184,https://leetcode.com/problems/department-highest-salary,Department Highest Salary,Medium,,88.3%,Database,all
+451,https://leetcode.com/problems/sort-characters-by-frequency,Sort Characters By Frequency,Medium,,88.3%,"Hash Table, String, Sorting, Heap (Priority Queue), Bucket Sort, Counting",all

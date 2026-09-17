@@ -1,0 +1,38 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",30_days
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",30_days
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,100.0%,"Array, Hash Table, Matrix",30_days
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,100.0%,"Array, Hash Table, Backtracking, Matrix",30_days
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",3_months
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,79.4%,"Hash Table, Linked List, Design, Doubly-Linked List",3_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,79.4%,"Hash Table, Linked List, Design, Doubly-Linked List",3_months
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,79.4%,"Array, Hash Table, Matrix",3_months
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,79.4%,"Array, Hash Table, Backtracking, Matrix",3_months
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,100.0%,"Hash Table, String, Binary Search, Design",6_months
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,100.0%,"Array, Hash Table, Matrix",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,87.7%,"Hash Table, Linked List, Design, Doubly-Linked List",6_months
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,87.7%,"Array, Hash Table, Backtracking, Matrix",6_months
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,78.0%,"Array, Backtracking",6_months
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",more_than_6m
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,91.8%,"Hash Table, String, Binary Search, Design",more_than_6m
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,80.9%,"Array, Hash Table, Matrix",more_than_6m
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,77.7%,"Array, Hash Table, Backtracking, Matrix",more_than_6m
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,63.7%,"String, Dynamic Programming, Recursion",more_than_6m
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,63.7%,"String, Dynamic Programming, Greedy, Recursion",more_than_6m
+2627,https://leetcode.com/problems/debounce,Debounce,Medium,,63.7%,,more_than_6m
+2488,https://leetcode.com/problems/count-subarrays-with-median-k,Count Subarrays With Median K,Hard,,55.5%,"Array, Hash Table, Prefix Sum",more_than_6m
+2604,https://leetcode.com/problems/minimum-time-to-eat-all-grains,Minimum Time to Eat All Grains,Hard,,55.5%,"Array, Two Pointers, Binary Search, Sorting",more_than_6m
+726,https://leetcode.com/problems/number-of-atoms,Number of Atoms,Hard,,55.5%,"Hash Table, String, Stack, Sorting",more_than_6m
+146,https://leetcode.com/problems/lru-cache,LRU Cache,Medium,,100.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+981,https://leetcode.com/problems/time-based-key-value-store,Time Based Key-Value Store,Medium,,93.9%,"Hash Table, String, Binary Search, Design",all
+36,https://leetcode.com/problems/valid-sudoku,Valid Sudoku,Medium,,87.0%,"Array, Hash Table, Matrix",all
+2604,https://leetcode.com/problems/minimum-time-to-eat-all-grains,Minimum Time to Eat All Grains,Hard,,83.3%,"Array, Two Pointers, Binary Search, Sorting",all
+37,https://leetcode.com/problems/sudoku-solver,Sudoku Solver,Hard,,81.2%,"Array, Hash Table, Backtracking, Matrix",all
+10,https://leetcode.com/problems/regular-expression-matching,Regular Expression Matching,Hard,,65.0%,"String, Dynamic Programming, Recursion",all
+2627,https://leetcode.com/problems/debounce,Debounce,Medium,,65.0%,,all
+1797,https://leetcode.com/problems/design-authentication-manager,Design Authentication Manager,Medium,,65.0%,"Hash Table, Linked List, Design, Doubly-Linked List",all
+44,https://leetcode.com/problems/wildcard-matching,Wildcard Matching,Hard,,59.2%,"String, Dynamic Programming, Greedy, Recursion",all
+39,https://leetcode.com/problems/combination-sum,Combination Sum,Medium,,59.2%,"Array, Backtracking",all
+2488,https://leetcode.com/problems/count-subarrays-with-median-k,Count Subarrays With Median K,Hard,,51.1%,"Array, Hash Table, Prefix Sum",all
+726,https://leetcode.com/problems/number-of-atoms,Number of Atoms,Hard,,51.1%,"Hash Table, String, Stack, Sorting",all

@@ -1,0 +1,11 @@
+ID,URL,Title,Difficulty,Acceptance %,Frequency %,Topics,Timeframe
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,100.0%,"Array, Sorting",more_than_6m
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,92.7%,"String, Stack",more_than_6m
+441,https://leetcode.com/problems/arranging-coins,Arranging Coins,Easy,,82.5%,"Math, Binary Search",more_than_6m
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,82.5%,"Two Pointers, String",more_than_6m
+1761,https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph,Minimum Degree of a Connected Trio in a Graph,Hard,,82.5%,"Graph Theory, Enumeration",more_than_6m
+441,https://leetcode.com/problems/arranging-coins,Arranging Coins,Easy,,100.0%,"Math, Binary Search",all
+443,https://leetcode.com/problems/string-compression,String Compression,Medium,,100.0%,"Two Pointers, String",all
+56,https://leetcode.com/problems/merge-intervals,Merge Intervals,Medium,,84.9%,"Array, Sorting",all
+20,https://leetcode.com/problems/valid-parentheses,Valid Parentheses,Easy,,73.8%,"String, Stack",all
+1761,https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph,Minimum Degree of a Connected Trio in a Graph,Hard,,64.9%,"Graph Theory, Enumeration",all
