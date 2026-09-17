@@ -1,6 +1,7 @@
-"""Integration mocks: CF/GH fail gracefully, judge sandboxed, foundry mock."""
+"""Integration surfaces: judge sandbox, external APIs, backend contract."""
 import pytest
 
+from app.integrations.foundry.client import FoundryError, FoundryChatBackend
 from app.services.judge import LocalJudge
 
 
@@ -32,9 +33,13 @@ async def test_codeforces_github_graceful():
     assert "error" in gh or "username" in gh
 
 
+def test_foundry_backend_requires_configuration():
+    with pytest.raises(FoundryError) as exc:
+        FoundryChatBackend()
+    assert exc.value.code == "FOUNDRY_NOT_CONFIGURED"
+
+
 @pytest.mark.asyncio
-async def test_foundry_mock_mode():
-    from app.integrations.foundry.client import foundry
-    assert foundry.mode == "mock"
-    out = await foundry.complete_structured("planner", "sys", "{}", {"tasks": []})
-    assert out == {"tasks": []}
+async def test_stub_satisfies_backend_contract(stub):
+    out = await stub.complete_json(agent="planner", system="s", user="{}")
+    assert "tasks" in out

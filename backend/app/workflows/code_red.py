@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 
 from app.agents.interviewer import CompanyIntelAgent
+from app.integrations.foundry.shims import iq_retrieve
 from app.models import CodeRedSession, CodeRedTask, Company, CompanyProfile, MasteryNode
 from app.services import clear_score as cs
 from app.services.company_service import drift_status
@@ -20,10 +21,13 @@ async def get_or_build_company(db: Session, user_id: str, name: str) -> tuple[Co
     profile = db.query(CompanyProfile).filter(CompanyProfile.company_id == company.id).first()
     drift = drift_status(profile.last_verified if profile else None)
     if profile is None or drift["stale"]:
-        # Refresh via agent (mock deterministic; azure calls Foundry). Cost control:
-        # only when stale/missing or explicitly requested — never per request otherwise.
-        res = await CompanyIntelAgent().run({"company": name}, user_id=user_id,
-                                            workflow="code_red", db=db)
+        # Refresh via the Company Intel agent (retrieval anchors included when
+        # the search index is configured). Cost control: only when
+        # stale/missing — never re-researched on every request.
+        anchors = await iq_retrieve(f"{name} online assessment interview process")
+        res = await CompanyIntelAgent().run(
+            {"company": name, "anchors": anchors[:3]}, user_id=user_id,
+            workflow="code_red", db=db)
         out = res["output"]
         if profile is None:
             profile = CompanyProfile(company_id=company.id)

@@ -3,8 +3,8 @@ from datetime import datetime, timezone
 
 from sqlalchemy.orm import Session
 
-from app.agents.planner import plan_deterministic, PlannerAgent
-from app.integrations.foundry.client import foundry
+from app.agents.planner import PlannerAgent
+from app.integrations.foundry.client import ChatBackend
 from app.models import DailyPlan, MasteryHistory, MasteryNode, Topic
 from app.schemas import PlannerInput
 from app.services.mastery_engine import MasteryEngine
@@ -31,7 +31,8 @@ def mastery_snapshot(db: Session, user_id: str) -> list[dict]:
 
 
 async def build_daily_plan(db: Session, user_id: str, mood: str, time_available: int,
-                           company: str | None = None) -> dict:
+                           company: str | None = None,
+                           llm: ChatBackend | None = None) -> dict:
     snap = mastery_snapshot(db, user_id)
     recent = [{"source_type": h.source_type, "delta": h.delta}
               for h in db.query(MasteryHistory).filter(
@@ -39,12 +40,9 @@ async def build_daily_plan(db: Session, user_id: str, mood: str, time_available:
                   MasteryHistory.created_at.desc()).limit(10).all()]
     inp = PlannerInput(mastery_snapshot=snap, mood=mood, time_available=time_available,
                        company=company or None, recent_activity=recent)
-    if foundry.mode == "mock":
-        plan = plan_deterministic(inp).model_dump()
-        trace_id = "mock"
-    else:
-        res = await PlannerAgent().run(inp.model_dump(), user_id=user_id, workflow="daily", db=db)
-        plan, trace_id = res["output"], res["trace_id"]
+    res = await PlannerAgent(llm=llm).run(inp.model_dump(), user_id=user_id,
+                                          workflow="daily", db=db)
+    plan, trace_id = res["output"], res["trace_id"]
     # Validate: clamp durations so total <= budget; drop empty.
     budget = max(5, time_available)
     total = sum(t.get("duration_minutes", 0) for t in plan.get("tasks", []))

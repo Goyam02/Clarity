@@ -64,12 +64,12 @@ async def focus(body: FocusIn, user_id: str = Depends(get_current_user_id),
 
 
 @router.post("/calibration/start")
-def cal_start(user_id: str = Depends(get_current_user_id), db: Session = Depends(get_db)):
+async def cal_start(user_id: str = Depends(get_current_user_id), db: Session = Depends(get_db)):
     run = cal.start_run(user_id)
     db.add(run)
     db.commit()
     db.refresh(run)
-    return {"run_id": run.id, "question": cal.next_question(run)}
+    return {"run_id": run.id, "question": await cal.next_question(run)}
 
 
 class CalAnswer(BaseModel):
@@ -79,7 +79,7 @@ class CalAnswer(BaseModel):
 
 
 @router.post("/calibration/answer")
-def cal_answer(body: CalAnswer, user_id: str = Depends(get_current_user_id),
+async def cal_answer(body: CalAnswer, user_id: str = Depends(get_current_user_id),
                db: Session = Depends(get_db)):
     run = db.query(CalibrationRun).filter(
         CalibrationRun.id == body.run_id, CalibrationRun.user_id == user_id).first()
@@ -111,4 +111,4 @@ def cal_answer(body: CalAnswer, user_id: str = Depends(get_current_user_id),
         return {"done": True, "summary": cal.summarize(run)}
     db.commit()
     db.refresh(run)
-    return {"done": False, "question": cal.next_question(run)}
+    return {"done": False, "question": await cal.next_question(run)}

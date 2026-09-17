@@ -7,7 +7,6 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     ENVIRONMENT: str = "development"
-    CLARITY_AI_MODE: str = "mock"  # mock | azure
     LOG_LEVEL: str = "INFO"
 
     DATABASE_URL: str = "sqlite:///./clarity.db"
@@ -18,38 +17,38 @@ class Settings(BaseSettings):
     JWT_ALGORITHM: str = "HS256"
     DEV_AUTH_ALLOW_HEADER: bool = True
 
-    # Azure / Foundry (all optional for local mock mode)
-    AZURE_AI_PROJECT_ENDPOINT: str = ""
+    # --- Microsoft Foundry (required: every agent calls the real service) ---
+    # Project endpoint, e.g. https://<resource>.services.ai.azure.com/api/projects/<project>
+    # Auth is Entra ID via DefaultAzureCredential: `az login` locally,
+    # Managed Identity on Azure. No keys are used or accepted.
     AZURE_FOUNDRY_PROJECT_ENDPOINT: str = ""
-    AZURE_FOUNDRY_MODEL: str = ""
-    AZURE_OPENAI_ENDPOINT: str = ""
-    AZURE_OPENAI_API_KEY: str = ""
-    PLANNER_AGENT_ID: str = ""
-    QUESTION_GENERATOR_AGENT_ID: str = ""
-    EVALUATOR_AGENT_ID: str = ""
-    INTERVIEWER_AGENT_ID: str = ""
-    COMPANY_INTEL_AGENT_ID: str = ""
+    # Model deployment name inside the Foundry project (e.g. gpt-4o-mini).
+    AZURE_FOUNDRY_MODEL_DEPLOYMENT: str = ""
+    # Foundry agent resource names (one deployed agent per Clarity agent).
+    PLANNER_AGENT: str = "planner"
+    QUESTION_GENERATOR_AGENT: str = "question-generator"
+    EVALUATOR_AGENT: str = "evaluator"
+    INTERVIEWER_AGENT: str = "interviewer"
+    COMPANY_INTEL_AGENT: str = "company-intel"
+    FOUNDRY_TIMEOUT_SECONDS: int = 60
+    FOUNDRY_MAX_RETRIES: int = 3
 
+    # Foundry IQ / Search (retrieval augmentation; optional)
     AZURE_SEARCH_ENDPOINT: str = ""
     AZURE_SEARCH_INDEX: str = "clarity-corpus"
     AZURE_SEARCH_API_KEY: str = ""
 
+    # Blob
     AZURE_STORAGE_ACCOUNT: str = ""
     AZURE_STORAGE_CONTAINER: str = "clarity"
     AZURE_STORAGE_CONNECTION_STRING: str = ""
 
+    # Application Insights
     APPLICATIONINSIGHTS_CONNECTION_STRING: str = ""
 
+    # External APIs
     GITHUB_API_BASE_URL: str = "https://api.github.com"
     CODEFORCES_API_BASE_URL: str = "https://codeforces.com/api"
-
-    @property
-    def ai_mode(self) -> str:
-        return self.CLARITY_AI_MODE.lower()
-
-    @property
-    def is_mock(self) -> bool:
-        return self.ai_mode != "azure"
 
     @property
     def is_postgres(self) -> bool:

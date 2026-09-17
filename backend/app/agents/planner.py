@@ -1,63 +1,75 @@
-"""Planner agent: mastery snapshot + mood + time -> validated task list.
+"""Planner agent: mastery snapshot + mood + time -> task list.
 
-Mood is a request-time constraint: light=revision only, normal=+stretch,
-push=+timed challenge. Deterministic mock; azure path via Foundry structured call.
+The task content comes from the model. Code only enforces constraints:
+total time stays within budget, and LIGHT mood drops anything that is not
+revision. These are request-time constraints, not canned content.
 """
 from app.agents.base import ClarityAgent
-from app.integrations.foundry.client import foundry
-from app.integrations.foundry.shims import AGENT_SYSTEM_PROMPTS
-from app.schemas import PlannerInput, PlannerOutput, PlannerTask
+from app.core.config import get_settings
+from app.schemas import PlannerInput, PlannerOutput
+
+SYSTEM = """You are the CLARITY Planner, an expert interview-prep coach.
+Given a student's mastery snapshot (lower effective_mastery = weaker),
+a mood, and a time budget in minutes, produce a study plan.
+
+Rules:
+- Prioritize the weakest nodes (lowest effective_mastery first).
+- Respect the mood strictly:
+  - light: revision tasks ONLY, no new problems or challenges.
+  - normal: revision of weak spots plus ONE stretch problem on an important node.
+  - push: revision plus stretch problem(s) plus one timed_challenge.
+- task_type is one of: revision, problem, explain_back, timed_challenge.
+- reason is one of: weak_spot (student is weak here), company (matches target
+  company patterns), core (core CS subject revision).
+- Keep duration_minutes realistic (revision 5-12, problem 10-20,
+  timed_challenge 10-20). Total may slightly exceed the budget; it is clamped.
+- node_id must be an id from the mastery snapshot, or a company pattern name.
+- Every task needs a short human-readable title.
+Return ONLY JSON matching the plan schema."""
 
 
-def plan_deterministic(inp: PlannerInput) -> PlannerOutput:
-    nodes = sorted(inp.mastery_snapshot, key=lambda n: n.get("effective_mastery", 1.0))
-    budget = max(5, inp.time_available)
-    tasks: list[PlannerTask] = []
-    used = 0
-
-    def add(task_type, node, minutes, reason, title=""):
-        nonlocal used
-        if used + minutes > budget:
-            return
-        tasks.append(PlannerTask(task_type=task_type,
-                                 node_id=(node.get("id") if node else None),
-                                 duration_minutes=minutes, reason=reason, title=title))
-        used += minutes
-
-    if inp.mood == "light":
-        for n in nodes[:4]:
-            add("revision", n, 8, "weak_spot", f"Revise {n.get('name', n.get('id', ''))}")
-    elif inp.mood == "normal":
-        for n in nodes[:3]:
-            add("revision", n, 8, "weak_spot", f"Revise {n.get('name', n.get('id', ''))}")
-        rest = [n for n in inp.mastery_snapshot if n not in nodes[:3]]
-        stretch = min(rest, key=lambda n: n.get("importance", 0.5)) if rest else (nodes[-1] if nodes else None)
-        if stretch:
-            add("problem", stretch, 12, "company", f"Stretch: {stretch.get('name', '')}")
-    else:  # push
-        for n in nodes[:2]:
-            add("revision", n, 8, "weak_spot", f"Revise {n.get('name', n.get('id', ''))}")
-        mid = nodes[2:4] if len(nodes) > 2 else nodes
-        for n in mid:
-            add("problem", n, 12, "company", f"Stretch: {n.get('name', n.get('id', ''))}")
-        if used + 12 <= budget:
-            add("timed_challenge", nodes[-1] if nodes else None, 12, "core", "Timed challenge")
-    if not tasks and nodes:
-        add("revision", nodes[0], min(8, budget), "weak_spot", "Quick revision")
-    return PlannerOutput(tasks=tasks)
+def enforce_budget(tasks: list, budget: int) -> list:
+    """Scale durations proportionally; drop tail tasks if the plan still
+    exceeds the budget after per-task minimums."""
+    total = sum(t.duration_minutes for t in tasks)
+    if total > budget and tasks:
+        factor = budget / total
+        for t in tasks:
+            t.duration_minutes = max(5, int(t.duration_minutes * factor))
+    while sum(t.duration_minutes for t in tasks) > budget and len(tasks) > 1:
+        tasks.pop()
+    if tasks and sum(t.duration_minutes for t in tasks) > budget:
+        tasks[0].duration_minutes = budget
+    return tasks
 
 
 class PlannerAgent(ClarityAgent):
     name = "planner"
+    system_prompt = SYSTEM
+    output_model = PlannerOutput
 
-    async def _execute(self, input_data: dict) -> dict:
+    def __init__(self, llm=None):
+        super().__init__(llm)
+        self.foundry_agent = get_settings().PLANNER_AGENT
+
+    def build_prompt(self, input_data: dict) -> str:
         inp = PlannerInput(**input_data)
-        if foundry.mode == "mock":
-            return plan_deterministic(inp).model_dump()
-        data = await foundry.complete_structured(
-            "planner", AGENT_SYSTEM_PROMPTS["planner"], PlannerInput(**input_data).model_dump_json(),
-            fallback=plan_deterministic(inp).model_dump())
-        try:
-            return PlannerOutput(**data).model_dump()
-        except Exception:
-            return plan_deterministic(inp).model_dump()
+        return ("Plan a study session.\n"
+                f"Mood: {inp.mood}\n"
+                f"Time available (minutes): {inp.time_available}\n"
+                f"Target company: {inp.company or 'none'}\n"
+                f"Job description: {inp.job_description[:1000] or 'none'}\n"
+                f"Mastery snapshot (id, name, category, effective_mastery 0-1, "
+                f"importance 0-1): {inp.mastery_snapshot}\n"
+                f"Recent activity: {inp.recent_activity}\n"
+                "Return ONLY JSON: "
+                '{"tasks": [{"task_type": ..., "node_id": ..., "duration_minutes": ..., '
+                '"reason": ..., "title": ...}]}')
+
+    def post_validate(self, data: PlannerOutput, input_data: dict) -> PlannerOutput:
+        inp = PlannerInput(**input_data)
+        tasks = data.tasks
+        if inp.mood == "light":
+            tasks = [t for t in tasks if t.task_type == "revision"]
+        tasks = enforce_budget(tasks, max(5, inp.time_available))
+        return PlannerOutput(tasks=tasks)

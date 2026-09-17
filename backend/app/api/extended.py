@@ -71,14 +71,6 @@ def company_drift(name: str, user_id: str = Depends(get_current_user_id),
 @router_interviews.post("")
 def create_interview(user_id: str = Depends(get_current_user_id),
                      db: Session = Depends(get_db)):
-    from pydantic import BaseModel
-
-    class _In(BaseModel):
-        company: str = ""
-        round_type: str = "Interview"
-        problem_id: str = ""
-
-    # Accept empty body too; read leniently via defaults.
     session = MockSession(user_id=user_id, round_type="Interview", status="active")
     db.add(session)
     db.commit()
@@ -104,12 +96,17 @@ async def post_event(session_id: str, body: InterviewEventIn,
         hints = db.query(InterviewEvent).filter(
             InterviewEvent.session_id == session_id,
             InterviewEvent.event_type == "HINT_GIVEN").count()
+        tail = [{"type": e.event_type, "payload": e.payload}
+                for e in db.query(InterviewEvent).filter(
+                    InterviewEvent.session_id == session_id).order_by(
+                    InterviewEvent.timestamp.desc()).limit(6).all()][::-1]
         interviewer_say = await mi.interviewer_turn(
             (body.payload.get("problem_title", "the problem")
              if isinstance(body.payload, dict) else "the problem"),
             "followup" if body.event_type == "CODE_CHANGED" else "respond",
             int(body.payload.get("seconds_since_activity", 0))
-            if isinstance(body.payload, dict) else 0, hints)
+            if isinstance(body.payload, dict) else 0, hints,
+            transcript_tail=tail)
         if interviewer_say.get("hint_given"):
             db.add(InterviewEvent(session_id=session_id, event_type="HINT_GIVEN",
                                   payload={"text": interviewer_say["utterance"]}))

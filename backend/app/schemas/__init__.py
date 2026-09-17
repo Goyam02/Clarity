@@ -7,8 +7,8 @@ Mood = Literal["light", "normal", "push"]
 
 class PlannerTask(BaseModel):
     task_type: str
-    node_id: str | None = None
-    problem_id: str | None = None
+    node_id: str = ""
+    problem_id: str = ""
     duration_minutes: int = 15
     reason: Literal["weak_spot", "company", "core"] = "weak_spot"
     title: str = ""
@@ -28,7 +28,7 @@ class PlannerOutput(BaseModel):
 
 
 class EvaluationMasterySignal(BaseModel):
-    node_id: str | None = None
+    node_id: str = ""
     pattern: str = ""
     correctness: float = 0.0
     hints_used: int = 0
@@ -99,3 +99,8 @@ class OutcomeIn(BaseModel):
     round: str = ""
     result: str = ""
     notes: str = ""
+
+
+class InterviewerOutput(BaseModel):
+    utterance: str
+    hint_given: bool = False

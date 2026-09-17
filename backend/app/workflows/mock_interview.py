@@ -10,10 +10,11 @@ from app.services.mastery_engine import MasteryEngine
 
 
 async def interviewer_turn(problem_title: str, phase: str, seconds_since_activity: int,
-                           hints_given: int) -> dict:
+                           hints_given: int, transcript_tail: list | None = None) -> dict:
     res = await InterviewerAgent().run({"problem_title": problem_title, "phase": phase,
                                         "seconds_since_activity": seconds_since_activity,
-                                        "hints_given": hints_given})
+                                        "hints_given": hints_given,
+                                        "transcript_tail": transcript_tail or []})
     return res["output"]
 
 

@@ -6,7 +6,8 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg2://clarity:clarity@postgres:5432/clarity
       REDIS_URL: redis://redis:6379/0
-      CLARITY_AI_MODE: ${CLARITY_AI_MODE:-mock}
+      AZURE_FOUNDRY_PROJECT_ENDPOINT: ${AZURE_FOUNDRY_PROJECT_ENDPOINT}
+      AZURE_FOUNDRY_MODEL_DEPLOYMENT: ${AZURE_FOUNDRY_MODEL_DEPLOYMENT:-gpt-4o-mini}
     env_file:
       - .env
     depends_on:

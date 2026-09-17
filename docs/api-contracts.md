@@ -33,5 +33,9 @@ Base: `http://localhost:8000/api/v1`. Auth: `Authorization: Bearer <jwt>`
 | `POST /outcomes`, `GET /outcomes` | auth | outcome loop (calibrates future CLEAR SCORE) |
 
 Status codes: 200 ok, 401 missing/invalid auth, 404 unknown entity
-(`TOPIC_NOT_FOUND`, `SESSION_NOT_FOUND`, `ATTEMPT_NOT_FOUND`), 500 `INTERNAL_ERROR`.
-Frontend can build fully against `CLARITY_AI_MODE=mock` without Azure.
+(`TOPIC_NOT_FOUND`, `SESSION_NOT_FOUND`, `ATTEMPT_NOT_FOUND`), 500
+`INTERNAL_ERROR` / `FOUNDRY_NOT_CONFIGURED` (Azure env missing — see
+`docs/azure-setup.md`), 502 `FOUNDRY_UNAVAILABLE` / `AGENT_FAILED` (real
+service call failed; message says why, no content is fabricated).
+Agent-backed endpoints require a configured Foundry project; pure
+state/judge endpoints (mastery graph, submissions judging) work regardless.

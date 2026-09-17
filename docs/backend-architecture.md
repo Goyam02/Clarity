@@ -27,22 +27,42 @@ FastAPI (/api/v1) → workflows/ → agents/ → services/ → Postgres/Redis/Az
 Mastery Model = Postgres (authoritative). Foundry Memory = agent context only.
 ```
 
-## Foundry verification vs spec §11
+## Foundry integration (real, verified)
 
-| Spec claim | Status |
+Verified against `azure-ai-projects` 2.6.1 + `azure-identity` (Sep 2026):
+
+- `AIProjectClient(endpoint, DefaultAzureCredential)` — project client.
+- `client.get_openai_client(agent_name=...)` — async OpenAI-compatible client
+  routed to a deployed Foundry agent; chat completions with JSON mode produce
+  structured outputs, validated with Pydantic (one repair retry, then loud
+  failure — never fallback content).
+- Auth is Entra ID only: `az login` locally, Managed Identity on Azure.
+
+There is no mock mode and no environment branching in agent code. Every agent
+(Planner, Question Generator, Evaluator, Interviewer, Company Intel) defines a
+system prompt + output schema and calls the live service via
+`app/integrations/foundry/client.py` — the only file that touches Azure SDKs.
+Code enforces constraints only (budget clamp, LIGHT-mood filter, problem
+validation); all content is model-generated.
+
+| Spec §11 claim | Status |
 |---|---|
-| Agent Service / Connected Agents | No stable SDK in env → `agents/orchestrator.py` implements explicit handoffs locally with `AgentRun` audit rows; swap to Agent Service later |
-| Managed memory as mastery store | **Rejected by design**: mastery stays in Postgres (queryable/deterministic); `services/storage_service.py::MemoryService` holds agent context only |
-| Foundry IQ / Deep Research (`o3-deep-research`) | No SDK in env → `integrations/foundry/shims.py::iq_retrieve` (seed anchors now, AI Search when `AZURE_SEARCH_ENDPOINT` set) |
-| Code Interpreter for grading | No SDK in env → `services/judge.py::LocalJudge` subprocess sandbox (Python; Java if JDK present) behind `CodeJudge` ABC |
-| Voice Live | No SDK in env → session/event/transcript/debrief backend built; `speech_available()=False` documents the gap |
-| Tracing + Evaluation | `agent_runs` table + `emit_trace()` (App Insights when configured, no-op locally) |
+| Agent Service / Connected Agents | Done via per-agent routing + `agents/orchestrator.py` handoffs with `AgentRun` audit rows |
+| Managed memory as mastery store | **Rejected by design**: mastery stays in Postgres (queryable/deterministic); `MemoryService` holds agent context only |
+| Foundry IQ | `shims.iq_retrieve` queries Azure AI Search when configured, else no anchors (never canned answers) |
+| Deep Research (`o3-deep-research`) | Not in the installed SDK surface — Company Intel uses the deployed agent + retrieval anchors; research-tool wiring is a later step, not faked now |
+| Code Interpreter for grading | Not in the installed SDK surface — `services/judge.py::LocalJudge` subprocess sandbox (Python; Java if JDK present) behind the `CodeJudge` ABC |
+| Voice Live | Not in the installed SDK surface — session/event/transcript/debrief backend is real; `speech_available()=False` marks the gap |
+| Tracing + Evaluation | `agent_runs` table + `emit_trace()` (App Insights when configured) |
 
 ## Key decisions
 
 - `MasteryEngine` is pure/deterministic; LLM (Evaluator) produces evidence only.
 - Effective mastery computed at read time (decay); DB written only on attempts.
 - CLEAR SCORE = 0–100 weighted readiness index, never a "probability".
-- `CLARITY_AI_MODE=mock` (default) vs `azure`; azure falls back to mock per-call on failure.
-- Cost control: company intel refreshes only when stale (>90d)/missing; planner has no redundant LLM calls in mock.
+- Transport failures raise `FoundryError` (502/503, actionable message);
+  retries are bounded (3, transient errors only). No silent fallbacks.
+- Cost control: company intel refreshes only when stale (>90d)/missing.
 - Judge never runs code in-process (subprocess + temp dir + timeout).
+- Tests inject a stub `ChatBackend` via `set_backend()` — a test seam, not
+  product branching.
