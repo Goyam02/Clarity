@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HackerRank - Upskill the next generation developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #111827;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background-color: #05A85C;
+      color: #ffffff;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navigation */
+    .header {
+      width: 100%;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 50;
+    }
+
+    .nav-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 40px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      color: #000000;
+    }
+
+    .logo-square {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: #05A85C;
+      border-radius: 1px;
+      transform: translateY(-1px);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: #1f2937;
+      transition: color 0.15s ease;
+    }
+
+    .nav-link:hover {
+      color: #05A85C;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .login-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: #1f2937;
+      transition: color 0.15s ease;
+    }
+
+    .login-link:hover {
+      color: #000000;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      color: #000000;
+      border: 1px solid #111827;
+    }
+
+    .btn-outline:hover {
+      background-color: #f9fafb;
+      border-color: #000000;
+    }
+
+    .btn-primary {
+      background-color: #000000;
+      color: #ffffff;
+      border: 1px solid #000000;
+    }
+
+    .btn-primary:hover {
+      background-color: #262626;
+      border-color: #262626;
+    }
+
+    /* Mobile toggle */
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      padding: 16px 24px 24px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      gap: 12px;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    /* Hero Section */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-section {
+      padding-top: 84px;
+      padding-bottom: 36px;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 76px;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+      color: #111827;
+    }
+
+    .hero-title .highlight {
+      color: #05A85C;
+    }
+
+    .hero-subtitle {
+      margin-top: 28px;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: #4f555e;
+      max-width: 700px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-cta {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .hero-cta .btn {
+      padding: 14px 28px;
+      font-size: 15px;
+      font-weight: 500;
+      min-width: 170px;
+    }
+
+    .btn-secondary {
+      background-color: #ffffff;
+      color: #111827;
+      border: 1px solid #d1d5db;
+    }
+
+    .btn-secondary:hover {
+      background-color: #f9fafb;
+      border-color: #9ca3af;
+    }
+
+    /* Brands Logo Cloud */
+    .brands-section {
+      width: 100%;
+      max-width: 1140px;
+      margin: 80px auto 130px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .brands-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 64px;
+      row-gap: 28px;
+    }
+
+    .brand-item {
+      display: flex;
+      align-items: center;
+      color: #1a1a1a;
+      transition: color 0.2s ease, opacity 0.2s ease;
+      user-select: none;
+    }
+
+    .brand-item:hover {
+      color: #000000;
+      opacity: 0.85;
+    }
+
+    /* Specific Brand Logo Styles */
+    .brand-airbnb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 21px;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-stripe {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-linkedin {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .linkedin-box {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 1px 5px;
+      border-radius: 3px;
+      line-height: 1.15;
+    }
+
+    .brand-atlassian {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+    }
+
+    .brand-snap {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .brand-doordash {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.08em;
+    }
+
+    .brand-adobe {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 19px;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-paypal {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-goldman {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.05;
+      text-align: left;
+    }
+
+    .brand-canva {
+      font-family: 'Playfair Display', Georgia, cursive, serif;
+      font-style: italic;
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    /* Radiant Bottom Gradient Glow */
+    .bottom-glow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 240px;
+      background: radial-gradient(ellipse 110% 85% at 50% 100%, rgba(5, 192, 101, 0.72) 0%, rgba(16, 185, 129, 0.48) 30%, rgba(52, 211, 153, 0.20) 60%, rgba(255, 255, 255, 0) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 1024px) {
+      .hero-title {
+        font-size: 60px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .brands-row {
+        column-gap: 44px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-container {
+        padding: 0 20px;
+        height: 68px;
+      }
+      .nav-right {
+        display: none;
+      }
+      .hero-section {
+        padding-top: 48px;
+      }
+      .hero-title {
+        font-size: 42px;
+        line-height: 1.15;
+      }
+      .hero-subtitle {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      .hero-cta {
+        flex-direction: column;
+        width: 100%;
+      }
+      .hero-cta .btn {
+        width: 100%;
+      }
+      .brands-section {
+        margin: 50px auto 90px;
+        gap: 30px;
+      }
+      .brands-row {
+        column-gap: 28px;
+        row-gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#" class="logo-container" aria-label="HackerRank">
+          <span class="logo-text">HackerRank</span>
+          <span class="logo-square"></span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#solutions" class="nav-link">Solutions</a>
+          <a href="#resources" class="nav-link">Resources</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#human-data" class="nav-link">Human Data</a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <a href="#login" class="login-link">Log In</a>
+        <a href="#demo" class="btn btn-outline">Request Demo</a>
+        <a href="#signup" class="btn btn-primary">Create a free account</a>
+      </div>
+
+      <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#solutions" class="nav-link">Solutions</a>
+      <a href="#resources" class="nav-link">Resources</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#human-data" class="nav-link">Human Data</a>
+      <hr style="border: none; border-top: 1px solid #f3f4f6; margin: 8px 0;">
+      <a href="#login" class="login-link">Log In</a>
+      <a href="#demo" class="btn btn-outline" style="width:100%; margin-top:4px;">Request Demo</a>
+      <a href="#signup" class="btn btn-primary" style="width:100%; margin-top:4px;">Create a free account</a>
+    </div>
+  </header>
+
+  <!-- Main Hero Content -->
+  <main class="main-content">
+    <section class="hero-section">
+      <h1 class="hero-title">
+        <span class="highlight">Upskill</span> the next<br>generation developer
+      </h1>
+
+      <p class="hero-subtitle">
+        We help thousands of companies hire and upskill the next<br>generation of developers, and millions of developers to become one.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#trial" class="btn btn-primary">Start a free trial</a>
+        <a href="#developers" class="btn btn-secondary">For developers</a>
+      </div>
+    </section>
+
+    <!-- Partner Brands Logo Showcase -->
+    <section class="brands-section">
+      <!-- Row 1: airbnb, stripe, LinkedIn, ATLASSIAN, IBM, Snap Inc. -->
+      <div class="brands-row">
+        <!-- Airbnb -->
+        <div class="brand-item brand-airbnb">
+          <svg viewBox="0 0 32 32" fill="currentColor" style="width:26px; height:26px;" aria-hidden="true">
+            <path d="M16 1c2.008 0 3.463.963 4.751 3.269l.533.991 7.21 15.006c1.171 2.456 1.487 4.542.923 6.301-.581 1.815-1.996 3.123-3.876 3.633-.948.257-2.028.272-3.218.046-1.528-.291-3.208-1.077-4.993-2.347-.442-.315-.884-.662-1.33-1.042-.447.38-.889.727-1.33 1.042-1.785 1.27-3.465 2.056-4.993 2.347-1.19.226-2.27.211-3.218-.046-1.88-.51-3.295-1.818-3.876-3.633-.564-1.759-.248-3.845.923-6.301l7.743-15.997c1.288-2.306 2.743-3.269 4.751-3.269zm0 3c-1.077 0-2.023.543-3.076 2.427l-.427.794-7.21 14.898c-.854 1.79-1.026 3.167-.624 4.425.385 1.203 1.341 2.08 2.619 2.427.707.192 1.488.167 2.383-.075 1.139-.308 2.502-1.002 4.072-2.115 1.298-.92 2.053-1.637 2.263-1.868.21.231.965.948 2.263 1.868 1.57 1.113 2.933 1.807 4.072 2.115.895.242 1.676.267 2.383.075 1.278-.347 2.234-1.224 2.619-2.427.402-1.258.23-2.635-.624-4.425l-7.21-14.898c-1.053-1.884-1.999-2.427-3.076-2.427zm0 10.5c1.933 0 3.5 1.567 3.5 3.5 0 2.4-2.5 5.5-3.5 6.7-1-1.2-3.5-4.3-3.5-6.7 0-1.933 1.567-3.5 3.5-3.5zm0 2.5c-.552 0-1 .448-1 1 0 .729.873 2.148 1 2.348.127-.2 1-1.619 1-2.348 0-.552-.448-1-1-1z"/>
+          </svg>
+          <span>airbnb</span>
+        </div>
+
+        <!-- Stripe -->
+        <div class="brand-item brand-stripe">stripe</div>
+
+        <!-- LinkedIn -->
+        <div class="brand-item brand-linkedin">
+          <span>Linked</span>
+          <span class="linkedin-box">in</span>
+        </div>
+
+        <!-- Atlassian -->
+        <div class="brand-item brand-atlassian">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;">
+            <path d="M10.97 4.14c-.21-.3-.66-.27-.84.05L5.27 12.86c-.23.42.07.93.55.93h4.48c.28 0 .53-.15.66-.39l.64-1.17a10.94 10.94 0 0 0-.63-8.09z" />
+            <path d="M12.43 11.23a10.95 10.95 0 0 0 .63 8.09c.21.3.66.27.84-.05l4.86-8.67c.23-.42-.07-.93-.55-.93h-4.48a.74.74 0 0 0-.66.39l-.64 1.17z" />
+          </svg>
+          <span>ATLASSIAN</span>
+        </div>
+
+        <!-- IBM -->
+        <div class="brand-item">
+          <svg viewBox="0 0 110 44" style="width:58px; height:24px;" fill="currentColor" aria-label="IBM">
+            <rect x="0" y="0" width="16" height="3" /><rect x="0" y="6" width="16" height="3" /><rect x="5.5" y="12" width="5" height="3" /><rect x="5.5" y="18" width="5" height="3" /><rect x="5.5" y="24" width="5" height="3" /><rect x="5.5" y="30" width="5" height="3" /><rect x="0" y="36" width="16" height="3" /><rect x="0" y="42" width="16" height="3" />
+            <rect x="22" y="0" width="22" height="3" rx="1.5" /><rect x="22" y="6" width="25" height="3" rx="1.5" /><rect x="22" y="12" width="6" height="3" /><rect x="39" y="12" width="8" height="3" rx="1.5" /><rect x="22" y="18" width="23" height="3" rx="1.5" /><rect x="22" y="24" width="23" height="3" rx="1.5" /><rect x="22" y="30" width="6" height="3" /><rect x="40" y="30" width="8" height="3" rx="1.5" /><rect x="22" y="36" width="26" height="3" rx="1.5" /><rect x="22" y="42" width="23" height="3" rx="1.5" />
+            <rect x="54" y="0" width="8" height="3" /><rect x="71" y="0" width="7" height="3" /><rect x="88" y="0" width="8" height="3" /><rect x="54" y="6" width="9" height="3" /><rect x="69.5" y="6" width="10" height="3" /><rect x="87" y="6" width="9" height="3" /><rect x="54" y="12" width="11" height="3" /><rect x="68" y="12" width="13" height="3" /><rect x="85" y="12" width="11" height="3" /><rect x="54" y="18" width="13" height="3" /><rect x="66.5" y="18" width="16" height="3" /><rect x="83" y="18" width="13" height="3" /><rect x="54" y="24" width="7" height="3" /><rect x="65" y="24" width="6" height="3" /><rect x="78.5" y="24" width="6" height="3" /><rect x="89" y="24" width="7" height="3" /><rect x="54" y="30" width="7" height="3" /><rect x="63.5" y="30" width="5.5" height="3" /><rect x="80.5" y="30" width="5.5" height="3" /><rect x="89" y="30" width="7" height="3" /><rect x="54" y="36" width="7" height="3" /><rect x="89" y="36" width="7" height="3" /><rect x="54" y="42" width="7" height="3" /><rect x="89" y="42" width="7" height="3" />
+          </svg>
+        </div>
+
+        <!-- Snap Inc. -->
+        <div class="brand-item brand-snap">Snap Inc.</div>
+      </div>
+
+      <!-- Row 2: DOORDASH, Adobe, PayPal, Goldman Sachs, Canva -->
+      <div class="brands-row" style="margin-top: 6px;">
+        <!-- DoorDash -->
+        <div class="brand-item brand-doordash">
+          <svg viewBox="0 0 32 18" fill="currentColor" style="width:26px; height:15px;">
+            <path d="M29.5 0H7.2C4.1 0 1.4 1.9.4 4.8-.9 8.2.9 12 4.3 13.3c.7.3 1.5.4 2.2.4h11.9c.7 0 1.2-.5 1.2-1.2 0-.7-.5-1.2-1.2-1.2H6.5c-2.3 0-4.2-1.9-4.2-4.2 0-2.3 1.9-4.2 4.2-4.2h23c.7 0 1.2-.5 1.2-1.2s-.5-1.7-1.2-1.7z" />
+          </svg>
+          <span>DOORDASH</span>
+        </div>
+
+        <!-- Adobe -->
+        <div class="brand-item brand-adobe">
+          <svg viewBox="0 0 30 26" fill="currentColor" style="width:20px; height:18px;">
+            <polygon points="19,0 30,26 23.3,26 18.2,13.7 13.9,24 10.9,24" />
+            <polygon points="11,0 0,26 6.7,26 11.8,13.7 16.1,24 19.1,24" />
+            <polygon points="15,9.6 20.8,24 16.8,24 15.3,20.2 11.5,20.2 14.1,13.8" />
+          </svg>
+          <span>Adobe</span>
+        </div>
+
+        <!-- PayPal -->
+        <div class="brand-item brand-paypal">
+          <span>PayPal</span>
+        </div>
+
+        <!-- Goldman Sachs -->
+        <div class="brand-item brand-goldman">
+          <div>Goldman</div>
+          <div>Sachs</div>
+        </div>
+
+        <!-- Canva -->
+        <div class="brand-item brand-canva">Canva</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luminous Emerald Horizon Glow -->
+  <div class="bottom-glow" aria-hidden="true"></div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
