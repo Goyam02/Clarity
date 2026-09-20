@@ -50,6 +50,18 @@ class Settings(BaseSettings):
     GITHUB_API_BASE_URL: str = "https://api.github.com"
     CODEFORCES_API_BASE_URL: str = "https://codeforces.com/api"
 
+    # Google sign-in (optional; endpoints 501 until client credentials set)
+    GOOGLE_CLIENT_ID: str = ""
+    GOOGLE_CLIENT_SECRET: str = ""
+    GOOGLE_REDIRECT_URI: str = "http://localhost:3000/auth/google/callback"
+
+    # Per-company problem-frequency corpus (LeetCode-style CSV seed data)
+    COMPANY_CORPUS_DIR: str = "../prb_csv/companies"
+
+    @property
+    def google_oauth_enabled(self) -> bool:
+        return bool(self.GOOGLE_CLIENT_ID and self.GOOGLE_CLIENT_SECRET)
+
     @property
     def is_postgres(self) -> bool:
         return self.DATABASE_URL.startswith(("postgresql", "postgres"))

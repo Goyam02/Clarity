@@ -4,8 +4,10 @@ from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
+from app.core.errors import ClarityError
 from app.dependencies import get_current_user_id, get_db
 from app.models import CalibrationRun, Company, Profile
+from app.services import company_corpus
 from app.workflows import calibration as cal
 from app.workflows import onboarding as ob
 
@@ -50,6 +52,15 @@ async def focus(body: FocusIn, user_id: str = Depends(get_current_user_id),
         prof.default_mood = body.default_mood
         prof.codeforces_handle = body.codeforces_handle
         prof.github_username = body.github_username
+        prof.target_companies = body.target_companies[:5]
+        prof.onboarding_complete = True
+        db.commit()
+        # Spec §5: node importance weighted by frequency in target companies' OAs.
+        from app.models import MasteryNode
+        nodes = db.query(MasteryNode).filter(MasteryNode.user_id == user_id).all()
+        for n in nodes:
+            n.importance_weight = company_corpus.boost_importance(
+                n.importance_weight, prof.target_companies or [], n.topic_id)
         db.commit()
     # Preload company profiles in background (actually concurrent here).
     from app.workflows import code_red as cr
@@ -84,7 +95,7 @@ async def cal_answer(body: CalAnswer, user_id: str = Depends(get_current_user_id
     run = db.query(CalibrationRun).filter(
         CalibrationRun.id == body.run_id, CalibrationRun.user_id == user_id).first()
     if not run or run.status != "active":
-        return {"error": "run not found or completed"}
+        raise ClarityError("RUN_NOT_FOUND", "Calibration run not found or already completed", 404)
     step = cal.answer(run, body.correct, body.solve_time)
     db.commit()
     if step["done"]:

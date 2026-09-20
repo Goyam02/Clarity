@@ -54,7 +54,10 @@ def test_code_red_and_clear_score(client, user):
     body = r.json()
     assert body["tasks"] and body["clear_score"]["score"] in range(0, 101)
     reasons = {t["reason"] for t in body["tasks"]}
-    assert reasons <= {"WEAK_SPOT", "COMPANY", "CORE"}
+    assert reasons <= {"weak_spot", "company", "core"}
+    # [company] items come from the curated corpus with real problem URLs.
+    company_items = [t for t in body["tasks"] if t["reason"] == "company"]
+    assert company_items and all(t["detail"].get("url") for t in company_items)
     cs = client.get(f"/api/v1/code-red/{body['session_id']}/clear-score", headers=h)
     assert cs.status_code == 200 and "components" in cs.json()
 

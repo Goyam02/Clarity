@@ -99,8 +99,62 @@ class OutcomeIn(BaseModel):
     round: str = ""
     result: str = ""
     notes: str = ""
+    clear_score_at_time: int | None = None
 
 
 class InterviewerOutput(BaseModel):
     utterance: str
     hint_given: bool = False
+
+
+# --- Phase 1 additions (settings, daily, code-red v2, weekly) ------------
+
+class ProfilePatch(BaseModel):
+    name: str | None = None
+    current_focus: str | None = None
+    placement_timeline: str | None = None
+    default_mood: Mood | None = None
+    codeforces_handle: str | None = None
+    github_username: str | None = None
+
+
+class CompanyAddIn(BaseModel):
+    name: str
+
+
+class PlanTaskStatusIn(BaseModel):
+    task_index: int
+    status: Literal["pending", "done", "skipped"]
+
+
+class DailyLogIn(BaseModel):
+    topic_id: str = ""
+    title: str = ""
+    link: str = ""
+    notes: str = ""
+    correctness: float = 0.5
+    minutes_spent: int = 20
+
+
+class CodeforcesConfirmIn(BaseModel):
+    handle: str
+    submissions: list[dict] = Field(default_factory=list)  # [{id, problem, tags, topic_id?}]
+
+
+class ConceptGradeIn(BaseModel):
+    topic_id: str
+    concept: str
+    explanation: str
+
+
+class CodeRedTaskStatusIn(BaseModel):
+    status: Literal["pending", "done", "skipped"]
+
+
+class MockEventIn(BaseModel):
+    event_type: str
+    payload: dict = Field(default_factory=dict)
+
+
+class WeeklyRescheduleIn(BaseModel):
+    scheduled_for: str  # ISO datetime

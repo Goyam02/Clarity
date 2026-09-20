@@ -5,13 +5,18 @@ alembic==1.13.3
 pydantic==2.11.7
 pydantic-settings==2.10.1
 httpx==0.28.1
+python-multipart>=0.0.20
+pypdf>=5.0
 pytest==8.3.4
 pytest-asyncio==0.24.0
 anyio>=4.9.0
 openai>=3.0.0
 azure-ai-projects>=2.0
 azure-identity>=1.17
-# Optional (only needed for IQ retrieval / local postgres driver):
+# Optional (only needed for vision extraction; PDF text parsing uses pypdf above):
+# azure-search-documents>=11.6
+# psycopg2-binary>=2.9  # PostgreSQL driver for production
+# redis>=5.0
 # azure-search-documents>=11.6
 # psycopg2-binary>=2.9  # PostgreSQL driver for production
 # redis>=5.0

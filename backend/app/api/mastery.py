@@ -7,8 +7,9 @@ from sqlalchemy.orm import Session
 
 from app.core.errors import ClarityError
 from app.dependencies import get_current_user_id, get_db
-from app.models import MasteryHistory, MasteryNode, Topic
+from app.models import MasteryHistory, MasteryNode, Problem, ProblemAttempt, Topic
 from app.services.mastery_engine import MasteryEngine
+from app.workflows import graph as graph_wf
 from app.workflows.daily import mastery_snapshot
 
 router = APIRouter()
@@ -36,10 +37,12 @@ def list_nodes(user_id: str = Depends(get_current_user_id), db: Session = Depend
 @router.get("/graph")
 def graph(user_id: str = Depends(get_current_user_id), db: Session = Depends(get_db)):
     snap = mastery_snapshot(db, user_id)
-    edges = [{"from": a, "to": b, "type": "PREREQUISITE"} for a, b in PREREQ_EDGES
-             if any(n["id"] == a for n in snap) and any(n["id"] == b for n in snap)]
-    # Correlation edges: co-attempted weak nodes (dashed, from history).
-    return {"nodes": snap, "edges": edges}
+    prereq = [{"from": a, "to": b, "type": "PREREQUISITE"} for a, b in PREREQ_EDGES
+              if any(n["id"] == a for n in snap) and any(n["id"] == b for n in snap)]
+    # Correlation edges: same-day co-movement of node mastery from real history
+    # (dashed, dynamic — spec §5). Prerequisite edges stay static/solid.
+    corr = graph_wf.correlation_edges(db, user_id, {})
+    return {"nodes": snap, "edges": prereq + corr}
 
 
 @router.post("/update")
@@ -86,3 +89,59 @@ def history(node_id: str, user_id: str = Depends(get_current_user_id),
     return {"history": [{"previous": h.previous_score, "new": h.new_score, "delta": h.delta,
                          "source": h.source_type, "at": h.created_at.isoformat()
                          if h.created_at else ""} for h in rows]}
+
+
+@router.get("/nodes/{node_db_id}")
+def node_detail(node_db_id: str, user_id: str = Depends(get_current_user_id),
+                db: Session = Depends(get_db)):
+    """Spec §5 side panel: mastery %, last touched, and the problems/cards behind it."""
+    node = db.query(MasteryNode).filter(
+        MasteryNode.id == node_db_id, MasteryNode.user_id == user_id).first()
+    if not node:
+        raise ClarityError("NODE_NOT_FOUND", "Mastery node not found", 404)
+    topic = db.query(Topic).filter(Topic.id == node.topic_id).first()
+    now = datetime.now(timezone.utc)
+    last = node.last_seen if node.last_seen and node.last_seen.tzinfo else now
+    days = (now - last).total_seconds() / 86400
+    attempts = db.query(ProblemAttempt).filter(
+        ProblemAttempt.user_id == user_id).order_by(
+        ProblemAttempt.started_at.desc()).limit(100).all()
+    problems = []
+    for a in attempts:
+        p = db.query(Problem).filter(Problem.id == a.problem_id).first()
+        if p and (p.topic_id == node.topic_id or p.pattern == node.pattern):
+            problems.append({"problem_id": p.id, "title": p.title,
+                             "difficulty": p.difficulty, "status": a.status,
+                             "attempted_at": a.started_at.isoformat()
+                             if a.started_at else ""})
+        if len(problems) >= 10:
+            break
+    return {
+        "node_db_id": node.id, "topic_id": node.topic_id,
+        "name": topic.name if topic else node.topic_id,
+        "category": topic.category if topic else "DSA",
+        "mastery": node.mastery_score,
+        "effective_mastery": MasteryEngine.effective_mastery(
+            node.mastery_score, days, node.decay_rate),
+        "staleness": MasteryEngine.staleness(days, node.decay_rate),
+        "last_seen": node.last_seen.isoformat() if node.last_seen else "",
+        "times_attempted": node.times_attempted,
+        "times_correct": node.times_correct,
+        "importance": node.importance_weight,
+        "problems": problems,
+    }
+
+
+class ReviseIn(BaseModel):
+    node_db_id: str
+
+
+@router.post("/revise-now")
+def revise_now(body: ReviseIn, user_id: str = Depends(get_current_user_id),
+               db: Session = Depends(get_db)):
+    """Spec §5: drop this node straight into today's Home queue."""
+    from app.workflows.daily import revise_now as revise
+    result = revise(db, user_id, body.node_db_id)
+    if result is None:
+        raise ClarityError("NODE_NOT_FOUND", "Mastery node not found", 404)
+    return result
