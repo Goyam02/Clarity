@@ -5,8 +5,6 @@ import LandingPage from './pages/LandingPage.tsx';
 import { OnboardingFlow } from './onboarding/OnboardingFlow.tsx';
 import DashboardPage from './pages/DashboardPage.tsx';
 import { DashboardGraphPage } from './pages/DashboardGraphPage.tsx';
-import { GraphDemoPage } from './pages/GraphDemoPage.tsx';
-import { DashboardDemoPage } from './pages/DashboardDemoPage.tsx';
 import { LoginPage } from './pages/LoginPage.tsx';
 import { SignupPage } from './pages/SignupPage.tsx';
 import { SettingsPage } from './pages/SettingsPage.tsx';
@@ -114,13 +112,31 @@ createRoot(document.getElementById('root')!).render(
               </ProtectedRoute>
             }
           />
-          {/* Locked environment (spec §8) */}
-          <Route path="/mock-oa" element={<MockOAInstructionsPage />} />
-          <Route path="/mock-oa/session" element={<MockOASessionPage />} />
-          <Route path="/mock-oa/result" element={<MockOAResultPage />} />
-          {/* Demo sandboxes */}
-          <Route path="/dashboard-demo" element={<DashboardDemoPage />} />
-          <Route path="/graph-demo" element={<GraphDemoPage />} />
+          {/* Locked environment (spec §8) — auth-gated like every product surface */}
+          <Route
+            path="/mock-oa"
+            element={
+              <ProtectedRoute>
+                <MockOAInstructionsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/mock-oa/session"
+            element={
+              <ProtectedRoute>
+                <MockOASessionPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/mock-oa/result"
+            element={
+              <ProtectedRoute>
+                <MockOAResultPage />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/graph" element={<GraphRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

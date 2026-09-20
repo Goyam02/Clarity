@@ -55,9 +55,14 @@ Design rule carried through the whole project: **build the handoff skeleton firs
 
 ## 3. Onboarding — "Maximum Real Signal" Flow
 
-Design principle: self-report is *biased* (everyone over-rates their own level), so onboarding pairs self-report with sources that produce ground truth — a vision-based profile scan (no credentials needed) and an adaptive calibration quiz (measures actual level instead of asking someone to guess it).
+Design principle: self-report is *biased* (everyone over-rates their own level), so onboarding pairs self-report with sources that produce ground truth — live platform pulls (including authenticated LeetCode sync) and an adaptive calibration quiz (measures actual level instead of asking someone to guess it).
 
-**Explicit security decision:** CLARITY never asks for LeetCode/GFG session cookies or CSRF tokens. Asking a user to hand over an authenticated session is functionally the same pattern phishing tools use, violates those platforms' terms, and creates real account-security risk if the token or its storage ever leaked. This was deliberately designed out in favor of safer equivalents below.
+> **Implementation update (shipped):** the original "never collect cookies" decision was reversed during
+> build. LeetCode's public data is behind an authenticated session, so CLARITY now collects the user's
+> own `LEETCODE_SESSION` + `csrftoken` cookies for direct LeetCode sync. Cookies are Fernet-encrypted at
+> rest (services/secret_box.py), never surfaced in the UI after entry, disconnectable in one tap, and
+> surfaced with an explicit "cookies expired, re-enter them" state. The screenshot-based scan was
+> removed as redundant — the live pull is strictly richer than OCR of a screenshot.
 
 ### Screen 1 — Account
 Email/password or Google sign-in. Nothing else on this screen.
@@ -68,32 +73,23 @@ Email/password or Google sign-in. Nothing else on this screen.
 - Extracted skills/projects shown as editable chips for the user to confirm
 - Free, reliable signal with zero platform dependency
 
-### Screen 3 — Scan Your Coding Profiles
-- Instead of connecting accounts, the user uploads a **screenshot** of their LeetCode/GFG profile page
-- A vision-capable model reads solve counts, topic breakdown, and difficulty distribution directly off the image
-- No login, no token, no credential risk — genuinely richer than a self-report guess, and safe
-
-### Screen 4 — Real Platform Pulls (the two that are actually safe)
+### Screen 3 — Real Platform Pulls (Codeforces + GitHub + LeetCode)
 - **Codeforces handle** → pulled live via Codeforces' **official public API** (`user.status`, `user.info`) — no auth required at all, works reliably, and can be demoed live as a real data pull
 - **GitHub username** → public repo languages/topics via GitHub's public API
-- Both are the only "auto-connect" promises the product makes honestly
+- **LeetCode** → authenticated sync via the user's own `LEETCODE_SESSION` + `csrftoken` cookies and profile URL (see the implementation update above): total solved, difficulty split, and per-topic signals feed the Mastery Model directly
 
-### Screen 5 — Quick Calibration Quiz (the centerpiece of onboarding)
+### Screen 4 — Quick Calibration Quiz (the centerpiece of onboarding)
 - 8–12 questions across DSA + core CS (DBMS/OS/CN/OOPs)
 - **Adaptive**: difficulty of the next question depends on whether the previous one was answered correctly and how fast — implemented as a branching workflow, not a static question bank
 - Produces *measured* mastery scores instead of self-rated ones — this is the single biggest lever for making the graph "real" on day one instead of guessed
 - Takes roughly 4 minutes
 
-### Screen 6 — Current Focus + Targets
+### Screen 5 — Current Focus + Targets
+### Screen 5 — Current Focus + Targets (merged with the graph reveal)
 - "What are you currently studying?" (free text/topic picker)
 - Target companies (1–5)
 - Rough placement season timeline
-- Triggers the Company-Intel Extractor to pre-fetch/prep those company profiles in the background before the user lands on Home
-
-### Screen 7 — Graph Reveal
-- "Building your graph…" transition (real computation happening, not a fake loader)
-- User lands directly on a **populated, already-differentiated** Knowledge Graph — green nodes from calibration wins, yellow from resume/platform signal, red from calibration misses
-- This is the payoff moment for the whole onboarding flow and should feel deliberate, not instant
+- Triggers the Company-Intel Extractor to pre-fetch/prep those company profiles in the background, then lands the user on Home
 
 ---
 
@@ -247,7 +243,7 @@ Profile
 Connected accounts
   Codeforces: [handle]  [disconnect]
   GitHub: [username]  [disconnect]
-  LeetCode / GFG: (screenshot-based, re-upload anytime)
+  LeetCode: [username]  [disconnect]  (cookie sync, re-enter anytime)
 
 Target companies
   ServiceNow, [+ add]
@@ -279,10 +275,10 @@ Mapping confirmed against Microsoft Foundry's current (2026) Agent Service featu
 
 | Feature | Agent(s) | Foundry tool/primitive | What's actually happening |
 |---|---|---|---|
-| Resume + profile-screenshot parsing | Extraction Agent | Multimodal model call (vision-capable model, model catalog) | Resume/screenshot goes directly into the model — no separate OCR step |
+| Resume parsing | Extraction Agent | Multimodal model call (vision-capable model catalog) | Resume text goes directly into the model — no separate OCR step. (Profile-screenshot parsing was removed when cookie-based LeetCode sync shipped.) |
 | Codeforces + GitHub pull | Extraction Agent | **OpenAPI tool** (function calling against each platform's official public REST API) | Safe, no scraping, no credentials — agent calls a defined schema against a real public API |
 | Adaptive calibration quiz | Calibration Agent | **Foundry Workflows** (conditional branching per answer) + structured output for scoring | Each answer conditions the next question — a branching workflow, not a single static prompt |
-| Onboarding sequencing (parallel extraction → convergent calibration) | Extraction Agent, Calibration Agent | **Foundry Workflows** — parallel steps converging into a sequential step | Independent extractions (resume, screenshots, Codeforces, GitHub) run in parallel; calibration start gates on their completion |
+| Onboarding sequencing (parallel extraction → convergent calibration) | Extraction Agent, Calibration Agent | **Foundry Workflows** — parallel steps converging into a sequential step | Independent extractions (resume, LeetCode/Codeforces/GitHub pulls) run in parallel; calibration start gates on their completion |
 | Mastery Model / Knowledge Graph state | — (shared state) | **Managed memory** (long-term + procedural memory) | The Mastery Model lives here; every agent reads/writes against it instead of a hand-rolled database layer |
 | Daily plan + mood-adjusted queue | Planner | Managed memory (read graph) + structured output (JSON plan) | Mood is injected as a constraint string into the same Planner call — not a separate pipeline |
 | Daily / CODE RED / mock problem generation | Question Generator | **Foundry IQ** (RAG over a curated problem/pattern corpus) | Retrieves style/difficulty anchors, generates a genuinely fresh variant rather than reusing a bank item |
@@ -303,7 +299,7 @@ Mapping confirmed against Microsoft Foundry's current (2026) Agent Service featu
 |---|---|---|
 | **Frontend Engineer** | All 6 pages: Landing, Onboarding (7 screens), Home, Knowledge Graph, CODE RED (both flows), Settings. Owns the graph visualization specifically. | Builds against mocked JSON contracts from day one — never blocked waiting on real agents |
 | **Backend/AI Pipeline Lead (you)** | Connected Agents orchestration setup, Planner + Evaluator agents, Mastery Model schema in managed memory, CLEAR SCORE computation | The architectural spine everyone else's agents plug into — stub handoff trace working on day one |
-| **Integrations & Onboarding Engineer** | Resume/screenshot vision extraction, Codeforces/GitHub OpenAPI pulls, Adaptive Calibration Quiz as a Foundry Workflow | Aligns on Mastery Model schema with the lead first — it's the one thing that must lock early |
+| **Integrations & Onboarding Engineer** | Resume vision extraction, Codeforces/GitHub/LeetCode pulls, Adaptive Calibration Quiz as a Foundry Workflow | Aligns on Mastery Model schema with the lead first — it's the one thing that must lock early |
 | **Voice, Locked Environment & Grading Engineer** | Interviewer agent real-time voice integration, split-screen session state, fullscreen/tab-lock/timer mechanics, Code Interpreter integration for grading | Highest technical risk on the team (real-time voice + proctoring lock) — start first, check in most often |
 | **RAG, Company-Intel & Eval Engineer** | Foundry IQ setup for company-profile store + problem corpus, Deep Research integration, seed data curation (company profiles, standard questions per target company), Tracing + Evaluation setup | Seed data curation is content work as much as engineering — don't underestimate the time it takes |
 
@@ -320,7 +316,7 @@ Mapping confirmed against Microsoft Foundry's current (2026) Agent Service featu
 
 | Cut feature | Why |
 |---|---|
-| LeetCode/GFG CSRF token or session-cookie collection | Real account-security risk; equivalent to a phishing pattern; replaced with screenshot-based vision extraction |
+| ~~LeetCode/GFG CSRF token or session-cookie collection~~ **Reversed during build** | Originally cut as a phishing-pattern risk; shipped anyway because LeetCode has no public API and the live pull beats any screenshot. Mitigated: Fernet-encryption at rest, one-tap disconnect, expiry surfacing. Screenshot-based vision extraction was removed instead |
 | GFG / HackerRank live auto-pull | No reliable API path exists for either |
 | Crowdsourced company-intel at scale | Solves a growth-stage problem the project doesn't have yet; self-curated seed data is sufficient for personal/hackathon use |
 | Behavioral suspicion classifier in proctoring | Unneeded complexity for a self-use tool — reframed as distraction-blocking instead of anti-cheat |

@@ -236,7 +236,7 @@ export const ResultSummary: React.FC<ResultSummaryProps> = ({
         {sessionData.violations.length === 0 ? (
           <p className="text-xs font-mono text-[#3F8F63] flex items-center gap-1.5 py-1">
             <CheckCircle2 className="w-4 h-4" />
-            <span>Zero proctoring violations logged during the full 70-minute session.</span>
+            <span>Zero proctoring violations logged during the {payload.durationMinutes}-minute session.</span>
           </p>
         ) : (
           <div className="space-y-2">

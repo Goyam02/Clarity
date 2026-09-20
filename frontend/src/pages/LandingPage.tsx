@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../lib/auth/AuthContext';
+import { ArrowRight } from 'lucide-react';
 import {
   ClarityLogo,
   DailyModeWordmark,
@@ -20,12 +21,11 @@ export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { user, logout } = useAuth();
 
+  // Only real anchors — every link scrolls somewhere that exists.
   const navLinks = [
-    { name: 'Products', href: '#products' },
     { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Knowledge Graph', href: '#knowledge-graph' },
-    { name: 'CODE RED', href: '#code-red' },
-    { name: 'For Students', href: '#for-students' },
+    { name: 'Products', href: '#products' },
+    { name: 'Reviews', href: '#reviews' },
   ];
 
   return (
@@ -92,37 +92,20 @@ export default function LandingPage() {
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 h-20 flex items-center justify-between">
           {/* Left section: Clarity Wordmark + Primary Navigation */}
           <div className="flex items-center gap-8 xl:gap-12">
-            <a href="#" className="flex items-center focus:outline-none" aria-label="Clarity Home">
+            <Link to="/" className="flex items-center focus:outline-none" aria-label="Clarity Home">
               <ClarityLogo />
-            </a>
+            </Link>
 
             <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
-              {navLinks.map((link) =>
-                link.name === 'CODE RED' ? (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    className="group relative inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C1592B]/10 hover:bg-[#C1592B]/18 border border-[#C1592B]/35 hover:border-[#C1592B]/60 text-[#C1592B] text-[13px] font-semibold tracking-wide transition-all duration-200 shadow-[0_1px_8px_rgba(193,89,43,0.12)] hover:shadow-[0_2px_14px_rgba(193,89,43,0.22)]"
-                  >
-                    <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C1592B] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C1592B]"></span>
-                    </span>
-                    <span className="font-bold">CODE RED</span>
-                    <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-[4px] bg-[#C1592B] text-[#FAF6F0] leading-none group-hover:bg-[#a94a20] transition-colors">
-                      LIVE
-                    </span>
-                  </a>
-                ) : (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    className="text-[15px] font-medium text-[#1F2420]/80 hover:text-[#C1592B] transition-colors duration-150"
-                  >
-                    {link.name}
-                  </a>
-                )
-              )}
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-[15px] font-medium text-[#1F2420]/80 hover:text-[#C1592B] transition-colors duration-150"
+                >
+                  {link.name}
+                </a>
+              ))}
             </nav>
           </div>
 
@@ -151,12 +134,6 @@ export default function LandingPage() {
                   className="text-[15px] font-medium text-[#1F2420]/85 hover:text-[#C1592B] transition-colors"
                 >
                   Log In
-                </Link>
-                <Link
-                  to="/code-red"
-                  className="px-[18px] py-[9px] text-[14px] font-medium text-[#1F2420] bg-transparent border border-[#1F2420] rounded-[4px] hover:bg-[#1F2420]/5 active:bg-[#1F2420]/10 transition-all duration-150 cursor-pointer"
-                >
-                  Try CODE RED
                 </Link>
                 <Link
                   to="/signup"
@@ -189,34 +166,16 @@ export default function LandingPage() {
         {/* Mobile menu dropdown */}
         {mobileMenuOpen && (
           <div className="sm:hidden border-b border-[#1F2420]/10 bg-[#FAF6F0] px-6 pt-3 pb-6 space-y-3 shadow-md">
-            {navLinks.map((link) =>
-              link.name === 'CODE RED' ? (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="inline-flex items-center gap-2 px-3 py-1.5 my-1 rounded-full bg-[#C1592B]/10 border border-[#C1592B]/35 text-[#C1592B] text-sm font-semibold tracking-wide"
-                >
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C1592B] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C1592B]"></span>
-                  </span>
-                  <span className="font-bold">CODE RED</span>
-                  <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-[4px] bg-[#C1592B] text-[#FAF6F0] leading-none">
-                    LIVE
-                  </span>
-                </a>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="block text-base font-medium text-[#1F2420] hover:text-[#C1592B] py-1"
-                >
-                  {link.name}
-                </a>
-              )
-            )}
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-base font-medium text-[#1F2420] hover:text-[#C1592B] py-1"
+              >
+                {link.name}
+              </a>
+            ))}
             <div className="pt-4 border-t border-[#1F2420]/10 flex flex-col gap-2.5">
               {user ? (
                 <Link
@@ -293,8 +252,59 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* How It Works: real anchor target for #how-it-works (3 steps) */}
+        <section
+          id="how-it-works"
+          className="w-full max-w-[1100px] mx-auto mt-6 sm:mt-10 pb-4 px-2 scroll-mt-24"
+          aria-label="How Clarity works"
+        >
+          <h2
+            className="text-[28px] sm:text-[36px] font-normal tracking-[-0.02em] text-center text-[#1F2420]"
+            style={{ fontFamily: '"Newsreader", "Fraunces", Georgia, serif' }}
+          >
+            How it works
+          </h2>
+          <div className="mt-8 sm:mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              {
+                step: '01',
+                title: 'Connect & calibrate',
+                body: 'Link LeetCode, Codeforces, and GitHub — plus a short calibration. Your mastery model starts from real data, never self-report alone.',
+              },
+              {
+                step: '02',
+                title: 'See what you actually know',
+                body: 'A live knowledge graph tracks mastery per topic, decays what you skip, and shows exactly why each recommendation is on your plan.',
+              },
+              {
+                step: '03',
+                title: 'Practice under real pressure',
+                body: 'Company-targeted OAs, proctored mock assessments, and AI mock interviews — all feeding the same mastery model.',
+              },
+            ].map((s) => (
+              <div
+                key={s.step}
+                className="p-5 sm:p-6 rounded-[14px] bg-[#FBF9F5]/90 border border-[#1F2420]/10 text-left shadow-[0_2px_12px_rgba(40,35,25,0.03)]"
+              >
+                <span className="text-[11px] font-mono font-bold text-[#C1592B] tracking-widest">{s.step}</span>
+                <h3 className="mt-2 text-[17px] font-semibold text-[#1F2420] tracking-tight">{s.title}</h3>
+                <p className="mt-2 text-[13.5px] leading-relaxed text-[#1F2420]/70">{s.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex justify-center">
+            <Link
+              to={user ? '/dashboard' : '/signup'}
+              className="inline-flex items-center gap-2 px-6 py-3 text-[14.5px] font-medium text-[#FAF6F0] bg-[#1F2420] rounded-[4px] hover:bg-[#2e3730] transition-all shadow-xs"
+            >
+              <span>Start building your mastery model</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </section>
+
         {/* Logo / Brand Pillar Marquee Section with Left & Right Gradient Masks */}
-        <section className="w-full max-w-[1280px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-24 pb-28 sm:pb-36 overflow-hidden" aria-label="Core CLARITY pillars">
+        <section id="products" className="w-full max-w-[1280px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-24 pb-28 sm:pb-36 overflow-hidden scroll-mt-20" aria-label="Core CLARITY pillars">
           <div
             className="w-full flex flex-col gap-7 sm:gap-8 group"
             style={{

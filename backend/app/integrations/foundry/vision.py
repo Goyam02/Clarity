@@ -53,22 +53,61 @@ class FoundryVisionBackend:
 
     async def _get_client(self):
         if self._client is None:
-            from azure.ai.projects.aio import AIProjectClient
-            from azure.identity.aio import DefaultAzureCredential
-            project = AIProjectClient(
-                endpoint=self.settings.AZURE_FOUNDRY_PROJECT_ENDPOINT,
-                credential=DefaultAzureCredential())
-            self._client = await project.get_openai_client()
+            try:
+                from azure.ai.projects.aio import AIProjectClient
+                from azure.identity.aio import DefaultAzureCredential
+                # Optional API-key auth: when AZURE_FOUNDRY_API_KEY is set the
+                # OpenAI client uses it directly instead of a bearer token
+                # from DefaultAzureCredential (which needs az login on the
+                # host or a managed identity — neither exists in containers).
+                api_key = self.settings.AZURE_FOUNDRY_API_KEY or None
+                kwargs: dict = {"api_key": api_key} if api_key else {}
+                project = AIProjectClient(
+                    endpoint=self.settings.AZURE_FOUNDRY_PROJECT_ENDPOINT,
+                    credential=DefaultAzureCredential())
+                # azure-ai-projects >= 2.6: get_openai_client() is SYNC and
+                # returns the AsyncOpenAI client directly (do NOT await it).
+                self._client = project.get_openai_client(**kwargs)
+            except FoundryError:
+                raise
+            except Exception as e:
+                raise FoundryError(
+                    "Could not build the Foundry OpenAI client: "
+                    f"{e}. In containers, DefaultAzureCredential needs a service "
+                    "principal (AZURE_CLIENT_ID / AZURE_TENANT_ID / "
+                    "AZURE_CLIENT_SECRET) or a managed identity — 'az login' "
+                    "tokens from the host are not visible. Easiest fix: set "
+                    "AZURE_FOUNDRY_API_KEY in backend/.env (Foundry project "
+                    "API key). See docs/azure-setup.md.",
+                    code="FOUNDRY_AUTH_FAILED", status=500) from e
         return self._client
 
     async def _complete(self, content: list[dict], system: str) -> dict:
         client = await self._get_client()
-        resp = await client.chat.completions.create(
-            model=self.settings.AZURE_FOUNDRY_MODEL_DEPLOYMENT,
-            messages=[{"role": "system", "content": system},
-                      {"role": "user", "content": content}],
-            response_format={"type": "json_object"}, temperature=0.1,
-            timeout=self.settings.FOUNDRY_TIMEOUT_SECONDS)
+        try:
+            resp = await client.chat.completions.create(
+                model=self.settings.AZURE_FOUNDRY_MODEL_DEPLOYMENT,
+                messages=[{"role": "system", "content": system},
+                          {"role": "user", "content": content}],
+                response_format={"type": "json_object"}, temperature=0.1,
+                timeout=self.settings.FOUNDRY_TIMEOUT_SECONDS)
+        except FoundryError:
+            raise
+        except Exception as e:
+            # Auth token fetch is lazy (first request), so credential failures
+            # surface here — map them to an actionable message.
+            from azure.core.exceptions import ClientAuthenticationError
+            if isinstance(e, ClientAuthenticationError):
+                raise FoundryError(
+                    "Foundry authentication failed: no Entra credential is "
+                    "available to the backend. Easiest fix: set "
+                    "AZURE_FOUNDRY_API_KEY in backend/.env (Foundry project "
+                    "API key), or give the container a service principal "
+                    "(AZURE_CLIENT_ID / AZURE_TENANT_ID / AZURE_CLIENT_SECRET). "
+                    "See docs/azure-setup.md.",
+                    code="FOUNDRY_AUTH_FAILED", status=500) from e
+            raise FoundryError(f"Foundry vision call failed: {e}",
+                               code="FOUNDRY_CALL_FAILED") from e
         raw = (resp.choices[0].message.content or "").strip()
         try:
             return json.loads(raw)

@@ -156,5 +156,10 @@ class MockEventIn(BaseModel):
     payload: dict = Field(default_factory=dict)
 
 
+class MockOAStartIn(BaseModel):
+    company: str = ""
+    code_red_session_id: str = ""
+
+
 class WeeklyRescheduleIn(BaseModel):
     scheduled_for: str  # ISO datetime

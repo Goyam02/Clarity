@@ -7,6 +7,11 @@ import {
   Compass,
   AlertTriangle,
   RefreshCw,
+  Siren,
+  Zap,
+  Moon,
+  Sun,
+  Flame,
 } from 'lucide-react';
 import { ClarityLogo } from '../components/Logos';
 import { useDashboard } from '../hooks/useDashboard';
@@ -17,8 +22,16 @@ import { DashboardSections } from '../components/dashboard/DashboardSections';
 import { DashboardSkeleton } from '../components/dashboard/DashboardSkeleton';
 import { OnboardingPayload } from '../onboarding/types';
 import { UserMenu } from '../components/auth/UserMenu';
+import { dailyApi, DailyPlan } from '../lib/api/endpoints';
+import { ApiError } from '../lib/api/client';
 
 const COMPLETED_KEY = 'clarity_completed_profile';
+
+const MOODS: { id: 'light' | 'normal' | 'push'; label: string; icon: React.ReactNode }[] = [
+  { id: 'light', label: 'Light', icon: <Moon className="w-3 h-3" /> },
+  { id: 'normal', label: 'Normal', icon: <Sun className="w-3 h-3" /> },
+  { id: 'push', label: 'Push', icon: <Flame className="w-3 h-3" /> },
+];
 
 export const DashboardView: React.FC = () => {
   const navigate = useNavigate();
@@ -51,9 +64,65 @@ export const DashboardView: React.FC = () => {
     : 1;
 
   // Values strictly from payload when ready
-  const dreamCompany = payload?.target?.company || profile?.goals?.dreamCompany || 'Google';
-  const clearScore = payload?.clearScore?.value ?? 78;
-  const scoreLabel = payload?.clearScore?.label || 'Top 12% Placement Readiness';
+  const dreamCompany = payload?.target?.company || profile?.goals?.dreamCompany || 'your target';
+  const clearScore = payload?.clearScore?.value ?? null;
+  const scoreLabel = payload?.clearScore?.label || 'Building Foundations';
+
+  // --- Daily plan (spec §4): mood + time -> POST /daily/plan, live status toggles ---
+  const [plan, setPlan] = useState<DailyPlan | null>(null);
+  const [planLoading, setPlanLoading] = useState(true);
+  const [planBusy, setPlanBusy] = useState(false);
+  const [planError, setPlanError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    dailyApi.todayPlan()
+      .then((res) => { if (alive) setPlan(res.plan); })
+      .catch(() => { /* no plan yet is normal */ })
+      .finally(() => { if (alive) setPlanLoading(false); });
+    return () => { alive = false; };
+  }, []);
+
+  const [mood, setMood] = useState<'light' | 'normal' | 'push'>('normal');
+  const [minutes, setMinutes] = useState(40);
+
+  const generatePlan = async () => {
+    setPlanBusy(true);
+    setPlanError(null);
+    try {
+      const res = await dailyApi.generatePlan(mood, minutes);
+      setPlan({
+        plan_id: res.plan_id,
+        date: new Date().toISOString().slice(0, 10),
+        mood,
+        total_minutes: minutes,
+        tasks: res.tasks,
+      });
+    } catch (err) {
+      setPlanError(err instanceof ApiError
+        ? (err.code === 'FOUNDRY_NOT_CONFIGURED'
+          ? 'The AI planner needs the Foundry backend configured (docs/azure-setup.md).'
+          : err.message)
+        : 'Could not generate the plan.');
+    } finally {
+      setPlanBusy(false);
+    }
+  };
+
+  const toggleTask = async (index: number) => {
+    if (!plan) return;
+    const task = plan.tasks[index];
+    const next = task.status === 'done' ? 'pending' : 'done';
+    setPlan({ ...plan, tasks: plan.tasks.map((t, i) =>
+      i === index ? { ...t, status: next } : t) }); // optimistic
+    try {
+      await dailyApi.setTaskStatus(plan.plan_id, index, next);
+    } catch {
+      // revert on failure
+      setPlan((p) => p ? { ...p, tasks: p.tasks.map((t, i) =>
+        i === index ? { ...t, status: task.status } : t) } : p);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#FAF6F0] text-[#1F2420] flex flex-col font-sans relative selection:bg-[#C1592B] selection:text-[#FAF6F0]">
@@ -81,12 +150,23 @@ export const DashboardView: React.FC = () => {
             <ClarityLogo className="scale-90 origin-left" />
           </Link>
           <div className="flex items-center gap-3">
+            {/* CODE RED — spec §4: permanently visible in the Home header, one tap during panic */}
+            <button
+              id="btn-code-red"
+              type="button"
+              onClick={() => navigate('/code-red')}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-[4px] bg-[#B8322A] text-[#FAF6F0] text-[12px] font-semibold hover:bg-[#C9402F] transition-colors shadow-[0_2px_10px_rgba(184,50,42,0.35)] cursor-pointer"
+            >
+              <Siren className="w-3.5 h-3.5" />
+              <span>CODE RED</span>
+            </button>
             <Link
               to="/dashboard/graph"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[4px] bg-[#1F2420] text-[#FAF6F0] text-[12px] font-medium hover:bg-[#C1592B] transition-colors shadow-xs"
             >
               <Compass className="w-3.5 h-3.5 text-[#E5A83B]" />
-              <span>Knowledge Graph</span>
+              <span className="hidden sm:inline">Knowledge Graph</span>
+              <span className="sm:hidden">Graph</span>
             </Link>
             <button
               id="btn-update-calibration"
@@ -95,14 +175,8 @@ export const DashboardView: React.FC = () => {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[4px] border border-[#1F2420]/15 text-[12px] font-medium hover:border-[#C1592B] hover:text-[#C1592B] transition-colors cursor-pointer"
             >
               <RotateCcw className="w-3.5 h-3.5" />
-              <span>Update Calibration</span>
+              <span className="hidden md:inline">Update Calibration</span>
             </button>
-            <Link
-              to="/"
-              className="text-[13px] text-[#1F2420]/75 hover:text-[#C1592B] font-medium transition-colors hidden sm:inline"
-            >
-              Landing Page
-            </Link>
             <UserMenu />
           </div>
         </div>
@@ -176,9 +250,9 @@ export const DashboardView: React.FC = () => {
                     Clear Score
                   </span>
                   <span className="text-[34px] sm:text-[38px] font-bold text-[#1F2420] leading-none">
-                    {clearScore}
+                    {clearScore ?? '—'}
                   </span>
-                  <span className="text-[13.5px] text-[#1F2420]/60"> / 100</span>
+                  <span className="text-[13.5px] text-[#1F2420]/60">{clearScore !== null ? ' / 100' : ''}</span>
                 </div>
                 <div
                   className="w-12 h-12 rounded-full border-4 border-[#C1592B] border-t-transparent flex items-center justify-center text-[11px] font-bold text-[#C1592B] uppercase text-center leading-none"
@@ -187,6 +261,111 @@ export const DashboardView: React.FC = () => {
                   Top
                 </div>
               </div>
+            </div>
+
+            {/* Daily Plan (spec §4): mood + time -> generated plan with live task state.
+                Every value below comes from GET/POST /daily/plan — no placeholders. */}
+            <div className="p-5 sm:p-6 rounded-[16px] bg-[#FBF9F5] border border-[#1F2420]/10 shadow-[0_4px_20px_rgba(40,35,25,0.03)]">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <Zap className="w-4 h-4 text-[#C1592B]" />
+                  <h2 className="text-[16px] font-semibold text-[#1F2420] tracking-tight">Today's Plan</h2>
+                  {plan && (
+                    <span className="text-[11px] font-mono text-[#1F2420]/50 uppercase">
+                      {plan.mood} · {plan.total_minutes}m
+                    </span>
+                  )}
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {/* Mood toggle (spec §4: Light / Normal / Push) */}
+                  <div className="flex items-center gap-1 p-0.5 rounded-[6px] bg-[#1F2420]/5 border border-[#1F2420]/10">
+                    {MOODS.map((m) => (
+                      <button
+                        key={m.id}
+                        type="button"
+                        onClick={() => setMood(m.id)}
+                        className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-[4px] text-[11.5px] font-medium transition-colors cursor-pointer ${
+                          mood === m.id
+                            ? 'bg-[#1F2420] text-[#FAF6F0] shadow-xs'
+                            : 'text-[#1F2420]/60 hover:text-[#1F2420]'
+                        }`}
+                      >
+                        {m.icon}
+                        <span>{m.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                  <select
+                    value={minutes}
+                    onChange={(e) => setMinutes(Number(e.target.value))}
+                    className="px-2 py-1.5 rounded-[6px] border border-[#1F2420]/15 text-[12px] bg-[#FAF6F0] cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#C1592B]/50"
+                    aria-label="Minutes available today"
+                  >
+                    {[15, 30, 40, 60, 90, 120].map((m) => (
+                      <option key={m} value={m}>{m} min</option>
+                    ))}
+                  </select>
+                  <button
+                    id="btn-generate-plan"
+                    type="button"
+                    onClick={() => void generatePlan()}
+                    disabled={planBusy}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[6px] bg-[#C1592B] text-[#FAF6F0] text-[12px] font-semibold hover:bg-[#A8451F] transition-colors shadow-xs disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+                  >
+                    {planBusy ? <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                      : plan ? <RotateCcw className="w-3.5 h-3.5" /> : <Zap className="w-3.5 h-3.5" />}
+                    <span>{planBusy ? 'Planning…' : plan ? 'Regenerate' : 'Generate plan'}</span>
+                  </button>
+                </div>
+              </div>
+
+              {planError && (
+                <p className="mt-3 text-[12.5px] text-[#B8322A]">{planError}</p>
+              )}
+
+              {planLoading ? (
+                <p className="mt-4 text-[12.5px] font-mono text-[#1F2420]/50">Loading plan…</p>
+              ) : plan && plan.tasks.length > 0 ? (
+                <ul className="mt-4 space-y-2">
+                  {plan.tasks.map((task, idx) => {
+                    const done = task.status === 'done';
+                    return (
+                      <li key={`${task.id ?? idx}-${idx}`}>
+                        <button
+                          type="button"
+                          onClick={() => void toggleTask(idx)}
+                          className={`w-full text-left flex items-center gap-3 p-3 rounded-[10px] border transition-colors cursor-pointer ${
+                            done
+                              ? 'bg-[#5B6B4D]/8 border-[#5B6B4D]/25'
+                              : 'bg-[#FAF6F0] border-[#1F2420]/10 hover:border-[#C1592B]/40'
+                          }`}
+                        >
+                          <span
+                            className={`shrink-0 w-4 h-4 rounded-full border-2 flex items-center justify-center ${
+                              done ? 'border-[#5B6B4D] bg-[#5B6B4D]' : 'border-[#1F2420]/30'
+                            }`}
+                          >
+                            {done && <span className="w-1.5 h-1.5 rounded-full bg-[#FAF6F0]" />}
+                          </span>
+                          <span className={`flex-1 text-[13.5px] leading-snug ${done ? 'line-through text-[#1F2420]/50' : 'text-[#1F2420]'}`}>
+                            {task.title || task.type}
+                          </span>
+                          {typeof task.detail?.duration_minutes === 'number' && (
+                            <span className="shrink-0 text-[11px] font-mono text-[#1F2420]/50 tabular-nums">
+                              {task.detail.duration_minutes}m
+                            </span>
+                          )}
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p className="mt-4 text-[13px] text-[#1F2420]/65 max-w-xl">
+                  No plan yet today. Pick a mood and the time you have — the planner diffs your
+                  mastery graph and builds the session.
+                </p>
+              )}
             </div>
 
             {/* Platform Pulse: what you actually solved, refreshed on open */}

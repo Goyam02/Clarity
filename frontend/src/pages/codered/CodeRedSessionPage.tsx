@@ -89,12 +89,19 @@ export const CodeRedSessionPage: React.FC = () => {
 
   const startMock = useCallback(async () => {
     try {
+      if (state?.round_type?.toLowerCase() === 'interview') {
+        // Voice interviewer (Gemini Live) — creates its own backend session.
+        navigate('/code-red/interview');
+        return;
+      }
+      // OA: backend generates + sizes the assessment to remaining time;
+      // the locked environment loads THAT session (no second generation).
       await codeRedApi.startMockOA(sessionId);
-      navigate('/mock-oa');
+      navigate('/mock-oa?session=' + encodeURIComponent(sessionId));
     } catch (err) {
       setError(err instanceof ApiError ? err.message : 'Failed to start the locked environment.');
     }
-  }, [sessionId, navigate]);
+  }, [state, sessionId, navigate]);
 
   const remaining = useMemo(() => {
     if (!state) return 0;

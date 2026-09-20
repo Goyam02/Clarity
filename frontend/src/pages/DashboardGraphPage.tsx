@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Compass,
   LayoutDashboard,
@@ -14,82 +14,64 @@ import { KnowledgeGraph } from '../components/graph/KnowledgeGraph';
 import { DashboardAmbientGlow } from '../components/graph/DashboardAmbientGlow';
 import { GraphData, GraphNode } from '../lib/graph/types';
 import { OnboardingPayload } from '../onboarding/types';
+import { masteryApi, usersApi, MasteryNodeDto } from '../lib/api/endpoints';
 import { UserMenu } from '../components/auth/UserMenu';
 
-const COMPLETED_KEY = 'clarity_completed_profile';
-const GRAPH_STORAGE_KEY = 'clarity_knowledge_graph';
-
 export const DashboardGraphPage: React.FC = () => {
-  const navigate = useNavigate();
   const [profile, setProfile] = useState<OnboardingPayload | null>(null);
   const [graphData, setGraphData] = useState<GraphData | null>(null);
   const [highlightedTopicId, setHighlightedTopicId] = useState<string | null>(null);
   const [actionNotification, setActionNotification] = useState<string | null>(null);
 
   useEffect(() => {
-    try {
-      // 1. Check for saved profile
-      const savedProfileStr = localStorage.getItem(COMPLETED_KEY);
-      let loadedProfile: OnboardingPayload | null = null;
-      if (savedProfileStr) {
-        loadedProfile = JSON.parse(savedProfileStr);
-        setProfile(loadedProfile);
+    let alive = true;
+
+    // Real mastery state from the backend (GET /mastery/nodes) + target profile
+    // (GET /users/me). The graph generator maps these onto the topic catalog —
+    // topics with no mastery node render as 'unrated', never as invented data.
+    (async () => {
+      let nodes: MasteryNodeDto[] = [];
+      let company = 'Google';
+      let timeline = 'Upcoming Placement';
+      try {
+        const [snap, me] = await Promise.all([masteryApi.nodes(), usersApi.me()]);
+        nodes = snap.nodes || [];
+        company = me.current_focus?.split(':')[0]?.trim() || me.target_companies?.[0] || 'Google';
+        timeline = me.placement_timeline || 'Upcoming Placement';
+      } catch {
+        // Backend unreachable: render the catalog with all-unrated nodes
+        // (honest empty state) rather than fabricated ratings.
       }
+      if (!alive) return;
+      setProfile({ goals: { dreamCompany: company, placementTimeline: timeline } } as never);
 
-      // 2. Check for pre-generated graph or generate deterministically
-      const savedGraphStr = localStorage.getItem(GRAPH_STORAGE_KEY);
-      if (savedGraphStr) {
-        const parsed = JSON.parse(savedGraphStr);
-        setGraphData(parsed);
-      } else {
-        // Deterministic generation
-        const ratings = loadedProfile?.skillRatings || {
-          arrays_strings: 4,
-          linked_lists: 3,
-          stacks: 3,
-          queues: 3,
-          hash_tables: 4,
-          trees: 3,
-          sorting: 4,
-          binary_search: 3,
-          two_pointers: 4,
-          sliding_window: 3,
-          recursion_backtracking: 2,
-          dynamic_programming: 2,
-          sql_queries: 4,
-          dbms_fundamentals: 2,
-          operating_systems: 3,
-          computer_networks: 2,
-        };
-
-        const generated = generateKnowledgeGraph({
-          catalog: ONBOARDING_TOPIC_CATALOG,
-          ratings,
-          targetCompany: loadedProfile?.goals?.dreamCompany || 'Google',
-          timeline: loadedProfile?.goals?.placementTimeline || 'Upcoming Placement',
-        });
-
-        setGraphData(generated);
-        try {
-          localStorage.setItem(GRAPH_STORAGE_KEY, JSON.stringify(generated));
-        } catch {
-          // ignore
-        }
+      // Map backend mastery nodes -> catalog ratings (0..1 scale).
+      const ratings: Record<string, number | null> = {};
+      for (const topic of ONBOARDING_TOPIC_CATALOG) {
+        const node = nodes.find(
+          (n) => n.topic_id === topic.id || n.pattern === topic.id ||
+                 n.pattern === topic.id.replace(/_/g, '-'));
+        const raw = node?.effective_mastery ?? node?.mastery_score;
+        ratings[topic.id] = typeof raw === 'number' ? raw : null;
       }
+      setGraphData(generateKnowledgeGraph({
+        catalog: ONBOARDING_TOPIC_CATALOG,
+        ratings,
+        targetCompany: company,
+        timeline,
+      }));
+    })();
 
-      // Check for ?focus=<topicId> in query params
-      if (typeof window !== 'undefined') {
-        const urlParams = new URLSearchParams(window.location.search);
-        const focusTopic = urlParams.get('focus');
-        if (focusTopic) {
-          setHighlightedTopicId(focusTopic);
-        }
+    // Check for ?focus=<topicId> in query params
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const focusTopic = urlParams.get('focus');
+      if (focusTopic) {
+        setHighlightedTopicId(focusTopic);
       }
-    } catch {
-      // fallback
-      const fallback = generateKnowledgeGraph({ catalog: ONBOARDING_TOPIC_CATALOG });
-      setGraphData(fallback);
     }
+
+    return () => { alive = false; };
   }, []);
 
   const dreamCompany = profile?.goals?.dreamCompany || 'Google';
@@ -167,13 +149,6 @@ export const DashboardGraphPage: React.FC = () => {
               <Compass className="w-3.5 h-3.5 text-[var(--accent)]" />
               <span>Knowledge Graph</span>
             </span>
-            <Link
-              to="/graph-demo"
-              className="px-2.5 py-1 rounded-[4px] text-[var(--muted)] hover:text-[var(--ink)] hover:bg-[var(--surface)] transition-colors flex items-center gap-1"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-[var(--accent)]" />
-              <span className="hidden sm:inline">Sandbox</span>
-            </Link>
           </nav>
         </div>
 

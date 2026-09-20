@@ -338,6 +338,55 @@ export const interviewsApi = {
               mastery_deltas: unknown[] }>(`/interviews/${sessionId}/debrief`),
 };
 
+// --- dashboard (Home page read model) ---------------------------------------
+
+export const dashboardApi = {
+  get: () => api.get<import('../dashboard/types').DashboardPayload>('/dashboard'),
+};
+
+// --- mock OA (locked environment, spec §8) -----------------------------------
+
+export interface MockOAAssessmentProblem {
+  id: string;
+  title: string;
+  difficulty: string;
+  topicIds: string[];
+  statement: string;
+  inputFormat: string;
+  outputFormat: string;
+  constraints: string[];
+  examples: { input: string; output: string; explanation?: string }[];
+  starter: { python: string; java: string; cpp: string };
+  sampleStdin: string;
+}
+
+export interface MockOAAssessment {
+  id: string;
+  company: string;
+  year: number;
+  durationMinutes: number;
+  status: string;
+  problems: MockOAAssessmentProblem[];
+}
+
+export const mockOAApi = {
+  start: (company = '', code_red_session_id = '') =>
+    api.post<{ session_id: string; duration_minutes: number;
+               problems: { problem_id: string; title: string }[] }>(
+      '/mock-oa/start', { company, code_red_session_id }),
+  assessment: (sessionId: string) =>
+    api.get<MockOAAssessment>(`/mock-oa/assessments/${sessionId}`),
+  event: (sessionId: string, event_type: string, payload: Record<string, unknown> = {}) =>
+    api.post<{ recorded: boolean }>(`/mock-oa/${sessionId}/events`, { event_type, payload }),
+  linkAttempt: (sessionId: string, attempt_id: string) =>
+    api.post<{ linked: boolean }>(`/mock-oa/${sessionId}/link-attempt`,
+      { event_type: 'SUBMISSION_LINKED', payload: { attempt_id } }),
+  end: (sessionId: string) =>
+    api.post<{ session_id: string; correctness: number; tests_passed: number;
+               tests_total: number; distraction_events: number; problems: string[] }>(
+      `/mock-oa/${sessionId}/end`),
+};
+
 // --- outcomes (OUTCOME LOOP) -----------------------------------------------------
 
 export const outcomesApi = {

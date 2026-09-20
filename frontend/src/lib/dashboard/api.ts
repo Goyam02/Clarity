@@ -1,5 +1,4 @@
 import { DashboardPayload, RevisionTopic, AdaptiveProblem, Band, Reason } from './types';
-import { createMockDashboardPayload } from './mock';
 
 const VALID_BANDS: Set<Band> = new Set(['weak', 'developing', 'strong']);
 const VALID_REASONS: Set<Reason> = new Set([
@@ -12,6 +11,7 @@ const VALID_REASONS: Set<Reason> = new Set([
 
 /**
  * Hand-written type guard to strictly validate DashboardPayload at runtime
+ * against the typed contract served by GET /api/v1/dashboard.
  */
 export function isDashboardPayload(data: unknown): data is DashboardPayload {
   if (!data || typeof data !== 'object') return false;
@@ -95,63 +95,17 @@ export function isDashboardPayload(data: unknown): data is DashboardPayload {
 }
 
 /**
- * Fetch dashboard data from the backend API, with fallback to mock data when
- * NEXT_PUBLIC_USE_MOCKS is enabled or when no backend is available.
+ * Fetch dashboard data from the backend read model (GET /api/v1/dashboard).
+ * The backend computes everything from the Mastery Model + company research —
+ * there is no client-side mock data path.
  */
 export async function fetchDashboard(): Promise<DashboardPayload> {
-  const isMockMode =
-    typeof process !== 'undefined' &&
-    (process.env?.NEXT_PUBLIC_USE_MOCKS === 'true' || process.env?.VITE_USE_MOCKS === 'true');
+  const { dashboardApi } = await import('../api/endpoints');
+  const data = await dashboardApi.get();
 
-  const metaEnv = typeof import.meta !== 'undefined' ? (import.meta as any).env : null;
-  const useMocks =
-    isMockMode ||
-    metaEnv?.NEXT_PUBLIC_USE_MOCKS === 'true' ||
-    metaEnv?.VITE_USE_MOCKS === 'true';
-
-  const apiBaseUrl =
-    (typeof process !== 'undefined' && (process.env?.NEXT_PUBLIC_API_BASE_URL || process.env?.VITE_API_BASE_URL)) ||
-    metaEnv?.NEXT_PUBLIC_API_BASE_URL ||
-    metaEnv?.VITE_API_BASE_URL ||
-    '';
-
-  // If explicit mock mode or no api base url configured, return verified mock payload
-  if (useMocks || !apiBaseUrl) {
-    // Return mock payload created from user's onboarding state
-    return createMockDashboardPayload();
+  if (!isDashboardPayload(data)) {
+    throw new Error('Dashboard API returned an invalid response schema violating the typed contract.');
   }
 
-  try {
-    const token = typeof localStorage !== 'undefined' ? localStorage.getItem('clarity_auth_token') : null;
-    const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
-    };
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-    }
-
-    const response = await fetch(`${apiBaseUrl.replace(/\/$/, '')}/dashboard`, {
-      method: 'GET',
-      headers,
-    });
-
-    if (!response.ok) {
-      throw new Error(`Dashboard API responded with status ${response.status}: ${response.statusText}`);
-    }
-
-    const data = await response.json();
-
-    if (!isDashboardPayload(data)) {
-      throw new Error('Dashboard API returned an invalid response schema violating the typed contract.');
-    }
-
-    return data;
-  } catch (err) {
-    // If running in development and API is not reachable, fall back to mock data
-    if (metaEnv?.DEV || (typeof process !== 'undefined' && process.env?.NODE_ENV !== 'production')) {
-      console.warn('Backend API unreachable; falling back to local onboarding-derived mock data:', err);
-      return createMockDashboardPayload();
-    }
-    throw err;
-  }
+  return data;
 }

@@ -18,6 +18,7 @@ async def start_mock_oa(db: Session, user_id: str, code_red_session_id: str | No
                         company: str = "", duration_minutes: int | None = None) -> dict:
     """Create a MockSession with fresh problems sized to the available time."""
     remaining = duration_minutes
+    code_red = None
     if code_red_session_id:
         from app.models import CodeRedSession
         cr = db.query(CodeRedSession).filter(
@@ -25,7 +26,12 @@ async def start_mock_oa(db: Session, user_id: str, code_red_session_id: str | No
             CodeRedSession.user_id == user_id).first()
         if not cr:
             raise ClarityError("SESSION_NOT_FOUND", "CODE RED session not found", 404)
+        code_red = cr
         remaining = cr.remaining_time or max(15, cr.time_budget // 3)
+        if not company:
+            from app.models import Company
+            comp = db.query(Company).filter(Company.id == cr.company_id).first()
+            company = comp.name if comp else ""
     remaining = max(10, min(remaining or 45, 180))
 
     # ~1 problem per 20 minutes, 2-3 problems, sized to the timer.
@@ -56,7 +62,18 @@ async def start_mock_oa(db: Session, user_id: str, code_red_session_id: str | No
         problems.append({"problem_id": problem.id, "title": problem.title,
                          "difficulty": problem.difficulty,
                          "minutes": max(10, remaining // count)})
+    company_id = code_red.company_id if code_red is not None else ""
+    if not company_id and company:
+        from app.models import Company
+        comp = db.query(Company).filter(Company.name.ilike(company)).first()
+        if not comp:
+            comp = Company(name=company)
+            db.add(comp)
+            db.commit()
+            db.refresh(comp)
+        company_id = comp.id
     session = MockSession(user_id=user_id, round_type="OA", status="locked_active",
+                          company_id=company_id,
                           problem_ids=[p["problem_id"] for p in problems])
     db.add(session)
     db.commit()

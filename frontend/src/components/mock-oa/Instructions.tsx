@@ -51,8 +51,8 @@ export const Instructions: React.FC<InstructionsProps> = ({ payload, onProceed }
           </p>
           <p>
             This is a proctored practice environment. Coddy runs your code in the editor; Clarity
-            cannot read it yet, so you mark each problem's status yourself at submit. Automated
-            grading with hidden test cases arrives with the backend.
+            cannot read it yet, so you mark each problem's status yourself at submit. Your session
+            closes on the backend when you finish — scored from submissions and proctor events.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export const Instructions: React.FC<InstructionsProps> = ({ payload, onProceed }
               <span>Session Format</span>
             </div>
             <ul className="text-xs text-[#1F2420]/80 space-y-1.5 leading-normal">
-              <li>• <strong>2 algorithmic problems:</strong> Balanced Shipments &amp; Prefix Autocomplete.</li>
+              <li>• <strong>{payload.problems.length} generated problem{payload.problems.length > 1 ? 's' : ''}:</strong> fresh variants targeting your weak patterns.</li>
               <li>• <strong>Standard I/O:</strong> Read from stdin, print to stdout.</li>
               <li>• <strong>Supported languages:</strong> Python 3, Java, C++.</li>
             </ul>

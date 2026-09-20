@@ -56,18 +56,36 @@ class FoundryChatBackend:
 
     def _project_client(self):
         if self._project is None:
-            from azure.ai.projects.aio import AIProjectClient
-            from azure.identity.aio import DefaultAzureCredential
-            self._project = AIProjectClient(
-                endpoint=self.settings.AZURE_FOUNDRY_PROJECT_ENDPOINT,
-                credential=DefaultAzureCredential())
+            try:
+                from azure.ai.projects.aio import AIProjectClient
+                from azure.identity.aio import DefaultAzureCredential
+                self._project = AIProjectClient(
+                    endpoint=self.settings.AZURE_FOUNDRY_PROJECT_ENDPOINT,
+                    credential=DefaultAzureCredential(),
+                    allow_preview=True)
+            except ClarityError:
+                raise
+            except Exception as e:
+                raise FoundryError(
+                    "Could not build the Foundry project client: "
+                    f"{e}. In containers, DefaultAzureCredential needs a service "
+                    "principal (AZURE_CLIENT_ID / AZURE_TENANT_ID / "
+                    "AZURE_CLIENT_SECRET) or a managed identity — 'az login' "
+                    "tokens from the host are not visible. "
+                    "See docs/azure-setup.md.",
+                    code="FOUNDRY_AUTH_FAILED", status=500) from e
         return self._project
 
     async def _agent_client(self, agent: str):
         if agent not in self._clients:
             try:
-                self._clients[agent] = await self._project_client().get_openai_client(
-                    agent_name=agent)
+                # Optional API-key auth (AZURE_FOUNDRY_API_KEY): see vision.py.
+                api_key = self.settings.AZURE_FOUNDRY_API_KEY or None
+                kwargs: dict = {"api_key": api_key} if api_key else {}
+                # azure-ai-projects >= 2.6: get_openai_client() is SYNC and
+                # returns the AsyncOpenAI client directly (do NOT await it).
+                self._clients[agent] = self._project_client().get_openai_client(
+                    agent_name=agent, **kwargs)
             except Exception as e:
                 raise FoundryError(
                     f"Could not route to Foundry agent '{agent}': {e}. "
@@ -76,6 +94,7 @@ class FoundryChatBackend:
         return self._clients[agent]
 
     async def complete_json(self, *, agent: str, system: str, user: str) -> dict:
+        from azure.core.exceptions import ClientAuthenticationError
         from openai import (APIConnectionError, APITimeoutError, InternalServerError,
                             RateLimitError)
         transient = (RateLimitError, APIConnectionError, APITimeoutError,
@@ -105,6 +124,17 @@ class FoundryChatBackend:
                 await asyncio.sleep(1.5 ** attempt)
             except FoundryError:
                 raise
+            except ClientAuthenticationError as e:
+                # Auth token fetch is lazy (first request): map credential
+                # failures to an actionable message instead of a raw 500.
+                raise FoundryError(
+                    "Foundry authentication failed: no Entra credential is "
+                    "available to the backend. Easiest fix: set "
+                    "AZURE_FOUNDRY_API_KEY in backend/.env (Foundry project "
+                    "API key), or give the container a service principal "
+                    "(AZURE_CLIENT_ID / AZURE_TENANT_ID / AZURE_CLIENT_SECRET). "
+                    "See docs/azure-setup.md.",
+                    code="FOUNDRY_AUTH_FAILED", status=500) from e
             except Exception as e:
                 # Non-transient (auth, bad request, missing deployment): fail fast.
                 raise FoundryError(

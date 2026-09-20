@@ -6,9 +6,11 @@ from sqlalchemy.orm import Session
 
 from app.core.errors import ClarityError
 from app.dependencies import get_current_user_id, get_db
-from app.models import CodeRedSession, Company, CompanyProfile, MockSession
+from app.models import (CodeRedSession, Company, CompanyProfile, MockSession,
+                        Problem)
 from app.schemas import (CodeRedRequest, CodeRedTaskStatusIn, InterviewEventIn,
-                         MockEventIn, OutcomeIn, WeeklyRescheduleIn)
+                         MockEventIn, MockOAStartIn, OutcomeIn,
+                         WeeklyRescheduleIn)
 from app.services.company_service import drift_status
 from app.services import web_corpus
 from app.workflows import code_red as cr
@@ -222,6 +224,78 @@ def complete_week(mock_id: str, body: MockEventIn,
                   db: Session = Depends(get_db)):
     return weekly.mark_completed(db, user_id, mock_id,
                                  str(body.payload.get("session_id", "")))
+
+
+# --- Mock OA: assessment create/fetch (frontend locked environment) ------
+
+
+@router_mock_oa.post("/start")
+async def start_standalone_mock_oa(body: MockOAStartIn,
+                                   user_id: str = Depends(get_current_user_id),
+                                   db: Session = Depends(get_db)):
+    """Generate a fresh proctored assessment (Question Generator), stored as a
+    MockSession. Sized to the CODE RED time budget when linked to one."""
+    return await mock_oa.start_mock_oa(
+        db, user_id,
+        code_red_session_id=body.code_red_session_id or None,
+        company=body.company or "")
+
+
+@router_mock_oa.get("/assessments/{session_id}")
+def get_mock_oa_assessment(session_id: str,
+                           user_id: str = Depends(get_current_user_id),
+                           db: Session = Depends(get_db)):
+    """The full assessment payload for the locked environment: problems with
+    statements, examples, and starter templates — user-scoped."""
+    session = db.query(MockSession).filter(
+        MockSession.id == session_id, MockSession.user_id == user_id).first()
+    if not session:
+        raise ClarityError("SESSION_NOT_FOUND", "Mock OA session not found", 404)
+    problems = []
+    for pid in session.problem_ids or []:
+        p = db.query(Problem).filter(Problem.id == pid).first()
+        if not p:
+            continue
+        statement = p.statement or ""
+        input_format = output_format = ""
+        if "Input format:" in statement:
+            head, rest = statement.split("Input format:", 1)
+            if "Output format:" in rest:
+                fmt_part, tail = rest.split("Output format:", 1)
+                input_format = fmt_part.strip()
+                output_format = tail.split("\n\n")[0].strip()
+            else:
+                input_format = rest.strip()
+        problems.append({
+            "id": p.id,
+            "title": p.title,
+            "difficulty": (p.difficulty or "medium").capitalize(),
+            "topicIds": [p.pattern or p.topic_id or "algorithms"],
+            "statement": statement,
+            "inputFormat": input_format,
+            "outputFormat": output_format,
+            "constraints": p.constraints or [],
+            "examples": p.examples or [],
+            "starter": {
+                "python": f"import sys\n\ndef solve():\n    data = sys.stdin.read().split()\n    # TODO: solve '{p.title}' ({p.difficulty})\n    pass\n\nif __name__ == '__main__':\n    solve()\n",
+                "java": f"import java.util.Scanner;\n\npublic class Main {{\n    public static void main(String[] args) {{\n        Scanner sc = new Scanner(System.in);\n        // TODO: solve '{p.title}' ({p.difficulty})\n    }}\n}}\n",
+                "cpp": f"#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {{\n    ios::sync_with_stdio(false);\n    cin.tie(nullptr);\n    // TODO: solve '{p.title}' ({p.difficulty})\n    return 0;\n}}\n",
+            },
+            "sampleStdin": ((p.examples or [{}])[0].get("input", "") or ""),
+        })
+    company = ""
+    if session.company_id:
+        comp = db.query(Company).filter(Company.id == session.company_id).first()
+        company = comp.name if comp else ""
+    minutes = 45
+    if session.started_at:
+        started = session.started_at if session.started_at.tzinfo else session.started_at.replace(tzinfo=timezone.utc)
+        elapsed = (datetime.now(timezone.utc) - started).total_seconds()
+        minutes = max(5, round(45 - elapsed / 60)) if session.status == "locked_active" else 45
+    return {"id": session.id, "company": company or "Practice",
+            "year": datetime.now(timezone.utc).year,
+            "durationMinutes": minutes,
+            "status": session.status, "problems": problems}
 
 
 # --- Mock OA locked environment (spec §8) --------------------------------

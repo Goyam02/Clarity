@@ -41,6 +41,10 @@ class Settings(BaseSettings):
     WEB_RESEARCH_TTL_DAYS: int = 14
     FOUNDRY_TIMEOUT_SECONDS: int = 60
     FOUNDRY_MAX_RETRIES: int = 3
+    # Optional Foundry API key: when set, Foundry calls authenticate with it
+    # instead of DefaultAzureCredential (which needs az login on the host or a
+    # managed identity — neither available in plain containers).
+    AZURE_FOUNDRY_API_KEY: str = ""
 
     # Foundry IQ / Search (retrieval augmentation; optional)
     AZURE_SEARCH_ENDPOINT: str = ""

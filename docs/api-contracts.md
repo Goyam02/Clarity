@@ -37,6 +37,10 @@ Base: `http://localhost:8000/api/v1`. Auth: `Authorization: Bearer <jwt>`
 | `GET /interviews/{id}/transcript` | auth | `{transcript[]}` |
 | `GET /interviews/{id}/debrief` | auth | `{correctness,communication_quality,mastery_deltas[]}` |
 | `POST /outcomes`, `GET /outcomes` | auth | outcome loop (calibrates future CLEAR SCORE) |
+| `GET /dashboard` | auth | Home read model: `{user,target,clearScore,today,sandbox}` — computed from the Mastery Model + company research; topics rank nodes by urgency (mastery × importance × staleness); no client-side mock fallback |
+| `POST /mock-oa/start` `{company?,code_red_session_id?}` | auth | `{session_id,duration_minutes,problems[]}` — Question Generator builds a fresh assessment; sized to the CODE RED budget when linked |
+| `GET /mock-oa/assessments/{id}` | auth | full locked-environment payload: `{id,company,year,durationMinutes,status,problems[{statement,inputFormat,outputFormat,constraints,examples,starter,sampleStdin}]}` (user-scoped) |
+| `POST /mock-oa/{id}/end` | auth | `{correctness,tests_passed,tests_total,distraction_events}` — 409 on double-end |
 
 Status codes: 200 ok, 401 missing/invalid auth, 404 unknown entity
 (`TOPIC_NOT_FOUND`, `SESSION_NOT_FOUND`, `ATTEMPT_NOT_FOUND`), 500

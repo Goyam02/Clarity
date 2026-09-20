@@ -4,6 +4,15 @@ All values map to `backend/.env.example`. The Foundry project (1–4) is
 **required** — every agent calls the live service; without it, agent
 endpoints return `FOUNDRY_NOT_CONFIGURED` with setup instructions.
 
+> **Auth inside Docker (the common local hangup):** `DefaultAzureCredential`
+> finds nothing in a plain container — no `az login` token, no managed
+> identity. If uploads/agent calls return `FOUNDRY_AUTH_FAILED`, set
+> **`AZURE_FOUNDRY_API_KEY`** in `backend/.env` (Foundry project → Overview →
+> API key) and `docker compose up -d --build backend`. The code uses key auth
+> when present and falls back to Entra ID when not (host `az login` or a
+> service principal `AZURE_CLIENT_ID` / `AZURE_TENANT_ID` /
+> `AZURE_CLIENT_SECRET`).
+
 1. **Subscription + resource group** — why: container for all below; used by:
    everything; env: none; local: no; prod: yes.
 2. **Microsoft Foundry project** — why: model endpoint + agents; used by:

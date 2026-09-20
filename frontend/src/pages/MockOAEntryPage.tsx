@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchMockOA } from '../lib/mock-oa/api';
 import { MockOAPayload } from '../lib/mock-oa/types';
 import { initializeSession, getStoredSession, clearMockOASession } from '../lib/mock-oa/machine';
@@ -11,18 +11,27 @@ import MockOALayout from './MockOALayout';
 
 export default function MockOAInstructionsPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [payload, setPayload] = useState<MockOAPayload | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [step, setStep] = useState<'instructions' | 'preflight'>('instructions');
   const [verifiedStream, setVerifiedStream] = useState<MediaStream | null>(null);
   const [existingActiveSession, setExistingActiveSession] = useState<boolean>(false);
 
   useEffect(() => {
-    fetchMockOA().then((data) => setPayload(data));
+    // A CODE RED launch carries the pre-sized backend session in ?session=;
+    // otherwise the data seam generates a fresh standalone assessment.
+    const backendSessionId = searchParams.get('session') || undefined;
+    fetchMockOA(backendSessionId)
+      .then((data) => setPayload(data))
+      .catch(() => setLoadError(
+        'Could not load the assessment. Is the backend running and signed in?'));
 
     const existing = getStoredSession();
     if (existing && existing.active && existing.endsAt > Date.now()) {
       setExistingActiveSession(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleStartExam = () => {
@@ -51,13 +60,31 @@ export default function MockOAInstructionsPage() {
     setExistingActiveSession(false);
   };
 
+  if (loadError) {
+    return (
+      <MockOALayout>
+        <div className="flex-1 flex flex-col items-center justify-center p-8 gap-4">
+          <AlertTriangle className="w-8 h-8 text-[#B8322A]" />
+          <p className="text-sm text-[#1F2420]/80 max-w-sm text-center">{loadError}</p>
+          <button
+            type="button"
+            onClick={() => navigate('/dashboard')}
+            className="px-4 py-2 rounded-[6px] bg-[#1F2420] text-[#FAF6F0] text-[13px] font-medium hover:bg-[#C1592B] transition-colors cursor-pointer"
+          >
+            Back to Dashboard
+          </button>
+        </div>
+      </MockOALayout>
+    );
+  }
+
   if (!payload) {
     return (
       <MockOALayout>
         <div className="flex-1 flex items-center justify-center p-8">
           <div className="flex items-center gap-3 font-mono text-sm text-[#1F2420]/70">
             <RefreshCw className="w-4 h-4 animate-spin text-[#C1592B]" />
-            <span>Loading assessment parameters...</span>
+            <span>Generating your assessment...</span>
           </div>
         </div>
       </MockOALayout>
