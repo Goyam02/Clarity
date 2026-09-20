@@ -1,3 +1,6 @@
 backend/venv/
 backend/venv/
 .venv
+.pytest_
+tests/__pycache__
+g

@@ -1,8 +1,9 @@
 """Test harness: file-backed sqlite + stub LLM backend (dependency injection).
 
-Production code always calls the backend interface; tests inject StubBackend
-so no Azure credentials are needed. This is test seam design, not mock-mode
-branching in the product.
+Production runs on PostgreSQL (docker compose); the suite pins sqlite to stay
+hermetic — no server, no credentials. Production code always calls the backend
+interface; tests inject StubBackend so no Azure credentials are needed. This
+is test seam design, not mock-mode branching in the product.
 """
 import json
 import os

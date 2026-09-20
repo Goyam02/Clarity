@@ -7,7 +7,7 @@ web lookup ("recent ServiceNow OA problems") and this module pulls structured,
 source-cited results out of its JSON reply via the standard chat path in
 client.py (single Azure touchpoint preserved).
 
-Layering with the local corpus (prb_csv/companies/*.csv): the CSV corpus stays
+Layering with the local corpus (data/company-corpus/companies/*.csv): the CSV corpus stays
 the authoritative, deterministic seed; web findings are an augmentation merged
 in services/web_corpus.py. Degradation is explicit and safe — when Foundry or
 the web-research agent is not configured, lookups return [] and CODE RED runs

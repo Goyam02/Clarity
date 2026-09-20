@@ -1,6 +1,6 @@
 """Web research (Grounding with Bing Search) merged with the CSV corpus.
 
-The prb_csv corpus stays authoritative; web findings are an augmentation layer.
+The data/company-corpus corpus stays authoritative; web findings are an augmentation layer.
 Tests stub the web-research seam — no Azure credentials involved.
 """
 import uuid

@@ -111,7 +111,7 @@ async def create_session(db: Session, user_id: str, company_name: str, jd: str,
     used = 0
 
     # [company] items: real problems for this company — curated CSV corpus first
-    # (prb_csv, frequency order), then web-researched findings (Grounding with
+    # (data/company-corpus, frequency order), then web-researched findings (Grounding with
     # Bing Search) not already covered. Spec's "known standard question for this
     # company"; every item carries its provenance.
     await web_corpus.ensure_web_research(db, profile, company.name)

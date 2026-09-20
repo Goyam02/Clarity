@@ -1,4 +1,4 @@
-"""Per-company problem-frequency corpus (prb_csv/companies/*.csv).
+"""Per-company problem-frequency corpus (data/company-corpus/companies/*.csv).
 
 Spec: checklist items tagged [company] are "known standard question for this
 company, self-curated", and node importance is "weighted by frequency in the
@@ -74,7 +74,7 @@ def _corpus_base() -> Path | None:
     if base.exists():
         return base
     repo_root = Path(__file__).resolve().parents[3]
-    alt = repo_root / "prb_csv" / "companies"
+    alt = repo_root / "data" / "company-corpus" / "companies"
     return alt if alt.exists() else None
 
 

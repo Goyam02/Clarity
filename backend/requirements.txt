@@ -13,10 +13,8 @@ anyio>=4.9.0
 openai>=3.0.0
 azure-ai-projects>=2.0
 azure-identity>=1.17
+# PostgreSQL driver (primary database) + cache
+psycopg2-binary>=2.9
+redis>=5.0
 # Optional (only needed for vision extraction; PDF text parsing uses pypdf above):
 # azure-search-documents>=11.6
-# psycopg2-binary>=2.9  # PostgreSQL driver for production
-# redis>=5.0
-# azure-search-documents>=11.6
-# psycopg2-binary>=2.9  # PostgreSQL driver for production
-# redis>=5.0

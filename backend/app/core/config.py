@@ -9,7 +9,9 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
 
-    DATABASE_URL: str = "sqlite:///./clarity.db"
+    # PostgreSQL is the primary database (docker compose provides it locally).
+    # SQLite remains supported only for the test suite (tests/conftest.py pins it).
+    DATABASE_URL: str = "postgresql+psycopg2://clarity:clarity@localhost:5432/clarity"
     REDIS_URL: str = "redis://localhost:6379/0"
 
     # Auth (dev-friendly; production should set JWT_SECRET + use real IdP)
@@ -63,7 +65,7 @@ class Settings(BaseSettings):
     GOOGLE_REDIRECT_URI: str = "http://localhost:3000/auth/google/callback"
 
     # Per-company problem-frequency corpus (LeetCode-style CSV seed data)
-    COMPANY_CORPUS_DIR: str = "../prb_csv/companies"
+    COMPANY_CORPUS_DIR: str = "../data/company-corpus/companies"
 
     @property
     def google_oauth_enabled(self) -> bool:

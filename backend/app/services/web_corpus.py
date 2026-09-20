@@ -1,6 +1,6 @@
 """CSV corpus + live web research merge layer.
 
-prb_csv/companies/*.csv stays the authoritative seed (deterministic, offline,
+data/company-corpus/companies/*.csv stays the authoritative seed (deterministic, offline,
 zero dependencies). Azure web research (Grounding with Bing Search, see
 integrations/foundry/web_research.py) augments it with fresh, source-cited
 findings.

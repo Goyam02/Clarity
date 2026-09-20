@@ -22,9 +22,9 @@ Base: `http://localhost:8000/api/v1`. Auth: `Authorization: Bearer <jwt>`
 | `GET /problems`, `GET /problems/{id}` | auth | list / detail |
 | `POST /submissions/attempts` `{problem_id}` | auth | `{attempt_id}` |
 | `POST /submissions` `{attempt_id,language,source_code,explanation?}` | auth | `{judge,evaluation,mastery,trace_id}` |
-| `POST /code-red` `{company,job_description,time_available_minutes,round_type}` | auth | `{session_id,tasks[],clear_score,drift}` |
+| `POST /code-red` `{company,job_description,time_available_minutes,round_type}` | auth | `{session_id,tasks[],clear_score,drift}`; tasks carry `title`, and `detail.source` ∈ `company_corpus\|web\|jd_profile\|mastery_diff\|planner` (Interview rounds add web-sourced `explain_back` items) |
 | `GET /code-red/{id}/clear-score` | auth | `{score,components{target_mastery,recent_performance,company_alignment,timed_performance,core_cs}}` |
-| `GET /companies/{name}` | auth | company profile + `drift` |
+| `GET /companies/{name}` | auth | company profile + `drift` + `problems[]` (CSV + web-researched, each with `origin`: `company_corpus\|web`, web items carry `source`/`source_date` citations) + `interview_questions[]` (web-researched) + `web_researched_at` |
 | `GET /companies/{name}/drift` | auth | `{stale,last_verified,message}` |
 | `POST /interviews` | auth | `{session_id,status}` |
 | `POST /interviews/{id}/events` `{event_type,payload}` | auth | `{recorded,interviewer?}` |

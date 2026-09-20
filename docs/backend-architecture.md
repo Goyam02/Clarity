@@ -51,6 +51,7 @@ validation); all content is model-generated.
 | Managed memory as mastery store | **Rejected by design**: mastery stays in Postgres (queryable/deterministic); `MemoryService` holds agent context only |
 | Foundry IQ | `shims.iq_retrieve` queries Azure AI Search when configured, else no anchors (never canned answers) |
 | Deep Research (`o3-deep-research`) | Not in the installed SDK surface — Company Intel uses the deployed agent + retrieval anchors; research-tool wiring is a later step, not faked now |
+| Live web question research | **Grounding with Bing Search** (the standalone Bing Search APIs retired Aug 2025): the agent named by `WEB_RESEARCH_AGENT` has the tool attached in the Foundry portal; `integrations/foundry/web_research.py` pulls structured, source-cited findings via the shared chat path. `services/web_corpus.py` merges them with the data/company-corpus CSV corpus (CSV stays authoritative, dedupe on title, provenance tagged) and TTL-gates re-search (`WEB_RESEARCH_TTL_DAYS`). Unconfigured → CSV-only, no behavior change |
 | Code Interpreter for grading | Not in the installed SDK surface — `services/judge.py::LocalJudge` subprocess sandbox (Python; Java if JDK present) behind the `CodeJudge` ABC |
 | Voice Live | Not in the installed SDK surface — session/event/transcript/debrief backend is real; `speech_available()=False` marks the gap |
 | Tracing + Evaluation | `agent_runs` table + `emit_trace()` (App Insights when configured) |

@@ -66,7 +66,7 @@ def test_target_companies_management(client, user):
     assert a.status_code == 200 and "ServiceNow" in a.json()["companies"]
     listing = client.get("/api/v1/users/me/companies", headers=h).json()["companies"]
     entry = next(c for c in listing if c["name"] == "ServiceNow")
-    assert entry["in_corpus"] is True  # prb_csv has servicenow.csv
+    assert entry["in_corpus"] is True  # data/company-corpus has servicenow.csv
     assert entry["top_patterns"]
 
     # cap at 5
