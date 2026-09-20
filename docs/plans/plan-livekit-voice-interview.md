@@ -1,4 +1,19 @@
-# Plan — LiveKit Voice Interview (AI-first, tool-call editor reveal)
+# Plan — Voice Interview (AI-first, tool-call editor reveal)
+
+> **SUPERSEDED (Sep 2026): LiveKit is out; Gemini Live API is in.**
+> Decision: run voice-to-voice **entirely in the frontend** with the
+> `@google/genai` Live API (`ai.live.connect`) — mic PCM in, spoken audio +
+> transcripts out, function-call tools for `show_editor` / `send_hint`.
+> No SFU, no LiveKit Cloud project, no `livekit-agent/` worker container, no
+> token-broker routes; the browser talks to Gemini directly with
+> `VITE_GEMINI_API_KEY` (gitignored `frontend/.env.local`).
+> Backend involvement is unchanged at the transcript layer: every spoken turn
+> is POSTed to the existing `/interviews/{id}/events` route, so
+> `/interviews/{id}/debrief` keeps working with zero backend changes.
+> Implemented in `frontend/src/lib/geminiLive.ts` +
+> `frontend/src/pages/codered/CodeRedInterviewPage.tsx`.
+> Everything below the divider is the original LiveKit design, kept for
+> reference.
 
 Replaces the "no stable SDK" voice gap (`speech_available() = False` in
 `integrations/azure_services.py`) with **LiveKit Agents**, and rebuilds the

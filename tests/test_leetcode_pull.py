@@ -299,6 +299,46 @@ def test_platform_sync_and_activity_feed(client, user, lc_env):
     assert all(set(i) >= {"platform", "slug", "title", "solved_at"} for i in feed)
 
 
+def test_normalize_username():
+    """Profile URLs (u/, profile/, bare domain) and plain handles all resolve."""
+    from app.services.leetcode_service import normalize_username
+    assert normalize_username("https://leetcode.com/u/pulltester/") == "pulltester"
+    assert normalize_username("http://leetcode.com/profile/pulltester") == "pulltester"
+    assert normalize_username("leetcode.com/u/pulltester") == "pulltester"
+    assert normalize_username("  pulltester ") == "pulltester"
+    assert normalize_username("pulltester/") == "pulltester"
+    assert normalize_username("") == ""
+    assert normalize_username("https://leetcode.com/u/") == ""
+
+
+def test_username_only_public_pull(client, user, lc_env):
+    """Onboarding signals with just a profile URL/username does a public pull:
+    signals + mastery blending happen, no cookies stored, connected=False."""
+    lc_env["install"](lambda req: httpx.Response(200, json={"data": PROFILE_DATA}))
+    h = user["headers"]
+    r = client.post("/api/v1/onboarding/signals", headers=h, json={
+        "codeforces_handle": "", "github_username": "",
+        "leetcode_profile": "https://leetcode.com/u/pulltester/"})
+    assert r.status_code == 200, r.text
+    lc = r.json()["leetcode"]
+    assert lc["total_solved"] == 225
+    assert lc["connected"] is False
+
+    from app.db.session import SessionLocal
+    from app.models import PlatformSignal, Profile
+    db = SessionLocal()
+    try:
+        n = db.query(PlatformSignal).filter(
+            PlatformSignal.user_id == user["id"],
+            PlatformSignal.platform == "leetcode").count()
+        assert n >= 3  # profile + difficulty_split + topic signals
+        prof = db.query(Profile).filter(Profile.user_id == user["id"]).first()
+        assert prof.leetcode_username == "pulltester"
+        assert prof.leetcode_session_encrypted == ""  # no tokens persisted
+    finally:
+        db.close()
+
+
 def test_codeforces_ingest_creates_activity(client, user):
     """Codeforces handle in onboarding signals persists recent AC + topic signals
     (mocked CF API)."""

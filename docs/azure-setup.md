@@ -36,9 +36,11 @@ endpoints return `FOUNDRY_NOT_CONFIGURED` with setup instructions.
 7. **Azure Database for PostgreSQL** — why: authoritative state; env:
    `DATABASE_URL=postgresql+psycopg2://...`; local: no (compose provides);
    prod: yes. Apply: `alembic upgrade head`.
-8. **Storage Account** — why: resume PDFs, screenshots, audio; used by:
+8. **Storage Account** — why: resume PDFs; used by:
    `storage_service.upload_blob`; env: `AZURE_STORAGE_CONNECTION_STRING`,
    `AZURE_STORAGE_CONTAINER`; local: no (local dir fallback); prod: yes.
+   (Not Azure, but env-adjacent: the voice interview uses a Google Gemini key
+   `VITE_GEMINI_API_KEY` in `frontend/.env.local` — see README.)
 9. **Key Vault** — why: hold secrets instead of env files; wire via Container
     Apps secret references; local: no; prod: recommended.
 10. **Application Insights** — why: traces/latency/errors; used by:

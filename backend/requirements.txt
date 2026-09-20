@@ -13,6 +13,9 @@ anyio>=4.9.0
 openai>=3.0.0
 azure-ai-projects>=2.0
 azure-identity>=1.17
+# Required by azure-core's AioHttpTransport (DefaultAzureCredential's default
+# async pipeline); its absence broke the unconfigured-vision error-path test.
+aiohttp>=3.9
 # PostgreSQL driver (primary database) + cache
 psycopg2-binary>=2.9
 redis>=5.0

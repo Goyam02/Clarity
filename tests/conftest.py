@@ -12,6 +12,15 @@ import sys
 os.environ.setdefault("DATABASE_URL", "sqlite:///./test_clarity.db")
 os.environ.setdefault("DEV_AUTH_ALLOW_HEADER", "True")
 
+# Force the Azure surface OFF for the whole suite: pydantic-settings gives
+# process env vars precedence over backend/.env, so without this a developer's
+# real .env (with a live Foundry endpoint) leaks into tests — the
+# "unconfigured must fail loudly" tests go green-for-the-wrong-reason and
+# tests would attempt real Azure calls. Empty string = unset for Settings.
+os.environ["AZURE_FOUNDRY_PROJECT_ENDPOINT"] = ""
+os.environ["AZURE_FOUNDRY_MODEL_DEPLOYMENT"] = ""
+os.environ.setdefault("JUDGE0_BASE_URL", "")  # LocalJudge in unit tests
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "backend"))
 
 import pytest

@@ -77,6 +77,15 @@ class Settings(BaseSettings):
     # Platform pulls re-sync rate limit (seconds between refreshes per user).
     LEETCODE_REFRESH_MIN_INTERVAL: int = 3600
 
+    # Judge0 self-hosted code execution (docs/plans/plan-judge0-judge.md).
+    # Empty JUDGE0_BASE_URL -> LocalJudge subprocess fallback (tests/dev).
+    # In the root docker-compose stack the backend reaches Judge0 at
+    # http://judge0-server:2358 (service name on the compose network).
+    JUDGE0_BASE_URL: str = ""
+    JUDGE0_AUTH_TOKEN: str = ""
+    JUDGE0_TIMEOUT_SECONDS: int = 20
+    JUDGE0_POLL_INTERVAL: float = 0.4
+
     @property
     def google_oauth_enabled(self) -> bool:
         return bool(self.GOOGLE_CLIENT_ID and self.GOOGLE_CLIENT_SECRET)

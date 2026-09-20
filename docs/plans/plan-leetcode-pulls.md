@@ -1,12 +1,21 @@
 # Plan — LeetCode Cookie Pulls, Persistence & Graph Building
 
+> **IMPLEMENTED (Sep 2026)** — see status banner per section below. Shipped:
+> onboarding "Platform Pulls" + Settings entry (profile URL plus optional
+> `LEETCODE_SESSION`/`csrftoken`), Fernet-encrypted persistence
+> (`services/secret_box.py`), `services/leetcode_service.py` GraphQL client,
+> `services/platform_signals.py` ingestion into the Mastery Model,
+> `/users/me/leetcode*` + `/users/me/platforms/*` routes, daily sync + activity
+> feed, 88-test suite covering the pull paths. Remaining from this plan:
+> correlation edges (`MasteryEdge`) — still future work.
+>
 > **Spec deviation note:** spec §13 explicitly cut LeetCode cookie collection
 > ("equivalent to a phishing pattern"). This plan reintroduces it as an
 > **explicit, user-initiated, user-owned** integration: the user pastes their
 > own cookies into their own dashboard, tokens are encrypted at rest, never
 > logged, never proxied to third parties, and can be wiped in one tap. It is
 > the user instrumenting themselves, not us harvesting accounts. Decision
-> recorded here; the spec's §3 security language should be updated to match.
+> recorded here; the spec's §13 security language should be updated to match.
 
 ## Goal
 
@@ -107,6 +116,12 @@ POST /users/connections/leetcode      # settings page re-sync
 POST /users/connections/leetcode/refresh   # cron/manual, uses stored cookies
 POST /users/connections/leetcode/disconnect # wipes cookies + signals? (signals stay; cookies gone)
 ```
+
+> **As implemented** (naming drifted from the sketch above):
+> `POST /onboarding/signals` (single route for all platforms, LeetCode fields
+> optional) and `GET|POST|DELETE /users/me/leetcode`,
+> `POST /users/me/leetcode/refresh`, `POST /users/me/platforms/sync`,
+> `GET /users/me/platforms/activity` — see docs/api-contracts.md.
 
 ### 6. Persistence → Mastery Model bridge (`app/workflows/platform_signals.py`, new)
 

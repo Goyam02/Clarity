@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
-import { ArrowLeft, ArrowRight, Sparkles, Upload, ScanLine, Globe, GraduationCap, Compass, HelpCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Sparkles, Upload, Globe, GraduationCap, Compass } from 'lucide-react';
 import { ClarityLogo } from '../components/Logos';
-import { OnboardingPayload, UserProfiles, UserGoals, ResumeSignal, ScreenshotSignal, PlatformPull } from './types';
+import { OnboardingPayload, UserProfiles, UserGoals, ResumeSignal, PlatformPull } from './types';
 import { getDefaultSkillRatings } from './data/skillTopics';
 import { ProgressIndicator } from './components/ProgressIndicator';
-import { ProfilesStep } from './steps/ProfilesStep';
 import { SkillRatingsStep } from './steps/SkillRatingsStep';
 import { GoalsStep } from './steps/GoalsStep';
 import { GeneratingStep } from './steps/GeneratingStep';
@@ -17,7 +16,7 @@ import {
 } from '../lib/api/endpoints';
 import { ApiError } from '../lib/api/client';
 
-const STORAGE_KEY = 'clarity_onboarding_draft';
+const STORAGE_KEY = 'clarity_onboarding_draft_v2';
 const COMPLETED_KEY = 'clarity_completed_profile';
 
 const INITIAL_PROFILES: UserProfiles = {
@@ -38,23 +37,22 @@ const INITIAL_GOALS: UserGoals = {
 };
 
 /**
- * Spec §3 "Maximum Real Signal" flow — 7 screens:
+ * Spec §3 "Maximum Real Signal" flow — now 5 steps after merging the
+ * screenshot profile-scan into the platform-pulls screen:
  * 1 Account (handled by /signup before this route) → so here:
- * 1 Resume Upload · 2 Scan Your Coding Profiles (screenshots)
- * 3 Real Platform Pulls (Codeforces + GitHub) · 4 Calibration Quiz
- * 5 Skill Confidence (self-report, the existing sliders)
- * 6 Current Focus + Targets · 7 Graph Reveal
+ * 1 Resume Upload · 2 Real Platform Pulls (Codeforces + GitHub + LeetCode)
+ * · 3 Calibration Quiz · 4 Skill Confidence (self-report sliders)
+ * · 5 Current Focus + Targets → Graph Reveal
  */
 const STEP_LABELS = [
   'Resume',
-  'Profile Scan',
   'Platform Pulls',
   'Calibration',
   'Skill Confidence',
   'Focus & Targets',
 ];
-const TOTAL_STEPS = 6;
-const GENERATING = 7; // virtual final "screen"
+const TOTAL_STEPS = 5;
+const GENERATING = 6; // virtual final "screen"
 
 export const OnboardingFlow: React.FC = () => {
   const navigate = useNavigate();
@@ -71,7 +69,6 @@ export const OnboardingFlow: React.FC = () => {
   const [skillRatings, setSkillRatings] = useState<Record<string, number>>(() => getDefaultSkillRatings());
   const [goals, setGoals] = useState<UserGoals>(INITIAL_GOALS);
   const [resume, setResume] = useState<ResumeSignal | null>(null);
-  const [screenshots, setScreenshots] = useState<ScreenshotSignal[]>([]);
   const [platformPulls, setPlatformPulls] = useState<PlatformPull | null>(null);
   const [showLcHelp, setShowLcHelp] = useState(false);
 
@@ -84,7 +81,6 @@ export const OnboardingFlow: React.FC = () => {
   const [calSummary, setCalSummary] = useState<CalibrationSummary | null>(null);
   const [calBusy, setCalBusy] = useState(false);
   const [stepError, setStepError] = useState<string | null>(null);
-  void HelpCircle; // reserved for inline token help tooltip
 
   // Rehydrate
   useEffect(() => {
@@ -97,11 +93,13 @@ export const OnboardingFlow: React.FC = () => {
         if (parsed.skillRatings) setSkillRatings(parsed.skillRatings);
         if (parsed.goals) setGoals(parsed.goals);
         if (parsed.resume !== undefined) setResume(parsed.resume);
-        if (parsed.screenshots) setScreenshots(parsed.screenshots);
         if (parsed.currentStep && parsed.currentStep >= 1 && parsed.currentStep <= TOTAL_STEPS) {
           setCurrentStep(parsed.currentStep);
         }
-        if (parsed.maxReachedStep) setMaxReachedStep(parsed.maxReachedStep);
+        if (parsed.maxReachedStep) {
+          // Clamp: drafts saved by older step layouts may exceed TOTAL_STEPS.
+          setMaxReachedStep(Math.min(parsed.maxReachedStep, TOTAL_STEPS));
+        }
         setLastSavedTime('Restored draft');
       }
     } catch {
@@ -114,7 +112,7 @@ export const OnboardingFlow: React.FC = () => {
     if (isGenerating) return;
     try {
       const payload: OnboardingPayload & { currentStep: number; maxReachedStep: number } = {
-        profiles, skillRatings, goals, resume, screenshots, platformPulls,
+        profiles, skillRatings, goals, resume, platformPulls,
         calibration: calRunId ? { runId: calRunId, answered: calAnswered, correct: calCorrect } : null,
         currentStep, maxReachedStep,
       };
@@ -123,26 +121,25 @@ export const OnboardingFlow: React.FC = () => {
     } catch {
       // Ignore quota errors
     }
-  }, [profiles, skillRatings, goals, resume, screenshots, platformPulls,
+  }, [profiles, skillRatings, goals, resume, platformPulls,
       calRunId, calAnswered, calCorrect, currentStep, maxReachedStep, isGenerating]);
 
   // --- per-step validation ---------------------------------------------------
   const isStepValid = useMemo(() => {
     switch (currentStep) {
       case 1: return true; // resume optional (free signal, never blocks)
-      case 2: return true; // screenshots optional
-      case 3: return true; // pulls optional (may run later)
-      case 4: return calSummary !== null; // calibration done (or skipped via finish)
-      case 5: return Object.keys(skillRatings).length > 0;
-      case 6: return Boolean(goals.dreamCompany?.trim() && goals.placementTimeline);
+      case 2: return true; // pulls optional (may run later)
+      case 3: return calSummary !== null; // calibration done (or skipped via finish)
+      case 4: return Object.keys(skillRatings).length > 0;
+      case 5: return Boolean(goals.dreamCompany?.trim() && goals.placementTimeline);
       default: return false;
     }
   }, [currentStep, calSummary, skillRatings, goals]);
 
   const canProceed = isStepValid;
-  const calibrationSkippable = currentStep === 4 && calSummary === null;
+  const calibrationSkippable = currentStep === 3 && calSummary === null;
 
-  // --- screen 3: real platform pulls ------------------------------------------
+  // --- screen 2: real platform pulls ------------------------------------------
   const runPlatformPulls = useCallback(async () => {
     setStepError(null);
     setCalBusy(true);
@@ -150,7 +147,8 @@ export const OnboardingFlow: React.FC = () => {
       const lcProvided = Boolean(lcTokens.session.trim() && lcTokens.csrf.trim());
       const res = await onboardingApi.signals(
         profiles.codeforces || '', profiles.github || '',
-        lcProvided ? { session: lcTokens.session.trim(), csrf: lcTokens.csrf.trim() } : undefined);
+        lcProvided ? { session: lcTokens.session.trim(), csrf: lcTokens.csrf.trim() } : undefined,
+        profiles.leetcode || '');
       const cf = res.codeforces as PlatformPull['codeforces'] | undefined;
       const gh = res.github as PlatformPull['github'] | undefined;
       setPlatformPulls({
@@ -171,9 +169,9 @@ export const OnboardingFlow: React.FC = () => {
     } finally {
       setCalBusy(false);
     }
-  }, [profiles.codeforces, profiles.github, lcTokens]);
+  }, [profiles.codeforces, profiles.github, profiles.leetcode, lcTokens]);
 
-  // --- screen 4: adaptive calibration ------------------------------------------
+  // --- screen 3: adaptive calibration ------------------------------------------
   const startCalibration = useCallback(async () => {
     setStepError(null);
     setCalBusy(true);
@@ -211,8 +209,8 @@ export const OnboardingFlow: React.FC = () => {
     }
   }, [calRunId, calStartedAt]);
 
-  // --- resume + screenshot parsing (vision endpoints) ---------------------------
-  const uploadFile = useCallback(async (kind: 'resume' | 'screenshot', file: File) => {
+  // --- resume parsing (vision endpoint) -----------------------------------------
+  const uploadFile = useCallback(async (kind: 'resume', file: File) => {
     setStepError(null);
     setCalBusy(true);
     try {
@@ -227,20 +225,11 @@ export const OnboardingFlow: React.FC = () => {
         throw new Error(body?.error?.message || `Upload failed (${res.status})`);
       }
       const data = await res.json();
-      if (kind === 'resume') {
-        setResume({
-          fileName: file.name,
-          skills: (data?.skills || data?.extraction?.skills || []) as string[],
-          projects: (data?.projects || data?.extraction?.projects || []) as string[],
-        });
-      } else {
-        setScreenshots((prev) => [...prev, {
-          fileName: file.name,
-          platform: 'leetcode',
-          solvedCounts: data?.solved_counts,
-          topicBreakdown: data?.topic_breakdown,
-        }]);
-      }
+      setResume({
+        fileName: file.name,
+        skills: (data?.skills || data?.extraction?.skills || []) as string[],
+        projects: (data?.projects || data?.extraction?.projects || []) as string[],
+      });
     } catch (err) {
       setStepError(err instanceof Error ? err.message : 'Vision extraction failed.');
     } finally {
@@ -289,7 +278,6 @@ export const OnboardingFlow: React.FC = () => {
     const fullPayload: OnboardingPayload = {
       ...finalPayload,
       resume,
-      screenshots,
       platformPulls,
       calibration: calSummary ? { runId: calRunId || '', answered: calAnswered, correct: calCorrect } : null,
       completedAt: new Date().toISOString(),
@@ -309,13 +297,14 @@ export const OnboardingFlow: React.FC = () => {
       // LocalStorage fallback
     }
 
-    // Persist focus + targets to the backend (screen 6 contract)
+    // Persist focus + targets to the backend (screen 5 contract)
     void onboardingApi.focus({
       current_focus: '',
       target_companies: [fullPayload.goals.dreamCompany].filter(Boolean),
       placement_timeline: fullPayload.goals.placementTimeline,
       codeforces_handle: fullPayload.profiles.codeforces || '',
       github_username: fullPayload.profiles.github || '',
+      leetcode_profile: fullPayload.profiles.leetcode || '',
     }).catch(() => null);
 
     navigate('/dashboard?welcome=1');
@@ -424,56 +413,13 @@ export const OnboardingFlow: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Screen 2: Scan Your Coding Profiles */}
+                  {/* Screen 2: Real Platform Pulls */}
                   {currentStep === 2 && (
                     <div className="space-y-5">
                       <StepHeader
-                        icon={<ScanLine className="w-5 h-5" />}
-                        title="Scan your coding profiles"
-                        subtitle="Upload a screenshot of your LeetCode/GFG profile. No login, no tokens — a vision model reads solve counts and difficulty distribution off the image."
-                      />
-                      <FileDrop
-                        accept="image/*"
-                        hint="Drop a profile screenshot (png/jpg)"
-                        busy={calBusy}
-                        onFile={(f) => void uploadFile('screenshot', f)}
-                      />
-                      {screenshots.length > 0 && (
-                        <div className="space-y-2">
-                          {screenshots.map((s, i) => (
-                            <div key={i} className="p-3.5 rounded-[10px] bg-[#FAF6F0] border border-[#1F2420]/10 flex items-center justify-between">
-                              <div>
-                                <p className="text-[13px] font-medium">{s.fileName}</p>
-                                {s.solvedCounts?.total != null && (
-                                  <p className="text-[11.5px] font-mono text-[#1F2420]/55">
-                                    {s.solvedCounts.total} solved
-                                    {s.solvedCounts.easy != null && ` · E${s.solvedCounts.easy}`}
-                                    {s.solvedCounts.medium != null && ` / M${s.solvedCounts.medium}`}
-                                    {s.solvedCounts.hard != null && ` / H${s.solvedCounts.hard}`}
-                                  </p>
-                                )}
-                              </div>
-                              <button
-                                type="button"
-                                onClick={() => setScreenshots((prev) => prev.filter((_, j) => j !== i))}
-                                className="text-[12px] text-[#B8322A] hover:underline cursor-pointer"
-                              >
-                                remove
-                              </button>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Screen 3: Real Platform Pulls */}
-                  {currentStep === 3 && (
-                    <div className="space-y-5">
-                      <StepHeader
                         icon={<Globe className="w-5 h-5" />}
-                        title="Pull your real platform data"
-                        subtitle="Codeforces and GitHub use their public APIs. LeetCode needs two cookies from your own browser — they are encrypted at rest, used only to read your own solve data, and wipeable in Settings anytime."
+                        title="Connect the two safe pulls"
+                        subtitle="Codeforces' official public API and GitHub's public API — the only auto-connects the product promises honestly. Enter your usernames (or edit them later in Settings)."
                       />
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                         <div>
@@ -498,12 +444,12 @@ export const OnboardingFlow: React.FC = () => {
                         </div>
                       </div>
 
-                      {/* LeetCode cookie tokens (2) */}
+                      {/* LeetCode: profile URL + optional cookie tokens */}
                       <div className="p-4 rounded-[10px] border border-[#FFA116]/30 bg-[#FFA116]/5 space-y-3">
                         <div className="flex items-center justify-between">
                           <span className="flex items-center gap-2 text-[13px] font-medium">
                             <span className="w-6 h-6 rounded-[4px] bg-[#FFA116]/15 text-[#FFA116] flex items-center justify-center font-bold text-xs">LC</span>
-                            LeetCode cookies <span className="text-[11px] text-[#C1592B] font-semibold">(strongest signal)</span>
+                            LeetCode <span className="text-[11px] text-[#C1592B] font-semibold">(strongest signal)</span>
                           </span>
                           <button
                             type="button"
@@ -515,13 +461,27 @@ export const OnboardingFlow: React.FC = () => {
                         </div>
                         {showLcHelp && (
                           <ol className="text-[12px] text-[#1F2420]/70 list-decimal ml-5 space-y-0.5">
-                            <li>Log in to leetcode.com in your browser</li>
-                            <li>Open DevTools (F12) → Application → Cookies → https://leetcode.com</li>
+                            <li>Paste your profile URL (leetcode.com/u/&lt;name&gt;) — public stats pull immediately, no tokens needed</li>
+                            <li>For the recent-AC feed too: log in to leetcode.com, open DevTools (F12) → Application → Cookies → https://leetcode.com</li>
                             <li>Copy the values of <strong>LEETCODE_SESSION</strong> and <strong>csrftoken</strong></li>
                             <li>Paste both below — that's it. Encrypted at rest, never logged.</li>
                           </ol>
                         )}
                         <div className="grid grid-cols-1 gap-3">
+                          <div>
+                            <label htmlFor="ob-lc-profile" className="block text-[11.5px] font-mono uppercase tracking-wider text-[#1F2420]/70 mb-1">LeetCode profile URL or username</label>
+                            <input
+                              id="ob-lc-profile"
+                              type="text"
+                              value={profiles.leetcode}
+                              onChange={(e) => setProfiles((p) => ({ ...p, leetcode: e.target.value }))}
+                              placeholder="https://leetcode.com/u/your-handle"
+                              className="w-full px-3 py-2 text-[13px] font-mono bg-white border border-[#1F2420]/20 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-[#FFA116]/50"
+                            />
+                            <p className="mt-1 text-[11px] font-mono text-[#1F2420]/50">
+                              Enough for solved counts + topic signals. Cookies below additionally unlock the recent-AC feed.
+                            </p>
+                          </div>
                           <div>
                             <label htmlFor="ob-lc-session" className="block text-[11.5px] font-mono uppercase tracking-wider text-[#1F2420]/70 mb-1">LEETCODE_SESSION</label>
                             <input
@@ -552,7 +512,8 @@ export const OnboardingFlow: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => void runPlatformPulls()}
-                        disabled={calBusy || (!profiles.codeforces && !profiles.github && !(lcTokens.session.trim() && lcTokens.csrf.trim()))}
+                        disabled={calBusy || (!profiles.codeforces && !profiles.github
+                          && !profiles.leetcode && !(lcTokens.session.trim() && lcTokens.csrf.trim()))}
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-[6px] bg-[#1F2420] text-[#FAF6F0] text-[13px] font-medium disabled:opacity-40 cursor-pointer"
                       >
                         {calBusy ? <RefreshCwSmall /> : <Globe className="w-3.5 h-3.5" />}
@@ -588,8 +549,8 @@ export const OnboardingFlow: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Screen 4: Calibration Quiz */}
-                  {currentStep === 4 && (
+                  {/* Screen 3: Calibration Quiz */}
+                  {currentStep === 3 && (
                     <div className="space-y-5">
                       <StepHeader
                         icon={<GraduationCap className="w-5 h-5" />}
@@ -655,13 +616,13 @@ export const OnboardingFlow: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Screen 5: Skill Confidence (existing sliders) */}
-                  {currentStep === 5 && (
+                  {/* Screen 4: Skill Confidence (existing sliders) */}
+                  {currentStep === 4 && (
                     <SkillRatingsStep skillRatings={skillRatings} onChange={setSkillRatings} />
                   )}
 
-                  {/* Screen 6: Focus + Targets (existing goals) */}
-                  {currentStep === 6 && <GoalsStep goals={goals} onChange={setGoals} />}
+                  {/* Screen 5: Focus + Targets (existing goals) */}
+                  {currentStep === 5 && <GoalsStep goals={goals} onChange={setGoals} />}
                 </motion.div>
               </AnimatePresence>
 

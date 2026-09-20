@@ -35,14 +35,14 @@ Five deployed agents are referenced by name (`PLANNER_AGENT`,
 | Azure Storage Account | `AZURE_STORAGE_CONNECTION_STRING`, `AZURE_STORAGE_ACCOUNT`, `AZURE_STORAGE_CONTAINER` | uploads fall back to local disk | `storage_service.upload_blob` |
 | Application Insights | `APPLICATIONINSIGHTS_CONNECTION_STRING` | no remote traces; `agent_runs` table still records everything | `shims.emit_trace` |
 | Redis | `REDIS_URL` | cache misses; core flows unaffected | session/cache layer |
-| LiveKit project (free tier for dev) | `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `INTERVIEW_AGENT_INTERNAL_SECRET` | voice interviews unavailable; everything else unaffected — see `docs/plans/plan-livekit-voice-interview.md` | `livekit-agent/` worker, `api/interviews_live.py` |
-| Judge0 deployment (self-hosted, separate node) | `JUDGE0_BASE_URL`, `JUDGE0_AUTH_TOKEN` | falls back to local Python-only subprocess judge; Java/C++/SQL need Judge0 — see `docs/plans/plan-judge0-judge.md` | `services/judge0.py` |
+| Gemini API key (voice-to-voice interview, frontend) | `VITE_GEMINI_API_KEY` (set in gitignored `frontend/.env.local`) | voice interview shows an actionable error; typed fallback + text interviewer flow still work — see `docs/plans/plan-livekit-voice-interview.md` (LiveKit superseded) | `frontend/src/lib/geminiLive.ts`, `pages/codered/CodeRedInterviewPage.tsx` |
+| Judge0 CE (self-hosted, **in the root compose stack** — no external setup) | `JUDGE0_BASE_URL`, `JUDGE0_AUTH_TOKEN` (compose defaults both) | falls back to local Python-only subprocess judge; Java/C++/SQL need Judge0 — see `docs/plans/plan-judge0-judge.md` | `services/judge0.py`, compose `judge0-server`/`judge0-worker` |
 
 ### User-supplied tokens (not env vars, entered in-app by each user)
 
 | Token | Entered where | What it unlocks |
 |---|---|---|
-| LeetCode `LEETCODE_SESSION` + `csrftoken` cookies (2 tokens) | Onboarding screen 4 / Settings — stored Fernet-encrypted at rest | Automatic pull of solved counts per topic + recent AC submissions into the Mastery Model — see `docs/plans/plan-leetcode-pulls.md` |
+| LeetCode `LEETCODE_SESSION` + `csrftoken` cookies (2 tokens) | Onboarding "Platform Pulls" screen / Settings — stored Fernet-encrypted at rest | Automatic pull of solved counts per topic + recent AC submissions into the Mastery Model — implemented per `docs/plans/plan-leetcode-pulls.md` |
 
 ### Infrastructure (not keys, but required to run)
 
@@ -73,36 +73,42 @@ delete.
 
 - **Backend (FastAPI, modular monolith)** — auth (JWT + Google-ready),
   onboarding (signals, calibration, focus), mastery graph, daily planner,
-  problem generation, submissions + local subprocess judge, CODE RED (tasks,
-  clear-score, drift), interviews (events/transcript/debrief), outcomes, mock
-  OA, uploads, company corpus + web research merge. 62 tests green.
+  problem generation, submissions + **self-hosted Judge0 judge
+  (Python/Java/C++/SQL, in the root compose stack; LocalJudge fallback)**,
+  CODE RED (tasks, clear-score, drift), interviews (events/transcript/debrief),
+  outcomes, mock OA, uploads, **LeetCode + Codeforces cookie/handle pulls with
+  encrypted token storage and Mastery Model blending**, company corpus + web
+  research merge. 88 tests green.
 - **Docker** — full stack via root `docker-compose.yml` (Postgres 16, Redis 7,
-  backend, nginx-served frontend); backend migrations run on container start.
-- **Frontend (Vite + React 19 + TS)** — landing, auth, 7-screen onboarding,
-  dashboard, knowledge graph, CODE RED entry/live/interview/debrief, mock OA,
-  settings; typed API client wired to FastAPI.
+  **Judge0 CE (server + worker + own db/redis)**, backend, nginx-served
+  frontend); backend migrations run on container start. One `docker compose up`
+  brings up everything.
+- **Frontend (Vite + React 19 + TS)** — landing, auth, 5-step signal-first
+  onboarding (resume → platform pulls incl. LeetCode cookies → calibration →
+  confidence → focus), dashboard, knowledge graph, CODE RED entry/**live voice
+  interview (Gemini Live API, voice-to-voice)**/debrief, mock OA, settings;
+  typed API client wired to FastAPI.
 
 ### Open gaps (in rough priority order)
 
 | # | Item | Status / what's missing | Where |
 |---|---|---|---|
 | 1 | **Foundry project + agents** | Config work, not code: create the project, deploy a model, deploy the five named agents; without it every agent endpoint returns `FOUNDRY_NOT_CONFIGURED` | portal + `backend/.env` |
-| 2 | **Voice / Voice Live** | **Planned — `docs/plans/plan-livekit-voice-interview.md`**: LiveKit Agents worker (`livekit-agent/`), AI-first interview UI with tool-call editor reveal, backend-owned per-session prompts, stuck-detection while coding. Supersedes `speech_available()=False` | `livekit-agent/`, `api/interviews_live.py` |
-| 3 | **Code Interpreter grading** | **Planned — `docs/plans/plan-judge0-judge.md`**: self-hosted Judge0 CE on a separate deployment for Java/C++/Python/SQL; `Judge0Judge` behind the existing `CodeJudge` ABC with `LocalJudge` fallback | `services/judge0.py`, separate `judge0/` node |
-| 4 | **LeetCode cookie pulls + graph completion** | **Planned — `docs/plans/plan-leetcode-pulls.md`**: LEETCODE_SESSION + csrftoken entry in onboarding/settings, encrypted persistence, `/onboarding/platform-pull` route, PlatformSignal ingestion into Mastery Model, prerequisite + correlation edge building (`MasteryEdge`) | `services/leetcode_service.py`, `services/graph_builder.py` |
+| 2 | ~~Voice / Voice Live~~ | **Done — reimplemented on Gemini Live API (frontend-only)**; LiveKit plan superseded (no SFU, no worker container). Mic in → Gemini voice + transcript out; `show_editor`/`send_hint` tool calls drive the UI; transcript mirrored to `/interviews/{id}/events` so debrief is unchanged | `frontend/src/lib/geminiLive.ts`, `pages/codered/CodeRedInterviewPage.tsx` |
+| 3 | ~~Code Interpreter grading~~ | **Done — self-hosted Judge0 CE inside the root compose stack** (no separate node; comes up with `docker compose up`). `Judge0Judge` behind the `CodeJudge` ABC; Python/Java/C++/SQL; `LocalJudge` fallback when `JUDGE0_BASE_URL` empty | `services/judge0.py`, compose `judge0-*` services |
+| 4 | ~~LeetCode cookie pulls~~ | **Done — LEETCODE_SESSION + csrftoken entry in onboarding/settings, Fernet-encrypted persistence, PlatformSignal ingestion into the Mastery Model, daily sync + activity feed.** Graph correlation edges (`MasteryEdge`) remain future work | `services/leetcode_service.py`, `services/platform_signals.py`, `api/users.py` |
 | 9 | **Production hardening** | CORS `allow_origins=["*"]` in `main.py`, dev-only `X-User-Id` auth fallback (`DEV_AUTH_ALLOW_HEADER`), Key Vault not wired, no rate limiting | `main.py`, `dependencies.py` |
-| 10 | **Legacy env cleanup** | `frontend/.env.example` (GEMINI_API_KEY, APP_URL) and stray `test_clarity.db` / `backend/docker-compose.yml` are leftovers to remove | repo root |
+| 10 | ~~Legacy env cleanup~~ | `frontend/.env.example` rewritten for `VITE_GEMINI_API_KEY`; stray `test_clarity.db` still to remove from git tracking | repo root |
 | 11 | **Deep Research** | Not in the installed SDK surface; Company Intel uses the deployed agent + web grounding instead. Wiring `o3-deep-research` is a later step | `docs/backend-architecture.md` |
 | 12 | **Foundry IQ / Memory wiring** | `iq_retrieve` (`integrations/foundry/shims.py`) and `MemoryService` (`services/storage_service.py`, agent context only) exist behind config flags; no provisioned Search instance or Memory store hooked up yet | see left |
-| 13 | **Java in the judge container** | Superseded by item 3: Judge0 handles Java/C++ on its own deployment; the backend image needs no JDK | `backend/Dockerfile` |
-| 14 | **E2E / integration tests** | 62 backend unit tests + vitest graph tests exist; no full-stack test through the Dockerized compose stack | `tests/`, `frontend` |
+| 13 | ~~Java in the judge container~~ | Superseded: Judge0 runs Java/C++ in its own compose containers; the backend image needs no JDK | `backend/Dockerfile` |
+| 14 | **E2E / integration tests** | 88 backend unit tests + vitest graph tests exist; no full-stack test through the Dockerized compose stack | `tests/`, `frontend` |
 
 ### Spec features intentionally not built
 
-- **LeetCode/GFG session-cookie pulls** — originally designed out (spec §13
-  security decision); now **planned back in** as a user-owned, encrypted
-  integration (see `docs/plans/plan-leetcode-pulls.md`) — update the spec
-  section when implemented.
+- ~~LeetCode/GFG session-cookie pulls~~ — **LeetCode is done** (user-owned,
+  encrypted, see `docs/plans/plan-leetcode-pulls.md`); update the spec's §13
+  security language to match. GFG remains cut (no reliable API path).
 - **Correlation edges on the graph** (§5, dashed dynamic edges) — the mastery
   graph ships prerequisite edges only; correlation computation from logged
   history is specified in `docs/plans/plan-leetcode-pulls.md`.

@@ -142,7 +142,9 @@ class LeetCodeClient:
 
     async def pull_everything(self, username_hint: str = "") -> dict:
         """Full pull used by the platform-pull route. Username comes from the
-        JWT session payload when authenticated, else the provided hint."""
+        JWT session payload when authenticated, else the provided hint (from
+        the profile URL field or a plain handle). Without cookies this still
+        works for public profile stats — recent-AC just comes back empty."""
         username = username_hint
         if not username and self.has_auth:
             # Decode just the username claim (signature not verified by us —
@@ -174,6 +176,27 @@ class LeetCodeClient:
         profile["recent_ac"] = recent
         profile["pulled_at"] = datetime.now(timezone.utc).isoformat()
         return profile
+
+
+def normalize_username(raw: str) -> str:
+    """Accept a LeetCode profile URL (https://leetcode.com/u/<name>/,
+    /profile/<name>, or bare leetcode.com/<name>) or a plain username and
+    return the username. Lets onboarding ask for one forgiving field."""
+    s = (raw or "").strip()
+    if not s:
+        return ""
+    if "leetcode.com" in s.lower() or s.lower().startswith(("http://", "https://")):
+        from urllib.parse import urlparse
+        try:
+            url = s if "://" in s else f"https://{s}"
+            path = urlparse(url).path.strip("/")
+        except ValueError:
+            path = s
+        parts = [p for p in path.split("/") if p]
+        if parts and parts[0] in ("u", "profile", "users"):
+            parts = parts[1:]
+        return parts[0] if parts else ""
+    return s.split("/")[0].strip()
 
 
 def decrypt_cookies_or_empty(session_encrypted: str, csrf_encrypted: str) -> tuple[str, str]:

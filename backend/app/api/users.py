@@ -182,6 +182,30 @@ async def platforms_sync(user_id: str = Depends(get_current_user_id),
                     results["leetcode"] = {"ok": False, "error": e.code}
         else:
             results["leetcode"] = {"ok": True, "skipped": "recently_synced"}
+    elif prof.leetcode_username:
+        # No stored cookies but we know the handle (profile URL was given at
+        # onboarding): public profile pull — solved counts + topic signals
+        # still update daily; no recent-AC feed without cookies.
+        min_interval = get_settings().LEETCODE_REFRESH_MIN_INTERVAL
+        rate_limited = False
+        if prof.leetcode_synced_at:
+            last = prof.leetcode_synced_at if prof.leetcode_synced_at.tzinfo else (
+                prof.leetcode_synced_at.replace(tzinfo=timezone.utc))
+            if (datetime.now(timezone.utc) - last).total_seconds() < min_interval:
+                rate_limited = True
+        if not rate_limited:
+            try:
+                from app.services.leetcode_service import LeetCodeClient
+                profile = await LeetCodeClient().pull_everything(prof.leetcode_username)
+                summary = ps.persist_leetcode(db, user_id, profile,
+                                              handle=profile.get("username", ""))
+                summary["blended"] = ps.ingest_topic_signals(
+                    db, user_id, profile.get("topic_solved", {}))
+                results["leetcode"] = {"ok": True, "mode": "public", **summary}
+            except ClarityError as e:
+                results["leetcode"] = {"ok": False, "error": e.code}
+        else:
+            results["leetcode"] = {"ok": True, "skipped": "recently_synced"}
 
     # Codeforces (no tokens needed) — always syncs when a handle is set.
     if prof.codeforces_handle:

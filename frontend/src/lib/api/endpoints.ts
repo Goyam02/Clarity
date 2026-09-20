@@ -45,11 +45,11 @@ export interface CalibrationSummary {
 }
 
 export const onboardingApi = {
-  initialize: () => api.post<{ initialized_nodes: number }>('/onboarding/initialize'),
-  signals: (
+  initialize: () => api.post<{ initialized_nodes: number }>('/onboarding/initialize'),  signals: (
     codeforces_handle: string,
     github_username: string,
     leetcode?: { session: string; csrf: string; username?: string },
+    leetcode_profile?: string,
   ) =>
     api.post<{
       codeforces: unknown;
@@ -71,6 +71,7 @@ export const onboardingApi = {
         leetcode_session: leetcode?.session || '',
         leetcode_csrf: leetcode?.csrf || '',
         leetcode_username: leetcode?.username || '',
+        leetcode_profile: leetcode_profile || '',
       }),
   focus: (body: {
     current_focus: string;
@@ -79,6 +80,7 @@ export const onboardingApi = {
     default_mood?: string;
     codeforces_handle?: string;
     github_username?: string;
+    leetcode_profile?: string;
   }) => api.post<{ saved: boolean; preloaded: { company: string; patterns: string[] }[] }>(
       '/onboarding/focus', body),
   calibrationStart: () =>

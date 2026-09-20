@@ -52,8 +52,8 @@ validation); all content is model-generated.
 | Foundry IQ | `shims.iq_retrieve` queries Azure AI Search when configured, else no anchors (never canned answers) |
 | Deep Research (`o3-deep-research`) | Not in the installed SDK surface — Company Intel uses the deployed agent + retrieval anchors; research-tool wiring is a later step, not faked now |
 | Live web question research | **Grounding with Bing Search** (the standalone Bing Search APIs retired Aug 2025): the agent named by `WEB_RESEARCH_AGENT` has the tool attached in the Foundry portal; `integrations/foundry/web_research.py` pulls structured, source-cited findings via the shared chat path. `services/web_corpus.py` merges them with the data/company-corpus CSV corpus (CSV stays authoritative, dedupe on title, provenance tagged) and TTL-gates re-search (`WEB_RESEARCH_TTL_DAYS`). Unconfigured → CSV-only, no behavior change |
-| Code Interpreter for grading | Not in the installed SDK surface — `services/judge.py::LocalJudge` subprocess sandbox (Python; Java if JDK present) behind the `CodeJudge` ABC |
-| Voice Live | Not in the installed SDK surface — session/event/transcript/debrief backend is real; `speech_available()=False` marks the gap |
+| Code Interpreter for grading | **Judge0 CE, self-hosted in the root compose stack** (`services/judge0.py::Judge0Judge`, `JUDGE0_BASE_URL=http://judge0-server:2358`): sandboxed Python/Java/C++/SQL via isolate, batch submissions, real CPU/memory numbers; `LocalJudge` subprocess stays as the zero-infra fallback behind the same `CodeJudge` ABC |
+| Voice Live | **Gemini Live API, frontend-only** (`frontend/src/lib/geminiLive.ts`): browser→Gemini voice-to-voice on the CODE RED interview page; transcript mirrored to `/interviews/{id}/events` so the events/transcript/debrief backend below is unchanged. LiveKit plan superseded |
 | Tracing + Evaluation | `agent_runs` table + `emit_trace()` (App Insights when configured) |
 
 ## Key decisions
@@ -64,6 +64,7 @@ validation); all content is model-generated.
 - Transport failures raise `FoundryError` (502/503, actionable message);
   retries are bounded (3, transient errors only). No silent fallbacks.
 - Cost control: company intel refreshes only when stale (>90d)/missing.
-- Judge never runs code in-process (subprocess + temp dir + timeout).
+- Judge never runs code in-process: Judge0 CE (compose, isolate-sandboxed)
+  when configured, else subprocess + temp dir + timeout (`LocalJudge`).
 - Tests inject a stub `ChatBackend` via `set_backend()` — a test seam, not
   product branching.

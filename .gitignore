@@ -4,6 +4,8 @@ backend/.venv/
 .pytest_
 tests/__pycache__
 .env
+.env.local
+.env*.local
 *.db
 __pycache__/
 .venv/

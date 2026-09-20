@@ -11,25 +11,28 @@ was merged in and deleted after the port verified green.
 |---|---|---|
 | `/` | Landing (hero, pillar marquee, testimonials) | §2 |
 | `/login`, `/signup` | Auth (FastAPI `/auth/*`, JWT) | §3 screen 1 |
-| `/onboarding` | 7-screen "Maximum Real Signal" flow | §3 |
+| `/onboarding` | 5-screen "Maximum Real Signal" flow | §3 |
 | `/dashboard` | Daily readiness + OA sandbox sections | §4 |
 | `/dashboard/graph` | Obsidian-style force-directed Knowledge Graph | §5 |
 | `/code-red` | Entry: company + JD + time + round (dark theme) | §6 |
 | `/code-red/:sessionId` | Live checklist + CLEAR SCORE + why-tags | §6a |
-| `/code-red/interview` | Split-screen code + interviewer channel | §6b |
+| `/code-red/interview` | Voice-first AI interviewer (Gemini Live voice-to-voice) + editor reveal | §6b |
 | `/code-red/interview/:id/debrief` | Correctness/communication + graph CTA | §6b |
 | `/mock-oa{,/session,/result}` | Proctored locked environment | §8 |
 | `/settings` | Profile, accounts, targets, mood, data | §9 |
 | `/dashboard-demo`, `/graph-demo` | Demo sandboxes | — |
 
-## Onboarding (spec §3, 7 screens)
+## Onboarding (spec §3, 5 screens — screenshot-scan step removed)
 
-Account (route 1) → Resume upload (vision) → Profile screenshot scan (vision) →
-Real platform pulls (Codeforces/GitHub public APIs via `/onboarding/signals`) →
+Account (handled by /signup) → Resume upload (vision) → Real platform pulls
+(Codeforces + GitHub public APIs + **LeetCode profile URL and optional
+`LEETCODE_SESSION`/`csrftoken` cookies**, all via `/onboarding/signals`) →
 Adaptive calibration quiz (`/onboarding/calibration/*`) → Skill-confidence
 sliders → Focus & targets (`/onboarding/focus`) → Graph reveal.
 Self-report is deliberately paired with ground-truth signals; every optional
-signal can be skipped without blocking.
+signal can be skipped without blocking. LeetCode cookies are Fernet-encrypted
+at rest and wipeable in Settings; drafts persist under
+`clarity_onboarding_draft_v2`.
 
 ## Backend wiring
 
@@ -38,9 +41,16 @@ signal can be skipped without blocking.
   Bearer <jwt>` with `X-User-Id` dev fallback, errors normalized to `ApiError
   {status, code, message, request_id}` from the backend's error envelope.
 - `src/lib/api/endpoints.ts` — typed wrappers for auth, onboarding/calibration,
-  users/settings, daily plan, mastery graph, CODE RED (create/get/toggle/
-  clear-score/mock-oa), companies (CSV+web corpus, drift), interviews
-  (events/transcript/debrief), outcomes.
+  users/settings (incl. LeetCode connect/refresh/disconnect + platforms sync),
+  daily plan, mastery graph, CODE RED (create/get/toggle/clear-score/mock-oa),
+  companies (CSV+web corpus, drift), interviews (events/transcript/debrief),
+  outcomes.
+- `src/lib/geminiLive.ts` — **Gemini Live voice-to-voice interviewer**
+  (frontend-only, no SFU): `ai.live.connect` with mic PCM streaming (16kHz in,
+  24kHz out), input/output transcriptions, `show_editor`/`send_hint` function
+  calls, and best-effort transcript mirroring to `/interviews/{id}/events` so
+  the backend debrief pipeline is unchanged. Key: `VITE_GEMINI_API_KEY` in
+  gitignored `frontend/.env.local`.
 - `AuthContext` verifies the stored token against `GET /auth/me` and keeps a
   graceful local fallback when the backend is unreachable (guest mode remains
   available unless `NEXT_PUBLIC_ENFORCE_AUTH=true`).
@@ -51,13 +61,15 @@ signal can be skipped without blocking.
 frontend/src/
   pages/            route-level pages (Landing, Dashboard, Graph, Settings, MockOA*, codered/)
   components/       auth/, dashboard/, graph/, mock-oa/ (+ Logos, Testimonials)
-  onboarding/       7-screen wizard, steps/, components/, data/
-  hooks/            useDashboard (fetch + focus refetch + error/retry)
+  onboarding/       5-screen wizard, steps/, components/, data/
+  hooks/            useDashboard, usePlatformPulse (fetch + focus refetch + error/retry)
   lib/
     api/            client.ts (transport) + endpoints.ts (typed surface)
+    geminiLive.ts   Gemini Live voice interviewer (voice-to-voice + tools)
     dashboard/      contract types, runtime validator, mock payloads
     graph/          catalog (31 topics), deterministic generator, theme
     mock-oa/        session machine, hardcoded Google OA, runtime, reference solves
+    platforms/      daily platform sync (LeetCode + Codeforces) client
     proctor/        browser proctor + recording store
     coddy/          embed URL builder
     auth/           zod validation, AuthContext, guest/enforce flags

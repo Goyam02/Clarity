@@ -149,4 +149,10 @@ class LocalJudge(CodeJudge):
 
 
 def get_judge() -> CodeJudge:
+    """Judge0 (self-hosted, sandboxed, Python/Java/C++/SQL) when configured;
+    LocalJudge subprocess fallback otherwise (tests/dev, Python-only)."""
+    from app.core.config import get_settings
+    if get_settings().JUDGE0_BASE_URL:
+        from app.services.judge0 import Judge0Judge
+        return Judge0Judge()
     return LocalJudge()

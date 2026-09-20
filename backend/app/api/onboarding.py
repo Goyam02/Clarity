@@ -9,6 +9,7 @@ from app.core.logging import get_logger
 from app.dependencies import get_current_user_id, get_db
 from app.models import CalibrationRun, Company, Profile
 from app.services import company_corpus
+from app.services.leetcode_service import normalize_username
 from app.workflows import calibration as cal
 from app.workflows import onboarding as ob
 
@@ -20,6 +21,10 @@ class SignalsIn(BaseModel):
     codeforces_handle: str = ""
     github_username: str = ""
     resume_blob_ref: str = ""
+    # LeetCode: a profile URL (https://leetcode.com/u/<name>/) or plain
+    # username alone gives a public pull (solved counts + topics); the two
+    # cookies are optional and additionally unlock the recent-AC feed.
+    leetcode_profile: str = ""
     leetcode_session: str = ""
     leetcode_csrf: str = ""
     leetcode_username: str = ""
@@ -28,19 +33,31 @@ class SignalsIn(BaseModel):
 @router.post("/signals")
 async def signals(body: SignalsIn, user_id: str = Depends(get_current_user_id),
                   db: Session = Depends(get_db)):
-    """Parallel extraction. LeetCode cookies (if given) are verified against
-    the live API, persisted encrypted, and blended into the Mastery Model —
+    """Parallel extraction. LeetCode username/profile URL alone gives a public
+    pull; cookies (if given) are additionally verified against the live API,
+    persisted encrypted, and blended into the Mastery Model —
     see docs/plans/plan-leetcode-pulls.md."""
     leetcode_summary = None
+    lc_name = normalize_username(body.leetcode_profile or body.leetcode_username)
     if body.leetcode_session and body.leetcode_csrf:
-        from app.core.errors import ClarityError
         from app.services import platform_signals as ps
         try:
             leetcode_summary = await _connect_leetcode(
-                db, user_id, body.leetcode_session, body.leetcode_csrf,
-                body.leetcode_username)
+                db, user_id, body.leetcode_session, body.leetcode_csrf, lc_name)
         except ClarityError as e:
             ps.mark_leetcode_error(db, user_id, e.code)
+            leetcode_summary = {"connected": False, "error": e.code,
+                                "message": e.message}
+    elif lc_name:
+        # Username/profile-URL only: public profile pull, no tokens involved.
+        from app.services import leetcode_service as lc
+        from app.services import platform_signals as ps
+        try:
+            profile = await lc.LeetCodeClient().pull_everything(lc_name)
+            leetcode_summary = ps.persist_leetcode(
+                db, user_id, profile, handle=profile.get("username", lc_name))
+            leetcode_summary["connected"] = False
+        except ClarityError as e:
             leetcode_summary = {"connected": False, "error": e.code,
                                 "message": e.message}
     cf, gh, resume = await asyncio.gather(
@@ -115,6 +132,7 @@ class FocusIn(BaseModel):
     default_mood: str = "normal"
     codeforces_handle: str = ""
     github_username: str = ""
+    leetcode_profile: str = ""  # profile URL or plain username
 
 
 @router.post("/focus")
@@ -127,6 +145,10 @@ async def focus(body: FocusIn, user_id: str = Depends(get_current_user_id),
         prof.default_mood = body.default_mood
         prof.codeforces_handle = body.codeforces_handle
         prof.github_username = body.github_username
+        if body.leetcode_profile.strip():
+            # Remember the handle so daily syncs can public-pull it (cookies,
+            # if separately connected, take precedence in the sync route).
+            prof.leetcode_username = normalize_username(body.leetcode_profile)
         prof.target_companies = body.target_companies[:5]
         prof.onboarding_complete = True
         db.commit()

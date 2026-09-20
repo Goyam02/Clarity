@@ -21,13 +21,6 @@ export interface ResumeSignal {
   projects: string[];
 }
 
-export interface ScreenshotSignal {
-  fileName: string;
-  platform: 'leetcode' | 'gfg' | 'other';
-  solvedCounts?: { easy?: number; medium?: number; hard?: number; total?: number };
-  topicBreakdown?: Record<string, number>;
-}
-
 export interface PlatformPull {
   codeforces?: {
     handle: string;
@@ -54,7 +47,6 @@ export interface OnboardingPayload {
   skillRatings: Record<string, number>; // topic key -> rating (1 to 5)
   goals: UserGoals;
   resume?: ResumeSignal | null;
-  screenshots?: ScreenshotSignal[];
   platformPulls?: PlatformPull | null;
   calibration?: {
     runId: string;
