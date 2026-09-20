@@ -1,0 +1,6 @@
+{
+  "name": "Clarity",
+  "description": "AI-powered personalized interview and placement preparation platform with tailored knowledge graph onboarding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
