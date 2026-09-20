@@ -10,6 +10,8 @@ import {
 } from 'lucide-react';
 import { ClarityLogo } from '../components/Logos';
 import { useDashboard } from '../hooks/useDashboard';
+import { usePlatformPulse } from '../hooks/usePlatformPulse';
+import { PlatformPulseCard } from '../components/dashboard/PlatformPulseCard';
 import { DashboardSections } from '../components/dashboard/DashboardSections';
 import { DashboardSkeleton } from '../components/dashboard/DashboardSkeleton';
 import { OnboardingPayload } from '../onboarding/types';
@@ -38,6 +40,8 @@ export const DashboardView: React.FC = () => {
 
   // Fetch verified dashboard data via contract hook
   const { data: payload, isLoading, error, refetch } = useDashboard();
+  // Daily platform sync (LeetCode + Codeforces) + solved-problem feed
+  const pulse = usePlatformPulse();
 
   const profilesCount = profile?.profiles
     ? Object.values(profile.profiles).filter((v) => Boolean(v && v.trim())).length
@@ -179,6 +183,9 @@ export const DashboardView: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Platform Pulse: what you actually solved, refreshed on open */}
+            <PlatformPulseCard pulse={pulse} />
 
             {/* Scroll-Driven Section-by-Section Experience (Replaces old static 3-card grid) */}
             <DashboardSections

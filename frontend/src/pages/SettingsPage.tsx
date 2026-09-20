@@ -4,7 +4,7 @@ import {
   ArrowLeft, RefreshCw, Plus, X, Download, Trash2, AlertTriangle, CheckCircle2, User,
 } from 'lucide-react';
 import {
-  usersApi, UserSettings, CompanyRef,
+  usersApi, UserSettings, CompanyRef, LeetCodeStatus, LeetCodeConnectResult,
 } from '../lib/api/endpoints';
 import { ApiError, clearSession } from '../lib/api/client';
 import { useAuth } from '../lib/auth/AuthContext';
@@ -29,6 +29,13 @@ export const SettingsPage: React.FC = () => {
   const [focusDraft, setFocusDraft] = useState('');
   const [cfDraft, setCfDraft] = useState('');
   const [ghDraft, setGhDraft] = useState('');
+  // LeetCode cookie connection
+  const [lcStatus, setLcStatus] = useState<LeetCodeStatus | null>(null);
+  const [lcSessionDraft, setLcSessionDraft] = useState('');
+  const [lcCsrfDraft, setLcCsrfDraft] = useState('');
+  const [lcBusy, setLcBusy] = useState(false);
+  const [lcError, setLcError] = useState<string | null>(null);
+  const [lcResult, setLcResult] = useState<LeetCodeConnectResult | null>(null);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -40,6 +47,7 @@ export const SettingsPage: React.FC = () => {
       setFocusDraft(s.current_focus || '');
       setCfDraft(s.codeforces_handle || '');
       setGhDraft(s.github_username || '');
+      setLcStatus(s.leetcode ?? null);
       const c = await usersApi.companies();
       setCompanies(c.companies);
     } catch (err) {
@@ -76,6 +84,55 @@ export const SettingsPage: React.FC = () => {
       setCompanies(c.companies);
     } catch (err) {
       setError(err instanceof ApiError ? err.message : 'Failed to add company.');
+    }
+  };
+
+  // --- LeetCode cookie connection ------------------------------------------
+  const lcConnect = async () => {
+    setLcBusy(true);
+    setLcError(null);
+    setLcResult(null);
+    try {
+      const res = await usersApi.leetcodeConnect(
+        lcSessionDraft.trim(), lcCsrfDraft.trim());
+      setLcResult(res);
+      setLcStatus({ connected: res.connected, username: res.username,
+                    last_synced: res.last_synced });
+      setLcSessionDraft('');  // plaintext cleared immediately after success
+      setLcCsrfDraft('');
+    } catch (err) {
+      setLcError(err instanceof ApiError ? err.message : 'LeetCode connect failed.');
+    } finally {
+      setLcBusy(false);
+    }
+  };
+
+  const lcRefresh = async () => {
+    setLcBusy(true);
+    setLcError(null);
+    try {
+      const res = await usersApi.leetcodeRefresh();
+      setLcResult(res);
+      setLcStatus({ connected: res.connected, username: res.username,
+                    last_synced: res.last_synced });
+    } catch (err) {
+      setLcError(err instanceof ApiError ? err.message : 'Refresh failed.');
+    } finally {
+      setLcBusy(false);
+    }
+  };
+
+  const lcDisconnect = async () => {
+    setLcBusy(true);
+    setLcError(null);
+    try {
+      await usersApi.leetcodeDisconnect();
+      setLcStatus({ connected: false, username: null, last_synced: null });
+      setLcResult(null);
+    } catch (err) {
+      setLcError(err instanceof ApiError ? err.message : 'Disconnect failed.');
+    } finally {
+      setLcBusy(false);
     }
   };
 
@@ -255,9 +312,88 @@ export const SettingsPage: React.FC = () => {
               </div>
             </div>
           </div>
-          <p className="text-[11.5px] font-mono text-[#1F2420]/50">
-            LeetCode / GFG: screenshot-based — re-upload anytime from onboarding.
-          </p>
+          {/* LeetCode cookie connection */}
+          <div className="pt-3 border-t border-[#1F2420]/10 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="flex items-center gap-2 text-[13px] font-medium">
+                <span className="w-6 h-6 rounded-[4px] bg-[#FFA116]/15 text-[#FFA116] flex items-center justify-center font-bold text-xs">LC</span>
+                LeetCode
+                {lcStatus?.connected && (
+                  <span className="text-[11px] text-[#3F8F63] font-mono">
+                    @{lcStatus.username} · synced {lcStatus.last_synced
+                      ? new Date(lcStatus.last_synced).toLocaleDateString()
+                      : '—'}
+                  </span>
+                )}
+              </span>
+              <div className="flex items-center gap-2">
+                {lcStatus?.connected && (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => void lcRefresh()}
+                      disabled={lcBusy}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[6px] border border-[#1F2420]/25 text-[12px] font-medium hover:bg-[#1F2420]/5 disabled:opacity-40 cursor-pointer"
+                    >
+                      <RefreshCw className={`w-3 h-3 ${lcBusy ? 'animate-spin' : ''}`} /> Refresh
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => void lcDisconnect()}
+                      disabled={lcBusy}
+                      className="px-3 py-1.5 rounded-[6px] text-[12px] font-medium text-[#B8322A] hover:bg-[#B8322A]/5 disabled:opacity-40 cursor-pointer"
+                    >
+                      Disconnect
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+            {lcStatus?.expired && (
+              <p className="p-2.5 rounded-[8px] bg-[#FFA116]/10 border border-[#FFA116]/30 text-[12px] text-[#7A5200]">
+                <strong>Cookies expired</strong> — LeetCode rejected them on the last sync.
+                Paste fresh values below to restore daily progress sync.
+              </p>
+            )}
+            {lcError && <p className="text-[12px] text-[#B8322A] font-mono">{lcError}</p>}
+            <div className="grid grid-cols-1 gap-2.5">
+              <input
+                type="password"
+                autoComplete="off"
+                value={lcSessionDraft}
+                onChange={(e) => setLcSessionDraft(e.target.value)}
+                placeholder={lcStatus?.connected ? 'New LEETCODE_SESSION (to re-connect)' : 'LEETCODE_SESSION cookie value'}
+                className="w-full px-3 py-2 text-[13px] font-mono bg-white border border-[#1F2420]/20 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-[#FFA116]/50"
+              />
+              <div className="flex gap-2">
+                <input
+                  type="password"
+                  autoComplete="off"
+                  value={lcCsrfDraft}
+                  onChange={(e) => setLcCsrfDraft(e.target.value)}
+                  placeholder="csrftoken cookie value"
+                  className="flex-1 px-3 py-2 text-[13px] font-mono bg-white border border-[#1F2420]/20 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-[#FFA116]/50"
+                />
+                <button
+                  type="button"
+                  onClick={() => void lcConnect()}
+                  disabled={lcBusy || !lcSessionDraft.trim() || !lcCsrfDraft.trim()}
+                  className="px-4 py-2 rounded-[6px] bg-[#1F2420] text-[#FAF6F0] text-[12.5px] font-medium disabled:opacity-40 cursor-pointer"
+                >
+                  {lcStatus?.connected ? 'Update' : 'Connect'}
+                </button>
+              </div>
+            </div>
+            {lcResult && (
+              <p className="text-[12px] font-mono text-[#3F8F63]">
+                {lcResult.username} · {lcResult.total_solved} solved ·{' '}
+                {lcResult.blended?.length ?? 0} topic signals fed to your graph
+              </p>
+            )}
+            <p className="text-[11.5px] font-mono text-[#1F2420]/50">
+              DevTools → Application → Cookies → leetcode.com. Encrypted at rest; used only to read your own data.
+            </p>
+          </div>
         </section>
 
         {/* Target companies */}

@@ -46,9 +46,32 @@ export interface CalibrationSummary {
 
 export const onboardingApi = {
   initialize: () => api.post<{ initialized_nodes: number }>('/onboarding/initialize'),
-  signals: (codeforces_handle: string, github_username: string) =>
-    api.post<{ codeforces: unknown; github: unknown; resume: unknown }>(
-      '/onboarding/signals', { codeforces_handle, github_username, resume_blob_ref: '' }),
+  signals: (
+    codeforces_handle: string,
+    github_username: string,
+    leetcode?: { session: string; csrf: string; username?: string },
+  ) =>
+    api.post<{
+      codeforces: unknown;
+      github: unknown;
+      resume: unknown;
+      leetcode?: {
+        connected: boolean;
+        username: string;
+        total_solved: number;
+        signals: number;
+        blended: { topic_id: string; solved: number; created: boolean;
+                   previous: number; new: number; delta: number }[];
+      } | null;
+    }>(
+      '/onboarding/signals', {
+        codeforces_handle,
+        github_username,
+        resume_blob_ref: '',
+        leetcode_session: leetcode?.session || '',
+        leetcode_csrf: leetcode?.csrf || '',
+        leetcode_username: leetcode?.username || '',
+      }),
   focus: (body: {
     current_focus: string;
     target_companies: string[];
@@ -81,12 +104,43 @@ export interface UserSettings {
   onboarding_complete: boolean;
   google_linked: boolean;
   has_password: boolean;
+  leetcode?: LeetCodeStatus;
 }
 
 export interface CompanyRef {
   name: string;
   in_corpus: boolean;
   top_patterns: string[];
+}
+
+export interface LeetCodeStatus {
+  connected: boolean;
+  username: string | null;
+  last_synced: string | null;
+  last_error?: string | null;
+  expired?: boolean;
+}
+
+export interface PlatformActivityItem {
+  platform: string;
+  slug: string;
+  title: string;
+  solved_at: string;
+}
+
+export interface PlatformSyncResult {
+  synced_at: string;
+  results: Record<string, { ok: boolean; error?: string; skipped?: string;
+                           signals?: number; new_ac?: number }>;
+  leetcode: LeetCodeStatus;
+  activity: PlatformActivityItem[];
+}
+
+export interface LeetCodeConnectResult extends LeetCodeStatus {
+  signals: number;
+  total_solved?: number;
+  blended?: { topic_id: string; solved: number; created: boolean;
+              previous: number; new: number; delta: number }[];
 }
 
 export const usersApi = {
@@ -102,6 +156,21 @@ export const usersApi = {
     api.delete<{ companies: string[] }>(`/users/me/companies/${encodeURIComponent(name)}`),
   exportData: () => api.get<Record<string, unknown>>('/users/me/export'),
   deleteAccount: () => api.delete<{ deleted: boolean }>('/users/me'),
+  // LeetCode cookie pulls (docs/plans/plan-leetcode-pulls.md)
+  leetcodeStatus: () => api.get<LeetCodeStatus>('/users/me/leetcode'),
+  leetcodeConnect: (leetcode_session: string, leetcode_csrf: string,
+                    leetcode_username = '') =>
+    api.post<LeetCodeConnectResult>('/users/me/leetcode',
+      { leetcode_session, leetcode_csrf, leetcode_username }),
+  leetcodeRefresh: () =>
+    api.post<LeetCodeConnectResult>('/users/me/leetcode/refresh'),
+  leetcodeDisconnect: () =>
+    api.delete<{ disconnected: boolean }>('/users/me/leetcode'),
+  // Daily platform refresh + solved-problem feed (dashboard open)
+  platformsSync: () => api.post<PlatformSyncResult>('/users/me/platforms/sync'),
+  platformsActivity: () =>
+    api.get<{ activity: PlatformActivityItem[]; leetcode: LeetCodeStatus;
+              codeforces_synced_at: string | null }>('/users/me/platforms/activity'),
 };
 
 // --- daily plan (Home) -------------------------------------------------------

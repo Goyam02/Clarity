@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
-import { ArrowLeft, ArrowRight, Sparkles, Upload, ScanLine, Globe, GraduationCap, Compass } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Sparkles, Upload, ScanLine, Globe, GraduationCap, Compass, HelpCircle } from 'lucide-react';
 import { ClarityLogo } from '../components/Logos';
 import { OnboardingPayload, UserProfiles, UserGoals, ResumeSignal, ScreenshotSignal, PlatformPull } from './types';
 import { getDefaultSkillRatings } from './data/skillTopics';
@@ -28,6 +28,8 @@ const INITIAL_PROFILES: UserProfiles = {
   hackerrank: '',
   codechef: '',
 };
+
+const INITIAL_LC_TOKENS = { session: '', csrf: '' };
 
 const INITIAL_GOALS: UserGoals = {
   dreamCompany: 'Google',
@@ -65,11 +67,13 @@ export const OnboardingFlow: React.FC = () => {
 
   // Form state
   const [profiles, setProfiles] = useState<UserProfiles>(INITIAL_PROFILES);
+  const [lcTokens, setLcTokens] = useState(INITIAL_LC_TOKENS);
   const [skillRatings, setSkillRatings] = useState<Record<string, number>>(() => getDefaultSkillRatings());
   const [goals, setGoals] = useState<UserGoals>(INITIAL_GOALS);
   const [resume, setResume] = useState<ResumeSignal | null>(null);
   const [screenshots, setScreenshots] = useState<ScreenshotSignal[]>([]);
   const [platformPulls, setPlatformPulls] = useState<PlatformPull | null>(null);
+  const [showLcHelp, setShowLcHelp] = useState(false);
 
   // Calibration state (screen 4)
   const [calRunId, setCalRunId] = useState<string | null>(null);
@@ -80,6 +84,7 @@ export const OnboardingFlow: React.FC = () => {
   const [calSummary, setCalSummary] = useState<CalibrationSummary | null>(null);
   const [calBusy, setCalBusy] = useState(false);
   const [stepError, setStepError] = useState<string | null>(null);
+  void HelpCircle; // reserved for inline token help tooltip
 
   // Rehydrate
   useEffect(() => {
@@ -142,13 +147,23 @@ export const OnboardingFlow: React.FC = () => {
     setStepError(null);
     setCalBusy(true);
     try {
-      const res = await onboardingApi.signals(profiles.codeforces || '', profiles.github || '');
+      const lcProvided = Boolean(lcTokens.session.trim() && lcTokens.csrf.trim());
+      const res = await onboardingApi.signals(
+        profiles.codeforces || '', profiles.github || '',
+        lcProvided ? { session: lcTokens.session.trim(), csrf: lcTokens.csrf.trim() } : undefined);
       const cf = res.codeforces as PlatformPull['codeforces'] | undefined;
       const gh = res.github as PlatformPull['github'] | undefined;
       setPlatformPulls({
         codeforces: cf ? { ...cf, handle: profiles.codeforces || cf.handle || '' } : undefined,
         github: gh ? { ...gh, username: profiles.github || gh.username || '' } : undefined,
+        leetcode: res.leetcode ? {
+          username: res.leetcode.username,
+          totalSolved: res.leetcode.total_solved,
+          blendedCount: res.leetcode.blended?.length ?? 0,
+        } : undefined,
       });
+      // Tokens verified + stored server-side — clear the plaintext immediately.
+      if (lcProvided) setLcTokens(INITIAL_LC_TOKENS);
     } catch (err) {
       setStepError(err instanceof ApiError
         ? `${err.message} (you can continue — this signal is optional)`
@@ -156,7 +171,7 @@ export const OnboardingFlow: React.FC = () => {
     } finally {
       setCalBusy(false);
     }
-  }, [profiles.codeforces, profiles.github]);
+  }, [profiles.codeforces, profiles.github, lcTokens]);
 
   // --- screen 4: adaptive calibration ------------------------------------------
   const startCalibration = useCallback(async () => {
@@ -457,8 +472,8 @@ export const OnboardingFlow: React.FC = () => {
                     <div className="space-y-5">
                       <StepHeader
                         icon={<Globe className="w-5 h-5" />}
-                        title="Connect the two safe pulls"
-                        subtitle="Codeforces' official public API and GitHub's public API — the only auto-connects the product promises honestly. Enter your usernames (or edit them later in Settings)."
+                        title="Pull your real platform data"
+                        subtitle="Codeforces and GitHub use their public APIs. LeetCode needs two cookies from your own browser — they are encrypted at rest, used only to read your own solve data, and wipeable in Settings anytime."
                       />
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                         <div>
@@ -482,10 +497,62 @@ export const OnboardingFlow: React.FC = () => {
                           />
                         </div>
                       </div>
+
+                      {/* LeetCode cookie tokens (2) */}
+                      <div className="p-4 rounded-[10px] border border-[#FFA116]/30 bg-[#FFA116]/5 space-y-3">
+                        <div className="flex items-center justify-between">
+                          <span className="flex items-center gap-2 text-[13px] font-medium">
+                            <span className="w-6 h-6 rounded-[4px] bg-[#FFA116]/15 text-[#FFA116] flex items-center justify-center font-bold text-xs">LC</span>
+                            LeetCode cookies <span className="text-[11px] text-[#C1592B] font-semibold">(strongest signal)</span>
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => setShowLcHelp((v) => !v)}
+                            className="text-[12px] text-[#C1592B] hover:underline cursor-pointer"
+                          >
+                            {showLcHelp ? 'Hide' : 'How to get these?'}
+                          </button>
+                        </div>
+                        {showLcHelp && (
+                          <ol className="text-[12px] text-[#1F2420]/70 list-decimal ml-5 space-y-0.5">
+                            <li>Log in to leetcode.com in your browser</li>
+                            <li>Open DevTools (F12) → Application → Cookies → https://leetcode.com</li>
+                            <li>Copy the values of <strong>LEETCODE_SESSION</strong> and <strong>csrftoken</strong></li>
+                            <li>Paste both below — that's it. Encrypted at rest, never logged.</li>
+                          </ol>
+                        )}
+                        <div className="grid grid-cols-1 gap-3">
+                          <div>
+                            <label htmlFor="ob-lc-session" className="block text-[11.5px] font-mono uppercase tracking-wider text-[#1F2420]/70 mb-1">LEETCODE_SESSION</label>
+                            <input
+                              id="ob-lc-session"
+                              type="password"
+                              autoComplete="off"
+                              value={lcTokens.session}
+                              onChange={(e) => setLcTokens((t) => ({ ...t, session: e.target.value }))}
+                              placeholder="eyJhbGciOiJI..."
+                              className="w-full px-3 py-2 text-[13px] font-mono bg-white border border-[#1F2420]/20 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-[#FFA116]/50"
+                            />
+                          </div>
+                          <div>
+                            <label htmlFor="ob-lc-csrf" className="block text-[11.5px] font-mono uppercase tracking-wider text-[#1F2420]/70 mb-1">csrftoken</label>
+                            <input
+                              id="ob-lc-csrf"
+                              type="password"
+                              autoComplete="off"
+                              value={lcTokens.csrf}
+                              onChange={(e) => setLcTokens((t) => ({ ...t, csrf: e.target.value }))}
+                              placeholder="32-character token"
+                              className="w-full px-3 py-2 text-[13px] font-mono bg-white border border-[#1F2420]/20 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-[#FFA116]/50"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
                       <button
                         type="button"
                         onClick={() => void runPlatformPulls()}
-                        disabled={calBusy || (!profiles.codeforces && !profiles.github)}
+                        disabled={calBusy || (!profiles.codeforces && !profiles.github && !(lcTokens.session.trim() && lcTokens.csrf.trim()))}
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-[6px] bg-[#1F2420] text-[#FAF6F0] text-[13px] font-medium disabled:opacity-40 cursor-pointer"
                       >
                         {calBusy ? <RefreshCwSmall /> : <Globe className="w-3.5 h-3.5" />}
@@ -493,6 +560,13 @@ export const OnboardingFlow: React.FC = () => {
                       </button>
                       {platformPulls && (
                         <div className="p-4 rounded-[10px] bg-[#FAF6F0] border border-[#1F2420]/10 space-y-1.5 text-[13px]">
+                          {platformPulls.leetcode && (
+                            <p className="font-mono text-[12.5px]">
+                              LeetCode: <strong>{platformPulls.leetcode.username}</strong>
+                              {platformPulls.leetcode.totalSolved != null && ` · ${platformPulls.leetcode.totalSolved} solved`}
+                              {` · ${platformPulls.leetcode.blendedCount} topic signals fed to your graph`}
+                            </p>
+                          )}
                           {platformPulls.codeforces && (
                             <p className="font-mono text-[12.5px]">
                               Codeforces: <strong>{platformPulls.codeforces.handle}</strong>
@@ -649,7 +723,7 @@ export const OnboardingFlow: React.FC = () => {
         </div>
 
         <div className="mt-6 text-center text-[12px] text-[#1F2420]/50">
-          <span>Only public solve statistics are parsed · never your session tokens</span>
+          <span>LeetCode cookies are encrypted at rest, used only to read your own data · wipe anytime in Settings</span>
         </div>
       </main>
     </div>

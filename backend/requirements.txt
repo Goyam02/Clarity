@@ -16,5 +16,7 @@ azure-identity>=1.17
 # PostgreSQL driver (primary database) + cache
 psycopg2-binary>=2.9
 redis>=5.0
+# Token encryption for user-supplied platform cookies (LeetCode pulls)
+cryptography>=43.0
 # Optional (only needed for vision extraction; PDF text parsing uses pypdf above):
 # azure-search-documents>=11.6

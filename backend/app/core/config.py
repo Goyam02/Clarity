@@ -67,6 +67,16 @@ class Settings(BaseSettings):
     # Per-company problem-frequency corpus (LeetCode-style CSV seed data)
     COMPANY_CORPUS_DIR: str = "../data/company-corpus/companies"
 
+    # LeetCode pulls (plan: docs/plans/plan-leetcode-pulls.md). Tokens are
+    # per-user, supplied in-app, encrypted at rest; only leetcode.com is called.
+    LEETCODE_GRAPHQL_URL: str = "https://leetcode.com/graphql"
+    LEETCODE_REQUEST_TIMEOUT: int = 20
+    # Key for encrypting user-supplied platform tokens (Fernet). Defaults to a
+    # derived key from JWT_SECRET so local dev needs zero extra setup.
+    SECRET_BOX_KEY: str = ""
+    # Platform pulls re-sync rate limit (seconds between refreshes per user).
+    LEETCODE_REFRESH_MIN_INTERVAL: int = 3600
+
     @property
     def google_oauth_enabled(self) -> bool:
         return bool(self.GOOGLE_CLIENT_ID and self.GOOGLE_CLIENT_SECRET)
@@ -74,6 +84,14 @@ class Settings(BaseSettings):
     @property
     def is_postgres(self) -> bool:
         return self.DATABASE_URL.startswith(("postgresql", "postgres"))
+
+    @property
+    def secret_box_key(self) -> bytes:
+        """Fernet key: explicit SECRET_BOX_KEY or derived from JWT_SECRET."""
+        import base64
+        import hashlib
+        raw = self.SECRET_BOX_KEY or self.JWT_SECRET
+        return base64.urlsafe_b64encode(hashlib.sha256(raw.encode()).digest())
 
 
 @lru_cache

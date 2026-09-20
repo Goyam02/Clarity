@@ -42,6 +42,11 @@ export interface PlatformPull {
     repoCount?: number;
     error?: string;
   };
+  leetcode?: {
+    username: string;
+    totalSolved?: number;
+    blendedCount?: number;
+  };
 }
 
 export interface OnboardingPayload {
