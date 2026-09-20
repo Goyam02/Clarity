@@ -30,6 +30,13 @@ class Settings(BaseSettings):
     EVALUATOR_AGENT: str = "evaluator"
     INTERVIEWER_AGENT: str = "interviewer"
     COMPANY_INTEL_AGENT: str = "company-intel"
+    # Web research: a Foundry agent with "Grounding with Bing Search" attached
+    # (Bing Search APIs retired Aug 2025 — grounding tool is the sanctioned path).
+    # Empty name disables web research; CSV corpus alone is used (see
+    # services/web_corpus.py).
+    WEB_RESEARCH_AGENT: str = "company-intel"
+    # Re-search a company's web-sourced questions at most once per TTL.
+    WEB_RESEARCH_TTL_DAYS: int = 14
     FOUNDRY_TIMEOUT_SECONDS: int = 60
     FOUNDRY_MAX_RETRIES: int = 3
 

@@ -32,7 +32,11 @@ def _sqlite_add_missing_columns() -> None:
                   ("google_sub", "VARCHAR(64) DEFAULT '' NOT NULL")],
         "profiles": [("target_companies", "JSON DEFAULT '[]' NOT NULL"),
                      ("onboarding_complete", "BOOLEAN DEFAULT 0 NOT NULL")],
-        "code_red_tasks": [("detail", "JSON DEFAULT '{}' NOT NULL")],
+        "code_red_tasks": [("detail", "JSON DEFAULT '{}' NOT NULL"),
+                           ("title", "VARCHAR(500) DEFAULT '' NOT NULL")],
+        "company_profiles": [("web_problems", "JSON DEFAULT '[]' NOT NULL"),
+                             ("web_interview_questions", "JSON DEFAULT '[]' NOT NULL"),
+                             ("web_researched_at", "DATETIME NULL")],
     }
     with engine.begin() as conn:
         for table, cols in wanted.items():

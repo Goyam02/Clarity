@@ -10,6 +10,7 @@ from app.models import CodeRedSession, Company, CompanyProfile, MockSession
 from app.schemas import (CodeRedRequest, CodeRedTaskStatusIn, InterviewEventIn,
                          MockEventIn, OutcomeIn, WeeklyRescheduleIn)
 from app.services.company_service import drift_status
+from app.services import web_corpus
 from app.workflows import code_red as cr
 from app.workflows import mock_oa, weekly
 
@@ -71,13 +72,18 @@ def clear_score(session_id: str, user_id: str = Depends(get_current_user_id),
 async def company_lookup(name: str, user_id: str = Depends(get_current_user_id),
                          db: Session = Depends(get_db)):
     company, profile, drift = await cr.get_or_build_company(db, user_id, name)
+    await web_corpus.ensure_web_research(db, profile, company.name)
     return {"company": company.name, "oa_patterns": profile.oa_patterns,
             "interview_patterns": profile.interview_patterns,
             "core_subjects": profile.core_subjects, "difficulty": profile.difficulty,
             "round_structure": profile.round_structure, "sources": profile.sources,
             "confidence": profile.confidence,
             "last_verified": profile.last_verified.isoformat() if profile.last_verified else "",
-            "drift": drift}
+            "drift": drift,
+            "problems": web_corpus.company_all_problems(profile, company.name, limit=8),
+            "interview_questions": web_corpus.company_interview_questions(profile, limit=8),
+            "web_researched_at": profile.web_researched_at.isoformat()
+            if profile.web_researched_at else ""}
 
 
 @router_companies.get("/{name}/drift")

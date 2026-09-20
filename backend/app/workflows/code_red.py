@@ -16,6 +16,7 @@ from app.models import (CodeRedSession, CodeRedTask, Company, CompanyProfile,
                         Problem, Profile)
 from app.services import clear_score as cs
 from app.services import company_corpus
+from app.services import web_corpus
 from app.services.company_service import drift_status
 from app.workflows.daily import mastery_snapshot
 
@@ -109,21 +110,32 @@ async def create_session(db: Session, user_id: str, company_name: str, jd: str,
     tasks: list[dict] = []
     used = 0
 
-    # [company] items: real curated problems for this company (prb_csv corpus),
-    # highest frequency first — spec's "known standard question for this company".
-    corpus_problems = company_corpus.company_anchor_problems(company.name, limit=6)
-    for cp in corpus_problems:
+    # [company] items: real problems for this company — curated CSV corpus first
+    # (prb_csv, frequency order), then web-researched findings (Grounding with
+    # Bing Search) not already covered. Spec's "known standard question for this
+    # company"; every item carries its provenance.
+    await web_corpus.ensure_web_research(db, profile, company.name)
+    merged_problems = web_corpus.company_all_problems(profile, company.name, limit=8)
+    for cp in merged_problems:
         company_count = sum(1 for t in tasks if t["reason"] == "company")
-        if used + per > budget or company_count >= 3:
+        # Interview rounds skew verbal (spec §6b): fewer raw problems, more
+        # explain-back items from the interview-question block below.
+        company_cap = 2 if round_type == "Interview" else 3
+        if used + per > budget or company_count >= company_cap:
             break
         problem = db.query(Problem).filter(Problem.title == cp["title"]).first()
+        detail = {"url": cp.get("url", ""), "difficulty": cp.get("difficulty", ""),
+                  "frequency": cp.get("frequency", 0.0),
+                  "source": cp.get("origin", "company_corpus"),
+                  "citation": cp.get("source", "") if cp.get("origin") == "web" else ""}
+        if cp.get("source_date"):
+            detail["source_date"] = cp["source_date"]
         tasks.append({
             "type": "problem", "node_id": cp["patterns"][0] if cp["patterns"] else "",
             "duration_minutes": per, "reason": "company",
             "title": f"{cp['title']} — {company.name}-style",
             "problem_id": problem.id if problem else "",
-            "detail": {"url": cp["url"], "difficulty": cp["difficulty"],
-                       "frequency": cp["frequency"], "source": "company_corpus"},
+            "detail": detail,
         })
         used += per
 
@@ -140,6 +152,25 @@ async def create_session(db: Session, user_id: str, company_name: str, jd: str,
                       "reason": "core", "title": f"Core: {core}",
                       "problem_id": "", "detail": {"source": "jd_profile"}})
         used += 10
+
+    # [company] interview questions: web-researched, source-cited. Interview
+    # rounds skew verbal (spec §6b) — concept/design prompts instead of raw DSA.
+    if round_type == "Interview":
+        for q in web_corpus.company_interview_questions(profile, limit=3):
+            if used + 10 > budget:
+                break
+            tasks.append({
+                "type": "explain_back",
+                "node_id": (profile.interview_patterns or [""])[0]
+                if profile.interview_patterns else "",
+                "duration_minutes": 10, "reason": "company",
+                "title": q["question"], "problem_id": "",
+                "detail": {"source": "web", "citation": q.get("url", ""),
+                           "question_type": q.get("type", ""),
+                           "round": q.get("round", ""),
+                           "source_date": q.get("source_date", "")},
+            })
+            used += 10
 
     # [weak_spot] items: the Planner diffs mastery vs company patterns for the
     # remaining budget (spec §6 step 3).
@@ -185,6 +216,7 @@ async def create_session(db: Session, user_id: str, company_name: str, jd: str,
     for i, t in enumerate(tasks):
         db.add(CodeRedTask(session_id=session.id, type=t["type"], node_id=t["node_id"],
                            problem_id=t.get("problem_id", ""),
+                           title=t.get("title", "")[:500],
                            duration_minutes=t["duration_minutes"], reason=t["reason"],
                            priority=i, status="pending", detail=t.get("detail", {})))
     db.commit()
@@ -203,7 +235,7 @@ def session_tasks(db: Session, session_id: str) -> list[dict]:
     rows = db.query(CodeRedTask).filter(CodeRedTask.session_id == session_id).order_by(
         CodeRedTask.priority).all()
     return [{"id": t.id, "type": t.type, "node_id": t.node_id, "problem_id": t.problem_id,
-             "duration_minutes": t.duration_minutes, "reason": t.reason,
+             "title": t.title, "duration_minutes": t.duration_minutes, "reason": t.reason,
              "priority": t.priority, "status": t.status, "detail": t.detail or {}}
             for t in rows]
 

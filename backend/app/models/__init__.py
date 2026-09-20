@@ -152,6 +152,11 @@ class CompanyProfile(Base):
     sources: Mapped[list] = mapped_column(JSON, default=list)
     last_verified: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
     confidence: Mapped[float] = mapped_column(Float, default=0.5)
+    # Web-researched, source-cited question findings (Grounding with Bing Search),
+    # persisted + TTL-gated by services/web_corpus.ensure_web_research.
+    web_problems: Mapped[list] = mapped_column(JSON, default=list)
+    web_interview_questions: Mapped[list] = mapped_column(JSON, default=list)
+    web_researched_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
 
 class DailyPlan(Base):
@@ -184,6 +189,7 @@ class CodeRedTask(Base):
     id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uid)
     session_id: Mapped[str] = mapped_column(String(32), ForeignKey("code_red_sessions.id"), index=True)
     type: Mapped[str] = mapped_column(String(32), default="problem")
+    title: Mapped[str] = mapped_column(String(500), default="")
     node_id: Mapped[str] = mapped_column(String(32), default="")
     problem_id: Mapped[str] = mapped_column(String(32), default="")
     duration_minutes: Mapped[int] = mapped_column(Integer, default=15)
