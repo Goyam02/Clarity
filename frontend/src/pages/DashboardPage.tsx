@@ -12,6 +12,7 @@ import { ClarityLogo } from '../components/Logos';
 import { useDashboard } from '../hooks/useDashboard';
 import { usePlatformPulse } from '../hooks/usePlatformPulse';
 import { PlatformPulseCard } from '../components/dashboard/PlatformPulseCard';
+import { CookiesExpiredPopup } from '../components/dashboard/CookiesExpiredPopup';
 import { DashboardSections } from '../components/dashboard/DashboardSections';
 import { DashboardSkeleton } from '../components/dashboard/DashboardSkeleton';
 import { OnboardingPayload } from '../onboarding/types';
@@ -40,8 +41,10 @@ export const DashboardView: React.FC = () => {
 
   // Fetch verified dashboard data via contract hook
   const { data: payload, isLoading, error, refetch } = useDashboard();
-  // Daily platform sync (LeetCode + Codeforces) + solved-problem feed
+  // Daily platform sync (LeetCode + Codeforces) + solved-problem feed.
+  // The sync itself fires at login/signup; this hook adopts its result.
   const pulse = usePlatformPulse();
+  const lcCookiesExpired = pulse.leetcode?.expired === true;
 
   const profilesCount = profile?.profiles
     ? Object.values(profile.profiles).filter((v) => Boolean(v && v.trim())).length
@@ -54,6 +57,8 @@ export const DashboardView: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#FAF6F0] text-[#1F2420] flex flex-col font-sans relative selection:bg-[#C1592B] selection:text-[#FAF6F0]">
+      {/* Expired-cookie alert (daily sync reported LEETCODE_AUTH_EXPIRED) */}
+      <CookiesExpiredPopup expired={lcCookiesExpired} />
       {/* Subtle Ambient Glow */}
       <div
         className="absolute top-0 left-0 right-0 h-[400px] pointer-events-none overflow-hidden z-0"

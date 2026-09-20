@@ -5,6 +5,7 @@ import { loginSchema } from '../lib/auth/validation';
 import { useAuth } from '../lib/auth/AuthContext';
 import { authApi } from '../lib/api/endpoints';
 import { ApiError } from '../lib/api/client';
+import { startDailyPlatformSync } from '../lib/platforms/dailySync';
 
 export const LoginPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -58,6 +59,10 @@ export const LoginPage: React.FC = () => {
       }
       localStorage.setItem('clarity_auth_token', issue.token);
       localStorage.setItem('clarity_user_id', issue.user_id);
+      // Daily progress: refresh connected platforms (LeetCode + Codeforces)
+      // once per session so the dashboard shows today's solved problems. The
+      // expired-cookie popup reads its result from the same sync.
+      void startDailyPlatformSync();
       navigate(nextParam || '/dashboard');
     } catch (err) {
       if (err instanceof ApiError) {

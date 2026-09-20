@@ -1,7 +1,6 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
-import { DashboardPayload } from '../lib/dashboard/types';
-import { fetchDashboard } from '../lib/dashboard/api';
-import { usersApi, PlatformActivityItem, LeetCodeStatus } from '../lib/api/endpoints';
+import { useState, useEffect, useCallback } from 'react';
+import { PlatformActivityItem, LeetCodeStatus } from '../lib/api/endpoints';
+import { dailySyncInFlight, startDailyPlatformSync } from '../lib/platforms/dailySync';
 
 export interface PlatformPulse {
   loading: boolean;
@@ -14,11 +13,10 @@ export interface PlatformPulse {
 
 /**
  * Daily platform progress ("platform pulse"):
- * - On first load per browser session, POST /users/me/platforms/sync refreshes
- *   every connected platform (LeetCode cookies + Codeforces public API) so
- *   today's solved problems show up the moment the dashboard opens.
- * - Falls back to GET /users/me/platforms/activity when the sync was recent.
- * - Surfaces leetcode.expired so the UI can ask for fresh cookies.
+ * - The sync itself fires once per browser session at login/signup (see
+ *   lib/platforms/dailySync.ts). This hook picks up that in-flight sync when
+ *   the dashboard opens, or falls back to GET /users/me/platforms/activity.
+ * - Surfaces leetcode.expired so the UI can raise the cookies-expired popup.
  */
 export function usePlatformPulse(enabled = true): PlatformPulse {
   const [state, setState] = useState<PlatformPulse>({
@@ -29,13 +27,51 @@ export function usePlatformPulse(enabled = true): PlatformPulse {
     syncedThisSession: false,
     error: null,
   });
-  const startedRef = useRef(false);
 
-  const load = useCallback(async (sync: boolean) => {
+  const readFeed = useCallback(async () => {
     setState((s) => ({ ...s, loading: true, error: null }));
     try {
-      if (sync) {
-        const res = await usersApi.platformsSync();
+      const res = await (await import('../lib/api/endpoints')).usersApi.platformsActivity();
+      setState({
+        loading: false,
+        activity: res.activity,
+        leetcode: res.leetcode,
+        codeforcesSyncedAt: res.codeforces_synced_at,
+        syncedThisSession: false,
+        error: null,
+      });
+    } catch {
+      // Platform pulse is best-effort; never block the dashboard.
+      setState((s) => ({ ...s, loading: false, error: null }));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
+    const running = dailySyncInFlight();
+    if (running) {
+      void running.then((res) => {
+        if (res) {
+          setState({
+            loading: false,
+            activity: res.activity,
+            leetcode: res.leetcode,
+            codeforcesSyncedAt: null,
+            syncedThisSession: true,
+            error: null,
+          });
+        } else {
+          void readFeed();
+        }
+      });
+    } else {
+      void readFeed();
+    }
+  }, [enabled, readFeed]);
+
+  const refetch = useCallback(() => {
+    void startDailyPlatformSync().then((res) => {
+      if (res) {
         setState({
           loading: false,
           activity: res.activity,
@@ -45,37 +81,10 @@ export function usePlatformPulse(enabled = true): PlatformPulse {
           error: null,
         });
       } else {
-        const res = await usersApi.platformsActivity();
-        setState({
-          loading: false,
-          activity: res.activity,
-          leetcode: res.leetcode,
-          codeforcesSyncedAt: res.codeforces_synced_at,
-          syncedThisSession: false,
-          error: null,
-        });
+        void readFeed();
       }
-    } catch {
-      // Platform pulse is best-effort; never block the dashboard.
-      setState((s) => ({ ...s, loading: false, error: null }));
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!enabled || startedRef.current) return;
-    startedRef.current = true;
-    // Sync once per tab session; afterwards just read the feed.
-    const alreadySynced = sessionStorage.getItem('clarity_platform_synced') === '1';
-    if (alreadySynced) {
-      void load(false);
-    } else {
-      sessionStorage.setItem('clarity_platform_synced', '1');
-      void load(true);
-    }
-  }, [enabled, load]);
-
-  const refetch = useCallback(() => load(true), [load]);
-  void refetch; // exposed for manual "Refresh now" buttons
+    });
+  }, [readFeed]);
 
   return state;
 }

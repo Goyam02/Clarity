@@ -114,9 +114,17 @@ export const SettingsPage: React.FC = () => {
       const res = await usersApi.leetcodeRefresh();
       setLcResult(res);
       setLcStatus({ connected: res.connected, username: res.username,
-                    last_synced: res.last_synced });
+                    last_synced: res.last_synced, last_error: null,
+                    expired: false });
     } catch (err) {
+      // Rate limit surfaces as its own message; auth expiry updates the status
+      // from the backend so the expired banner + popup take over.
       setLcError(err instanceof ApiError ? err.message : 'Refresh failed.');
+      try {
+        setLcStatus(await usersApi.leetcodeStatus());
+      } catch {
+        // status refresh is best-effort
+      }
     } finally {
       setLcBusy(false);
     }
@@ -127,7 +135,8 @@ export const SettingsPage: React.FC = () => {
     setLcError(null);
     try {
       await usersApi.leetcodeDisconnect();
-      setLcStatus({ connected: false, username: null, last_synced: null });
+      setLcStatus({ connected: false, username: null, last_synced: null,
+                    last_error: null, expired: false });
       setLcResult(null);
     } catch (err) {
       setLcError(err instanceof ApiError ? err.message : 'Disconnect failed.');
@@ -353,6 +362,12 @@ export const SettingsPage: React.FC = () => {
               <p className="p-2.5 rounded-[8px] bg-[#FFA116]/10 border border-[#FFA116]/30 text-[12px] text-[#7A5200]">
                 <strong>Cookies expired</strong> — LeetCode rejected them on the last sync.
                 Paste fresh values below to restore daily progress sync.
+              </p>
+            )}
+            {!lcStatus?.expired && lcStatus?.last_error && lcStatus?.connected && (
+              <p className="p-2.5 rounded-[8px] bg-[#1F2420]/5 border border-[#1F2420]/15 text-[12px] text-[#1F2420]/70">
+                Last sync failed: <span className="font-mono">{lcStatus.last_error}</span> —
+                try Refresh, or re-enter the cookies below.
               </p>
             )}
             {lcError && <p className="text-[12px] text-[#B8322A] font-mono">{lcError}</p>}

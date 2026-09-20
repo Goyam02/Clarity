@@ -6,6 +6,7 @@ import { authApi, onboardingApi } from '../lib/api/endpoints';
 import { ApiError, setToken, setUserId } from '../lib/api/client';
 import { useAuth } from '../lib/auth/AuthContext';
 import { SKIP_SIGNUP_TARGET } from '../lib/routes';
+import { startDailyPlatformSync } from '../lib/platforms/dailySync';
 
 export const SignupPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -56,6 +57,10 @@ export const SignupPage: React.FC = () => {
       } catch {
         // Non-fatal: onboarding flow can initialize again later.
       }
+      // Daily progress: refresh connected platforms once per session so the
+      // dashboard shows solved problems from day one. No-op for a brand-new
+      // account (nothing connected yet) and shares the session flag with login.
+      void startDailyPlatformSync();
       navigate(nextParam || '/onboarding');
     } catch (err) {
       if (err instanceof ApiError) {

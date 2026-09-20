@@ -10,6 +10,7 @@ Design rules (docs/plans/plan-leetcode-pulls.md):
   stored score (MasteryEngine is convergent — repeated identical evidence
   moves the score toward the same target, not linearly upward).
 """
+import asyncio
 from datetime import datetime, timezone
 
 from sqlalchemy.orm import Session
@@ -222,14 +223,16 @@ def recent_activity_feed(db: Session, user_id: str, days: int = 7) -> list[dict]
     return items[:60]
 
 
-def sync_codeforces(db: Session, user_id: str, handle: str) -> dict:
+async def sync_codeforces(db: Session, user_id: str, handle: str) -> dict:
     """Full Codeforces sync: pull user.info + recent submissions (public API,
-    no tokens), persist signals, blend topic evidence into the Mastery Model."""
-    import asyncio
+    no tokens), persist signals, blend topic evidence into the Mastery Model.
+    Must be awaited — callers are async route handlers (platforms/sync on
+    dashboard open / login); blocking the event loop here used to 500 the
+    whole sync."""
     from app.services import codeforces_service
-    info, status = asyncio.get_event_loop().run_until_complete(
-        asyncio.gather(codeforces_service.get_user_info(handle),
-                       codeforces_service.get_user_status(handle, count=50)))
+    info, status = await asyncio.gather(
+        codeforces_service.get_user_info(handle),
+        codeforces_service.get_user_status(handle, count=50))
     if "error" in info:
         return {"platform": "codeforces", "ok": False, "error": info["error"]}
     upsert_signal(db, user_id, "codeforces", "profile", "",

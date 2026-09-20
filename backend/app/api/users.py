@@ -185,7 +185,8 @@ async def platforms_sync(user_id: str = Depends(get_current_user_id),
 
     # Codeforces (no tokens needed) — always syncs when a handle is set.
     if prof.codeforces_handle:
-        results["codeforces"] = ps.sync_codeforces(db, user_id, prof.codeforces_handle)
+        results["codeforces"] = await ps.sync_codeforces(db, user_id,
+                                                         prof.codeforces_handle)
 
     prof = _profile_or_404(db, user_id)
     return {"synced_at": datetime.now(timezone.utc).isoformat(),
