@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { useAuth } from '../lib/auth/AuthContext';
 import { ArrowRight } from 'lucide-react';
 import {
@@ -16,6 +17,137 @@ import {
   OutcomeLoopWordmark,
 } from '../components/Logos';
 import { TestimonialsSection } from '../components/Testimonials';
+
+// --- Hero Headline Animation (5 phrases, word-by-word transition) ---
+const HEADLINE_PHRASES = [
+  {
+    highlight: ["Be", "ready"],
+    rest: ["before", "the", "interview"],
+  },
+  {
+    highlight: ["Know", "more"],
+    rest: ["before", "the", "interview"],
+  },
+  {
+    highlight: ["Practice", "smarter"],
+    rest: ["before", "the", "interview"],
+  },
+  {
+    highlight: ["Build", "confidence"],
+    rest: ["before", "the", "interview"],
+  },
+  {
+    highlight: ["Walk", "in", "ready"],
+    rest: ["for", "the", "interview"],
+  },
+];
+
+const HeroHeadline = () => {
+  const [index, setIndex] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (shouldReduceMotion) return;
+
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % HEADLINE_PHRASES.length);
+    }, 2800);
+
+    return () => clearInterval(timer);
+  }, [shouldReduceMotion]);
+
+  if (shouldReduceMotion) {
+    return (
+      <h1
+        className="text-[44px] sm:text-[62px] md:text-[74px] lg:text-[84px] font-normal tracking-[-0.025em] leading-[1.08] text-[#1F2420]"
+        style={{ fontFamily: '"Newsreader", "Fraunces", Georgia, "Times New Roman", serif' }}
+      >
+        <span className="text-[#C1592B] italic font-normal">Be ready</span>
+        <br />
+        before the interview
+      </h1>
+    );
+  }
+
+  const currentPhrase = HEADLINE_PHRASES[index];
+
+  const wordContainerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.04,
+      },
+    },
+    exit: {
+      transition: {
+        staggerChildren: 0.02,
+        staggerDirection: -1,
+      },
+    },
+  };
+
+  const wordVariants = {
+    hidden: {
+      opacity: 0,
+      y: 10,
+      filter: 'blur(3px)',
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: 'blur(0px)',
+      transition: {
+        duration: 0.35,
+        ease: [0.22, 1, 0.36, 1] as const,
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -8,
+      filter: 'blur(2px)',
+      transition: {
+        duration: 0.22,
+        ease: [0.36, 0, 0.66, -0.56] as const,
+      },
+    },
+  };
+
+  return (
+    <h1
+      className="text-[44px] sm:text-[62px] md:text-[74px] lg:text-[84px] font-normal tracking-[-0.025em] leading-[1.08] text-[#1F2420] min-h-[2.2em] flex flex-col justify-center items-center select-none"
+      style={{ fontFamily: '"Newsreader", "Fraunces", Georgia, "Times New Roman", serif' }}
+    >
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index}
+          variants={wordContainerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className="flex flex-col items-center justify-center text-center"
+        >
+          {/* Line 1: Orange italic highlight words */}
+          <div className="text-[#C1592B] italic font-normal flex flex-wrap justify-center gap-x-[0.25em]">
+            {currentPhrase.highlight.map((word, wIdx) => (
+              <motion.span key={`h-${wIdx}-${word}`} variants={wordVariants} className="inline-block">
+                {word}
+              </motion.span>
+            ))}
+          </div>
+
+          {/* Line 2: Rest of phrase */}
+          <div className="flex flex-wrap justify-center gap-x-[0.25em]">
+            {currentPhrase.rest.map((word, wIdx) => (
+              <motion.span key={`r-${wIdx}-${word}`} variants={wordVariants} className="inline-block">
+                {word}
+              </motion.span>
+            ))}
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </h1>
+  );
+};
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -218,14 +350,7 @@ export default function LandingPage() {
           </p>
 
           {/* Main Editorial Headline */}
-          <h1
-            className="text-[44px] sm:text-[62px] md:text-[74px] lg:text-[84px] font-normal tracking-[-0.025em] leading-[1.08] text-[#1F2420]"
-            style={{ fontFamily: '"Newsreader", "Fraunces", Georgia, "Times New Roman", serif' }}
-          >
-            <span className="text-[#C1592B] italic font-normal">Be ready</span>
-            <br />
-            before the interview
-          </h1>
+          <HeroHeadline />
 
           {/* Subheading */}
           <p className="mt-7 sm:mt-8 text-[17px] sm:text-[18px] md:text-[19px] text-[#1F2420]/75 max-w-[700px] font-normal leading-[1.58] tracking-[-0.01em]">
