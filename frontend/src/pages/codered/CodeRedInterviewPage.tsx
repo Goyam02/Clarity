@@ -159,33 +159,33 @@ export const CodeRedInterviewPage: React.FC = () => {
   const live = stage === 'listening' || stage === 'speaking' || stage === 'thinking';
 
   return (
-    <div className="h-screen bg-[#17150F] text-[#EDE8DD] flex flex-col font-sans overflow-hidden">
+    <div className="h-screen bg-[#FAF6F0] text-[#1F2420] flex flex-col font-sans overflow-hidden">
       {/* Top bar */}
-      <header className="border-b border-[#EDE8DD]/10 px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3 shrink-0">
+      <header className="border-b border-[#1F2420]/10 px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3 shrink-0 bg-[#FAF6F0]/90 backdrop-blur-md">
         <div className="flex items-center gap-3">
-          <Link to="/dashboard" className="text-[12px] font-mono text-[#EDE8DD]/50 hover:text-[#EDE8DD]">
+          <Link to="/dashboard" className="text-[12px] font-mono text-[#1F2420]/60 hover:text-[#1F2420]">
             <ArrowLeft className="w-4 h-4" />
           </Link>
-          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-[4px] bg-[#B8322A]/25 border border-[#B8322A]/50 text-[#FF6B5E] text-[10px] font-bold tracking-widest">
-            <Mic className="w-3 h-3" />
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-[4px] bg-[#C1592B]/10 border border-[#C1592B]/30 text-[#C1592B] text-[10px] font-bold tracking-widest">
+            <Mic className="w-3 h-3 text-[#C1592B]" />
             MOCK INTERVIEW · VOICE
           </span>
-          <span className="text-[12.5px] font-mono text-[#EDE8DD]/55 truncate max-w-[240px]">
+          <span className="text-[12.5px] font-mono text-[#1F2420]/60 truncate max-w-[240px]">
             {problemTitle}
           </span>
         </div>
         <button
           type="button"
           onClick={() => void finish()}
-          className="px-4 py-1.5 rounded-[6px] bg-[#B8322A] hover:bg-[#C9402F] text-[12.5px] font-semibold cursor-pointer transition-colors"
+          className="px-4 py-1.5 rounded-[6px] bg-[#1F2420] hover:bg-[#C1592B] text-[#FAF6F0] text-[12.5px] font-semibold cursor-pointer transition-colors"
         >
           End & Debrief
         </button>
       </header>
 
       {error && (
-        <div className="px-4 sm:px-6 py-2 bg-[#B8322A]/15 border-b border-[#B8322A]/40 text-[12px] text-[#FFB4AC] flex items-center gap-2 shrink-0">
-          <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
+        <div className="px-4 sm:px-6 py-2 bg-[#C1592B]/10 border-b border-[#C1592B]/30 text-[12px] text-[#1F2420] flex items-center gap-2 shrink-0">
+          <AlertTriangle className="w-3.5 h-3.5 shrink-0 text-[#C1592B]" />
           <span className="truncate">{error}</span>
         </div>
       )}
@@ -198,35 +198,35 @@ export const CodeRedInterviewPage: React.FC = () => {
             <motion.div
               animate={live ? { scale: [1, 1.06, 1] } : { scale: 1 }}
               transition={live ? { repeat: Infinity, duration: 1.6, ease: 'easeInOut' } : { duration: 0.2 }}
-              className={`w-28 h-28 rounded-full flex items-center justify-center border ${
+              className={`w-28 h-28 rounded-full flex items-center justify-center border shadow-sm ${
                 stage === 'speaking'
-                  ? 'bg-[#C1592B]/20 border-[#C1592B]/60'
+                  ? 'bg-[#C1592B]/20 border-[#C1592B]'
                   : stage === 'thinking'
-                  ? 'bg-[#E5A83B]/15 border-[#E5A83B]/50'
+                  ? 'bg-[#C1592B]/15 border-[#C1592B]/60'
                   : live
-                  ? 'bg-[#B8322A]/20 border-[#B8322A]/60'
-                  : 'bg-[#EDE8DD]/5 border-[#EDE8DD]/20'
+                  ? 'bg-[#C1592B]/25 border-[#C1592B]'
+                  : 'bg-[#FDFBF7] border-[#E8E2D8]'
               }`}
             >
               {stage === 'speaking' ? (
-                <Volume2 className="w-10 h-10 text-[#F0C87E]" />
+                <Volume2 className="w-10 h-10 text-[#C1592B]" />
               ) : micOn ? (
-                <Mic className="w-10 h-10 text-[#FF6B5E]" />
+                <Mic className="w-10 h-10 text-[#C1592B]" />
               ) : (
-                <MicOff className="w-10 h-10 text-[#EDE8DD]/40" />
+                <MicOff className="w-10 h-10 text-[#1F2420]/40" />
               )}
             </motion.div>
 
-            <span className="text-[13px] font-mono text-[#EDE8DD]/60">{stageLabel[stage]}</span>
+            <span className="text-[13px] font-mono text-[#1F2420]/70">{stageLabel[stage]}</span>
 
             {!interviewerRef.current && stage === 'idle' && (
               <button
                 type="button"
                 onClick={() => void startVoice()}
                 disabled={starting}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-[8px] bg-[#C1592B] hover:bg-[#D0653A] text-[#FAF6F0] text-[14px] font-semibold disabled:opacity-50 cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-[8px] bg-[#1F2420] hover:bg-[#C1592B] text-[#FAF6F0] text-[14px] font-semibold disabled:opacity-50 cursor-pointer transition-colors shadow-xs"
               >
-                {starting ? <RefreshCw className="w-4 h-4 animate-spin" /> : <Mic className="w-4 h-4" />}
+                {starting ? <RefreshCw className="w-4 h-4 animate-spin text-[#C1592B]" /> : <Mic className="w-4 h-4 text-[#C1592B]" />}
                 {starting ? 'Connecting…' : 'Start voice interview'}
               </button>
             )}
@@ -237,10 +237,10 @@ export const CodeRedInterviewPage: React.FC = () => {
                 <div
                   key={i}
                   className={`text-[13px] leading-snug ${
-                    line.type === 'candidate' ? 'text-[#EDE8DD]/60 text-right' : 'text-[#EDE8DD]/90'
+                    line.type === 'candidate' ? 'text-[#1F2420]/60 text-right' : 'text-[#1F2420] font-medium'
                   }`}
                 >
-                  <span className="text-[10px] font-mono text-[#EDE8DD]/30 block">
+                  <span className="text-[10px] font-mono text-[#1F2420]/40 block">
                     {line.type === 'candidate' ? 'you' : 'interviewer'} · {line.at}
                   </span>
                   {line.text}
@@ -251,22 +251,22 @@ export const CodeRedInterviewPage: React.FC = () => {
           </div>
 
           {/* Typed fallback + controls */}
-          <div className="w-full px-4 pb-4 pt-2 border-t border-[#EDE8DD]/10 flex items-center gap-2 shrink-0">
+          <div className="w-full px-4 pb-4 pt-2 border-t border-[#1F2420]/10 flex items-center gap-2 shrink-0 bg-[#FDFBF7]">
             <button
               type="button"
               onClick={() => void toggleMic()}
               disabled={!interviewerRef.current}
-              className="p-2.5 rounded-[8px] border border-[#EDE8DD]/15 text-[#EDE8DD]/70 hover:text-[#EDE8DD] disabled:opacity-40 cursor-pointer"
+              className="p-2.5 rounded-[8px] border border-[#E8E2D8] bg-[#FAF7F2] text-[#1F2420]/70 hover:text-[#1F2420] disabled:opacity-40 cursor-pointer"
               aria-label={micOn ? 'Mute microphone' : 'Unmute microphone'}
             >
-              {micOn ? <Mic className="w-4 h-4" /> : <MicOff className="w-4 h-4" />}
+              {micOn ? <Mic className="w-4 h-4 text-[#C1592B]" /> : <MicOff className="w-4 h-4" />}
             </button>
             <button
               type="button"
               onClick={() => void requestHint()}
               disabled={!interviewerRef.current}
               title="Ask for a hint"
-              className="p-2.5 rounded-[8px] border border-[#E5A83B]/40 text-[#F0C87E] hover:bg-[#E5A83B]/10 disabled:opacity-40 cursor-pointer"
+              className="p-2.5 rounded-[8px] border border-[#C1592B]/30 bg-[#C1592B]/10 text-[#C1592B] hover:bg-[#C1592B]/20 disabled:opacity-40 cursor-pointer"
             >
               <Sparkles className="w-4 h-4" />
             </button>
@@ -276,23 +276,23 @@ export const CodeRedInterviewPage: React.FC = () => {
               onKeyDown={(e) => { if (e.key === 'Enter' && !starting) void sendTyped(); }}
               placeholder="Type instead of speaking (fallback channel)…"
               disabled={!interviewerRef.current}
-              className="flex-1 px-3 py-2.5 rounded-[8px] bg-[#14120D] border border-[#EDE8DD]/15 text-[13px] text-[#EDE8DD] placeholder-[#EDE8DD]/30 focus:outline-none focus:ring-2 focus:ring-[#C1592B]/50 disabled:opacity-40"
+              className="flex-1 px-3 py-2.5 rounded-[8px] bg-[#FAF7F2] border border-[#E8E2D8] text-[13px] text-[#1F2420] placeholder-[#1F2420]/40 focus:outline-none focus:ring-2 focus:ring-[#C1592B]/50 disabled:opacity-40"
             />
             <button
               type="button"
               onClick={() => void sendTyped()}
               disabled={!interviewerRef.current || !speechDraft.trim()}
-              className="p-2.5 rounded-[8px] bg-[#C1592B] hover:bg-[#D0653A] disabled:opacity-40 cursor-pointer"
+              className="p-2.5 rounded-[8px] bg-[#1F2420] hover:bg-[#C1592B] text-[#FAF6F0] disabled:opacity-40 cursor-pointer transition-colors"
               aria-label="Send"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-4 h-4 text-[#C1592B]" />
             </button>
             {interviewerRef.current && (
               <button
                 type="button"
                 onClick={() => void stopVoice()}
                 title="End the voice channel"
-                className="p-2.5 rounded-[8px] border border-[#B8322A]/50 text-[#FF6B5E] hover:bg-[#B8322A]/10 cursor-pointer"
+                className="p-2.5 rounded-[8px] border border-[#C1592B]/30 bg-[#C1592B]/10 text-[#C1592B] hover:bg-[#C1592B]/20 cursor-pointer"
               >
                 <PhoneOff className="w-4 h-4" />
               </button>
@@ -308,28 +308,28 @@ export const CodeRedInterviewPage: React.FC = () => {
               animate={{ x: 0, opacity: 1, width: '50%' }}
               exit={{ x: 80, opacity: 0, width: 0 }}
               transition={{ type: 'spring', stiffness: 240, damping: 28 }}
-              className="hidden lg:flex flex-col border-l border-[#EDE8DD]/10 bg-[#14120D] overflow-hidden"
+              className="hidden lg:flex flex-col border-l border-[#E8E2D8] bg-[#FDFBF7] overflow-hidden"
             >
-              <div className="px-4 py-1.5 border-b border-[#EDE8DD]/10 text-[11px] font-mono text-[#EDE8DD]/50 flex items-center justify-between shrink-0">
+              <div className="px-4 py-1.5 border-b border-[#E8E2D8] text-[11px] font-mono text-[#1F2420]/60 flex items-center justify-between shrink-0 bg-[#FAF7F2]">
                 <span>solution.py</span>
-                <span className="text-[#EDE8DD]/35">revealed by interviewer</span>
+                <span className="text-[#1F2420]/40">revealed by interviewer</span>
               </div>
               <textarea
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
                 spellCheck={false}
-                className="flex-1 w-full resize-none bg-transparent p-4 font-mono text-[13px] leading-relaxed text-[#EDE8DD] focus:outline-none"
+                className="flex-1 w-full resize-none bg-transparent p-4 font-mono text-[13px] leading-relaxed text-[#1F2420] focus:outline-none"
               />
               {/* Hint drawer */}
               {hints.length > 0 && (
                 <motion.div
                   initial={{ y: 24, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  className="border-t border-[#EDE8DD]/10 p-3 space-y-2 shrink-0 max-h-40 overflow-y-auto"
+                  className="border-t border-[#E8E2D8] p-3 space-y-2 shrink-0 max-h-40 overflow-y-auto bg-[#FAF7F2]"
                 >
                   {hints.map((h, i) => (
-                    <div key={i} className="p-2.5 rounded-[8px] bg-[#E5A83B]/10 border border-[#E5A83B]/30 text-[12.5px] text-[#F0C87E]">
-                      <Sparkles className="w-3 h-3 inline mr-1.5 -mt-0.5" />
+                    <div key={i} className="p-2.5 rounded-[8px] bg-[#C1592B]/10 border border-[#C1592B]/30 text-[12.5px] text-[#1F2420]">
+                      <Sparkles className="w-3 h-3 inline mr-1.5 -mt-0.5 text-[#C1592B]" />
                       {h}
                     </div>
                   ))}
