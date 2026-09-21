@@ -1,4 +1,4 @@
-"""DB session. SQLite by default for local/tests; PostgreSQL via DATABASE_URL."""
+"""DB session. PostgreSQL by default (docker compose); SQLite only for tests."""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 

@@ -9,7 +9,9 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
 
-    DATABASE_URL: str = "sqlite:///./clarity.db"
+    # PostgreSQL is the primary database (docker compose provides it locally).
+    # SQLite remains supported only for the test suite (tests/conftest.py pins it).
+    DATABASE_URL: str = "postgresql+psycopg2://clarity:clarity@localhost:5432/clarity"
     REDIS_URL: str = "redis://localhost:6379/0"
 
     # Auth (dev-friendly; production should set JWT_SECRET + use real IdP)
@@ -30,8 +32,19 @@ class Settings(BaseSettings):
     EVALUATOR_AGENT: str = "evaluator"
     INTERVIEWER_AGENT: str = "interviewer"
     COMPANY_INTEL_AGENT: str = "company-intel"
+    # Web research: a Foundry agent with "Grounding with Bing Search" attached
+    # (Bing Search APIs retired Aug 2025 — grounding tool is the sanctioned path).
+    # Empty name disables web research; CSV corpus alone is used (see
+    # services/web_corpus.py).
+    WEB_RESEARCH_AGENT: str = "company-intel"
+    # Re-search a company's web-sourced questions at most once per TTL.
+    WEB_RESEARCH_TTL_DAYS: int = 14
     FOUNDRY_TIMEOUT_SECONDS: int = 60
     FOUNDRY_MAX_RETRIES: int = 3
+    # Optional Foundry API key: when set, Foundry calls authenticate with it
+    # instead of DefaultAzureCredential (which needs az login on the host or a
+    # managed identity — neither available in plain containers).
+    AZURE_FOUNDRY_API_KEY: str = ""
 
     # Foundry IQ / Search (retrieval augmentation; optional)
     AZURE_SEARCH_ENDPOINT: str = ""
@@ -50,9 +63,48 @@ class Settings(BaseSettings):
     GITHUB_API_BASE_URL: str = "https://api.github.com"
     CODEFORCES_API_BASE_URL: str = "https://codeforces.com/api"
 
+    # Google sign-in (optional; endpoints 501 until client credentials set)
+    GOOGLE_CLIENT_ID: str = ""
+    GOOGLE_CLIENT_SECRET: str = ""
+    GOOGLE_REDIRECT_URI: str = "http://localhost:3000/auth/google/callback"
+
+    # Per-company problem-frequency corpus (LeetCode-style CSV seed data)
+    COMPANY_CORPUS_DIR: str = "../data/company-corpus/companies"
+
+    # LeetCode pulls (plan: docs/plans/plan-leetcode-pulls.md). Tokens are
+    # per-user, supplied in-app, encrypted at rest; only leetcode.com is called.
+    LEETCODE_GRAPHQL_URL: str = "https://leetcode.com/graphql"
+    LEETCODE_REQUEST_TIMEOUT: int = 20
+    # Key for encrypting user-supplied platform tokens (Fernet). Defaults to a
+    # derived key from JWT_SECRET so local dev needs zero extra setup.
+    SECRET_BOX_KEY: str = ""
+    # Platform pulls re-sync rate limit (seconds between refreshes per user).
+    LEETCODE_REFRESH_MIN_INTERVAL: int = 3600
+
+    # Judge0 self-hosted code execution (docs/plans/plan-judge0-judge.md).
+    # Empty JUDGE0_BASE_URL -> LocalJudge subprocess fallback (tests/dev).
+    # In the root docker-compose stack the backend reaches Judge0 at
+    # http://judge0-server:2358 (service name on the compose network).
+    JUDGE0_BASE_URL: str = ""
+    JUDGE0_AUTH_TOKEN: str = ""
+    JUDGE0_TIMEOUT_SECONDS: int = 20
+    JUDGE0_POLL_INTERVAL: float = 0.4
+
+    @property
+    def google_oauth_enabled(self) -> bool:
+        return bool(self.GOOGLE_CLIENT_ID and self.GOOGLE_CLIENT_SECRET)
+
     @property
     def is_postgres(self) -> bool:
         return self.DATABASE_URL.startswith(("postgresql", "postgres"))
+
+    @property
+    def secret_box_key(self) -> bytes:
+        """Fernet key: explicit SECRET_BOX_KEY or derived from JWT_SECRET."""
+        import base64
+        import hashlib
+        raw = self.SECRET_BOX_KEY or self.JWT_SECRET
+        return base64.urlsafe_b64encode(hashlib.sha256(raw.encode()).digest())
 
 
 @lru_cache

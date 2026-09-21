@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Theme Shared Tokens */
+  --bg: #FAF7F2;
+  --surface: #FDFBF7;
+  --border: #E8E2D8;
+  --ink: #1C1917;
+  --muted: #6B645B;
+  --accent: #C2502A;
+  --accent-tint: #F6E3D8;
+  --mastery-strong-fill: #3F8F63;
+  --mastery-strong-ink: #2F6F4B;
+  --mastery-strong-tint: #E3F2E9;
+  --mastery-mid-fill: #BF7A0A;
+  --mastery-mid-ink: #8A5606;
+  --mastery-mid-tint: #FDF3E3;
+  --mastery-weak-fill: #B8322A;
+  --mastery-weak-ink: #8F231D;
+  --mastery-weak-tint: #FCE8E6;
+  --mastery-none: #A8A197;
+  --link: rgba(28, 25, 23, 0.14);
+  --halo: #FAF7F2;
+
+  /* Legacy aliases for backwards compatibility */
+  --graph-bg: var(--bg);
+  --graph-surface: var(--surface);
+  --graph-border: var(--border);
+  --graph-accent: var(--accent);
+  --graph-accent-hover: #D96936;
+  --graph-text: var(--ink);
+  --graph-text-muted: var(--muted);
+  --mastery-weak: var(--mastery-weak-fill);
+  --mastery-mid: var(--mastery-mid-fill);
+  --mastery-strong: var(--mastery-strong-fill);
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FAF6F0;
+    color: #1F2420;
+  }
+}
+
+@keyframes wordSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wordSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marqueeLeft 48s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right {
+  animation: marqueeRight 54s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marqueeL2R {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marqueeR2L {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee-l2r {
+  animation: marqueeL2R 45s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-r2l {
+  animation: marqueeR2L 45s linear infinite;
+  will-change: transform;
+}
+

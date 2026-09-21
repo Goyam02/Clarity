@@ -74,91 +74,24 @@ Azure SDKs):
 
 | Spec claim | Status |
 |---|---|
-| Agent Service / Connected Agents | Done via per-agent routing + `agents/orchestrator.py` handoffs recorded on `AgentRun` rows |
-| Managed memory as mastery store | **Rejected by design** — mastery stays in Postgres |
-| Foundry IQ | Real AI Search path; empty anchors when unconfigured (never canned answers) |
-| Deep Research (`o3-deep-research`) | Not in installed SDK surface — Company Intel uses the deployed agent + anchors; not faked |
-| Code Interpreter for grading | Not in installed SDK surface — `LocalJudge` subprocess sandbox (Python; Java if a JDK exists) behind the `CodeJudge` ABC |
-| Voice Live | Not in installed SDK surface — session/event/transcript/debrief backend is real; `speech_available() == False` marks the gap |
-| Tracing + Evaluation | `agent_runs` table + `emit_trace()` |
+| Agent Service / Connected Agents | Done via per-agent routing + `agents/orchestrator.py` handoffs with `AgentRun` audit rows |
+| Managed memory as mastery store | **Rejected by design**: mastery stays in Postgres (queryable/deterministic); `MemoryService` holds agent context only |
+| Foundry IQ | `shims.iq_retrieve` queries Azure AI Search when configured, else no anchors (never canned answers) |
+| Deep Research (`o3-deep-research`) | Not in the installed SDK surface — Company Intel uses the deployed agent + retrieval anchors; research-tool wiring is a later step, not faked now |
+| Live web question research | **Grounding with Bing Search** (the standalone Bing Search APIs retired Aug 2025): the agent named by `WEB_RESEARCH_AGENT` has the tool attached in the Foundry portal; `integrations/foundry/web_research.py` pulls structured, source-cited findings via the shared chat path. `services/web_corpus.py` merges them with the data/company-corpus CSV corpus (CSV stays authoritative, dedupe on title, provenance tagged) and TTL-gates re-search (`WEB_RESEARCH_TTL_DAYS`). Unconfigured → CSV-only, no behavior change |
+| Code Interpreter for grading | **Judge0 CE, self-hosted in the root compose stack** (`services/judge0.py::Judge0Judge`, `JUDGE0_BASE_URL=http://judge0-server:2358`): sandboxed Python/Java/C++/SQL via isolate, batch submissions, real CPU/memory numbers; `LocalJudge` subprocess stays as the zero-infra fallback behind the same `CodeJudge` ABC |
+| Voice Live | **Gemini Live API, frontend-only** (`frontend/src/lib/geminiLive.ts`): browser→Gemini voice-to-voice on the CODE RED interview page; transcript mirrored to `/interviews/{id}/events` so the events/transcript/debrief backend below is unchanged. LiveKit plan superseded |
+| Tracing + Evaluation | `agent_runs` table + `emit_trace()` (App Insights when configured) |
 
 ## 4. Agents (`app/agents/`)
 
-Shared base (`base.py`): prompt → `llm.complete_json()` → Pydantic validation →
-**one repair retry** (model is shown its schema errors) → `post_validate`
-hook → `AgentRun` audit row (agent, workflow, user, input/output previews,
-status, latency, error, trace_id). Persistent validation failure raises
-`FoundryError(AGENT_FAILED)` — malformed output is never served.
-
-| Agent | File | Output schema | What code enforces (not content) |
-|---|---|---|---|
-| Planner | `planner.py` | `PlannerOutput` (tasks: type/node/duration/reason/title) | `enforce_budget` (scale + drop tail tasks to fit); LIGHT mood drops non-revision tasks |
-| Question Generator | `question_generator.py` | `GeneratedProblem` (title/statement/constraints/examples/≥2 hidden test cases/complexity) | `validate_problem`; repair-or-raise, malformed problems never stored |
-| Evaluator | `evaluator.py` | `EvaluationResult` (correctness/error type/approach/complexity/feedback/mastery signals) | Judge pass/fail counts are ground truth in the prompt; score math stays in `MasteryEngine` |
-| Interviewer | `interviewer.py` | `InterviewerOutput` (utterance/hint_given) | Single persona; stuck nudge after 180s (`STUCK_THRESHOLD_SECONDS`) |
-| Company Intel | `interviewer.py` (`CompanyIntelAgent`) | `CompanyProfileOut` | Refresh only when stale/missing (>90d via `company_service.drift_status`); `last_verified` set server-side; sources must not invent URLs |
-
-`orchestrator.run_daily_pipeline`: Planner → QuestionGen per problem task, with
-handoff records (`from/to/reason/trace_id`) linked onto the planner's
-`AgentRun` — the observable multi-agent trace.
-
-## 5. Deterministic services (`app/services/`)
-
-- `mastery_engine.MasteryEngine` — pure functions. `update()` blends
-  correctness, time-vs-expected, hints (−12% gain each), explanation quality,
-  with an adaptive step from stored confidence. `effective_mastery()` applies
-  exponential decay at **read time** (no DB writes on read).
-- `clear_score.compute_clear_score` — 0–100 weighted readiness index
-  (target_mastery .30, recent .25, company .20, timed .15, core_cs .10).
-  Explicitly not a probability.
-- `judge.LocalJudge` — subprocess sandbox (temp dir, timeout, stdin/stdout
-  compare). Never in-process.
-- `company_service.drift_status` — stale flag without triggering research.
-- `codeforces_service` / `github_service` — official public APIs only via
-  httpx; failures return `{"error": ...}`, never raise.
-- `storage_service.upload_blob` — Azure SDK when a connection string exists,
-  else local dir; returns a `azure://` or `local://` ref (ref stored in
-  Postgres, never the bytes).
-
-## 6. Workflows (`app/workflows/`) and routes (`app/api/` → `/api/v1`)
-
-- `daily.build_daily_plan` — mastery snapshot (with effective mastery) +
-  recent history → Planner → budget clamp → `DailyPlan` row.
-- `onboarding` — `gather_signals` runs Codeforces/GitHub/resume concurrently
-  (`asyncio.gather`); `init_mastery` seeds 10 topics/nodes at 0.5; `focus`
-  saves targets + preloads company profiles.
-- `calibration` — 10 adaptive questions (agent-generated fresh variants,
-  topic rotation in code); correct→harder, wrong→easier (1–5); completion
-  persists signals via `MasteryEngine` with source `CALIBRATION`.
-- `code_red.create_session` — company get-or-refresh → mastery diff →
-  checklist (`WEAK_SPOT`/`COMPANY`/`CORE` with titles) → CLEAR SCORE →
-  persisted session + tasks.
-- `mock_interview` — event-sourced sessions; interviewer turns include
-  transcript tail; `debrief` evaluates → updates mastery (`MOCK_INTERVIEW`)
-  → returns correctness/communication/deltas.
-- Mastery writes: `POST /mastery/update` (decay-aware), submissions
-  (`DAILY_PRACTICE`), calibration, debrief — all append `MasteryHistory`.
-- Auth: `POST /auth/register` (JWT + dev `X-User-Id` header); every
-  user-scoped query filters by authenticated `user_id`.
-
-Contracts: `docs/api-contracts.md`. Azure resource setup: `docs/azure-setup.md`.
-
-## 7. Configuration
-
-Required for any agent endpoint: `AZURE_FOUNDRY_PROJECT_ENDPOINT`,
-`AZURE_FOUNDRY_MODEL_DEPLOYMENT`, five `*_AGENT` names (see
-`backend/.env.example`). Without them, health/state/judge endpoints work but
-agent calls return `FOUNDRY_NOT_CONFIGURED`. `DATABASE_URL` defaults to local
-sqlite; Postgres via compose/override. No secrets in code or git (`.env` +
-`*.db` gitignored).
-
-## 8. Testing (`tests/`, run from repo root: `pytest tests -q`)
-
-26 tests, no Azure needed: `conftest.StubBackend` implements `ChatBackend`
-with per-agent canned JSON, injected via `set_backend()` — a test seam, not
-product branching. Coverage: mastery engine rules + history, CLEAR SCORE
-bounds/determinism/sensitivity, planner constraints, full API loop
-(register → init → plan → generate → attempt → submit → mastery update),
-CODE RED + CLEAR SCORE, company lookup/drift, interview events/transcript/
-debrief, outcome loop, judge pass/fail/timeout/unsupported, CF/GH graceful
-failure, `FoundryChatBackend` config validation.
+- `MasteryEngine` is pure/deterministic; LLM (Evaluator) produces evidence only.
+- Effective mastery computed at read time (decay); DB written only on attempts.
+- CLEAR SCORE = 0–100 weighted readiness index, never a "probability".
+- Transport failures raise `FoundryError` (502/503, actionable message);
+  retries are bounded (3, transient errors only). No silent fallbacks.
+- Cost control: company intel refreshes only when stale (>90d)/missing.
+- Judge never runs code in-process: Judge0 CE (compose, isolate-sandboxed)
+  when configured, else subprocess + temp dir + timeout (`LocalJudge`).
+- Tests inject a stub `ChatBackend` via `set_backend()` — a test seam, not
+  product branching.

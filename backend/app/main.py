@@ -17,6 +17,51 @@ import app.models  # noqa: F401,E402
 
 Base.metadata.create_all(bind=engine)
 
+
+# --- Local-dev schema upgrade (sqlite only; Postgres runs alembic) --------
+
+def _sqlite_add_missing_columns() -> None:
+    """Existing local dev DBs predate the Phase 1 columns. create_all cannot
+    ALTER existing tables, so add any missing columns idempotently."""
+    if not str(engine.url).startswith("sqlite"):
+        return
+    from sqlalchemy import inspect, text
+    inspector = inspect(engine)
+    wanted: dict[str, list[tuple[str, str]]] = {
+        "users": [("password_hash", "VARCHAR(255) DEFAULT '' NOT NULL"),
+                  ("google_sub", "VARCHAR(64) DEFAULT '' NOT NULL")],
+        "profiles": [("target_companies", "JSON DEFAULT '[]' NOT NULL"),
+                     ("onboarding_complete", "BOOLEAN DEFAULT 0 NOT NULL")],
+        "code_red_tasks": [("detail", "JSON DEFAULT '{}' NOT NULL"),
+                           ("title", "VARCHAR(500) DEFAULT '' NOT NULL")],
+        "company_profiles": [("web_problems", "JSON DEFAULT '[]' NOT NULL"),
+                             ("web_interview_questions", "JSON DEFAULT '[]' NOT NULL"),
+                             ("web_researched_at", "DATETIME NULL")],
+        # LeetCode/Codeforces pull columns (docs/plans/plan-leetcode-pulls.md):
+        # existing dev DBs predate 0003_platform_signals.
+        "profiles": [("leetcode_session_encrypted", "TEXT DEFAULT '' NOT NULL"),
+                     ("leetcode_csrf_encrypted", "TEXT DEFAULT '' NOT NULL"),
+                     ("leetcode_username", "VARCHAR(64) DEFAULT '' NOT NULL"),
+                     ("leetcode_synced_at", "DATETIME NULL"),
+                     ("leetcode_last_error", "VARCHAR(64) DEFAULT '' NOT NULL"),
+                     ("codeforces_synced_at", "DATETIME NULL")],
+    }
+    with engine.begin() as conn:
+        for table, cols in wanted.items():
+            if table not in inspector.get_table_names():
+                continue
+            existing = {c["name"] for c in inspector.get_columns(table)}
+            for name, ddl in cols:
+                if name not in existing:
+                    conn.execute(text(f"ALTER TABLE {table} ADD COLUMN {name} {ddl}"))
+                    log.info(f"sqlite migration: added {table}.{name}")
+
+
+try:
+    _sqlite_add_missing_columns()
+except Exception as e:  # fresh DB or transient inspect failure is non-fatal
+    log.info(f"sqlite schema check skipped: {e}")
+
 app = FastAPI(title="CLARITY API", version="1.0.0",
               description="Mastery-model backend: Daily, CODE RED, Mock Interview.")
 app.add_exception_handler(ClarityError, clarity_error_handler)

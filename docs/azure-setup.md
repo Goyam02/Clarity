@@ -4,6 +4,15 @@ All values map to `backend/.env.example`. The Foundry project (1–4) is
 **required** — every agent calls the live service; without it, agent
 endpoints return `FOUNDRY_NOT_CONFIGURED` with setup instructions.
 
+> **Auth inside Docker (the common local hangup):** `DefaultAzureCredential`
+> finds nothing in a plain container — no `az login` token, no managed
+> identity. If uploads/agent calls return `FOUNDRY_AUTH_FAILED`, set
+> **`AZURE_FOUNDRY_API_KEY`** in `backend/.env` (Foundry project → Overview →
+> API key) and `docker compose up -d --build backend`. The code uses key auth
+> when present and falls back to Entra ID when not (host `az login` or a
+> service principal `AZURE_CLIENT_ID` / `AZURE_TENANT_ID` /
+> `AZURE_CLIENT_SECRET`).
+
 1. **Subscription + resource group** — why: container for all below; used by:
    everything; env: none; local: no; prod: yes.
 2. **Microsoft Foundry project** — why: model endpoint + agents; used by:
@@ -21,14 +30,26 @@ endpoints return `FOUNDRY_NOT_CONFIGURED` with setup instructions.
 5. **Azure AI Search** (optional) — why: Foundry IQ corpus (company intel,
    problem anchors); used by: `shims.iq_retrieve`; env: `AZURE_SEARCH_ENDPOINT`,
    `AZURE_SEARCH_INDEX`, `AZURE_SEARCH_API_KEY`; local: no; prod: recommended.
+12. **Grounding with Bing Search** (optional, web research) — why: live,
+    source-cited company OA problems + interview questions on top of the
+    data/company-corpus corpus (the standalone Bing Search APIs retired Aug 2025; this
+    tool is Microsoft's sanctioned replacement); used by:
+    `integrations/foundry/web_research.py`; setup: in the Foundry portal open
+    your project → Agents → the agent named by `WEB_RESEARCH_AGENT` (default
+    `company-intel`) → Tools → Add → "Grounding with Bing Search" (creates a
+    Bing Grounding connection) → deploy. env: `WEB_RESEARCH_AGENT`,
+    `WEB_RESEARCH_TTL_DAYS`; local: yes; prod: yes. Without it the backend
+    runs CSV-corpus-only and nothing else changes.
 6. **Foundry Memory** (optional) — why: long-term agent context ONLY (mastery
    stays in Postgres); used by: `MemoryService`; local: no; prod: optional.
 7. **Azure Database for PostgreSQL** — why: authoritative state; env:
    `DATABASE_URL=postgresql+psycopg2://...`; local: no (compose provides);
    prod: yes. Apply: `alembic upgrade head`.
-8. **Storage Account** — why: resume PDFs, screenshots, audio; used by:
+8. **Storage Account** — why: resume PDFs; used by:
    `storage_service.upload_blob`; env: `AZURE_STORAGE_CONNECTION_STRING`,
    `AZURE_STORAGE_CONTAINER`; local: no (local dir fallback); prod: yes.
+   (Not Azure, but env-adjacent: the voice interview uses a Google Gemini key
+   `VITE_GEMINI_API_KEY` in `frontend/.env.local` — see README.)
 9. **Key Vault** — why: hold secrets instead of env files; wire via Container
     Apps secret references; local: no; prod: recommended.
 10. **Application Insights** — why: traces/latency/errors; used by:

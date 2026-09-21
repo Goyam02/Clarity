@@ -27,7 +27,7 @@ async def get_user_info(handle: str) -> dict:
         return {"error": "codeforces_unavailable", "handle": handle}
 
 
-async def get_user_status(handle: str, count: int = 20) -> dict:
+async def get_user_status(handle: str, count: int = 20, with_submissions: bool = True) -> dict:
     settings = get_settings()
     url = f"{settings.CODEFORCES_API_BASE_URL}/user.status"
     try:
@@ -39,12 +39,23 @@ async def get_user_status(handle: str, count: int = 20) -> dict:
         subs = data.get("result", [])
         solved = sum(1 for s in subs if s.get("verdict") == "OK")
         tags: dict[str, int] = {}
+        recent: list[dict] = []
         for s in subs:
             if s.get("verdict") == "OK":
                 for t in s.get("problem", {}).get("tags", []):
                     tags[t] = tags.get(t, 0) + 1
+            problem = s.get("problem", {})
+            recent.append({
+                "id": s.get("id"),
+                "problem": problem.get("name", ""),
+                "tags": problem.get("tags", [])[:6],
+                "rating": problem.get("rating", 0),
+                "verdict": s.get("verdict", ""),
+                "at": s.get("creationTimeSeconds", 0),
+            })
         return {"handle": handle, "recent_submissions": len(subs), "solved": solved,
-                "top_tags": sorted(tags.items(), key=lambda kv: -kv[1])[:10]}
+                "top_tags": sorted(tags.items(), key=lambda kv: -kv[1])[:10],
+                "recent": recent[:count]}
     except Exception as e:
         log.info(f"codeforces unavailable: {e}")
         return {"error": "codeforces_unavailable", "handle": handle}

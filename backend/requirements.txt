@@ -5,6 +5,8 @@ alembic==1.13.3
 pydantic==2.11.7
 pydantic-settings==2.10.1
 httpx==0.28.1
+python-multipart>=0.0.20
+pypdf>=5.0
 pytest==8.3.4
 pytest-asyncio==0.24.0
 anyio>=4.9.0
@@ -15,3 +17,13 @@ azure-identity>=1.17
 azure-search-documents>=11.6
 psycopg2-binary>=2.9  # PostgreSQL driver for production
 redis>=5.0
+# Required by azure-core's AioHttpTransport (DefaultAzureCredential's default
+# async pipeline); its absence broke the unconfigured-vision error-path test.
+aiohttp>=3.9
+# PostgreSQL driver (primary database) + cache
+psycopg2-binary>=2.9
+redis>=5.0
+# Token encryption for user-supplied platform cookies (LeetCode pulls)
+cryptography>=43.0
+# Optional (only needed for vision extraction; PDF text parsing uses pypdf above):
+# azure-search-documents>=11.6

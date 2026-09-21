@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from app.agents.question_generator import QuestionGeneratorAgent
+from app.core.errors import ClarityError
 from app.dependencies import get_current_user_id, get_db
 from app.models import Problem
 
@@ -38,9 +39,14 @@ async def generate(body: GenerateIn, user_id: str = Depends(get_current_user_id)
 
 @router.get("")
 def list_problems(user_id: str = Depends(get_current_user_id), db: Session = Depends(get_db)):
-    rows = db.query(Problem).order_by(Problem.created_at.desc()).limit(50).all()
+    """Problems this user has actually attempted (user-scoped, not global)."""
+    from app.models import ProblemAttempt
+    attempted_ids = {a.problem_id for a in db.query(ProblemAttempt).filter(
+        ProblemAttempt.user_id == user_id).all()}
+    rows = db.query(Problem).order_by(Problem.created_at.desc()).limit(200).all()
     return {"problems": [{"id": p.id, "title": p.title, "difficulty": p.difficulty,
-                          "pattern": p.pattern} for p in rows]}
+                          "pattern": p.pattern} for p in rows
+                         if p.id in attempted_ids]}
 
 
 @router.get("/{problem_id}")
@@ -48,7 +54,7 @@ def get_problem(problem_id: str, user_id: str = Depends(get_current_user_id),
                 db: Session = Depends(get_db)):
     p = db.query(Problem).filter(Problem.id == problem_id).first()
     if not p:
-        return {"error": "not found"}
+        raise ClarityError("PROBLEM_NOT_FOUND", "Problem not found", 404)
     return {"id": p.id, "title": p.title, "statement": p.statement,
             "difficulty": p.difficulty, "constraints": p.constraints,
             "examples": p.examples, "pattern": p.pattern,

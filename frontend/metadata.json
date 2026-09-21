@@ -1,0 +1,6 @@
+{
+  "name": "Clarity Landing Page",
+  "description": "CLARITY is an AI-powered personalized interview and placement preparation platform that builds a live mastery model across Daily Mode, CODE RED, and Mock Interviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

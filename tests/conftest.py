@@ -1,8 +1,9 @@
 """Test harness: file-backed sqlite + stub LLM backend (dependency injection).
 
-Production code always calls the backend interface; tests inject StubBackend
-so no Azure credentials are needed. This is test seam design, not mock-mode
-branching in the product.
+Production runs on PostgreSQL (docker compose); the suite pins sqlite to stay
+hermetic — no server, no credentials. Production code always calls the backend
+interface; tests inject StubBackend so no Azure credentials are needed. This
+is test seam design, not mock-mode branching in the product.
 """
 import json
 import os
@@ -10,6 +11,15 @@ import sys
 
 os.environ.setdefault("DATABASE_URL", "sqlite:///./test_clarity.db")
 os.environ.setdefault("DEV_AUTH_ALLOW_HEADER", "True")
+
+# Force the Azure surface OFF for the whole suite: pydantic-settings gives
+# process env vars precedence over backend/.env, so without this a developer's
+# real .env (with a live Foundry endpoint) leaks into tests — the
+# "unconfigured must fail loudly" tests go green-for-the-wrong-reason and
+# tests would attempt real Azure calls. Empty string = unset for Settings.
+os.environ["AZURE_FOUNDRY_PROJECT_ENDPOINT"] = ""
+os.environ["AZURE_FOUNDRY_MODEL_DEPLOYMENT"] = ""
+os.environ.setdefault("JUDGE0_BASE_URL", "")  # LocalJudge in unit tests
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "backend"))
 

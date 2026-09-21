@@ -2,7 +2,7 @@
 import uuid
 from datetime import datetime, timezone
 
-from sqlalchemy import JSON, DateTime, Float, ForeignKey, Integer, String, Text
+from sqlalchemy import JSON, Boolean, DateTime, Float, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
@@ -21,6 +21,8 @@ class User(Base):
     id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uid)
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True)
     name: Mapped[str] = mapped_column(String(255), default="")
+    password_hash: Mapped[str] = mapped_column(String(255), default="")
+    google_sub: Mapped[str] = mapped_column(String(64), default="", index=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
@@ -36,6 +38,21 @@ class Profile(Base):
     codeforces_handle: Mapped[str] = mapped_column(String(64), default="")
     github_username: Mapped[str] = mapped_column(String(64), default="")
     resume_blob_ref: Mapped[str] = mapped_column(String(512), default="")
+    target_companies: Mapped[list] = mapped_column(JSON, default=list)
+    onboarding_complete: Mapped[bool] = mapped_column(Boolean, default=False)
+    # LeetCode cookie pulls (docs/plans/plan-leetcode-pulls.md). Cookies are
+    # Fernet-encrypted at rest (services/secret_box.py); plaintext never stored.
+    leetcode_session_encrypted: Mapped[str] = mapped_column(Text, default="")
+    leetcode_csrf_encrypted: Mapped[str] = mapped_column(Text, default="")
+    leetcode_username: Mapped[str] = mapped_column(String(64), default="")
+    leetcode_synced_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), nullable=True)
+    # Last LeetCode error code (e.g. LEETCODE_AUTH_EXPIRED) — surfaces
+    # "cookies expired, re-enter them" in Settings. Cleared on success.
+    leetcode_last_error: Mapped[str] = mapped_column(String(64), default="")
+    # Codeforces public pulls have no tokens; only last successful sync time.
+    codeforces_synced_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), nullable=True)
 
 
 class Topic(Base):
@@ -148,6 +165,11 @@ class CompanyProfile(Base):
     sources: Mapped[list] = mapped_column(JSON, default=list)
     last_verified: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
     confidence: Mapped[float] = mapped_column(Float, default=0.5)
+    # Web-researched, source-cited question findings (Grounding with Bing Search),
+    # persisted + TTL-gated by services/web_corpus.ensure_web_research.
+    web_problems: Mapped[list] = mapped_column(JSON, default=list)
+    web_interview_questions: Mapped[list] = mapped_column(JSON, default=list)
+    web_researched_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
 
 class DailyPlan(Base):
@@ -180,12 +202,14 @@ class CodeRedTask(Base):
     id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uid)
     session_id: Mapped[str] = mapped_column(String(32), ForeignKey("code_red_sessions.id"), index=True)
     type: Mapped[str] = mapped_column(String(32), default="problem")
+    title: Mapped[str] = mapped_column(String(500), default="")
     node_id: Mapped[str] = mapped_column(String(32), default="")
     problem_id: Mapped[str] = mapped_column(String(32), default="")
     duration_minutes: Mapped[int] = mapped_column(Integer, default=15)
-    reason: Mapped[str] = mapped_column(String(16), default="WEAK_SPOT")
+    reason: Mapped[str] = mapped_column(String(16), default="weak_spot")
     priority: Mapped[int] = mapped_column(Integer, default=0)
     status: Mapped[str] = mapped_column(String(16), default="pending")
+    detail: Mapped[dict] = mapped_column(JSON, default=dict)  # title, url, source, etc.
 
 
 class MockSession(Base):
@@ -249,4 +273,44 @@ class CalibrationRun(Base):
     current_difficulty: Mapped[int] = mapped_column(Integer, default=2)  # 1..5
     questions: Mapped[list] = mapped_column(JSON, default=list)
     answers: Mapped[list] = mapped_column(JSON, default=list)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+
+
+class WeeklyMock(Base):
+    __tablename__ = "weekly_mocks"
+    id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uid)
+    user_id: Mapped[str] = mapped_column(String(32), ForeignKey("users.id"), index=True)
+    kind: Mapped[str] = mapped_column(String(16), default="OA")  # OA | Interview
+    week_start: Mapped[str] = mapped_column(String(10), index=True)  # ISO date of Monday
+    scheduled_for: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+    status: Mapped[str] = mapped_column(String(16), default="scheduled")  # scheduled|skipped|completed|rescheduled
+    session_id: Mapped[str] = mapped_column(String(32), default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+
+
+class PlatformSignal(Base):
+    """One pulled fact from an external coding platform (LeetCode/Codeforces/
+    GitHub). Source of truth feeding the Mastery Model — every row is a real,
+    timestamped observation, never self-report."""
+    __tablename__ = "platform_signals"
+    id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uid)
+    user_id: Mapped[str] = mapped_column(String(32), ForeignKey("users.id"), index=True)
+    platform: Mapped[str] = mapped_column(String(16), index=True)  # leetcode|codeforces|github
+    signal_type: Mapped[str] = mapped_column(String(32))  # solved_count|topic_solved|difficulty_split|recent_ac|rating|profile
+    topic_id: Mapped[str] = mapped_column(String(64), default="", index=True)  # topics.id when applicable
+    value: Mapped[dict] = mapped_column(JSON, default=dict)
+    observed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+
+
+class MasteryEdge(Base):
+    """Knowledge-graph edges (spec §5): curated prerequisites (global, user_id="")
+    plus per-user correlation edges computed from co-movement in mastery history."""
+    __tablename__ = "mastery_edges"
+    id: Mapped[str] = mapped_column(String(32), primary_key=True, default=_uid)
+    user_id: Mapped[str] = mapped_column(String(32), default="", index=True)
+    src_topic_id: Mapped[str] = mapped_column(String(64), index=True)
+    dst_topic_id: Mapped[str] = mapped_column(String(64), index=True)
+    kind: Mapped[str] = mapped_column(String(16))  # prerequisite|correlation
+    weight: Mapped[float] = mapped_column(Float, default=0.5)
+    note: Mapped[str] = mapped_column(Text, default="")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)

@@ -12,11 +12,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 settings = get_settings()
-if not settings.is_postgres:
-    # SQLite local dev: migrations target Postgres; create_all covers sqlite.
-    config.set_main_option("sqlalchemy.url", "sqlite:///./clarity.db")
-else:
-    config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
+config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
 target_metadata = Base.metadata
 
 
