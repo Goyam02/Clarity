@@ -12,6 +12,6 @@ openai>=3.0.0
 azure-ai-projects>=2.0
 azure-identity>=1.17
 # Optional (only needed for IQ retrieval / local postgres driver):
-# azure-search-documents>=11.6
-# psycopg2-binary>=2.9  # PostgreSQL driver for production
-# redis>=5.0
+azure-search-documents>=11.6
+psycopg2-binary>=2.9  # PostgreSQL driver for production
+redis>=5.0

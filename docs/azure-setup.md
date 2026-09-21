@@ -46,3 +46,26 @@ az group create -n clarity-rg -l eastus
 az postgres flexible-server create ... # + DATABASE_URL
 az containerapp up -n clarity-api --source ./backend --env-vars AZURE_FOUNDRY_PROJECT_ENDPOINT=... AZURE_FOUNDRY_MODEL_DEPLOYMENT=gpt-4o-mini ...
 ```
+
+## Verify your setup
+
+```bash
+# 1. Health (no Azure needed)
+curl localhost:8000/health   # {"status":"ok"}
+
+# 2. Register + seed mastery
+TOKEN_REG=$(curl -s -X POST localhost:8000/api/v1/auth/register \
+  -H 'Content-Type: application/json' -d '{"email":"you@x.com","name":"You"}')
+UID=$(echo "$TOKEN_REG" | python3 -c "import sys,json; print(json.load(sys.stdin)['user_id'])")
+curl -s -X POST localhost:8000/api/v1/onboarding/initialize -H "X-User-Id: $UID"
+
+# 3. Agent call (needs endpoint + deployment + planner agent)
+curl -s -X POST localhost:8000/api/v1/daily/plan -H "X-User-Id: $UID" \
+  -H 'Content-Type: application/json' -d '{"mood":"normal","time_available":40}'
+# misconfigured → {"error":{"code":"FOUNDRY_NOT_CONFIGURED", ...}} (tells you what to set)
+# misnamed agent  → {"error":{"code":"FOUNDRY_AGENT_NOT_FOUND", ...}}
+# success         → {"plan_id":..., "tasks":[...], "trace_id":...}
+```
+
+`az login` must be active for local calls (or Managed Identity on Azure);
+without credentials the error message names the missing auth.
