@@ -20,5 +20,6 @@ graph TB
     LLM -->|"qualitative assessment:<br/>correctness, hint use,<br/>explanation quality"| ME["Mastery Engine<br/>(deterministic score update)"]:::deterministic
     ME --> MM[("Mastery Model<br/>updated + logged")]:::datastore
     MM --> OUT(["Score + Feedback<br/>+ Mastery Delta"]):::io
+```
 
 ---
