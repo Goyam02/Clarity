@@ -31,20 +31,20 @@ def _sqlite_add_missing_columns() -> None:
         "users": [("password_hash", "VARCHAR(255) DEFAULT '' NOT NULL"),
                   ("google_sub", "VARCHAR(64) DEFAULT '' NOT NULL")],
         "profiles": [("target_companies", "JSON DEFAULT '[]' NOT NULL"),
-                     ("onboarding_complete", "BOOLEAN DEFAULT 0 NOT NULL")],
-        "code_red_tasks": [("detail", "JSON DEFAULT '{}' NOT NULL"),
-                           ("title", "VARCHAR(500) DEFAULT '' NOT NULL")],
-        "company_profiles": [("web_problems", "JSON DEFAULT '[]' NOT NULL"),
-                             ("web_interview_questions", "JSON DEFAULT '[]' NOT NULL"),
-                             ("web_researched_at", "DATETIME NULL")],
-        # LeetCode/Codeforces pull columns (docs/plans/plan-leetcode-pulls.md):
-        # existing dev DBs predate 0003_platform_signals.
-        "profiles": [("leetcode_session_encrypted", "TEXT DEFAULT '' NOT NULL"),
+                     ("onboarding_complete", "BOOLEAN DEFAULT 0 NOT NULL"),
+                     # LeetCode/Codeforces pull columns (docs/plans/plan-leetcode-pulls.md):
+                     # existing dev DBs predate 0003_platform_signals.
+                     ("leetcode_session_encrypted", "TEXT DEFAULT '' NOT NULL"),
                      ("leetcode_csrf_encrypted", "TEXT DEFAULT '' NOT NULL"),
                      ("leetcode_username", "VARCHAR(64) DEFAULT '' NOT NULL"),
                      ("leetcode_synced_at", "DATETIME NULL"),
                      ("leetcode_last_error", "VARCHAR(64) DEFAULT '' NOT NULL"),
                      ("codeforces_synced_at", "DATETIME NULL")],
+        "code_red_tasks": [("detail", "JSON DEFAULT '{}' NOT NULL"),
+                           ("title", "VARCHAR(500) DEFAULT '' NOT NULL")],
+        "company_profiles": [("web_problems", "JSON DEFAULT '[]' NOT NULL"),
+                             ("web_interview_questions", "JSON DEFAULT '[]' NOT NULL"),
+                             ("web_researched_at", "DATETIME NULL")],
     }
     with engine.begin() as conn:
         for table, cols in wanted.items():

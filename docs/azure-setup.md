@@ -18,15 +18,19 @@ endpoints return `FOUNDRY_NOT_CONFIGURED` with setup instructions.
 2. **Microsoft Foundry project** — why: model endpoint + agents; used by:
    `integrations/foundry/client.py`; env: `AZURE_FOUNDRY_PROJECT_ENDPOINT`;
    local: yes (`az login`); prod: yes.
-3. **Model deployment** (e.g. gpt-4o-mini) — why: structured agent calls;
-   env: `AZURE_FOUNDRY_MODEL_DEPLOYMENT`; local: yes; prod: yes.
+3. **Model deployment** (e.g. gpt-4o-mini) — assign a model to each deployed
+   agent. `AZURE_FOUNDRY_MODEL_DEPLOYMENT` selects the model for direct
+   resume/screenshot extraction; agent calls use the agent's configured model.
 4. **Five deployed agents** (`planner`, `question-generator`, `evaluator`,
    `interviewer`, `company-intel` or your names) — why: one agent resource per
-   Clarity agent, routed via `get_openai_client(agent_name=...)`; env:
+   Clarity agent, invoked via the project-scoped `responses.create` API with
+   an `agent_reference` (name + type); env:
    `PLANNER_AGENT`, `QUESTION_GENERATOR_AGENT`, `EVALUATOR_AGENT`,
    `INTERVIEWER_AGENT`, `COMPANY_INTEL_AGENT`; local: yes; prod: yes.
    Managed Identity + RBAC: `Cognitive Services OpenAI User` on the project
    (local dev: `az login` instead).
+   The agent-specific preview endpoint is not the Chat Completions route for
+   these agents; using it can return HTTP 404 even when the agent exists.
 5. **Azure AI Search** (optional) — why: Foundry IQ corpus (company intel,
    problem anchors); used by: `shims.iq_retrieve`; env: `AZURE_SEARCH_ENDPOINT`,
    `AZURE_SEARCH_INDEX`, `AZURE_SEARCH_API_KEY`; local: no; prod: recommended.
