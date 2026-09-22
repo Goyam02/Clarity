@@ -67,6 +67,47 @@ def test_unconfigured_vision_returns_actionable_error(client, user):
     assert r.json()["error"]["code"] == "FOUNDRY_NOT_CONFIGURED"
 
 
+def test_sqlite_schema_upgrade_adds_missing_profile_columns(monkeypatch):
+    from sqlalchemy import create_engine, inspect, text
+
+    import app.main as main
+
+    engine = create_engine("sqlite://")
+    with engine.begin() as conn:
+        conn.execute(text("""
+            CREATE TABLE users (
+                id VARCHAR(32) PRIMARY KEY,
+                email VARCHAR(255) NOT NULL,
+                name VARCHAR(255) NOT NULL,
+                password_hash VARCHAR(255) DEFAULT '' NOT NULL,
+                google_sub VARCHAR(64) DEFAULT '' NOT NULL,
+                created_at DATETIME,
+                updated_at DATETIME
+            )
+        """))
+        conn.execute(text("""
+            CREATE TABLE profiles (
+                user_id VARCHAR(32) PRIMARY KEY,
+                skills JSON,
+                projects JSON,
+                current_focus TEXT,
+                placement_timeline VARCHAR(255),
+                default_mood VARCHAR(16),
+                codeforces_handle VARCHAR(64),
+                github_username VARCHAR(64),
+                resume_blob_ref VARCHAR(512)
+            )
+        """))
+
+    monkeypatch.setattr(main, "engine", engine)
+    main._sqlite_add_missing_columns()
+
+    columns = {c["name"] for c in inspect(engine).get_columns("profiles")}
+    assert {"target_companies", "onboarding_complete", "leetcode_session_encrypted",
+            "leetcode_csrf_encrypted", "leetcode_username", "leetcode_synced_at",
+            "leetcode_last_error", "codeforces_synced_at"}.issubset(columns)
+
+
 # --- company corpus loader -------------------------------------------------
 
 

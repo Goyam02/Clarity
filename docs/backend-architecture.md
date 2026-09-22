@@ -57,8 +57,9 @@ Implementation (`app/integrations/foundry/client.py` — the only file importing
 Azure SDKs):
 
 - `ChatBackend` protocol (`complete_json(agent, system, user) -> dict`).
-- `FoundryChatBackend`: per-agent client cache, `AZURE_FOUNDRY_MODEL_DEPLOYMENT`
-  as the model, bounded retries (3, exponential backoff, transient errors
+- `FoundryChatBackend`: cached project Responses client, deployed agents selected
+  by `agent_reference` (model and tools configured on each agent),
+  bounded retries (3, exponential backoff, transient errors
   only: rate-limit / connection / timeout / 5xx). Auth/schema-config errors
   fail fast.
 - `FoundryError` (a `ClarityError`): missing config → `FOUNDRY_NOT_CONFIGURED`

@@ -2,10 +2,9 @@
 
 Verified against azure-ai-projects 2.6.1 + azure-identity (Sep 2026):
   - `AIProjectClient(endpoint, DefaultAzureCredential)` — project-scoped client.
-  - `client.get_openai_client(agent_name=...)` — OpenAI-compatible async client
-    routed to a deployed Foundry agent; chat completions with JSON mode give us
-    structured agent outputs.
-  - Auth is Entra ID only (`az login` locally, Managed Identity on Azure).
+  - `client.get_openai_client()` — project-scoped async Responses client;
+    `agent_reference` selects the deployed agent (including its model/tools).
+  - Auth uses an optional API key or Entra ID (`az login` / Managed Identity).
 
 There are no mock fallbacks. Every agent call hits the real service; transport
 failures raise FoundryError (mapped to 502/503 with an actionable message) and
@@ -35,7 +34,7 @@ class ChatBackend(Protocol):
 
 
 class FoundryChatBackend:
-    """Production backend: real Foundry chat completions, per-agent routing."""
+    """Production backend: Foundry Responses API with deployed agent references."""
 
     def __init__(self, settings=None):
         self.settings = settings or get_settings()
@@ -45,14 +44,8 @@ class FoundryChatBackend:
                 "Create a Microsoft Foundry project and set the endpoint "
                 "(see docs/azure-setup.md).",
                 code="FOUNDRY_NOT_CONFIGURED", status=500)
-        if not self.settings.AZURE_FOUNDRY_MODEL_DEPLOYMENT:
-            raise FoundryError(
-                "AZURE_FOUNDRY_MODEL_DEPLOYMENT is not configured. "
-                "Deploy a model (e.g. gpt-4o-mini) in your Foundry project "
-                "and set its deployment name.",
-                code="FOUNDRY_NOT_CONFIGURED", status=500)
         self._project = None
-        self._clients: dict[str, object] = {}
+        self._client = None
 
     def _project_client(self):
         if self._project is None:
@@ -61,8 +54,7 @@ class FoundryChatBackend:
                 from azure.identity.aio import DefaultAzureCredential
                 self._project = AIProjectClient(
                     endpoint=self.settings.AZURE_FOUNDRY_PROJECT_ENDPOINT,
-                    credential=DefaultAzureCredential(),
-                    allow_preview=True)
+                    credential=DefaultAzureCredential())
             except ClarityError:
                 raise
             except Exception as e:
@@ -76,54 +68,76 @@ class FoundryChatBackend:
                     code="FOUNDRY_AUTH_FAILED", status=500) from e
         return self._project
 
-    async def _agent_client(self, agent: str):
-        if agent not in self._clients:
+    async def _get_client(self):
+        if self._client is None:
             try:
                 # Optional API-key auth (AZURE_FOUNDRY_API_KEY): see vision.py.
                 api_key = self.settings.AZURE_FOUNDRY_API_KEY or None
                 kwargs: dict = {"api_key": api_key} if api_key else {}
                 # azure-ai-projects >= 2.6: get_openai_client() is SYNC and
                 # returns the AsyncOpenAI client directly (do NOT await it).
-                self._clients[agent] = self._project_client().get_openai_client(
-                    agent_name=agent, **kwargs)
+                # Agent-specific preview endpoints do not expose Chat
+                # Completions for these agents. Invoke them through the
+                # project's Responses API with an agent_reference instead.
+                self._client = self._project_client().get_openai_client(**kwargs)
+            except FoundryError:
+                raise
             except Exception as e:
                 raise FoundryError(
-                    f"Could not route to Foundry agent '{agent}': {e}. "
-                    f"Ensure an agent named '{agent}' is deployed in the project.",
-                    code="FOUNDRY_AGENT_NOT_FOUND") from e
-        return self._clients[agent]
+                    f"Could not build the Foundry Responses client: {e}.",
+                    code="FOUNDRY_CLIENT_FAILED") from e
+        return self._client
 
     async def complete_json(self, *, agent: str, system: str, user: str) -> dict:
         from azure.core.exceptions import ClientAuthenticationError
         from openai import (APIConnectionError, APITimeoutError, InternalServerError,
-                            RateLimitError)
+                            NotFoundError, RateLimitError)
         transient = (RateLimitError, APIConnectionError, APITimeoutError,
                      InternalServerError, asyncio.TimeoutError)
-        client = await self._agent_client(agent)
+        client = await self._get_client()
         last_err: Exception | None = None
         for attempt in range(max(1, self.settings.FOUNDRY_MAX_RETRIES)):
             try:
-                resp = await client.chat.completions.create(
-                    model=self.settings.AZURE_FOUNDRY_MODEL_DEPLOYMENT,
-                    messages=[{"role": "system", "content": system},
-                              {"role": "user", "content": user}],
-                    response_format={"type": "json_object"},
-                    temperature=0.2,
+                # With agent_reference, model/instructions/temperature/text
+                # overrides are rejected. Supply the per-call prompt as input
+                # messages; model settings and tools come from the agent.
+                resp = await client.responses.create(
+                    input=[{"type": "message", "role": "system",
+                            "content": system + "\nReturn only a JSON object, "
+                            "without Markdown code fences."},
+                           {"type": "message", "role": "user", "content": user}],
+                    extra_body={"agent_reference": {"name": agent,
+                                                    "type": "agent_reference"}},
                     timeout=self.settings.FOUNDRY_TIMEOUT_SECONDS,
                 )
-                content = (resp.choices[0].message.content or "").strip()
+                if resp.status != "completed":
+                    raise FoundryError(
+                        f"Agent '{agent}' response did not complete (status={resp.status}).",
+                        code="FOUNDRY_BAD_OUTPUT")
+                content = (resp.output_text or "").strip()
                 try:
-                    return json.loads(content)
+                    output = json.loads(content)
                 except json.JSONDecodeError as e:
                     raise FoundryError(
                         f"Agent '{agent}' returned non-JSON output.",
                         code="FOUNDRY_BAD_OUTPUT") from e
+                if not isinstance(output, dict):
+                    raise FoundryError(
+                        f"Agent '{agent}' returned non-object JSON.",
+                        code="FOUNDRY_BAD_OUTPUT")
+                return output
             except transient as e:
                 last_err = e
                 log.info(f"foundry agent '{agent}' attempt {attempt + 1} transient failure: {e}")
                 await asyncio.sleep(1.5 ** attempt)
             except FoundryError:
                 raise
+            except NotFoundError as e:
+                raise FoundryError(
+                    f"Foundry could not find agent '{agent}' or its deployment. "
+                    "Check AZURE_FOUNDRY_PROJECT_ENDPOINT and the configured "
+                    f"agent name; ensure the agent has a deployed version. {e}",
+                    code="FOUNDRY_AGENT_NOT_FOUND") from e
             except ClientAuthenticationError as e:
                 # Auth token fetch is lazy (first request): map credential
                 # failures to an actionable message instead of a raw 500.

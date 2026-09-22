@@ -2,7 +2,9 @@
 from fastapi import Request
 from fastapi.responses import JSONResponse
 
-from app.core.logging import request_id_ctx
+from app.core.logging import get_logger, request_id_ctx
+
+log = get_logger(__name__)
 
 
 class ClarityError(Exception):
@@ -13,7 +15,10 @@ class ClarityError(Exception):
         self.status = status
 
 
-async def clarity_error_handler(_: Request, exc: ClarityError) -> JSONResponse:
+async def clarity_error_handler(request: Request, exc: ClarityError) -> JSONResponse:
+    if exc.status >= 500:
+        log.error("%s %s -> %s %s: %s", request.method, request.url.path,
+                  exc.status, exc.code, exc.message)
     return JSONResponse(
         status_code=exc.status,
         content={"error": {
