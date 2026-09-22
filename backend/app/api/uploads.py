@@ -34,6 +34,9 @@ async def upload_resume(file: UploadFile = File(...),
                         user_id: str = Depends(get_current_user_id),
                         db: Session = Depends(get_db)):
     data = _read_upload(file)
+    # Validate/extract before replacing a previously attached resume.
+    text = vision.pdf_to_text(data)
+    extracted = await vision.extract_resume(text)
     ref = await upload_blob(file.filename or "resume.pdf", data,
                             file.content_type or "application/pdf")
     prof = db.query(Profile).filter(Profile.user_id == user_id).first()
@@ -41,8 +44,6 @@ async def upload_resume(file: UploadFile = File(...),
         prof.resume_blob_ref = ref
         db.commit()
     # Extract immediately so the user sees editable chips on screen 2.
-    text = vision.pdf_to_text(data)
-    extracted = await vision.extract_resume(text)
     return {"blob_ref": ref, "skills": extracted.get("skills", []),
             "projects": extracted.get("projects", []),
             "summary": extracted.get("summary", ""), "needs_confirmation": True}

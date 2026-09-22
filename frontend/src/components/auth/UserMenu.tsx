@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../../lib/auth/AuthContext';
-import { LogOut, ChevronDown, User as UserIcon } from 'lucide-react';
+import { LogOut, ChevronDown, User as UserIcon, Settings } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const UserMenu: React.FC = () => {
   const { user, logout } = useAuth();
@@ -75,6 +76,8 @@ export const UserMenu: React.FC = () => {
             <p className="text-[12px] font-mono text-[#1F2420]/60 truncate">{user.email}</p>
           </div>
 
+          <Link to="/profile" role="menuitem" onClick={() => setOpen(false)} className="flex items-center gap-2.5 px-3 py-2 text-sm rounded-md hover:bg-[#1F2420]/5"><UserIcon size={16} /> My profile</Link>
+          <Link to="/settings" role="menuitem" onClick={() => setOpen(false)} className="flex items-center gap-2.5 px-3 py-2 text-sm rounded-md hover:bg-[#1F2420]/5"><Settings size={16} /> Settings & connections</Link>
           <button
             type="button"
             role="menuitem"

@@ -31,6 +31,10 @@ Base: `http://localhost:8000/api/v1`. OpenAPI/Swagger at `/docs` (generated).
 | `POST /mastery/update` `{topic_id,correctness,...}` | auth | `{node_id,previous,new,delta}` |
 | `GET /mastery/history/{node_id}` | auth | `{history[]}` |
 | `POST /daily/plan` `{mood:light\|normal\|push,time_available}` | auth | `{plan_id,tasks[],trace_id}` |
+| `GET /daily/revision/{topic_id}` | auth | `{topic_id,title,category,company,concept,problems[]}` — company-corpus and curated LeetCode links; no model call |
+| `POST /daily/logs` `{topic_id,title,link,notes,correctness,minutes_spent}` | auth | self-reported practice → mastery update |
+| `GET /users/me/overview` | auth | `{profile,stats,strengths[],recent_interviews[]}` — saved profile, practice counts, and completed reviews |
+| `PATCH /users/me/settings` | auth | updated profile; accepts `name`, `current_focus`, `placement_timeline`, `default_mood`, platform handles, `skills[]` (max 40), `projects[]` (max 20) |
 | `POST /problems/generate` `{pattern,topic_id,difficulty,company}` | auth | problem + `test_cases` + `validation` |
 | `GET /problems`, `GET /problems/{id}` | auth | list / detail |
 | `POST /submissions/attempts` `{problem_id}` | auth | `{attempt_id}` |
@@ -46,9 +50,9 @@ Base: `http://localhost:8000/api/v1`. OpenAPI/Swagger at `/docs` (generated).
 | `GET /companies/{name}` | auth | company profile + `drift` + `problems[]` (CSV + web-researched, each with `origin`: `company_corpus\|web`, web items carry `source`/`source_date` citations) + `interview_questions[]` (web-researched) + `web_researched_at` |
 | `GET /companies/{name}/drift` | auth | `{stale,last_verified,message}` |
 | `POST /interviews` | auth | `{session_id,status}` |
-| `POST /interviews/{id}/events` `{event_type,payload}` | auth | `{recorded,interviewer?}` — the Gemini voice interview (frontend) mirrors `SESSION_STARTED`, `INTERVIEWER_SPEECH`, `CANDIDATE_SPEECH`, `HINT_GIVEN` here; `CANDIDATE_SPEECH`/`HINT_REQUESTED`/`CODE_CHANGED` also trigger a backend interviewer turn |
+| `POST /interviews/{id}/events` `{event_type,payload,response_mode?}` | auth | `{recorded,interviewer?}` — voice uses `record_only` to save completed turns without a second model call; default `generate` preserves text-interviewer behavior. `payload.client_event_id` deduplicates queued retries. `DEBRIEF_COMPLETED` is server-only. |
 | `GET /interviews/{id}/transcript` | auth | `{transcript[]}` |
-| `GET /interviews/{id}/debrief` | auth | `{correctness,communication_quality,mastery_deltas[]}` |
+| `GET /interviews/{id}/debrief` | auth | `{session_id,correctness,communication_quality,feedback,mastery_deltas[],answers,events,topic,company,mode}` — grades recorded approaches and saves the result once. Empty interviews have null scores; subsequent requests return the saved review. |
 | `POST /outcomes`, `GET /outcomes` | auth | outcome loop (calibrates future CLEAR SCORE) |
 | `GET /dashboard` | auth | Home read model: `{user,target,clearScore,today,sandbox}` — computed from the Mastery Model + company research; topics rank nodes by urgency (mastery × importance × staleness); no client-side mock fallback |
 | `POST /mock-oa/start` `{company?,code_red_session_id?}` | auth | `{session_id,duration_minutes,problems[]}` — Question Generator builds a fresh assessment; sized to the CODE RED budget when linked |
@@ -64,3 +68,17 @@ service call failed; message says why, no content is fabricated), 502
 Agent-backed endpoints require a configured Foundry project; pure
 state/judge endpoints (mastery graph, submissions judging, platform pulls)
 work regardless.
+
+## Practice UI routes
+
+- `/dashboard/revision/:topicId`: LeetCode links open in new tabs; optional
+  self-reported attempt logging updates mastery.
+- `/interview`: standalone random or topic-focused spoken approach practice.
+- `/code-red/interview?session=<code-red-id>`: company context carried into
+  the same approach-only experience. Structured Gemini `show_question` and
+  `send_hint` tools update the question card; candidate transcription is kept
+  off-screen, buffered into completed turns, and saved for the review.
+- `/interview/:sessionId/debrief` and `/code-red/interview/:sessionId/debrief`:
+  saved feedback and progress; no regrading on refresh.
+- `/profile`: editable skills, projects, focus, timeline, target companies,
+  resume import, platform links, and recent interview reviews.

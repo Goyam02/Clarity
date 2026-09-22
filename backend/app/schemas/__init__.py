@@ -1,6 +1,7 @@
 """Pydantic v2 request/response schemas (structured agent I/O + API contracts)."""
 from typing import Literal
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
+from pydantic_core import PydanticUseDefault
 
 Mood = Literal["light", "normal", "push"]
 
@@ -36,6 +37,16 @@ class EvaluationMasterySignal(BaseModel):
     expected_time_seconds: float = 600
     confidence: float = 0.85
     explanation_quality: float | None = None
+
+    @field_validator("solve_time_seconds", "expected_time_seconds", mode="before")
+    @classmethod
+    def default_unknown_timing(cls, value):
+        # Models can express unavailable timing as null rather than omitting
+        # it. Apply the same existing defaults in either case; preserve zero
+        # and let ordinary float validation reject malformed values.
+        if value is None:
+            raise PydanticUseDefault()
+        return value
 
 
 class EvaluationResult(BaseModel):
@@ -91,6 +102,7 @@ class CodeRedRequest(BaseModel):
 class InterviewEventIn(BaseModel):
     event_type: str
     payload: dict = Field(default_factory=dict)
+    response_mode: Literal["generate", "record_only"] = "generate"
 
 
 class OutcomeIn(BaseModel):
@@ -110,12 +122,23 @@ class InterviewerOutput(BaseModel):
 # --- Phase 1 additions (settings, daily, code-red v2, weekly) ------------
 
 class ProfilePatch(BaseModel):
-    name: str | None = None
+    name: str | None = Field(default=None, min_length=1, max_length=255)
     current_focus: str | None = None
     placement_timeline: str | None = None
     default_mood: Mood | None = None
     codeforces_handle: str | None = None
     github_username: str | None = None
+    skills: list[str] | None = Field(default=None, max_length=40)
+    projects: list[str] | None = Field(default=None, max_length=20)
+
+    @field_validator("skills", "projects")
+    @classmethod
+    def clean_profile_items(cls, values):
+        if values is None:
+            return values
+        if any(len(v.strip()) > 200 for v in values):
+            raise ValueError("Each item must be at most 200 characters")
+        return list(dict.fromkeys(v.strip() for v in values if v.strip()))
 
 
 class CompanyAddIn(BaseModel):

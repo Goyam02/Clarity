@@ -107,6 +107,9 @@ export interface UserSettings {
   google_linked: boolean;
   has_password: boolean;
   leetcode?: LeetCodeStatus;
+  skills: string[];
+  projects: string[];
+  created_at: string | null;
 }
 
 export interface CompanyRef {
@@ -147,9 +150,10 @@ export interface LeetCodeConnectResult extends LeetCodeStatus {
 
 export const usersApi = {
   me: () => api.get<UserSettings>('/users/me'),
+  overview: () => api.get<ProfileOverview>('/users/me/overview'),
   updateSettings: (patch: Partial<Pick<UserSettings,
     'name' | 'current_focus' | 'placement_timeline' | 'default_mood' |
-    'codeforces_handle' | 'github_username'>>) =>
+    'codeforces_handle' | 'github_username' | 'skills' | 'projects'>>) =>
     api.patch<UserSettings>('/users/me/settings', patch),
   companies: () => api.get<{ companies: CompanyRef[] }>('/users/me/companies'),
   addCompany: (name: string) =>
@@ -175,11 +179,29 @@ export const usersApi = {
               codeforces_synced_at: string | null }>('/users/me/platforms/activity'),
 };
 
+export interface ProfileOverview {
+  profile: UserSettings;
+  stats: { topics: number; strong_topics: number; practice_updates: number; interviews: number; assessments: number };
+  strengths: { id: string; name: string; effective_mastery: number }[];
+  recent_interviews: { session_id: string; completed_at: string; topic: string;
+    company: string; correctness: number | null; feedback: string }[];
+}
+
+export const uploadsApi = {
+  resume: (file: File) => {
+    const formData = new FormData(); formData.append('file', file);
+    return api.post<{ blob_ref: string; skills: string[]; projects: string[]; summary: string }>(
+      '/uploads/resume', undefined, { formData });
+  },
+};
+
 // --- daily plan (Home) -------------------------------------------------------
 
 export interface PlanTask {
-  id: string;
-  type: string;
+  id?: string;
+  task_type: string;
+  node_id: string;
+  duration_minutes: number;
   title: string;
   detail?: Record<string, unknown>;
   status?: string;
@@ -189,11 +211,12 @@ export interface DailyPlan {
   plan_id: string;
   date: string;
   mood: string;
-  total_minutes: number;
+  time_available: number;
   tasks: PlanTask[];
 }
 
 export const dailyApi = {
+  revision: (topicId: string) => api.get<RevisionSet>(`/daily/revision/${encodeURIComponent(topicId)}`),
   generatePlan: (mood: 'light' | 'normal' | 'push', time_available: number) =>
     api.post<{ plan_id: string; tasks: PlanTask[]; trace_id: string }>('/daily/plan',
       { mood, time_available }),
@@ -205,6 +228,16 @@ export const dailyApi = {
     api.post<unknown>('/daily/logs',
       { topic_id, title, link, notes, correctness, minutes_spent }),
 };
+
+export interface RevisionSet {
+  topic_id: string;
+  title: string;
+  category: string;
+  company: string;
+  concept: string;
+  problems: { title: string; url: string; difficulty: string;
+              source: 'company_corpus' | 'curated'; topic_id: string }[];
+}
 
 // --- mastery / knowledge graph ------------------------------------------------
 
@@ -238,6 +271,7 @@ export type CodeRedTaskSource = 'company_corpus' | 'web' | 'jd_profile' | 'maste
 export interface CodeRedTask {
   id: string;
   type: string;
+  node_id: string;
   title: string;
   reason: string;
   duration_minutes: number;
@@ -312,7 +346,7 @@ export const codeRedApi = {
     api.get<{ session_id: string; company: string; score: number;
               components: ClearScoreComponents }>(`/code-red/${sessionId}/clear-score`),
   startMockOA: (sessionId: string) =>
-    api.post<unknown>(`/code-red/${sessionId}/mock-oa`),
+    api.post<{ session_id: string }>(`/code-red/${sessionId}/mock-oa`),
 };
 
 export const companiesApi = {
@@ -327,16 +361,29 @@ export const companiesApi = {
 
 export const interviewsApi = {
   create: () => api.post<{ session_id: string; status: string }>('/interviews'),
-  postEvent: (sessionId: string, event_type: string, payload: Record<string, unknown>) =>
+  postEvent: (sessionId: string, event_type: string, payload: Record<string, unknown>,
+              response_mode: 'generate' | 'record_only' = 'generate') =>
     api.post<{ recorded: boolean; interviewer?: { utterance: string; hint_given: boolean } | null }>(
-      `/interviews/${sessionId}/events`, { event_type, payload }),
+      `/interviews/${sessionId}/events`, { event_type, payload, response_mode }),
   transcript: (sessionId: string) =>
     api.get<{ session_id: string; transcript: { type: string; payload: Record<string, unknown> }[] }>(
       `/interviews/${sessionId}/transcript`),
   debrief: (sessionId: string) =>
-    api.get<{ correctness: number; communication_quality: number | null;
-              mastery_deltas: unknown[] }>(`/interviews/${sessionId}/debrief`),
+    api.get<InterviewDebrief>(`/interviews/${sessionId}/debrief`),
 };
+
+export interface InterviewDebrief {
+  session_id: string;
+  correctness: number | null;
+  communication_quality: number | null;
+  feedback: string;
+  mastery_deltas: { node: string; delta: number }[];
+  answers: number;
+  events: number;
+  topic: string;
+  company: string;
+  mode: string;
+}
 
 // --- dashboard (Home page read model) ---------------------------------------
 

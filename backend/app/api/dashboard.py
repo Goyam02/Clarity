@@ -17,7 +17,7 @@ from app.workflows.daily import mastery_snapshot
 router = APIRouter()
 
 # placement_timeline -> days until the target OA (drives the countdown only).
-_TIMELINE_DAYS = [("week", 7), ("two week", 14), ("fortnight", 14),
+_TIMELINE_DAYS = [("two week", 14), ("fortnight", 14), ("week", 7),
                   ("month", 30), ("autumn", 42), ("fall", 42), ("semester", 90),
                   ("immediate", 14)]
 
@@ -26,6 +26,11 @@ CATEGORY_TO_SUBJECT = {"DSA": "DSA", "DBMS": "DBMS", "OS": "OS", "CN": "CN"}
 
 def _days_left(profile: Profile | None) -> int:
     timeline = (profile.placement_timeline if profile else "") or ""
+    try:
+        target_date = datetime.fromisoformat(timeline.strip()).date()
+        return max(0, (target_date - datetime.now(timezone.utc).date()).days)
+    except ValueError:
+        pass
     low = timeline.lower()
     for needle, days in _TIMELINE_DAYS:
         if needle in low:
@@ -88,7 +93,22 @@ def _adaptive_set(weak_patterns: list[str], cp: CompanyProfile | None,
     """3 practice problems for the weak topics: prefer company-researched
     problems (real URLs); fall back to problems the user actually attempted
     on those topics. Never fabricated."""
+    from app.services.revision import practice_problems
+    company, _ = _company_for(user_id, db)
     out: list[dict] = []
+    seen = set()
+    for topic_id in weak_patterns:
+        for p in practice_problems(topic_id, company, limit=3):
+            if p["url"] in seen:
+                continue
+            seen.add(p["url"])
+            out.append({"id": p["url"], "title": p["title"],
+                        "difficulty": p["difficulty"], "topicId": topic_id, "url": p["url"]})
+            break
+        if len(out) >= 3:
+            return out
+    if out:
+        return out
     wanted = {w.lower().replace("_", "-") for w in weak_patterns}
     if cp is not None:
         for p in cp.web_problems or []:

@@ -53,6 +53,7 @@ export const CodeRedSessionPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [busyTaskId, setBusyTaskId] = useState<string | null>(null);
+  const [launching, setLaunching] = useState(false);
 
   // Load session state; refetch helper for reloads after toggles.
   const load = useCallback(async () => {
@@ -68,8 +69,6 @@ export const CodeRedSessionPage: React.FC = () => {
       setLoading(false);
     }
   }, [sessionId]);
-
-  useState(() => { void load(); });
 
   React.useEffect(() => { void load(); }, [load]);
 
@@ -88,20 +87,24 @@ export const CodeRedSessionPage: React.FC = () => {
   }, [state, sessionId]);
 
   const startMock = useCallback(async () => {
+    if (launching) return;
+    setLaunching(true);
     try {
       if (state?.round_type?.toLowerCase() === 'interview') {
         // Voice interviewer (Gemini Live) — creates its own backend session.
-        navigate('/code-red/interview');
+        navigate(`/code-red/interview?session=${encodeURIComponent(sessionId)}`);
         return;
       }
       // OA: backend generates + sizes the assessment to remaining time;
       // the locked environment loads THAT session (no second generation).
-      await codeRedApi.startMockOA(sessionId);
-      navigate('/mock-oa?session=' + encodeURIComponent(sessionId));
+      const assessment = await codeRedApi.startMockOA(sessionId);
+      navigate('/mock-oa?session=' + encodeURIComponent(assessment.session_id));
     } catch (err) {
       setError(err instanceof ApiError ? err.message : 'Failed to start the locked environment.');
+    } finally {
+      setLaunching(false);
     }
-  }, [state, sessionId, navigate]);
+  }, [state, sessionId, navigate, launching]);
 
   const remaining = useMemo(() => {
     if (!state) return 0;
@@ -342,13 +345,14 @@ export const CodeRedSessionPage: React.FC = () => {
           <button
             type="button"
             onClick={() => void startMock()}
+            disabled={launching}
             className="w-full h-12 flex items-center justify-center gap-2.5 rounded-[6px] text-[15px] font-semibold transition-all bg-[#1F2420] hover:bg-[#C1592B] active:bg-[#161a17] text-[#FAF6F0] shadow-[0_2px_8px_rgba(31,36,32,0.12)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#C1592B] focus:ring-offset-2 focus:ring-offset-[#FAF6F0]"
           >
             {isInterview ? <Mic className="w-4 h-4 text-[#C1592B]" /> : <Zap className="w-4 h-4 text-[#C1592B]" />}
-            <span>{isInterview ? 'Start Mock Interview' : 'Start Mock OA'}</span>
+            <span>{launching ? 'Preparing your session…' : isInterview ? 'Start Mock Interview' : 'Start Mock OA'}</span>
           </button>
           <p className="mt-2 text-center text-[11.5px] font-mono text-[#1F2420]/50">
-            {doneCount}/{state.tasks.length} checklist items done · locked environment sized to time remaining
+            {doneCount}/{state.tasks.length} checklist items done · {isInterview ? 'short, approach-focused voice interview' : 'locked environment sized to time remaining'}
           </p>
         </div>
       </main>

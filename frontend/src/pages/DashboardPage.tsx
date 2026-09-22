@@ -22,7 +22,7 @@ import { DashboardSections } from '../components/dashboard/DashboardSections';
 import { DashboardSkeleton } from '../components/dashboard/DashboardSkeleton';
 import { OnboardingPayload } from '../onboarding/types';
 import { UserMenu } from '../components/auth/UserMenu';
-import { dailyApi, DailyPlan } from '../lib/api/endpoints';
+import { dailyApi, usersApi, DailyPlan } from '../lib/api/endpoints';
 import { ApiError } from '../lib/api/client';
 
 const COMPLETED_KEY = 'clarity_completed_profile';
@@ -78,13 +78,21 @@ export const DashboardView: React.FC = () => {
     let alive = true;
     dailyApi.todayPlan()
       .then((res) => { if (alive) setPlan(res.plan); })
-      .catch(() => { /* no plan yet is normal */ })
+      .catch((e) => { if (alive) setPlanError(e.message || 'Could not load your plan.'); })
       .finally(() => { if (alive) setPlanLoading(false); });
     return () => { alive = false; };
   }, []);
 
   const [mood, setMood] = useState<'light' | 'normal' | 'push'>('normal');
   const [minutes, setMinutes] = useState(40);
+  const [taskBusy, setTaskBusy] = useState<number | null>(null);
+  useEffect(() => {
+    let active = true;
+    usersApi.me().then(s => {
+      if (active && ['light', 'normal', 'push'].includes(s.default_mood)) setMood(s.default_mood as 'light' | 'normal' | 'push');
+    }).catch(() => {});
+    return () => { active = false; };
+  }, []);
 
   const generatePlan = async () => {
     setPlanBusy(true);
@@ -95,7 +103,7 @@ export const DashboardView: React.FC = () => {
         plan_id: res.plan_id,
         date: new Date().toISOString().slice(0, 10),
         mood,
-        total_minutes: minutes,
+        time_available: minutes,
         tasks: res.tasks,
       });
     } catch (err) {
@@ -110,7 +118,8 @@ export const DashboardView: React.FC = () => {
   };
 
   const toggleTask = async (index: number) => {
-    if (!plan) return;
+    if (!plan || taskBusy !== null) return;
+    setTaskBusy(index);
     const task = plan.tasks[index];
     const next = task.status === 'done' ? 'pending' : 'done';
     setPlan({ ...plan, tasks: plan.tasks.map((t, i) =>
@@ -121,6 +130,9 @@ export const DashboardView: React.FC = () => {
       // revert on failure
       setPlan((p) => p ? { ...p, tasks: p.tasks.map((t, i) =>
         i === index ? { ...t, status: task.status } : t) } : p);
+      setPlanError('Could not update the task. Please try again.');
+    } finally {
+      setTaskBusy(null);
     }
   };
 
@@ -272,7 +284,7 @@ export const DashboardView: React.FC = () => {
                   <h2 className="text-[16px] font-semibold text-[#1F2420] tracking-tight">Today's Plan</h2>
                   {plan && (
                     <span className="text-[11px] font-mono text-[#1F2420]/50 uppercase">
-                      {plan.mood} · {plan.total_minutes}m
+                      {plan.mood} · {plan.time_available}m
                     </span>
                   )}
                 </div>
@@ -334,6 +346,7 @@ export const DashboardView: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => void toggleTask(idx)}
+                          disabled={taskBusy !== null}
                           className={`w-full text-left flex items-center gap-3 p-3 rounded-[10px] border transition-colors cursor-pointer ${
                             done
                               ? 'bg-[#5B6B4D]/8 border-[#5B6B4D]/25'
@@ -348,14 +361,20 @@ export const DashboardView: React.FC = () => {
                             {done && <span className="w-1.5 h-1.5 rounded-full bg-[#FAF6F0]" />}
                           </span>
                           <span className={`flex-1 text-[13.5px] leading-snug ${done ? 'line-through text-[#1F2420]/50' : 'text-[#1F2420]'}`}>
-                            {task.title || task.type}
+                            {task.title || task.task_type}
                           </span>
-                          {typeof task.detail?.duration_minutes === 'number' && (
+                          {typeof task.duration_minutes === 'number' && (
                             <span className="shrink-0 text-[11px] font-mono text-[#1F2420]/50 tabular-nums">
-                              {task.detail.duration_minutes}m
+                              {task.duration_minutes}m
                             </span>
                           )}
                         </button>
+                        {task.node_id && (
+                          <Link to={`/dashboard/revision/${encodeURIComponent(task.node_id)}`}
+                            className="inline-flex items-center gap-1 px-3 py-2 text-xs font-semibold text-[#C1592B] hover:underline">
+                            Open practice questions <ArrowRight className="h-3 w-3" />
+                          </Link>
+                        )}
                       </li>
                     );
                   })}
@@ -378,7 +397,7 @@ export const DashboardView: React.FC = () => {
               onActionClick={(action, topic) => {
                 // Interactive action handler
                 if (action === 'start_revision' && topic) {
-                  navigate(`/dashboard/graph?focus=${encodeURIComponent(topic.id)}`);
+                  navigate(`/dashboard/revision/${encodeURIComponent(topic.id)}`);
                 }
               }}
             />

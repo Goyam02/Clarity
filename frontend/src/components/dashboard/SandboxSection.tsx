@@ -8,7 +8,9 @@ import {
   Clock,
   Sparkles,
   Zap,
+  Mic,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { DashboardPayload } from '../../lib/dashboard/types';
 import { MOCK_OA_ROUTE } from '../../lib/routes';
 
@@ -160,7 +162,7 @@ export const SandboxSection: React.FC<SandboxSectionProps> = ({
                   Full IDE Mode
                 </div>
                 <p className="text-[12px] text-[#1F2420]/65 mt-1">
-                  Includes memory diagnostics, runtime benchmarks, and auto-linting.
+                  Write and run code against sample and hidden test cases.
                 </p>
               </div>
 
@@ -195,7 +197,7 @@ export const SandboxSection: React.FC<SandboxSectionProps> = ({
           <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 border-t border-[#1F2420]/10">
             <div className="text-[12px] font-mono text-[#1F2420]/60 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#3F8F63] animate-pulse" />
-              <span>Sandbox Servers Online & Ready</span>
+              <span>Choose your next practice session</span>
             </div>
 
             <a
@@ -207,6 +209,12 @@ export const SandboxSection: React.FC<SandboxSectionProps> = ({
               <span>Launch Mock OA</span>
               <ArrowRight className="w-4 h-4" />
             </a>
+          </div>
+          <div className="grid sm:grid-cols-[1fr_auto] items-center gap-5 rounded-2xl bg-[#263A32] text-[#FAF6F0] p-6 sm:p-7">
+            <div><span className="inline-flex items-center gap-2 text-[#DBBE86] text-xs font-semibold uppercase tracking-wider"><Mic size={15} /> Interview practice</span>
+              <h3 className="font-serif text-2xl mt-3">A little practice. A lot more clarity.</h3>
+              <p className="text-sm text-white/65 mt-2 max-w-xl leading-relaxed">Get a random technical question, explain your approach out loud, and get a focused review. Choose a 5–20 minute session.</p></div>
+            <Link to="/interview" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FAF6F0] text-[#263A32] px-5 py-3 text-sm font-semibold hover:bg-white">Start practice interview <ArrowRight size={16} /></Link>
           </div>
         </div>
       </motion.div>

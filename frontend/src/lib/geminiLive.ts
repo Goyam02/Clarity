@@ -10,15 +10,15 @@
  *   (candidate problem, mastery context, rubric) — kept in sync with the
  *   backend's mock-interview workflow by POSTing every transcript line to
  *   `/interviews/{id}/events` so `/debrief` keeps working unchanged.
- * - Tools (`show_editor`, `send_hint`, `log_code_state`) let the model push
- *   UI events; the page renders hint drawers / editor reveals on them.
+ * - Tools (`show_question`, `send_hint`) provide structured question cards
+ *   and hints. Candidate transcript turns are stored for review, not shown.
  *
  * Key: `VITE_GEMINI_API_KEY` (frontend/.env.local, gitignored).
  * Model: `gemini-2.5-flash-native-audio-preview-12-2025` (Live API,
  * native audio dialog; configurable via VITE_GEMINI_LIVE_MODEL).
  */
 import { GoogleGenAI, Modality, type LiveServerMessage, type Session } from '@google/genai';
-import { API_BASE_URL } from './api/client';
+import { interviewsApi } from './api/endpoints';
 
 export const GEMINI_API_KEY: string =
   (import.meta.env?.VITE_GEMINI_API_KEY as string | undefined) || '';
@@ -37,8 +37,14 @@ export interface GeminiVoiceCallbacks {
   onStage: (stage: VoiceStage) => void;
   onTranscript: (line: TranscriptLine) => void;
   onHint?: (hint: string) => void;
-  onEditorReveal?: () => void;
+  onQuestion?: (question: InterviewQuestion) => void;
   onError: (message: string) => void;
+}
+
+export interface InterviewQuestion {
+  title: string;
+  question: string;
+  focus: string;
 }
 
 export interface InterviewerContext {
@@ -47,6 +53,7 @@ export interface InterviewerContext {
   company?: string;
   roundType?: string;
   masteryContext?: string;
+  durationMinutes?: number;
 }
 
 function now(): string {
@@ -57,7 +64,7 @@ function buildSystemInstruction(ctx: InterviewerContext): string {
   return [
     'You are a calibrated FAANG technical interviewer conducting a live spoken interview.',
     'You speak your questions and feedback out loud, in a warm but rigorous tone, 1-4 sentences per turn.',
-    'Never mention that you are an AI or that this is a simulation.',
+    'You are the Clarity AI practice interviewer.',
     '',
     `Company: ${ctx.company || 'unspecified'}. Round: ${ctx.roundType || 'technical interview'}.`,
     `Problem under discussion: ${ctx.problemTitle}.`,
@@ -65,8 +72,12 @@ function buildSystemInstruction(ctx: InterviewerContext): string {
     ctx.masteryContext ? `Candidate mastery context: ${ctx.masteryContext}` : '',
     '',
     'Interview rules:',
-    '- Open by briefly introducing the problem and asking the candidate to walk through their approach.',
-    '- While the candidate codes, keep them talking: ask "why this data structure?", "what is the time complexity?"',
+    `- This is a short ${ctx.durationMinutes || 15}-minute approach-only interview. There is no editor. Never ask the candidate to write or submit code.`,
+    '- If only a topic is provided, choose a concrete interview question with enough details to reason about. Do not ask the candidate to supply a problem.',
+    '- Before asking each new question, call show_question with its title, complete question, and focus. The question card is the candidate\'s reference.',
+    '- Open with the question and explicitly ask: "How would you approach this?" Wait for an answer.',
+    '- Ask one follow-up at a time: clarify assumptions, compare approaches, discuss complexity, then test an edge case.',
+    '- Listen to the spoken approach and probe reasoning, trade-offs, and communication. Keep feedback concise.',
     '- Give hints only when the candidate is stuck — escalate gently (question, then hint, then concrete pointer).',
     '- If the candidate is silent for a while, check in with a question rather than repeating yourself.',
     '- Close each session by summarizing strengths and one concrete improvement.',
@@ -76,13 +87,16 @@ function buildSystemInstruction(ctx: InterviewerContext): string {
 const INTERVIEWER_TOOLS = [{
   functionDeclarations: [
     {
-      name: 'show_editor',
-      description: 'Reveal the code editor pane to the candidate after you have introduced the problem and confirmed their approach.',
-      parametersJsonSchema: { type: 'object', properties: {} },
+      name: 'show_question',
+      description: 'Display the full question being asked. Call before each new problem; keep it visible during approach discussion.',
+      parametersJsonSchema: { type: 'object', properties: {
+        title: { type: 'string' }, question: { type: 'string' },
+        focus: { type: 'string', description: 'The topic or pattern being assessed.' },
+      }, required: ['title', 'question', 'focus'] },
     },
     {
       name: 'send_hint',
-      description: 'Push a written hint into the candidate\'s editor sidebar without speaking over them. Use when they struggle silently.',
+      description: 'Show a short hint beside the current question when the candidate asks for help.',
       parametersJsonSchema: {
         type: 'object',
         properties: { hint: { type: 'string', description: 'The hint text to show.' } },
@@ -97,6 +111,7 @@ class PcmPlayer {
   private ctx: AudioContext | null = null;
   private nextStartAt = 0;
   private playing = false;
+  constructor(private readonly onIdle: () => void) {}
 
   ensure(): AudioContext {
     if (!this.ctx) this.ctx = new AudioContext({ sampleRate: 24000 });
@@ -122,7 +137,12 @@ class PcmPlayer {
     src.start(startAt);
     this.nextStartAt = startAt + audioBuf.duration;
     this.playing = this.nextStartAt > ctx.currentTime;
-    src.onended = () => { if (ctx.currentTime >= this.nextStartAt - 0.01) this.playing = false; };
+    src.onended = () => {
+      if (ctx.currentTime >= this.nextStartAt - 0.01) {
+        this.playing = false;
+        this.onIdle();
+      }
+    };
   }
 
   /** Drop queued audio (candidate interrupted). */
@@ -136,11 +156,13 @@ class PcmPlayer {
 
 export class GeminiVoiceInterviewer {
   private session: Session | null = null;
-  private player = new PcmPlayer();
+  private player = new PcmPlayer(() => { if (this.session && !this.closedByUs) this.cb.onStage('listening'); });
   private micStream: MediaStream | null = null;
   private processor: ScriptProcessorNode | null = null;
   private audioCtx: AudioContext | null = null;
   private closedByUs = false;
+  private candidateText = '';
+  private interviewerText = '';
 
   constructor(
     private readonly ctx: InterviewerContext,
@@ -154,6 +176,7 @@ export class GeminiVoiceInterviewer {
     if (!GEMINI_API_KEY) {
       throw new Error('VITE_GEMINI_API_KEY is not set — add it to frontend/.env.local (see .env.example).');
     }
+    this.player.ensure(); // Unlock playback during the Start button gesture.
     this.cb.onStage('connecting');
     const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
     const model = (import.meta.env?.VITE_GEMINI_LIVE_MODEL as string | undefined) || DEFAULT_MODEL;
@@ -168,6 +191,7 @@ export class GeminiVoiceInterviewer {
           this.cb.onError(`Voice channel error: ${e.message || 'unknown'}`);
         },
         onclose: (e: CloseEvent) => {
+          this.flushTranscripts();
           this.session = null;
           this.stopMic();
           if (!this.closedByUs) this.cb.onStage('closed');
@@ -183,6 +207,7 @@ export class GeminiVoiceInterviewer {
         tools: INTERVIEWER_TOOLS,
       },
     });
+    if (this.closedByUs) { this.session.close(); this.session = null; }
   }
 
   private handleMessage(msg: LiveServerMessage): void {
@@ -194,10 +219,14 @@ export class GeminiVoiceInterviewer {
     }
 
     if (sc?.inputTranscription?.text) {
-      this.cb.onTranscript({ type: 'candidate', text: sc.inputTranscription.text, at: now() });
+      this.candidateText += sc.inputTranscription.text;
     }
     if (sc?.outputTranscription?.text) {
-      this.cb.onTranscript({ type: 'interviewer', text: sc.outputTranscription.text, at: now() });
+      if (this.candidateText.trim()) {
+        this.cb.onTranscript({ type: 'candidate', text: this.candidateText.trim(), at: now() });
+        this.candidateText = '';
+      }
+      this.interviewerText += sc.outputTranscription.text;
       this.cb.onStage('speaking');
     }
     const parts = sc?.modelTurn?.parts ?? [];
@@ -207,19 +236,28 @@ export class GeminiVoiceInterviewer {
       }
     }
     if (sc?.interrupted) {
+      this.flushTranscripts();
       this.player.flush(); // candidate spoke over the model — drop queued audio
       this.cb.onStage('listening');
     }
     if (sc?.turnComplete) {
+      this.flushTranscripts();
       this.cb.onStage(this.player.isPlaying ? 'speaking' : 'listening');
     }
+  }
+
+  private flushTranscripts(): void {
+    if (this.candidateText.trim()) this.cb.onTranscript({ type: 'candidate', text: this.candidateText.trim(), at: now() });
+    if (this.interviewerText.trim()) this.cb.onTranscript({ type: 'interviewer', text: this.interviewerText.trim(), at: now() });
+    this.candidateText = ''; this.interviewerText = '';
   }
 
   private async handleToolCalls(calls: { name?: string; args?: Record<string, unknown>; id?: string }[]): Promise<void> {
     const responses: { id?: string; name?: string; response: Record<string, unknown> }[] = [];
     for (const call of calls) {
-      if (call.name === 'show_editor') {
-        this.cb.onEditorReveal?.();
+      if (call.name === 'show_question') {
+        this.cb.onQuestion?.({ title: String(call.args?.title || 'Interview question'),
+          question: String(call.args?.question || ''), focus: String(call.args?.focus || '') });
         responses.push({ id: call.id, name: call.name, response: { ok: true } });
       } else if (call.name === 'send_hint') {
         const hint = String(call.args?.hint ?? '');
@@ -235,10 +273,12 @@ export class GeminiVoiceInterviewer {
   /** Start streaming mic audio (16kHz mono PCM16) into the session. */
   async startMic(): Promise<boolean> {
     if (!this.session) return false;
+    if (this.micStream) return true;
     try {
       this.micStream = await navigator.mediaDevices.getUserMedia({
         audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true },
       });
+      if (this.closedByUs || !this.session) { this.stopMic(); return false; }
     } catch {
       this.cb.onError('Microphone permission denied — voice interview needs mic access.');
       return false;
@@ -286,7 +326,13 @@ export class GeminiVoiceInterviewer {
     this.cb.onTranscript({ type: 'candidate', text, at: now() });
   }
 
+  /** Control prompts are not candidate answers and must not affect grading. */
+  sendPrompt(text: string): void {
+    this.session?.sendClientContent({ turns: { role: 'user', parts: [{ text }] }, turnComplete: true });
+  }
+
   async stop(): Promise<void> {
+    this.flushTranscripts();
     this.closedByUs = true;
     this.stopMic();
     this.player.flush();
@@ -296,25 +342,12 @@ export class GeminiVoiceInterviewer {
   }
 }
 
-/** Best-effort mirror of the voice transcript into the backend session so
- *  /interviews/{id}/debrief keeps working (same event contract as before). */
+/** Record a completed voice turn without invoking a second interviewer.
+ * The page retains failed events and flushes them before opening the debrief. */
 export async function postInterviewEvent(
   interviewId: string,
   eventType: string,
   payload: Record<string, unknown>,
 ): Promise<void> {
-  try {
-    const token = localStorage.getItem('clarity_auth_token') || '';
-    const uid = localStorage.getItem('clarity_user_id') || '';
-    await fetch(`${API_BASE_URL}/api/v1/interviews/${interviewId}/events`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        ...(token ? { Authorization: `Bearer ${token}` } : (uid ? { 'X-User-Id': uid } : {})),
-      },
-      body: JSON.stringify({ event_type: eventType, payload }),
-    });
-  } catch {
-    // transcript mirroring is best-effort; never block the interview
-  }
+  await interviewsApi.postEvent(interviewId, eventType, payload, 'record_only');
 }

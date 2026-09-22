@@ -8,6 +8,8 @@ import { DashboardGraphPage } from './pages/DashboardGraphPage.tsx';
 import { LoginPage } from './pages/LoginPage.tsx';
 import { SignupPage } from './pages/SignupPage.tsx';
 import { SettingsPage } from './pages/SettingsPage.tsx';
+import { RevisionPage } from './pages/RevisionPage.tsx';
+import { ProfilePage } from './pages/ProfilePage.tsx';
 import { CodeRedEntryPage } from './pages/codered/CodeRedEntryPage.tsx';
 import { CodeRedSessionPage } from './pages/codered/CodeRedSessionPage.tsx';
 import { CodeRedInterviewPage } from './pages/codered/CodeRedInterviewPage.tsx';
@@ -71,6 +73,8 @@ createRoot(document.getElementById('root')!).render(
               </ProtectedRoute>
             }
           />
+          <Route path="/dashboard/revision/:topicId" element={<ProtectedRoute><RevisionPage /></ProtectedRoute>} />
+          <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
           <Route
             path="/settings"
             element={
@@ -80,6 +84,8 @@ createRoot(document.getElementById('root')!).render(
             }
           />
           {/* CODE RED (spec §6): one engine, two endings */}
+          <Route path="/interview" element={<ProtectedRoute><CodeRedInterviewPage /></ProtectedRoute>} />
+          <Route path="/interview/:sessionId/debrief" element={<ProtectedRoute><CodeRedDebriefPage /></ProtectedRoute>} />
           <Route
             path="/code-red"
             element={

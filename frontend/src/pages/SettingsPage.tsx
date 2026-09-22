@@ -15,7 +15,7 @@ import { useAuth } from '../lib/auth/AuthContext';
  */
 export const SettingsPage: React.FC = () => {
   const navigate = useNavigate();
-  const { setUser } = useAuth();
+  const { user, setUser } = useAuth();
 
   const [settings, setSettings] = useState<UserSettings | null>(null);
   const [companies, setCompanies] = useState<CompanyRef[]>([]);
@@ -66,6 +66,10 @@ export const SettingsPage: React.FC = () => {
       const s = await usersApi.updateSettings(p);
       setSettings(s);
       setSavedFlash(true);
+      if (p.name && user) {
+        const [firstName, ...rest] = s.name.trim().split(/\s+/);
+        setUser({ ...user, firstName, lastName: rest.join(' ') });
+      }
       setTimeout(() => setSavedFlash(false), 1600);
     } catch (err) {
       setError(err instanceof ApiError ? err.message : 'Failed to save.');
@@ -198,6 +202,7 @@ export const SettingsPage: React.FC = () => {
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Dashboard</span>
         </Link>
+        <Link to="/profile" className="text-sm font-medium text-[#C1592B]">My profile</Link>
         {savedFlash && (
           <span className="inline-flex items-center gap-1.5 text-[12px] font-mono text-[#3F8F63]">
             <CheckCircle2 className="w-3.5 h-3.5" /> Saved

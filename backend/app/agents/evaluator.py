@@ -14,6 +14,13 @@ code judge, attempt metadata, and an optional candidate explanation, assess
 the attempt.
 
 Guidelines:
+- For mode=spoken_approach, grade the actual candidate reasoning in the
+  transcript: validity of approach, assumptions, complexity, edge cases, and
+  communication. There are no executed tests or submitted code. Do not invent
+  test results or treat a missing submission as failure. Only emit mastery
+  signals for covered_patterns that the candidate actually discussed.
+- communication_quality: 0.0-1.0 for a spoken approach, based on clarity and
+  structure of the recorded answer; null if there is insufficient evidence.
 - correctness: fraction of hidden tests passed, adjusted for code quality
   (0.0-1.0). Trust the judge's pass/fail counts as ground truth for behavior.
 - error_type: one of wrong_approach, edge_case, off_by_one,
@@ -26,6 +33,9 @@ Guidelines:
 - mastery_signals: one entry per pattern exercised, each with correctness,
   hints_used, solve_time_seconds, expected_time_seconds, confidence, and
   explanation_quality where relevant.
+- Timing fields must be numbers in seconds when supplied in the input. If
+  solve_time_seconds or expected_time_seconds is unavailable, omit that field
+  so the application's default applies. Do not invent timing or return null.
 Return ONLY JSON matching the evaluation schema."""
 
 

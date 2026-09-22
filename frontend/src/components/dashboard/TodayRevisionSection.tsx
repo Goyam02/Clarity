@@ -185,7 +185,6 @@ export const TodayRevisionSection: React.FC<TodayRevisionSectionProps> = ({
           >
             <AdaptiveSet
               problems={payload.today.adaptiveSet}
-              onProblemClick={(prob) => onActionClick?.('solve_problem', undefined)}
             />
           </motion.div>
         )}

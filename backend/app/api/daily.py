@@ -12,6 +12,22 @@ from app.workflows import daily as daily_wf
 router = APIRouter()
 
 
+@router.get("/revision/{topic_id}")
+def revision(topic_id: str, user_id: str = Depends(get_current_user_id),
+             db: Session = Depends(get_db)):
+    from app.models import Profile, Topic
+    from app.services.revision import CONCEPTS, practice_problems
+    topic = db.query(Topic).filter(Topic.id == topic_id).first()
+    if not topic:
+        raise ClarityError("TOPIC_NOT_FOUND", "Revision topic not found", 404)
+    profile = db.query(Profile).filter(Profile.user_id == user_id).first()
+    companies = (profile.target_companies if profile else None) or []
+    company = companies[0] if companies else ""
+    return {"topic_id": topic.id, "title": topic.name, "category": topic.category,
+            "company": company, "concept": CONCEPTS.get(topic_id, ""),
+            "problems": practice_problems(topic_id, company)}
+
+
 @router.post("/plan")
 async def create_plan(body: DailyPlanRequest, user_id: str = Depends(get_current_user_id),
                       db: Session = Depends(get_db)):

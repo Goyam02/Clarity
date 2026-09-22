@@ -44,6 +44,8 @@ def _settings_payload(db: Session, user: User) -> dict:
         "codeforces_handle": prof.codeforces_handle,
         "github_username": prof.github_username,
         "resume_blob_ref": prof.resume_blob_ref,
+        "skills": prof.skills or [], "projects": prof.projects or [],
+        "created_at": user.created_at.isoformat() if user.created_at else None,
         "target_companies": prof.target_companies or [],
         "onboarding_complete": bool(prof.onboarding_complete),
         "google_linked": bool(user.google_sub),
@@ -89,8 +91,44 @@ def patch_settings(body: ProfilePatch, user_id: str = Depends(get_current_user_i
         prof.codeforces_handle = body.codeforces_handle
     if body.github_username is not None:
         prof.github_username = body.github_username
+    if body.skills is not None:
+        prof.skills = body.skills
+    if body.projects is not None:
+        prof.projects = body.projects
     db.commit()
     return _settings_payload(db, user)
+
+
+@router.get("/me/overview")
+def profile_overview(user_id: str = Depends(get_current_user_id),
+                     db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise ClarityError("USER_NOT_FOUND", "User not found", 404)
+    from app.workflows.daily import mastery_snapshot
+    snap = mastery_snapshot(db, user_id)
+    sessions = db.query(MockSession).filter(
+        MockSession.user_id == user_id, MockSession.status == "completed").all()
+    reviews = db.query(InterviewEvent).join(
+        MockSession, MockSession.id == InterviewEvent.session_id).filter(
+            MockSession.user_id == user_id,
+            InterviewEvent.event_type == "DEBRIEF_COMPLETED").order_by(
+                InterviewEvent.timestamp.desc()).limit(6).all()
+    history = db.query(MasteryHistory).filter(MasteryHistory.user_id == user_id)
+    return {"profile": _settings_payload(db, user),
+            "stats": {"topics": len(snap),
+                      "strong_topics": sum(n["effective_mastery"] >= 0.7 for n in snap),
+                      "practice_updates": history.count(),
+                      "interviews": sum(s.round_type == "Interview" for s in sessions),
+                      "assessments": sum(s.round_type == "OA" for s in sessions)},
+            "strengths": sorted(snap, key=lambda n: -n["effective_mastery"])[:3],
+            "recent_interviews": [{"session_id": e.session_id,
+                                   "completed_at": e.timestamp.isoformat(),
+                                   "topic": e.payload.get("topic", ""),
+                                   "company": e.payload.get("company", ""),
+                                   "correctness": e.payload.get("correctness"),
+                                   "feedback": e.payload.get("feedback", "")}
+                                  for e in reviews]}
 
 
 # --- LeetCode cookie pulls (docs/plans/plan-leetcode-pulls.md) ------------------

@@ -43,8 +43,8 @@ export const AdaptiveSet: React.FC<AdaptiveSetProps> = ({
           <a
             key={prob.id || idx}
             id={`adaptive-problem-${prob.id || idx}`}
-            href={prob.url}
-            target="_blank"
+            href={prob.url || `/dashboard/revision/${encodeURIComponent(prob.topicId)}`}
+            target={prob.url ? '_blank' : undefined}
             rel="noopener noreferrer"
             onClick={(e) => {
               if (onProblemClick) {

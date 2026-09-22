@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchMockOA } from '../lib/mock-oa/api';
 import { MockOAPayload } from '../lib/mock-oa/types';
@@ -17,20 +17,24 @@ export default function MockOAInstructionsPage() {
   const [step, setStep] = useState<'instructions' | 'preflight'>('instructions');
   const [verifiedStream, setVerifiedStream] = useState<MediaStream | null>(null);
   const [existingActiveSession, setExistingActiveSession] = useState<boolean>(false);
+  const requestRef = useRef<Promise<MockOAPayload> | null>(null);
 
   useEffect(() => {
     // A CODE RED launch carries the pre-sized backend session in ?session=;
     // otherwise the data seam generates a fresh standalone assessment.
     const backendSessionId = searchParams.get('session') || undefined;
-    fetchMockOA(backendSessionId)
-      .then((data) => setPayload(data))
-      .catch(() => setLoadError(
-        'Could not load the assessment. Is the backend running and signed in?'));
+    let active = true;
+    // Reuse the in-flight creation during StrictMode's effect replay.
+    requestRef.current ??= fetchMockOA(backendSessionId);
+    requestRef.current
+      .then((data) => { if (active) setPayload(data); })
+      .catch((error) => { if (active) setLoadError(error.message || 'Could not load the assessment.'); });
 
     const existing = getStoredSession();
     if (existing && existing.active && existing.endsAt > Date.now()) {
       setExistingActiveSession(true);
     }
+    return () => { active = false; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -150,7 +154,7 @@ export default function MockOAInstructionsPage() {
 
         {/* Minimal Footer */}
         <footer className="max-w-3xl mx-auto w-full mt-10 pt-4 border-t border-[#1F2420]/10 text-center text-xs font-mono text-[#1F2420]/40">
-          Clarity Assessment Engine • Google 2026 Question Pool • Proctoring V2
+          Clarity Assessment Engine · {payload.company} · {payload.year}
         </footer>
       </div>
     </MockOALayout>
