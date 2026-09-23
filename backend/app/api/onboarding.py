@@ -175,9 +175,10 @@ async def focus(body: FocusIn, user_id: str = Depends(get_current_user_id),
 async def cal_start(user_id: str = Depends(get_current_user_id), db: Session = Depends(get_db)):
     run = cal.start_run(user_id)
     db.add(run)
+    question = await cal.next_question(run)
     db.commit()
     db.refresh(run)
-    return {"run_id": run.id, "question": await cal.next_question(run)}
+    return {"run_id": run.id, "question": question}
 
 
 class CalAnswer(BaseModel):
@@ -194,7 +195,6 @@ async def cal_answer(body: CalAnswer, user_id: str = Depends(get_current_user_id
     if not run or run.status != "active":
         raise ClarityError("RUN_NOT_FOUND", "Calibration run not found or already completed", 404)
     step = cal.answer(run, body.correct, body.solve_time)
-    db.commit()
     if step["done"]:
         # Persist calibration signals via MasteryEngine into nodes.
         from datetime import datetime, timezone
@@ -217,6 +217,8 @@ async def cal_answer(body: CalAnswer, user_id: str = Depends(get_current_user_id
                                       source_id=run.id, reason="calibration"))
         db.commit()
         return {"done": True, "summary": cal.summarize(run)}
+    # Commit the answer and next question together. A generation failure leaves
+    # the current question intact so the caller can safely retry its answer.
+    question = await cal.next_question(run)
     db.commit()
-    db.refresh(run)
-    return {"done": False, "question": await cal.next_question(run)}
+    return {"done": False, "question": question}

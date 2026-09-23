@@ -12,6 +12,7 @@ schema violations trigger one repair attempt before failing loudly.
 """
 import asyncio
 import json
+import re
 from typing import Protocol
 
 from app.core.config import get_settings
@@ -89,6 +90,47 @@ class FoundryChatBackend:
         return self._client
 
     async def complete_json(self, *, agent: str, system: str, user: str) -> dict:
+        messages = [{"type": "message", "role": "system",
+                     "content": system + "\nReturn only a JSON object, "
+                     "without Markdown code fences."},
+                    {"type": "message", "role": "user", "content": user}]
+        for attempt in range(2):
+            resp = await self._request(agent=agent, messages=messages)
+            if resp.status != "completed":
+                raise FoundryError(
+                    f"Agent '{agent}' response did not complete (status={resp.status}).",
+                    code="FOUNDRY_BAD_OUTPUT")
+            content = (resp.output_text or "").strip()
+            # Accept a single fenced JSON document, but never guess which
+            # object to use from prose or multiple documents.
+            fenced = re.fullmatch(r"```(?:json)?\s*\n(.*?)\n\s*```", content,
+                                  flags=re.DOTALL | re.IGNORECASE)
+            if fenced:
+                content = fenced.group(1).strip()
+            try:
+                output = json.loads(content)
+            except json.JSONDecodeError as e:
+                detail = f"invalid JSON at line {e.lineno}, column {e.colno}: {e.msg}"
+            else:
+                if isinstance(output, dict):
+                    return output
+                detail = "expected a JSON object, not " + type(output).__name__
+            if attempt:
+                raise FoundryError(
+                    f"Agent '{agent}' returned invalid JSON output after one repair attempt "
+                    f"({detail}).", code="FOUNDRY_BAD_OUTPUT")
+            log.info(f"foundry agent '{agent}' output needs JSON repair: {detail}")
+            if resp.output_text:
+                messages.append({"type": "message", "role": "assistant",
+                                 "content": resp.output_text})
+            messages.append({"type": "message", "role": "user", "content": (
+                f"Your previous response could not be decoded: {detail}. "
+                "Return the complete corrected JSON object for the original task. "
+                "Use double-quoted keys and strings, escape newlines within strings, "
+                "and include no commentary or Markdown fences.")})
+
+    async def _request(self, *, agent: str, messages: list[dict]):
+        """Transport retries are independent of the single JSON repair attempt."""
         from azure.core.exceptions import ClientAuthenticationError
         from openai import (APIConnectionError, APITimeoutError, InternalServerError,
                             NotFoundError, RateLimitError)
@@ -101,31 +143,12 @@ class FoundryChatBackend:
                 # With agent_reference, model/instructions/temperature/text
                 # overrides are rejected. Supply the per-call prompt as input
                 # messages; model settings and tools come from the agent.
-                resp = await client.responses.create(
-                    input=[{"type": "message", "role": "system",
-                            "content": system + "\nReturn only a JSON object, "
-                            "without Markdown code fences."},
-                           {"type": "message", "role": "user", "content": user}],
+                return await client.responses.create(
+                    input=messages,
                     extra_body={"agent_reference": {"name": agent,
                                                     "type": "agent_reference"}},
                     timeout=self.settings.FOUNDRY_TIMEOUT_SECONDS,
                 )
-                if resp.status != "completed":
-                    raise FoundryError(
-                        f"Agent '{agent}' response did not complete (status={resp.status}).",
-                        code="FOUNDRY_BAD_OUTPUT")
-                content = (resp.output_text or "").strip()
-                try:
-                    output = json.loads(content)
-                except json.JSONDecodeError as e:
-                    raise FoundryError(
-                        f"Agent '{agent}' returned non-JSON output.",
-                        code="FOUNDRY_BAD_OUTPUT") from e
-                if not isinstance(output, dict):
-                    raise FoundryError(
-                        f"Agent '{agent}' returned non-object JSON.",
-                        code="FOUNDRY_BAD_OUTPUT")
-                return output
             except transient as e:
                 last_err = e
                 log.info(f"foundry agent '{agent}' attempt {attempt + 1} transient failure: {e}")

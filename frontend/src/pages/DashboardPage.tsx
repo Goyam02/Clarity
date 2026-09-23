@@ -249,7 +249,7 @@ export const DashboardView: React.FC = () => {
                     className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-[6px] bg-[#1F2420] text-[#FAF6F0] text-[12.5px] font-medium hover:bg-[#C1592B] transition-colors shadow-xs"
                   >
                     <Compass className="w-4 h-4 text-[#C1592B]" />
-                    <span>View Obsidian Knowledge Graph</span>
+                    <span>View Knowledge Graph</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

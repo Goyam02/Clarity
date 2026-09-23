@@ -66,7 +66,6 @@ async def test_agent_uses_project_responses_route(foundry):
 
 
 @pytest.mark.parametrize("text,status", [
-    ("not JSON", "completed"), ("[]", "completed"),
     ('{"ok": true}', "incomplete"), ("", "failed"),
 ])
 async def test_invalid_agent_output_fails_loudly(foundry, text, status):
@@ -76,6 +75,59 @@ async def test_invalid_agent_output_fails_loudly(foundry, text, status):
         await backend.complete_json(agent="question-generator", system="s", user="u")
     assert exc.value.code == "FOUNDRY_BAD_OUTPUT"
     assert len(requests) == 1
+
+
+@pytest.mark.parametrize("text", [
+    '```json\n{"ok": true}\n```', '```\n{"ok": true}\n```',
+    '  ```JSON\r\n{"statement": "Use ``` inside a string"}\r\n```  ',
+])
+async def test_fenced_json_is_decoded_without_retry(foundry, text):
+    backend, requests, replies = foundry
+    replies.append((200, response_body(text)))
+    output = await backend.complete_json(agent="question-generator", system="s", user="u")
+    assert output == ({"statement": "Use ``` inside a string"}
+                      if "statement" in text else {"ok": True})
+    assert len(requests) == 1
+
+
+@pytest.mark.parametrize("text", [
+    "not JSON", "[]", "null", "", '{"statement": "unescaped\nnewline"}',
+    'Here is your question: {"ok": true}', '{"ok": true}\n{"other": true}',
+])
+async def test_bad_json_gets_one_repair_attempt(foundry, text):
+    backend, requests, replies = foundry
+    backend.settings.FOUNDRY_MAX_RETRIES = 1
+    replies.extend([(200, response_body(text)), (200, response_body())])
+    assert await backend.complete_json(agent="question-generator", system="s", user="u") == {"ok": True}
+    assert len(requests) == 2
+    payload = json.loads(requests[1].content)
+    assert payload["agent_reference"]["name"] == "question-generator"
+    assert payload["input"][1]["content"] == "u"
+    if text:
+        assert payload["input"][2] == {"type": "message", "role": "assistant", "content": text}
+    assert "corrected JSON object" in payload["input"][-1]["content"]
+    assert not {"model", "instructions", "temperature", "text"}.intersection(payload)
+
+
+async def test_persistently_bad_json_fails_after_repair(foundry):
+    backend, requests, replies = foundry
+    replies.extend([(200, response_body("not JSON")), (200, response_body("[]"))])
+    with pytest.raises(FoundryError) as exc:
+        await backend.complete_json(agent="question-generator", system="s", user="u")
+    assert exc.value.code == "FOUNDRY_BAD_OUTPUT"
+    assert "after one repair attempt" in exc.value.message
+    assert len(requests) == 2
+
+
+async def test_json_repair_can_retry_transient_errors(foundry, monkeypatch):
+    backend, requests, replies = foundry
+    monkeypatch.setattr("app.integrations.foundry.client.asyncio.sleep", AsyncMock())
+    replies.extend([(200, response_body("not JSON")),
+                    (429, {"error": {"message": "Rate limit"}}),
+                    (200, response_body())])
+    assert await backend.complete_json(agent="question-generator", system="s", user="u") == {"ok": True}
+    assert len(requests) == 3
+    assert json.loads(requests[1].content) == json.loads(requests[2].content)
 
 
 async def test_missing_agent_has_actionable_error(foundry):
