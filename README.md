@@ -11,7 +11,36 @@
 
 > **Know what needs work. Practice with purpose. Prepare for the next opportunity.**
 
-[Problem Statement](#problem-statement) · [The Solution](#the-solution) · [Tech Stack](#tech-stack) · [Pipelines & Architecture](#pipelines--architecture) · [Getting Started](#getting-started) · [Collaborations / Contributing](#collaborations--contributing)
+[Problem Statement](#problem-statement) · [The Solution](#the-solution) · [Screenshots](#screenshots) · [Tech Stack](#tech-stack) · [Pipelines & Architecture](#pipelines--architecture) · [Getting Started](#getting-started) · [Collaborations / Contributing](#collaborations--contributing)
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="pics/landing.png" alt="Landing page" width="100%"/>
+      <br/>
+      <sub><b>Landing Page</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="pics/inter.png" alt="Spoken mock interview" width="100%"/>
+      <br/>
+      <sub><b>Spoken Mock Interview</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="pics/oa.png" alt="CODE RED preparation" width="100%"/>
+      <br/>
+      <sub><b>CODE RED Preparation</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="pics/graph.png" alt="Knowledge graph" width="100%"/>
+      <br/>
+      <sub><b>Knowledge Graph</b></sub>
+    </td>
+  </tr>
+</table>
 
 ## Problem Statement
 
